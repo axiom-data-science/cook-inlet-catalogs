@@ -13,3 +13,4 @@ dependencies:
   - pandas
   - pip:
     - git+https://github.com/intake/intake.git
+    - git+https://github.com/axiom-data-science/cook-inlet-catalogs.git
