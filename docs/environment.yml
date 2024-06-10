@@ -1,0 +1,31 @@
+name: cook-inlet-catalogs_docs
+dependencies:
+   - python=3.8
+   # If your docs code examples depend on other packages add them here
+   - cartopy
+   - cf_pandas
+   - jupyter
+   - matplotlib-base
+   - pandas
+   # These are needed for the docs themselves
+   - furo
+   - numpydoc
+   - sphinx
+   - sphinx_rtd_theme
+   - ipython
+   - nbconvert
+   - nbformat
+   - recommonmark
+   - ipykernel
+   - pillow==9.4.0  # Otherwise get error ImportError: libtiff.so.5: cannot open shared object file: No such file or directory
+   - pandoc
+   - pip
+   - pip:
+     - git+https://github.com/intake/intake.git
+     - git+https://github.com/axiom-data-science/cook-inlet-catalogs.git
+     - docrep<=0.2.7    
+     - nbsphinx
+     - jupyter_client
+     - sphinx_pangeo_theme
+     - sphinx-copybutton
+     - sphinxcontrib-srclinks
