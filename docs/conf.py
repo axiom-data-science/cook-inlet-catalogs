@@ -15,6 +15,7 @@ import pathlib
 import sys
 
 
+
 print("python exec:", sys.executable)
 print("sys.path:", sys.path)
 root = pathlib.Path(__file__).parent.parent.absolute()
@@ -33,10 +34,11 @@ author = "axiom-data-science"
 # |version| and |release|, also used in various other places throughout the
 # built documents.
 # see https://pypi.org/project/setuptools-scm/ for details
-from pkg_resources import get_distribution
-release = get_distribution('cook_inlet_catalogs').version
+from importlib.metadata import version as imversion
+release = imversion("xroms")
 # for example take major/minor
-version = '.'.join(release.split('.')[:2])
+version = ".".join(release.split(".")[:2])
+
 
 # -- General configuration ---------------------------------------------------
 
@@ -54,7 +56,7 @@ extensions = [
     "sphinx.ext.extlinks",
     "sphinx.ext.intersphinx",
     "numpydoc",
-    "nbsphinx",
+    # "nbsphinx",
     "IPython.sphinxext.ipython_directive",
     "IPython.sphinxext.ipython_console_highlighting",
     "sphinxcontrib.srclinks",
@@ -76,10 +78,14 @@ exclude_patterns = ["_build", "**.ipynb_checkpoints", "Thumbs.db", ".DS_Store"]
 #
 html_theme = "furo"
 
+html_title = "Cook Inlet Catalogs Documentation"
+
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ["_static"]
+
+nb_execution_timeout = 180  # seconds.
 
 
 # -- nbsphinx specific options ----------------------------------------------
