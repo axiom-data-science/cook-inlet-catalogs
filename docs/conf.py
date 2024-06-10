@@ -35,7 +35,7 @@ author = "axiom-data-science"
 # built documents.
 # see https://pypi.org/project/setuptools-scm/ for details
 from importlib.metadata import version as imversion
-release = imversion("xroms")
+release = imversion("cook-inlet-catalogs")
 # for example take major/minor
 version = ".".join(release.split(".")[:2])
 
