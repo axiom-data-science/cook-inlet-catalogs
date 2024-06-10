@@ -15,10 +15,10 @@ formats:
   - pdf
 
 build:
-  os: "ubuntu-22.04"
+  os: "ubuntu-20.04"
   tools:
-    python: "3.12"
-    # python: "mambaforge-4.10"
+    # python: "3.12"
+    python: "mambaforge-4.10"
 
 # uncomment to build from this exact version of package
 # the downside is the version listed in the docs will be a dev version
