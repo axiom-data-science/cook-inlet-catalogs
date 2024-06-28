@@ -1,0 +1,2716 @@
+description: 'Moored ADCP (NOAA): ADCP survey Cook Inlet 2005'
+metadata:
+  featuretype: timeSeriesProfile
+  header_names: null
+  included: true
+  key_variables:
+  - across
+  - east
+  - along
+  - north
+  - speed
+  map:
+    c: station
+    coastline: false
+    color: k
+    geo: true
+    height: 700
+    hover_cols:
+    - station
+    - T
+    kind: points
+    legend: false
+    s: T
+    size: 35
+    tiles: true
+    title: adcp_moored_noaa_coi_2005
+    width: 600
+    x: longitude
+    xlabel: Longitude [W]
+    y: latitude
+    ylabel: Latitude [N]
+  map_description: Moored ADCPs
+  maplabels:
+    fontscale: 1.5
+    geo: true
+    hover: false
+    kind: labels
+    text: station
+    text_alpha: 0.5
+    text_baseline: bottom
+    text_color: black
+    text_font_size: 10pt
+    x: longitude
+    y: latitude
+  maptype: point
+  maxLatitude: 60.72198
+  maxLongitude: -151.41787
+  maxTime: '2005-08-15 15:42:00.0'
+  minLatitude: 58.808
+  minLongitude: -153.42212
+  minTime: '2005-05-18 16:42:00.0'
+  notes: ''
+  overall_desc: 'Moored ADCP (NOAA): ADCP survey Cook Inlet 2005'
+  project_name: Cook Inlet 2005 Current Survey
+  summary: 'Moored NOAA ADCP surveys in Cook Inlet
+
+
+    ADCP data has been converted to eastward, northward velocities as well as along-
+    and across-channel velocities, in the latter case using the NOAA-provided rotation
+    angle for the rotation. The along- and across-channel velocities are additionally
+    filtered to show the subtidal signal, which is what is plotted in the dataset
+    page.
+
+    '
+  time: 2005, each for one or a few months
+name: adcp_moored_noaa_coi_2005
+sources:
+  COI0501:
+    args:
+      process_adcp: true
+      stationid: COI0501
+    description: ''
+    direct_access: allow
+    driver: intake_coops.coops.COOPSXarraySource
+    metadata:
+      deployments:
+      - deployed: '2005-05-19 00:16:00.0'
+        id: COI0501
+        instrument_desc: Workhorse ADCP
+        instrument_id: 16167
+        lat: 60.72198
+        lng: -151.6469
+        real_time_bin: null
+        retrieved: '2005-06-29 21:00:00.0'
+      depth: 33.5
+      depths:
+      - 19.39
+      - 17.4
+      - 15.39
+      - 13.41
+      - 11.4
+      - 9.39
+      - 7.41
+      - 5.4
+      - 3.41
+      featuretype: timeSeriesProfile
+      first_good_data: '2005-05-19 00:24:00.0'
+      flood_direction_degrees: 349.0
+      height_from_bottom: 6.1
+      key_variables:
+      - east
+      - north
+      - along
+      - across
+      - speed
+      last_good_data: '2005-06-28 20:06:00.0'
+      lat: 60.72198
+      lon: -151.6469
+      maptype: point
+      maxLatitude: 60.72198
+      maxLongitude: -151.6469
+      maxTime: '2005-06-28 20:06:00.0'
+      measured_depth: 29.53
+      minLatitude: 60.72198
+      minLongitude: -151.6469
+      minTime: '2005-05-19 00:24:00.0'
+      name: West Foreland
+      observe_dst: true
+      orientation: up
+      ping_int: null
+      plots:
+        ualong:
+          clabel: ualong_subtidal
+          clim: null
+          cmap: cmo.delta
+          dynamic: true
+          flip_yaxis: true
+          geo: false
+          height: 300
+          hover: true
+          kind: quadmesh
+          rasterize: true
+          shared_axes: false
+          symmetric: true
+          tiles: false
+          title: 'lon: -151.6469, lat: 60.72198, start date: 2005-05-19'
+          width: 600
+          x: t
+          xlabel: t
+          y: depth
+          ylabel: depth
+          z: ualong_subtidal
+        vacross:
+          clabel: vacross_subtidal
+          clim: null
+          cmap: cmo.delta
+          dynamic: true
+          flip_yaxis: true
+          geo: false
+          height: 300
+          hover: true
+          kind: quadmesh
+          rasterize: true
+          shared_axes: false
+          symmetric: true
+          tiles: false
+          title: 'lon: -151.6469, lat: 60.72198, start date: 2005-05-19'
+          width: 600
+          x: t
+          xlabel: t
+          y: depth
+          ylabel: depth
+          z: vacross_subtidal
+      project: Cook Inlet 2005 Current Survey
+      project_type: Survey
+      sample_interval: 360
+      self: https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/COI0501/deployments.json
+      sensor_depth: null
+      timezone_offset: '-9'
+      units: metric
+      urlpath: https://tidesandcurrents.noaa.gov/stationhome.html?id=COI0501
+    name: COI0501
+    parameters: {}
+  COI0502:
+    args:
+      process_adcp: true
+      stationid: COI0502
+    description: ''
+    direct_access: allow
+    driver: intake_coops.coops.COOPSXarraySource
+    metadata:
+      deployments:
+      - deployed: '2005-05-18 23:20:00.0'
+        id: COI0502
+        instrument_desc: Workhorse ADCP
+        instrument_id: 16226
+        lat: 60.72067
+        lng: -151.55733
+        real_time_bin: null
+        retrieved: '2005-08-16 18:00:00.0'
+      depth: 33.8
+      depths:
+      - 20.18
+      - 17.19
+      - 14.2
+      - 11.19
+      - 8.2
+      - 5.18
+      - 2.19
+      featuretype: timeSeriesProfile
+      first_good_data: '2005-05-18 23:23:00.0'
+      flood_direction_degrees: 3.0
+      height_from_bottom: 6.1
+      key_variables:
+      - east
+      - north
+      - along
+      - across
+      - speed
+      last_good_data: '2005-07-18 16:11:00.0'
+      lat: 60.72067
+      lon: -151.55733
+      maptype: point
+      maxLatitude: 60.72067
+      maxLongitude: -151.55733
+      maxTime: '2005-07-18 16:11:00.0'
+      measured_depth: 31.27
+      minLatitude: 60.72067
+      minLongitude: -151.55733
+      minTime: '2005-05-18 23:23:00.0'
+      name: The Forelands
+      observe_dst: true
+      orientation: up
+      ping_int: null
+      plots:
+        ualong:
+          clabel: ualong_subtidal
+          clim: null
+          cmap: cmo.delta
+          dynamic: true
+          flip_yaxis: true
+          geo: false
+          height: 300
+          hover: true
+          kind: quadmesh
+          rasterize: true
+          shared_axes: false
+          symmetric: true
+          tiles: false
+          title: 'lon: -151.55733, lat: 60.72067, start date: 2005-05-18'
+          width: 600
+          x: t
+          xlabel: t
+          y: depth
+          ylabel: depth
+          z: ualong_subtidal
+        vacross:
+          clabel: vacross_subtidal
+          clim: null
+          cmap: cmo.delta
+          dynamic: true
+          flip_yaxis: true
+          geo: false
+          height: 300
+          hover: true
+          kind: quadmesh
+          rasterize: true
+          shared_axes: false
+          symmetric: true
+          tiles: false
+          title: 'lon: -151.55733, lat: 60.72067, start date: 2005-05-18'
+          width: 600
+          x: t
+          xlabel: t
+          y: depth
+          ylabel: depth
+          z: vacross_subtidal
+      project: Cook Inlet 2005 Current Survey
+      project_type: Survey
+      sample_interval: 360
+      self: https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/COI0502/deployments.json
+      sensor_depth: null
+      timezone_offset: '-9'
+      units: metric
+      urlpath: https://tidesandcurrents.noaa.gov/stationhome.html?id=COI0502
+    name: COI0502
+    parameters: {}
+  COI0503:
+    args:
+      process_adcp: true
+      stationid: COI0503
+    description: ''
+    direct_access: allow
+    driver: intake_coops.coops.COOPSXarraySource
+    metadata:
+      deployments:
+      - deployed: '2005-05-18 22:31:00.0'
+        id: COI0503
+        instrument_desc: Workhorse ADCP
+        instrument_id: 16182
+        lat: 60.71727
+        lng: -151.43297
+        real_time_bin: null
+        retrieved: '2005-06-29 23:00:00.0'
+      depth: 44.2
+      depths:
+      - 36.24
+      - 33.25
+      - 30.24
+      - 27.25
+      - 24.23
+      - 21.24
+      - 18.23
+      - 15.24
+      - 12.25
+      - 9.24
+      - 6.25
+      - 3.23
+      featuretype: timeSeriesProfile
+      first_good_data: '2005-05-18 22:36:00.0'
+      flood_direction_degrees: 6.0
+      height_from_bottom: 7.4
+      key_variables:
+      - east
+      - north
+      - along
+      - across
+      - speed
+      last_good_data: '2005-06-29 22:54:00.0'
+      lat: 60.71727
+      lon: -151.43297
+      maptype: point
+      maxLatitude: 60.71727
+      maxLongitude: -151.43297
+      maxTime: '2005-06-29 22:54:00.0'
+      measured_depth: 48.61
+      minLatitude: 60.71727
+      minLongitude: -151.43297
+      minTime: '2005-05-18 22:36:00.0'
+      name: East Foreland
+      observe_dst: true
+      orientation: up
+      ping_int: null
+      plots:
+        ualong:
+          clabel: ualong_subtidal
+          clim: null
+          cmap: cmo.delta
+          dynamic: true
+          flip_yaxis: true
+          geo: false
+          height: 300
+          hover: true
+          kind: quadmesh
+          rasterize: true
+          shared_axes: false
+          symmetric: true
+          tiles: false
+          title: 'lon: -151.43297, lat: 60.71727, start date: 2005-05-18'
+          width: 600
+          x: t
+          xlabel: t
+          y: depth
+          ylabel: depth
+          z: ualong_subtidal
+        vacross:
+          clabel: vacross_subtidal
+          clim: null
+          cmap: cmo.delta
+          dynamic: true
+          flip_yaxis: true
+          geo: false
+          height: 300
+          hover: true
+          kind: quadmesh
+          rasterize: true
+          shared_axes: false
+          symmetric: true
+          tiles: false
+          title: 'lon: -151.43297, lat: 60.71727, start date: 2005-05-18'
+          width: 600
+          x: t
+          xlabel: t
+          y: depth
+          ylabel: depth
+          z: vacross_subtidal
+      project: Cook Inlet 2005 Current Survey
+      project_type: Survey
+      sample_interval: 360
+      self: https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/COI0503/deployments.json
+      sensor_depth: null
+      timezone_offset: '-9'
+      units: metric
+      urlpath: https://tidesandcurrents.noaa.gov/stationhome.html?id=COI0503
+    name: COI0503
+    parameters: {}
+  COI0504:
+    args:
+      process_adcp: true
+      stationid: COI0504
+    description: ''
+    direct_access: allow
+    driver: intake_coops.coops.COOPSXarraySource
+    metadata:
+      deployments:
+      - deployed: '2005-05-18 21:17:00.0'
+        id: COI0504
+        instrument_desc: Workhorse ADCP
+        instrument_id: 16169
+        lat: 60.68338
+        lng: -151.41787
+        real_time_bin: null
+        retrieved: '2005-06-29 23:49:00.0'
+      depth: 33.5
+      depths:
+      - 27.98
+      - 25.97
+      - 23.96
+      - 21.98
+      - 19.96
+      - 17.98
+      - 15.97
+      - 13.96
+      - 11.98
+      - 9.97
+      - 7.96
+      - 5.97
+      - 3.96
+      featuretype: timeSeriesProfile
+      first_good_data: '2005-05-18 21:24:00.0'
+      flood_direction_degrees: 345.0
+      height_from_bottom: 7.4
+      key_variables:
+      - east
+      - north
+      - along
+      - across
+      - speed
+      last_good_data: '2005-06-29 23:30:00.0'
+      lat: 60.68338
+      lon: -151.41787
+      maptype: point
+      maxLatitude: 60.68338
+      maxLongitude: -151.41787
+      maxTime: '2005-06-29 23:30:00.0'
+      measured_depth: 39.42
+      minLatitude: 60.68338
+      minLongitude: -151.41787
+      minTime: '2005-05-18 21:24:00.0'
+      name: Nikiski, .8 nm west of
+      observe_dst: true
+      orientation: up
+      ping_int: null
+      plots:
+        ualong:
+          clabel: ualong_subtidal
+          clim: null
+          cmap: cmo.delta
+          dynamic: true
+          flip_yaxis: true
+          geo: false
+          height: 300
+          hover: true
+          kind: quadmesh
+          rasterize: true
+          shared_axes: false
+          symmetric: true
+          tiles: false
+          title: 'lon: -151.41787, lat: 60.68338, start date: 2005-05-18'
+          width: 600
+          x: t
+          xlabel: t
+          y: depth
+          ylabel: depth
+          z: ualong_subtidal
+        vacross:
+          clabel: vacross_subtidal
+          clim: null
+          cmap: cmo.delta
+          dynamic: true
+          flip_yaxis: true
+          geo: false
+          height: 300
+          hover: true
+          kind: quadmesh
+          rasterize: true
+          shared_axes: false
+          symmetric: true
+          tiles: false
+          title: 'lon: -151.41787, lat: 60.68338, start date: 2005-05-18'
+          width: 600
+          x: t
+          xlabel: t
+          y: depth
+          ylabel: depth
+          z: vacross_subtidal
+      project: Cook Inlet 2005 Current Survey
+      project_type: Survey
+      sample_interval: 360
+      self: https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/COI0504/deployments.json
+      sensor_depth: null
+      timezone_offset: '-9'
+      units: metric
+      urlpath: https://tidesandcurrents.noaa.gov/stationhome.html?id=COI0504
+    name: COI0504
+    parameters: {}
+  COI0505:
+    args:
+      process_adcp: true
+      stationid: COI0505
+    description: ''
+    direct_access: allow
+    driver: intake_coops.coops.COOPSXarraySource
+    metadata:
+      deployments:
+      - deployed: '2005-05-19 01:18:00.0'
+        id: COI0505
+        instrument_desc: Workhorse ADCP
+        instrument_id: 16177
+        lat: 60.59667
+        lng: -151.73981
+        real_time_bin: null
+        retrieved: '2005-08-16 00:10:00.0'
+      depth: 22.6
+      depths:
+      - 11.46
+      - 9.48
+      - 7.47
+      - 5.46
+      - 3.47
+      - 1.46
+      featuretype: timeSeriesProfile
+      first_good_data: '2005-05-19 01:23:00.0'
+      flood_direction_degrees: 58.0
+      height_from_bottom: 6.1
+      key_variables:
+      - east
+      - north
+      - along
+      - across
+      - speed
+      last_good_data: '2005-07-22 18:41:00.0'
+      lat: 60.59667
+      lon: -151.73981
+      maptype: point
+      maxLatitude: 60.59667
+      maxLongitude: -151.73981
+      maxTime: '2005-07-22 18:41:00.0'
+      measured_depth: 21.61
+      minLatitude: 60.59667
+      minLongitude: -151.73981
+      minTime: '2005-05-19 01:23:00.0'
+      name: West Foreland, south of
+      observe_dst: true
+      orientation: up
+      ping_int: null
+      plots:
+        ualong:
+          clabel: ualong_subtidal
+          clim: null
+          cmap: cmo.delta
+          dynamic: true
+          flip_yaxis: true
+          geo: false
+          height: 300
+          hover: true
+          kind: quadmesh
+          rasterize: true
+          shared_axes: false
+          symmetric: true
+          tiles: false
+          title: 'lon: -151.73981, lat: 60.59667, start date: 2005-05-19'
+          width: 600
+          x: t
+          xlabel: t
+          y: depth
+          ylabel: depth
+          z: ualong_subtidal
+        vacross:
+          clabel: vacross_subtidal
+          clim: null
+          cmap: cmo.delta
+          dynamic: true
+          flip_yaxis: true
+          geo: false
+          height: 300
+          hover: true
+          kind: quadmesh
+          rasterize: true
+          shared_axes: false
+          symmetric: true
+          tiles: false
+          title: 'lon: -151.73981, lat: 60.59667, start date: 2005-05-19'
+          width: 600
+          x: t
+          xlabel: t
+          y: depth
+          ylabel: depth
+          z: vacross_subtidal
+      project: Cook Inlet 2005 Current Survey
+      project_type: Survey
+      sample_interval: 360
+      self: https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/COI0505/deployments.json
+      sensor_depth: null
+      timezone_offset: '-9'
+      units: metric
+      urlpath: https://tidesandcurrents.noaa.gov/stationhome.html?id=COI0505
+    name: COI0505
+    parameters: {}
+  COI0506:
+    args:
+      process_adcp: true
+      stationid: COI0506
+    description: ''
+    direct_access: allow
+    driver: intake_coops.coops.COOPSXarraySource
+    metadata:
+      deployments:
+      - deployed: '2005-05-18 20:01:00.0'
+        id: COI0506
+        instrument_desc: Workhorse ADCP
+        instrument_id: 16178
+        lat: 60.58083
+        lng: -151.44453
+        real_time_bin: null
+        retrieved: '2005-06-30 03:30:00.0'
+      depth: 27.1
+      depths:
+      - 13.75
+      - 11.73
+      - 9.75
+      - 7.74
+      - 5.76
+      - 3.75
+      - 1.74
+      featuretype: timeSeriesProfile
+      first_good_data: '2005-05-18 20:06:00.0'
+      flood_direction_degrees: 21.0
+      height_from_bottom: 6.1
+      key_variables:
+      - east
+      - north
+      - along
+      - across
+      - speed
+      last_good_data: '2005-06-30 01:54:00.0'
+      lat: 60.58083
+      lon: -151.44453
+      maptype: point
+      maxLatitude: 60.58083
+      maxLongitude: -151.44453
+      maxTime: '2005-06-30 01:54:00.0'
+      measured_depth: 23.88
+      minLatitude: 60.58083
+      minLongitude: -151.44453
+      minTime: '2005-05-18 20:06:00.0'
+      name: Kenai River, north of
+      observe_dst: true
+      orientation: up
+      ping_int: null
+      plots:
+        ualong:
+          clabel: ualong_subtidal
+          clim: null
+          cmap: cmo.delta
+          dynamic: true
+          flip_yaxis: true
+          geo: false
+          height: 300
+          hover: true
+          kind: quadmesh
+          rasterize: true
+          shared_axes: false
+          symmetric: true
+          tiles: false
+          title: 'lon: -151.44453, lat: 60.58083, start date: 2005-05-18'
+          width: 600
+          x: t
+          xlabel: t
+          y: depth
+          ylabel: depth
+          z: ualong_subtidal
+        vacross:
+          clabel: vacross_subtidal
+          clim: null
+          cmap: cmo.delta
+          dynamic: true
+          flip_yaxis: true
+          geo: false
+          height: 300
+          hover: true
+          kind: quadmesh
+          rasterize: true
+          shared_axes: false
+          symmetric: true
+          tiles: false
+          title: 'lon: -151.44453, lat: 60.58083, start date: 2005-05-18'
+          width: 600
+          x: t
+          xlabel: t
+          y: depth
+          ylabel: depth
+          z: vacross_subtidal
+      project: Cook Inlet 2005 Current Survey
+      project_type: Survey
+      sample_interval: 360
+      self: https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/COI0506/deployments.json
+      sensor_depth: null
+      timezone_offset: '-9'
+      units: metric
+      urlpath: https://tidesandcurrents.noaa.gov/stationhome.html?id=COI0506
+    name: COI0506
+    parameters: {}
+  COI0507:
+    args:
+      process_adcp: true
+      stationid: COI0507
+    description: ''
+    direct_access: allow
+    driver: intake_coops.coops.COOPSXarraySource
+    metadata:
+      deployments:
+      - deployed: '2005-05-19 02:55:00.0'
+        id: COI0507
+        instrument_desc: Workhorse ADCP
+        instrument_id: 16179
+        lat: 60.5517
+        lng: -152.12773
+        real_time_bin: null
+        retrieved: '2005-06-30 20:52:00.0'
+      depth: 27.4
+      depths:
+      - 16.64
+      - 14.66
+      - 12.65
+      - 10.64
+      - 8.66
+      - 6.64
+      - 4.66
+      - 2.65
+      featuretype: timeSeriesProfile
+      first_good_data: '2005-05-19 03:00:00.0'
+      flood_direction_degrees: 51.0
+      height_from_bottom: 6.1
+      key_variables:
+      - east
+      - north
+      - along
+      - across
+      - speed
+      last_good_data: '2005-06-30 20:36:00.0'
+      lat: 60.5517
+      lon: -152.12773
+      maptype: point
+      maxLatitude: 60.5517
+      maxLongitude: -152.12773
+      maxTime: '2005-06-30 20:36:00.0'
+      measured_depth: 26.78
+      minLatitude: 60.5517
+      minLongitude: -152.12773
+      minTime: '2005-05-19 03:00:00.0'
+      name: Drift River Terminal
+      observe_dst: true
+      orientation: up
+      ping_int: null
+      plots:
+        ualong:
+          clabel: ualong_subtidal
+          clim: null
+          cmap: cmo.delta
+          dynamic: true
+          flip_yaxis: true
+          geo: false
+          height: 300
+          hover: true
+          kind: quadmesh
+          rasterize: true
+          shared_axes: false
+          symmetric: true
+          tiles: false
+          title: 'lon: -152.12773, lat: 60.5517, start date: 2005-05-19'
+          width: 600
+          x: t
+          xlabel: t
+          y: depth
+          ylabel: depth
+          z: ualong_subtidal
+        vacross:
+          clabel: vacross_subtidal
+          clim: null
+          cmap: cmo.delta
+          dynamic: true
+          flip_yaxis: true
+          geo: false
+          height: 300
+          hover: true
+          kind: quadmesh
+          rasterize: true
+          shared_axes: false
+          symmetric: true
+          tiles: false
+          title: 'lon: -152.12773, lat: 60.5517, start date: 2005-05-19'
+          width: 600
+          x: t
+          xlabel: t
+          y: depth
+          ylabel: depth
+          z: vacross_subtidal
+      project: Cook Inlet 2005 Current Survey
+      project_type: Survey
+      sample_interval: 360
+      self: https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/COI0507/deployments.json
+      sensor_depth: null
+      timezone_offset: '-9'
+      units: metric
+      urlpath: https://tidesandcurrents.noaa.gov/stationhome.html?id=COI0507
+    name: COI0507
+    parameters: {}
+  COI0508:
+    args:
+      process_adcp: true
+      stationid: COI0508
+    description: ''
+    direct_access: allow
+    driver: intake_coops.coops.COOPSXarraySource
+    metadata:
+      deployments:
+      - deployed: '2005-05-18 18:47:00.0'
+        id: COI0508
+        instrument_desc: Workhorse ADCP
+        instrument_id: 16183
+        lat: 60.48295
+        lng: -151.67325
+        real_time_bin: null
+        retrieved: '2005-06-30 14:45:00.0'
+      depth: 51.5
+      depths:
+      - 35.63
+      - 32.64
+      - 29.63
+      - 26.64
+      - 23.65
+      - 20.64
+      - 17.65
+      - 14.63
+      - 11.64
+      - 8.63
+      - 5.64
+      featuretype: timeSeriesProfile
+      first_good_data: '2005-05-18 18:54:00.0'
+      flood_direction_degrees: 33.0
+      height_from_bottom: 7.4
+      key_variables:
+      - east
+      - north
+      - along
+      - across
+      - speed
+      last_good_data: '2005-06-30 14:24:00.0'
+      lat: 60.48295
+      lon: -151.67325
+      maptype: point
+      maxLatitude: 60.48295
+      maxLongitude: -151.67325
+      maxTime: '2005-06-30 14:24:00.0'
+      measured_depth: 48.0
+      minLatitude: 60.48295
+      minLongitude: -151.67325
+      minTime: '2005-05-18 18:54:00.0'
+      name: Kalgin Island, east of
+      observe_dst: true
+      orientation: up
+      ping_int: null
+      plots:
+        ualong:
+          clabel: ualong_subtidal
+          clim: null
+          cmap: cmo.delta
+          dynamic: true
+          flip_yaxis: true
+          geo: false
+          height: 300
+          hover: true
+          kind: quadmesh
+          rasterize: true
+          shared_axes: false
+          symmetric: true
+          tiles: false
+          title: 'lon: -151.67325, lat: 60.48295, start date: 2005-05-18'
+          width: 600
+          x: t
+          xlabel: t
+          y: depth
+          ylabel: depth
+          z: ualong_subtidal
+        vacross:
+          clabel: vacross_subtidal
+          clim: null
+          cmap: cmo.delta
+          dynamic: true
+          flip_yaxis: true
+          geo: false
+          height: 300
+          hover: true
+          kind: quadmesh
+          rasterize: true
+          shared_axes: false
+          symmetric: true
+          tiles: false
+          title: 'lon: -151.67325, lat: 60.48295, start date: 2005-05-18'
+          width: 600
+          x: t
+          xlabel: t
+          y: depth
+          ylabel: depth
+          z: vacross_subtidal
+      project: Cook Inlet 2005 Current Survey
+      project_type: Survey
+      sample_interval: 360
+      self: https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/COI0508/deployments.json
+      sensor_depth: null
+      timezone_offset: '-9'
+      units: metric
+      urlpath: https://tidesandcurrents.noaa.gov/stationhome.html?id=COI0508
+    name: COI0508
+    parameters: {}
+  COI0509:
+    args:
+      process_adcp: true
+      stationid: COI0509
+    description: ''
+    direct_access: allow
+    driver: intake_coops.coops.COOPSXarraySource
+    metadata:
+      deployments:
+      - deployed: '2005-05-19 04:50:00.0'
+        id: COI0509
+        instrument_desc: Workhorse ADCP
+        instrument_id: 16180
+        lat: 60.37918
+        lng: -152.1817
+        real_time_bin: null
+        retrieved: '2005-06-29 14:25:00.0'
+      depth: 96.3
+      depths:
+      - 79.04
+      - 76.02
+      - 73.03
+      - 70.01
+      - 67.03
+      - 64.01
+      - 61.02
+      - 58.03
+      - 55.02
+      - 52.03
+      - 49.01
+      - 46.03
+      - 43.01
+      - 40.02
+      - 37.03
+      - 34.02
+      - 31.03
+      - 28.01
+      - 25.02
+      - 22.01
+      - 19.02
+      - 16.03
+      - 13.02
+      - 10.03
+      - 7.01
+      featuretype: timeSeriesProfile
+      first_good_data: '2005-05-19 04:53:00.0'
+      flood_direction_degrees: 15.0
+      height_from_bottom: 10.7
+      key_variables:
+      - east
+      - north
+      - along
+      - across
+      - speed
+      last_good_data: '2005-06-29 14:35:00.0'
+      lat: 60.37918
+      lon: -152.1817
+      maptype: point
+      maxLatitude: 60.37918
+      maxLongitude: -152.1817
+      maxTime: '2005-06-29 14:35:00.0'
+      measured_depth: 94.67
+      minLatitude: 60.37918
+      minLongitude: -152.1817
+      minTime: '2005-05-19 04:53:00.0'
+      name: Harriot Pt., west of
+      observe_dst: true
+      orientation: up
+      ping_int: null
+      plots:
+        ualong:
+          clabel: ualong_subtidal
+          clim: null
+          cmap: cmo.delta
+          dynamic: true
+          flip_yaxis: true
+          geo: false
+          height: 300
+          hover: true
+          kind: quadmesh
+          rasterize: true
+          shared_axes: false
+          symmetric: true
+          tiles: false
+          title: 'lon: -152.1817, lat: 60.37918, start date: 2005-05-19'
+          width: 600
+          x: t
+          xlabel: t
+          y: depth
+          ylabel: depth
+          z: ualong_subtidal
+        vacross:
+          clabel: vacross_subtidal
+          clim: null
+          cmap: cmo.delta
+          dynamic: true
+          flip_yaxis: true
+          geo: false
+          height: 300
+          hover: true
+          kind: quadmesh
+          rasterize: true
+          shared_axes: false
+          symmetric: true
+          tiles: false
+          title: 'lon: -152.1817, lat: 60.37918, start date: 2005-05-19'
+          width: 600
+          x: t
+          xlabel: t
+          y: depth
+          ylabel: depth
+          z: vacross_subtidal
+      project: Cook Inlet 2005 Current Survey
+      project_type: Survey
+      sample_interval: 360
+      self: https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/COI0509/deployments.json
+      sensor_depth: null
+      timezone_offset: '-9'
+      units: metric
+      urlpath: https://tidesandcurrents.noaa.gov/stationhome.html?id=COI0509
+    name: COI0509
+    parameters: {}
+  COI0510:
+    args:
+      process_adcp: true
+      stationid: COI0510
+    description: ''
+    direct_access: allow
+    driver: intake_coops.coops.COOPSXarraySource
+    metadata:
+      deployments:
+      - deployed: '2005-05-18 16:34:00.0'
+        id: COI0510
+        instrument_desc: Workhorse ADCP
+        instrument_id: 16181
+        lat: 60.24802
+        lng: -151.75453
+        real_time_bin: null
+        retrieved: '2005-06-29 06:05:00.0'
+      depth: 34.5
+      depths:
+      - 17.62
+      - 15.61
+      - 13.62
+      - 11.61
+      - 9.63
+      - 7.62
+      - 5.61
+      - 3.63
+      featuretype: timeSeriesProfile
+      first_good_data: '2005-05-18 16:42:00.0'
+      flood_direction_degrees: 33.0
+      height_from_bottom: 7.4
+      key_variables:
+      - east
+      - north
+      - along
+      - across
+      - speed
+      last_good_data: '2005-06-29 04:48:00.0'
+      lat: 60.24802
+      lon: -151.75453
+      maptype: point
+      maxLatitude: 60.24802
+      maxLongitude: -151.75453
+      maxTime: '2005-06-29 04:48:00.0'
+      measured_depth: 29.04
+      minLatitude: 60.24802
+      minLongitude: -151.75453
+      minTime: '2005-05-18 16:42:00.0'
+      name: Kalgin Island, SE of
+      observe_dst: true
+      orientation: up
+      ping_int: null
+      plots:
+        ualong:
+          clabel: ualong_subtidal
+          clim: null
+          cmap: cmo.delta
+          dynamic: true
+          flip_yaxis: true
+          geo: false
+          height: 300
+          hover: true
+          kind: quadmesh
+          rasterize: true
+          shared_axes: false
+          symmetric: true
+          tiles: false
+          title: 'lon: -151.75453, lat: 60.24802, start date: 2005-05-18'
+          width: 600
+          x: t
+          xlabel: t
+          y: depth
+          ylabel: depth
+          z: ualong_subtidal
+        vacross:
+          clabel: vacross_subtidal
+          clim: null
+          cmap: cmo.delta
+          dynamic: true
+          flip_yaxis: true
+          geo: false
+          height: 300
+          hover: true
+          kind: quadmesh
+          rasterize: true
+          shared_axes: false
+          symmetric: true
+          tiles: false
+          title: 'lon: -151.75453, lat: 60.24802, start date: 2005-05-18'
+          width: 600
+          x: t
+          xlabel: t
+          y: depth
+          ylabel: depth
+          z: vacross_subtidal
+      project: Cook Inlet 2005 Current Survey
+      project_type: Survey
+      sample_interval: 360
+      self: https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/COI0510/deployments.json
+      sensor_depth: null
+      timezone_offset: '-9'
+      units: metric
+      urlpath: https://tidesandcurrents.noaa.gov/stationhome.html?id=COI0510
+    name: COI0510
+    parameters: {}
+  COI0511:
+    args:
+      process_adcp: true
+      stationid: COI0511
+    description: ''
+    direct_access: allow
+    driver: intake_coops.coops.COOPSXarraySource
+    metadata:
+      deployments:
+      - deployed: '2005-06-29 02:47:00.0'
+        id: COI0511
+        instrument_desc: Workhorse ADCP
+        instrument_id: 16221
+        lat: 60.02327
+        lng: -152.12018
+        real_time_bin: null
+        retrieved: '2005-08-15 15:55:00.0'
+      depth: 68.6
+      depths:
+      - 56.02
+      - 53.01
+      - 50.02
+      - 47.0
+      - 44.01
+      - 41.0
+      - 38.01
+      - 35.02
+      - 32.0
+      - 29.02
+      - 26.0
+      - 23.01
+      - 20.0
+      - 17.01
+      - 14.02
+      - 11.0
+      - 8.02
+      - 5.0
+      featuretype: timeSeriesProfile
+      first_good_data: '2005-06-29 02:54:00.0'
+      flood_direction_degrees: 31.0
+      height_from_bottom: 6.1
+      key_variables:
+      - east
+      - north
+      - along
+      - across
+      - speed
+      last_good_data: '2005-08-15 15:42:00.0'
+      lat: 60.02327
+      lon: -152.12018
+      maptype: point
+      maxLatitude: 60.02327
+      maxLongitude: -152.12018
+      maxTime: '2005-08-15 15:42:00.0'
+      measured_depth: 67.08
+      minLatitude: 60.02327
+      minLongitude: -152.12018
+      minTime: '2005-06-29 02:54:00.0'
+      name: Cape Ninilchik, west of
+      observe_dst: true
+      orientation: up
+      ping_int: null
+      plots:
+        ualong:
+          clabel: ualong_subtidal
+          clim: null
+          cmap: cmo.delta
+          dynamic: true
+          flip_yaxis: true
+          geo: false
+          height: 300
+          hover: true
+          kind: quadmesh
+          rasterize: true
+          shared_axes: false
+          symmetric: true
+          tiles: false
+          title: 'lon: -152.12018, lat: 60.02327, start date: 2005-06-29'
+          width: 600
+          x: t
+          xlabel: t
+          y: depth
+          ylabel: depth
+          z: ualong_subtidal
+        vacross:
+          clabel: vacross_subtidal
+          clim: null
+          cmap: cmo.delta
+          dynamic: true
+          flip_yaxis: true
+          geo: false
+          height: 300
+          hover: true
+          kind: quadmesh
+          rasterize: true
+          shared_axes: false
+          symmetric: true
+          tiles: false
+          title: 'lon: -152.12018, lat: 60.02327, start date: 2005-06-29'
+          width: 600
+          x: t
+          xlabel: t
+          y: depth
+          ylabel: depth
+          z: vacross_subtidal
+      project: Cook Inlet 2005 Current Survey
+      project_type: Survey
+      sample_interval: 360
+      self: https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/COI0511/deployments.json
+      sensor_depth: null
+      timezone_offset: '-9'
+      units: metric
+      urlpath: https://tidesandcurrents.noaa.gov/stationhome.html?id=COI0511
+    name: COI0511
+    parameters: {}
+  COI0512:
+    args:
+      process_adcp: true
+      stationid: COI0512
+    description: ''
+    direct_access: allow
+    driver: intake_coops.coops.COOPSXarraySource
+    metadata:
+      deployments:
+      - deployed: '2005-07-05 06:50:00.0'
+        id: COI0512
+        instrument_desc: Workhorse ADCP
+        instrument_id: 16180
+        lat: 59.56661
+        lng: -153.42212
+        real_time_bin: null
+        retrieved: '2005-08-15 05:47:00.0'
+      depth: 17.4
+      depths:
+      - 6.13
+      - 3.14
+      featuretype: timeSeriesProfile
+      first_good_data: '2005-07-05 07:06:00.0'
+      flood_direction_degrees: 320.0
+      height_from_bottom: 6.1
+      key_variables:
+      - east
+      - north
+      - along
+      - across
+      - speed
+      last_good_data: '2005-08-15 05:48:00.0'
+      lat: 59.56661
+      lon: -153.42212
+      maptype: point
+      maxLatitude: 59.56661
+      maxLongitude: -153.42212
+      maxTime: '2005-08-15 05:48:00.0'
+      measured_depth: 17.19
+      minLatitude: 59.56661
+      minLongitude: -153.42212
+      minTime: '2005-07-05 07:06:00.0'
+      name: Iliamna Bay
+      observe_dst: true
+      orientation: up
+      ping_int: null
+      plots:
+        ualong:
+          clabel: ualong_subtidal
+          clim: null
+          cmap: cmo.delta
+          dynamic: true
+          flip_yaxis: true
+          geo: false
+          height: 300
+          hover: true
+          kind: quadmesh
+          rasterize: true
+          shared_axes: false
+          symmetric: true
+          tiles: false
+          title: 'lon: -153.42212, lat: 59.56661, start date: 2005-07-05'
+          width: 600
+          x: t
+          xlabel: t
+          y: depth
+          ylabel: depth
+          z: ualong_subtidal
+        vacross:
+          clabel: vacross_subtidal
+          clim: null
+          cmap: cmo.delta
+          dynamic: true
+          flip_yaxis: true
+          geo: false
+          height: 300
+          hover: true
+          kind: quadmesh
+          rasterize: true
+          shared_axes: false
+          symmetric: true
+          tiles: false
+          title: 'lon: -153.42212, lat: 59.56661, start date: 2005-07-05'
+          width: 600
+          x: t
+          xlabel: t
+          y: depth
+          ylabel: depth
+          z: vacross_subtidal
+      project: Cook Inlet 2005 Current Survey
+      project_type: Survey
+      sample_interval: 360
+      self: https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/COI0512/deployments.json
+      sensor_depth: null
+      timezone_offset: '-9'
+      units: metric
+      urlpath: https://tidesandcurrents.noaa.gov/stationhome.html?id=COI0512
+    name: COI0512
+    parameters: {}
+  COI0513:
+    args:
+      process_adcp: true
+      stationid: COI0513
+    description: ''
+    direct_access: allow
+    driver: intake_coops.coops.COOPSXarraySource
+    metadata:
+      deployments:
+      - deployed: '2005-07-04 01:08:00.0'
+        id: COI0513
+        instrument_desc: Workhorse ADCP
+        instrument_id: 16167
+        lat: 59.4828
+        lng: -151.75505
+        real_time_bin: null
+        retrieved: '2005-08-13 19:38:00.0'
+      depth: 31.2
+      depths:
+      - 16.95
+      - 13.96
+      - 10.94
+      - 7.96
+      - 4.94
+      - 1.95
+      featuretype: timeSeriesProfile
+      first_good_data: '2005-07-04 01:30:00.0'
+      flood_direction_degrees: 40.0
+      height_from_bottom: 6.1
+      key_variables:
+      - east
+      - north
+      - along
+      - across
+      - speed
+      last_good_data: '2005-08-13 19:18:00.0'
+      lat: 59.4828
+      lon: -151.75505
+      maptype: point
+      maxLatitude: 59.4828
+      maxLongitude: -151.75505
+      maxTime: '2005-08-13 19:18:00.0'
+      measured_depth: 28.06
+      minLatitude: 59.4828
+      minLongitude: -151.75505
+      minTime: '2005-07-04 01:30:00.0'
+      name: Seldovia
+      observe_dst: true
+      orientation: up
+      ping_int: null
+      plots:
+        ualong:
+          clabel: ualong_subtidal
+          clim: null
+          cmap: cmo.delta
+          dynamic: true
+          flip_yaxis: true
+          geo: false
+          height: 300
+          hover: true
+          kind: quadmesh
+          rasterize: true
+          shared_axes: false
+          symmetric: true
+          tiles: false
+          title: 'lon: -151.75505, lat: 59.4828, start date: 2005-07-04'
+          width: 600
+          x: t
+          xlabel: t
+          y: depth
+          ylabel: depth
+          z: ualong_subtidal
+        vacross:
+          clabel: vacross_subtidal
+          clim: null
+          cmap: cmo.delta
+          dynamic: true
+          flip_yaxis: true
+          geo: false
+          height: 300
+          hover: true
+          kind: quadmesh
+          rasterize: true
+          shared_axes: false
+          symmetric: true
+          tiles: false
+          title: 'lon: -151.75505, lat: 59.4828, start date: 2005-07-04'
+          width: 600
+          x: t
+          xlabel: t
+          y: depth
+          ylabel: depth
+          z: vacross_subtidal
+      project: Cook Inlet 2005 Current Survey
+      project_type: Survey
+      sample_interval: 360
+      self: https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/COI0513/deployments.json
+      sensor_depth: null
+      timezone_offset: '-9'
+      units: metric
+      urlpath: https://tidesandcurrents.noaa.gov/stationhome.html?id=COI0513
+    name: COI0513
+    parameters: {}
+  COI0514:
+    args:
+      process_adcp: true
+      stationid: COI0514
+    description: ''
+    direct_access: allow
+    driver: intake_coops.coops.COOPSXarraySource
+    metadata:
+      deployments:
+      - deployed: '2005-07-05 11:04:00.0'
+        id: COI0514
+        instrument_desc: Workhorse ADCP
+        instrument_id: 16222
+        lat: 59.3018
+        lng: -152.93028
+        real_time_bin: null
+        retrieved: '2005-08-15 02:35:00.0'
+      depth: 80.2
+      depths:
+      - 63.25
+      - 60.23
+      - 57.24
+      - 54.26
+      - 51.24
+      - 48.25
+      - 45.23
+      - 42.25
+      - 39.23
+      - 36.24
+      - 33.25
+      - 30.24
+      - 27.25
+      - 24.23
+      - 21.24
+      - 18.23
+      - 15.24
+      - 12.25
+      - 9.24
+      - 6.25
+      featuretype: timeSeriesProfile
+      first_good_data: '2005-07-05 11:12:00.0'
+      flood_direction_degrees: 5.0
+      height_from_bottom: 6.1
+      key_variables:
+      - east
+      - north
+      - along
+      - across
+      - speed
+      last_good_data: '2005-08-15 02:12:00.0'
+      lat: 59.3018
+      lon: -152.93028
+      maptype: point
+      maxLatitude: 59.3018
+      maxLongitude: -152.93028
+      maxTime: '2005-08-15 02:12:00.0'
+      measured_depth: 74.3
+      minLatitude: 59.3018
+      minLongitude: -152.93028
+      minTime: '2005-07-05 11:12:00.0'
+      name: Augustine Island
+      observe_dst: true
+      orientation: up
+      ping_int: null
+      plots:
+        ualong:
+          clabel: ualong_subtidal
+          clim: null
+          cmap: cmo.delta
+          dynamic: true
+          flip_yaxis: true
+          geo: false
+          height: 300
+          hover: true
+          kind: quadmesh
+          rasterize: true
+          shared_axes: false
+          symmetric: true
+          tiles: false
+          title: 'lon: -152.93028, lat: 59.3018, start date: 2005-07-05'
+          width: 600
+          x: t
+          xlabel: t
+          y: depth
+          ylabel: depth
+          z: ualong_subtidal
+        vacross:
+          clabel: vacross_subtidal
+          clim: null
+          cmap: cmo.delta
+          dynamic: true
+          flip_yaxis: true
+          geo: false
+          height: 300
+          hover: true
+          kind: quadmesh
+          rasterize: true
+          shared_axes: false
+          symmetric: true
+          tiles: false
+          title: 'lon: -152.93028, lat: 59.3018, start date: 2005-07-05'
+          width: 600
+          x: t
+          xlabel: t
+          y: depth
+          ylabel: depth
+          z: vacross_subtidal
+      project: Cook Inlet 2005 Current Survey
+      project_type: Survey
+      sample_interval: 360
+      self: https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/COI0514/deployments.json
+      sensor_depth: null
+      timezone_offset: '-9'
+      units: metric
+      urlpath: https://tidesandcurrents.noaa.gov/stationhome.html?id=COI0514
+    name: COI0514
+    parameters: {}
+  COI0515:
+    args:
+      process_adcp: true
+      stationid: COI0515
+    description: ''
+    direct_access: allow
+    driver: intake_coops.coops.COOPSXarraySource
+    metadata:
+      deployments:
+      - deployed: '2005-07-05 14:00:00.0'
+        id: COI0515
+        instrument_desc: Workhorse ADCP
+        instrument_id: 16223
+        lat: 59.31487
+        lng: -152.36497
+        real_time_bin: null
+        retrieved: '2005-08-13 23:45:00.0'
+      depth: 87.7
+      depths:
+      - 74.31
+      - 71.32
+      - 68.31
+      - 65.32
+      - 62.3
+      - 59.31
+      - 56.3
+      - 53.31
+      - 50.32
+      - 47.31
+      - 44.32
+      - 41.3
+      - 38.31
+      - 35.3
+      - 32.31
+      - 29.32
+      - 26.3
+      - 23.32
+      - 20.3
+      - 17.31
+      - 14.3
+      - 11.31
+      - 8.32
+      - 5.3
+      featuretype: timeSeriesProfile
+      first_good_data: '2005-07-05 14:06:00.0'
+      flood_direction_degrees: 10.0
+      height_from_bottom: 6.1
+      key_variables:
+      - east
+      - north
+      - along
+      - across
+      - speed
+      last_good_data: '2005-08-13 23:24:00.0'
+      lat: 59.31487
+      lon: -152.36497
+      maptype: point
+      maxLatitude: 59.31487
+      maxLongitude: -152.36497
+      maxTime: '2005-08-13 23:24:00.0'
+      measured_depth: 85.36
+      minLatitude: 59.31487
+      minLongitude: -152.36497
+      minTime: '2005-07-05 14:06:00.0'
+      name: Kachemak Bay, southwest of
+      observe_dst: true
+      orientation: up
+      ping_int: null
+      plots:
+        ualong:
+          clabel: ualong_subtidal
+          clim: null
+          cmap: cmo.delta
+          dynamic: true
+          flip_yaxis: true
+          geo: false
+          height: 300
+          hover: true
+          kind: quadmesh
+          rasterize: true
+          shared_axes: false
+          symmetric: true
+          tiles: false
+          title: 'lon: -152.36497, lat: 59.31487, start date: 2005-07-05'
+          width: 600
+          x: t
+          xlabel: t
+          y: depth
+          ylabel: depth
+          z: ualong_subtidal
+        vacross:
+          clabel: vacross_subtidal
+          clim: null
+          cmap: cmo.delta
+          dynamic: true
+          flip_yaxis: true
+          geo: false
+          height: 300
+          hover: true
+          kind: quadmesh
+          rasterize: true
+          shared_axes: false
+          symmetric: true
+          tiles: false
+          title: 'lon: -152.36497, lat: 59.31487, start date: 2005-07-05'
+          width: 600
+          x: t
+          xlabel: t
+          y: depth
+          ylabel: depth
+          z: vacross_subtidal
+      project: Cook Inlet 2005 Current Survey
+      project_type: Survey
+      sample_interval: 360
+      self: https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/COI0515/deployments.json
+      sensor_depth: null
+      timezone_offset: '-9'
+      units: metric
+      urlpath: https://tidesandcurrents.noaa.gov/stationhome.html?id=COI0515
+    name: COI0515
+    parameters: {}
+  COI0516:
+    args:
+      process_adcp: true
+      stationid: COI0516
+    description: ''
+    direct_access: allow
+    driver: intake_coops.coops.COOPSXarraySource
+    metadata:
+      deployments:
+      - deployed: '2005-07-04 02:43:00.0'
+        id: COI0516
+        instrument_desc: Workhorse ADCP
+        instrument_id: 16182
+        lat: 59.40002
+        lng: -151.9659
+        real_time_bin: null
+        retrieved: '2005-08-13 21:25:00.0'
+      depth: 47.1
+      depths:
+      - 34.75
+      - 31.76
+      - 28.74
+      - 25.76
+      - 22.74
+      - 19.75
+      - 16.76
+      - 13.75
+      - 10.76
+      - 7.74
+      - 4.75
+      featuretype: timeSeriesProfile
+      first_good_data: '2005-07-04 03:00:00.0'
+      flood_direction_degrees: 30.0
+      height_from_bottom: 6.1
+      key_variables:
+      - east
+      - north
+      - along
+      - across
+      - speed
+      last_good_data: '2005-08-13 21:00:00.0'
+      lat: 59.40002
+      lon: -151.9659
+      maptype: point
+      maxLatitude: 59.40002
+      maxLongitude: -151.9659
+      maxTime: '2005-08-13 21:00:00.0'
+      measured_depth: 45.79
+      minLatitude: 59.40002
+      minLongitude: -151.9659
+      minTime: '2005-07-04 03:00:00.0'
+      name: Port Graham
+      observe_dst: true
+      orientation: up
+      ping_int: null
+      plots:
+        ualong:
+          clabel: ualong_subtidal
+          clim: null
+          cmap: cmo.delta
+          dynamic: true
+          flip_yaxis: true
+          geo: false
+          height: 300
+          hover: true
+          kind: quadmesh
+          rasterize: true
+          shared_axes: false
+          symmetric: true
+          tiles: false
+          title: 'lon: -151.9659, lat: 59.40002, start date: 2005-07-04'
+          width: 600
+          x: t
+          xlabel: t
+          y: depth
+          ylabel: depth
+          z: ualong_subtidal
+        vacross:
+          clabel: vacross_subtidal
+          clim: null
+          cmap: cmo.delta
+          dynamic: true
+          flip_yaxis: true
+          geo: false
+          height: 300
+          hover: true
+          kind: quadmesh
+          rasterize: true
+          shared_axes: false
+          symmetric: true
+          tiles: false
+          title: 'lon: -151.9659, lat: 59.40002, start date: 2005-07-04'
+          width: 600
+          x: t
+          xlabel: t
+          y: depth
+          ylabel: depth
+          z: vacross_subtidal
+      project: Cook Inlet 2005 Current Survey
+      project_type: Survey
+      sample_interval: 360
+      self: https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/COI0516/deployments.json
+      sensor_depth: null
+      timezone_offset: '-9'
+      units: metric
+      urlpath: https://tidesandcurrents.noaa.gov/stationhome.html?id=COI0516
+    name: COI0516
+    parameters: {}
+  COI0517:
+    args:
+      process_adcp: true
+      stationid: COI0517
+    description: ''
+    direct_access: allow
+    driver: intake_coops.coops.COOPSXarraySource
+    metadata:
+      deployments:
+      - deployed: '2005-07-05 00:32:00.0'
+        id: COI0517
+        instrument_desc: Workhorse ADCP
+        instrument_id: 16183
+        lat: 58.89005
+        lng: -153.1842
+        real_time_bin: null
+        retrieved: '2005-08-14 22:15:00.0'
+      depth: 177.9
+      depths:
+      - 138.72
+      - 132.71
+      - 126.71
+      - 120.7
+      - 114.7
+      - 108.72
+      - 102.72
+      - 96.71
+      - 90.71
+      - 84.7
+      - 78.7
+      - 72.7
+      - 66.72
+      - 60.72
+      - 54.71
+      - 12.71
+      featuretype: timeSeriesProfile
+      first_good_data: '2005-07-05 00:36:00.0'
+      flood_direction_degrees: 340.0
+      height_from_bottom: 20.0
+      key_variables:
+      - east
+      - north
+      - along
+      - across
+      - speed
+      last_good_data: '2005-08-14 22:00:00.0'
+      lat: 58.89005
+      lon: -153.1842
+      maptype: point
+      maxLatitude: 58.89005
+      maxLongitude: -153.1842
+      maxTime: '2005-08-14 22:00:00.0'
+      measured_depth: 166.82
+      minLatitude: 58.89005
+      minLongitude: -153.1842
+      minTime: '2005-07-05 00:36:00.0'
+      name: Cape Douglas
+      observe_dst: true
+      orientation: up
+      ping_int: null
+      plots:
+        ualong:
+          clabel: ualong_subtidal
+          clim: null
+          cmap: cmo.delta
+          dynamic: true
+          flip_yaxis: true
+          geo: false
+          height: 300
+          hover: true
+          kind: quadmesh
+          rasterize: true
+          shared_axes: false
+          symmetric: true
+          tiles: false
+          title: 'lon: -153.1842, lat: 58.89005, start date: 2005-07-05'
+          width: 600
+          x: t
+          xlabel: t
+          y: depth
+          ylabel: depth
+          z: ualong_subtidal
+        vacross:
+          clabel: vacross_subtidal
+          clim: null
+          cmap: cmo.delta
+          dynamic: true
+          flip_yaxis: true
+          geo: false
+          height: 300
+          hover: true
+          kind: quadmesh
+          rasterize: true
+          shared_axes: false
+          symmetric: true
+          tiles: false
+          title: 'lon: -153.1842, lat: 58.89005, start date: 2005-07-05'
+          width: 600
+          x: t
+          xlabel: t
+          y: depth
+          ylabel: depth
+          z: vacross_subtidal
+      project: Cook Inlet 2005 Current Survey
+      project_type: Survey
+      sample_interval: 360
+      self: https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/COI0517/deployments.json
+      sensor_depth: null
+      timezone_offset: '-9'
+      units: metric
+      urlpath: https://tidesandcurrents.noaa.gov/stationhome.html?id=COI0517
+    name: COI0517
+    parameters: {}
+  COI0518:
+    args:
+      process_adcp: true
+      stationid: COI0518
+    description: ''
+    direct_access: allow
+    driver: intake_coops.coops.COOPSXarraySource
+    metadata:
+      deployments:
+      - deployed: '2005-07-04 22:10:00.0'
+        id: COI0518
+        instrument_desc: Workhorse ADCP
+        instrument_id: 16178
+        lat: 58.98048
+        lng: -152.7277
+        real_time_bin: null
+        retrieved: '2005-08-14 19:45:00.0'
+      depth: 170.8
+      depths:
+      - 137.59
+      - 131.58
+      - 125.58
+      - 119.6
+      - 113.6
+      - 107.6
+      - 101.59
+      - 95.59
+      - 89.58
+      - 83.58
+      - 77.6
+      - 71.6
+      - 65.59
+      - 59.59
+      - 53.58
+      - 47.58
+      - 41.61
+      - 35.6
+      - 29.6
+      - 23.59
+      - 17.59
+      featuretype: timeSeriesProfile
+      first_good_data: '2005-07-04 22:18:00.0'
+      flood_direction_degrees: 312.0
+      height_from_bottom: 20.0
+      key_variables:
+      - east
+      - north
+      - along
+      - across
+      - speed
+      last_good_data: '2005-08-14 19:30:00.0'
+      lat: 58.98048
+      lon: -152.7277
+      maptype: point
+      maxLatitude: 58.98048
+      maxLongitude: -152.7277
+      maxTime: '2005-08-14 19:30:00.0'
+      measured_depth: 165.68
+      minLatitude: 58.98048
+      minLongitude: -152.7277
+      minTime: '2005-07-04 22:18:00.0'
+      name: Cape Douglas, NE
+      observe_dst: true
+      orientation: up
+      ping_int: null
+      plots:
+        ualong:
+          clabel: ualong_subtidal
+          clim: null
+          cmap: cmo.delta
+          dynamic: true
+          flip_yaxis: true
+          geo: false
+          height: 300
+          hover: true
+          kind: quadmesh
+          rasterize: true
+          shared_axes: false
+          symmetric: true
+          tiles: false
+          title: 'lon: -152.7277, lat: 58.98048, start date: 2005-07-04'
+          width: 600
+          x: t
+          xlabel: t
+          y: depth
+          ylabel: depth
+          z: ualong_subtidal
+        vacross:
+          clabel: vacross_subtidal
+          clim: null
+          cmap: cmo.delta
+          dynamic: true
+          flip_yaxis: true
+          geo: false
+          height: 300
+          hover: true
+          kind: quadmesh
+          rasterize: true
+          shared_axes: false
+          symmetric: true
+          tiles: false
+          title: 'lon: -152.7277, lat: 58.98048, start date: 2005-07-04'
+          width: 600
+          x: t
+          xlabel: t
+          y: depth
+          ylabel: depth
+          z: vacross_subtidal
+      project: Cook Inlet 2005 Current Survey
+      project_type: Survey
+      sample_interval: 360
+      self: https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/COI0518/deployments.json
+      sensor_depth: null
+      timezone_offset: '-9'
+      units: metric
+      urlpath: https://tidesandcurrents.noaa.gov/stationhome.html?id=COI0518
+    name: COI0518
+    parameters: {}
+  COI0519:
+    args:
+      process_adcp: true
+      stationid: COI0519
+    description: ''
+    direct_access: allow
+    driver: intake_coops.coops.COOPSXarraySource
+    metadata:
+      deployments:
+      - deployed: '2005-07-04 20:14:00.0'
+        id: COI0519
+        instrument_desc: Workhorse ADCP
+        instrument_id: 16224
+        lat: 58.808
+        lng: -152.40778
+        real_time_bin: null
+        retrieved: '2005-08-14 17:45:00.0'
+      depth: 146.6
+      depths:
+      - 128.17
+      - 123.17
+      - 118.17
+      - 113.17
+      - 108.17
+      - 103.18
+      - 98.15
+      - 93.15
+      - 88.15
+      - 83.15
+      - 78.15
+      - 73.15
+      - 68.15
+      - 63.16
+      - 58.16
+      - 53.16
+      - 48.16
+      - 43.16
+      - 38.16
+      - 33.16
+      - 28.16
+      - 23.17
+      - 18.17
+      - 13.17
+      featuretype: timeSeriesProfile
+      first_good_data: '2005-07-04 20:24:00.0'
+      flood_direction_degrees: 300.0
+      height_from_bottom: 8.0
+      key_variables:
+      - east
+      - north
+      - along
+      - across
+      - speed
+      last_good_data: '2005-08-14 17:36:00.0'
+      lat: 58.808
+      lon: -152.40778
+      maptype: point
+      maxLatitude: 58.808
+      maxLongitude: -152.40778
+      maxTime: '2005-08-14 17:36:00.0'
+      measured_depth: 143.26
+      minLatitude: 58.808
+      minLongitude: -152.40778
+      minTime: '2005-07-04 20:24:00.0'
+      name: Stevenson Passage
+      observe_dst: true
+      orientation: up
+      ping_int: null
+      plots:
+        ualong:
+          clabel: ualong_subtidal
+          clim: null
+          cmap: cmo.delta
+          dynamic: true
+          flip_yaxis: true
+          geo: false
+          height: 300
+          hover: true
+          kind: quadmesh
+          rasterize: true
+          shared_axes: false
+          symmetric: true
+          tiles: false
+          title: 'lon: -152.40778, lat: 58.808, start date: 2005-07-04'
+          width: 600
+          x: t
+          xlabel: t
+          y: depth
+          ylabel: depth
+          z: ualong_subtidal
+        vacross:
+          clabel: vacross_subtidal
+          clim: null
+          cmap: cmo.delta
+          dynamic: true
+          flip_yaxis: true
+          geo: false
+          height: 300
+          hover: true
+          kind: quadmesh
+          rasterize: true
+          shared_axes: false
+          symmetric: true
+          tiles: false
+          title: 'lon: -152.40778, lat: 58.808, start date: 2005-07-04'
+          width: 600
+          x: t
+          xlabel: t
+          y: depth
+          ylabel: depth
+          z: vacross_subtidal
+      project: Cook Inlet 2005 Current Survey
+      project_type: Survey
+      sample_interval: 360
+      self: https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/COI0519/deployments.json
+      sensor_depth: null
+      timezone_offset: '-9'
+      units: metric
+      urlpath: https://tidesandcurrents.noaa.gov/stationhome.html?id=COI0519
+    name: COI0519
+    parameters: {}
+  COI0520:
+    args:
+      process_adcp: true
+      stationid: COI0520
+    description: ''
+    direct_access: allow
+    driver: intake_coops.coops.COOPSXarraySource
+    metadata:
+      deployments:
+      - deployed: '2005-07-04 17:10:00.0'
+        id: COI0520
+        instrument_desc: Workhorse ADCP
+        instrument_id: 16181
+        lat: 59.049198150634766
+        lng: -152.15185546875
+        real_time_bin: null
+        retrieved: '2005-08-14 14:10:00.0'
+      depth: 162.4
+      depths:
+      - 148.62
+      - 144.6
+      - 140.61
+      - 136.61
+      - 132.62
+      - 128.6
+      - 124.6
+      - 120.61
+      - 116.62
+      - 112.62
+      - 108.6
+      - 104.61
+      - 100.62
+      - 96.62
+      - 92.6
+      - 88.61
+      - 84.61
+      - 80.62
+      - 76.6
+      - 72.6
+      - 68.61
+      - 64.62
+      - 60.63
+      - 56.6
+      - 52.61
+      - 48.62
+      - 44.62
+      - 40.6
+      - 36.61
+      featuretype: timeSeriesProfile
+      first_good_data: '2005-07-04 17:18:00.0'
+      flood_direction_degrees: 300.0
+      height_from_bottom: 6.1
+      key_variables:
+      - east
+      - north
+      - along
+      - across
+      - speed
+      last_good_data: '2005-08-14 13:54:00.0'
+      lat: 59.049198150634766
+      lon: -152.15185546875
+      maptype: point
+      maxLatitude: 59.049198150634766
+      maxLongitude: -152.15185546875
+      maxTime: '2005-08-14 13:54:00.0'
+      measured_depth: 160.72
+      minLatitude: 59.049198150634766
+      minLongitude: -152.15185546875
+      minTime: '2005-07-04 17:18:00.0'
+      name: West Amatuli Island, North
+      observe_dst: true
+      orientation: up
+      ping_int: null
+      plots:
+        ualong:
+          clabel: ualong_subtidal
+          clim: null
+          cmap: cmo.delta
+          dynamic: true
+          flip_yaxis: true
+          geo: false
+          height: 300
+          hover: true
+          kind: quadmesh
+          rasterize: true
+          shared_axes: false
+          symmetric: true
+          tiles: false
+          title: 'lon: -152.15185546875, lat: 59.049198150634766, start date: 2005-07-04'
+          width: 600
+          x: t
+          xlabel: t
+          y: depth
+          ylabel: depth
+          z: ualong_subtidal
+        vacross:
+          clabel: vacross_subtidal
+          clim: null
+          cmap: cmo.delta
+          dynamic: true
+          flip_yaxis: true
+          geo: false
+          height: 300
+          hover: true
+          kind: quadmesh
+          rasterize: true
+          shared_axes: false
+          symmetric: true
+          tiles: false
+          title: 'lon: -152.15185546875, lat: 59.049198150634766, start date: 2005-07-04'
+          width: 600
+          x: t
+          xlabel: t
+          y: depth
+          ylabel: depth
+          z: vacross_subtidal
+      project: Cook Inlet 2005 Current Survey
+      project_type: Survey
+      sample_interval: 360
+      self: https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/COI0520/deployments.json
+      sensor_depth: null
+      timezone_offset: '-9'
+      units: metric
+      urlpath: https://tidesandcurrents.noaa.gov/stationhome.html?id=COI0520
+    name: COI0520
+    parameters: {}
+  COI0521:
+    args:
+      process_adcp: true
+      stationid: COI0521
+    description: ''
+    direct_access: allow
+    driver: intake_coops.coops.COOPSXarraySource
+    metadata:
+      deployments:
+      - deployed: '2005-07-04 06:03:00.0'
+        id: COI0521
+        instrument_desc: Workhorse ADCP
+        instrument_id: 16144
+        lat: 59.12072
+        lng: -151.89483
+        real_time_bin: null
+        retrieved: '2005-08-14 03:10:00.0'
+      depth: 87.0
+      depths:
+      - 69.71
+      - 65.72
+      - 61.72
+      - 57.7
+      - 53.71
+      - 49.71
+      - 45.72
+      - 41.7
+      - 37.7
+      - 33.71
+      - 29.72
+      - 25.73
+      - 21.7
+      - 17.71
+      - 13.72
+      - 9.72
+      - 5.7
+      featuretype: timeSeriesProfile
+      first_good_data: '2005-07-04 06:12:00.0'
+      flood_direction_degrees: 306.0
+      height_from_bottom: 6.1
+      key_variables:
+      - east
+      - north
+      - along
+      - across
+      - speed
+      last_good_data: '2005-08-14 02:54:00.0'
+      lat: 59.12072
+      lon: -151.89483
+      maptype: point
+      maxLatitude: 59.12072
+      maxLongitude: -151.89483
+      maxTime: '2005-08-14 02:54:00.0'
+      measured_depth: 81.83
+      minLatitude: 59.12072
+      minLongitude: -151.89483
+      minTime: '2005-07-04 06:12:00.0'
+      name: Cape Elizabeth
+      observe_dst: true
+      orientation: up
+      ping_int: null
+      plots:
+        ualong:
+          clabel: ualong_subtidal
+          clim: null
+          cmap: cmo.delta
+          dynamic: true
+          flip_yaxis: true
+          geo: false
+          height: 300
+          hover: true
+          kind: quadmesh
+          rasterize: true
+          shared_axes: false
+          symmetric: true
+          tiles: false
+          title: 'lon: -151.89483, lat: 59.12072, start date: 2005-07-04'
+          width: 600
+          x: t
+          xlabel: t
+          y: depth
+          ylabel: depth
+          z: ualong_subtidal
+        vacross:
+          clabel: vacross_subtidal
+          clim: null
+          cmap: cmo.delta
+          dynamic: true
+          flip_yaxis: true
+          geo: false
+          height: 300
+          hover: true
+          kind: quadmesh
+          rasterize: true
+          shared_axes: false
+          symmetric: true
+          tiles: false
+          title: 'lon: -151.89483, lat: 59.12072, start date: 2005-07-04'
+          width: 600
+          x: t
+          xlabel: t
+          y: depth
+          ylabel: depth
+          z: vacross_subtidal
+      project: Cook Inlet 2005 Current Survey
+      project_type: Survey
+      sample_interval: 360
+      self: https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/COI0521/deployments.json
+      sensor_depth: null
+      timezone_offset: '-9'
+      units: metric
+      urlpath: https://tidesandcurrents.noaa.gov/stationhome.html?id=COI0521
+    name: COI0521
+    parameters: {}
+  COI0522:
+    args:
+      process_adcp: true
+      stationid: COI0522
+    description: ''
+    direct_access: allow
+    driver: intake_coops.coops.COOPSXarraySource
+    metadata:
+      deployments:
+      - deployed: '2005-07-04 08:45:00.0'
+        id: COI0522
+        instrument_desc: Workhorse ADCP
+        instrument_id: 16179
+        lat: 59.21125
+        lng: -151.78703
+        real_time_bin: null
+        retrieved: '2005-08-14 05:15:00.0'
+      depth: 37.8
+      depths:
+      - 21.28
+      - 18.29
+      - 15.3
+      - 12.28
+      - 9.3
+      - 6.28
+      featuretype: timeSeriesProfile
+      first_good_data: '2005-07-04 08:54:00.0'
+      flood_direction_degrees: 45.0
+      height_from_bottom: 6.1
+      key_variables:
+      - east
+      - north
+      - along
+      - across
+      - speed
+      last_good_data: '2005-08-14 04:36:00.0'
+      lat: 59.21125
+      lon: -151.78703
+      maptype: point
+      maxLatitude: 59.21125
+      maxLongitude: -151.78703
+      maxTime: '2005-08-14 04:36:00.0'
+      measured_depth: 32.37
+      minLatitude: 59.21125
+      minLongitude: -151.78703
+      minTime: '2005-07-04 08:54:00.0'
+      name: Port Chatham
+      observe_dst: true
+      orientation: up
+      ping_int: null
+      plots:
+        ualong:
+          clabel: ualong_subtidal
+          clim: null
+          cmap: cmo.delta
+          dynamic: true
+          flip_yaxis: true
+          geo: false
+          height: 300
+          hover: true
+          kind: quadmesh
+          rasterize: true
+          shared_axes: false
+          symmetric: true
+          tiles: false
+          title: 'lon: -151.78703, lat: 59.21125, start date: 2005-07-04'
+          width: 600
+          x: t
+          xlabel: t
+          y: depth
+          ylabel: depth
+          z: ualong_subtidal
+        vacross:
+          clabel: vacross_subtidal
+          clim: null
+          cmap: cmo.delta
+          dynamic: true
+          flip_yaxis: true
+          geo: false
+          height: 300
+          hover: true
+          kind: quadmesh
+          rasterize: true
+          shared_axes: false
+          symmetric: true
+          tiles: false
+          title: 'lon: -151.78703, lat: 59.21125, start date: 2005-07-04'
+          width: 600
+          x: t
+          xlabel: t
+          y: depth
+          ylabel: depth
+          z: vacross_subtidal
+      project: Cook Inlet 2005 Current Survey
+      project_type: Survey
+      sample_interval: 360
+      self: https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/COI0522/deployments.json
+      sensor_depth: null
+      timezone_offset: '-9'
+      units: metric
+      urlpath: https://tidesandcurrents.noaa.gov/stationhome.html?id=COI0522
+    name: COI0522
+    parameters: {}
+  COI0523:
+    args:
+      process_adcp: true
+      stationid: COI0523
+    description: ''
+    direct_access: allow
+    driver: intake_coops.coops.COOPSXarraySource
+    metadata:
+      deployments:
+      - deployed: '2005-07-04 08:06:00.0'
+        id: COI0523
+        instrument_desc: Workhorse ADCP
+        instrument_id: 16225
+        lat: 59.16658
+        lng: -151.77543
+        real_time_bin: null
+        retrieved: '2005-08-15 05:30:00.0'
+      depth: 82.1
+      depths:
+      - 67.3
+      - 63.31
+      - 59.31
+      - 55.32
+      - 51.3
+      - 47.31
+      - 43.31
+      - 39.32
+      - 35.3
+      - 31.3
+      - 27.31
+      - 23.32
+      - 19.32
+      - 15.3
+      - 11.31
+      - 7.32
+      featuretype: timeSeriesProfile
+      first_good_data: '2005-07-04 08:12:00.0'
+      flood_direction_degrees: 350.0
+      height_from_bottom: 6.1
+      key_variables:
+      - east
+      - north
+      - along
+      - across
+      - speed
+      last_good_data: '2005-08-14 05:17:00.0'
+      lat: 59.16658
+      lon: -151.77543
+      maptype: point
+      maxLatitude: 59.16658
+      maxLongitude: -151.77543
+      maxTime: '2005-08-14 05:17:00.0'
+      measured_depth: 79.44
+      minLatitude: 59.16658
+      minLongitude: -151.77543
+      minTime: '2005-07-04 08:12:00.0'
+      name: Chugach Passage
+      observe_dst: true
+      orientation: up
+      ping_int: null
+      plots:
+        ualong:
+          clabel: ualong_subtidal
+          clim: null
+          cmap: cmo.delta
+          dynamic: true
+          flip_yaxis: true
+          geo: false
+          height: 300
+          hover: true
+          kind: quadmesh
+          rasterize: true
+          shared_axes: false
+          symmetric: true
+          tiles: false
+          title: 'lon: -151.77543, lat: 59.16658, start date: 2005-07-04'
+          width: 600
+          x: t
+          xlabel: t
+          y: depth
+          ylabel: depth
+          z: ualong_subtidal
+        vacross:
+          clabel: vacross_subtidal
+          clim: null
+          cmap: cmo.delta
+          dynamic: true
+          flip_yaxis: true
+          geo: false
+          height: 300
+          hover: true
+          kind: quadmesh
+          rasterize: true
+          shared_axes: false
+          symmetric: true
+          tiles: false
+          title: 'lon: -151.77543, lat: 59.16658, start date: 2005-07-04'
+          width: 600
+          x: t
+          xlabel: t
+          y: depth
+          ylabel: depth
+          z: vacross_subtidal
+      project: Cook Inlet 2005 Current Survey
+      project_type: Survey
+      sample_interval: 360
+      self: https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/COI0523/deployments.json
+      sensor_depth: null
+      timezone_offset: '-9'
+      units: metric
+      urlpath: https://tidesandcurrents.noaa.gov/stationhome.html?id=COI0523
+    name: COI0523
+    parameters: {}
+  COI0524:
+    args:
+      process_adcp: true
+      stationid: COI0524
+    description: ''
+    direct_access: allow
+    driver: intake_coops.coops.COOPSXarraySource
+    metadata:
+      deployments:
+      - deployed: '2005-07-04 07:30:00.0'
+        id: COI0524
+        instrument_desc: Workhorse ADCP
+        instrument_id: 16169
+        lat: 59.13387
+        lng: -151.7055
+        real_time_bin: null
+        retrieved: '2005-08-14 06:15:00.0'
+      depth: 30.9
+      depths:
+      - 15.79
+      - 12.77
+      - 9.78
+      - 6.77
+      - 3.78
+      featuretype: timeSeriesProfile
+      first_good_data: '2005-07-04 07:42:00.0'
+      flood_direction_degrees: 270.0
+      height_from_bottom: 6.1
+      key_variables:
+      - east
+      - north
+      - along
+      - across
+      - speed
+      last_good_data: '2005-08-14 06:06:00.0'
+      lat: 59.13387
+      lon: -151.7055
+      maptype: point
+      maxLatitude: 59.13387
+      maxLongitude: -151.7055
+      maxTime: '2005-08-14 06:06:00.0'
+      measured_depth: 26.83
+      minLatitude: 59.13387
+      minLongitude: -151.7055
+      minTime: '2005-07-04 07:42:00.0'
+      name: Chugach Passage, east of
+      observe_dst: true
+      orientation: up
+      ping_int: null
+      plots:
+        ualong:
+          clabel: ualong_subtidal
+          clim: null
+          cmap: cmo.delta
+          dynamic: true
+          flip_yaxis: true
+          geo: false
+          height: 300
+          hover: true
+          kind: quadmesh
+          rasterize: true
+          shared_axes: false
+          symmetric: true
+          tiles: false
+          title: 'lon: -151.7055, lat: 59.13387, start date: 2005-07-04'
+          width: 600
+          x: t
+          xlabel: t
+          y: depth
+          ylabel: depth
+          z: ualong_subtidal
+        vacross:
+          clabel: vacross_subtidal
+          clim: null
+          cmap: cmo.delta
+          dynamic: true
+          flip_yaxis: true
+          geo: false
+          height: 300
+          hover: true
+          kind: quadmesh
+          rasterize: true
+          shared_axes: false
+          symmetric: true
+          tiles: false
+          title: 'lon: -151.7055, lat: 59.13387, start date: 2005-07-04'
+          width: 600
+          x: t
+          xlabel: t
+          y: depth
+          ylabel: depth
+          z: vacross_subtidal
+      project: Cook Inlet 2005 Current Survey
+      project_type: Survey
+      sample_interval: 360
+      self: https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/COI0524/deployments.json
+      sensor_depth: null
+      timezone_offset: '-9'
+      units: metric
+      urlpath: https://tidesandcurrents.noaa.gov/stationhome.html?id=COI0524
+    name: COI0524
+    parameters: {}

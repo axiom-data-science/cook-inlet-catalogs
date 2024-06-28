@@ -14,8 +14,9 @@ These docs demonstrate access and a plot for each available catalog. The noteboo
    :maxdepth: 2
    :hidden:
    :caption: Catalogs
+   :glob:
 
-   demo_notebooks/drifters_ecofoci
+   demo_notebooks/*
 
 .. toctree::
    :hidden:

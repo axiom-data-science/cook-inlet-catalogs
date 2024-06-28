@@ -2,15 +2,30 @@ name: cook-inlet-catalogs
 channels:
   - conda-forge
 dependencies:
+  - python=3.11
   # Required for full project functionality (dont remove)
   - pytest
   # Examples (remove and add as needed)
+  - aiohttp
+  - appdirs
   - cartopy
   - cf_pandas
+  - cf_xarray
+  - cmocean
+  - geoviews
+  - h5netcdf
+  - hvplot
   - jupyter
+  - jupyter_bokeh
   - matplotlib-base
-  - pip
+  - numpy
   - pandas
+  - pip
+  - pyproj
+  - requests
   - pip:
+    - jupyter_bokeh
+    - intake-erddap
+    # - papermill
     - git+https://github.com/intake/intake.git
     - git+https://github.com/axiom-data-science/cook-inlet-catalogs.git

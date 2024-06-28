@@ -1,0 +1,1949 @@
+description: 'Moored ADCP (NOAA): ADCP survey Kodiak Island, Set 1'
+metadata:
+  featuretype: timeSeriesProfile
+  header_names: null
+  included: true
+  key_variables:
+  - east
+  - across
+  - along
+  - north
+  - speed
+  map:
+    c: station
+    coastline: false
+    color: k
+    geo: true
+    height: 700
+    hover_cols:
+    - station
+    - T
+    kind: points
+    legend: false
+    s: T
+    size: 35
+    tiles: true
+    title: adcp_moored_noaa_kod_1
+    width: 600
+    x: longitude
+    xlabel: Longitude [W]
+    y: latitude
+    ylabel: Latitude [N]
+  map_description: Moored ADCPs
+  maplabels:
+    fontscale: 1.5
+    geo: true
+    hover: false
+    kind: labels
+    text: station
+    text_alpha: 0.5
+    text_baseline: bottom
+    text_color: black
+    text_font_size: 10pt
+    x: longitude
+    y: latitude
+  maptype: point
+  maxLatitude: 57.80578
+  maxLongitude: -152.08979
+  maxTime: '2009-08-20 01:11:00.0'
+  minLatitude: 57.07323
+  minLongitude: -154.82843
+  minTime: '2009-05-29 00:54:00.0'
+  notes: ''
+  overall_desc: 'Moored ADCP (NOAA): ADCP survey Kodiak Island, Set 1'
+  project_name: Kodiak Island 2009 Current Survey (1)
+  summary: 'Moored NOAA ADCP surveys in Cook Inlet
+
+
+    ADCP data has been converted to eastward, northward velocities as well as along-
+    and across-channel velocities, in the latter case using the NOAA-provided rotation
+    angle for the rotation. The along- and across-channel velocities are additionally
+    filtered to show the subtidal signal, which is what is plotted in the dataset
+    page.
+
+
+    Stations "KOD0914", "KOD0915", "KOD0916", "KOD0917", "KOD0918", "KOD0919", "KOD0920"
+    are not included because they are just outside or along the model domain boundary.
+
+    '
+  time: 2009, each for one or a few months
+name: adcp_moored_noaa_kod_1
+sources:
+  KOD0901:
+    args:
+      process_adcp: true
+      stationid: KOD0901
+    description: ''
+    direct_access: allow
+    driver: intake_coops.coops.COOPSXarraySource
+    metadata:
+      deployments:
+      - deployed: '2009-05-29 18:00:00.0'
+        id: KOD0901
+        instrument_desc: Workhorse ADCP
+        instrument_id: 16234
+        lat: 57.73559
+        lng: -152.38463
+        real_time_bin: null
+        retrieved: '2009-07-10 22:49:00.0'
+      depth: 81.3
+      depths:
+      - 63.52
+      - 61.51
+      - 59.5
+      - 57.52
+      - 55.5
+      - 53.52
+      - 51.51
+      - 49.5
+      - 47.52
+      - 45.51
+      - 43.5
+      - 41.51
+      - 39.5
+      - 37.52
+      - 35.51
+      - 33.5
+      - 31.52
+      - 29.5
+      - 27.52
+      - 25.51
+      - 23.5
+      - 21.52
+      - 19.51
+      - 17.5
+      - 15.51
+      - 13.5
+      - 11.52
+      - 9.51
+      - 7.5
+      featuretype: timeSeriesProfile
+      first_good_data: '2009-05-29 18:06:00.0'
+      flood_direction_degrees: 250.0
+      height_from_bottom: 11.52
+      key_variables:
+      - east
+      - north
+      - along
+      - across
+      - speed
+      last_good_data: '2009-07-10 22:30:00.0'
+      lat: 57.73559
+      lon: -152.38463
+      maptype: point
+      maxLatitude: 57.73559
+      maxLongitude: -152.38463
+      maxTime: '2009-07-10 22:30:00.0'
+      measured_depth: 79.22
+      minLatitude: 57.73559
+      minLongitude: -152.38463
+      minTime: '2009-05-29 18:06:00.0'
+      name: Chiniak Bay
+      observe_dst: true
+      orientation: up
+      ping_int: null
+      plots:
+        ualong:
+          clabel: ualong_subtidal
+          clim: null
+          cmap: cmo.delta
+          dynamic: true
+          flip_yaxis: true
+          geo: false
+          height: 300
+          hover: true
+          kind: quadmesh
+          rasterize: true
+          shared_axes: false
+          symmetric: true
+          tiles: false
+          title: 'lon: -152.38463, lat: 57.73559, start date: 2009-05-29'
+          width: 600
+          x: t
+          xlabel: t
+          y: depth
+          ylabel: depth
+          z: ualong_subtidal
+        vacross:
+          clabel: vacross_subtidal
+          clim: null
+          cmap: cmo.delta
+          dynamic: true
+          flip_yaxis: true
+          geo: false
+          height: 300
+          hover: true
+          kind: quadmesh
+          rasterize: true
+          shared_axes: false
+          symmetric: true
+          tiles: false
+          title: 'lon: -152.38463, lat: 57.73559, start date: 2009-05-29'
+          width: 600
+          x: t
+          xlabel: t
+          y: depth
+          ylabel: depth
+          z: vacross_subtidal
+      project: Kodiak Island 2009 Current Survey
+      project_type: Survey
+      sample_interval: 360
+      self: https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/KOD0901/deployments.json
+      sensor_depth: null
+      timezone_offset: '-9'
+      units: metric
+      urlpath: https://tidesandcurrents.noaa.gov/stationhome.html?id=KOD0901
+    name: KOD0901
+    parameters: {}
+  KOD0902:
+    args:
+      process_adcp: true
+      stationid: KOD0902
+    description: ''
+    direct_access: allow
+    driver: intake_coops.coops.COOPSXarraySource
+    metadata:
+      deployments:
+      - deployed: '2009-05-29 00:48:00.0'
+        id: KOD0902
+        instrument_desc: Workhorse ADCP
+        instrument_id: 16251
+        lat: 57.77457
+        lng: -152.43469
+        real_time_bin: null
+        retrieved: '2009-07-10 21:43:00.0'
+      depth: 18.4
+      depths:
+      - 12.16
+      - 11.16
+      - 10.15
+      - 9.14
+      - 8.14
+      - 7.16
+      - 6.16
+      - 5.15
+      - 4.15
+      - 3.14
+      - 2.16
+      featuretype: timeSeriesProfile
+      first_good_data: '2009-05-29 00:54:00.0'
+      flood_direction_degrees: 20.0
+      height_from_bottom: 3.0
+      key_variables:
+      - east
+      - north
+      - along
+      - across
+      - speed
+      last_good_data: '2009-07-10 21:30:00.0'
+      lat: 57.77457
+      lon: -152.43469
+      maptype: point
+      maxLatitude: 57.77457
+      maxLongitude: -152.43469
+      maxTime: '2009-07-10 21:30:00.0'
+      measured_depth: 17.24
+      minLatitude: 57.77457
+      minLongitude: -152.43469
+      minTime: '2009-05-29 00:54:00.0'
+      name: St. Paul Harbor
+      observe_dst: true
+      orientation: up
+      ping_int: null
+      plots:
+        ualong:
+          clabel: ualong_subtidal
+          clim: null
+          cmap: cmo.delta
+          dynamic: true
+          flip_yaxis: true
+          geo: false
+          height: 300
+          hover: true
+          kind: quadmesh
+          rasterize: true
+          shared_axes: false
+          symmetric: true
+          tiles: false
+          title: 'lon: -152.43469, lat: 57.77457, start date: 2009-05-29'
+          width: 600
+          x: t
+          xlabel: t
+          y: depth
+          ylabel: depth
+          z: ualong_subtidal
+        vacross:
+          clabel: vacross_subtidal
+          clim: null
+          cmap: cmo.delta
+          dynamic: true
+          flip_yaxis: true
+          geo: false
+          height: 300
+          hover: true
+          kind: quadmesh
+          rasterize: true
+          shared_axes: false
+          symmetric: true
+          tiles: false
+          title: 'lon: -152.43469, lat: 57.77457, start date: 2009-05-29'
+          width: 600
+          x: t
+          xlabel: t
+          y: depth
+          ylabel: depth
+          z: vacross_subtidal
+      project: Kodiak Island 2009 Current Survey
+      project_type: Survey
+      sample_interval: 360
+      self: https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/KOD0902/deployments.json
+      sensor_depth: null
+      timezone_offset: '-9'
+      units: metric
+      urlpath: https://tidesandcurrents.noaa.gov/stationhome.html?id=KOD0902
+    name: KOD0902
+    parameters: {}
+  KOD0903:
+    args:
+      process_adcp: true
+      stationid: KOD0903
+    description: ''
+    direct_access: allow
+    driver: intake_coops.coops.COOPSXarraySource
+    metadata:
+      deployments:
+      - deployed: '2009-05-29 03:32:00.0'
+        id: KOD0903
+        instrument_desc: Workhorse ADCP
+        instrument_id: 16230
+        lat: 57.78918
+        lng: -152.394
+        real_time_bin: null
+        retrieved: '2009-09-02 22:29:00.0'
+      depth: 13.3
+      depths:
+      - 9.94
+      - 8.93
+      - 7.92
+      - 6.95
+      - 5.94
+      - 4.94
+      - 3.93
+      - 2.93
+      - 1.95
+      featuretype: timeSeriesProfile
+      first_good_data: '2009-05-29 03:42:00.0'
+      flood_direction_degrees: 56.0
+      height_from_bottom: 0.6
+      key_variables:
+      - east
+      - north
+      - along
+      - across
+      - speed
+      last_good_data: '2009-08-20 01:11:00.0'
+      lat: 57.78918
+      lon: -152.394
+      maptype: point
+      maxLatitude: 57.78918
+      maxLongitude: -152.394
+      maxTime: '2009-08-20 01:11:00.0'
+      measured_depth: 12.64
+      minLatitude: 57.78918
+      minLongitude: -152.394
+      minTime: '2009-05-29 03:42:00.0'
+      name: Kodiak Harbor Narrows, Chiniak Bay
+      observe_dst: true
+      orientation: up
+      ping_int: null
+      plots:
+        ualong:
+          clabel: ualong_subtidal
+          clim: null
+          cmap: cmo.delta
+          dynamic: true
+          flip_yaxis: true
+          geo: false
+          height: 300
+          hover: true
+          kind: quadmesh
+          rasterize: true
+          shared_axes: false
+          symmetric: true
+          tiles: false
+          title: 'lon: -152.394, lat: 57.78918, start date: 2009-05-29'
+          width: 600
+          x: t
+          xlabel: t
+          y: depth
+          ylabel: depth
+          z: ualong_subtidal
+        vacross:
+          clabel: vacross_subtidal
+          clim: null
+          cmap: cmo.delta
+          dynamic: true
+          flip_yaxis: true
+          geo: false
+          height: 300
+          hover: true
+          kind: quadmesh
+          rasterize: true
+          shared_axes: false
+          symmetric: true
+          tiles: false
+          title: 'lon: -152.394, lat: 57.78918, start date: 2009-05-29'
+          width: 600
+          x: t
+          xlabel: t
+          y: depth
+          ylabel: depth
+          z: vacross_subtidal
+      project: Kodiak Island 2009 Current Survey
+      project_type: Survey
+      sample_interval: 360
+      self: https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/KOD0903/deployments.json
+      sensor_depth: null
+      timezone_offset: '-9'
+      units: metric
+      urlpath: https://tidesandcurrents.noaa.gov/stationhome.html?id=KOD0903
+    name: KOD0903
+    parameters: {}
+  KOD0904:
+    args:
+      process_adcp: true
+      stationid: KOD0904
+    description: ''
+    direct_access: allow
+    driver: intake_coops.coops.COOPSXarraySource
+    metadata:
+      deployments:
+      - deployed: '2009-05-29 02:56:00.0'
+        id: KOD0904
+        instrument_desc: Workhorse ADCP
+        instrument_id: 16263
+        lat: 57.80578
+        lng: -152.33434
+        real_time_bin: null
+        retrieved: '2009-07-11 00:08:00.0'
+      depth: 47.3
+      depths:
+      - 30.11
+      - 28.1
+      - 26.12
+      - 24.11
+      - 22.1
+      - 20.12
+      - 18.11
+      - 16.12
+      - 14.11
+      - 12.1
+      - 10.12
+      - 8.11
+      - 6.1
+      - 4.11
+      featuretype: timeSeriesProfile
+      first_good_data: '2009-05-29 03:00:00.0'
+      flood_direction_degrees: 60.0
+      height_from_bottom: 11.52
+      key_variables:
+      - east
+      - north
+      - along
+      - across
+      - speed
+      last_good_data: '2009-07-10 23:54:00.0'
+      lat: 57.80578
+      lon: -152.33434
+      maptype: point
+      maxLatitude: 57.80578
+      maxLongitude: -152.33434
+      maxTime: '2009-07-10 23:54:00.0'
+      measured_depth: 45.82
+      minLatitude: 57.80578
+      minLongitude: -152.33434
+      minTime: '2009-05-29 03:00:00.0'
+      name: Woody Island, N of
+      observe_dst: true
+      orientation: up
+      ping_int: null
+      plots:
+        ualong:
+          clabel: ualong_subtidal
+          clim: null
+          cmap: cmo.delta
+          dynamic: true
+          flip_yaxis: true
+          geo: false
+          height: 300
+          hover: true
+          kind: quadmesh
+          rasterize: true
+          shared_axes: false
+          symmetric: true
+          tiles: false
+          title: 'lon: -152.33434, lat: 57.80578, start date: 2009-05-29'
+          width: 600
+          x: t
+          xlabel: t
+          y: depth
+          ylabel: depth
+          z: ualong_subtidal
+        vacross:
+          clabel: vacross_subtidal
+          clim: null
+          cmap: cmo.delta
+          dynamic: true
+          flip_yaxis: true
+          geo: false
+          height: 300
+          hover: true
+          kind: quadmesh
+          rasterize: true
+          shared_axes: false
+          symmetric: true
+          tiles: false
+          title: 'lon: -152.33434, lat: 57.80578, start date: 2009-05-29'
+          width: 600
+          x: t
+          xlabel: t
+          y: depth
+          ylabel: depth
+          z: vacross_subtidal
+      project: Kodiak Island 2009 Current Survey
+      project_type: Survey
+      sample_interval: 360
+      self: https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/KOD0904/deployments.json
+      sensor_depth: null
+      timezone_offset: '-9'
+      units: metric
+      urlpath: https://tidesandcurrents.noaa.gov/stationhome.html?id=KOD0904
+    name: KOD0904
+    parameters: {}
+  KOD0905:
+    args:
+      process_adcp: true
+      stationid: KOD0905
+    description: ''
+    direct_access: allow
+    driver: intake_coops.coops.COOPSXarraySource
+    metadata:
+      deployments:
+      - deployed: '2009-05-29 17:22:00.0'
+        id: KOD0905
+        instrument_desc: Workhorse ADCP
+        instrument_id: 16254
+        lat: 57.78043
+        lng: -152.36638
+        real_time_bin: null
+        retrieved: '2009-07-10 23:32:00.0'
+      depth: 31.2
+      depths:
+      - 25.97
+      - 24.99
+      - 23.99
+      - 22.98
+      - 21.98
+      - 20.97
+      - 20.0
+      - 18.99
+      - 17.98
+      - 16.98
+      - 15.97
+      - 14.97
+      - 13.99
+      - 12.98
+      - 11.98
+      - 10.97
+      - 9.97
+      - 8.99
+      - 7.99
+      - 6.98
+      - 5.97
+      - 4.97
+      - 3.99
+      - 2.99
+      featuretype: timeSeriesProfile
+      first_good_data: '2009-05-29 17:30:00.0'
+      flood_direction_degrees: 20.0
+      height_from_bottom: 4.5
+      key_variables:
+      - east
+      - north
+      - along
+      - across
+      - speed
+      last_good_data: '2009-07-10 23:24:00.0'
+      lat: 57.78043
+      lon: -152.36638
+      maptype: point
+      maxLatitude: 57.78043
+      maxLongitude: -152.36638
+      maxTime: '2009-07-10 23:24:00.0'
+      measured_depth: 32.58
+      minLatitude: 57.78043
+      minLongitude: -152.36638
+      minTime: '2009-05-29 17:30:00.0'
+      name: Woody Channel
+      observe_dst: true
+      orientation: up
+      ping_int: null
+      plots:
+        ualong:
+          clabel: ualong_subtidal
+          clim: null
+          cmap: cmo.delta
+          dynamic: true
+          flip_yaxis: true
+          geo: false
+          height: 300
+          hover: true
+          kind: quadmesh
+          rasterize: true
+          shared_axes: false
+          symmetric: true
+          tiles: false
+          title: 'lon: -152.36638, lat: 57.78043, start date: 2009-05-29'
+          width: 600
+          x: t
+          xlabel: t
+          y: depth
+          ylabel: depth
+          z: ualong_subtidal
+        vacross:
+          clabel: vacross_subtidal
+          clim: null
+          cmap: cmo.delta
+          dynamic: true
+          flip_yaxis: true
+          geo: false
+          height: 300
+          hover: true
+          kind: quadmesh
+          rasterize: true
+          shared_axes: false
+          symmetric: true
+          tiles: false
+          title: 'lon: -152.36638, lat: 57.78043, start date: 2009-05-29'
+          width: 600
+          x: t
+          xlabel: t
+          y: depth
+          ylabel: depth
+          z: vacross_subtidal
+      project: Kodiak Island 2009 Current Survey
+      project_type: Survey
+      sample_interval: 360
+      self: https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/KOD0905/deployments.json
+      sensor_depth: null
+      timezone_offset: '-9'
+      units: metric
+      urlpath: https://tidesandcurrents.noaa.gov/stationhome.html?id=KOD0905
+    name: KOD0905
+    parameters: {}
+  KOD0906:
+    args:
+      process_adcp: true
+      stationid: KOD0906
+    description: ''
+    direct_access: allow
+    driver: intake_coops.coops.COOPSXarraySource
+    metadata:
+      deployments:
+      - deployed: '2009-05-29 20:18:00.0'
+        id: KOD0906
+        instrument_desc: Workhorse ADCP
+        instrument_id: 16265
+        lat: 57.60784
+        lng: -152.08979
+        real_time_bin: null
+        retrieved: '2009-07-11 19:32:00.0'
+      depth: 77.7
+      depths:
+      - 68.06
+      - 66.05
+      - 64.04
+      - 62.06
+      - 60.05
+      - 58.07
+      - 56.05
+      - 54.04
+      - 52.06
+      - 50.05
+      - 48.04
+      - 46.06
+      - 44.04
+      - 42.06
+      - 40.05
+      - 38.04
+      - 36.06
+      - 34.05
+      - 32.07
+      - 30.05
+      - 28.04
+      - 26.06
+      - 24.05
+      - 22.04
+      - 20.06
+      - 18.04
+      - 16.06
+      - 14.05
+      - 12.04
+      - 10.06
+      - 8.05
+      featuretype: timeSeriesProfile
+      first_good_data: '2009-05-29 20:24:00.0'
+      flood_direction_degrees: 20.0
+      height_from_bottom: 5.5
+      key_variables:
+      - east
+      - north
+      - along
+      - across
+      - speed
+      last_good_data: '2009-07-11 19:17:00.0'
+      lat: 57.60784
+      lon: -152.08979
+      maptype: point
+      maxLatitude: 57.60784
+      maxLongitude: -152.08979
+      maxTime: '2009-07-11 19:17:00.0'
+      measured_depth: 77.74
+      minLatitude: 57.60784
+      minLongitude: -152.08979
+      minTime: '2009-05-29 20:24:00.0'
+      name: Cape Chiniak
+      observe_dst: true
+      orientation: up
+      ping_int: null
+      plots:
+        ualong:
+          clabel: ualong_subtidal
+          clim: null
+          cmap: cmo.delta
+          dynamic: true
+          flip_yaxis: true
+          geo: false
+          height: 300
+          hover: true
+          kind: quadmesh
+          rasterize: true
+          shared_axes: false
+          symmetric: true
+          tiles: false
+          title: 'lon: -152.08979, lat: 57.60784, start date: 2009-05-29'
+          width: 600
+          x: t
+          xlabel: t
+          y: depth
+          ylabel: depth
+          z: ualong_subtidal
+        vacross:
+          clabel: vacross_subtidal
+          clim: null
+          cmap: cmo.delta
+          dynamic: true
+          flip_yaxis: true
+          geo: false
+          height: 300
+          hover: true
+          kind: quadmesh
+          rasterize: true
+          shared_axes: false
+          symmetric: true
+          tiles: false
+          title: 'lon: -152.08979, lat: 57.60784, start date: 2009-05-29'
+          width: 600
+          x: t
+          xlabel: t
+          y: depth
+          ylabel: depth
+          z: vacross_subtidal
+      project: Kodiak Island 2009 Current Survey
+      project_type: Survey
+      sample_interval: 360
+      self: https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/KOD0906/deployments.json
+      sensor_depth: null
+      timezone_offset: '-9'
+      units: metric
+      urlpath: https://tidesandcurrents.noaa.gov/stationhome.html?id=KOD0906
+    name: KOD0906
+    parameters: {}
+  KOD0907:
+    args:
+      process_adcp: true
+      stationid: KOD0907
+    description: ''
+    direct_access: allow
+    driver: intake_coops.coops.COOPSXarraySource
+    metadata:
+      deployments:
+      - deployed: '2009-05-30 00:08:00.0'
+        id: KOD0907
+        instrument_desc: Workhorse ADCP
+        instrument_id: 16183
+        lat: 57.3995
+        lng: -152.53466
+        real_time_bin: null
+        retrieved: '2009-07-12 01:17:00.0'
+      depth: 73.9
+      depths:
+      - 62.24
+      - 60.23
+      - 58.22
+      - 56.24
+      - 54.22
+      - 52.24
+      - 50.23
+      - 48.22
+      - 46.24
+      - 44.23
+      - 42.22
+      - 40.23
+      - 38.22
+      - 36.24
+      - 34.23
+      - 32.22
+      - 30.24
+      - 28.22
+      - 26.24
+      - 24.23
+      - 22.22
+      - 20.24
+      - 18.23
+      - 16.22
+      - 14.23
+      - 12.22
+      - 10.24
+      - 8.23
+      featuretype: timeSeriesProfile
+      first_good_data: '2009-05-30 00:18:00.0'
+      flood_direction_degrees: 220.0
+      height_from_bottom: 5.5
+      key_variables:
+      - east
+      - north
+      - along
+      - across
+      - speed
+      last_good_data: '2009-07-12 01:06:00.0'
+      lat: 57.3995
+      lon: -152.53466
+      maptype: point
+      maxLatitude: 57.3995
+      maxLongitude: -152.53466
+      maxTime: '2009-07-12 01:06:00.0'
+      measured_depth: 71.92
+      minLatitude: 57.3995
+      minLongitude: -152.53466
+      minTime: '2009-05-30 00:18:00.0'
+      name: Ugak Bay Entrance
+      observe_dst: true
+      orientation: up
+      ping_int: null
+      plots:
+        ualong:
+          clabel: ualong_subtidal
+          clim: null
+          cmap: cmo.delta
+          dynamic: true
+          flip_yaxis: true
+          geo: false
+          height: 300
+          hover: true
+          kind: quadmesh
+          rasterize: true
+          shared_axes: false
+          symmetric: true
+          tiles: false
+          title: 'lon: -152.53466, lat: 57.3995, start date: 2009-05-30'
+          width: 600
+          x: t
+          xlabel: t
+          y: depth
+          ylabel: depth
+          z: ualong_subtidal
+        vacross:
+          clabel: vacross_subtidal
+          clim: null
+          cmap: cmo.delta
+          dynamic: true
+          flip_yaxis: true
+          geo: false
+          height: 300
+          hover: true
+          kind: quadmesh
+          rasterize: true
+          shared_axes: false
+          symmetric: true
+          tiles: false
+          title: 'lon: -152.53466, lat: 57.3995, start date: 2009-05-30'
+          width: 600
+          x: t
+          xlabel: t
+          y: depth
+          ylabel: depth
+          z: vacross_subtidal
+      project: Kodiak Island 2009 Current Survey
+      project_type: Survey
+      sample_interval: 360
+      self: https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/KOD0907/deployments.json
+      sensor_depth: null
+      timezone_offset: '-9'
+      units: metric
+      urlpath: https://tidesandcurrents.noaa.gov/stationhome.html?id=KOD0907
+    name: KOD0907
+    parameters: {}
+  KOD0910:
+    args:
+      process_adcp: true
+      stationid: KOD0910
+    description: ''
+    direct_access: allow
+    driver: intake_coops.coops.COOPSXarraySource
+    metadata:
+      deployments:
+      - deployed: '2009-05-30 18:52:00.0'
+        id: KOD0910
+        instrument_desc: Workhorse ADCP
+        instrument_id: 16266
+        lat: 57.23088
+        lng: -152.88443
+        real_time_bin: null
+        retrieved: '2009-07-12 19:25:00.0'
+      depth: 119.0
+      depths:
+      - 80.65
+      - 76.63
+      - 72.63
+      - 68.64
+      - 64.65
+      - 60.66
+      - 56.63
+      - 52.64
+      - 48.65
+      - 44.65
+      - 40.63
+      - 36.64
+      - 32.64
+      - 28.65
+      - 24.63
+      - 20.64
+      - 16.64
+      - 12.65
+      - 8.63
+      featuretype: timeSeriesProfile
+      first_good_data: '2009-05-30 19:00:00.0'
+      flood_direction_degrees: 260.0
+      height_from_bottom: 29.44
+      key_variables:
+      - east
+      - north
+      - along
+      - across
+      - speed
+      last_good_data: '2009-07-12 19:12:00.0'
+      lat: 57.23088
+      lon: -152.88443
+      maptype: point
+      maxLatitude: 57.23088
+      maxLongitude: -152.88443
+      maxTime: '2009-07-12 19:12:00.0'
+      measured_depth: 116.24
+      minLatitude: 57.23088
+      minLongitude: -152.88443
+      minTime: '2009-05-30 19:00:00.0'
+      name: Left Cape, E of
+      observe_dst: true
+      orientation: up
+      ping_int: null
+      plots:
+        ualong:
+          clabel: ualong_subtidal
+          clim: null
+          cmap: cmo.delta
+          dynamic: true
+          flip_yaxis: true
+          geo: false
+          height: 300
+          hover: true
+          kind: quadmesh
+          rasterize: true
+          shared_axes: false
+          symmetric: true
+          tiles: false
+          title: 'lon: -152.88443, lat: 57.23088, start date: 2009-05-30'
+          width: 600
+          x: t
+          xlabel: t
+          y: depth
+          ylabel: depth
+          z: ualong_subtidal
+        vacross:
+          clabel: vacross_subtidal
+          clim: null
+          cmap: cmo.delta
+          dynamic: true
+          flip_yaxis: true
+          geo: false
+          height: 300
+          hover: true
+          kind: quadmesh
+          rasterize: true
+          shared_axes: false
+          symmetric: true
+          tiles: false
+          title: 'lon: -152.88443, lat: 57.23088, start date: 2009-05-30'
+          width: 600
+          x: t
+          xlabel: t
+          y: depth
+          ylabel: depth
+          z: vacross_subtidal
+      project: Kodiak Island 2009 Current Survey
+      project_type: Survey
+      sample_interval: 360
+      self: https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/KOD0910/deployments.json
+      sensor_depth: null
+      timezone_offset: '-9'
+      units: metric
+      urlpath: https://tidesandcurrents.noaa.gov/stationhome.html?id=KOD0910
+    name: KOD0910
+    parameters: {}
+  KOD0911:
+    args:
+      process_adcp: true
+      stationid: KOD0911
+    description: ''
+    direct_access: allow
+    driver: intake_coops.coops.COOPSXarraySource
+    metadata:
+      deployments:
+      - deployed: '2009-05-30 17:30:00.0'
+        id: KOD0911
+        instrument_desc: Workhorse ADCP
+        instrument_id: 16221
+        lat: 57.1978
+        lng: -153.10517
+        real_time_bin: null
+        retrieved: '2009-07-12 17:57:00.0'
+      depth: 123.0
+      depths:
+      - 84.22
+      - 80.22
+      - 76.23
+      - 72.21
+      - 68.22
+      - 64.22
+      - 60.23
+      - 56.21
+      - 52.21
+      - 48.22
+      - 44.23
+      - 40.23
+      - 36.21
+      - 32.22
+      - 28.22
+      - 24.23
+      - 20.21
+      - 16.22
+      - 12.22
+      - 8.23
+      featuretype: timeSeriesProfile
+      first_good_data: '2009-05-30 17:36:00.0'
+      flood_direction_degrees: 250.0
+      height_from_bottom: 29.44
+      key_variables:
+      - east
+      - north
+      - along
+      - across
+      - speed
+      last_good_data: '2009-07-12 17:41:00.0'
+      lat: 57.1978
+      lon: -153.10517
+      maptype: point
+      maxLatitude: 57.1978
+      maxLongitude: -153.10517
+      maxTime: '2009-07-12 17:41:00.0'
+      measured_depth: 119.83
+      minLatitude: 57.1978
+      minLongitude: -153.10517
+      minTime: '2009-05-30 17:36:00.0'
+      name: Cathedral Island, E of
+      observe_dst: true
+      orientation: up
+      ping_int: null
+      plots:
+        ualong:
+          clabel: ualong_subtidal
+          clim: null
+          cmap: cmo.delta
+          dynamic: true
+          flip_yaxis: true
+          geo: false
+          height: 300
+          hover: true
+          kind: quadmesh
+          rasterize: true
+          shared_axes: false
+          symmetric: true
+          tiles: false
+          title: 'lon: -153.10517, lat: 57.1978, start date: 2009-05-30'
+          width: 600
+          x: t
+          xlabel: t
+          y: depth
+          ylabel: depth
+          z: ualong_subtidal
+        vacross:
+          clabel: vacross_subtidal
+          clim: null
+          cmap: cmo.delta
+          dynamic: true
+          flip_yaxis: true
+          geo: false
+          height: 300
+          hover: true
+          kind: quadmesh
+          rasterize: true
+          shared_axes: false
+          symmetric: true
+          tiles: false
+          title: 'lon: -153.10517, lat: 57.1978, start date: 2009-05-30'
+          width: 600
+          x: t
+          xlabel: t
+          y: depth
+          ylabel: depth
+          z: vacross_subtidal
+      project: Kodiak Island 2009 Current Survey
+      project_type: Survey
+      sample_interval: 360
+      self: https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/KOD0911/deployments.json
+      sensor_depth: null
+      timezone_offset: '-9'
+      units: metric
+      urlpath: https://tidesandcurrents.noaa.gov/stationhome.html?id=KOD0911
+    name: KOD0911
+    parameters: {}
+  KOD0912:
+    args:
+      process_adcp: true
+      stationid: KOD0912
+    description: ''
+    direct_access: allow
+    driver: intake_coops.coops.COOPSXarraySource
+    metadata:
+      deployments:
+      - deployed: '2009-05-31 01:18:00.0'
+        id: KOD0912
+        instrument_desc: Workhorse ADCP
+        instrument_id: 16182
+        lat: 57.17866
+        lng: -153.32511
+        real_time_bin: null
+        retrieved: '2009-07-13 02:23:00.0'
+      depth: 74.2
+      depths:
+      - 55.66
+      - 53.65
+      - 51.66
+      - 49.65
+      - 47.64
+      - 45.66
+      - 43.65
+      - 41.64
+      - 39.65
+      - 37.64
+      - 35.66
+      - 33.65
+      - 31.64
+      - 29.66
+      - 27.65
+      - 25.66
+      - 23.65
+      - 21.64
+      - 19.66
+      - 17.65
+      - 15.64
+      - 13.66
+      - 11.64
+      - 9.66
+      - 7.65
+      featuretype: timeSeriesProfile
+      first_good_data: '2009-05-31 01:30:00.0'
+      flood_direction_degrees: 330.0
+      height_from_bottom: 11.52
+      key_variables:
+      - east
+      - north
+      - along
+      - across
+      - speed
+      last_good_data: '2009-07-13 02:05:00.0'
+      lat: 57.17866
+      lon: -153.32511
+      maptype: point
+      maxLatitude: 57.17866
+      maxLongitude: -153.32511
+      maxTime: '2009-07-13 02:05:00.0'
+      measured_depth: 71.36
+      minLatitude: 57.17866
+      minLongitude: -153.32511
+      minTime: '2009-05-31 01:30:00.0'
+      name: Old Harbor
+      observe_dst: true
+      orientation: up
+      ping_int: null
+      plots:
+        ualong:
+          clabel: ualong_subtidal
+          clim: null
+          cmap: cmo.delta
+          dynamic: true
+          flip_yaxis: true
+          geo: false
+          height: 300
+          hover: true
+          kind: quadmesh
+          rasterize: true
+          shared_axes: false
+          symmetric: true
+          tiles: false
+          title: 'lon: -153.32511, lat: 57.17866, start date: 2009-05-31'
+          width: 600
+          x: t
+          xlabel: t
+          y: depth
+          ylabel: depth
+          z: ualong_subtidal
+        vacross:
+          clabel: vacross_subtidal
+          clim: null
+          cmap: cmo.delta
+          dynamic: true
+          flip_yaxis: true
+          geo: false
+          height: 300
+          hover: true
+          kind: quadmesh
+          rasterize: true
+          shared_axes: false
+          symmetric: true
+          tiles: false
+          title: 'lon: -153.32511, lat: 57.17866, start date: 2009-05-31'
+          width: 600
+          x: t
+          xlabel: t
+          y: depth
+          ylabel: depth
+          z: vacross_subtidal
+      project: Kodiak Island 2009 Current Survey
+      project_type: Survey
+      sample_interval: 360
+      self: https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/KOD0912/deployments.json
+      sensor_depth: null
+      timezone_offset: '-9'
+      units: metric
+      urlpath: https://tidesandcurrents.noaa.gov/stationhome.html?id=KOD0912
+    name: KOD0912
+    parameters: {}
+  KOD0913:
+    args:
+      process_adcp: true
+      stationid: KOD0913
+    description: ''
+    direct_access: allow
+    driver: intake_coops.coops.COOPSXarraySource
+    metadata:
+      deployments:
+      - deployed: '2009-05-31 00:01:00.0'
+        id: KOD0913
+        instrument_desc: Workhorse ADCP
+        instrument_id: 16226
+        lat: 57.07323
+        lng: -153.45106
+        real_time_bin: null
+        retrieved: '2009-07-13 00:50:00.0'
+      depth: 120.0
+      depths:
+      - 79.22
+      - 75.23
+      - 71.2
+      - 67.21
+      - 63.22
+      - 59.22
+      - 55.2
+      - 51.21
+      - 47.21
+      - 43.22
+      - 39.2
+      - 35.2
+      - 31.21
+      - 27.22
+      - 23.2
+      - 19.2
+      - 15.21
+      - 11.22
+      - 7.22
+      featuretype: timeSeriesProfile
+      first_good_data: '2009-05-31 00:06:00.0'
+      flood_direction_degrees: 30.0
+      height_from_bottom: 29.44
+      key_variables:
+      - east
+      - north
+      - along
+      - across
+      - speed
+      last_good_data: '2009-07-13 00:36:00.0'
+      lat: 57.07323
+      lon: -153.45106
+      maptype: point
+      maxLatitude: 57.07323
+      maxLongitude: -153.45106
+      maxTime: '2009-07-13 00:36:00.0'
+      measured_depth: 114.81
+      minLatitude: 57.07323
+      minLongitude: -153.45106
+      minTime: '2009-05-31 00:06:00.0'
+      name: Natalia Peninsula, W of
+      observe_dst: true
+      orientation: up
+      ping_int: null
+      plots:
+        ualong:
+          clabel: ualong_subtidal
+          clim: null
+          cmap: cmo.delta
+          dynamic: true
+          flip_yaxis: true
+          geo: false
+          height: 300
+          hover: true
+          kind: quadmesh
+          rasterize: true
+          shared_axes: false
+          symmetric: true
+          tiles: false
+          title: 'lon: -153.45106, lat: 57.07323, start date: 2009-05-31'
+          width: 600
+          x: t
+          xlabel: t
+          y: depth
+          ylabel: depth
+          z: ualong_subtidal
+        vacross:
+          clabel: vacross_subtidal
+          clim: null
+          cmap: cmo.delta
+          dynamic: true
+          flip_yaxis: true
+          geo: false
+          height: 300
+          hover: true
+          kind: quadmesh
+          rasterize: true
+          shared_axes: false
+          symmetric: true
+          tiles: false
+          title: 'lon: -153.45106, lat: 57.07323, start date: 2009-05-31'
+          width: 600
+          x: t
+          xlabel: t
+          y: depth
+          ylabel: depth
+          z: vacross_subtidal
+      project: Kodiak Island 2009 Current Survey
+      project_type: Survey
+      sample_interval: 360
+      self: https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/KOD0913/deployments.json
+      sensor_depth: null
+      timezone_offset: '-9'
+      units: metric
+      urlpath: https://tidesandcurrents.noaa.gov/stationhome.html?id=KOD0913
+    name: KOD0913
+    parameters: {}
+  KOD0921:
+    args:
+      process_adcp: true
+      stationid: KOD0921
+    description: ''
+    direct_access: allow
+    driver: intake_coops.coops.COOPSXarraySource
+    metadata:
+      deployments:
+      - deployed: '2009-06-02 02:41:00.0'
+        id: KOD0921
+        instrument_desc: Workhorse ADCP
+        instrument_id: 16181
+        lat: 57.28605
+        lng: -154.82843
+        real_time_bin: null
+        retrieved: '2009-07-15 01:36:00.0'
+      depth: 71.9
+      depths:
+      - 60.11
+      - 58.1
+      - 56.11
+      - 54.1
+      - 52.09
+      - 50.11
+      - 48.1
+      - 46.09
+      - 44.11
+      - 42.09
+      - 40.11
+      - 38.1
+      - 36.09
+      - 34.11
+      - 32.1
+      - 30.11
+      - 28.1
+      - 26.09
+      - 24.11
+      - 22.1
+      - 20.09
+      - 18.11
+      - 16.09
+      - 14.11
+      - 12.1
+      - 10.09
+      - 8.11
+      featuretype: timeSeriesProfile
+      first_good_data: '2009-06-02 02:48:00.0'
+      flood_direction_degrees: 350.0
+      height_from_bottom: 5.5
+      key_variables:
+      - east
+      - north
+      - along
+      - across
+      - speed
+      last_good_data: '2009-07-15 01:24:00.0'
+      lat: 57.28605
+      lon: -154.82843
+      maptype: point
+      maxLatitude: 57.28605
+      maxLongitude: -154.82843
+      maxTime: '2009-07-15 01:24:00.0'
+      measured_depth: 69.79
+      minLatitude: 57.28605
+      minLongitude: -154.82843
+      minTime: '2009-06-02 02:48:00.0'
+      name: Cape Ikolik
+      observe_dst: true
+      orientation: up
+      ping_int: null
+      plots:
+        ualong:
+          clabel: ualong_subtidal
+          clim: null
+          cmap: cmo.delta
+          dynamic: true
+          flip_yaxis: true
+          geo: false
+          height: 300
+          hover: true
+          kind: quadmesh
+          rasterize: true
+          shared_axes: false
+          symmetric: true
+          tiles: false
+          title: 'lon: -154.82843, lat: 57.28605, start date: 2009-06-02'
+          width: 600
+          x: t
+          xlabel: t
+          y: depth
+          ylabel: depth
+          z: ualong_subtidal
+        vacross:
+          clabel: vacross_subtidal
+          clim: null
+          cmap: cmo.delta
+          dynamic: true
+          flip_yaxis: true
+          geo: false
+          height: 300
+          hover: true
+          kind: quadmesh
+          rasterize: true
+          shared_axes: false
+          symmetric: true
+          tiles: false
+          title: 'lon: -154.82843, lat: 57.28605, start date: 2009-06-02'
+          width: 600
+          x: t
+          xlabel: t
+          y: depth
+          ylabel: depth
+          z: vacross_subtidal
+      project: Kodiak Island 2009 Current Survey
+      project_type: Survey
+      sample_interval: 360
+      self: https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/KOD0921/deployments.json
+      sensor_depth: null
+      timezone_offset: '-9'
+      units: metric
+      urlpath: https://tidesandcurrents.noaa.gov/stationhome.html?id=KOD0921
+    name: KOD0921
+    parameters: {}
+  KOD0922:
+    args:
+      process_adcp: true
+      stationid: KOD0922
+    description: ''
+    direct_access: allow
+    driver: intake_coops.coops.COOPSXarraySource
+    metadata:
+      deployments:
+      - deployed: '2009-06-02 17:27:00.0'
+        id: KOD0922
+        instrument_desc: Workhorse ADCP
+        instrument_id: 16228
+        lat: 57.41718
+        lng: -154.76648
+        real_time_bin: null
+        retrieved: '2009-07-15 03:05:00.0'
+      depth: 62.6
+      depths:
+      - 49.84
+      - 47.82
+      - 45.84
+      - 43.83
+      - 41.82
+      - 39.84
+      - 37.83
+      - 35.84
+      - 33.83
+      - 31.82
+      - 29.84
+      - 27.83
+      - 25.82
+      - 23.84
+      - 21.82
+      - 19.84
+      - 17.83
+      - 15.82
+      - 13.84
+      - 11.83
+      - 9.85
+      - 7.83
+      featuretype: timeSeriesProfile
+      first_good_data: '2009-06-02 17:36:00.0'
+      flood_direction_degrees: 10.0
+      height_from_bottom: 5.5
+      key_variables:
+      - east
+      - north
+      - along
+      - across
+      - speed
+      last_good_data: '2009-07-15 02:54:00.0'
+      lat: 57.41718
+      lon: -154.76648
+      maptype: point
+      maxLatitude: 57.41718
+      maxLongitude: -154.76648
+      maxTime: '2009-07-15 02:54:00.0'
+      measured_depth: 59.52
+      minLatitude: 57.41718
+      minLongitude: -154.76648
+      minTime: '2009-06-02 17:36:00.0'
+      name: Cape Grant
+      observe_dst: true
+      orientation: up
+      ping_int: null
+      plots:
+        ualong:
+          clabel: ualong_subtidal
+          clim: null
+          cmap: cmo.delta
+          dynamic: true
+          flip_yaxis: true
+          geo: false
+          height: 300
+          hover: true
+          kind: quadmesh
+          rasterize: true
+          shared_axes: false
+          symmetric: true
+          tiles: false
+          title: 'lon: -154.76648, lat: 57.41718, start date: 2009-06-02'
+          width: 600
+          x: t
+          xlabel: t
+          y: depth
+          ylabel: depth
+          z: ualong_subtidal
+        vacross:
+          clabel: vacross_subtidal
+          clim: null
+          cmap: cmo.delta
+          dynamic: true
+          flip_yaxis: true
+          geo: false
+          height: 300
+          hover: true
+          kind: quadmesh
+          rasterize: true
+          shared_axes: false
+          symmetric: true
+          tiles: false
+          title: 'lon: -154.76648, lat: 57.41718, start date: 2009-06-02'
+          width: 600
+          x: t
+          xlabel: t
+          y: depth
+          ylabel: depth
+          z: vacross_subtidal
+      project: Kodiak Island 2009 Current Survey
+      project_type: Survey
+      sample_interval: 360
+      self: https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/KOD0922/deployments.json
+      sensor_depth: null
+      timezone_offset: '-9'
+      units: metric
+      urlpath: https://tidesandcurrents.noaa.gov/stationhome.html?id=KOD0922
+    name: KOD0922
+    parameters: {}
+  KOD0923:
+    args:
+      process_adcp: true
+      stationid: KOD0923
+    description: ''
+    direct_access: allow
+    driver: intake_coops.coops.COOPSXarraySource
+    metadata:
+      deployments:
+      - deployed: '2009-06-03 01:15:00.0'
+        id: KOD0923
+        instrument_desc: Workhorse ADCP
+        instrument_id: 16250
+        lat: 57.63732
+        lng: -153.99539
+        real_time_bin: null
+        retrieved: '2009-07-15 21:55:00.0'
+      depth: 25.0
+      depths:
+      - 17.19
+      - 16.19
+      - 15.18
+      - 14.2
+      - 13.2
+      - 12.19
+      - 11.19
+      - 10.18
+      - 9.21
+      - 8.2
+      - 7.19
+      - 6.19
+      - 5.18
+      - 4.18
+      - 3.2
+      - 2.19
+      featuretype: timeSeriesProfile
+      first_good_data: '2009-06-03 01:18:00.0'
+      flood_direction_degrees: 315.0
+      height_from_bottom: 4.42
+      key_variables:
+      - east
+      - north
+      - along
+      - across
+      - speed
+      last_good_data: '2009-07-15 21:36:00.0'
+      lat: 57.63732
+      lon: -153.99539
+      maptype: point
+      maxLatitude: 57.63732
+      maxLongitude: -153.99539
+      maxTime: '2009-07-15 21:36:00.0'
+      measured_depth: 23.71
+      minLatitude: 57.63732
+      minLongitude: -153.99539
+      minTime: '2009-06-03 01:18:00.0'
+      name: Uyak Anchorage
+      observe_dst: true
+      orientation: up
+      ping_int: null
+      plots:
+        ualong:
+          clabel: ualong_subtidal
+          clim: null
+          cmap: cmo.delta
+          dynamic: true
+          flip_yaxis: true
+          geo: false
+          height: 300
+          hover: true
+          kind: quadmesh
+          rasterize: true
+          shared_axes: false
+          symmetric: true
+          tiles: false
+          title: 'lon: -153.99539, lat: 57.63732, start date: 2009-06-03'
+          width: 600
+          x: t
+          xlabel: t
+          y: depth
+          ylabel: depth
+          z: ualong_subtidal
+        vacross:
+          clabel: vacross_subtidal
+          clim: null
+          cmap: cmo.delta
+          dynamic: true
+          flip_yaxis: true
+          geo: false
+          height: 300
+          hover: true
+          kind: quadmesh
+          rasterize: true
+          shared_axes: false
+          symmetric: true
+          tiles: false
+          title: 'lon: -153.99539, lat: 57.63732, start date: 2009-06-03'
+          width: 600
+          x: t
+          xlabel: t
+          y: depth
+          ylabel: depth
+          z: vacross_subtidal
+      project: Kodiak Island 2009 Current Survey
+      project_type: Survey
+      sample_interval: 360
+      self: https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/KOD0923/deployments.json
+      sensor_depth: null
+      timezone_offset: '-9'
+      units: metric
+      urlpath: https://tidesandcurrents.noaa.gov/stationhome.html?id=KOD0923
+    name: KOD0923
+    parameters: {}
+  KOD0924:
+    args:
+      process_adcp: true
+      stationid: KOD0924
+    description: ''
+    direct_access: allow
+    driver: intake_coops.coops.COOPSXarraySource
+    metadata:
+      deployments:
+      - deployed: '2009-06-03 02:36:00.0'
+        id: KOD0924
+        instrument_desc: Workhorse ADCP
+        instrument_id: 16260
+        lat: 57.54221
+        lng: -153.98831
+        real_time_bin: null
+        retrieved: '2009-07-15 23:11:00.0'
+      depth: 16.8
+      depths:
+      - 10.12
+      - 9.11
+      - 8.11
+      - 7.1
+      - 6.1
+      - 5.12
+      - 4.11
+      - 3.11
+      - 2.1
+      featuretype: timeSeriesProfile
+      first_good_data: '2009-06-03 02:42:00.0'
+      flood_direction_degrees: 290.0
+      height_from_bottom: 2.95
+      key_variables:
+      - east
+      - north
+      - along
+      - across
+      - speed
+      last_good_data: '2009-07-15 23:00:00.0'
+      lat: 57.54221
+      lon: -153.98831
+      maptype: point
+      maxLatitude: 57.54221
+      maxLongitude: -153.98831
+      maxTime: '2009-07-15 23:00:00.0'
+      measured_depth: 15.16
+      minLatitude: 57.54221
+      minLongitude: -153.98831
+      minTime: '2009-06-03 02:42:00.0'
+      name: Larsen Bay
+      observe_dst: true
+      orientation: up
+      ping_int: null
+      plots:
+        ualong:
+          clabel: ualong_subtidal
+          clim: null
+          cmap: cmo.delta
+          dynamic: true
+          flip_yaxis: true
+          geo: false
+          height: 300
+          hover: true
+          kind: quadmesh
+          rasterize: true
+          shared_axes: false
+          symmetric: true
+          tiles: false
+          title: 'lon: -153.98831, lat: 57.54221, start date: 2009-06-03'
+          width: 600
+          x: t
+          xlabel: t
+          y: depth
+          ylabel: depth
+          z: ualong_subtidal
+        vacross:
+          clabel: vacross_subtidal
+          clim: null
+          cmap: cmo.delta
+          dynamic: true
+          flip_yaxis: true
+          geo: false
+          height: 300
+          hover: true
+          kind: quadmesh
+          rasterize: true
+          shared_axes: false
+          symmetric: true
+          tiles: false
+          title: 'lon: -153.98831, lat: 57.54221, start date: 2009-06-03'
+          width: 600
+          x: t
+          xlabel: t
+          y: depth
+          ylabel: depth
+          z: vacross_subtidal
+      project: Kodiak Island 2009 Current Survey
+      project_type: Survey
+      sample_interval: 360
+      self: https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/KOD0924/deployments.json
+      sensor_depth: null
+      timezone_offset: '-9'
+      units: metric
+      urlpath: https://tidesandcurrents.noaa.gov/stationhome.html?id=KOD0924
+    name: KOD0924
+    parameters: {}
+  KOD0925:
+    args:
+      process_adcp: true
+      stationid: KOD0925
+    description: ''
+    direct_access: allow
+    driver: intake_coops.coops.COOPSXarraySource
+    metadata:
+      deployments:
+      - deployed: '2009-06-02 23:27:00.0'
+        id: KOD0925
+        instrument_desc: Workhorse ADCP
+        instrument_id: 16169
+        lat: 57.79352
+        lng: -154.03236
+        real_time_bin: null
+        retrieved: '2009-07-16 22:06:00.0'
+      depth: 63.0
+      depths:
+      - 51.63
+      - 49.65
+      - 47.64
+      - 45.63
+      - 43.65
+      - 41.64
+      - 39.65
+      - 37.64
+      - 35.63
+      - 33.65
+      - 31.64
+      - 29.63
+      - 27.65
+      - 25.63
+      - 23.65
+      - 21.64
+      - 19.63
+      - 17.65
+      - 15.64
+      - 13.66
+      - 11.64
+      - 9.63
+      - 7.65
+      featuretype: timeSeriesProfile
+      first_good_data: '2009-06-02 23:36:00.0'
+      flood_direction_degrees: 45.0
+      height_from_bottom: 5.5
+      key_variables:
+      - east
+      - north
+      - along
+      - across
+      - speed
+      last_good_data: '2009-07-16 21:48:00.0'
+      lat: 57.79352
+      lon: -154.03236
+      maptype: point
+      maxLatitude: 57.79352
+      maxLongitude: -154.03236
+      maxTime: '2009-07-16 21:48:00.0'
+      measured_depth: 61.33
+      minLatitude: 57.79352
+      minLongitude: -154.03236
+      minTime: '2009-06-02 23:36:00.0'
+      name: Cape Kuliuk
+      observe_dst: true
+      orientation: up
+      ping_int: null
+      plots:
+        ualong:
+          clabel: ualong_subtidal
+          clim: null
+          cmap: cmo.delta
+          dynamic: true
+          flip_yaxis: true
+          geo: false
+          height: 300
+          hover: true
+          kind: quadmesh
+          rasterize: true
+          shared_axes: false
+          symmetric: true
+          tiles: false
+          title: 'lon: -154.03236, lat: 57.79352, start date: 2009-06-02'
+          width: 600
+          x: t
+          xlabel: t
+          y: depth
+          ylabel: depth
+          z: ualong_subtidal
+        vacross:
+          clabel: vacross_subtidal
+          clim: null
+          cmap: cmo.delta
+          dynamic: true
+          flip_yaxis: true
+          geo: false
+          height: 300
+          hover: true
+          kind: quadmesh
+          rasterize: true
+          shared_axes: false
+          symmetric: true
+          tiles: false
+          title: 'lon: -154.03236, lat: 57.79352, start date: 2009-06-02'
+          width: 600
+          x: t
+          xlabel: t
+          y: depth
+          ylabel: depth
+          z: vacross_subtidal
+      project: Kodiak Island 2009 Current Survey
+      project_type: Survey
+      sample_interval: 360
+      self: https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/KOD0925/deployments.json
+      sensor_depth: null
+      timezone_offset: '-9'
+      units: metric
+      urlpath: https://tidesandcurrents.noaa.gov/stationhome.html?id=KOD0925
+    name: KOD0925
+    parameters: {}

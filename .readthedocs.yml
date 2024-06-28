@@ -23,6 +23,7 @@ build:
 # uncomment to build from this exact version of package
 # the downside is the version listed in the docs will be a dev version
 # if uncommenting this, comment out installing pypi version of package in docs/env file
+# Actually this can be overwritten using the html_title variable in the conf.py file
 python:
   install:
     - method: pip
