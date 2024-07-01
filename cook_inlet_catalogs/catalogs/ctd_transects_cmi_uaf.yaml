@@ -10,47 +10,14 @@ aliases:
   Cruise-09: Cruise-09
   Cruise-10: Cruise-10
 data:
-  402d147a7e19766c:
+  9670f1665406a366:
     datatype: intake.readers.datatypes:CSV
     kwargs:
       storage_options: null
-      url: simplecache://::https://researchworkspace.com/files/39886038/all_forelands_ctd.txt
+      url: https://researchworkspace.com/files/39886038/all_forelands_ctd.txt
     metadata: {}
     user_parameters: {}
 entries:
-  1cf9e87117042d1a:
-    kwargs:
-      args:
-      - '{data(402d147a7e19766c)}'
-      dtype:
-        Day: str
-        Hour: str
-        Minute: str
-        Month: str
-        Year: str
-      sep: "\t"
-      storage_options:
-        simplecache:
-          cache_storage: /Users/kthyng/Library/Caches/cook-inlet-catalogs
-          same_names: true
-      usecols:
-      - Cruise
-      - Station
-      - Month
-      - Day
-      - Year
-      - Hour
-      - Minute
-      - Longitude
-      - Latitude
-      - Depth [m]
-      - Temperature
-      - Salinity
-      - flag
-    metadata: {}
-    output_instance: pandas:DataFrame
-    reader: intake.readers.readers:PandasCSV
-    user_parameters: {}
   Cruise-01:
     kwargs:
       out_instances:
@@ -59,12 +26,12 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(1cf9e87117042d1a)}'
+      - - '{data(f22cf3f5e24d7150)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(ed8df5b303400c96)}'
+        - datetime: '{data(ca6d59bf41aa0f71)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -101,13 +68,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - datetime
-          - distance [km]
-          - Depth [m]
-          - Temperature
-          - Salinity
-          - Longitude
           - Latitude
+          - Depth [m]
+          - Longitude
+          - Temperature
+          - Station
+          - distance [km]
+          - datetime
           kind: scatter
           shared_axes: false
           title: '2004-05-21'
@@ -121,20 +88,20 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - datetime
-          - distance [km]
-          - Depth [m]
-          - Temperature
-          - Salinity
-          - Longitude
           - Latitude
+          - Depth [m]
+          - Longitude
+          - Temperature
+          - Station
+          - distance [km]
+          - datetime
           kind: scatter
           shared_axes: false
           title: '2004-05-21'
           width: 500
           x: distance [km]
           y: Depth [m]
-      urlpath: simplecache://::https://researchworkspace.com/files/39886038/all_forelands_ctd.txt
+      urlpath: https://researchworkspace.com/files/39886038/all_forelands_ctd.txt
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -146,12 +113,12 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(1cf9e87117042d1a)}'
+      - - '{data(f22cf3f5e24d7150)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(ed8df5b303400c96)}'
+        - datetime: '{data(ca6d59bf41aa0f71)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -188,13 +155,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - datetime
-          - distance [km]
-          - Depth [m]
-          - Temperature
-          - Salinity
-          - Longitude
           - Latitude
+          - Depth [m]
+          - Longitude
+          - Temperature
+          - Station
+          - distance [km]
+          - datetime
           kind: scatter
           shared_axes: false
           title: '2004-06-24'
@@ -208,20 +175,20 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - datetime
-          - distance [km]
-          - Depth [m]
-          - Temperature
-          - Salinity
-          - Longitude
           - Latitude
+          - Depth [m]
+          - Longitude
+          - Temperature
+          - Station
+          - distance [km]
+          - datetime
           kind: scatter
           shared_axes: false
           title: '2004-06-24'
           width: 500
           x: distance [km]
           y: Depth [m]
-      urlpath: simplecache://::https://researchworkspace.com/files/39886038/all_forelands_ctd.txt
+      urlpath: https://researchworkspace.com/files/39886038/all_forelands_ctd.txt
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -233,12 +200,12 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(1cf9e87117042d1a)}'
+      - - '{data(f22cf3f5e24d7150)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(ed8df5b303400c96)}'
+        - datetime: '{data(ca6d59bf41aa0f71)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -275,13 +242,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - datetime
-          - distance [km]
-          - Depth [m]
-          - Temperature
-          - Salinity
-          - Longitude
           - Latitude
+          - Depth [m]
+          - Longitude
+          - Temperature
+          - Station
+          - distance [km]
+          - datetime
           kind: scatter
           shared_axes: false
           title: '2004-08-08'
@@ -295,20 +262,20 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - datetime
-          - distance [km]
-          - Depth [m]
-          - Temperature
-          - Salinity
-          - Longitude
           - Latitude
+          - Depth [m]
+          - Longitude
+          - Temperature
+          - Station
+          - distance [km]
+          - datetime
           kind: scatter
           shared_axes: false
           title: '2004-08-08'
           width: 500
           x: distance [km]
           y: Depth [m]
-      urlpath: simplecache://::https://researchworkspace.com/files/39886038/all_forelands_ctd.txt
+      urlpath: https://researchworkspace.com/files/39886038/all_forelands_ctd.txt
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -320,12 +287,12 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(1cf9e87117042d1a)}'
+      - - '{data(f22cf3f5e24d7150)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(ed8df5b303400c96)}'
+        - datetime: '{data(ca6d59bf41aa0f71)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -362,13 +329,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - datetime
-          - distance [km]
-          - Depth [m]
-          - Temperature
-          - Salinity
-          - Longitude
           - Latitude
+          - Depth [m]
+          - Longitude
+          - Temperature
+          - Station
+          - distance [km]
+          - datetime
           kind: scatter
           shared_axes: false
           title: '2004-09-17'
@@ -382,20 +349,20 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - datetime
-          - distance [km]
-          - Depth [m]
-          - Temperature
-          - Salinity
-          - Longitude
           - Latitude
+          - Depth [m]
+          - Longitude
+          - Temperature
+          - Station
+          - distance [km]
+          - datetime
           kind: scatter
           shared_axes: false
           title: '2004-09-17'
           width: 500
           x: distance [km]
           y: Depth [m]
-      urlpath: simplecache://::https://researchworkspace.com/files/39886038/all_forelands_ctd.txt
+      urlpath: https://researchworkspace.com/files/39886038/all_forelands_ctd.txt
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -407,12 +374,12 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(1cf9e87117042d1a)}'
+      - - '{data(f22cf3f5e24d7150)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(ed8df5b303400c96)}'
+        - datetime: '{data(ca6d59bf41aa0f71)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -449,13 +416,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - datetime
-          - distance [km]
-          - Depth [m]
-          - Temperature
-          - Salinity
-          - Longitude
           - Latitude
+          - Depth [m]
+          - Longitude
+          - Temperature
+          - Station
+          - distance [km]
+          - datetime
           kind: scatter
           shared_axes: false
           title: '2004-10-09'
@@ -469,20 +436,20 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - datetime
-          - distance [km]
-          - Depth [m]
-          - Temperature
-          - Salinity
-          - Longitude
           - Latitude
+          - Depth [m]
+          - Longitude
+          - Temperature
+          - Station
+          - distance [km]
+          - datetime
           kind: scatter
           shared_axes: false
           title: '2004-10-09'
           width: 500
           x: distance [km]
           y: Depth [m]
-      urlpath: simplecache://::https://researchworkspace.com/files/39886038/all_forelands_ctd.txt
+      urlpath: https://researchworkspace.com/files/39886038/all_forelands_ctd.txt
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -494,12 +461,12 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(1cf9e87117042d1a)}'
+      - - '{data(f22cf3f5e24d7150)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(ed8df5b303400c96)}'
+        - datetime: '{data(ca6d59bf41aa0f71)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -536,13 +503,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - datetime
-          - distance [km]
-          - Depth [m]
-          - Temperature
-          - Salinity
-          - Longitude
           - Latitude
+          - Depth [m]
+          - Longitude
+          - Temperature
+          - Station
+          - distance [km]
+          - datetime
           kind: scatter
           shared_axes: false
           title: '2005-03-30'
@@ -556,20 +523,20 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - datetime
-          - distance [km]
-          - Depth [m]
-          - Temperature
-          - Salinity
-          - Longitude
           - Latitude
+          - Depth [m]
+          - Longitude
+          - Temperature
+          - Station
+          - distance [km]
+          - datetime
           kind: scatter
           shared_axes: false
           title: '2005-03-30'
           width: 500
           x: distance [km]
           y: Depth [m]
-      urlpath: simplecache://::https://researchworkspace.com/files/39886038/all_forelands_ctd.txt
+      urlpath: https://researchworkspace.com/files/39886038/all_forelands_ctd.txt
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -581,12 +548,12 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(1cf9e87117042d1a)}'
+      - - '{data(f22cf3f5e24d7150)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(ed8df5b303400c96)}'
+        - datetime: '{data(ca6d59bf41aa0f71)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -623,13 +590,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - datetime
-          - distance [km]
-          - Depth [m]
-          - Temperature
-          - Salinity
-          - Longitude
           - Latitude
+          - Depth [m]
+          - Longitude
+          - Temperature
+          - Station
+          - distance [km]
+          - datetime
           kind: scatter
           shared_axes: false
           title: '2005-05-02'
@@ -643,20 +610,20 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - datetime
-          - distance [km]
-          - Depth [m]
-          - Temperature
-          - Salinity
-          - Longitude
           - Latitude
+          - Depth [m]
+          - Longitude
+          - Temperature
+          - Station
+          - distance [km]
+          - datetime
           kind: scatter
           shared_axes: false
           title: '2005-05-02'
           width: 500
           x: distance [km]
           y: Depth [m]
-      urlpath: simplecache://::https://researchworkspace.com/files/39886038/all_forelands_ctd.txt
+      urlpath: https://researchworkspace.com/files/39886038/all_forelands_ctd.txt
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -668,12 +635,12 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(1cf9e87117042d1a)}'
+      - - '{data(f22cf3f5e24d7150)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(ed8df5b303400c96)}'
+        - datetime: '{data(ca6d59bf41aa0f71)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -710,13 +677,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - datetime
-          - distance [km]
-          - Depth [m]
-          - Temperature
-          - Salinity
-          - Longitude
           - Latitude
+          - Depth [m]
+          - Longitude
+          - Temperature
+          - Station
+          - distance [km]
+          - datetime
           kind: scatter
           shared_axes: false
           title: '2005-06-01'
@@ -730,20 +697,20 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - datetime
-          - distance [km]
-          - Depth [m]
-          - Temperature
-          - Salinity
-          - Longitude
           - Latitude
+          - Depth [m]
+          - Longitude
+          - Temperature
+          - Station
+          - distance [km]
+          - datetime
           kind: scatter
           shared_axes: false
           title: '2005-06-01'
           width: 500
           x: distance [km]
           y: Depth [m]
-      urlpath: simplecache://::https://researchworkspace.com/files/39886038/all_forelands_ctd.txt
+      urlpath: https://researchworkspace.com/files/39886038/all_forelands_ctd.txt
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -755,12 +722,12 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(1cf9e87117042d1a)}'
+      - - '{data(f22cf3f5e24d7150)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(ed8df5b303400c96)}'
+        - datetime: '{data(ca6d59bf41aa0f71)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -797,13 +764,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - datetime
-          - distance [km]
-          - Depth [m]
-          - Temperature
-          - Salinity
-          - Longitude
           - Latitude
+          - Depth [m]
+          - Longitude
+          - Temperature
+          - Station
+          - distance [km]
+          - datetime
           kind: scatter
           shared_axes: false
           title: '2005-08-26'
@@ -817,20 +784,20 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - datetime
-          - distance [km]
-          - Depth [m]
-          - Temperature
-          - Salinity
-          - Longitude
           - Latitude
+          - Depth [m]
+          - Longitude
+          - Temperature
+          - Station
+          - distance [km]
+          - datetime
           kind: scatter
           shared_axes: false
           title: '2005-08-26'
           width: 500
           x: distance [km]
           y: Depth [m]
-      urlpath: simplecache://::https://researchworkspace.com/files/39886038/all_forelands_ctd.txt
+      urlpath: https://researchworkspace.com/files/39886038/all_forelands_ctd.txt
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -842,12 +809,12 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(1cf9e87117042d1a)}'
+      - - '{data(f22cf3f5e24d7150)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(ed8df5b303400c96)}'
+        - datetime: '{data(ca6d59bf41aa0f71)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -884,13 +851,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - datetime
-          - distance [km]
-          - Depth [m]
-          - Temperature
-          - Salinity
-          - Longitude
           - Latitude
+          - Depth [m]
+          - Longitude
+          - Temperature
+          - Station
+          - distance [km]
+          - datetime
           kind: scatter
           shared_axes: false
           title: '2005-10-03'
@@ -904,30 +871,30 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - datetime
-          - distance [km]
-          - Depth [m]
-          - Temperature
-          - Salinity
-          - Longitude
           - Latitude
+          - Depth [m]
+          - Longitude
+          - Temperature
+          - Station
+          - distance [km]
+          - datetime
           kind: scatter
           shared_axes: false
           title: '2005-10-03'
           width: 500
           x: distance [km]
           y: Depth [m]
-      urlpath: simplecache://::https://researchworkspace.com/files/39886038/all_forelands_ctd.txt
+      urlpath: https://researchworkspace.com/files/39886038/all_forelands_ctd.txt
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
-  ed8df5b303400c96:
+  ca6d59bf41aa0f71:
     kwargs:
       out_instances:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(1cf9e87117042d1a)}'
+      - - '{data(f22cf3f5e24d7150)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -936,6 +903,35 @@ entries:
     metadata: {}
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
+    user_parameters: {}
+  f22cf3f5e24d7150:
+    kwargs:
+      args:
+      - '{data(9670f1665406a366)}'
+      dtype:
+        Day: str
+        Hour: str
+        Minute: str
+        Month: str
+        Year: str
+      sep: "\t"
+      usecols:
+      - Cruise
+      - Station
+      - Month
+      - Day
+      - Year
+      - Hour
+      - Minute
+      - Longitude
+      - Latitude
+      - Depth [m]
+      - Temperature
+      - Salinity
+      - flag
+    metadata: {}
+    output_instance: pandas:DataFrame
+    reader: intake.readers.readers:PandasCSV
     user_parameters: {}
 metadata:
   featuretype: trajectoryProfile

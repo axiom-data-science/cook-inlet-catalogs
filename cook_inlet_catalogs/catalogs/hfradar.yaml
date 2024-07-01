@@ -9,110 +9,83 @@ aliases:
   upper-ci_system-A_2009_subtidal_weekly_mean: upper-ci_system-A_2009_subtidal_weekly_mean
   upper-ci_system-A_2009_tidecons: upper-ci_system-A_2009_tidecons
 data:
-  1031d471d0313d75:
+  04ded7770d69fced:
     datatype: intake.readers.datatypes:HDF5
     kwargs:
       path: ''
-      storage_options:
-        simplecache:
-          cache_storage: /Users/kthyng/Library/Caches/cook-inlet-catalogs
-          same_names: true
-      url: simplecache://::https://researchworkspace.com/files/42712190/lower-ci_system-B_2006-2007_tidecons_base.nc
-    metadata: {}
-    user_parameters: {}
-  17489aa225ee5ead:
-    datatype: intake.readers.datatypes:HDF5
-    kwargs:
-      path: ''
-      storage_options:
-        simplecache:
-          cache_storage: /Users/kthyng/Library/Caches/cook-inlet-catalogs
-          same_names: true
-      url: simplecache://::https://researchworkspace.com/files/42712167/upper-ci_system-A_2009.nc
-    metadata: {}
-    user_parameters: {}
-  18cb35249146929d:
-    datatype: intake.readers.datatypes:HDF5
-    kwargs:
-      path: ''
-      storage_options:
-        simplecache:
-          cache_storage: /Users/kthyng/Library/Caches/cook-inlet-catalogs
-          same_names: true
-      url: simplecache://::https://researchworkspace.com/files/42712206/upper-ci_system-A_2002-2003_subtidal_weekly_mean.nc
-    metadata: {}
-    user_parameters: {}
-  1cd46ae460dcb3c8:
-    datatype: intake.readers.datatypes:HDF5
-    kwargs:
-      path: ''
-      storage_options:
-        simplecache:
-          cache_storage: /Users/kthyng/Library/Caches/cook-inlet-catalogs
-          same_names: true
-      url: simplecache://::https://researchworkspace.com/files/42712165/lower-ci_system-B_2006-2007.nc
-    metadata: {}
-    user_parameters: {}
-  34068f96b195f51c:
-    datatype: intake.readers.datatypes:HDF5
-    kwargs:
-      path: ''
-      storage_options:
-        simplecache:
-          cache_storage: /Users/kthyng/Library/Caches/cook-inlet-catalogs
-          same_names: true
+      storage_options: null
       url: simplecache://::https://researchworkspace.com/files/42712210/lower-ci_system-B_2006-2007_subtidal_weekly_mean.nc
     metadata: {}
     user_parameters: {}
-  54ff1f271c59f916:
+  1117ca0df34ccd1f:
     datatype: intake.readers.datatypes:HDF5
     kwargs:
       path: ''
-      storage_options:
-        simplecache:
-          cache_storage: /Users/kthyng/Library/Caches/cook-inlet-catalogs
-          same_names: true
-      url: simplecache://::https://researchworkspace.com/files/42712200/upper-ci_system-A_2009_tidecons_base.nc
+      storage_options: null
+      url: simplecache://::https://researchworkspace.com/files/42712206/upper-ci_system-A_2002-2003_subtidal_weekly_mean.nc
     metadata: {}
     user_parameters: {}
-  88b462dcdee6184e:
+  3057834667927ec4:
     datatype: intake.readers.datatypes:HDF5
     kwargs:
       path: ''
-      storage_options:
-        simplecache:
-          cache_storage: /Users/kthyng/Library/Caches/cook-inlet-catalogs
-          same_names: true
+      storage_options: null
+      url: simplecache://::https://researchworkspace.com/files/42712165/lower-ci_system-B_2006-2007.nc
+    metadata: {}
+    user_parameters: {}
+  6737586fd86bada1:
+    datatype: intake.readers.datatypes:HDF5
+    kwargs:
+      path: ''
+      storage_options: null
       url: simplecache://::https://researchworkspace.com/files/42712214/upper-ci_system-A_2009_subtidal_weekly_mean.nc
     metadata: {}
     user_parameters: {}
-  a602aae1b67f2b14:
+  8dd1c812aa44a8fc:
     datatype: intake.readers.datatypes:HDF5
     kwargs:
       path: ''
-      storage_options:
-        simplecache:
-          cache_storage: /Users/kthyng/Library/Caches/cook-inlet-catalogs
-          same_names: true
-      url: simplecache://::https://researchworkspace.com/files/42712182/upper-ci_system-A_2002-2003_tidecons_base.nc
+      storage_options: null
+      url: simplecache://::https://researchworkspace.com/files/42712190/lower-ci_system-B_2006-2007_tidecons_base.nc
     metadata: {}
     user_parameters: {}
-  adc767a125a14de3:
+  9826bafe85e2af0d:
     datatype: intake.readers.datatypes:HDF5
     kwargs:
       path: ''
-      storage_options:
-        simplecache:
-          cache_storage: /Users/kthyng/Library/Caches/cook-inlet-catalogs
-          same_names: true
+      storage_options: null
       url: simplecache://::https://researchworkspace.com/files/42712163/upper-ci_system-A_2002-2003.nc
+    metadata: {}
+    user_parameters: {}
+  bb93f99350577317:
+    datatype: intake.readers.datatypes:HDF5
+    kwargs:
+      path: ''
+      storage_options: null
+      url: simplecache://::https://researchworkspace.com/files/42712200/upper-ci_system-A_2009_tidecons_base.nc
+    metadata: {}
+    user_parameters: {}
+  bc68f4cc229299e8:
+    datatype: intake.readers.datatypes:HDF5
+    kwargs:
+      path: ''
+      storage_options: null
+      url: simplecache://::https://researchworkspace.com/files/42712167/upper-ci_system-A_2009.nc
+    metadata: {}
+    user_parameters: {}
+  ca462c7b94f6a1af:
+    datatype: intake.readers.datatypes:HDF5
+    kwargs:
+      path: ''
+      storage_options: null
+      url: simplecache://::https://researchworkspace.com/files/42712182/upper-ci_system-A_2002-2003_tidecons_base.nc
     metadata: {}
     user_parameters: {}
 entries:
   lower-ci_system-B_2006-2007:
     kwargs:
       chunks: {}
-      data: '{data(1cd46ae460dcb3c8)}'
+      data: '{data(3057834667927ec4)}'
     metadata:
       featuretype: grid
       key_variables: []
@@ -177,7 +150,7 @@ entries:
   lower-ci_system-B_2006-2007_subtidal_weekly_mean:
     kwargs:
       chunks: {}
-      data: '{data(34068f96b195f51c)}'
+      data: '{data(04ded7770d69fced)}'
     metadata:
       featuretype: grid
       key_variables: []
@@ -233,7 +206,7 @@ entries:
   lower-ci_system-B_2006-2007_tidecons:
     kwargs:
       chunks: {}
-      data: '{data(1031d471d0313d75)}'
+      data: '{data(8dd1c812aa44a8fc)}'
     metadata:
       featuretype: grid
       key_variables: []
@@ -273,7 +246,7 @@ entries:
   upper-ci_system-A_2002-2003:
     kwargs:
       chunks: {}
-      data: '{data(adc767a125a14de3)}'
+      data: '{data(9826bafe85e2af0d)}'
     metadata:
       featuretype: grid
       key_variables: []
@@ -338,7 +311,7 @@ entries:
   upper-ci_system-A_2002-2003_subtidal_weekly_mean:
     kwargs:
       chunks: {}
-      data: '{data(18cb35249146929d)}'
+      data: '{data(1117ca0df34ccd1f)}'
     metadata:
       featuretype: grid
       key_variables: []
@@ -394,7 +367,7 @@ entries:
   upper-ci_system-A_2002-2003_tidecons:
     kwargs:
       chunks: {}
-      data: '{data(a602aae1b67f2b14)}'
+      data: '{data(ca462c7b94f6a1af)}'
     metadata:
       featuretype: grid
       key_variables: []
@@ -434,7 +407,7 @@ entries:
   upper-ci_system-A_2009:
     kwargs:
       chunks: {}
-      data: '{data(17489aa225ee5ead)}'
+      data: '{data(bc68f4cc229299e8)}'
     metadata:
       featuretype: grid
       key_variables: []
@@ -499,7 +472,7 @@ entries:
   upper-ci_system-A_2009_subtidal_weekly_mean:
     kwargs:
       chunks: {}
-      data: '{data(88b462dcdee6184e)}'
+      data: '{data(6737586fd86bada1)}'
     metadata:
       featuretype: grid
       key_variables: []
@@ -555,7 +528,7 @@ entries:
   upper-ci_system-A_2009_tidecons:
     kwargs:
       chunks: {}
-      data: '{data(54ff1f271c59f916)}'
+      data: '{data(bb93f99350577317)}'
     metadata:
       featuretype: grid
       key_variables: []

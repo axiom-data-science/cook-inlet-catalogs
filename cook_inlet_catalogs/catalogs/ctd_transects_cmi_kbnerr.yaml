@@ -69,58 +69,73 @@ aliases:
   Kbay_timeseries: Kbay_timeseries
   sue_shelikof: sue_shelikof
 data:
-  24a72a1f6d66c7b9:
+  5af52cd678ae511f:
     datatype: intake.readers.datatypes:CSV
     kwargs:
       storage_options: null
-      url: simplecache://::https://researchworkspace.com/files/39886061/sue_shelikof.txt
+      url: https://researchworkspace.com/files/42202067/cmi_full_v2.csv
     metadata: {}
     user_parameters: {}
-  8738bbe188fb7bbd:
+  84ebeae8582d95d8:
     datatype: intake.readers.datatypes:CSV
     kwargs:
       storage_options: null
-      url: simplecache://::https://researchworkspace.com/files/39886046/Kbay_timeseries.txt
+      url: https://researchworkspace.com/files/39886046/Kbay_timeseries.txt
     metadata: {}
     user_parameters: {}
-  ccd96f940278b0b6:
+  bde25c1f92840d3f:
     datatype: intake.readers.datatypes:CSV
     kwargs:
       storage_options: null
-      url: simplecache://::https://researchworkspace.com/files/42202067/cmi_full_v2.csv
+      url: https://researchworkspace.com/files/39886061/sue_shelikof.txt
     metadata: {}
     user_parameters: {}
 entries:
-  076368e41ff2fbce:
+  0072bc8fb93300fe:
     kwargs:
       args:
-      - '{data(ccd96f940278b0b6)}'
-      parse_dates:
-      - 0
-      storage_options:
-        simplecache:
-          cache_storage: /Users/kthyng/Library/Caches/cook-inlet-catalogs
-          same_names: true
-    metadata: {}
-    output_instance: pandas:DataFrame
-    reader: intake.readers.readers:PandasCSV
-    user_parameters: {}
-  0fc3aee105917ee6:
-    kwargs:
-      args:
-      - '{data(24a72a1f6d66c7b9)}'
+      - '{data(bde25c1f92840d3f)}'
       dtype:
         hh:mm: '{func(builtins:str)}'
         mon/day/yr: '{func(builtins:str)}'
       encoding: ISO-8859-1
       sep: "\t"
-      storage_options:
-        simplecache:
-          cache_storage: /Users/kthyng/Library/Caches/cook-inlet-catalogs
-          same_names: true
     metadata: {}
     output_instance: pandas:DataFrame
     reader: intake.readers.readers:PandasCSV
+    user_parameters: {}
+  32ff94303e055e23:
+    kwargs:
+      args:
+      - '{data(5af52cd678ae511f)}'
+      parse_dates:
+      - 0
+    metadata: {}
+    output_instance: pandas:DataFrame
+    reader: intake.readers.readers:PandasCSV
+    user_parameters: {}
+  9eda17421944bb9d:
+    kwargs:
+      out_instances:
+      - pandas:DataFrame
+      - pandas:DataFrame
+      - pandas:DataFrame
+      steps:
+      - - '{data(d1ffd1c7559cb4aa)}'
+        - []
+        - {}
+      - - '{func(intake.readers.transform:Method)}'
+        - []
+        - columns:
+            hh:mm [utc]: time
+            mon/day/yr: date
+          method_name: rename
+      - - '{func(intake.readers.convert:GenericFunc)}'
+        - []
+        - func: '{func(cook_inlet_catalogs.utils:parse_date_time)}'
+    metadata: {}
+    output_instance: pandas:DataFrame
+    reader: intake.readers.convert:Pipeline
     user_parameters: {}
   Cruise_00-Line_4:
     kwargs:
@@ -129,7 +144,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(076368e41ff2fbce)}'
+      - - '{data(32ff94303e055e23)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -161,13 +176,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Longitude [degrees_east]
-          - distance [km]
           - Depth [m]
+          - Latitude [degrees_north]
+          - Station
+          - distance [km]
           - Temperature [C]
           - date_time
-          - Salinity [psu]
-          - Latitude [degrees_north]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 0, Line 4 (2004-03-13)
@@ -181,20 +196,20 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Longitude [degrees_east]
-          - distance [km]
           - Depth [m]
+          - Latitude [degrees_north]
+          - Station
+          - distance [km]
           - Temperature [C]
           - date_time
-          - Salinity [psu]
-          - Latitude [degrees_north]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 0, Line 4 (2004-03-13)
           width: 500
           x: distance [km]
           y: Depth [m]
-      urlpath: simplecache://::https://researchworkspace.com/files/42202067/cmi_full_v2.csv
+      urlpath: https://researchworkspace.com/files/42202067/cmi_full_v2.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -205,7 +220,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(076368e41ff2fbce)}'
+      - - '{data(32ff94303e055e23)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -237,13 +252,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Longitude [degrees_east]
-          - distance [km]
           - Depth [m]
+          - Latitude [degrees_north]
+          - Station
+          - distance [km]
           - Temperature [C]
           - date_time
-          - Salinity [psu]
-          - Latitude [degrees_north]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 1, Line 1 (2004-04-20)
@@ -257,20 +272,20 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Longitude [degrees_east]
-          - distance [km]
           - Depth [m]
+          - Latitude [degrees_north]
+          - Station
+          - distance [km]
           - Temperature [C]
           - date_time
-          - Salinity [psu]
-          - Latitude [degrees_north]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 1, Line 1 (2004-04-20)
           width: 500
           x: distance [km]
           y: Depth [m]
-      urlpath: simplecache://::https://researchworkspace.com/files/42202067/cmi_full_v2.csv
+      urlpath: https://researchworkspace.com/files/42202067/cmi_full_v2.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -281,7 +296,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(076368e41ff2fbce)}'
+      - - '{data(32ff94303e055e23)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -313,13 +328,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Longitude [degrees_east]
-          - distance [km]
           - Depth [m]
+          - Latitude [degrees_north]
+          - Station
+          - distance [km]
           - Temperature [C]
           - date_time
-          - Salinity [psu]
-          - Latitude [degrees_north]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 1, Line 2 (2004-04-19)
@@ -333,20 +348,20 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Longitude [degrees_east]
-          - distance [km]
           - Depth [m]
+          - Latitude [degrees_north]
+          - Station
+          - distance [km]
           - Temperature [C]
           - date_time
-          - Salinity [psu]
-          - Latitude [degrees_north]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 1, Line 2 (2004-04-19)
           width: 500
           x: distance [km]
           y: Depth [m]
-      urlpath: simplecache://::https://researchworkspace.com/files/42202067/cmi_full_v2.csv
+      urlpath: https://researchworkspace.com/files/42202067/cmi_full_v2.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -357,7 +372,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(076368e41ff2fbce)}'
+      - - '{data(32ff94303e055e23)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -389,13 +404,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Longitude [degrees_east]
-          - distance [km]
           - Depth [m]
+          - Latitude [degrees_north]
+          - Station
+          - distance [km]
           - Temperature [C]
           - date_time
-          - Salinity [psu]
-          - Latitude [degrees_north]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 1, Line 3 (2004-04-18)
@@ -409,20 +424,20 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Longitude [degrees_east]
-          - distance [km]
           - Depth [m]
+          - Latitude [degrees_north]
+          - Station
+          - distance [km]
           - Temperature [C]
           - date_time
-          - Salinity [psu]
-          - Latitude [degrees_north]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 1, Line 3 (2004-04-18)
           width: 500
           x: distance [km]
           y: Depth [m]
-      urlpath: simplecache://::https://researchworkspace.com/files/42202067/cmi_full_v2.csv
+      urlpath: https://researchworkspace.com/files/42202067/cmi_full_v2.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -433,7 +448,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(076368e41ff2fbce)}'
+      - - '{data(32ff94303e055e23)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -465,13 +480,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Longitude [degrees_east]
-          - distance [km]
           - Depth [m]
+          - Latitude [degrees_north]
+          - Station
+          - distance [km]
           - Temperature [C]
           - date_time
-          - Salinity [psu]
-          - Latitude [degrees_north]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 1, Line 4 (2004-04-21)
@@ -485,20 +500,20 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Longitude [degrees_east]
-          - distance [km]
           - Depth [m]
+          - Latitude [degrees_north]
+          - Station
+          - distance [km]
           - Temperature [C]
           - date_time
-          - Salinity [psu]
-          - Latitude [degrees_north]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 1, Line 4 (2004-04-21)
           width: 500
           x: distance [km]
           y: Depth [m]
-      urlpath: simplecache://::https://researchworkspace.com/files/42202067/cmi_full_v2.csv
+      urlpath: https://researchworkspace.com/files/42202067/cmi_full_v2.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -509,7 +524,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(076368e41ff2fbce)}'
+      - - '{data(32ff94303e055e23)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -541,13 +556,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Longitude [degrees_east]
-          - distance [km]
           - Depth [m]
+          - Latitude [degrees_north]
+          - Station
+          - distance [km]
           - Temperature [C]
           - date_time
-          - Salinity [psu]
-          - Latitude [degrees_north]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 2, Line 1 (2004-05-26)
@@ -561,20 +576,20 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Longitude [degrees_east]
-          - distance [km]
           - Depth [m]
+          - Latitude [degrees_north]
+          - Station
+          - distance [km]
           - Temperature [C]
           - date_time
-          - Salinity [psu]
-          - Latitude [degrees_north]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 2, Line 1 (2004-05-26)
           width: 500
           x: distance [km]
           y: Depth [m]
-      urlpath: simplecache://::https://researchworkspace.com/files/42202067/cmi_full_v2.csv
+      urlpath: https://researchworkspace.com/files/42202067/cmi_full_v2.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -585,7 +600,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(076368e41ff2fbce)}'
+      - - '{data(32ff94303e055e23)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -617,13 +632,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Longitude [degrees_east]
-          - distance [km]
           - Depth [m]
+          - Latitude [degrees_north]
+          - Station
+          - distance [km]
           - Temperature [C]
           - date_time
-          - Salinity [psu]
-          - Latitude [degrees_north]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 2, Line 2 (2004-05-26)
@@ -637,20 +652,20 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Longitude [degrees_east]
-          - distance [km]
           - Depth [m]
+          - Latitude [degrees_north]
+          - Station
+          - distance [km]
           - Temperature [C]
           - date_time
-          - Salinity [psu]
-          - Latitude [degrees_north]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 2, Line 2 (2004-05-26)
           width: 500
           x: distance [km]
           y: Depth [m]
-      urlpath: simplecache://::https://researchworkspace.com/files/42202067/cmi_full_v2.csv
+      urlpath: https://researchworkspace.com/files/42202067/cmi_full_v2.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -661,7 +676,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(076368e41ff2fbce)}'
+      - - '{data(32ff94303e055e23)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -693,13 +708,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Longitude [degrees_east]
-          - distance [km]
           - Depth [m]
+          - Latitude [degrees_north]
+          - Station
+          - distance [km]
           - Temperature [C]
           - date_time
-          - Salinity [psu]
-          - Latitude [degrees_north]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 2, Line 3 (2004-05-25)
@@ -713,20 +728,20 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Longitude [degrees_east]
-          - distance [km]
           - Depth [m]
+          - Latitude [degrees_north]
+          - Station
+          - distance [km]
           - Temperature [C]
           - date_time
-          - Salinity [psu]
-          - Latitude [degrees_north]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 2, Line 3 (2004-05-25)
           width: 500
           x: distance [km]
           y: Depth [m]
-      urlpath: simplecache://::https://researchworkspace.com/files/42202067/cmi_full_v2.csv
+      urlpath: https://researchworkspace.com/files/42202067/cmi_full_v2.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -737,7 +752,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(076368e41ff2fbce)}'
+      - - '{data(32ff94303e055e23)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -769,13 +784,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Longitude [degrees_east]
-          - distance [km]
           - Depth [m]
+          - Latitude [degrees_north]
+          - Station
+          - distance [km]
           - Temperature [C]
           - date_time
-          - Salinity [psu]
-          - Latitude [degrees_north]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 2, Line 4 (2004-05-27)
@@ -789,20 +804,20 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Longitude [degrees_east]
-          - distance [km]
           - Depth [m]
+          - Latitude [degrees_north]
+          - Station
+          - distance [km]
           - Temperature [C]
           - date_time
-          - Salinity [psu]
-          - Latitude [degrees_north]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 2, Line 4 (2004-05-27)
           width: 500
           x: distance [km]
           y: Depth [m]
-      urlpath: simplecache://::https://researchworkspace.com/files/42202067/cmi_full_v2.csv
+      urlpath: https://researchworkspace.com/files/42202067/cmi_full_v2.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -813,7 +828,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(076368e41ff2fbce)}'
+      - - '{data(32ff94303e055e23)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -845,13 +860,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Longitude [degrees_east]
-          - distance [km]
           - Depth [m]
+          - Latitude [degrees_north]
+          - Station
+          - distance [km]
           - Temperature [C]
           - date_time
-          - Salinity [psu]
-          - Latitude [degrees_north]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 3, Line 1 (2004-06-13)
@@ -865,20 +880,20 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Longitude [degrees_east]
-          - distance [km]
           - Depth [m]
+          - Latitude [degrees_north]
+          - Station
+          - distance [km]
           - Temperature [C]
           - date_time
-          - Salinity [psu]
-          - Latitude [degrees_north]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 3, Line 1 (2004-06-13)
           width: 500
           x: distance [km]
           y: Depth [m]
-      urlpath: simplecache://::https://researchworkspace.com/files/42202067/cmi_full_v2.csv
+      urlpath: https://researchworkspace.com/files/42202067/cmi_full_v2.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -889,7 +904,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(076368e41ff2fbce)}'
+      - - '{data(32ff94303e055e23)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -921,13 +936,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Longitude [degrees_east]
-          - distance [km]
           - Depth [m]
+          - Latitude [degrees_north]
+          - Station
+          - distance [km]
           - Temperature [C]
           - date_time
-          - Salinity [psu]
-          - Latitude [degrees_north]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 3, Line 2 (2004-06-13)
@@ -941,20 +956,20 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Longitude [degrees_east]
-          - distance [km]
           - Depth [m]
+          - Latitude [degrees_north]
+          - Station
+          - distance [km]
           - Temperature [C]
           - date_time
-          - Salinity [psu]
-          - Latitude [degrees_north]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 3, Line 2 (2004-06-13)
           width: 500
           x: distance [km]
           y: Depth [m]
-      urlpath: simplecache://::https://researchworkspace.com/files/42202067/cmi_full_v2.csv
+      urlpath: https://researchworkspace.com/files/42202067/cmi_full_v2.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -965,7 +980,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(076368e41ff2fbce)}'
+      - - '{data(32ff94303e055e23)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -997,13 +1012,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Longitude [degrees_east]
-          - distance [km]
           - Depth [m]
+          - Latitude [degrees_north]
+          - Station
+          - distance [km]
           - Temperature [C]
           - date_time
-          - Salinity [psu]
-          - Latitude [degrees_north]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 3, Line 3 (2004-06-14)
@@ -1017,20 +1032,20 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Longitude [degrees_east]
-          - distance [km]
           - Depth [m]
+          - Latitude [degrees_north]
+          - Station
+          - distance [km]
           - Temperature [C]
           - date_time
-          - Salinity [psu]
-          - Latitude [degrees_north]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 3, Line 3 (2004-06-14)
           width: 500
           x: distance [km]
           y: Depth [m]
-      urlpath: simplecache://::https://researchworkspace.com/files/42202067/cmi_full_v2.csv
+      urlpath: https://researchworkspace.com/files/42202067/cmi_full_v2.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -1041,7 +1056,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(076368e41ff2fbce)}'
+      - - '{data(32ff94303e055e23)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -1073,13 +1088,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Longitude [degrees_east]
-          - distance [km]
           - Depth [m]
+          - Latitude [degrees_north]
+          - Station
+          - distance [km]
           - Temperature [C]
           - date_time
-          - Salinity [psu]
-          - Latitude [degrees_north]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 3, Line 4 (2004-06-14)
@@ -1093,20 +1108,20 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Longitude [degrees_east]
-          - distance [km]
           - Depth [m]
+          - Latitude [degrees_north]
+          - Station
+          - distance [km]
           - Temperature [C]
           - date_time
-          - Salinity [psu]
-          - Latitude [degrees_north]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 3, Line 4 (2004-06-14)
           width: 500
           x: distance [km]
           y: Depth [m]
-      urlpath: simplecache://::https://researchworkspace.com/files/42202067/cmi_full_v2.csv
+      urlpath: https://researchworkspace.com/files/42202067/cmi_full_v2.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -1117,7 +1132,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(076368e41ff2fbce)}'
+      - - '{data(32ff94303e055e23)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -1149,13 +1164,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Longitude [degrees_east]
-          - distance [km]
           - Depth [m]
+          - Latitude [degrees_north]
+          - Station
+          - distance [km]
           - Temperature [C]
           - date_time
-          - Salinity [psu]
-          - Latitude [degrees_north]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 5, Line 1 (2004-08-17)
@@ -1169,20 +1184,20 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Longitude [degrees_east]
-          - distance [km]
           - Depth [m]
+          - Latitude [degrees_north]
+          - Station
+          - distance [km]
           - Temperature [C]
           - date_time
-          - Salinity [psu]
-          - Latitude [degrees_north]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 5, Line 1 (2004-08-17)
           width: 500
           x: distance [km]
           y: Depth [m]
-      urlpath: simplecache://::https://researchworkspace.com/files/42202067/cmi_full_v2.csv
+      urlpath: https://researchworkspace.com/files/42202067/cmi_full_v2.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -1193,7 +1208,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(076368e41ff2fbce)}'
+      - - '{data(32ff94303e055e23)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -1225,13 +1240,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Longitude [degrees_east]
-          - distance [km]
           - Depth [m]
+          - Latitude [degrees_north]
+          - Station
+          - distance [km]
           - Temperature [C]
           - date_time
-          - Salinity [psu]
-          - Latitude [degrees_north]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 5, Line 2 (2004-08-17)
@@ -1245,20 +1260,20 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Longitude [degrees_east]
-          - distance [km]
           - Depth [m]
+          - Latitude [degrees_north]
+          - Station
+          - distance [km]
           - Temperature [C]
           - date_time
-          - Salinity [psu]
-          - Latitude [degrees_north]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 5, Line 2 (2004-08-17)
           width: 500
           x: distance [km]
           y: Depth [m]
-      urlpath: simplecache://::https://researchworkspace.com/files/42202067/cmi_full_v2.csv
+      urlpath: https://researchworkspace.com/files/42202067/cmi_full_v2.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -1269,7 +1284,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(076368e41ff2fbce)}'
+      - - '{data(32ff94303e055e23)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -1301,13 +1316,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Longitude [degrees_east]
-          - distance [km]
           - Depth [m]
+          - Latitude [degrees_north]
+          - Station
+          - distance [km]
           - Temperature [C]
           - date_time
-          - Salinity [psu]
-          - Latitude [degrees_north]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 5, Line 3 (2004-08-16)
@@ -1321,20 +1336,20 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Longitude [degrees_east]
-          - distance [km]
           - Depth [m]
+          - Latitude [degrees_north]
+          - Station
+          - distance [km]
           - Temperature [C]
           - date_time
-          - Salinity [psu]
-          - Latitude [degrees_north]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 5, Line 3 (2004-08-16)
           width: 500
           x: distance [km]
           y: Depth [m]
-      urlpath: simplecache://::https://researchworkspace.com/files/42202067/cmi_full_v2.csv
+      urlpath: https://researchworkspace.com/files/42202067/cmi_full_v2.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -1345,7 +1360,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(076368e41ff2fbce)}'
+      - - '{data(32ff94303e055e23)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -1377,13 +1392,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Longitude [degrees_east]
-          - distance [km]
           - Depth [m]
+          - Latitude [degrees_north]
+          - Station
+          - distance [km]
           - Temperature [C]
           - date_time
-          - Salinity [psu]
-          - Latitude [degrees_north]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 5, Line 4 (2004-08-18)
@@ -1397,20 +1412,20 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Longitude [degrees_east]
-          - distance [km]
           - Depth [m]
+          - Latitude [degrees_north]
+          - Station
+          - distance [km]
           - Temperature [C]
           - date_time
-          - Salinity [psu]
-          - Latitude [degrees_north]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 5, Line 4 (2004-08-18)
           width: 500
           x: distance [km]
           y: Depth [m]
-      urlpath: simplecache://::https://researchworkspace.com/files/42202067/cmi_full_v2.csv
+      urlpath: https://researchworkspace.com/files/42202067/cmi_full_v2.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -1421,7 +1436,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(076368e41ff2fbce)}'
+      - - '{data(32ff94303e055e23)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -1453,13 +1468,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Longitude [degrees_east]
-          - distance [km]
           - Depth [m]
+          - Latitude [degrees_north]
+          - Station
+          - distance [km]
           - Temperature [C]
           - date_time
-          - Salinity [psu]
-          - Latitude [degrees_north]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 6, Line 1 (2004-09-07)
@@ -1473,20 +1488,20 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Longitude [degrees_east]
-          - distance [km]
           - Depth [m]
+          - Latitude [degrees_north]
+          - Station
+          - distance [km]
           - Temperature [C]
           - date_time
-          - Salinity [psu]
-          - Latitude [degrees_north]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 6, Line 1 (2004-09-07)
           width: 500
           x: distance [km]
           y: Depth [m]
-      urlpath: simplecache://::https://researchworkspace.com/files/42202067/cmi_full_v2.csv
+      urlpath: https://researchworkspace.com/files/42202067/cmi_full_v2.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -1497,7 +1512,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(076368e41ff2fbce)}'
+      - - '{data(32ff94303e055e23)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -1529,13 +1544,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Longitude [degrees_east]
-          - distance [km]
           - Depth [m]
+          - Latitude [degrees_north]
+          - Station
+          - distance [km]
           - Temperature [C]
           - date_time
-          - Salinity [psu]
-          - Latitude [degrees_north]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 6, Line 2 (2004-09-08)
@@ -1549,20 +1564,20 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Longitude [degrees_east]
-          - distance [km]
           - Depth [m]
+          - Latitude [degrees_north]
+          - Station
+          - distance [km]
           - Temperature [C]
           - date_time
-          - Salinity [psu]
-          - Latitude [degrees_north]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 6, Line 2 (2004-09-08)
           width: 500
           x: distance [km]
           y: Depth [m]
-      urlpath: simplecache://::https://researchworkspace.com/files/42202067/cmi_full_v2.csv
+      urlpath: https://researchworkspace.com/files/42202067/cmi_full_v2.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -1573,7 +1588,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(076368e41ff2fbce)}'
+      - - '{data(32ff94303e055e23)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -1605,13 +1620,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Longitude [degrees_east]
-          - distance [km]
           - Depth [m]
+          - Latitude [degrees_north]
+          - Station
+          - distance [km]
           - Temperature [C]
           - date_time
-          - Salinity [psu]
-          - Latitude [degrees_north]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 6, Line 3 (2004-09-09)
@@ -1625,20 +1640,20 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Longitude [degrees_east]
-          - distance [km]
           - Depth [m]
+          - Latitude [degrees_north]
+          - Station
+          - distance [km]
           - Temperature [C]
           - date_time
-          - Salinity [psu]
-          - Latitude [degrees_north]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 6, Line 3 (2004-09-09)
           width: 500
           x: distance [km]
           y: Depth [m]
-      urlpath: simplecache://::https://researchworkspace.com/files/42202067/cmi_full_v2.csv
+      urlpath: https://researchworkspace.com/files/42202067/cmi_full_v2.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -1649,7 +1664,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(076368e41ff2fbce)}'
+      - - '{data(32ff94303e055e23)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -1681,13 +1696,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Longitude [degrees_east]
-          - distance [km]
           - Depth [m]
+          - Latitude [degrees_north]
+          - Station
+          - distance [km]
           - Temperature [C]
           - date_time
-          - Salinity [psu]
-          - Latitude [degrees_north]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 6, Line 4 (2004-09-09)
@@ -1701,20 +1716,20 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Longitude [degrees_east]
-          - distance [km]
           - Depth [m]
+          - Latitude [degrees_north]
+          - Station
+          - distance [km]
           - Temperature [C]
           - date_time
-          - Salinity [psu]
-          - Latitude [degrees_north]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 6, Line 4 (2004-09-09)
           width: 500
           x: distance [km]
           y: Depth [m]
-      urlpath: simplecache://::https://researchworkspace.com/files/42202067/cmi_full_v2.csv
+      urlpath: https://researchworkspace.com/files/42202067/cmi_full_v2.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -1725,7 +1740,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(076368e41ff2fbce)}'
+      - - '{data(32ff94303e055e23)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -1757,13 +1772,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Longitude [degrees_east]
-          - distance [km]
           - Depth [m]
+          - Latitude [degrees_north]
+          - Station
+          - distance [km]
           - Temperature [C]
           - date_time
-          - Salinity [psu]
-          - Latitude [degrees_north]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 7, Line 1 (2005-01-08)
@@ -1777,20 +1792,20 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Longitude [degrees_east]
-          - distance [km]
           - Depth [m]
+          - Latitude [degrees_north]
+          - Station
+          - distance [km]
           - Temperature [C]
           - date_time
-          - Salinity [psu]
-          - Latitude [degrees_north]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 7, Line 1 (2005-01-08)
           width: 500
           x: distance [km]
           y: Depth [m]
-      urlpath: simplecache://::https://researchworkspace.com/files/42202067/cmi_full_v2.csv
+      urlpath: https://researchworkspace.com/files/42202067/cmi_full_v2.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -1801,7 +1816,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(076368e41ff2fbce)}'
+      - - '{data(32ff94303e055e23)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -1833,13 +1848,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Longitude [degrees_east]
-          - distance [km]
           - Depth [m]
+          - Latitude [degrees_north]
+          - Station
+          - distance [km]
           - Temperature [C]
           - date_time
-          - Salinity [psu]
-          - Latitude [degrees_north]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 7, Line 2 (2005-01-09)
@@ -1853,20 +1868,20 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Longitude [degrees_east]
-          - distance [km]
           - Depth [m]
+          - Latitude [degrees_north]
+          - Station
+          - distance [km]
           - Temperature [C]
           - date_time
-          - Salinity [psu]
-          - Latitude [degrees_north]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 7, Line 2 (2005-01-09)
           width: 500
           x: distance [km]
           y: Depth [m]
-      urlpath: simplecache://::https://researchworkspace.com/files/42202067/cmi_full_v2.csv
+      urlpath: https://researchworkspace.com/files/42202067/cmi_full_v2.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -1877,7 +1892,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(076368e41ff2fbce)}'
+      - - '{data(32ff94303e055e23)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -1909,13 +1924,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Longitude [degrees_east]
-          - distance [km]
           - Depth [m]
+          - Latitude [degrees_north]
+          - Station
+          - distance [km]
           - Temperature [C]
           - date_time
-          - Salinity [psu]
-          - Latitude [degrees_north]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 7, Line 3 (2005-01-10)
@@ -1929,20 +1944,20 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Longitude [degrees_east]
-          - distance [km]
           - Depth [m]
+          - Latitude [degrees_north]
+          - Station
+          - distance [km]
           - Temperature [C]
           - date_time
-          - Salinity [psu]
-          - Latitude [degrees_north]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 7, Line 3 (2005-01-10)
           width: 500
           x: distance [km]
           y: Depth [m]
-      urlpath: simplecache://::https://researchworkspace.com/files/42202067/cmi_full_v2.csv
+      urlpath: https://researchworkspace.com/files/42202067/cmi_full_v2.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -1953,7 +1968,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(076368e41ff2fbce)}'
+      - - '{data(32ff94303e055e23)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -1985,13 +2000,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Longitude [degrees_east]
-          - distance [km]
           - Depth [m]
+          - Latitude [degrees_north]
+          - Station
+          - distance [km]
           - Temperature [C]
           - date_time
-          - Salinity [psu]
-          - Latitude [degrees_north]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 7, Line 4 (2005-01-10)
@@ -2005,20 +2020,20 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Longitude [degrees_east]
-          - distance [km]
           - Depth [m]
+          - Latitude [degrees_north]
+          - Station
+          - distance [km]
           - Temperature [C]
           - date_time
-          - Salinity [psu]
-          - Latitude [degrees_north]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 7, Line 4 (2005-01-10)
           width: 500
           x: distance [km]
           y: Depth [m]
-      urlpath: simplecache://::https://researchworkspace.com/files/42202067/cmi_full_v2.csv
+      urlpath: https://researchworkspace.com/files/42202067/cmi_full_v2.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -2029,7 +2044,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(076368e41ff2fbce)}'
+      - - '{data(32ff94303e055e23)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -2061,13 +2076,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Longitude [degrees_east]
-          - distance [km]
           - Depth [m]
+          - Latitude [degrees_north]
+          - Station
+          - distance [km]
           - Temperature [C]
           - date_time
-          - Salinity [psu]
-          - Latitude [degrees_north]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 8, Line 1 (2005-04-25)
@@ -2081,20 +2096,20 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Longitude [degrees_east]
-          - distance [km]
           - Depth [m]
+          - Latitude [degrees_north]
+          - Station
+          - distance [km]
           - Temperature [C]
           - date_time
-          - Salinity [psu]
-          - Latitude [degrees_north]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 8, Line 1 (2005-04-25)
           width: 500
           x: distance [km]
           y: Depth [m]
-      urlpath: simplecache://::https://researchworkspace.com/files/42202067/cmi_full_v2.csv
+      urlpath: https://researchworkspace.com/files/42202067/cmi_full_v2.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -2105,7 +2120,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(076368e41ff2fbce)}'
+      - - '{data(32ff94303e055e23)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -2137,13 +2152,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Longitude [degrees_east]
-          - distance [km]
           - Depth [m]
+          - Latitude [degrees_north]
+          - Station
+          - distance [km]
           - Temperature [C]
           - date_time
-          - Salinity [psu]
-          - Latitude [degrees_north]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 8, Line 2 (2005-04-26)
@@ -2157,20 +2172,20 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Longitude [degrees_east]
-          - distance [km]
           - Depth [m]
+          - Latitude [degrees_north]
+          - Station
+          - distance [km]
           - Temperature [C]
           - date_time
-          - Salinity [psu]
-          - Latitude [degrees_north]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 8, Line 2 (2005-04-26)
           width: 500
           x: distance [km]
           y: Depth [m]
-      urlpath: simplecache://::https://researchworkspace.com/files/42202067/cmi_full_v2.csv
+      urlpath: https://researchworkspace.com/files/42202067/cmi_full_v2.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -2181,7 +2196,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(076368e41ff2fbce)}'
+      - - '{data(32ff94303e055e23)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -2213,13 +2228,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Longitude [degrees_east]
-          - distance [km]
           - Depth [m]
+          - Latitude [degrees_north]
+          - Station
+          - distance [km]
           - Temperature [C]
           - date_time
-          - Salinity [psu]
-          - Latitude [degrees_north]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 8, Line 3 (2005-04-27)
@@ -2233,20 +2248,20 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Longitude [degrees_east]
-          - distance [km]
           - Depth [m]
+          - Latitude [degrees_north]
+          - Station
+          - distance [km]
           - Temperature [C]
           - date_time
-          - Salinity [psu]
-          - Latitude [degrees_north]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 8, Line 3 (2005-04-27)
           width: 500
           x: distance [km]
           y: Depth [m]
-      urlpath: simplecache://::https://researchworkspace.com/files/42202067/cmi_full_v2.csv
+      urlpath: https://researchworkspace.com/files/42202067/cmi_full_v2.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -2257,7 +2272,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(076368e41ff2fbce)}'
+      - - '{data(32ff94303e055e23)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -2289,13 +2304,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Longitude [degrees_east]
-          - distance [km]
           - Depth [m]
+          - Latitude [degrees_north]
+          - Station
+          - distance [km]
           - Temperature [C]
           - date_time
-          - Salinity [psu]
-          - Latitude [degrees_north]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 8, Line 4 (2005-04-25)
@@ -2309,20 +2324,20 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Longitude [degrees_east]
-          - distance [km]
           - Depth [m]
+          - Latitude [degrees_north]
+          - Station
+          - distance [km]
           - Temperature [C]
           - date_time
-          - Salinity [psu]
-          - Latitude [degrees_north]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 8, Line 4 (2005-04-25)
           width: 500
           x: distance [km]
           y: Depth [m]
-      urlpath: simplecache://::https://researchworkspace.com/files/42202067/cmi_full_v2.csv
+      urlpath: https://researchworkspace.com/files/42202067/cmi_full_v2.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -2333,7 +2348,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(076368e41ff2fbce)}'
+      - - '{data(32ff94303e055e23)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -2365,13 +2380,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Longitude [degrees_east]
-          - distance [km]
           - Depth [m]
+          - Latitude [degrees_north]
+          - Station
+          - distance [km]
           - Temperature [C]
           - date_time
-          - Salinity [psu]
-          - Latitude [degrees_north]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 9, Line 1 (2005-06-14)
@@ -2385,20 +2400,20 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Longitude [degrees_east]
-          - distance [km]
           - Depth [m]
+          - Latitude [degrees_north]
+          - Station
+          - distance [km]
           - Temperature [C]
           - date_time
-          - Salinity [psu]
-          - Latitude [degrees_north]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 9, Line 1 (2005-06-14)
           width: 500
           x: distance [km]
           y: Depth [m]
-      urlpath: simplecache://::https://researchworkspace.com/files/42202067/cmi_full_v2.csv
+      urlpath: https://researchworkspace.com/files/42202067/cmi_full_v2.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -2409,7 +2424,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(076368e41ff2fbce)}'
+      - - '{data(32ff94303e055e23)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -2441,13 +2456,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Longitude [degrees_east]
-          - distance [km]
           - Depth [m]
+          - Latitude [degrees_north]
+          - Station
+          - distance [km]
           - Temperature [C]
           - date_time
-          - Salinity [psu]
-          - Latitude [degrees_north]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 9, Line 2 (2005-06-14)
@@ -2461,20 +2476,20 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Longitude [degrees_east]
-          - distance [km]
           - Depth [m]
+          - Latitude [degrees_north]
+          - Station
+          - distance [km]
           - Temperature [C]
           - date_time
-          - Salinity [psu]
-          - Latitude [degrees_north]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 9, Line 2 (2005-06-14)
           width: 500
           x: distance [km]
           y: Depth [m]
-      urlpath: simplecache://::https://researchworkspace.com/files/42202067/cmi_full_v2.csv
+      urlpath: https://researchworkspace.com/files/42202067/cmi_full_v2.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -2485,7 +2500,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(076368e41ff2fbce)}'
+      - - '{data(32ff94303e055e23)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -2517,13 +2532,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Longitude [degrees_east]
-          - distance [km]
           - Depth [m]
+          - Latitude [degrees_north]
+          - Station
+          - distance [km]
           - Temperature [C]
           - date_time
-          - Salinity [psu]
-          - Latitude [degrees_north]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 9, Line 3 (2005-06-15)
@@ -2537,20 +2552,20 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Longitude [degrees_east]
-          - distance [km]
           - Depth [m]
+          - Latitude [degrees_north]
+          - Station
+          - distance [km]
           - Temperature [C]
           - date_time
-          - Salinity [psu]
-          - Latitude [degrees_north]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 9, Line 3 (2005-06-15)
           width: 500
           x: distance [km]
           y: Depth [m]
-      urlpath: simplecache://::https://researchworkspace.com/files/42202067/cmi_full_v2.csv
+      urlpath: https://researchworkspace.com/files/42202067/cmi_full_v2.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -2561,7 +2576,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(076368e41ff2fbce)}'
+      - - '{data(32ff94303e055e23)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -2593,13 +2608,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Longitude [degrees_east]
-          - distance [km]
           - Depth [m]
+          - Latitude [degrees_north]
+          - Station
+          - distance [km]
           - Temperature [C]
           - date_time
-          - Salinity [psu]
-          - Latitude [degrees_north]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 9, Line 4 (2005-06-16)
@@ -2613,20 +2628,20 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Longitude [degrees_east]
-          - distance [km]
           - Depth [m]
+          - Latitude [degrees_north]
+          - Station
+          - distance [km]
           - Temperature [C]
           - date_time
-          - Salinity [psu]
-          - Latitude [degrees_north]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 9, Line 4 (2005-06-16)
           width: 500
           x: distance [km]
           y: Depth [m]
-      urlpath: simplecache://::https://researchworkspace.com/files/42202067/cmi_full_v2.csv
+      urlpath: https://researchworkspace.com/files/42202067/cmi_full_v2.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -2637,7 +2652,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(076368e41ff2fbce)}'
+      - - '{data(32ff94303e055e23)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -2669,13 +2684,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Longitude [degrees_east]
-          - distance [km]
           - Depth [m]
+          - Latitude [degrees_north]
+          - Station
+          - distance [km]
           - Temperature [C]
           - date_time
-          - Salinity [psu]
-          - Latitude [degrees_north]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 10, Line 1 (2005-07-29)
@@ -2689,20 +2704,20 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Longitude [degrees_east]
-          - distance [km]
           - Depth [m]
+          - Latitude [degrees_north]
+          - Station
+          - distance [km]
           - Temperature [C]
           - date_time
-          - Salinity [psu]
-          - Latitude [degrees_north]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 10, Line 1 (2005-07-29)
           width: 500
           x: distance [km]
           y: Depth [m]
-      urlpath: simplecache://::https://researchworkspace.com/files/42202067/cmi_full_v2.csv
+      urlpath: https://researchworkspace.com/files/42202067/cmi_full_v2.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -2713,7 +2728,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(076368e41ff2fbce)}'
+      - - '{data(32ff94303e055e23)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -2745,13 +2760,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Longitude [degrees_east]
-          - distance [km]
           - Depth [m]
+          - Latitude [degrees_north]
+          - Station
+          - distance [km]
           - Temperature [C]
           - date_time
-          - Salinity [psu]
-          - Latitude [degrees_north]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 10, Line 2 (2005-07-29)
@@ -2765,20 +2780,20 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Longitude [degrees_east]
-          - distance [km]
           - Depth [m]
+          - Latitude [degrees_north]
+          - Station
+          - distance [km]
           - Temperature [C]
           - date_time
-          - Salinity [psu]
-          - Latitude [degrees_north]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 10, Line 2 (2005-07-29)
           width: 500
           x: distance [km]
           y: Depth [m]
-      urlpath: simplecache://::https://researchworkspace.com/files/42202067/cmi_full_v2.csv
+      urlpath: https://researchworkspace.com/files/42202067/cmi_full_v2.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -2789,7 +2804,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(076368e41ff2fbce)}'
+      - - '{data(32ff94303e055e23)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -2821,13 +2836,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Longitude [degrees_east]
-          - distance [km]
           - Depth [m]
+          - Latitude [degrees_north]
+          - Station
+          - distance [km]
           - Temperature [C]
           - date_time
-          - Salinity [psu]
-          - Latitude [degrees_north]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 10, Line 3 (2005-07-28)
@@ -2841,20 +2856,20 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Longitude [degrees_east]
-          - distance [km]
           - Depth [m]
+          - Latitude [degrees_north]
+          - Station
+          - distance [km]
           - Temperature [C]
           - date_time
-          - Salinity [psu]
-          - Latitude [degrees_north]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 10, Line 3 (2005-07-28)
           width: 500
           x: distance [km]
           y: Depth [m]
-      urlpath: simplecache://::https://researchworkspace.com/files/42202067/cmi_full_v2.csv
+      urlpath: https://researchworkspace.com/files/42202067/cmi_full_v2.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -2865,7 +2880,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(076368e41ff2fbce)}'
+      - - '{data(32ff94303e055e23)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -2897,13 +2912,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Longitude [degrees_east]
-          - distance [km]
           - Depth [m]
+          - Latitude [degrees_north]
+          - Station
+          - distance [km]
           - Temperature [C]
           - date_time
-          - Salinity [psu]
-          - Latitude [degrees_north]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 10, Line 4 (2005-07-30)
@@ -2917,20 +2932,20 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Longitude [degrees_east]
-          - distance [km]
           - Depth [m]
+          - Latitude [degrees_north]
+          - Station
+          - distance [km]
           - Temperature [C]
           - date_time
-          - Salinity [psu]
-          - Latitude [degrees_north]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 10, Line 4 (2005-07-30)
           width: 500
           x: distance [km]
           y: Depth [m]
-      urlpath: simplecache://::https://researchworkspace.com/files/42202067/cmi_full_v2.csv
+      urlpath: https://researchworkspace.com/files/42202067/cmi_full_v2.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -2941,7 +2956,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(076368e41ff2fbce)}'
+      - - '{data(32ff94303e055e23)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -2973,13 +2988,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Longitude [degrees_east]
-          - distance [km]
           - Depth [m]
+          - Latitude [degrees_north]
+          - Station
+          - distance [km]
           - Temperature [C]
           - date_time
-          - Salinity [psu]
-          - Latitude [degrees_north]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 11, Line 1 (2005-09-04)
@@ -2993,20 +3008,20 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Longitude [degrees_east]
-          - distance [km]
           - Depth [m]
+          - Latitude [degrees_north]
+          - Station
+          - distance [km]
           - Temperature [C]
           - date_time
-          - Salinity [psu]
-          - Latitude [degrees_north]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 11, Line 1 (2005-09-04)
           width: 500
           x: distance [km]
           y: Depth [m]
-      urlpath: simplecache://::https://researchworkspace.com/files/42202067/cmi_full_v2.csv
+      urlpath: https://researchworkspace.com/files/42202067/cmi_full_v2.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -3017,7 +3032,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(076368e41ff2fbce)}'
+      - - '{data(32ff94303e055e23)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -3049,13 +3064,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Longitude [degrees_east]
-          - distance [km]
           - Depth [m]
+          - Latitude [degrees_north]
+          - Station
+          - distance [km]
           - Temperature [C]
           - date_time
-          - Salinity [psu]
-          - Latitude [degrees_north]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 11, Line 2 (2005-09-05)
@@ -3069,20 +3084,20 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Longitude [degrees_east]
-          - distance [km]
           - Depth [m]
+          - Latitude [degrees_north]
+          - Station
+          - distance [km]
           - Temperature [C]
           - date_time
-          - Salinity [psu]
-          - Latitude [degrees_north]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 11, Line 2 (2005-09-05)
           width: 500
           x: distance [km]
           y: Depth [m]
-      urlpath: simplecache://::https://researchworkspace.com/files/42202067/cmi_full_v2.csv
+      urlpath: https://researchworkspace.com/files/42202067/cmi_full_v2.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -3093,7 +3108,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(076368e41ff2fbce)}'
+      - - '{data(32ff94303e055e23)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -3125,13 +3140,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Longitude [degrees_east]
-          - distance [km]
           - Depth [m]
+          - Latitude [degrees_north]
+          - Station
+          - distance [km]
           - Temperature [C]
           - date_time
-          - Salinity [psu]
-          - Latitude [degrees_north]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 11, Line 3 (2005-09-06)
@@ -3145,20 +3160,20 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Longitude [degrees_east]
-          - distance [km]
           - Depth [m]
+          - Latitude [degrees_north]
+          - Station
+          - distance [km]
           - Temperature [C]
           - date_time
-          - Salinity [psu]
-          - Latitude [degrees_north]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 11, Line 3 (2005-09-06)
           width: 500
           x: distance [km]
           y: Depth [m]
-      urlpath: simplecache://::https://researchworkspace.com/files/42202067/cmi_full_v2.csv
+      urlpath: https://researchworkspace.com/files/42202067/cmi_full_v2.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -3169,7 +3184,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(076368e41ff2fbce)}'
+      - - '{data(32ff94303e055e23)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -3201,13 +3216,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Longitude [degrees_east]
-          - distance [km]
           - Depth [m]
+          - Latitude [degrees_north]
+          - Station
+          - distance [km]
           - Temperature [C]
           - date_time
-          - Salinity [psu]
-          - Latitude [degrees_north]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 11, Line 4 (2005-09-06)
@@ -3221,20 +3236,20 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Longitude [degrees_east]
-          - distance [km]
           - Depth [m]
+          - Latitude [degrees_north]
+          - Station
+          - distance [km]
           - Temperature [C]
           - date_time
-          - Salinity [psu]
-          - Latitude [degrees_north]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 11, Line 4 (2005-09-06)
           width: 500
           x: distance [km]
           y: Depth [m]
-      urlpath: simplecache://::https://researchworkspace.com/files/42202067/cmi_full_v2.csv
+      urlpath: https://researchworkspace.com/files/42202067/cmi_full_v2.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -3245,7 +3260,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(076368e41ff2fbce)}'
+      - - '{data(32ff94303e055e23)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -3277,13 +3292,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Longitude [degrees_east]
-          - distance [km]
           - Depth [m]
+          - Latitude [degrees_north]
+          - Station
+          - distance [km]
           - Temperature [C]
           - date_time
-          - Salinity [psu]
-          - Latitude [degrees_north]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 12, Line 1 (2005-10-13)
@@ -3297,20 +3312,20 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Longitude [degrees_east]
-          - distance [km]
           - Depth [m]
+          - Latitude [degrees_north]
+          - Station
+          - distance [km]
           - Temperature [C]
           - date_time
-          - Salinity [psu]
-          - Latitude [degrees_north]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 12, Line 1 (2005-10-13)
           width: 500
           x: distance [km]
           y: Depth [m]
-      urlpath: simplecache://::https://researchworkspace.com/files/42202067/cmi_full_v2.csv
+      urlpath: https://researchworkspace.com/files/42202067/cmi_full_v2.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -3321,7 +3336,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(076368e41ff2fbce)}'
+      - - '{data(32ff94303e055e23)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -3353,13 +3368,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Longitude [degrees_east]
-          - distance [km]
           - Depth [m]
+          - Latitude [degrees_north]
+          - Station
+          - distance [km]
           - Temperature [C]
           - date_time
-          - Salinity [psu]
-          - Latitude [degrees_north]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 12, Line 2 (2005-10-14)
@@ -3373,20 +3388,20 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Longitude [degrees_east]
-          - distance [km]
           - Depth [m]
+          - Latitude [degrees_north]
+          - Station
+          - distance [km]
           - Temperature [C]
           - date_time
-          - Salinity [psu]
-          - Latitude [degrees_north]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 12, Line 2 (2005-10-14)
           width: 500
           x: distance [km]
           y: Depth [m]
-      urlpath: simplecache://::https://researchworkspace.com/files/42202067/cmi_full_v2.csv
+      urlpath: https://researchworkspace.com/files/42202067/cmi_full_v2.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -3397,7 +3412,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(076368e41ff2fbce)}'
+      - - '{data(32ff94303e055e23)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -3429,13 +3444,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Longitude [degrees_east]
-          - distance [km]
           - Depth [m]
+          - Latitude [degrees_north]
+          - Station
+          - distance [km]
           - Temperature [C]
           - date_time
-          - Salinity [psu]
-          - Latitude [degrees_north]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 12, Line 3 (2005-10-14)
@@ -3449,20 +3464,20 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Longitude [degrees_east]
-          - distance [km]
           - Depth [m]
+          - Latitude [degrees_north]
+          - Station
+          - distance [km]
           - Temperature [C]
           - date_time
-          - Salinity [psu]
-          - Latitude [degrees_north]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 12, Line 3 (2005-10-14)
           width: 500
           x: distance [km]
           y: Depth [m]
-      urlpath: simplecache://::https://researchworkspace.com/files/42202067/cmi_full_v2.csv
+      urlpath: https://researchworkspace.com/files/42202067/cmi_full_v2.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -3473,7 +3488,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(076368e41ff2fbce)}'
+      - - '{data(32ff94303e055e23)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -3505,13 +3520,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Longitude [degrees_east]
-          - distance [km]
           - Depth [m]
+          - Latitude [degrees_north]
+          - Station
+          - distance [km]
           - Temperature [C]
           - date_time
-          - Salinity [psu]
-          - Latitude [degrees_north]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 12, Line 4 (2005-10-14)
@@ -3525,20 +3540,20 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Longitude [degrees_east]
-          - distance [km]
           - Depth [m]
+          - Latitude [degrees_north]
+          - Station
+          - distance [km]
           - Temperature [C]
           - date_time
-          - Salinity [psu]
-          - Latitude [degrees_north]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 12, Line 4 (2005-10-14)
           width: 500
           x: distance [km]
           y: Depth [m]
-      urlpath: simplecache://::https://researchworkspace.com/files/42202067/cmi_full_v2.csv
+      urlpath: https://researchworkspace.com/files/42202067/cmi_full_v2.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -3549,7 +3564,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(076368e41ff2fbce)}'
+      - - '{data(32ff94303e055e23)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -3581,13 +3596,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Longitude [degrees_east]
-          - distance [km]
           - Depth [m]
+          - Latitude [degrees_north]
+          - Station
+          - distance [km]
           - Temperature [C]
           - date_time
-          - Salinity [psu]
-          - Latitude [degrees_north]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 13, Line 1 (2006-07-26)
@@ -3601,20 +3616,20 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Longitude [degrees_east]
-          - distance [km]
           - Depth [m]
+          - Latitude [degrees_north]
+          - Station
+          - distance [km]
           - Temperature [C]
           - date_time
-          - Salinity [psu]
-          - Latitude [degrees_north]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 13, Line 1 (2006-07-26)
           width: 500
           x: distance [km]
           y: Depth [m]
-      urlpath: simplecache://::https://researchworkspace.com/files/42202067/cmi_full_v2.csv
+      urlpath: https://researchworkspace.com/files/42202067/cmi_full_v2.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -3625,7 +3640,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(076368e41ff2fbce)}'
+      - - '{data(32ff94303e055e23)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -3657,13 +3672,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Longitude [degrees_east]
-          - distance [km]
           - Depth [m]
+          - Latitude [degrees_north]
+          - Station
+          - distance [km]
           - Temperature [C]
           - date_time
-          - Salinity [psu]
-          - Latitude [degrees_north]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 13, Line 3 (2006-07-26)
@@ -3677,20 +3692,20 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Longitude [degrees_east]
-          - distance [km]
           - Depth [m]
+          - Latitude [degrees_north]
+          - Station
+          - distance [km]
           - Temperature [C]
           - date_time
-          - Salinity [psu]
-          - Latitude [degrees_north]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 13, Line 3 (2006-07-26)
           width: 500
           x: distance [km]
           y: Depth [m]
-      urlpath: simplecache://::https://researchworkspace.com/files/42202067/cmi_full_v2.csv
+      urlpath: https://researchworkspace.com/files/42202067/cmi_full_v2.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -3701,7 +3716,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(076368e41ff2fbce)}'
+      - - '{data(32ff94303e055e23)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -3733,13 +3748,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Longitude [degrees_east]
-          - distance [km]
           - Depth [m]
+          - Latitude [degrees_north]
+          - Station
+          - distance [km]
           - Temperature [C]
           - date_time
-          - Salinity [psu]
-          - Latitude [degrees_north]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 13, Line 4 (2006-07-28)
@@ -3753,20 +3768,20 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Longitude [degrees_east]
-          - distance [km]
           - Depth [m]
+          - Latitude [degrees_north]
+          - Station
+          - distance [km]
           - Temperature [C]
           - date_time
-          - Salinity [psu]
-          - Latitude [degrees_north]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 13, Line 4 (2006-07-28)
           width: 500
           x: distance [km]
           y: Depth [m]
-      urlpath: simplecache://::https://researchworkspace.com/files/42202067/cmi_full_v2.csv
+      urlpath: https://researchworkspace.com/files/42202067/cmi_full_v2.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -3777,7 +3792,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(076368e41ff2fbce)}'
+      - - '{data(32ff94303e055e23)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -3809,13 +3824,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Longitude [degrees_east]
-          - distance [km]
           - Depth [m]
+          - Latitude [degrees_north]
+          - Station
+          - distance [km]
           - Temperature [C]
           - date_time
-          - Salinity [psu]
-          - Latitude [degrees_north]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 13, Line 6 (2006-07-27)
@@ -3829,20 +3844,20 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Longitude [degrees_east]
-          - distance [km]
           - Depth [m]
+          - Latitude [degrees_north]
+          - Station
+          - distance [km]
           - Temperature [C]
           - date_time
-          - Salinity [psu]
-          - Latitude [degrees_north]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 13, Line 6 (2006-07-27)
           width: 500
           x: distance [km]
           y: Depth [m]
-      urlpath: simplecache://::https://researchworkspace.com/files/42202067/cmi_full_v2.csv
+      urlpath: https://researchworkspace.com/files/42202067/cmi_full_v2.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -3853,7 +3868,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(076368e41ff2fbce)}'
+      - - '{data(32ff94303e055e23)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -3885,13 +3900,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Longitude [degrees_east]
-          - distance [km]
           - Depth [m]
+          - Latitude [degrees_north]
+          - Station
+          - distance [km]
           - Temperature [C]
           - date_time
-          - Salinity [psu]
-          - Latitude [degrees_north]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 13, Line 7 (2006-07-26)
@@ -3905,20 +3920,20 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Longitude [degrees_east]
-          - distance [km]
           - Depth [m]
+          - Latitude [degrees_north]
+          - Station
+          - distance [km]
           - Temperature [C]
           - date_time
-          - Salinity [psu]
-          - Latitude [degrees_north]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 13, Line 7 (2006-07-26)
           width: 500
           x: distance [km]
           y: Depth [m]
-      urlpath: simplecache://::https://researchworkspace.com/files/42202067/cmi_full_v2.csv
+      urlpath: https://researchworkspace.com/files/42202067/cmi_full_v2.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -3929,7 +3944,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(076368e41ff2fbce)}'
+      - - '{data(32ff94303e055e23)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -3961,13 +3976,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Longitude [degrees_east]
-          - distance [km]
           - Depth [m]
+          - Latitude [degrees_north]
+          - Station
+          - distance [km]
           - Temperature [C]
           - date_time
-          - Salinity [psu]
-          - Latitude [degrees_north]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 14, Line 1 (2006-08-06)
@@ -3981,20 +3996,20 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Longitude [degrees_east]
-          - distance [km]
           - Depth [m]
+          - Latitude [degrees_north]
+          - Station
+          - distance [km]
           - Temperature [C]
           - date_time
-          - Salinity [psu]
-          - Latitude [degrees_north]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 14, Line 1 (2006-08-06)
           width: 500
           x: distance [km]
           y: Depth [m]
-      urlpath: simplecache://::https://researchworkspace.com/files/42202067/cmi_full_v2.csv
+      urlpath: https://researchworkspace.com/files/42202067/cmi_full_v2.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -4005,7 +4020,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(076368e41ff2fbce)}'
+      - - '{data(32ff94303e055e23)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -4037,13 +4052,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Longitude [degrees_east]
-          - distance [km]
           - Depth [m]
+          - Latitude [degrees_north]
+          - Station
+          - distance [km]
           - Temperature [C]
           - date_time
-          - Salinity [psu]
-          - Latitude [degrees_north]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 14, Line 2 (2006-08-06)
@@ -4057,20 +4072,20 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Longitude [degrees_east]
-          - distance [km]
           - Depth [m]
+          - Latitude [degrees_north]
+          - Station
+          - distance [km]
           - Temperature [C]
           - date_time
-          - Salinity [psu]
-          - Latitude [degrees_north]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 14, Line 2 (2006-08-06)
           width: 500
           x: distance [km]
           y: Depth [m]
-      urlpath: simplecache://::https://researchworkspace.com/files/42202067/cmi_full_v2.csv
+      urlpath: https://researchworkspace.com/files/42202067/cmi_full_v2.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -4081,7 +4096,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(076368e41ff2fbce)}'
+      - - '{data(32ff94303e055e23)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -4113,13 +4128,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Longitude [degrees_east]
-          - distance [km]
           - Depth [m]
+          - Latitude [degrees_north]
+          - Station
+          - distance [km]
           - Temperature [C]
           - date_time
-          - Salinity [psu]
-          - Latitude [degrees_north]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 14, Line 3 (2006-08-05)
@@ -4133,20 +4148,20 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Longitude [degrees_east]
-          - distance [km]
           - Depth [m]
+          - Latitude [degrees_north]
+          - Station
+          - distance [km]
           - Temperature [C]
           - date_time
-          - Salinity [psu]
-          - Latitude [degrees_north]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 14, Line 3 (2006-08-05)
           width: 500
           x: distance [km]
           y: Depth [m]
-      urlpath: simplecache://::https://researchworkspace.com/files/42202067/cmi_full_v2.csv
+      urlpath: https://researchworkspace.com/files/42202067/cmi_full_v2.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -4157,7 +4172,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(076368e41ff2fbce)}'
+      - - '{data(32ff94303e055e23)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -4189,13 +4204,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Longitude [degrees_east]
-          - distance [km]
           - Depth [m]
+          - Latitude [degrees_north]
+          - Station
+          - distance [km]
           - Temperature [C]
           - date_time
-          - Salinity [psu]
-          - Latitude [degrees_north]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 14, Line 4 (2006-08-07)
@@ -4209,20 +4224,20 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Longitude [degrees_east]
-          - distance [km]
           - Depth [m]
+          - Latitude [degrees_north]
+          - Station
+          - distance [km]
           - Temperature [C]
           - date_time
-          - Salinity [psu]
-          - Latitude [degrees_north]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 14, Line 4 (2006-08-07)
           width: 500
           x: distance [km]
           y: Depth [m]
-      urlpath: simplecache://::https://researchworkspace.com/files/42202067/cmi_full_v2.csv
+      urlpath: https://researchworkspace.com/files/42202067/cmi_full_v2.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -4233,7 +4248,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(076368e41ff2fbce)}'
+      - - '{data(32ff94303e055e23)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -4265,13 +4280,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Longitude [degrees_east]
-          - distance [km]
           - Depth [m]
+          - Latitude [degrees_north]
+          - Station
+          - distance [km]
           - Temperature [C]
           - date_time
-          - Salinity [psu]
-          - Latitude [degrees_north]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 14, Line 6 (2006-08-06)
@@ -4285,20 +4300,20 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Longitude [degrees_east]
-          - distance [km]
           - Depth [m]
+          - Latitude [degrees_north]
+          - Station
+          - distance [km]
           - Temperature [C]
           - date_time
-          - Salinity [psu]
-          - Latitude [degrees_north]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 14, Line 6 (2006-08-06)
           width: 500
           x: distance [km]
           y: Depth [m]
-      urlpath: simplecache://::https://researchworkspace.com/files/42202067/cmi_full_v2.csv
+      urlpath: https://researchworkspace.com/files/42202067/cmi_full_v2.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -4309,7 +4324,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(076368e41ff2fbce)}'
+      - - '{data(32ff94303e055e23)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -4341,13 +4356,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Longitude [degrees_east]
-          - distance [km]
           - Depth [m]
+          - Latitude [degrees_north]
+          - Station
+          - distance [km]
           - Temperature [C]
           - date_time
-          - Salinity [psu]
-          - Latitude [degrees_north]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 14, Line 7 (2006-08-05)
@@ -4361,20 +4376,20 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Longitude [degrees_east]
-          - distance [km]
           - Depth [m]
+          - Latitude [degrees_north]
+          - Station
+          - distance [km]
           - Temperature [C]
           - date_time
-          - Salinity [psu]
-          - Latitude [degrees_north]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 14, Line 7 (2006-08-05)
           width: 500
           x: distance [km]
           y: Depth [m]
-      urlpath: simplecache://::https://researchworkspace.com/files/42202067/cmi_full_v2.csv
+      urlpath: https://researchworkspace.com/files/42202067/cmi_full_v2.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -4385,7 +4400,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(076368e41ff2fbce)}'
+      - - '{data(32ff94303e055e23)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -4417,13 +4432,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Longitude [degrees_east]
-          - distance [km]
           - Depth [m]
+          - Latitude [degrees_north]
+          - Station
+          - distance [km]
           - Temperature [C]
           - date_time
-          - Salinity [psu]
-          - Latitude [degrees_north]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 15, Line 1 (2006-08-12)
@@ -4437,20 +4452,20 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Longitude [degrees_east]
-          - distance [km]
           - Depth [m]
+          - Latitude [degrees_north]
+          - Station
+          - distance [km]
           - Temperature [C]
           - date_time
-          - Salinity [psu]
-          - Latitude [degrees_north]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 15, Line 1 (2006-08-12)
           width: 500
           x: distance [km]
           y: Depth [m]
-      urlpath: simplecache://::https://researchworkspace.com/files/42202067/cmi_full_v2.csv
+      urlpath: https://researchworkspace.com/files/42202067/cmi_full_v2.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -4461,7 +4476,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(076368e41ff2fbce)}'
+      - - '{data(32ff94303e055e23)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -4493,13 +4508,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Longitude [degrees_east]
-          - distance [km]
           - Depth [m]
+          - Latitude [degrees_north]
+          - Station
+          - distance [km]
           - Temperature [C]
           - date_time
-          - Salinity [psu]
-          - Latitude [degrees_north]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 15, Line 3 (2006-08-12)
@@ -4513,20 +4528,20 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Longitude [degrees_east]
-          - distance [km]
           - Depth [m]
+          - Latitude [degrees_north]
+          - Station
+          - distance [km]
           - Temperature [C]
           - date_time
-          - Salinity [psu]
-          - Latitude [degrees_north]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 15, Line 3 (2006-08-12)
           width: 500
           x: distance [km]
           y: Depth [m]
-      urlpath: simplecache://::https://researchworkspace.com/files/42202067/cmi_full_v2.csv
+      urlpath: https://researchworkspace.com/files/42202067/cmi_full_v2.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -4537,7 +4552,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(076368e41ff2fbce)}'
+      - - '{data(32ff94303e055e23)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -4569,13 +4584,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Longitude [degrees_east]
-          - distance [km]
           - Depth [m]
+          - Latitude [degrees_north]
+          - Station
+          - distance [km]
           - Temperature [C]
           - date_time
-          - Salinity [psu]
-          - Latitude [degrees_north]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 15, Line 4 (2006-08-14)
@@ -4589,20 +4604,20 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Longitude [degrees_east]
-          - distance [km]
           - Depth [m]
+          - Latitude [degrees_north]
+          - Station
+          - distance [km]
           - Temperature [C]
           - date_time
-          - Salinity [psu]
-          - Latitude [degrees_north]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 15, Line 4 (2006-08-14)
           width: 500
           x: distance [km]
           y: Depth [m]
-      urlpath: simplecache://::https://researchworkspace.com/files/42202067/cmi_full_v2.csv
+      urlpath: https://researchworkspace.com/files/42202067/cmi_full_v2.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -4613,7 +4628,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(076368e41ff2fbce)}'
+      - - '{data(32ff94303e055e23)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -4645,13 +4660,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Longitude [degrees_east]
-          - distance [km]
           - Depth [m]
+          - Latitude [degrees_north]
+          - Station
+          - distance [km]
           - Temperature [C]
           - date_time
-          - Salinity [psu]
-          - Latitude [degrees_north]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 15, Line 6 (2006-08-13)
@@ -4665,20 +4680,20 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Longitude [degrees_east]
-          - distance [km]
           - Depth [m]
+          - Latitude [degrees_north]
+          - Station
+          - distance [km]
           - Temperature [C]
           - date_time
-          - Salinity [psu]
-          - Latitude [degrees_north]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 15, Line 6 (2006-08-13)
           width: 500
           x: distance [km]
           y: Depth [m]
-      urlpath: simplecache://::https://researchworkspace.com/files/42202067/cmi_full_v2.csv
+      urlpath: https://researchworkspace.com/files/42202067/cmi_full_v2.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -4689,7 +4704,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(076368e41ff2fbce)}'
+      - - '{data(32ff94303e055e23)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -4721,13 +4736,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Longitude [degrees_east]
-          - distance [km]
           - Depth [m]
+          - Latitude [degrees_north]
+          - Station
+          - distance [km]
           - Temperature [C]
           - date_time
-          - Salinity [psu]
-          - Latitude [degrees_north]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 15, Line 7 (2006-08-12)
@@ -4741,20 +4756,20 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Longitude [degrees_east]
-          - distance [km]
           - Depth [m]
+          - Latitude [degrees_north]
+          - Station
+          - distance [km]
           - Temperature [C]
           - date_time
-          - Salinity [psu]
-          - Latitude [degrees_north]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 15, Line 7 (2006-08-12)
           width: 500
           x: distance [km]
           y: Depth [m]
-      urlpath: simplecache://::https://researchworkspace.com/files/42202067/cmi_full_v2.csv
+      urlpath: https://researchworkspace.com/files/42202067/cmi_full_v2.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -4765,7 +4780,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(076368e41ff2fbce)}'
+      - - '{data(32ff94303e055e23)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -4797,13 +4812,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Longitude [degrees_east]
-          - distance [km]
           - Depth [m]
+          - Latitude [degrees_north]
+          - Station
+          - distance [km]
           - Temperature [C]
           - date_time
-          - Salinity [psu]
-          - Latitude [degrees_north]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 16, Line 1 (2006-09-12)
@@ -4817,20 +4832,20 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Longitude [degrees_east]
-          - distance [km]
           - Depth [m]
+          - Latitude [degrees_north]
+          - Station
+          - distance [km]
           - Temperature [C]
           - date_time
-          - Salinity [psu]
-          - Latitude [degrees_north]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 16, Line 1 (2006-09-12)
           width: 500
           x: distance [km]
           y: Depth [m]
-      urlpath: simplecache://::https://researchworkspace.com/files/42202067/cmi_full_v2.csv
+      urlpath: https://researchworkspace.com/files/42202067/cmi_full_v2.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -4841,7 +4856,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(076368e41ff2fbce)}'
+      - - '{data(32ff94303e055e23)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -4873,13 +4888,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Longitude [degrees_east]
-          - distance [km]
           - Depth [m]
+          - Latitude [degrees_north]
+          - Station
+          - distance [km]
           - Temperature [C]
           - date_time
-          - Salinity [psu]
-          - Latitude [degrees_north]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 16, Line 2 (2006-09-13)
@@ -4893,20 +4908,20 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Longitude [degrees_east]
-          - distance [km]
           - Depth [m]
+          - Latitude [degrees_north]
+          - Station
+          - distance [km]
           - Temperature [C]
           - date_time
-          - Salinity [psu]
-          - Latitude [degrees_north]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 16, Line 2 (2006-09-13)
           width: 500
           x: distance [km]
           y: Depth [m]
-      urlpath: simplecache://::https://researchworkspace.com/files/42202067/cmi_full_v2.csv
+      urlpath: https://researchworkspace.com/files/42202067/cmi_full_v2.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -4917,7 +4932,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(076368e41ff2fbce)}'
+      - - '{data(32ff94303e055e23)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -4949,13 +4964,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Longitude [degrees_east]
-          - distance [km]
           - Depth [m]
+          - Latitude [degrees_north]
+          - Station
+          - distance [km]
           - Temperature [C]
           - date_time
-          - Salinity [psu]
-          - Latitude [degrees_north]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 16, Line 3 (2006-09-11)
@@ -4969,20 +4984,20 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Longitude [degrees_east]
-          - distance [km]
           - Depth [m]
+          - Latitude [degrees_north]
+          - Station
+          - distance [km]
           - Temperature [C]
           - date_time
-          - Salinity [psu]
-          - Latitude [degrees_north]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 16, Line 3 (2006-09-11)
           width: 500
           x: distance [km]
           y: Depth [m]
-      urlpath: simplecache://::https://researchworkspace.com/files/42202067/cmi_full_v2.csv
+      urlpath: https://researchworkspace.com/files/42202067/cmi_full_v2.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -4993,7 +5008,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(076368e41ff2fbce)}'
+      - - '{data(32ff94303e055e23)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -5025,13 +5040,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Longitude [degrees_east]
-          - distance [km]
           - Depth [m]
+          - Latitude [degrees_north]
+          - Station
+          - distance [km]
           - Temperature [C]
           - date_time
-          - Salinity [psu]
-          - Latitude [degrees_north]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 16, Line 4 (2006-09-13)
@@ -5045,20 +5060,20 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Longitude [degrees_east]
-          - distance [km]
           - Depth [m]
+          - Latitude [degrees_north]
+          - Station
+          - distance [km]
           - Temperature [C]
           - date_time
-          - Salinity [psu]
-          - Latitude [degrees_north]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 16, Line 4 (2006-09-13)
           width: 500
           x: distance [km]
           y: Depth [m]
-      urlpath: simplecache://::https://researchworkspace.com/files/42202067/cmi_full_v2.csv
+      urlpath: https://researchworkspace.com/files/42202067/cmi_full_v2.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -5069,7 +5084,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(076368e41ff2fbce)}'
+      - - '{data(32ff94303e055e23)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -5101,13 +5116,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Longitude [degrees_east]
-          - distance [km]
           - Depth [m]
+          - Latitude [degrees_north]
+          - Station
+          - distance [km]
           - Temperature [C]
           - date_time
-          - Salinity [psu]
-          - Latitude [degrees_north]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 16, Line 6 (2006-09-13)
@@ -5121,20 +5136,20 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Longitude [degrees_east]
-          - distance [km]
           - Depth [m]
+          - Latitude [degrees_north]
+          - Station
+          - distance [km]
           - Temperature [C]
           - date_time
-          - Salinity [psu]
-          - Latitude [degrees_north]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 16, Line 6 (2006-09-13)
           width: 500
           x: distance [km]
           y: Depth [m]
-      urlpath: simplecache://::https://researchworkspace.com/files/42202067/cmi_full_v2.csv
+      urlpath: https://researchworkspace.com/files/42202067/cmi_full_v2.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -5145,7 +5160,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(076368e41ff2fbce)}'
+      - - '{data(32ff94303e055e23)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -5177,13 +5192,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Longitude [degrees_east]
-          - distance [km]
           - Depth [m]
+          - Latitude [degrees_north]
+          - Station
+          - distance [km]
           - Temperature [C]
           - date_time
-          - Salinity [psu]
-          - Latitude [degrees_north]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 16, Line 7 (2006-09-11)
@@ -5197,20 +5212,20 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Longitude [degrees_east]
-          - distance [km]
           - Depth [m]
+          - Latitude [degrees_north]
+          - Station
+          - distance [km]
           - Temperature [C]
           - date_time
-          - Salinity [psu]
-          - Latitude [degrees_north]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 16, Line 7 (2006-09-11)
           width: 500
           x: distance [km]
           y: Depth [m]
-      urlpath: simplecache://::https://researchworkspace.com/files/42202067/cmi_full_v2.csv
+      urlpath: https://researchworkspace.com/files/42202067/cmi_full_v2.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -5223,7 +5238,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(af43f375a67ee0f5)}'
+      - - '{data(d1ffd1c7559cb4aa)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -5234,7 +5249,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(ccdb49a9703721e9)}'
+        - datetime: '{data(9eda17421944bb9d)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -5268,11 +5283,11 @@ entries:
           height: 300
           hover_cols:
           - Press
-          - datetime
-          - Temperature [C]
-          - Salinity [psu]
+          - Station
           - "Lat (\xB0N)"
+          - Temperature [C]
           - "Lon (\xB0E)"
+          - datetime
           kind: scatter
           shared_axes: false
           title: null
@@ -5287,75 +5302,48 @@ entries:
           height: 300
           hover_cols:
           - Press
-          - datetime
-          - Temperature [C]
-          - Salinity [psu]
+          - Station
           - "Lat (\xB0N)"
+          - Temperature [C]
           - "Lon (\xB0E)"
+          - datetime
           kind: scatter
           shared_axes: false
           title: null
           width: 500
           x: datetime
           y: Press
-      urlpath: simplecache://::https://researchworkspace.com/files/39886046/Kbay_timeseries.txt
+      urlpath: https://researchworkspace.com/files/39886046/Kbay_timeseries.txt
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
-  af43f375a67ee0f5:
+  d1ffd1c7559cb4aa:
     kwargs:
       args:
-      - '{data(8738bbe188fb7bbd)}'
+      - '{data(84ebeae8582d95d8)}'
       dtype:
         hh:mm: '{func(builtins:str)}'
         mon/day/yr: '{func(builtins:str)}'
       encoding: ISO-8859-1
       sep: "\t"
-      storage_options:
-        simplecache:
-          cache_storage: /Users/kthyng/Library/Caches/cook-inlet-catalogs
-          same_names: true
     metadata: {}
     output_instance: pandas:DataFrame
     reader: intake.readers.readers:PandasCSV
     user_parameters: {}
-  bb6e3dcf61736374:
+  da23c4004898388d:
     kwargs:
       out_instances:
       - pandas:DataFrame
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(0fc3aee105917ee6)}'
+      - - '{data(0072bc8fb93300fe)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
         - []
         - columns:
             hh:mm: time
-            mon/day/yr: date
-          method_name: rename
-      - - '{func(intake.readers.convert:GenericFunc)}'
-        - []
-        - func: '{func(cook_inlet_catalogs.utils:parse_date_time)}'
-    metadata: {}
-    output_instance: pandas:DataFrame
-    reader: intake.readers.convert:Pipeline
-    user_parameters: {}
-  ccdb49a9703721e9:
-    kwargs:
-      out_instances:
-      - pandas:DataFrame
-      - pandas:DataFrame
-      - pandas:DataFrame
-      steps:
-      - - '{data(af43f375a67ee0f5)}'
-        - []
-        - {}
-      - - '{func(intake.readers.transform:Method)}'
-        - []
-        - columns:
-            hh:mm [utc]: time
             mon/day/yr: date
           method_name: rename
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -5374,7 +5362,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(0fc3aee105917ee6)}'
+      - - '{data(0072bc8fb93300fe)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -5385,7 +5373,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(bb6e3dcf61736374)}'
+        - datetime: '{data(da23c4004898388d)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -5419,12 +5407,12 @@ entries:
           height: 300
           hover_cols:
           - Press
-          - datetime
+          - Station
+          - "Lat (\xB0N)"
           - distance [km]
           - Temperature [C]
-          - Salinity [psu]
-          - "Lat (\xB0N)"
           - "Lon (\xB0E)"
+          - datetime
           kind: scatter
           shared_axes: false
           title: null
@@ -5439,19 +5427,19 @@ entries:
           height: 300
           hover_cols:
           - Press
-          - datetime
+          - Station
+          - "Lat (\xB0N)"
           - distance [km]
           - Temperature [C]
-          - Salinity [psu]
-          - "Lat (\xB0N)"
           - "Lon (\xB0E)"
+          - datetime
           kind: scatter
           shared_axes: false
           title: null
           width: 500
           x: distance [km]
           y: Press
-      urlpath: simplecache://::https://researchworkspace.com/files/39886061/sue_shelikof.txt
+      urlpath: https://researchworkspace.com/files/39886061/sue_shelikof.txt
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -5477,8 +5465,8 @@ metadata:
   - sue_shelikof
   included: true
   key_variables:
-  - salt
   - temp
+  - salt
   map:
     coastline: false
     geo: true

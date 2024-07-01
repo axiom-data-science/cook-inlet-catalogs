@@ -2004,7 +2004,7 @@ Several years of EcoFOCI drifter data are also available in a private Research W
 # Generate all catalogs
 if __name__ == "__main__":
     
-    simplecache = True
+    simplecache = False
     
     from time import time
     for slug in cic.slugs:
