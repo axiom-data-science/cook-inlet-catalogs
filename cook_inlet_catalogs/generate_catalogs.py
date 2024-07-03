@@ -1311,7 +1311,7 @@ More information: https://accs.uaa.alaska.edu/kbnerr/
         data = intake.readers.datatypes.CSV(url)
         initial_reader = intake.readers.readers.PandasCSV(data, **csv_kwargs)
         hover_cols = cic.utils.get_hover_cols(df)
-        plot_kwargs = dict(x=df.cf["T"].name, y=[df.cf["temp"].name, df.cf["salt"].name], hover_cols=hover_cols)
+        plot_kwargs = dict(x=df.cf["T"].name, y=[df.cf["temp"].name, df.cf["salt"].name], subplots=True, hover_cols=hover_cols)
         initial_reader.metadata = {"plots": {"data": cic.utils.line_time_dict(**plot_kwargs)}}
         initial_reader.metadata.update(cic.utils.add_metadata(df, metadata["maptype"], metadata["featuretype"], url))
         cat[name] = initial_reader
@@ -1345,12 +1345,14 @@ def hfradar(slug, simplecache):
         summary = f"""HF Radar from UAF.
 
 Files are:
+
 * Upper Cook Inlet (System A): 2002-2003 and 2009
 * Lower Cook Inlet (System B): 2006-2007
 
 Data variables available include tidally filtered and weekly averaged along with tidal constituents calculated from hourly data.
     
 Some of the data is written up in reports:
+
 * https://espis.boem.gov/final%20reports/5009.pdf
 * https://www.govinfo.gov/app/details/GOVPUB-I-47b721482d69e308aec1cca9b3e51955
 
@@ -1428,31 +1430,30 @@ Some of the data is written up in reports:
 
 def make_erddap_catalog(slug, project_name, overall_desc, time, included, notes, maptype, featuretype,
                         header_names, map_description, summary, stations, open_kwargs,
-                        transform_source_names=None, transform_function=None, transform_kwargs=None):
+                        simplecache):
     metadata = dict(project_name = project_name, overall_desc = overall_desc, time = time, included = included,
                     notes = notes, maptype = maptype, featuretype = featuretype, header_names = header_names,
                     map_description = map_description, summary = summary)
     import intake_erddap
-    # cat = intake.open_erddap_cat(server="https://erddap.aoos.org/erddap",
-    cat = intake_erddap.ERDDAPCatalogReader(server="https://erddap.aoos.org/erddap",
-        # server="https://erddap.sensors.ioos.us/erddap", # this includes bad stations starting with `ism-`
-                                 search_for=stations, 
+
+    inputs = dict(search_for=stations, 
                                  query_type="union",
                                  name=slug,
                                  description=overall_desc,
                                  use_source_constraints=True,
                                  start_time = "1999-01-01T00:00:00Z",
                                  open_kwargs=open_kwargs,
-                                 dropna=True,
+                                #  dropna=True,
                                  mask_failed_qartod=True,
+                                #  variable_names=["sea_water_temperature"]  can't do these because are treated equivalent to searching for station names the way it is set up now and are all added together
                                 #  metadata=metadata,
-                                #  cache_kwargs=dict(cache_storage=f"{chr.PATH_OUTPUTS_DATA_CACHE / slug}")#, same_names=True)
-                                 ).read()
+    )
+    if simplecache:
+        inputs.update(cache_kwargs=simplecache_options)
+    cat = intake_erddap.ERDDAPCatalogReader(server="https://erddap.aoos.org/erddap", **inputs).read()
     # import pdb; pdb.set_trace()
-    # source_names = chr.src.utils.get_source_names(cat)
     
-    for dataset_id in list(cat): #dataset_ids:
-        # reader = cat[dataset_id]
+    for dataset_id in list(cat):
         
         # read in info url instead of pinging the actual data
         ddf = pd.read_csv(cat[dataset_id].metadata["info_url"])
@@ -1464,59 +1465,16 @@ def make_erddap_catalog(slug, project_name, overall_desc, time, included, notes,
         vars_to_use, var_names = zip(*out)
         hover_cols = cic.utils.get_hover_cols(ddf, distance=False, extra_keys=extra_keys)
         plot_kwargs = dict(x=ddf.cf["T"].name, y=var_names, hover_cols=hover_cols, subplots=True)
-        
-        # # add some metadata
-        # # first find which variables are available to use in plots for metadata
-        # all_vars = ["ssh","temp","salt","u","v","speed"]
-        # vars_to_use, var_names = [], []
-        # # start with time, longitude, latitude, and depth
-        # for key in ["T", "longitude","latitude","Z"]:
-        #     var_names.append(ddf.cf[key].name)
-        # for Var in all_vars:
-        #     try:
-        #         # print(dataset_id, Var, ddf.cf[Var].shape)
-        #         ddf.cf[Var].name
-        #         vars_to_use.append(Var)
-        #         var_names.append(ddf.cf[Var].name)
-        #         qc_var = ddf.cf[Var].name + "_qc_agg"
-        #         if qc_var in ddf.columns:
-        #             var_names.append(qc_var)
-        #     except ValueError:
-        #         pass
-        #     # except AttributeError:
-        #     #     import pdb; pdb.set_trace()
 
-        # hover_cols = cic.utils.get_hover_cols(ddf)
-        # plot_kwargs = dict(x=ddf.cf["T"].name, y=[ddf.cf["temp"].name, ddf.cf["salt"].name], hover_cols=hover_cols)
-        # cat[dataset_id].metadata = {"plots": {"data": cic.utils.line_time_dict(**plot_kwargs)}}
-        # dataset_id metadata already has min/max lon/lat/time
-        # cat[dataset_id].metadata.update(cic.utils.add_metadata(ddf, metadata["maptype"], metadata["featuretype"], cat[dataset_id].metadata["tabledap"]))
-
-        # import pdb; pdb.set_trace()
-        # cat.entries[dataset_id].metadata.update(..)
-        # cat.entries[dataset_id].metadata.update({"maptype": maptype,
         cat.get_entity(dataset_id).metadata.update({"maptype": maptype,
                                 "featuretype": featuretype,
                                 "plots": {"data": cic.utils.line_time_dict(**plot_kwargs),},
                                 "urlpath": cat[dataset_id].metadata["tabledap"],
                                 "key_variables": vars_to_use,
                                 "variables": var_names},)
-        # cat[dataset_id].describe()["args"].update({"variables": var_names})
-        # cat[dataset_id].describe()["metadata"].update({"maptype": maptype,
-        #                              "featuretype": featuretype,
-        #                              "plots": {"data": cic.utils.line_time_dict(**plot_kwargs),},
-        #                              "urlpath": cat[dataset_id].metadata["tabledap"],
-        #                              "key_variables": vars_to_use,},)
-        # cat[dataset_id].describe()["args"].update({"variables": var_names})
-        import pdb; pdb.set_trace()
-        # cat.aliases[dataset_id] = dataset_id
-        # del(cat[dataset_id])
-        # cat[dataset_id] = cat[dataset_id]
-        # cat.delete(dataset_id)
-        # cat.add_entry(cat[dataset_id])
-
 
     cat.metadata.update(metadata)
+    cat.metadata.update(cic.utils.overall_metadata(cat, list(cat)))
     # set up plotting overall map, which uses general key names 
     cat.metadata["map"] = cic.utils.points_dict(x="longitude", y="latitude", c="station", s="T",
                                                 hover_cols=["station", "T"], slug=slug)
@@ -1542,7 +1500,7 @@ def moorings_aoos_cdip(slug, simplecache):
                 "central-cook-inlet-175"]
     open_kwargs = {"parse_dates": [0], "response": "csv", "skiprows": [1]}#, "index_col": "time"}
     
-    make_erddap_catalog(slug=slug, **metadata, stations=stations, open_kwargs=open_kwargs)
+    make_erddap_catalog(slug=slug, **metadata, simplecache=simplecache, stations=stations, open_kwargs=open_kwargs)
 
 
 def adcp_moored_noaa_coi_2005(slug, simplecache):
@@ -1845,9 +1803,9 @@ Descriptive summary of later drifter deployment: https://www.alaska.edu/epscor/a
         # don't want TiledService or CatalogAPI but do want CSV or Excel as appropriate
         datatype = [rec for rec in intake.datatypes.recommend(url) if rec not in [intake.readers.datatypes.TiledService,intake.readers.datatypes.CatalogAPI]][0]
         # import pdb; pdb.set_trace()
-        # do this until can figure out how to read Excel files
-        if "Excel" in str(datatype):
-            continue
+        # # do this until can figure out how to read Excel files
+        # if "Excel" in str(datatype):
+        #     continue
         # print(datatype)
         # data = intake.readers.PandasExcel(url)
         # data = intake.readers.datatypes.Excel(url)
@@ -2004,7 +1962,7 @@ Several years of EcoFOCI drifter data are also available in a private Research W
 # Generate all catalogs
 if __name__ == "__main__":
     
-    simplecache = False
+    simplecache = True
     
     from time import time
     for slug in cic.slugs:

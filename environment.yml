@@ -19,6 +19,7 @@ dependencies:
   - jupyter_bokeh
   - matplotlib-base
   - numpy
+  - openpyxl
   - pandas
   - pip
   - pyproj
