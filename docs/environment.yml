@@ -37,7 +37,8 @@ dependencies:
    - pip
    - pip:
      - intake-coops
-     - noaa_coops>=0.3.2
+    #  - noaa_coops>=0.3.2
+     - git+https://github.com/kthyng/noaa_coops.git@toml
      - intake-erddap
     #  - papermill
      - git+https://github.com/intake/intake.git
