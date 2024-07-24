@@ -19,7 +19,7 @@ dependencies:
    - matplotlib-base
    - numpy
    - openpyxl
-   - pandas
+   - pandas>=2.2.2
    - pyproj
    - requests
    # These are needed for the docs themselves

@@ -21,7 +21,7 @@ dependencies:
   - matplotlib-base
   - numpy
   - openpyxl
-  - pandas
+  - pandas>=2.2.2
   - pip
   - pyproj
   - requests
