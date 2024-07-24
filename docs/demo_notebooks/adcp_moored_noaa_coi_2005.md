@@ -15,8 +15,6 @@ import cook_inlet_catalogs as cic
 import holoviews as hv
 ```
 
-Click here to run this notebook in Binder, a hosted environment: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/axiom-data-science/cook-inlet-catalogs/HEAD?labpath=docs%2Fdemo_notebooks%2Fadcp_moored_noaa_coi_2005.md)
-
 # Moored ADCP (NOAA): ADCP survey Cook Inlet 2005
 
 Moored NOAA ADCP surveys in Cook Inlet

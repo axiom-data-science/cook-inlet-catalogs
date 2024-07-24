@@ -15,8 +15,6 @@ import cook_inlet_catalogs as cic
 import holoviews as hv
 ```
 
-Click here to run this notebook in Binder, a hosted environment: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/axiom-data-science/cook-inlet-catalogs/HEAD?labpath=docs%2Fdemo_notebooks%2Fctd_profiles_kb_small_mesh_2006.md)
-
 # CTD Profiles (KB small mesh 2006)
 
 CTD Profiles in Cook Inlet

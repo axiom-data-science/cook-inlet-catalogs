@@ -8,7 +8,7 @@ Cook Inlet Dataset Catalogs
 
 This package provides a collection of data catalogs for the Cook Inlet region of Alaska. The catalogs are designed to provide a consistent interface for accessing data from a variety of sources.
 
-These docs demonstrate access and a plot for each available catalog. The notebooks shown in a static manner in these docs can be downloaded to be run locally, or you can run them interactively in the cloud using Binder.
+These docs demonstrate access and a plot for each available catalog. The notebooks shown in a static manner in these docs can be downloaded to be run locally in a local environment.
 
 .. toctree::
    :maxdepth: 2

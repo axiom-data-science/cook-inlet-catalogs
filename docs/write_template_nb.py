@@ -18,10 +18,9 @@ def write_nb(slug):
     nb = nbf.v4.new_notebook()
     
     cat = intake.open_catalog(cic.utils.cat_path(slug))
+# Click here to run this notebook in Binder, a hosted environment: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/axiom-data-science/cook-inlet-catalogs/HEAD?labpath=docs%2Fdemo_notebooks%2F{slug}.md)
 
     text = f"""\
-Click here to run this notebook in Binder, a hosted environment: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/axiom-data-science/cook-inlet-catalogs/HEAD?labpath=docs%2Fdemo_notebooks%2F{slug}.md)
-
 # {cat.metadata['overall_desc']}
 
 {cat.metadata['summary']}

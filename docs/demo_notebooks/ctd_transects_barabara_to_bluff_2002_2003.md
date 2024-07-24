@@ -15,8 +15,6 @@ import cook_inlet_catalogs as cic
 import holoviews as hv
 ```
 
-Click here to run this notebook in Binder, a hosted environment: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/axiom-data-science/cook-inlet-catalogs/HEAD?labpath=docs%2Fdemo_notebooks%2Fctd_transects_barabara_to_bluff_2002_2003.md)
-
 # CTD transects: Barabara to Bluff
 
 Repeat CTD transect from Barabara to Bluff Point in Cook Inlet from 2002 to 2003.

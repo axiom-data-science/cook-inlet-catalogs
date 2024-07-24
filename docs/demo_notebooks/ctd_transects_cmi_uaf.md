@@ -15,8 +15,6 @@ import cook_inlet_catalogs as cic
 import holoviews as hv
 ```
 
-Click here to run this notebook in Binder, a hosted environment: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/axiom-data-science/cook-inlet-catalogs/HEAD?labpath=docs%2Fdemo_notebooks%2Fctd_transects_cmi_uaf.md)
-
 # CTD Transect (CMI UAF): from East Foreland Lighthouse
 
 Seasonality of Boundary Conditions for Cook Inlet, Alaska: Transect (3) at East Foreland Lighthouse.

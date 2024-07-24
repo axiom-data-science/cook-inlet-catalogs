@@ -15,8 +15,6 @@ import cook_inlet_catalogs as cic
 import holoviews as hv
 ```
 
-Click here to run this notebook in Binder, a hosted environment: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/axiom-data-science/cook-inlet-catalogs/HEAD?labpath=docs%2Fdemo_notebooks%2Fctd_profiles_kachemack_kuletz_2005_2007.md)
-
 # CTD Profiles (Kachemak Kuletz 2005-2007)
 
 CTD Profiles in Cook Inlet

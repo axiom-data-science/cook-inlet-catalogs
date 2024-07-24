@@ -15,8 +15,6 @@ import cook_inlet_catalogs as cic
 import holoviews as hv
 ```
 
-Click here to run this notebook in Binder, a hosted environment: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/axiom-data-science/cook-inlet-catalogs/HEAD?labpath=docs%2Fdemo_notebooks%2Fctd_transects_otf_kbnerr.md)
-
 # CTD Transect (OTF KBNERR): Repeated from Anchor Point
 
 CTD Transect Across Anchor Point, for GEM Project 030670.
