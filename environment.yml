@@ -26,6 +26,8 @@ dependencies:
   - pyproj
   - requests
   - pip:
+    - intake-coops
+    - noaa_coops>=0.3.2
     - intake-erddap
     # - papermill
     - git+https://github.com/intake/intake.git

@@ -37,11 +37,12 @@ dependencies:
    - pip
    - pip:
      - intake-coops
+     - noaa_coops>=0.3.2
      - intake-erddap
     #  - papermill
      - git+https://github.com/intake/intake.git
     #  - git+https://github.com/axiom-data-science/cook-inlet-catalogs.git
-     - docrep<=0.2.7    
+     - docrep<=0.2.7
      - myst-nb
      - nbsphinx
      - jupyter_client
