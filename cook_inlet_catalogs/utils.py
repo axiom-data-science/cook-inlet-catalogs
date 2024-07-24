@@ -28,6 +28,8 @@ reg = cfp.Reg(include="tem", exclude=["F_","qc","air","dew"], ignore_case=True)
 vocab.make_entry("temp", reg.pattern(), attr="name")
 reg = cfp.Reg(include="sal", exclude=["F_","qc"], ignore_case=True)
 vocab.make_entry("salt", reg.pattern(), attr="name")
+reg = cfp.Reg(include_or=["sea_surface_height","zeta"], exclude=["qc","sea_surface_height_amplitude_due_to_geocentric_ocean_tide_geoid_mllw"], ignore_case=True)
+vocab.make_entry("ssh", reg.pattern(), attr="name")
 vocab.make_entry("speed", ["speed","s$"], attr="name")
 vocab.make_entry("dir", ["dir","d$"], attr="name")
 vocab.make_entry("station", ["station", "Station"], attr="name")
@@ -113,7 +115,7 @@ def line_time_dict(x, y, hover_cols=True, subplots=True, title=None, shared_axes
         # "invert": True,
         # "flip_yaxis": True,
         "subplots": subplots,
-        "width": 900,
+        "width": 700,
         "height": 300,
         "shared_axes": shared_axes,
         "hover_cols": hover_cols,

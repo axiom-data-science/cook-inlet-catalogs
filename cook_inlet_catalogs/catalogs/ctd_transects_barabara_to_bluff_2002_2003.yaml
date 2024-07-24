@@ -58,13 +58,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Long (E)
-          - Station
-          - Lat (N)
           - distance [km]
           - date_time
-          - Depth (m)
           - Temperature (C)
+          - Station
+          - Lat (N)
+          - Long (E)
+          - Depth (m)
           kind: scatter
           shared_axes: false
           title: 'Cruise 1: 2002-07-23 08:28:00'
@@ -78,13 +78,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Long (E)
-          - Station
-          - Lat (N)
           - distance [km]
           - date_time
-          - Depth (m)
           - Temperature (C)
+          - Station
+          - Lat (N)
+          - Long (E)
+          - Depth (m)
           kind: scatter
           shared_axes: false
           title: 'Cruise 1: 2002-07-23 08:28:00'
@@ -134,13 +134,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Long (E)
-          - Station
-          - Lat (N)
           - distance [km]
           - date_time
-          - Depth (m)
           - Temperature (C)
+          - Station
+          - Lat (N)
+          - Long (E)
+          - Depth (m)
           kind: scatter
           shared_axes: false
           title: 'Cruise 10: 2003-05-19 13:17:00'
@@ -154,13 +154,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Long (E)
-          - Station
-          - Lat (N)
           - distance [km]
           - date_time
-          - Depth (m)
           - Temperature (C)
+          - Station
+          - Lat (N)
+          - Long (E)
+          - Depth (m)
           kind: scatter
           shared_axes: false
           title: 'Cruise 10: 2003-05-19 13:17:00'
@@ -210,13 +210,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Long (E)
-          - Station
-          - Lat (N)
           - distance [km]
           - date_time
-          - Depth (m)
           - Temperature (C)
+          - Station
+          - Lat (N)
+          - Long (E)
+          - Depth (m)
           kind: scatter
           shared_axes: false
           title: 'Cruise 11: 2003-06-21 11:20:00'
@@ -230,13 +230,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Long (E)
-          - Station
-          - Lat (N)
           - distance [km]
           - date_time
-          - Depth (m)
           - Temperature (C)
+          - Station
+          - Lat (N)
+          - Long (E)
+          - Depth (m)
           kind: scatter
           shared_axes: false
           title: 'Cruise 11: 2003-06-21 11:20:00'
@@ -286,13 +286,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Long (E)
-          - Station
-          - Lat (N)
           - distance [km]
           - date_time
-          - Depth (m)
           - Temperature (C)
+          - Station
+          - Lat (N)
+          - Long (E)
+          - Depth (m)
           kind: scatter
           shared_axes: false
           title: 'Cruise 2: 2002-09-07 11:05:00'
@@ -306,13 +306,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Long (E)
-          - Station
-          - Lat (N)
           - distance [km]
           - date_time
-          - Depth (m)
           - Temperature (C)
+          - Station
+          - Lat (N)
+          - Long (E)
+          - Depth (m)
           kind: scatter
           shared_axes: false
           title: 'Cruise 2: 2002-09-07 11:05:00'
@@ -362,13 +362,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Long (E)
-          - Station
-          - Lat (N)
           - distance [km]
           - date_time
-          - Depth (m)
           - Temperature (C)
+          - Station
+          - Lat (N)
+          - Long (E)
+          - Depth (m)
           kind: scatter
           shared_axes: false
           title: 'Cruise 3: 2002-09-25 11:55:00'
@@ -382,13 +382,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Long (E)
-          - Station
-          - Lat (N)
           - distance [km]
           - date_time
-          - Depth (m)
           - Temperature (C)
+          - Station
+          - Lat (N)
+          - Long (E)
+          - Depth (m)
           kind: scatter
           shared_axes: false
           title: 'Cruise 3: 2002-09-25 11:55:00'
@@ -438,13 +438,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Long (E)
-          - Station
-          - Lat (N)
           - distance [km]
           - date_time
-          - Depth (m)
           - Temperature (C)
+          - Station
+          - Lat (N)
+          - Long (E)
+          - Depth (m)
           kind: scatter
           shared_axes: false
           title: 'Cruise 4: 2002-11-11 14:45:00'
@@ -458,13 +458,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Long (E)
-          - Station
-          - Lat (N)
           - distance [km]
           - date_time
-          - Depth (m)
           - Temperature (C)
+          - Station
+          - Lat (N)
+          - Long (E)
+          - Depth (m)
           kind: scatter
           shared_axes: false
           title: 'Cruise 4: 2002-11-11 14:45:00'
@@ -514,13 +514,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Long (E)
-          - Station
-          - Lat (N)
           - distance [km]
           - date_time
-          - Depth (m)
           - Temperature (C)
+          - Station
+          - Lat (N)
+          - Long (E)
+          - Depth (m)
           kind: scatter
           shared_axes: false
           title: 'Cruise 5: 2002-12-11 16:39:00'
@@ -534,13 +534,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Long (E)
-          - Station
-          - Lat (N)
           - distance [km]
           - date_time
-          - Depth (m)
           - Temperature (C)
+          - Station
+          - Lat (N)
+          - Long (E)
+          - Depth (m)
           kind: scatter
           shared_axes: false
           title: 'Cruise 5: 2002-12-11 16:39:00'
@@ -590,13 +590,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Long (E)
-          - Station
-          - Lat (N)
           - distance [km]
           - date_time
-          - Depth (m)
           - Temperature (C)
+          - Station
+          - Lat (N)
+          - Long (E)
+          - Depth (m)
           kind: scatter
           shared_axes: false
           title: 'Cruise 6: 2003-01-31 15:56:00'
@@ -610,13 +610,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Long (E)
-          - Station
-          - Lat (N)
           - distance [km]
           - date_time
-          - Depth (m)
           - Temperature (C)
+          - Station
+          - Lat (N)
+          - Long (E)
+          - Depth (m)
           kind: scatter
           shared_axes: false
           title: 'Cruise 6: 2003-01-31 15:56:00'
@@ -666,13 +666,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Long (E)
-          - Station
-          - Lat (N)
           - distance [km]
           - date_time
-          - Depth (m)
           - Temperature (C)
+          - Station
+          - Lat (N)
+          - Long (E)
+          - Depth (m)
           kind: scatter
           shared_axes: false
           title: 'Cruise 7: 2003-02-18 16:50:00'
@@ -686,13 +686,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Long (E)
-          - Station
-          - Lat (N)
           - distance [km]
           - date_time
-          - Depth (m)
           - Temperature (C)
+          - Station
+          - Lat (N)
+          - Long (E)
+          - Depth (m)
           kind: scatter
           shared_axes: false
           title: 'Cruise 7: 2003-02-18 16:50:00'
@@ -742,13 +742,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Long (E)
-          - Station
-          - Lat (N)
           - distance [km]
           - date_time
-          - Depth (m)
           - Temperature (C)
+          - Station
+          - Lat (N)
+          - Long (E)
+          - Depth (m)
           kind: scatter
           shared_axes: false
           title: 'Cruise 8: 2003-03-31 15:27:00'
@@ -762,13 +762,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Long (E)
-          - Station
-          - Lat (N)
           - distance [km]
           - date_time
-          - Depth (m)
           - Temperature (C)
+          - Station
+          - Lat (N)
+          - Long (E)
+          - Depth (m)
           kind: scatter
           shared_axes: false
           title: 'Cruise 8: 2003-03-31 15:27:00'
@@ -818,13 +818,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Long (E)
-          - Station
-          - Lat (N)
           - distance [km]
           - date_time
-          - Depth (m)
           - Temperature (C)
+          - Station
+          - Lat (N)
+          - Long (E)
+          - Depth (m)
           kind: scatter
           shared_axes: false
           title: 'Cruise 9: 2003-04-17 12:35:00'
@@ -838,13 +838,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Long (E)
-          - Station
-          - Lat (N)
           - distance [km]
           - date_time
-          - Depth (m)
           - Temperature (C)
+          - Station
+          - Lat (N)
+          - Long (E)
+          - Depth (m)
           kind: scatter
           shared_axes: false
           title: 'Cruise 9: 2003-04-17 12:35:00'
@@ -870,8 +870,8 @@ metadata:
   header_names: null
   included: true
   key_variables:
-  - temp
   - salt
+  - temp
   map:
     coastline: false
     geo: true

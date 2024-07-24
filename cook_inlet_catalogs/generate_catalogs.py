@@ -995,6 +995,8 @@ Report: https://researchworkspace.com/files/39885971/2009_041.pdf
         # ddf = cic.utils.select_df_by_column(df.copy(), "Cruise", cruise)
         name = f"Cruise-{str(cruise).zfill(2)}"
         reader1station = reader_dates_parsed.apply(cic.utils.select_df_by_column, "Cruise", cruise)
+        reader1station = reader1station.apply(cic.utils.calculate_distance)
+
         title = f"{str(ddf.cf['T'].iloc[0].date())}"
 
         plot_kwargs = dict(x=distkey, y=df.cf["Z"].name, flip_yaxis=True, hover_cols=hover_cols, title=title)
@@ -1311,7 +1313,7 @@ More information: https://accs.uaa.alaska.edu/kbnerr/
         data = intake.readers.datatypes.CSV(url)
         initial_reader = intake.readers.readers.PandasCSV(data, **csv_kwargs)
         hover_cols = cic.utils.get_hover_cols(df)
-        plot_kwargs = dict(x=df.cf["T"].name, y=[df.cf["temp"].name, df.cf["salt"].name], subplots=True, hover_cols=hover_cols)
+        plot_kwargs = dict(x=df.cf["T"].name, y=[df.cf["temp"].name, df.cf["salt"].name], subplots=False, hover_cols=hover_cols)
         initial_reader.metadata = {"plots": {"data": cic.utils.line_time_dict(**plot_kwargs)}}
         initial_reader.metadata.update(cic.utils.add_metadata(df, metadata["maptype"], metadata["featuretype"], url))
         cat[name] = initial_reader
@@ -1435,7 +1437,9 @@ def make_erddap_catalog(slug, project_name, overall_desc, time, included, notes,
                     notes = notes, maptype = maptype, featuretype = featuretype, header_names = header_names,
                     map_description = map_description, summary = summary)
     import intake_erddap
-
+    vars = ["sea_water_temperature", "sea_water_practical_salinity",
+            "sea_surface_height_above_sea_level_geoid_local_station_datum",
+            "sea_surface_height_above_sea_level_geoid_mllw"]
     inputs = dict(search_for=stations, 
                                  query_type="union",
                                  name=slug,
@@ -1443,15 +1447,16 @@ def make_erddap_catalog(slug, project_name, overall_desc, time, included, notes,
                                  use_source_constraints=True,
                                  start_time = "1999-01-01T00:00:00Z",
                                  open_kwargs=open_kwargs,
-                                #  dropna=True,
+                                 dropna=True,
                                  mask_failed_qartod=True,
+                                 variables=vars,
                                 #  variable_names=["sea_water_temperature"]  can't do these because are treated equivalent to searching for station names the way it is set up now and are all added together
                                 #  metadata=metadata,
     )
     if simplecache:
         inputs.update(cache_kwargs=simplecache_options)
+        
     cat = intake_erddap.ERDDAPCatalogReader(server="https://erddap.aoos.org/erddap", **inputs).read()
-    # import pdb; pdb.set_trace()
     
     for dataset_id in list(cat):
         
@@ -1464,7 +1469,7 @@ def make_erddap_catalog(slug, project_name, overall_desc, time, included, notes,
         out = [(key, ddf.cf[key].name) for key in extra_keys if key in ddf.cf.keys()]
         vars_to_use, var_names = zip(*out)
         hover_cols = cic.utils.get_hover_cols(ddf, distance=False, extra_keys=extra_keys)
-        plot_kwargs = dict(x=ddf.cf["T"].name, y=var_names, hover_cols=hover_cols, subplots=True)
+        plot_kwargs = dict(x=ddf.cf["T"].name, y=var_names, hover_cols=hover_cols, subplots=False)#True)
 
         cat.get_entity(dataset_id).metadata.update({"maptype": maptype,
                                 "featuretype": featuretype,
@@ -1498,12 +1503,270 @@ def moorings_aoos_cdip(slug, simplecache):
     stations = ["aoos_204", 
                 "edu_ucsd_cdip_236",
                 "central-cook-inlet-175"]
+    # need response of "csv" so that column names match from info_url to data column names
     open_kwargs = {"parse_dates": [0], "response": "csv", "skiprows": [1]}#, "index_col": "time"}
     
     make_erddap_catalog(slug=slug, **metadata, simplecache=simplecache, stations=stations, open_kwargs=open_kwargs)
 
 
+def moorings_circac(slug, simplecache):
+    metadata = dict(project_name = "Mooring from CIRCAC",
+        overall_desc = "Mooring (CIRCAC): Central Cook Inlet Mooring",
+        time = "Two weeks in August 2006, 15 min sampling",
+        included = True,
+        notes = "",
+        maptype = "point",
+        featuretype = "timeSeries",
+        header_names = None,
+        map_description = "Time Series Location",
+        summary = f"""Central Cook Inlet Mooring from: Seasonality of Boundary Conditions for Cook Inlet, Alaska
+
+CIRCAC is the Cook Inlet Regional Citizens Advisory Council. It was funded by MMS (pre-BOEM), OCS Study MMS 2009-041 funneled through the Coastal Marine Institute (University of Alaska Fairbanks).
+
+This mooring was damaged so it was removed.
+
+Part of the project:
+Seasonality of Boundary Conditions for Cook Inlet, Alaska
+Steve Okkonen Principal Investigator
+Co-principal Investigators: Scott Pegau Susan Saupe
+Final Report
+OCS Study MMS 2009-041
+August 2009
+Report: https://researchworkspace.com/files/39885971/2009_041.pdf
+
+<img src="https://user-images.githubusercontent.com/3487237/233167915-c0b2b0e1-151e-4cef-a647-e6311345dbf9.jpg" alt="alt text" width="300"/>
+
+"""
+        )
+    
+    url = "https://researchworkspace.com/files/39886029/xto_mooring_2006.txt"
+
+    csv_kwargs = dict(sep="\t", parse_dates=["Date UTC"])
+    if simplecache:
+        url = f"simplecache://::{url}"
+        csv_kwargs["storage_options"] = simplecache_options
+    lon, lat = -(151 + 30.3/60), 60 + 45.7/60
+
+    cat = intake.entry.Catalog(metadata=metadata)
+    data = intake.readers.datatypes.CSV(url)
+    initial_reader = intake.readers.readers.PandasCSV(data, **csv_kwargs)
+    # add location columns
+    initial_reader = initial_reader.assign(longitude_deg=lon)
+    initial_reader = initial_reader.assign(latitude_deg=lat)
+    # df = pd.read_csv(url, **csv_kwargs)
+    df = initial_reader.read()
+    hover_cols = cic.utils.get_hover_cols(df)
+    plot_kwargs = dict(x=df.cf["T"].name, y=[df.cf["temp"].name, df.cf["salt"].name], subplots=False, hover_cols=hover_cols)
+    initial_reader.metadata = {"plots": {"data": cic.utils.line_time_dict(**plot_kwargs)}}
+    initial_reader.metadata.update(cic.utils.add_metadata(df, metadata["maptype"], metadata["featuretype"], url))
+    cat[slug] = initial_reader
+    cat.aliases[slug] = slug
+
+    # gather metadata across datasets to add to overall catalog
+    cat.metadata.update(cic.utils.overall_metadata(cat, list(cat)))
+    # set up plotting overall map, which uses general key names 
+    cat.metadata["map"] = cic.utils.points_dict(x="longitude", y="latitude", c="station", s="T",
+                                                hover_cols=["station", "T"], slug=slug)
+    cat.metadata["maplabels"] = cic.utils.labels_dict(x="longitude", y="latitude", text="station")
+    cat.to_yaml_file(base_dir / f"catalogs/{slug}.yaml")
+
+
+def moorings_kbnerr(slug, simplecache):
+    metadata = dict(project_name = "Moorings from Kachemak Bay National Estuarine Research Reserve (KBNERR)",
+        overall_desc = "Moorings (KBNERR): Lower Cook Inlet Mooring",
+        time = "Aug to Oct 2006 and June 2007 to Feb 2008, 15 min sampling",
+        included = True,
+        notes = "",
+        maptype = "point",
+        featuretype = "timeSeries",
+        header_names = None,
+        map_description = "Time Series Location",
+        summary = f"""Lower Cook Inlet Mooring from: Seasonality of Boundary Conditions for Cook Inlet, Alaska
+
+CIRCAC is the Cook Inlet Regional Citizens Advisory Council. It was funded by MMS (pre-BOEM), OCS Study MMS 2009-041 funneled through the Coastal Marine Institute (University of Alaska Fairbanks).
+
+Part of the project:
+Seasonality of Boundary Conditions for Cook Inlet, Alaska
+Steve Okkonen Principal Investigator
+Co-principal Investigators: Scott Pegau Susan Saupe
+Final Report
+OCS Study MMS 2009-041
+August 2009
+Report: https://researchworkspace.com/files/39885971/2009_041.pdf
+
+<img src="https://user-images.githubusercontent.com/3487237/233167915-c0b2b0e1-151e-4cef-a647-e6311345dbf9.jpg" alt="alt text" width="300"/>
+
+""")
+
+    urls = ["https://researchworkspace.com/files/39886044/chrome_bay_mooring_deployment_1.txt",
+            "https://researchworkspace.com/files/39886045/chrome_bay_mooring_deployment_2.txt"]
+    names = ["Deployment1", "Deployment2"]
+    csv_kwargs = dict(sep="\t", parse_dates=[0])
+
+    cat = intake.entry.Catalog(metadata=metadata)
+    lon, lat = -(151 + 50.860/60), 59 + 12.161/60
+    for url, name in zip(urls, names):
+        if simplecache:
+            url = f"simplecache://::{url}"
+            csv_kwargs["storage_options"] = simplecache_options
+    
+        data = intake.readers.datatypes.CSV(url)
+        initial_reader = intake.readers.readers.PandasCSV(data, **csv_kwargs)
+        # add location columns
+        initial_reader = initial_reader.assign(longitude_deg=lon)
+        initial_reader = initial_reader.assign(latitude_deg=lat)
+        df = initial_reader.read()
+        hover_cols = cic.utils.get_hover_cols(df)
+        plot_kwargs = dict(x=df.cf["T"].name, y=[df.cf["temp"].name, df.cf["salt"].name], subplots=False, hover_cols=hover_cols)
+        initial_reader.metadata = {"plots": {"data": cic.utils.line_time_dict(**plot_kwargs)}}
+        initial_reader.metadata.update(cic.utils.add_metadata(df, metadata["maptype"], metadata["featuretype"], url))
+        cat[name] = initial_reader
+        cat.aliases[name] = name
+
+    # gather metadata across datasets to add to overall catalog
+    cat.metadata.update(cic.utils.overall_metadata(cat, list(cat)))
+    # set up plotting overall map, which uses general key names 
+    cat.metadata["map"] = cic.utils.points_dict(x="longitude", y="latitude", c="station", s="T",
+                                                hover_cols=["station", "T"], slug=slug)
+    cat.metadata["maplabels"] = cic.utils.labels_dict(x="longitude", y="latitude", text="station")
+    cat.to_yaml_file(base_dir / f"catalogs/{slug}.yaml")
+    
+    
+def moorings_kbnerr_bear_cove_seldovia(slug, simplecache):
+    metadata = dict(project_name = "Moorings from Kachemak Bay National Estuarine Research Reserve (KBNERR)",
+        overall_desc = "Moorings (KBNERR): Kachemak Bay: Bear Cove, Seldovia",
+        time = "From 2004 to present day, variable",
+        included = True,
+        notes = "These are accessed through AOOS portal/ERDDAP server.",
+        maptype = "point",
+        featuretype = "timeSeries",
+        header_names = None,
+        map_description = "Moorings",
+        summary = f"""Moorings from Kachemak Bay National Estuarine Research Reserve (KBNERR)
+    
+Station mappings from AOOS/ERDDAP to KBNERR station list:
+* nerrs_kacsdwq :: kacsdwq
+* nerrs_kacsswq :: kacsswq
+
+* cdmo_nerrs_bearcove :: This is a different station than kacbcwq, which was active 2002-2003 while this is in 2015. They are also in different locations.
+    
+More information: https://accs.uaa.alaska.edu/kbnerr/
+""")
+
+    stations = ["cdmo_nerrs_bearcove",
+                "nerrs_kacsdwq",
+                "nerrs_kacsswq"]
+    open_kwargs = {"parse_dates": [0], "response": "csv", "skiprows": [1]}#, "index_col": "time"}
+    
+    make_erddap_catalog(slug, **metadata, simplecache=simplecache, stations=stations, open_kwargs=open_kwargs)
+    
+    
+def moorings_kbnerr_homer(slug, simplecache):
+    metadata = dict(project_name = "Moorings from Kachemak Bay National Estuarine Research Reserve (KBNERR)",
+        overall_desc = "Moorings (KBNERR): Kachemak Bay, Homer stations",
+        time = "From 2003 to present day, variable",
+        included = True,
+        notes = "These are accessed through AOOS portal/ERDDAP server.",
+        maptype = "point",
+        featuretype = "timeSeries",
+        header_names = None,
+        map_description = "Moorings",
+        summary = f"""Moorings from Kachemak Bay National Estuarine Research Reserve (KBNERR)
+    
+Station mappings from AOOS/ERDDAP to KBNERR station list:
+* nerrs_kachdwq :: kachdwq
+* homer-dolphin-surface-water-q :: kachswq
+* nerrs_kach3wq :: kach3wq
+    
+More information: https://accs.uaa.alaska.edu/kbnerr/
+"""
+    )
+
+    stations = ["nerrs_kachdwq",
+                "homer-dolphin-surface-water-q",
+                "nerrs_kach3wq",]
+    open_kwargs = {"parse_dates": [0], "response": "csv", "skiprows": [1]}#, "index_col": "time"}
+    
+    make_erddap_catalog(slug, **metadata, simplecache=simplecache, stations=stations, open_kwargs=open_kwargs)
+
+
+def moorings_noaa(slug, simplecache):
+    metadata = dict(project_name = "Moorings from NOAA",
+                    overall_desc = "Moorings (NOAA): across Cook Inlet",
+                    time = "From 1999 (and earlier) to 2023, variable",
+                    included = True,
+                    notes = "",
+                    maptype = "point",
+                    featuretype = "timeSeries",
+                    header_names = None,
+                    map_description = "Moorings",
+                    summary = f"""Moorings from NOAA
+
+Geese Island, Sitkalidak Island, Bear Cove, Anchorage, Kodiak Island, Alitak, Seldovia, Old Harbor, Boulder Point, Albatross Banks, Shelikof Strait
+"""
+    )
+    stations = ["geese-island-gps-tide-buoy", # ssh
+                "sitkalidak-island-gps-tide-bu", # ssh
+                "noaa_nos_co_ops_9455595", # ssh
+                "noaa_nos_co_ops_9455920", # ssh
+                # "noaa_nos_co_ops_kdaa2",  # not in our system anymore
+                "noaa_nos_co_ops_9457292",
+                "noaa_nos_co_ops_9457804",
+                "noaa_nos_co_ops_9455500",
+                "old-harbor-1",
+                "boulder-point",
+                # "wmo_46078",  # outside domain
+                "wmo_46077",]
+    open_kwargs = {"parse_dates": [0], "response": "csv", "skiprows": [1]}#, "index_col": "time"}
+    
+    make_erddap_catalog(slug, **metadata, simplecache=simplecache, stations=stations, open_kwargs=open_kwargs)
+
+
+def moorings_nps(slug, simplecache):
+    metadata = dict(project_name = "Moorings from National Parks Service (NPS)",
+        overall_desc = "Moorings (NPS): across Alaska",
+        time = "From 2018 to 2019, variable",
+        included = True,
+        notes = "",
+        maptype = "point",
+        featuretype = "timeSeries",
+        header_names = None,
+        map_description = "Moorings",
+        summary = f"""Moorings from NPS
+"""
+    )
+    stations = ["chinitna-bay-ak-tide-station-945",
+                "aguchik-island-ak-tide-station-9",]
+    open_kwargs = {"parse_dates": [0], "response": "csv", "skiprows": [1]}#, "index_col": "time"}
+    
+    make_erddap_catalog(slug, **metadata, simplecache=simplecache, stations=stations, open_kwargs=open_kwargs)
+
+
+def moorings_uaf(slug, simplecache):
+    metadata = dict(project_name = "Moorings from University of Alaska Fairbanks (UAF)",
+                    overall_desc = "Moorings (UAF): Kodiak Island, Peterson Bay",
+                    time = "From 2013 to present, variable",
+                    included = True,
+                    notes = "",
+                    maptype = "point",
+                    featuretype = "timeSeries",
+                    header_names = None,
+                    map_description = "Moorings",
+                    summary = f"""Moorings from UAF
+"""
+    )
+
+    stations = ["uaf_ocean_acidification_resea_ko",
+                "kodiak-burke-o-lator-kodiak-ak",
+                "peterson-bay-ak-gnss-r",]
+    open_kwargs = {"parse_dates": [0], "response": "csv", "skiprows": [1]}#, "index_col": "time"}
+    
+    make_erddap_catalog(slug, **metadata, simplecache=simplecache, stations=stations, open_kwargs=open_kwargs)
+
+
 def adcp_moored_noaa_coi_2005(slug, simplecache):
+    # simplecache doesn't work for adcps
+    
     # these are still intake v1
     metadata = dict(project_name = "Cook Inlet 2005 Current Survey",
         overall_desc = "Moored ADCP (NOAA): ADCP survey Cook Inlet 2005",
@@ -1525,43 +1788,44 @@ ADCP data has been converted to eastward, northward velocities as well as along-
                 "COI0512", "COI0513", "COI0514", "COI0515", "COI0516", "COI0517",
                 "COI0518", "COI0519", "COI0520", "COI0521", "COI0522", "COI0523",
                 "COI0524"]
-    
-    cat = intake.open_coops_cat(station_list, include_source_metadata=True, description=metadata["overall_desc"],
-                                name=slug, process_adcp=True, metadata=metadata)
+    import intake_coops
+    cat = intake_coops.COOPSCatalogReader(station_list, include_source_metadata=True, description=metadata["overall_desc"],
+                                name=slug, process_adcp=True).read()
     
     for source_name in list(cat):
-        md_new = {"minLongitude": cat[source_name].metadata["lon"],
-                    "maxLongitude": cat[source_name].metadata["lon"],
+        md_new = {"minLongitude": cat[source_name].metadata["lng"],
+                    "maxLongitude": cat[source_name].metadata["lng"],
                     "minLatitude": cat[source_name].metadata["lat"],
                     "maxLatitude": cat[source_name].metadata["lat"],
-                    "minTime": cat[source_name].metadata["first_good_data"],
-                    "maxTime": cat[source_name].metadata["last_good_data"],
+                    "minTime": cat[source_name].metadata["deployments"]["first_good_data"],
+                    "maxTime": cat[source_name].metadata["deployments"]["last_good_data"],
                     "maptype": metadata["maptype"],
                     "featuretype": metadata["featuretype"],
                     "key_variables": ["east","north","along","across","speed"],
-                    "depths": [bin["depth"] for bin in cat[source_name].s.metadata["bins"]["bins"]],
+                    "depths": [bin["depth"] for bin in cat[source_name].metadata["bins"]["bins"]],
                     }
-        start_date = str(pd.Timestamp(cat[source_name].metadata["first_good_data"]).date())
-        title = f"lon: {cat[source_name].metadata['lon']}, lat: {cat[source_name].metadata['lat']}, start date: {start_date}"
+        start_date = str(pd.Timestamp(cat[source_name].metadata["deployments"]["first_good_data"]).date())
+        title = f"lon: {cat[source_name].metadata['lng']}, lat: {cat[source_name].metadata['lat']}, start date: {start_date}"
         # hard-wire the variable names since we don't otherwise need to load the datasets since the metadata
         # is already provided for min/max times and location
         plot_kwargs = dict(x="t", y="depth", cmap=cic.cmap["u"], width=600, title=title, hover=True)
 
-        cat[source_name].describe()["metadata"].update({"plots": {"ualong": cic.utils.quadmesh_dict(var="ualong_subtidal", **plot_kwargs),
+        cat.get_entity(source_name).metadata.update({"plots": {"ualong": cic.utils.quadmesh_dict(var="ualong_subtidal", **plot_kwargs),
                                              "vacross": cic.utils.quadmesh_dict(var="vacross_subtidal", **plot_kwargs),},
-                                   "urlpath": f"https://tidesandcurrents.noaa.gov/stationhome.html?id={source_name}"})
-        
-        cat[source_name].describe()["metadata"].update(md_new)
+                                           "urlpath": f"https://tidesandcurrents.noaa.gov/stationhome.html?id={source_name}"})
+        cat.get_entity(source_name).metadata.update(md_new)
 
+    cat.metadata.update(metadata)
     cat.metadata.update(cic.utils.overall_metadata(cat, list(cat)))
     # set up plotting overall map, which uses general key names 
     cat.metadata["map"] = cic.utils.points_dict(x="longitude", y="latitude", c="station", s="T",
                                                 hover_cols=["station", "T"], slug=slug)
     cat.metadata["maplabels"] = cic.utils.labels_dict(x="longitude", y="latitude", text="station")
-    cat.save(base_dir / f"catalogs/{slug}.yaml")
+    cat.to_yaml_file(base_dir / f"catalogs/{slug}.yaml")
 
 
 def adcp_moored_noaa_coi_other(slug, simplecache):
+    # simplecache doesn't work for adcps
     metadata = dict(project_name = "Cook Inlet 2002/2003/2004/2008/2012 Current Survey",
         overall_desc = "Moored ADCP (NOAA): ADCP survey Cook Inlet, multiple years",
         time = "From 2002 to 2012, each for one or a few months",
@@ -1582,42 +1846,44 @@ ADCP data has been converted to eastward, northward velocities as well as along-
                 "COI0422", "COI0801", "COI0802", "COI1201", "COI1202", "COI1203",
                 "COI1204", "COI1205", "COI1207", "COI1208", "COI1209", "COI1210"]
     
-    cat = intake.open_coops_cat(station_list, include_source_metadata=True, description=metadata["overall_desc"],
-                                name=slug, process_adcp=True, metadata=metadata)
+    import intake_coops
+    cat = intake_coops.COOPSCatalogReader(station_list, include_source_metadata=True, description=metadata["overall_desc"],
+                                name=slug, process_adcp=True, metadata=metadata).read()
     
     for source_name in list(cat):
-        md_new = {"minLongitude": cat[source_name].metadata["lon"],
-                    "maxLongitude": cat[source_name].metadata["lon"],
+        md_new = {"minLongitude": cat[source_name].metadata["lng"],
+                    "maxLongitude": cat[source_name].metadata["lng"],
                     "minLatitude": cat[source_name].metadata["lat"],
                     "maxLatitude": cat[source_name].metadata["lat"],
-                    "minTime": cat[source_name].metadata["first_good_data"],
-                    "maxTime": cat[source_name].metadata["last_good_data"],
+                    "minTime": cat[source_name].metadata["deployments"]["first_good_data"],
+                    "maxTime": cat[source_name].metadata["deployments"]["last_good_data"],
                     "maptype": metadata["maptype"],
                     "featuretype": metadata["featuretype"],
                     "key_variables": ["east","north","along","across","speed"],
-                    "depths": [bin["depth"] for bin in cat[source_name].s.metadata["bins"]["bins"]],
+                    "depths": [bin["depth"] for bin in cat[source_name].metadata["bins"]["bins"]],
                     }
-        start_date = str(pd.Timestamp(cat[source_name].metadata["first_good_data"]).date())
-        title = f"lon: {cat[source_name].metadata['lon']}, lat: {cat[source_name].metadata['lat']}, start date: {start_date}"
+        start_date = str(pd.Timestamp(cat[source_name].metadata["deployments"]["first_good_data"]).date())
+        title = f"lon: {cat[source_name].metadata['lng']}, lat: {cat[source_name].metadata['lat']}, start date: {start_date}"
         # hard-wire the variable names since we don't otherwise need to load the datasets since the metadata
         # is already provided for min/max times and location
         plot_kwargs = dict(x="t", y="depth", cmap=cic.cmap["u"], width=600, title=title, hover=True)
 
-        cat[source_name].describe()["metadata"].update({"plots": {"ualong": cic.utils.quadmesh_dict(var="ualong_subtidal", **plot_kwargs),
+        cat.get_entity(source_name).metadata.update({"plots": {"ualong": cic.utils.quadmesh_dict(var="ualong_subtidal", **plot_kwargs),
                                              "vacross": cic.utils.quadmesh_dict(var="vacross_subtidal", **plot_kwargs),},
-                                   "urlpath": f"https://tidesandcurrents.noaa.gov/stationhome.html?id={source_name}"})
-        
-        cat[source_name].describe()["metadata"].update(md_new)
+                                           "urlpath": f"https://tidesandcurrents.noaa.gov/stationhome.html?id={source_name}"})
+        cat.get_entity(source_name).metadata.update(md_new)
 
+    cat.metadata.update(metadata)
     cat.metadata.update(cic.utils.overall_metadata(cat, list(cat)))
     # set up plotting overall map, which uses general key names 
     cat.metadata["map"] = cic.utils.points_dict(x="longitude", y="latitude", c="station", s="T",
                                                 hover_cols=["station", "T"], slug=slug)
     cat.metadata["maplabels"] = cic.utils.labels_dict(x="longitude", y="latitude", text="station")
-    cat.save(base_dir / f"catalogs/{slug}.yaml")
+    cat.to_yaml_file(base_dir / f"catalogs/{slug}.yaml")
 
 
 def adcp_moored_noaa_kod_1(slug, simplecache):
+    # simplecache doesn't work for adcps
     metadata = dict(project_name = "Kodiak Island 2009 Current Survey (1)",
         overall_desc = "Moored ADCP (NOAA): ADCP survey Kodiak Island, Set 1",
         time = "2009, each for one or a few months",
@@ -1643,42 +1909,44 @@ Stations "KOD0914", "KOD0915", "KOD0916", "KOD0917", "KOD0918", "KOD0919", "KOD0
                     # "KOD0931", "KOD0932", "KOD0933", "KOD0934", "KOD0935", "KOD0936", "KOD0937", 
                     # "KOD0938", "KOD0939", "KOD0940", "KOD0941", "KOD0942", "KOD0943", "KOD0944", ]
     
-    cat = intake.open_coops_cat(station_list, include_source_metadata=True, description=metadata["overall_desc"],
-                                name=slug, process_adcp=True, metadata=metadata)
+    import intake_coops
+    cat = intake_coops.COOPSCatalogReader(station_list, include_source_metadata=True, description=metadata["overall_desc"],
+                                name=slug, process_adcp=True, metadata=metadata).read()
     
     for source_name in list(cat):
-        md_new = {"minLongitude": cat[source_name].metadata["lon"],
-                    "maxLongitude": cat[source_name].metadata["lon"],
+        md_new = {"minLongitude": cat[source_name].metadata["lng"],
+                    "maxLongitude": cat[source_name].metadata["lng"],
                     "minLatitude": cat[source_name].metadata["lat"],
                     "maxLatitude": cat[source_name].metadata["lat"],
-                    "minTime": cat[source_name].metadata["first_good_data"],
-                    "maxTime": cat[source_name].metadata["last_good_data"],
+                    "minTime": cat[source_name].metadata["deployments"]["first_good_data"],
+                    "maxTime": cat[source_name].metadata["deployments"]["last_good_data"],
                     "maptype": metadata["maptype"],
                     "featuretype": metadata["featuretype"],
                     "key_variables": ["east","north","along","across","speed"],
-                    "depths": [bin["depth"] for bin in cat[source_name].s.metadata["bins"]["bins"]],
+                    "depths": [bin["depth"] for bin in cat[source_name].metadata["bins"]["bins"]],
                     }
-        start_date = str(pd.Timestamp(cat[source_name].metadata["first_good_data"]).date())
-        title = f"lon: {cat[source_name].metadata['lon']}, lat: {cat[source_name].metadata['lat']}, start date: {start_date}"
+        start_date = str(pd.Timestamp(cat[source_name].metadata["deployments"]["first_good_data"]).date())
+        title = f"lon: {cat[source_name].metadata['lng']}, lat: {cat[source_name].metadata['lat']}, start date: {start_date}"
         # hard-wire the variable names since we don't otherwise need to load the datasets since the metadata
         # is already provided for min/max times and location
         plot_kwargs = dict(x="t", y="depth", cmap=cic.cmap["u"], width=600, title=title, hover=True)
 
-        cat[source_name].describe()["metadata"].update({"plots": {"ualong": cic.utils.quadmesh_dict(var="ualong_subtidal", **plot_kwargs),
+        cat.get_entity(source_name).metadata.update({"plots": {"ualong": cic.utils.quadmesh_dict(var="ualong_subtidal", **plot_kwargs),
                                              "vacross": cic.utils.quadmesh_dict(var="vacross_subtidal", **plot_kwargs),},
-                                   "urlpath": f"https://tidesandcurrents.noaa.gov/stationhome.html?id={source_name}"})
-        
-        cat[source_name].describe()["metadata"].update(md_new)
+                                           "urlpath": f"https://tidesandcurrents.noaa.gov/stationhome.html?id={source_name}"})
+        cat.get_entity(source_name).metadata.update(md_new)
 
+    cat.metadata.update(metadata)
     cat.metadata.update(cic.utils.overall_metadata(cat, list(cat)))
     # set up plotting overall map, which uses general key names 
     cat.metadata["map"] = cic.utils.points_dict(x="longitude", y="latitude", c="station", s="T",
                                                 hover_cols=["station", "T"], slug=slug)
     cat.metadata["maplabels"] = cic.utils.labels_dict(x="longitude", y="latitude", text="station")
-    cat.save(base_dir / f"catalogs/{slug}.yaml")
+    cat.to_yaml_file(base_dir / f"catalogs/{slug}.yaml")
 
 
 def adcp_moored_noaa_kod_2(slug, simplecache):
+    # simplecache doesn't work for adcps
     metadata = dict(project_name = "Kodiak Island 2009 Current Survey (2)",
         overall_desc = "Moored ADCP (NOAA): ADCP survey Kodiak Island, Set 2",
         time = "2009, each for one or a few months",
@@ -1702,39 +1970,40 @@ ADCP data has been converted to eastward, northward velocities as well as along-
                     "KOD0931", "KOD0932", "KOD0933", "KOD0934", "KOD0935", "KOD0936", "KOD0937", 
                     "KOD0938", "KOD0939", "KOD0940", "KOD0941", "KOD0942", "KOD0943", "KOD0944", ]
     
-    cat = intake.open_coops_cat(station_list, include_source_metadata=True, description=metadata["overall_desc"],
-                                name=slug, process_adcp=True, metadata=metadata)
+    import intake_coops
+    cat = intake_coops.COOPSCatalogReader(station_list, include_source_metadata=True, description=metadata["overall_desc"],
+                                name=slug, process_adcp=True, metadata=metadata).read()
     
     for source_name in list(cat):
-        md_new = {"minLongitude": cat[source_name].metadata["lon"],
-                    "maxLongitude": cat[source_name].metadata["lon"],
+        md_new = {"minLongitude": cat[source_name].metadata["lng"],
+                    "maxLongitude": cat[source_name].metadata["lng"],
                     "minLatitude": cat[source_name].metadata["lat"],
                     "maxLatitude": cat[source_name].metadata["lat"],
-                    "minTime": cat[source_name].metadata["first_good_data"],
-                    "maxTime": cat[source_name].metadata["last_good_data"],
+                    "minTime": cat[source_name].metadata["deployments"]["first_good_data"],
+                    "maxTime": cat[source_name].metadata["deployments"]["last_good_data"],
                     "maptype": metadata["maptype"],
                     "featuretype": metadata["featuretype"],
                     "key_variables": ["east","north","along","across","speed"],
-                    "depths": [bin["depth"] for bin in cat[source_name].s.metadata["bins"]["bins"]],
+                    "depths": [bin["depth"] for bin in cat[source_name].metadata["bins"]["bins"]],
                     }
-        start_date = str(pd.Timestamp(cat[source_name].metadata["first_good_data"]).date())
-        title = f"lon: {cat[source_name].metadata['lon']}, lat: {cat[source_name].metadata['lat']}, start date: {start_date}"
+        start_date = str(pd.Timestamp(cat[source_name].metadata["deployments"]["first_good_data"]).date())
+        title = f"lon: {cat[source_name].metadata['lng']}, lat: {cat[source_name].metadata['lat']}, start date: {start_date}"
         # hard-wire the variable names since we don't otherwise need to load the datasets since the metadata
         # is already provided for min/max times and location
         plot_kwargs = dict(x="t", y="depth", cmap=cic.cmap["u"], width=600, title=title, hover=True)
 
-        cat[source_name].describe()["metadata"].update({"plots": {"ualong": cic.utils.quadmesh_dict(var="ualong_subtidal", **plot_kwargs),
+        cat.get_entity(source_name).metadata.update({"plots": {"ualong": cic.utils.quadmesh_dict(var="ualong_subtidal", **plot_kwargs),
                                              "vacross": cic.utils.quadmesh_dict(var="vacross_subtidal", **plot_kwargs),},
-                                   "urlpath": f"https://tidesandcurrents.noaa.gov/stationhome.html?id={source_name}"})
-        
-        cat[source_name].describe()["metadata"].update(md_new)
+                                           "urlpath": f"https://tidesandcurrents.noaa.gov/stationhome.html?id={source_name}"})
+        cat.get_entity(source_name).metadata.update(md_new)
 
+    cat.metadata.update(metadata)
     cat.metadata.update(cic.utils.overall_metadata(cat, list(cat)))
     # set up plotting overall map, which uses general key names 
     cat.metadata["map"] = cic.utils.points_dict(x="longitude", y="latitude", c="station", s="T",
                                                 hover_cols=["station", "T"], slug=slug)
     cat.metadata["maplabels"] = cic.utils.labels_dict(x="longitude", y="latitude", text="station")
-    cat.save(base_dir / f"catalogs/{slug}.yaml")
+    cat.to_yaml_file(base_dir / f"catalogs/{slug}.yaml")
 
 
 def drifters_uaf(slug, simplecache):
@@ -1907,7 +2176,7 @@ Several years of EcoFOCI drifter data are also available in a private Research W
 
     # drifter_ids = []
     for i, url in enumerate(urls):
-        print(url)
+        # print(url)
 
         data = intake.readers.datatypes.CSV(url)
         # data = intake.readers.readers.PandasCSV(url)
@@ -1962,7 +2231,7 @@ Several years of EcoFOCI drifter data are also available in a private Research W
 # Generate all catalogs
 if __name__ == "__main__":
     
-    simplecache = True
+    simplecache = False
     
     from time import time
     for slug in cic.slugs:

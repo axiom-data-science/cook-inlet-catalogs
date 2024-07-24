@@ -613,10 +613,10 @@ metadata:
   notes: These are accessed from Research Workspace where they have already been processed.
   overall_desc: HF Radar (UAF)
   project_name: HF Radar - UAF
-  summary: "HF Radar from UAF.\n\nFiles are:\n* Upper Cook Inlet (System A): 2002-2003\
+  summary: "HF Radar from UAF.\n\nFiles are:\n\n* Upper Cook Inlet (System A): 2002-2003\
     \ and 2009\n* Lower Cook Inlet (System B): 2006-2007\n\nData variables available\
     \ include tidally filtered and weekly averaged along with tidal constituents calculated\
-    \ from hourly data.\n    \nSome of the data is written up in reports:\n* https://espis.boem.gov/final%20reports/5009.pdf\n\
+    \ from hourly data.\n    \nSome of the data is written up in reports:\n\n* https://espis.boem.gov/final%20reports/5009.pdf\n\
     * https://www.govinfo.gov/app/details/GOVPUB-I-47b721482d69e308aec1cca9b3e51955\n\
     \n![pic](https://researchworkspace.com/files/40338104/UAcoverage.gif)\n"
   time: 2002-2009

@@ -81,11 +81,11 @@ entries:
           flip_yaxis: false
           height: 300
           hover_cols:
-          - lon
-          - Temperature
-          - lat
           - date_time
+          - lon
+          - lat
           - Depth
+          - Temperature
           kind: scatter
           shared_axes: false
           title: '2017-04-30'
@@ -99,11 +99,11 @@ entries:
           flip_yaxis: false
           height: 300
           hover_cols:
-          - lon
-          - Temperature
-          - lat
           - date_time
+          - lon
+          - lat
           - Depth
+          - Temperature
           kind: scatter
           shared_axes: false
           title: '2017-04-30'
@@ -150,11 +150,11 @@ entries:
           flip_yaxis: false
           height: 300
           hover_cols:
-          - lon
-          - Temperature
-          - lat
           - date_time
+          - lon
+          - lat
           - Depth
+          - Temperature
           kind: scatter
           shared_axes: false
           title: '2017-05-30'
@@ -168,11 +168,11 @@ entries:
           flip_yaxis: false
           height: 300
           hover_cols:
-          - lon
-          - Temperature
-          - lat
           - date_time
+          - lon
+          - lat
           - Depth
+          - Temperature
           kind: scatter
           shared_axes: false
           title: '2017-05-30'
@@ -219,11 +219,11 @@ entries:
           flip_yaxis: false
           height: 300
           hover_cols:
-          - lon
-          - Temperature
-          - lat
           - date_time
+          - lon
+          - lat
           - Depth
+          - Temperature
           kind: scatter
           shared_axes: false
           title: '2017-08-01'
@@ -237,11 +237,11 @@ entries:
           flip_yaxis: false
           height: 300
           hover_cols:
-          - lon
-          - Temperature
-          - lat
           - date_time
+          - lon
+          - lat
           - Depth
+          - Temperature
           kind: scatter
           shared_axes: false
           title: '2017-08-01'
@@ -288,11 +288,11 @@ entries:
           flip_yaxis: false
           height: 300
           hover_cols:
-          - lon
-          - Temperature
-          - lat
           - date_time
+          - lon
+          - lat
           - Depth
+          - Temperature
           kind: scatter
           shared_axes: false
           title: '2017-09-03'
@@ -306,11 +306,11 @@ entries:
           flip_yaxis: false
           height: 300
           hover_cols:
-          - lon
-          - Temperature
-          - lat
           - date_time
+          - lon
+          - lat
           - Depth
+          - Temperature
           kind: scatter
           shared_axes: false
           title: '2017-09-03'
@@ -357,11 +357,11 @@ entries:
           flip_yaxis: false
           height: 300
           hover_cols:
-          - lon
-          - Temperature
-          - lat
           - date_time
+          - lon
+          - lat
           - Depth
+          - Temperature
           kind: scatter
           shared_axes: false
           title: '2017-10-03'
@@ -375,11 +375,11 @@ entries:
           flip_yaxis: false
           height: 300
           hover_cols:
-          - lon
-          - Temperature
-          - lat
           - date_time
+          - lon
+          - lat
           - Depth
+          - Temperature
           kind: scatter
           shared_axes: false
           title: '2017-10-03'
@@ -426,10 +426,10 @@ entries:
           flip_yaxis: false
           height: 300
           hover_cols:
-          - latitude_degN
-          - depth_m
           - longitude_degE
+          - latitude_degN
           - date_dd_mm_yyyy_hh_mm
+          - depth_m
           - ' temp_C   '
           kind: scatter
           shared_axes: false
@@ -444,10 +444,10 @@ entries:
           flip_yaxis: false
           height: 300
           hover_cols:
-          - latitude_degN
-          - depth_m
           - longitude_degE
+          - latitude_degN
           - date_dd_mm_yyyy_hh_mm
+          - depth_m
           - ' temp_C   '
           kind: scatter
           shared_axes: false
@@ -495,10 +495,10 @@ entries:
           flip_yaxis: false
           height: 300
           hover_cols:
-          - latitude_degN
-          - depth_m
           - longitude_degE
+          - latitude_degN
           - date_dd_mm_yyyy_hh_mm
+          - depth_m
           - ' temp_C   '
           kind: scatter
           shared_axes: false
@@ -513,10 +513,10 @@ entries:
           flip_yaxis: false
           height: 300
           hover_cols:
-          - latitude_degN
-          - depth_m
           - longitude_degE
+          - latitude_degN
           - date_dd_mm_yyyy_hh_mm
+          - depth_m
           - ' temp_C   '
           kind: scatter
           shared_axes: false
@@ -564,10 +564,10 @@ entries:
           flip_yaxis: false
           height: 300
           hover_cols:
-          - latitude_degN
-          - depth_m
           - longitude_degE
+          - latitude_degN
           - date_dd_mm_yyyy_hh_mm
+          - depth_m
           - ' temp_C   '
           kind: scatter
           shared_axes: false
@@ -582,10 +582,10 @@ entries:
           flip_yaxis: false
           height: 300
           hover_cols:
-          - latitude_degN
-          - depth_m
           - longitude_degE
+          - latitude_degN
           - date_dd_mm_yyyy_hh_mm
+          - depth_m
           - ' temp_C   '
           kind: scatter
           shared_axes: false
@@ -633,10 +633,10 @@ entries:
           flip_yaxis: false
           height: 300
           hover_cols:
-          - latitude_degN
-          - depth_m
           - longitude_degE
+          - latitude_degN
           - date_dd_mm_yyyy_hh_mm
+          - depth_m
           - ' temp_C   '
           kind: scatter
           shared_axes: false
@@ -651,10 +651,10 @@ entries:
           flip_yaxis: false
           height: 300
           hover_cols:
-          - latitude_degN
-          - depth_m
           - longitude_degE
+          - latitude_degN
           - date_dd_mm_yyyy_hh_mm
+          - depth_m
           - ' temp_C   '
           kind: scatter
           shared_axes: false
@@ -701,11 +701,11 @@ entries:
           flip_yaxis: false
           height: 300
           hover_cols:
-          - latitude_degN
-          - longitude_degW
-          - ' temp_C   '
           - date_time
           - depth [m]
+          - latitude_degN
+          - ' temp_C   '
+          - longitude_degW
           kind: scatter
           shared_axes: false
           title: '2019-04-13'
@@ -751,11 +751,11 @@ entries:
           flip_yaxis: false
           height: 300
           hover_cols:
-          - latitude_degN
-          - longitude_degW
-          - ' temp_C   '
           - date_time
           - depth [m]
+          - latitude_degN
+          - ' temp_C   '
+          - longitude_degW
           kind: scatter
           shared_axes: false
           title: '2019-05-13'
@@ -801,11 +801,11 @@ entries:
           flip_yaxis: false
           height: 300
           hover_cols:
-          - latitude_degN
-          - longitude_degW
-          - ' temp_C   '
           - date_time
           - depth [m]
+          - latitude_degN
+          - ' temp_C   '
+          - longitude_degW
           kind: scatter
           shared_axes: false
           title: '2019-08-17'
@@ -851,11 +851,11 @@ entries:
           flip_yaxis: false
           height: 300
           hover_cols:
-          - latitude_degN
-          - longitude_degW
-          - ' temp_C   '
           - date_time
           - depth [m]
+          - latitude_degN
+          - ' temp_C   '
+          - longitude_degW
           kind: scatter
           shared_axes: false
           title: '2019-09-16'
@@ -902,9 +902,9 @@ entries:
           height: 300
           hover_cols:
           - latitude_degN
+          - ' temp_C   '
           - datetime_dd/MM/yyyy hh:mm ( GMT)
           - longitude_degW
-          - ' temp_C   '
           - depth
           kind: scatter
           shared_axes: false
@@ -952,9 +952,9 @@ entries:
           height: 300
           hover_cols:
           - latitude_degN
+          - ' temp_C   '
           - datetime_dd/MM/yyyy hh:mm ( GMT)
           - longitude_degW
-          - ' temp_C   '
           - depth
           kind: scatter
           shared_axes: false
@@ -1002,9 +1002,9 @@ entries:
           height: 300
           hover_cols:
           - latitude_degN
+          - ' temp_C   '
           - datetime_dd/MM/yyyy hh:mm ( GMT)
           - longitude_degW
-          - ' temp_C   '
           - depth
           kind: scatter
           shared_axes: false
@@ -1065,8 +1065,8 @@ metadata:
   - '2020'
   included: true
   key_variables:
-  - temp
   - salt
+  - temp
   map:
     coastline: false
     geo: true

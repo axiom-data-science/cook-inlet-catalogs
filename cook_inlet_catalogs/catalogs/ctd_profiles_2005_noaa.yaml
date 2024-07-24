@@ -88,10 +88,10 @@ entries:
           height: 400
           hover_cols:
           - Depth [m]
-          - Station
           - "Lat (\xB0N)"
-          - Temperature [C]
           - "Lon (\xB0E)"
+          - Temperature [C]
+          - Station
           - datetime
           invert: true
           kind: line
@@ -157,10 +157,10 @@ entries:
           height: 400
           hover_cols:
           - Depth [m]
-          - Station
           - "Lat (\xB0N)"
-          - Temperature [C]
           - "Lon (\xB0E)"
+          - Temperature [C]
+          - Station
           - datetime
           invert: true
           kind: line
@@ -226,10 +226,10 @@ entries:
           height: 400
           hover_cols:
           - Depth [m]
-          - Station
           - "Lat (\xB0N)"
-          - Temperature [C]
           - "Lon (\xB0E)"
+          - Temperature [C]
+          - Station
           - datetime
           invert: true
           kind: line
@@ -295,10 +295,10 @@ entries:
           height: 400
           hover_cols:
           - Depth [m]
-          - Station
           - "Lat (\xB0N)"
-          - Temperature [C]
           - "Lon (\xB0E)"
+          - Temperature [C]
+          - Station
           - datetime
           invert: true
           kind: line
@@ -364,10 +364,10 @@ entries:
           height: 400
           hover_cols:
           - Depth [m]
-          - Station
           - "Lat (\xB0N)"
-          - Temperature [C]
           - "Lon (\xB0E)"
+          - Temperature [C]
+          - Station
           - datetime
           invert: true
           kind: line
@@ -433,10 +433,10 @@ entries:
           height: 400
           hover_cols:
           - Depth [m]
-          - Station
           - "Lat (\xB0N)"
-          - Temperature [C]
           - "Lon (\xB0E)"
+          - Temperature [C]
+          - Station
           - datetime
           invert: true
           kind: line
@@ -502,10 +502,10 @@ entries:
           height: 400
           hover_cols:
           - Depth [m]
-          - Station
           - "Lat (\xB0N)"
-          - Temperature [C]
           - "Lon (\xB0E)"
+          - Temperature [C]
+          - Station
           - datetime
           invert: true
           kind: line
@@ -571,10 +571,10 @@ entries:
           height: 400
           hover_cols:
           - Depth [m]
-          - Station
           - "Lat (\xB0N)"
-          - Temperature [C]
           - "Lon (\xB0E)"
+          - Temperature [C]
+          - Station
           - datetime
           invert: true
           kind: line
@@ -640,10 +640,10 @@ entries:
           height: 400
           hover_cols:
           - Depth [m]
-          - Station
           - "Lat (\xB0N)"
-          - Temperature [C]
           - "Lon (\xB0E)"
+          - Temperature [C]
+          - Station
           - datetime
           invert: true
           kind: line
@@ -709,10 +709,10 @@ entries:
           height: 400
           hover_cols:
           - Depth [m]
-          - Station
           - "Lat (\xB0N)"
-          - Temperature [C]
           - "Lon (\xB0E)"
+          - Temperature [C]
+          - Station
           - datetime
           invert: true
           kind: line
@@ -778,10 +778,10 @@ entries:
           height: 400
           hover_cols:
           - Depth [m]
-          - Station
           - "Lat (\xB0N)"
-          - Temperature [C]
           - "Lon (\xB0E)"
+          - Temperature [C]
+          - Station
           - datetime
           invert: true
           kind: line
@@ -847,10 +847,10 @@ entries:
           height: 400
           hover_cols:
           - Depth [m]
-          - Station
           - "Lat (\xB0N)"
-          - Temperature [C]
           - "Lon (\xB0E)"
+          - Temperature [C]
+          - Station
           - datetime
           invert: true
           kind: line
@@ -916,10 +916,10 @@ entries:
           height: 400
           hover_cols:
           - Depth [m]
-          - Station
           - "Lat (\xB0N)"
-          - Temperature [C]
           - "Lon (\xB0E)"
+          - Temperature [C]
+          - Station
           - datetime
           invert: true
           kind: line
@@ -985,10 +985,10 @@ entries:
           height: 400
           hover_cols:
           - Depth [m]
-          - Station
           - "Lat (\xB0N)"
-          - Temperature [C]
           - "Lon (\xB0E)"
+          - Temperature [C]
+          - Station
           - datetime
           invert: true
           kind: line
@@ -1054,10 +1054,10 @@ entries:
           height: 400
           hover_cols:
           - Depth [m]
-          - Station
           - "Lat (\xB0N)"
-          - Temperature [C]
           - "Lon (\xB0E)"
+          - Temperature [C]
+          - Station
           - datetime
           invert: true
           kind: line
@@ -1123,10 +1123,10 @@ entries:
           height: 400
           hover_cols:
           - Depth [m]
-          - Station
           - "Lat (\xB0N)"
-          - Temperature [C]
           - "Lon (\xB0E)"
+          - Temperature [C]
+          - Station
           - datetime
           invert: true
           kind: line
@@ -1192,10 +1192,10 @@ entries:
           height: 400
           hover_cols:
           - Depth [m]
-          - Station
           - "Lat (\xB0N)"
-          - Temperature [C]
           - "Lon (\xB0E)"
+          - Temperature [C]
+          - Station
           - datetime
           invert: true
           kind: line
@@ -1261,10 +1261,10 @@ entries:
           height: 400
           hover_cols:
           - Depth [m]
-          - Station
           - "Lat (\xB0N)"
-          - Temperature [C]
           - "Lon (\xB0E)"
+          - Temperature [C]
+          - Station
           - datetime
           invert: true
           kind: line
@@ -1330,10 +1330,10 @@ entries:
           height: 400
           hover_cols:
           - Depth [m]
-          - Station
           - "Lat (\xB0N)"
-          - Temperature [C]
           - "Lon (\xB0E)"
+          - Temperature [C]
+          - Station
           - datetime
           invert: true
           kind: line
@@ -1399,10 +1399,10 @@ entries:
           height: 400
           hover_cols:
           - Depth [m]
-          - Station
           - "Lat (\xB0N)"
-          - Temperature [C]
           - "Lon (\xB0E)"
+          - Temperature [C]
+          - Station
           - datetime
           invert: true
           kind: line
@@ -1468,10 +1468,10 @@ entries:
           height: 400
           hover_cols:
           - Depth [m]
-          - Station
           - "Lat (\xB0N)"
-          - Temperature [C]
           - "Lon (\xB0E)"
+          - Temperature [C]
+          - Station
           - datetime
           invert: true
           kind: line
@@ -1537,10 +1537,10 @@ entries:
           height: 400
           hover_cols:
           - Depth [m]
-          - Station
           - "Lat (\xB0N)"
-          - Temperature [C]
           - "Lon (\xB0E)"
+          - Temperature [C]
+          - Station
           - datetime
           invert: true
           kind: line
@@ -1606,10 +1606,10 @@ entries:
           height: 400
           hover_cols:
           - Depth [m]
-          - Station
           - "Lat (\xB0N)"
-          - Temperature [C]
           - "Lon (\xB0E)"
+          - Temperature [C]
+          - Station
           - datetime
           invert: true
           kind: line
@@ -1675,10 +1675,10 @@ entries:
           height: 400
           hover_cols:
           - Depth [m]
-          - Station
           - "Lat (\xB0N)"
-          - Temperature [C]
           - "Lon (\xB0E)"
+          - Temperature [C]
+          - Station
           - datetime
           invert: true
           kind: line
@@ -1800,8 +1800,8 @@ metadata:
   header_names: null
   included: true
   key_variables:
-  - temp
   - salt
+  - temp
   map:
     c: station
     coastline: false

@@ -60,7 +60,12 @@ extensions = [
     "IPython.sphinxext.ipython_directive",
     "IPython.sphinxext.ipython_console_highlighting",
     "sphinxcontrib.srclinks",
+    "myst_nb",
 ]
+
+# https://myst-nb.readthedocs.io/en/v0.9.0/use/execute.html
+# jupyter_execute_notebooks = "off"
+nb_execution_mode = "auto"
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ["_templates"]

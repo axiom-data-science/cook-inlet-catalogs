@@ -1,24 +1,16 @@
+import subprocess
 import nbformat as nbf
 import cook_inlet_catalogs as cic
-import pandas as pd
-from glob import glob
 from pathlib import Path
 import intake
-from importlib.resources import files
-import os
-import hvplot.pandas
 import hvplot.xarray
 
 imports = f"""\
-import pandas as pd
-from glob import glob
-from pathlib import Path
 import intake
-from importlib.resources import files
-import os
 import hvplot.pandas
 import hvplot.xarray
 import cook_inlet_catalogs as cic
+import holoviews as hv
 """
 
 def write_nb(slug):
@@ -28,9 +20,9 @@ def write_nb(slug):
     cat = intake.open_catalog(cic.utils.cat_path(slug))
 
     text = f"""\
-Click here to run this notebook in Binder, a hosted environment: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/axiom-data-science/cook-inlet-catalogs/blob/main/docs/demo_notebooks/{slug}.ipynb/HEAD)
+Click here to run this notebook in Binder, a hosted environment: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/axiom-data-science/cook-inlet-catalogs/HEAD?labpath=docs%2Fdemo_notebooks%2F{slug}.md)
 
-# {slug}
+# {cat.metadata['overall_desc']}
 
 {cat.metadata['summary']}
 
@@ -78,7 +70,10 @@ dataset_ids
     text_cell = nbf.v4.new_markdown_cell(text)
 
     code = f"""\
-dataset_id = dataset_ids[2]
+try:
+    dataset_id = dataset_ids[2]
+except:
+    dataset_id = dataset_ids[0]
 print(dataset_id)
 
 dd = cat[dataset_id].read()
@@ -93,62 +88,35 @@ dd
 """
     text_cell = nbf.v4.new_markdown_cell(text)
 
-    dataset_ids = list(cat)
-    dataset_id = dataset_ids[2]
-    keys = list(cat[dataset_id].metadata["plots"].keys())
-    # for key in keys:
-    #     if "dynamic" in cat[dataset_id].metadata["plots"][key]:
-    #         cat.get_entity(dataset_id).metadata.update({"plots": {key: {"dynamic": False}}})
-    #         # cat[dataset_id].metadata["plots"][key]["dynamic"] = False
-
     # dynamic should be True to use in notebooks but False for when compiling for docs
     # have to change this in the metadata
-    code = f"""\
+    code = """\
 keys = list(cat[dataset_id].metadata["plots"].keys())
 print(keys)
 
-key = keys[0]
-
-plot_kwargs1 = cat[dataset_id].metadata["plots"][key]
-if "clim" in plot_kwargs1 and isinstance(plot_kwargs1["clim"], list):
-    plot_kwargs1["clim"] = tuple(plot_kwargs1["clim"])
-if "dynamic" in plot_kwargs1:
-    plot_kwargs1["dynamic"] = False
+plots = []
+for key in keys:
+    plot_kwargs = cat[dataset_id].metadata["plots"][key]
+    if "clim" in plot_kwargs and isinstance(plot_kwargs["clim"], list):
+        plot_kwargs["clim"] = tuple(plot_kwargs["clim"])
+    if "dynamic" in plot_kwargs:
+        plot_kwargs["dynamic"] = False
+    plots.append(cat[dataset_id].ToHvPlot(**plot_kwargs).read())
+hv.Layout(plots).cols(1)
 """
-
-    # import pdb; pdb.set_trace()
-    plot_code = f"cat[dataset_id].ToHvPlot(**plot_kwargs1).read()"
-
-    if "direction" in keys:
-
-        code += f"""\
-
-key = keys[1]
-
-plot_kwargs2 = cat[dataset_id].metadata["plots"][key]
-if "clim" in plot_kwargs2 and isinstance(plot_kwargs2["clim"], list):
-    plot_kwargs2["clim"] = tuple(plot_kwargs2["clim"])
-"""
-
-        plot_code += f" * cat[dataset_id].ToHvPlot(**plot_kwargs2).read()"
-
-
-    # import pdb; pdb.set_trace()
-
-
-    # if key == "direction":
-# key = keys[1] 
-# plot_kwargs2 = cat[dataset_id].metadata["plots"][key]
-# if "clim" in plot_kwargs2:
-#     plot_kwargs2["clim"] = tuple(plot_kwargs2["clim"])
 
     code_cell = nbf.v4.new_code_cell(code)
-    plot_cell = nbf.v4.new_code_cell(plot_code)
-    nb['cells'] += [text_cell, code_cell, plot_cell]
+    nb['cells'] += [text_cell, code_cell]
     
     nbf.write(nb, f'demo_notebooks/{slug}.ipynb')
 
+    # Run jupytext command
+    subprocess.run(["jupytext", "--to", "myst", f'demo_notebooks/{slug}.ipynb'])
+
 if __name__ == "__main__":
+    base_dir = Path("demo_notebooks")
     
     for slug in cic.slugs:
+        # if not (base_dir / f"{slug}.ipynb").is_file():
+        print(slug)
         write_nb(slug)

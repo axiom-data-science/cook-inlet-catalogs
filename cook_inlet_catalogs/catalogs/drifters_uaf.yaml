@@ -35,6 +35,8 @@ aliases:
   CIDrifter0246Y2004_SubsurfaceDrogueAt5M: CIDrifter0246Y2004_SubsurfaceDrogueAt5M
   CIDrifter0247Y2004_SubsurfaceDrogueAt5M: CIDrifter0247Y2004_SubsurfaceDrogueAt5M
   CIDrifter0248Y2004_SubsurfaceDrogueAt5M: CIDrifter0248Y2004_SubsurfaceDrogueAt5M
+  CIDrifter0249Y2005_SubsurfaceDrogueAt80M: CIDrifter0249Y2005_SubsurfaceDrogueAt80M
+  CIDrifter0250Y2005_SubsurfaceDrogueAt80M: CIDrifter0250Y2005_SubsurfaceDrogueAt80M
   CIDrifter0627Y2005_SubsurfaceDrogueAt5M: CIDrifter0627Y2005_SubsurfaceDrogueAt5M
   CIDrifter0628Y2005_SubsurfaceDrogueAt5M: CIDrifter0628Y2005_SubsurfaceDrogueAt5M
   CIDrifter0629Y2005_SubsurfaceDrogueAt5M: CIDrifter0629Y2005_SubsurfaceDrogueAt5M
@@ -81,6 +83,7 @@ aliases:
   KBDeployment08Y2020: KBDeployment08Y2020
   KBDeployment09Y2019: KBDeployment09Y2019
   KBDeployment09Y2020: KBDeployment09Y2020
+  KBDeployment10Y2019: KBDeployment10Y2019
   KBDeployment10Y2020: KBDeployment10Y2020
   KBDeployment11Y2020: KBDeployment11Y2020
   KBDeployment12Y2020: KBDeployment12Y2020
@@ -414,11 +417,25 @@ data:
       url: https://researchworkspace.com/files/41810403/KBDeployment20Y2020_data.csv
     metadata: {}
     user_parameters: {}
+  77350d2ae05ff14a:
+    datatype: intake.readers.datatypes:Excel
+    kwargs:
+      storage_options: null
+      url: https://researchworkspace.com/files/41810422/CIDrifter0249Y2005_SubsurfaceDrogueAt80M_data.xlsx
+    metadata: {}
+    user_parameters: {}
   7a992a7e9ff4a965:
     datatype: intake.readers.datatypes:CSV
     kwargs:
       storage_options: null
       url: https://researchworkspace.com/files/41810371/KBDeployment01Y2019_data.csv
+    metadata: {}
+    user_parameters: {}
+  7c570ad06532d4d7:
+    datatype: intake.readers.datatypes:Excel
+    kwargs:
+      storage_options: null
+      url: https://researchworkspace.com/files/41810392/KBDeployment10Y2019_data.xlsx
     metadata: {}
     user_parameters: {}
   7cf728c00b74f589:
@@ -594,6 +611,13 @@ data:
     kwargs:
       storage_options: null
       url: https://researchworkspace.com/files/41810691/CIDrifter0632Y2006_SubsurfaceDrogueAt5M_data.csv
+    metadata: {}
+    user_parameters: {}
+  b4e94315627becd1:
+    datatype: intake.readers.datatypes:Excel
+    kwargs:
+      storage_options: null
+      url: https://researchworkspace.com/files/41810421/CIDrifter0250Y2005_SubsurfaceDrogueAt80M_data.xlsx
     metadata: {}
     user_parameters: {}
   b5f01e4140b77c9d:
@@ -2234,6 +2258,22 @@ entries:
     output_instance: pandas:DataFrame
     reader: intake.readers.readers:PandasCSV
     user_parameters: {}
+  8520d9a84dee27f8:
+    kwargs:
+      out_instances:
+      - pandas:DataFrame
+      - pandas:DataFrame
+      steps:
+      - - '{data(b0565e41bcc7ee0e)}'
+        - []
+        - {}
+      - - '{func(intake.readers.convert:GenericFunc)}'
+        - []
+        - func: '{func(cook_inlet_catalogs.utils:parse_year_month_day_hour_minute)}'
+    metadata: {}
+    output_instance: pandas:DataFrame
+    reader: intake.readers.convert:Pipeline
+    user_parameters: {}
   86439cde2f6370d5:
     kwargs:
       out_instances:
@@ -2593,10 +2633,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
           - depth_m
           - Lat
           - Long
-          - datetime
           kind: points
           legend: false
           s: null
@@ -2658,10 +2698,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
           - depth_m
           - Lat
           - Long
-          - datetime
           kind: points
           legend: false
           s: null
@@ -2723,10 +2763,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
           - depth_m
           - Lat
           - Long
-          - datetime
           kind: points
           legend: false
           s: null
@@ -2788,10 +2828,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
           - depth_m
           - Lat
           - Long
-          - datetime
           kind: points
           legend: false
           s: null
@@ -2853,10 +2893,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
           - depth_m
           - Lat
           - Long
-          - datetime
           kind: points
           legend: false
           s: null
@@ -2918,10 +2958,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
           - depth_m
           - Lat
           - Long
-          - datetime
           kind: points
           legend: false
           s: null
@@ -2983,10 +3023,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
           - depth_m
           - Lat
           - Long
-          - datetime
           kind: points
           legend: false
           s: null
@@ -3048,10 +3088,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
           - depth_m
           - Lat
           - Long
-          - datetime
           kind: points
           legend: false
           s: null
@@ -3113,10 +3153,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
           - depth_m
           - Lat
           - Long
-          - datetime
           kind: points
           legend: false
           s: null
@@ -3178,10 +3218,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
           - depth_m
           - Lat
           - Long
-          - datetime
           kind: points
           legend: false
           s: null
@@ -3243,10 +3283,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
           - depth_m
           - Lat
           - Long
-          - datetime
           kind: points
           legend: false
           s: null
@@ -3308,10 +3348,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
           - depth_m
           - Lat
           - Long
-          - datetime
           kind: points
           legend: false
           s: null
@@ -3373,10 +3413,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
           - depth_m
           - Lat
           - Long
-          - datetime
           kind: points
           legend: false
           s: null
@@ -3438,10 +3478,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
           - depth_m
           - Lat
           - Long
-          - datetime
           kind: points
           legend: false
           s: null
@@ -3503,10 +3543,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
           - depth_m
           - Lat
           - Long
-          - datetime
           kind: points
           legend: false
           s: null
@@ -3568,10 +3608,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
           - depth_m
           - Lat
           - Long
-          - datetime
           kind: points
           legend: false
           s: null
@@ -3633,10 +3673,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
           - depth_m
           - Lat
           - Long
-          - datetime
           kind: points
           legend: false
           s: null
@@ -3698,10 +3738,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
           - depth_m
           - Lat
           - Long
-          - datetime
           kind: points
           legend: false
           s: null
@@ -3763,10 +3803,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
           - depth_m
           - Lat
           - Long
-          - datetime
           kind: points
           legend: false
           s: null
@@ -3828,10 +3868,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
           - depth_m
           - Lat
           - Long
-          - datetime
           kind: points
           legend: false
           s: null
@@ -3893,10 +3933,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
           - depth_m
           - Lat
           - Long
-          - datetime
           kind: points
           legend: false
           s: null
@@ -3958,10 +3998,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
           - depth_m
           - Lat
           - Long
-          - datetime
           kind: points
           legend: false
           s: null
@@ -4023,10 +4063,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
           - depth_m
           - Lat
           - Long
-          - datetime
           kind: points
           legend: false
           s: null
@@ -4088,10 +4128,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
           - depth_m
           - Lat
           - Long
-          - datetime
           kind: points
           legend: false
           s: null
@@ -4153,10 +4193,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
           - depth_m
           - Lat
           - Long
-          - datetime
           kind: points
           legend: false
           s: null
@@ -4218,10 +4258,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
           - depth_m
           - Lat
           - Long
-          - datetime
           kind: points
           legend: false
           s: null
@@ -4283,10 +4323,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
           - depth_m
           - Lat
           - Long
-          - datetime
           kind: points
           legend: false
           s: null
@@ -4348,10 +4388,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
           - depth_m
           - Lat
           - Long
-          - datetime
           kind: points
           legend: false
           s: null
@@ -4413,10 +4453,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
           - depth_m
           - Lat
           - Long
-          - datetime
           kind: points
           legend: false
           s: null
@@ -4478,10 +4518,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
           - depth_m
           - Lat
           - Long
-          - datetime
           kind: points
           legend: false
           s: null
@@ -4543,10 +4583,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
           - depth_m
           - Lat
           - Long
-          - datetime
           kind: points
           legend: false
           s: null
@@ -4608,10 +4648,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
           - depth_m
           - Lat
           - Long
-          - datetime
           kind: points
           legend: false
           s: null
@@ -4673,10 +4713,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
           - depth_m
           - Lat
           - Long
-          - datetime
           kind: points
           legend: false
           s: null
@@ -4738,10 +4778,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
           - depth_m
           - Lat
           - Long
-          - datetime
           kind: points
           legend: false
           s: null
@@ -4803,10 +4843,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
           - depth_m
           - Lat
           - Long
-          - datetime
           kind: points
           legend: false
           s: null
@@ -4868,10 +4908,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
           - depth_m
           - Lat
           - Long
-          - datetime
           kind: points
           legend: false
           s: null
@@ -4884,6 +4924,136 @@ entries:
           y: Lat
           ylabel: Latitude [N]
       urlpath: https://researchworkspace.com/files/41810685/CIDrifter0248Y2004_SubsurfaceDrogueAt5M_data.csv
+    output_instance: pandas:DataFrame
+    reader: intake.readers.convert:Pipeline
+    user_parameters: {}
+  CIDrifter0249Y2005_SubsurfaceDrogueAt80M:
+    kwargs:
+      out_instances:
+      - pandas:DataFrame
+      - pandas:DataFrame
+      - pandas:DataFrame
+      - pandas:DataFrame
+      steps:
+      - - '{data(b0565e41bcc7ee0e)}'
+        - []
+        - {}
+      - - '{func(intake.readers.transform:Method)}'
+        - []
+        - datetime: '{data(8520d9a84dee27f8)}'
+          method_name: assign
+      - - '{func(intake.readers.transform:Method)}'
+        - []
+        - columns:
+          - Year
+          - Month
+          - Day
+          - Hour
+          - Minute
+          method_name: drop
+      - - '{func(intake.readers.transform:Method)}'
+        - []
+        - depth_m: '80'
+          method_name: assign
+    metadata:
+      featuretype: trajectory
+      key_variables: []
+      maptype: box
+      maxLatitude: 60.6579
+      maxLongitude: -151.5362
+      maxTime: '2005-04-02T00:00:00.000000000'
+      minLatitude: 60.0648
+      minLongitude: -151.8953
+      minTime: '2005-03-24T06:00:00.000000000'
+      plots:
+        data:
+          c: null
+          coastline: false
+          color: k
+          geo: true
+          height: 700
+          hover_cols:
+          - datetime
+          - depth_m
+          - Lat
+          - Long
+          kind: points
+          legend: false
+          s: null
+          size: 35
+          tiles: true
+          title: null
+          width: 600
+          x: Long
+          xlabel: Longitude [W]
+          y: Lat
+          ylabel: Latitude [N]
+      urlpath: https://researchworkspace.com/files/41810422/CIDrifter0249Y2005_SubsurfaceDrogueAt80M_data.xlsx
+    output_instance: pandas:DataFrame
+    reader: intake.readers.convert:Pipeline
+    user_parameters: {}
+  CIDrifter0250Y2005_SubsurfaceDrogueAt80M:
+    kwargs:
+      out_instances:
+      - pandas:DataFrame
+      - pandas:DataFrame
+      - pandas:DataFrame
+      - pandas:DataFrame
+      steps:
+      - - '{data(cf3892d9945b427d)}'
+        - []
+        - {}
+      - - '{func(intake.readers.transform:Method)}'
+        - []
+        - datetime: '{data(edcf82e55213c876)}'
+          method_name: assign
+      - - '{func(intake.readers.transform:Method)}'
+        - []
+        - columns:
+          - Year
+          - Month
+          - Day
+          - Hour
+          - Minute
+          method_name: drop
+      - - '{func(intake.readers.transform:Method)}'
+        - []
+        - depth_m: '80'
+          method_name: assign
+    metadata:
+      featuretype: trajectory
+      key_variables: []
+      maptype: box
+      maxLatitude: 60.6057
+      maxLongitude: -151.5599
+      maxTime: '2005-04-12T12:00:00.000000000'
+      minLatitude: 59.9545
+      minLongitude: -152.3469
+      minTime: '2005-03-24T18:00:00.000000000'
+      plots:
+        data:
+          c: null
+          coastline: false
+          color: k
+          geo: true
+          height: 700
+          hover_cols:
+          - datetime
+          - depth_m
+          - Lat
+          - Long
+          kind: points
+          legend: false
+          s: null
+          size: 35
+          tiles: true
+          title: null
+          width: 600
+          x: Long
+          xlabel: Longitude [W]
+          y: Lat
+          ylabel: Latitude [N]
+      urlpath: https://researchworkspace.com/files/41810421/CIDrifter0250Y2005_SubsurfaceDrogueAt80M_data.xlsx
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -4933,10 +5103,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
           - depth_m
           - Lat
           - Long
-          - datetime
           kind: points
           legend: false
           s: null
@@ -4998,10 +5168,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
           - depth_m
           - Lat
           - Long
-          - datetime
           kind: points
           legend: false
           s: null
@@ -5063,10 +5233,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
           - depth_m
           - Lat
           - Long
-          - datetime
           kind: points
           legend: false
           s: null
@@ -5128,10 +5298,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
           - depth_m
           - Lat
           - Long
-          - datetime
           kind: points
           legend: false
           s: null
@@ -5193,10 +5363,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
           - depth_m
           - Lat
           - Long
-          - datetime
           kind: points
           legend: false
           s: null
@@ -5258,10 +5428,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
           - depth_m
           - Lat
           - Long
-          - datetime
           kind: points
           legend: false
           s: null
@@ -5323,10 +5493,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
           - depth_m
           - Lat
           - Long
-          - datetime
           kind: points
           legend: false
           s: null
@@ -5388,10 +5558,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
           - depth_m
           - Lat
           - Long
-          - datetime
           kind: points
           legend: false
           s: null
@@ -5453,10 +5623,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
           - depth_m
           - Lat
           - Long
-          - datetime
           kind: points
           legend: false
           s: null
@@ -5518,10 +5688,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
           - depth_m
           - Lat
           - Long
-          - datetime
           kind: points
           legend: false
           s: null
@@ -5583,10 +5753,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
           - depth_m
           - Lat
           - Long
-          - datetime
           kind: points
           legend: false
           s: null
@@ -5648,10 +5818,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
           - depth_m
           - Lat
           - Long
-          - datetime
           kind: points
           legend: false
           s: null
@@ -5713,10 +5883,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
           - depth_m
           - Lat
           - Long
-          - datetime
           kind: points
           legend: false
           s: null
@@ -5778,10 +5948,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
           - depth_m
           - Lat
           - Long
-          - datetime
           kind: points
           legend: false
           s: null
@@ -5843,10 +6013,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
           - depth_m
           - Lat
           - Long
-          - datetime
           kind: points
           legend: false
           s: null
@@ -5908,10 +6078,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
           - depth_m
           - Lat
           - Long
-          - datetime
           kind: points
           legend: false
           s: null
@@ -5973,10 +6143,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
           - depth_m
           - Lat
           - Long
-          - datetime
           kind: points
           legend: false
           s: null
@@ -6038,10 +6208,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
           - depth_m
           - Lat
           - Long
-          - datetime
           kind: points
           legend: false
           s: null
@@ -6103,10 +6273,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
           - depth_m
           - Lat
           - Long
-          - datetime
           kind: points
           legend: false
           s: null
@@ -6168,10 +6338,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
           - depth_m
           - Lat
           - Long
-          - datetime
           kind: points
           legend: false
           s: null
@@ -6233,10 +6403,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
           - depth_m
           - Lat
           - Long
-          - datetime
           kind: points
           legend: false
           s: null
@@ -6298,10 +6468,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
           - depth_m
           - Lat
           - Long
-          - datetime
           kind: points
           legend: false
           s: null
@@ -6363,10 +6533,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
           - depth_m
           - Lat
           - Long
-          - datetime
           kind: points
           legend: false
           s: null
@@ -6428,10 +6598,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
           - depth_m
           - Lat
           - Long
-          - datetime
           kind: points
           legend: false
           s: null
@@ -6493,10 +6663,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
           - depth_m
           - Lat
           - Long
-          - datetime
           kind: points
           legend: false
           s: null
@@ -6558,10 +6728,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
           - depth_m
           - Lat
           - Long
-          - datetime
           kind: points
           legend: false
           s: null
@@ -6623,10 +6793,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
           - depth_m
           - Lat
           - Long
-          - datetime
           kind: points
           legend: false
           s: null
@@ -6688,10 +6858,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
           - depth_m
           - Lat
           - Long
-          - datetime
           kind: points
           legend: false
           s: null
@@ -6755,11 +6925,11 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - Long
           - depth_m
-          - Temperature
           - Lat
           - datetime
+          - Temperature
+          - Long
           kind: points
           legend: false
           s: null
@@ -6823,11 +6993,11 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - Long
           - depth_m
-          - Temperature
           - Lat
           - datetime
+          - Temperature
+          - Long
           kind: points
           legend: false
           s: null
@@ -6891,11 +7061,11 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - Long
           - depth_m
-          - Temperature
           - Lat
           - datetime
+          - Temperature
+          - Long
           kind: points
           legend: false
           s: null
@@ -6959,11 +7129,11 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - Long
           - depth_m
-          - Temperature
           - Lat
           - datetime
+          - Temperature
+          - Long
           kind: points
           legend: false
           s: null
@@ -7027,11 +7197,11 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - Long
           - depth_m
-          - Temperature
           - Lat
           - datetime
+          - Temperature
+          - Long
           kind: points
           legend: false
           s: null
@@ -7095,11 +7265,11 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - Long
           - depth_m
-          - Temperature
           - Lat
           - datetime
+          - Temperature
+          - Long
           kind: points
           legend: false
           s: null
@@ -7163,11 +7333,11 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - Long
           - depth_m
-          - Temperature
           - Lat
           - datetime
+          - Temperature
+          - Long
           kind: points
           legend: false
           s: null
@@ -7231,11 +7401,11 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - Long
           - depth_m
-          - Temperature
           - Lat
           - datetime
+          - Temperature
+          - Long
           kind: points
           legend: false
           s: null
@@ -7299,11 +7469,11 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - Long
           - depth_m
-          - Temperature
           - Lat
           - datetime
+          - Temperature
+          - Long
           kind: points
           legend: false
           s: null
@@ -7367,11 +7537,11 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - Long
           - depth_m
-          - Temperature
           - Lat
           - datetime
+          - Temperature
+          - Long
           kind: points
           legend: false
           s: null
@@ -7435,11 +7605,11 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - Long
           - depth_m
-          - Temperature
           - Lat
           - datetime
+          - Temperature
+          - Long
           kind: points
           legend: false
           s: null
@@ -7503,11 +7673,11 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - Long
           - depth_m
-          - Temperature
           - Lat
           - datetime
+          - Temperature
+          - Long
           kind: points
           legend: false
           s: null
@@ -7571,11 +7741,11 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - Long
           - depth_m
-          - Temperature
           - Lat
           - datetime
+          - Temperature
+          - Long
           kind: points
           legend: false
           s: null
@@ -7639,11 +7809,11 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - Long
           - depth_m
-          - Temperature
           - Lat
           - datetime
+          - Temperature
+          - Long
           kind: points
           legend: false
           s: null
@@ -7707,11 +7877,11 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - Long
           - depth_m
-          - Temperature
           - Lat
           - datetime
+          - Temperature
+          - Long
           kind: points
           legend: false
           s: null
@@ -7775,11 +7945,11 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - Long
           - depth_m
-          - Temperature
           - Lat
           - datetime
+          - Temperature
+          - Long
           kind: points
           legend: false
           s: null
@@ -7843,11 +8013,11 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - Long
           - depth_m
-          - Temperature
           - Lat
           - datetime
+          - Temperature
+          - Long
           kind: points
           legend: false
           s: null
@@ -7911,11 +8081,11 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - Long
           - depth_m
-          - Temperature
           - Lat
           - datetime
+          - Temperature
+          - Long
           kind: points
           legend: false
           s: null
@@ -7928,6 +8098,74 @@ entries:
           y: Lat
           ylabel: Latitude [N]
       urlpath: https://researchworkspace.com/files/41810391/KBDeployment09Y2020_data.csv
+    output_instance: pandas:DataFrame
+    reader: intake.readers.convert:Pipeline
+    user_parameters: {}
+  KBDeployment10Y2019:
+    kwargs:
+      out_instances:
+      - pandas:DataFrame
+      - pandas:DataFrame
+      - pandas:DataFrame
+      - pandas:DataFrame
+      steps:
+      - - '{data(daeaf760fa6fd070)}'
+        - []
+        - {}
+      - - '{func(intake.readers.transform:Method)}'
+        - []
+        - datetime: '{data(f4337df319cf8166)}'
+          method_name: assign
+      - - '{func(intake.readers.transform:Method)}'
+        - []
+        - columns:
+          - Year
+          - Month
+          - Day
+          - Hour
+          - Minute
+          method_name: drop
+      - - '{func(intake.readers.transform:Method)}'
+        - []
+        - depth_m: '1'
+          method_name: assign
+    metadata:
+      featuretype: trajectory
+      key_variables:
+      - temp
+      - salt
+      maptype: box
+      maxLatitude: 59.7634
+      maxLongitude: -151.05318
+      maxTime: '2019-09-04T00:00:00.000000000'
+      minLatitude: 59.65844
+      minLongitude: -151.27456
+      minTime: '2019-09-01T02:00:00.000000000'
+      plots:
+        data:
+          c: null
+          coastline: false
+          color: k
+          geo: true
+          height: 700
+          hover_cols:
+          - depth_m
+          - Lat
+          - datetime
+          - Temperature
+          - Long
+          kind: points
+          legend: false
+          s: null
+          size: 35
+          tiles: true
+          title: null
+          width: 600
+          x: Long
+          xlabel: Longitude [W]
+          y: Lat
+          ylabel: Latitude [N]
+      urlpath: https://researchworkspace.com/files/41810392/KBDeployment10Y2019_data.xlsx
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -7979,11 +8217,11 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - Long
           - depth_m
-          - Temperature
           - Lat
           - datetime
+          - Temperature
+          - Long
           kind: points
           legend: false
           s: null
@@ -8047,11 +8285,11 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - Long
           - depth_m
-          - Temperature
           - Lat
           - datetime
+          - Temperature
+          - Long
           kind: points
           legend: false
           s: null
@@ -8115,11 +8353,11 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - Long
           - depth_m
-          - Temperature
           - Lat
           - datetime
+          - Temperature
+          - Long
           kind: points
           legend: false
           s: null
@@ -8183,11 +8421,11 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - Long
           - depth_m
-          - Temperature
           - Lat
           - datetime
+          - Temperature
+          - Long
           kind: points
           legend: false
           s: null
@@ -8251,11 +8489,11 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - Long
           - depth_m
-          - Temperature
           - Lat
           - datetime
+          - Temperature
+          - Long
           kind: points
           legend: false
           s: null
@@ -8319,11 +8557,11 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - Long
           - depth_m
-          - Temperature
           - Lat
           - datetime
+          - Temperature
+          - Long
           kind: points
           legend: false
           s: null
@@ -8387,11 +8625,11 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - Long
           - depth_m
-          - Temperature
           - Lat
           - datetime
+          - Temperature
+          - Long
           kind: points
           legend: false
           s: null
@@ -8455,11 +8693,11 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - Long
           - depth_m
-          - Temperature
           - Lat
           - datetime
+          - Temperature
+          - Long
           kind: points
           legend: false
           s: null
@@ -8523,11 +8761,11 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - Long
           - depth_m
-          - Temperature
           - Lat
           - datetime
+          - Temperature
+          - Long
           kind: points
           legend: false
           s: null
@@ -8591,11 +8829,11 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - Long
           - depth_m
-          - Temperature
           - Lat
           - datetime
+          - Temperature
+          - Long
           kind: points
           legend: false
           s: null
@@ -8659,11 +8897,11 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - Long
           - depth_m
-          - Temperature
           - Lat
           - datetime
+          - Temperature
+          - Long
           kind: points
           legend: false
           s: null
@@ -8727,11 +8965,11 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - Long
           - depth_m
-          - Temperature
           - Lat
           - datetime
+          - Temperature
+          - Long
           kind: points
           legend: false
           s: null
@@ -8795,11 +9033,11 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - Long
           - depth_m
-          - Temperature
           - Lat
           - datetime
+          - Temperature
+          - Long
           kind: points
           legend: false
           s: null
@@ -8863,11 +9101,11 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - Long
           - depth_m
-          - Temperature
           - Lat
           - datetime
+          - Temperature
+          - Long
           kind: points
           legend: false
           s: null
@@ -8931,11 +9169,11 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - Long
           - depth_m
-          - Temperature
           - Lat
           - datetime
+          - Temperature
+          - Long
           kind: points
           legend: false
           s: null
@@ -8999,11 +9237,11 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - Long
           - depth_m
-          - Temperature
           - Lat
           - datetime
+          - Temperature
+          - Long
           kind: points
           legend: false
           s: null
@@ -9067,11 +9305,11 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - Long
           - depth_m
-          - Temperature
           - Lat
           - datetime
+          - Temperature
+          - Long
           kind: points
           legend: false
           s: null
@@ -9218,6 +9456,19 @@ entries:
     metadata: {}
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
+    user_parameters: {}
+  b0565e41bcc7ee0e:
+    kwargs:
+      data: '{data(77350d2ae05ff14a)}'
+      dtype:
+        Day: '{func(builtins:str)}'
+        Hour: '{func(builtins:str)}'
+        Minute: '{func(builtins:str)}'
+        Month: '{func(builtins:str)}'
+        Year: '{func(builtins:str)}'
+    metadata: {}
+    output_instance: pandas:DataFrame
+    reader: intake.readers.readers:PandasExcel
     user_parameters: {}
   b19fa6353eb039b0:
     kwargs:
@@ -9584,6 +9835,19 @@ entries:
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
+  cf3892d9945b427d:
+    kwargs:
+      data: '{data(b4e94315627becd1)}'
+      dtype:
+        Day: '{func(builtins:str)}'
+        Hour: '{func(builtins:str)}'
+        Minute: '{func(builtins:str)}'
+        Month: '{func(builtins:str)}'
+        Year: '{func(builtins:str)}'
+    metadata: {}
+    output_instance: pandas:DataFrame
+    reader: intake.readers.readers:PandasExcel
+    user_parameters: {}
   cf517a8ac2adccc0:
     kwargs:
       data: '{data(e82cf4ddf4000cb8)}'
@@ -9693,6 +9957,19 @@ entries:
     metadata: {}
     output_instance: pandas:DataFrame
     reader: intake.readers.readers:PandasCSV
+    user_parameters: {}
+  daeaf760fa6fd070:
+    kwargs:
+      data: '{data(7c570ad06532d4d7)}'
+      dtype:
+        Day: '{func(builtins:str)}'
+        Hour: '{func(builtins:str)}'
+        Minute: '{func(builtins:str)}'
+        Month: '{func(builtins:str)}'
+        Year: '{func(builtins:str)}'
+    metadata: {}
+    output_instance: pandas:DataFrame
+    reader: intake.readers.readers:PandasExcel
     user_parameters: {}
   dbcb5cc8a20799f0:
     kwargs:
@@ -9994,6 +10271,22 @@ entries:
     output_instance: pandas:DataFrame
     reader: intake.readers.readers:PandasCSV
     user_parameters: {}
+  edcf82e55213c876:
+    kwargs:
+      out_instances:
+      - pandas:DataFrame
+      - pandas:DataFrame
+      steps:
+      - - '{data(cf3892d9945b427d)}'
+        - []
+        - {}
+      - - '{func(intake.readers.convert:GenericFunc)}'
+        - []
+        - func: '{func(cook_inlet_catalogs.utils:parse_year_month_day_hour_minute)}'
+    metadata: {}
+    output_instance: pandas:DataFrame
+    reader: intake.readers.convert:Pipeline
+    user_parameters: {}
   ee369f159f10d5b2:
     kwargs:
       out_instances:
@@ -10075,6 +10368,22 @@ entries:
       - pandas:DataFrame
       steps:
       - - '{data(f595aaadf18c0fc7)}'
+        - []
+        - {}
+      - - '{func(intake.readers.convert:GenericFunc)}'
+        - []
+        - func: '{func(cook_inlet_catalogs.utils:parse_year_month_day_hour_minute)}'
+    metadata: {}
+    output_instance: pandas:DataFrame
+    reader: intake.readers.convert:Pipeline
+    user_parameters: {}
+  f4337df319cf8166:
+    kwargs:
+      out_instances:
+      - pandas:DataFrame
+      - pandas:DataFrame
+      steps:
+      - - '{data(daeaf760fa6fd070)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -10209,8 +10518,8 @@ metadata:
   header_names: null
   included: true
   key_variables:
-  - temp
   - salt
+  - temp
   map:
     coastline: false
     geo: true

@@ -9,13 +9,16 @@ dependencies:
    - cf_pandas
    - cf_xarray
    - cmocean
+   - dask
    - geoviews
    - h5netcdf
    - hvplot
    - jupyter
    - jupyter_bokeh
+   - jupytext
    - matplotlib-base
    - numpy
+   - openpyxl
    - pandas
    - pyproj
    - requests
@@ -39,6 +42,7 @@ dependencies:
      - git+https://github.com/intake/intake.git
     #  - git+https://github.com/axiom-data-science/cook-inlet-catalogs.git
      - docrep<=0.2.7    
+     - myst-nb
      - nbsphinx
      - jupyter_client
      - sphinx_pangeo_theme

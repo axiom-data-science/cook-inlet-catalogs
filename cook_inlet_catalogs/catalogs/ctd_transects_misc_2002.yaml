@@ -292,13 +292,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Long (E)
-          - Temperature
-          - Station
-          - Lat (N)
           - distance [km]
+          - Station
           - Depth
+          - Lat (N)
+          - Long (E)
           - datetime
+          - Temperature
           kind: scatter
           shared_axes: false
           title: null
@@ -312,13 +312,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Long (E)
-          - Temperature
-          - Station
-          - Lat (N)
           - distance [km]
+          - Station
           - Depth
+          - Lat (N)
+          - Long (E)
           - datetime
+          - Temperature
           kind: scatter
           shared_axes: false
           title: null
@@ -386,13 +386,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Long (E)
-          - Temperature
-          - Station
-          - Lat (N)
           - distance [km]
+          - Station
           - Depth
+          - Lat (N)
+          - Long (E)
           - datetime
+          - Temperature
           kind: scatter
           shared_axes: false
           title: null
@@ -406,13 +406,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Long (E)
-          - Temperature
-          - Station
-          - Lat (N)
           - distance [km]
+          - Station
           - Depth
+          - Lat (N)
+          - Long (E)
           - datetime
+          - Temperature
           kind: scatter
           shared_axes: false
           title: null
@@ -480,13 +480,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Long (E)
-          - Temperature
-          - Station
-          - Lat (N)
           - distance [km]
+          - Station
           - Depth
+          - Lat (N)
+          - Long (E)
           - datetime
+          - Temperature
           kind: scatter
           shared_axes: false
           title: null
@@ -500,13 +500,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Long (E)
-          - Temperature
-          - Station
-          - Lat (N)
           - distance [km]
+          - Station
           - Depth
+          - Lat (N)
+          - Long (E)
           - datetime
+          - Temperature
           kind: scatter
           shared_axes: false
           title: null
@@ -574,13 +574,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Long (E)
-          - Temperature
-          - Station
-          - Lat (N)
           - distance [km]
+          - Station
           - Depth
+          - Lat (N)
+          - Long (E)
           - datetime
+          - Temperature
           kind: scatter
           shared_axes: false
           title: null
@@ -594,13 +594,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Long (E)
-          - Temperature
-          - Station
-          - Lat (N)
           - distance [km]
+          - Station
           - Depth
+          - Lat (N)
+          - Long (E)
           - datetime
+          - Temperature
           kind: scatter
           shared_axes: false
           title: null
@@ -668,13 +668,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Long (E)
-          - Temperature
-          - Station
-          - Lat (N)
           - distance [km]
+          - Station
           - Depth
+          - Lat (N)
+          - Long (E)
           - datetime
+          - Temperature
           kind: scatter
           shared_axes: false
           title: null
@@ -688,13 +688,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Long (E)
-          - Temperature
-          - Station
-          - Lat (N)
           - distance [km]
+          - Station
           - Depth
+          - Lat (N)
+          - Long (E)
           - datetime
+          - Temperature
           kind: scatter
           shared_axes: false
           title: null
@@ -762,13 +762,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Long (E)
-          - Temperature
-          - Station
-          - Lat (N)
           - distance [km]
+          - Station
           - Depth
+          - Lat (N)
+          - Long (E)
           - datetime
+          - Temperature
           kind: scatter
           shared_axes: false
           title: null
@@ -782,13 +782,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Long (E)
-          - Temperature
-          - Station
-          - Lat (N)
           - distance [km]
+          - Station
           - Depth
+          - Lat (N)
+          - Long (E)
           - datetime
+          - Temperature
           kind: scatter
           shared_axes: false
           title: null
@@ -804,8 +804,8 @@ metadata:
   header_names: null
   included: true
   key_variables:
-  - temp
   - salt
+  - temp
   map:
     coastline: false
     geo: true

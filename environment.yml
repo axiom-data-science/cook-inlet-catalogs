@@ -17,6 +17,7 @@ dependencies:
   - hvplot
   - jupyter
   - jupyter_bokeh
+  - jupytext
   - matplotlib-base
   - numpy
   - openpyxl
@@ -25,7 +26,6 @@ dependencies:
   - pyproj
   - requests
   - pip:
-    - jupyter_bokeh
     - intake-erddap
     # - papermill
     - git+https://github.com/intake/intake.git

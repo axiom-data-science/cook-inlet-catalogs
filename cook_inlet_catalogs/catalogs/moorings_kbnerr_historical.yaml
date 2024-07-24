@@ -63,17 +63,17 @@ entries:
         data:
           height: 300
           hover_cols:
+          - DateTimeStamp
           - lon
           - lat
-          - DateTimeStamp
           - Temp
           - Depth
           kind: line
           legend: top
           shared_axes: false
-          subplots: true
+          subplots: false
           title: null
-          width: 900
+          width: 700
           x: DateTimeStamp
           y:
           - Temp
@@ -104,17 +104,17 @@ entries:
         data:
           height: 300
           hover_cols:
+          - DateTimeStamp
           - lon
           - lat
-          - DateTimeStamp
           - Temp
           - Depth
           kind: line
           legend: top
           shared_axes: false
-          subplots: true
+          subplots: false
           title: null
-          width: 900
+          width: 700
           x: DateTimeStamp
           y:
           - Temp
@@ -145,17 +145,17 @@ entries:
         data:
           height: 300
           hover_cols:
+          - DateTimeStamp
           - lon
           - lat
-          - DateTimeStamp
           - Temp
           - Depth
           kind: line
           legend: top
           shared_axes: false
-          subplots: true
+          subplots: false
           title: null
-          width: 900
+          width: 700
           x: DateTimeStamp
           y:
           - Temp
@@ -186,17 +186,17 @@ entries:
         data:
           height: 300
           hover_cols:
+          - DateTimeStamp
           - lon
           - lat
-          - DateTimeStamp
           - Temp
           - Depth
           kind: line
           legend: top
           shared_axes: false
-          subplots: true
+          subplots: false
           title: null
-          width: 900
+          width: 700
           x: DateTimeStamp
           y:
           - Temp
@@ -227,17 +227,17 @@ entries:
         data:
           height: 300
           hover_cols:
+          - DateTimeStamp
           - lon
           - lat
-          - DateTimeStamp
           - Temp
           - Depth
           kind: line
           legend: top
           shared_axes: false
-          subplots: true
+          subplots: false
           title: null
-          width: 900
+          width: 700
           x: DateTimeStamp
           y:
           - Temp
@@ -251,8 +251,8 @@ metadata:
   header_names: null
   included: true
   key_variables:
-  - temp
   - salt
+  - temp
   map:
     c: station
     coastline: false
