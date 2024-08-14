@@ -2170,8 +2170,8 @@ Several years of EcoFOCI drifter data are also available in a private Research W
     #             "data_website": "https://www.ecofoci.noaa.gov/drifters/efoci_drifterData.shtml",
     #             "demo_notebook": "https://researchworkspace.com/file/43008938/drifters_ecofoci.ipynb",
     #             }
-    csv_kwargs = dict(skiprows=29, usecols=[0,1,2,3,4], names=names, delim_whitespace=True,
-                      dtype={"year": str, "day_of_year": str, "time_utc": str})#, sep='\s+')#, sep="\s+")# sep="\t")
+    csv_kwargs = dict(skiprows=29, usecols=[0,1,2,3,4], names=names, sep='\\s+',
+                      dtype={"year": str, "day_of_year": str, "time_utc": str})
     cat = intake.entry.Catalog(metadata=metadata)
 
     # drifter_ids = []
