@@ -87,7 +87,7 @@ def ctd_profiles_2005_noaa(slug, simplecache):
     cat.metadata.update(cic.utils.overall_metadata(cat, list(cat)))
     # set up plotting overall map, which uses general key names 
     cat.metadata["map"] = cic.utils.points_dict(x="longitude", y="latitude", c="station", s="T",
-                                                hover_cols=["station", "T"], slug=slug)
+                                                hover_cols=["station", "T"], title=slug)
     cat.metadata["maplabels"] = cic.utils.labels_dict(x="longitude", y="latitude", text="station")
     cat.to_yaml_file(base_dir / f"catalogs/{slug}.yaml")    
 
@@ -147,7 +147,7 @@ The scientific project is described here: https://www.usgs.gov/centers/alaska-sc
     cat.metadata.update(cic.utils.overall_metadata(cat, list(cat)))
     # set up plotting overall map, which uses general key names 
     cat.metadata["map"] = cic.utils.points_dict(x="longitude", y="latitude", c="station", s="T",
-                                                hover_cols=["station", "T"], slug=slug)
+                                                hover_cols=["station", "T"], title=slug)
     cat.metadata["maplabels"] = cic.utils.labels_dict(x="longitude", y="latitude", text="station")
     cat.to_yaml_file(base_dir / f"catalogs/{slug}.yaml")    
 
@@ -200,7 +200,7 @@ def ctd_profiles_piatt_speckman_1999(slug, simplecache):
     cat.metadata.update(cic.utils.overall_metadata(cat, list(cat)))
     # set up plotting overall map, which uses general key names 
     cat.metadata["map"] = cic.utils.points_dict(x="longitude", y="latitude", c="station", s="T",
-                                                hover_cols=["station", "T"], slug=slug)
+                                                hover_cols=["station", "T"], title=slug)
     cat.metadata["maplabels"] = cic.utils.labels_dict(x="longitude", y="latitude", text="station")
     cat.to_yaml_file(base_dir / f"catalogs/{slug}.yaml")    
 
@@ -259,7 +259,7 @@ def ctd_profiles_kbay_osu_2007(slug, simplecache):
     cat.metadata.update(cic.utils.overall_metadata(cat, list(cat)))
     # set up plotting overall map, which uses general key names 
     cat.metadata["map"] = cic.utils.points_dict(x="longitude", y="latitude", c="station", s="T",
-                                                hover_cols=["station", "T"], slug=slug)
+                                                hover_cols=["station", "T"], title=slug)
     cat.metadata["maplabels"] = cic.utils.labels_dict(x="longitude", y="latitude", text="station")
     cat.to_yaml_file(base_dir / f"catalogs/{slug}.yaml")    
 
@@ -319,7 +319,7 @@ def ctd_profiles_kb_small_mesh_2006(slug, simplecache):
     cat.metadata.update(cic.utils.overall_metadata(cat, list(cat)))
     # set up plotting overall map, which uses general key names 
     cat.metadata["map"] = cic.utils.points_dict(x="longitude", y="latitude", c="station", s="T",
-                                                hover_cols=["station", "T"], slug=slug)
+                                                hover_cols=["station", "T"], title=slug)
     cat.metadata["maplabels"] = cic.utils.labels_dict(x="longitude", y="latitude", text="station")
     cat.to_yaml_file(base_dir / f"catalogs/{slug}.yaml")    
 
@@ -366,7 +366,7 @@ def ctd_profiles_kachemack_kuletz_2005_2007(slug, simplecache):
     cat.metadata.update(cic.utils.overall_metadata(cat, list(cat)))
     # set up plotting overall map, which uses general key names 
     cat.metadata["map"] = cic.utils.points_dict(x="longitude", y="latitude", c="station", s="T",
-                                                hover_cols=["station", "T"], slug=slug)
+                                                hover_cols=["station", "T"], title=slug)
     cat.metadata["maplabels"] = cic.utils.labels_dict(x="longitude", y="latitude", text="station")
     cat.to_yaml_file(base_dir / f"catalogs/{slug}.yaml")    
 
@@ -433,7 +433,7 @@ def ctd_profiles_emap_2002(slug, simplecache):
     cat.metadata.update(cic.utils.overall_metadata(cat, list(cat)))
     # set up plotting overall map, which uses general key names 
     cat.metadata["map"] = cic.utils.points_dict(x="longitude", y="latitude", c="station", s="T",
-                                                hover_cols=["station", "T"], slug=slug)
+                                                hover_cols=["station", "T"], title=slug)
     cat.metadata["maplabels"] = cic.utils.labels_dict(x="longitude", y="latitude", text="station")
     cat.to_yaml_file(base_dir / f"catalogs/{slug}.yaml")    
 
@@ -486,7 +486,7 @@ def ctd_profiles_emap_2008(slug, simplecache):
     cat.metadata.update(cic.utils.overall_metadata(cat, list(cat)))
     # set up plotting overall map, which uses general key names 
     cat.metadata["map"] = cic.utils.points_dict(x="longitude", y="latitude", c="station", s="T",
-                                                hover_cols=["station", "T"], slug=slug)
+                                                hover_cols=["station", "T"], title=slug)
     cat.metadata["maplabels"] = cic.utils.labels_dict(x="longitude", y="latitude", text="station")
     cat.to_yaml_file(base_dir / f"catalogs/{slug}.yaml")    
 
@@ -1323,7 +1323,7 @@ More information: https://accs.uaa.alaska.edu/kbnerr/
     cat.metadata.update(cic.utils.overall_metadata(cat, list(cat)))
     # set up plotting overall map, which uses general key names 
     cat.metadata["map"] = cic.utils.points_dict(x="longitude", y="latitude", c="station", s="T",
-                                                hover_cols=["station", "T"], slug=slug)
+                                                hover_cols=["station", "T"], title=slug)
     cat.metadata["maplabels"] = cic.utils.labels_dict(x="longitude", y="latitude", text="station")
     cat.to_yaml_file(base_dir / f"catalogs/{slug}.yaml")
 
@@ -1482,7 +1482,7 @@ def make_erddap_catalog(slug, project_name, overall_desc, time, included, notes,
     cat.metadata.update(cic.utils.overall_metadata(cat, list(cat)))
     # set up plotting overall map, which uses general key names 
     cat.metadata["map"] = cic.utils.points_dict(x="longitude", y="latitude", c="station", s="T",
-                                                hover_cols=["station", "T"], slug=slug)
+                                                hover_cols=["station", "T"], title=slug)
     cat.metadata["maplabels"] = cic.utils.labels_dict(x="longitude", y="latitude", text="station")
     cat.to_yaml_file(base_dir / f"catalogs/{slug}.yaml")
 
@@ -1566,7 +1566,7 @@ Report: https://researchworkspace.com/files/39885971/2009_041.pdf
     cat.metadata.update(cic.utils.overall_metadata(cat, list(cat)))
     # set up plotting overall map, which uses general key names 
     cat.metadata["map"] = cic.utils.points_dict(x="longitude", y="latitude", c="station", s="T",
-                                                hover_cols=["station", "T"], slug=slug)
+                                                hover_cols=["station", "T"], title=slug)
     cat.metadata["maplabels"] = cic.utils.labels_dict(x="longitude", y="latitude", text="station")
     cat.to_yaml_file(base_dir / f"catalogs/{slug}.yaml")
 
@@ -1627,7 +1627,7 @@ Report: https://researchworkspace.com/files/39885971/2009_041.pdf
     cat.metadata.update(cic.utils.overall_metadata(cat, list(cat)))
     # set up plotting overall map, which uses general key names 
     cat.metadata["map"] = cic.utils.points_dict(x="longitude", y="latitude", c="station", s="T",
-                                                hover_cols=["station", "T"], slug=slug)
+                                                hover_cols=["station", "T"], title=slug)
     cat.metadata["maplabels"] = cic.utils.labels_dict(x="longitude", y="latitude", text="station")
     cat.to_yaml_file(base_dir / f"catalogs/{slug}.yaml")
     
@@ -1819,7 +1819,7 @@ ADCP data has been converted to eastward, northward velocities as well as along-
     cat.metadata.update(cic.utils.overall_metadata(cat, list(cat)))
     # set up plotting overall map, which uses general key names 
     cat.metadata["map"] = cic.utils.points_dict(x="longitude", y="latitude", c="station", s="T",
-                                                hover_cols=["station", "T"], slug=slug)
+                                                hover_cols=["station", "T"], title=slug)
     cat.metadata["maplabels"] = cic.utils.labels_dict(x="longitude", y="latitude", text="station")
     cat.to_yaml_file(base_dir / f"catalogs/{slug}.yaml")
 
@@ -1877,7 +1877,7 @@ ADCP data has been converted to eastward, northward velocities as well as along-
     cat.metadata.update(cic.utils.overall_metadata(cat, list(cat)))
     # set up plotting overall map, which uses general key names 
     cat.metadata["map"] = cic.utils.points_dict(x="longitude", y="latitude", c="station", s="T",
-                                                hover_cols=["station", "T"], slug=slug)
+                                                hover_cols=["station", "T"], title=slug)
     cat.metadata["maplabels"] = cic.utils.labels_dict(x="longitude", y="latitude", text="station")
     cat.to_yaml_file(base_dir / f"catalogs/{slug}.yaml")
 
@@ -1940,7 +1940,7 @@ Stations "KOD0914", "KOD0915", "KOD0916", "KOD0917", "KOD0918", "KOD0919", "KOD0
     cat.metadata.update(cic.utils.overall_metadata(cat, list(cat)))
     # set up plotting overall map, which uses general key names 
     cat.metadata["map"] = cic.utils.points_dict(x="longitude", y="latitude", c="station", s="T",
-                                                hover_cols=["station", "T"], slug=slug)
+                                                hover_cols=["station", "T"], title=slug)
     cat.metadata["maplabels"] = cic.utils.labels_dict(x="longitude", y="latitude", text="station")
     cat.to_yaml_file(base_dir / f"catalogs/{slug}.yaml")
 
@@ -2001,7 +2001,7 @@ ADCP data has been converted to eastward, northward velocities as well as along-
     cat.metadata.update(cic.utils.overall_metadata(cat, list(cat)))
     # set up plotting overall map, which uses general key names 
     cat.metadata["map"] = cic.utils.points_dict(x="longitude", y="latitude", c="station", s="T",
-                                                hover_cols=["station", "T"], slug=slug)
+                                                hover_cols=["station", "T"], title=slug)
     cat.metadata["maplabels"] = cic.utils.labels_dict(x="longitude", y="latitude", text="station")
     cat.to_yaml_file(base_dir / f"catalogs/{slug}.yaml")
 
@@ -2095,7 +2095,7 @@ Descriptive summary of later drifter deployment: https://www.alaska.edu/epscor/a
         # import pdb; pdb.set_trace()
         hover_cols = cic.utils.get_hover_cols(df)
         # points_dict(x, y, c, s, hover_cols, slug)
-        plot_kwargs = dict(x=df.cf["longitude"].name, y=df.cf["latitude"].name, c=None, s=None, slug=None, hover_cols=hover_cols)
+        plot_kwargs = dict(x=df.cf["longitude"].name, y=df.cf["latitude"].name, c=None, s=None, title="", hover_cols=hover_cols)
         # plot_kwargs = dict(x=df.cf["longitude"].name, y=[df.cf["latitude"].name, df.cf["salt"].name], hover_cols=hover_cols)
         reader_dates_parsed.metadata = {"plots": {"data": cic.utils.points_dict(**plot_kwargs)}}
         # reader_dates_parsed.metadata = {"plots": {"data": cic.utils.line_time_dict(**plot_kwargs)}}
@@ -2210,7 +2210,7 @@ Several years of EcoFOCI drifter data are also available in a private Research W
         
         df = reader_data_depth_column.read()
         hover_cols = cic.utils.get_hover_cols(df)
-        plot_kwargs = dict(x=df.cf["longitude"].name, y=df.cf["latitude"].name, c=None, s=None, slug=None, hover_cols=hover_cols)
+        plot_kwargs = dict(x=df.cf["longitude"].name, y=df.cf["latitude"].name, c=None, s=None, title="", hover_cols=hover_cols)
         reader_data_depth_column.metadata = {"plots": {"data": cic.utils.points_dict(**plot_kwargs)}}
         reader_data_depth_column.metadata.update(cic.utils.add_metadata(df, metadata["maptype"], metadata["featuretype"], url))
 
