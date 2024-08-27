@@ -59,7 +59,7 @@ def paths_dict(x, y, slug):
     return d
 
 
-def points_dict(x=None, y=None, c=None, s=None, hover_cols=[], title="", size=35,):
+def points_dict(x=None, y=None, c=None, s=None, hover_cols=[], title="", size=35, tiles=True):
     """for points plot"""
     
     d = dict(kind="points", 
@@ -72,7 +72,7 @@ def points_dict(x=None, y=None, c=None, s=None, hover_cols=[], title="", size=35
              color="k", 
              size=size, 
              geo=True, 
-             tiles=True, 
+             tiles=tiles, 
              width=600, 
              height=700,
              legend=False, 
