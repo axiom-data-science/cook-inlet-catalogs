@@ -60,7 +60,7 @@ def paths_dict(x, y, slug):
 
 
 def points_dict(x=None, y=None, c=None, s=None, hover_cols=[], title="", size=35, tiles=True, color="k",
-                width=600, height=700, legend=False, coastline=False, cmap=None):
+                width=600, height=700, legend=False, coastline=False, cmap=None, clabel="", clim=None):
     """for points plot"""
     
     d = dict(kind="points", 
@@ -81,6 +81,8 @@ def points_dict(x=None, y=None, c=None, s=None, hover_cols=[], title="", size=35
              xlabel="Longitude [W]", 
              ylabel="Latitude [N]", 
              cmap=cmap,
+             clabel=clabel,
+             clim=clim,
              )
     
     return d
