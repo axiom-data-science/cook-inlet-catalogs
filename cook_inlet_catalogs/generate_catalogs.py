@@ -877,7 +877,7 @@ Report: https://researchworkspace.com/files/39885971/2009_041.pdf
 
     # Kbay_timeseries
     name, ind = "Kbay_timeseries", 1
-    featuretype = "timeSeries"
+    featuretype = "trajectoryProfile"
     # df = pd.read_csv(urls[ind], **csv_kwargs[ind])
     if simplecache:
         urls[ind] = f"simplecache://::{urls[ind]}"
@@ -1455,7 +1455,7 @@ def make_erddap_catalog(slug, project_name, overall_desc, time, included, notes,
     )
     if simplecache:
         inputs.update(cache_kwargs=simplecache_options)
-        
+
     cat = intake_erddap.ERDDAPCatalogReader(server="https://erddap.aoos.org/erddap", **inputs).read()
     
     for dataset_id in list(cat):
