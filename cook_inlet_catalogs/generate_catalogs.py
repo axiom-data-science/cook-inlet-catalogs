@@ -1398,6 +1398,7 @@ Some of the data is written up in reports:
             initial_reader.metadata = {"plots": {"tidecons": cic.utils.quadmesh_dict("tidecons", cmap="cmo.tarn", **plot_kwargs, **more_kwargs)}}
 
         # picking out the full time resolution files so can use them in OMSA
+        # this was "_all" in the previous version
         elif "tidecons" not in url and "subtidal" not in url:
             name = Path(url).stem
             initial_reader.metadata = {"plots": {"east": cic.utils.quadmesh_dict(var="u", cmap=cic.cmap["u"], 
