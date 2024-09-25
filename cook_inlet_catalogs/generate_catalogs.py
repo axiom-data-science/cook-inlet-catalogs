@@ -2012,7 +2012,7 @@ def drifters_uaf(slug, simplecache):
         overall_desc = "Drifters (UAF)",
         time = "From 2003 to 2020, variable",
         included = True,
-        notes = "These are accessed from Research Workspace.",
+        notes = "These are accessed from Research Workspace. Datasets were processed using the `drifters_uaf_processing.py` script and resaved into research workspace, and are accessed from those processed files. See processing file for details.",
         maptype = "box",
         featuretype = "trajectory",
         header_names = None,
@@ -2033,76 +2033,33 @@ Descriptive summary of later drifter deployment: https://www.alaska.edu/epscor/a
 """
     )
     
-    baseurl = "https://researchworkspace.com/files"
+    # urls are stored in a file in RW
+    loc_urls = "https://researchworkspace.com/files/44874936/files.txt"
+    df_urls = pd.read_csv(loc_urls, header=None, dtype=str)[0]
+    
+    csv_kwargs = {"index_col": 0}
 
-    def return_response(loc):
-
-        # Make a GET request to the website
-        response = requests.get(loc)
-
-        # Parse the response as JSON
-        data = response.json()
-
-        return data
-
-    # know both of these from the file directory structure
-    file_dirs = ["41810355", "41810414", "41810412", "41810413", "41810415"]
-    file_depths = ["1", "15", "5", "7.5", "80"]
-
-    urls = []
-    depths = []
-    for file_dir, depth in zip(file_dirs, file_depths):
-        loc = f"https://researchworkspace.com/project/41810350/folder/{file_dir}.table?start=0&sort=fileName&dir=asc"
-        data = return_response(loc)
-        new_urls = [f"{baseurl}/{entry['id']}/{entry['fileName']}" for entry in data]
-        urls.extend(new_urls)
-        depths += [depth]*len(new_urls)
-
-    # possible_datatypes = [intake.readers.datatypes.CSV, intake.readers.PandasExcel]
-    # possible_datatypes = [intake.readers.datatypes.CSV, intake.readers.datatypes.Excel]
-    csv_kwargs = {"dtype": {'Year': str, 'Month': str, 'Day': str, 'Hour': str, 'Minute': str}}
     cat = intake.entry.Catalog(metadata=metadata)
-
-    dataset_ids = []
-    for url, depth in zip(urls, depths):
-        # print(url)
-
-        dataset_id = url.split("/")[-1].split('.')[0].rstrip("_data")  # like 'CIDrifter0250Y2005_SubsurfaceDrogueAt80M'
-        dataset_ids.append(dataset_id)
+    for url in df_urls:
         
-        # don't want TiledService or CatalogAPI but do want CSV or Excel as appropriate
-        datatype = [rec for rec in intake.datatypes.recommend(url) if rec not in [intake.readers.datatypes.TiledService,intake.readers.datatypes.CatalogAPI]][0]
-        # import pdb; pdb.set_trace()
-        # # do this until can figure out how to read Excel files
-        # if "Excel" in str(datatype):
-        #     continue
-        # print(datatype)
-        # data = intake.readers.PandasExcel(url)
-        # data = intake.readers.datatypes.Excel(url)
         if simplecache:
             url = f"simplecache://::{url}"
             csv_kwargs["storage_options"] = simplecache_options
-        data = datatype(url)
-        
+
+        dataset_id = url.split("/")[-1].split('.')[0].rstrip("_data")  # like 'CIDrifter0250Y2005_SubsurfaceDrogueAt80M'
+        data = intake.readers.datatypes.CSV(url)
         initial_reader = data.to_reader("pandas:DataFrame", **csv_kwargs)
-        # reader = data.to_reader("pandas:DataFrame", parse_dates={"datetime": ["Year", "Month", "Day", "Hour", "Minute"]}, date_parser=cic.utils.parse_dates) 
-    #  data = intake.readers.datatypes.Excel(file)
-    # reader = data.to_reader("pandas:DataFrame", parse_dates={"datetime": ["Year", "Month", "Day", "Hour", "Minute"]}, date_parser=parse_dates) 
-    
-        new_dates_column = initial_reader.apply(cic.utils.parse_year_month_day_hour_minute)
-        reader_dates_parsed = initial_reader.assign(datetime=new_dates_column).drop(columns=["Year", "Month", "Day", "Hour", "Minute"])#.reindex(columns=["datetime"] + new_cols)
-        reader_dates_parsed = reader_dates_parsed.assign(depth_m=depth)
-        df = reader_dates_parsed.read()
         # import pdb; pdb.set_trace()
+        df = initial_reader.read()
         hover_cols = cic.utils.get_hover_cols(df)
         # points_dict(x, y, c, s, hover_cols, slug)
         plot_kwargs = dict(x=df.cf["longitude"].name, y=df.cf["latitude"].name, c=None, s=None, title="", hover_cols=hover_cols)
         # plot_kwargs = dict(x=df.cf["longitude"].name, y=[df.cf["latitude"].name, df.cf["salt"].name], hover_cols=hover_cols)
-        reader_dates_parsed.metadata = {"plots": {"data": cic.utils.points_dict(**plot_kwargs)}}
-        # reader_dates_parsed.metadata = {"plots": {"data": cic.utils.line_time_dict(**plot_kwargs)}}
-        reader_dates_parsed.metadata.update(cic.utils.add_metadata(df, metadata["maptype"], metadata["featuretype"], url))
+        initial_reader.metadata = {"plots": {"data": cic.utils.points_dict(**plot_kwargs)}}
+        # initial_reader.metadata = {"plots": {"data": cic.utils.line_time_dict(**plot_kwargs)}}
+        initial_reader.metadata.update(cic.utils.add_metadata(df, metadata["maptype"], metadata["featuretype"], url))
 
-        cat[dataset_id] = reader_dates_parsed
+        cat[dataset_id] = initial_reader
         cat.aliases[dataset_id] = dataset_id
 
     # gather metadata across datasets to add to overall catalog
@@ -2111,6 +2068,119 @@ Descriptive summary of later drifter deployment: https://www.alaska.edu/epscor/a
     cat.metadata["map"] = cic.utils.paths_dict(x="longitude", y="latitude", slug=slug)
     cat.metadata["maplabels"] = cic.utils.labels_dict(x="longitude", y="latitude", text="station")
     cat.to_yaml_file(base_dir / f"catalogs/{slug}.yaml")
+
+
+# def drifters_uaf_orig(slug, simplecache):
+#     metadata = dict(project_name = "Drifters (UAF), multiple projects",
+#         overall_desc = "Drifters (UAF)",
+#         time = "From 2003 to 2020, variable",
+#         included = True,
+#         notes = "These are accessed from Research Workspace.",
+#         maptype = "box",
+#         featuretype = "trajectory",
+#         header_names = None,
+#         map_description = "Drifters",
+#         summary = f"""Drifters run by Mark Johnson and others out of UAF with various years and drogue depths.
+        
+# * 2003: 7.5m (Cook Inlet)
+# * 2004: 5m (Cook Inlet)
+# * 2005: 5m, 80m (Cook Inlet)
+# * 2006: 5m (Cook Inlet)
+# * 2012: 1m (Cook Inlet), 15m (Cook Inlet)
+# * 2013: 1m (Cook Inlet), 15m (Cook Inlet)
+# * 2014: 1m (Cook Inlet)
+# * 2019: 1m (Kachemak Bay, Lynn Canal)
+# * 2020: 1m (Kachemak Bay, Lynn Canal)
+
+# Descriptive summary of later drifter deployment: https://www.alaska.edu/epscor/about/newsletters/May-2022-feature-current-events.php, data portal: https://ak-epscor.portal.axds.co/
+# """
+#     )
+    
+#     baseurl = "https://researchworkspace.com/files"
+
+#     def return_response(loc):
+
+#         # Make a GET request to the website
+#         response = requests.get(loc)
+
+#         # Parse the response as JSON
+#         data = response.json()
+
+#         return data
+
+#     # know both of these from the file directory structure
+#     file_dirs = ["41810355", "41810414", "41810412", "41810413", "41810415"]
+#     file_depths = ["1", "15", "5", "7.5", "80"]
+
+#     urls = []
+#     depths = []
+#     for file_dir, depth in zip(file_dirs, file_depths):
+#         loc = f"https://researchworkspace.com/project/41810350/folder/{file_dir}.table?start=0&sort=fileName&dir=asc"
+#         data = return_response(loc)
+#         new_urls = [f"{baseurl}/{entry['id']}/{entry['fileName']}" for entry in data]
+#         urls.extend(new_urls)
+#         depths += [depth]*len(new_urls)
+
+#     # possible_datatypes = [intake.readers.datatypes.CSV, intake.readers.PandasExcel]
+#     # possible_datatypes = [intake.readers.datatypes.CSV, intake.readers.datatypes.Excel]
+#     csv_kwargs = {"dtype": {'Year': str, 'Month': str, 'Day': str, 'Hour': str, 'Minute': str}}
+#     cat = intake.entry.Catalog(metadata=metadata)
+
+#     dataset_ids = []
+#     for url, depth in zip(urls, depths):
+#         # print(url)
+
+#         dataset_id = url.split("/")[-1].split('.')[0].rstrip("_data")  # like 'CIDrifter0250Y2005_SubsurfaceDrogueAt80M'
+#         dataset_ids.append(dataset_id)
+        
+#         # don't want TiledService or CatalogAPI but do want CSV or Excel as appropriate
+#         datatype = [rec for rec in intake.datatypes.recommend(url) if rec not in [intake.readers.datatypes.TiledService,intake.readers.datatypes.CatalogAPI]][0]
+#         # import pdb; pdb.set_trace()
+#         # # do this until can figure out how to read Excel files
+#         # if "Excel" in str(datatype):
+#         #     continue
+#         # print(datatype)
+#         # data = intake.readers.PandasExcel(url)
+#         # data = intake.readers.datatypes.Excel(url)
+#         if simplecache:
+#             url = f"simplecache://::{url}"
+#             csv_kwargs["storage_options"] = simplecache_options
+#         data = datatype(url)
+        
+#         initial_reader = data.to_reader("pandas:DataFrame", **csv_kwargs)
+#         # reader = data.to_reader("pandas:DataFrame", parse_dates={"datetime": ["Year", "Month", "Day", "Hour", "Minute"]}, date_parser=cic.utils.parse_dates) 
+#     #  data = intake.readers.datatypes.Excel(file)
+#     # reader = data.to_reader("pandas:DataFrame", parse_dates={"datetime": ["Year", "Month", "Day", "Hour", "Minute"]}, date_parser=parse_dates) 
+    
+#         new_dates_column = initial_reader.apply(cic.utils.parse_year_month_day_hour_minute)
+#         reader_dates_parsed = initial_reader.assign(datetime=new_dates_column).drop(columns=["Year", "Month", "Day", "Hour", "Minute"])#.reindex(columns=["datetime"] + new_cols)
+#         reader_dates_parsed = reader_dates_parsed.assign(depth_m=depth)
+#         # # run function that cleans tracks which splits them into separate tracks 
+#         # # if there is a jump in time greater than a median time step (usually 1 hour)
+#         # # or if a track is more than 50% on land (judged by 10m Natural Earth land)
+#         # # also removes start and end of track is on land
+#         # # this creates extra tracks called "deployments"
+#         # reader_new_deployments = cic.utils.clean_tracks(reader_dates_parsed)
+        
+#         df = reader_dates_parsed.read()
+#         # import pdb; pdb.set_trace()
+#         hover_cols = cic.utils.get_hover_cols(df)
+#         # points_dict(x, y, c, s, hover_cols, slug)
+#         plot_kwargs = dict(x=df.cf["longitude"].name, y=df.cf["latitude"].name, c=None, s=None, title="", hover_cols=hover_cols)
+#         # plot_kwargs = dict(x=df.cf["longitude"].name, y=[df.cf["latitude"].name, df.cf["salt"].name], hover_cols=hover_cols)
+#         reader_dates_parsed.metadata = {"plots": {"data": cic.utils.points_dict(**plot_kwargs)}}
+#         # reader_dates_parsed.metadata = {"plots": {"data": cic.utils.line_time_dict(**plot_kwargs)}}
+#         reader_dates_parsed.metadata.update(cic.utils.add_metadata(df, metadata["maptype"], metadata["featuretype"], url))
+
+#         cat[dataset_id] = reader_dates_parsed
+#         cat.aliases[dataset_id] = dataset_id
+
+#     # gather metadata across datasets to add to overall catalog
+#     cat.metadata.update(cic.utils.overall_metadata(cat, list(cat)))
+#     # set up plotting overall map, which uses general key names 
+#     cat.metadata["map"] = cic.utils.paths_dict(x="longitude", y="latitude", slug=slug)
+#     cat.metadata["maplabels"] = cic.utils.labels_dict(x="longitude", y="latitude", text="station")
+#     cat.to_yaml_file(base_dir / f"catalogs/{slug}.yaml")
 
 
 def drifters_ecofoci(slug, simplecache):
