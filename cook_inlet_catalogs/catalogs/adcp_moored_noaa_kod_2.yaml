@@ -26,6 +26,7 @@ data:
       stationid: KOD0926
     metadata:
       affiliations: ''
+      angle: 50.0
       bins:
         bin_size: 2.0
         bins:
@@ -210,6 +211,7 @@ data:
       disclaimers: null
       expand: deployments,bins,harcon
       featuretype: timeSeriesProfile
+      flood_direction_degrees: 50.0
       harmonicConstituents:
         HarmonicConstituents:
         - azi: 57.2
@@ -999,6 +1001,7 @@ data:
       stationid: KOD0927
     metadata:
       affiliations: ''
+      angle: 270.0
       bins:
         bin_size: 3.0
         bins:
@@ -1190,6 +1193,7 @@ data:
       disclaimers: null
       expand: deployments,bins,harcon
       featuretype: timeSeriesProfile
+      flood_direction_degrees: 270.0
       harmonicConstituents:
         HarmonicConstituents:
         - azi: 295.3
@@ -1601,6 +1605,7 @@ data:
       stationid: KOD0928
     metadata:
       affiliations: ''
+      angle: 285.0
       bins:
         bin_size: 2.0
         bins:
@@ -1792,6 +1797,7 @@ data:
       disclaimers: null
       expand: deployments,bins,harcon
       featuretype: timeSeriesProfile
+      flood_direction_degrees: 285.0
       harmonicConstituents:
         HarmonicConstituents:
         - azi: 287.2
@@ -2847,6 +2853,7 @@ data:
       stationid: KOD0929
     metadata:
       affiliations: ''
+      angle: 280.0
       bins:
         bin_size: 1.0
         bins:
@@ -3017,6 +3024,7 @@ data:
       disclaimers: null
       expand: deployments,bins,harcon
       featuretype: timeSeriesProfile
+      flood_direction_degrees: 280.0
       harmonicConstituents:
         HarmonicConstituents:
         - azi: 271.9
@@ -4156,6 +4164,7 @@ data:
       stationid: KOD0930
     metadata:
       affiliations: ''
+      angle: 280.0
       bins:
         bin_size: 2.0
         bins:
@@ -4270,6 +4279,7 @@ data:
       disclaimers: null
       expand: deployments,bins,harcon
       featuretype: timeSeriesProfile
+      flood_direction_degrees: 280.0
       harmonicConstituents:
         HarmonicConstituents:
         - azi: 297.7
@@ -5409,6 +5419,7 @@ data:
       stationid: KOD0931
     metadata:
       affiliations: ''
+      angle: 285.0
       bins:
         bin_size: 1.0
         bins:
@@ -5593,6 +5604,7 @@ data:
       disclaimers: null
       expand: deployments,bins,harcon
       featuretype: timeSeriesProfile
+      flood_direction_degrees: 285.0
       harmonicConstituents:
         HarmonicConstituents:
         - azi: 304.6
@@ -6732,6 +6744,7 @@ data:
       stationid: KOD0932
     metadata:
       affiliations: ''
+      angle: 330.0
       bins:
         bin_size: 2.0
         bins:
@@ -6930,6 +6943,7 @@ data:
       disclaimers: null
       expand: deployments,bins,harcon
       featuretype: timeSeriesProfile
+      flood_direction_degrees: 330.0
       harmonicConstituents:
         HarmonicConstituents:
         - azi: 286.8
@@ -8069,6 +8083,7 @@ data:
       stationid: KOD0933
     metadata:
       affiliations: ''
+      angle: 290.0
       bins:
         bin_size: 2.0
         bins:
@@ -8190,6 +8205,7 @@ data:
       disclaimers: null
       expand: deployments,bins,harcon
       featuretype: timeSeriesProfile
+      flood_direction_degrees: 290.0
       harmonicConstituents:
         HarmonicConstituents:
         - azi: 306.0
@@ -9329,6 +9345,7 @@ data:
       stationid: KOD0934
     metadata:
       affiliations: ''
+      angle: 260.0
       bins:
         bin_size: 2.0
         bins:
@@ -9464,6 +9481,7 @@ data:
       disclaimers: null
       expand: deployments,bins,harcon
       featuretype: timeSeriesProfile
+      flood_direction_degrees: 260.0
       harmonicConstituents:
         HarmonicConstituents:
         - azi: 284.3
@@ -10519,6 +10537,7 @@ data:
       stationid: KOD0935
     metadata:
       affiliations: ''
+      angle: 160.0
       bins:
         bin_size: 2.0
         bins:
@@ -10717,6 +10736,7 @@ data:
       disclaimers: null
       expand: deployments,bins,harcon
       featuretype: timeSeriesProfile
+      flood_direction_degrees: 160.0
       harmonicConstituents:
         HarmonicConstituents:
         - azi: 164.7
@@ -11772,6 +11792,7 @@ data:
       stationid: KOD0936
     metadata:
       affiliations: ''
+      angle: 180.0
       bins:
         bin_size: 2.0
         bins:
@@ -11900,6 +11921,7 @@ data:
       disclaimers: null
       expand: deployments,bins,harcon
       featuretype: timeSeriesProfile
+      flood_direction_degrees: 180.0
       harmonicConstituents:
         HarmonicConstituents:
         - azi: 181.4
@@ -12955,6 +12977,7 @@ data:
       stationid: KOD0937
     metadata:
       affiliations: ''
+      angle: 235.0
       bins:
         bin_size: 2.0
         bins:
@@ -13090,6 +13113,7 @@ data:
       disclaimers: null
       expand: deployments,bins,harcon
       featuretype: timeSeriesProfile
+      flood_direction_degrees: 235.0
       harmonicConstituents:
         HarmonicConstituents:
         - azi: 224.5
@@ -13823,6 +13847,7 @@ data:
       stationid: KOD0938
     metadata:
       affiliations: ''
+      angle: 250.0
       bins:
         bin_size: 3.0
         bins:
@@ -14028,6 +14053,7 @@ data:
       disclaimers: null
       expand: deployments,bins,harcon
       featuretype: timeSeriesProfile
+      flood_direction_degrees: 250.0
       harmonicConstituents:
         HarmonicConstituents:
         - azi: 252.0
@@ -14761,6 +14787,7 @@ data:
       stationid: KOD0939
     metadata:
       affiliations: ''
+      angle: 275.0
       bins:
         bin_size: 1.0
         bins:
@@ -14994,6 +15021,7 @@ data:
       disclaimers: null
       expand: deployments,bins,harcon
       featuretype: timeSeriesProfile
+      flood_direction_degrees: 275.0
       harmonicConstituents:
         HarmonicConstituents:
         - azi: 289.0
@@ -16133,6 +16161,7 @@ data:
       stationid: KOD0940
     metadata:
       affiliations: ''
+      angle: 215.0
       bins:
         bin_size: 3.0
         bins:
@@ -16324,6 +16353,7 @@ data:
       disclaimers: null
       expand: deployments,bins,harcon
       featuretype: timeSeriesProfile
+      flood_direction_degrees: 215.0
       harmonicConstituents:
         HarmonicConstituents:
         - azi: 197.5
@@ -17057,6 +17087,7 @@ data:
       stationid: KOD0941
     metadata:
       affiliations: ''
+      angle: 350.0
       bins:
         bin_size: 2.0
         bins:
@@ -17220,6 +17251,7 @@ data:
       disclaimers: null
       expand: deployments,bins,harcon
       featuretype: timeSeriesProfile
+      flood_direction_degrees: 350.0
       harmonicConstituents:
         HarmonicConstituents:
         - azi: 351.3
@@ -18366,6 +18398,7 @@ data:
       stationid: KOD0942
     metadata:
       affiliations: ''
+      angle: 0.0
       bins:
         bin_size: 2.0
         bins:
@@ -18564,6 +18597,7 @@ data:
       disclaimers: null
       expand: deployments,bins,harcon
       featuretype: timeSeriesProfile
+      flood_direction_degrees: 0.0
       harmonicConstituents:
         HarmonicConstituents:
         - azi: 6.6
@@ -19703,6 +19737,7 @@ data:
       stationid: KOD0943
     metadata:
       affiliations: ''
+      angle: 5.0
       bins:
         bin_size: 2.0
         bins:
@@ -19915,6 +19950,7 @@ data:
       disclaimers: null
       expand: deployments,bins,harcon
       featuretype: timeSeriesProfile
+      flood_direction_degrees: 5.0
       harmonicConstituents:
         HarmonicConstituents:
         - azi: 26.7
@@ -21054,6 +21090,7 @@ data:
       stationid: KOD0944
     metadata:
       affiliations: ''
+      angle: 270.0
       bins:
         bin_size: 2.0
         bins:
@@ -21231,6 +21268,7 @@ data:
       disclaimers: null
       expand: deployments,bins,harcon
       featuretype: timeSeriesProfile
+      flood_direction_degrees: 270.0
       harmonicConstituents:
         HarmonicConstituents:
         - azi: 266.3
@@ -22377,12 +22415,15 @@ metadata:
   included: true
   key_variables:
   - north
-  - across
   - east
   - speed
+  - across
   - along
   map:
     c: station
+    clabel: ''
+    clim: null
+    cmap: null
     coastline: false
     color: k
     geo: true

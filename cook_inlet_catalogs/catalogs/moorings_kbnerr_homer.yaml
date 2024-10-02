@@ -6,7 +6,10 @@ data:
   homer-dolphin-surface-water-q:
     datatype: intake_erddap.erddap:TableDAPReader
     kwargs:
-      cache_kwargs: null
+      cache_kwargs:
+        simplecache:
+          cache_storage: /home/kristen/.cache/cook-inlet-catalogs
+          same_names: true
       constraints:
         time>=: '1999-01-01T00:00:00Z'
       dataset_id: homer-dolphin-surface-water-q
@@ -50,14 +53,14 @@ data:
         data:
           height: 300
           hover_cols:
-          - time
-          - sea_surface_height_above_sea_level_geoid_local_station_datum
-          - latitude
-          - longitude
           - station
           - sea_water_practical_salinity
-          - z
           - sea_water_temperature
+          - time
+          - sea_surface_height_above_sea_level_geoid_local_station_datum
+          - longitude
+          - z
+          - latitude
           kind: line
           legend: top
           shared_axes: false
@@ -82,7 +85,10 @@ data:
   nerrs_kach3wq:
     datatype: intake_erddap.erddap:TableDAPReader
     kwargs:
-      cache_kwargs: null
+      cache_kwargs:
+        simplecache:
+          cache_storage: /home/kristen/.cache/cook-inlet-catalogs
+          same_names: true
       constraints:
         time>=: '1999-01-01T00:00:00Z'
       dataset_id: nerrs_kach3wq
@@ -118,7 +124,7 @@ data:
       maptype: point
       maxLatitude: 59.60205
       maxLongitude: -151.40942
-      maxTime: '2024-05-27T18:45:00Z'
+      maxTime: '2024-08-01T21:15:00Z'
       minLatitude: 59.60205
       minLongitude: -151.40942
       minTime: '2012-05-31T21:15:00Z'
@@ -126,14 +132,14 @@ data:
         data:
           height: 300
           hover_cols:
-          - time
-          - sea_surface_height_above_sea_level_geoid_local_station_datum
-          - latitude
-          - longitude
           - station
           - sea_water_practical_salinity
-          - z
           - sea_water_temperature
+          - time
+          - sea_surface_height_above_sea_level_geoid_local_station_datum
+          - longitude
+          - z
+          - latitude
           kind: line
           legend: top
           shared_axes: false
@@ -157,7 +163,10 @@ data:
   nerrs_kachdwq:
     datatype: intake_erddap.erddap:TableDAPReader
     kwargs:
-      cache_kwargs: null
+      cache_kwargs:
+        simplecache:
+          cache_storage: /home/kristen/.cache/cook-inlet-catalogs
+          same_names: true
       constraints:
         time>=: '1999-01-01T00:00:00Z'
       dataset_id: nerrs_kachdwq
@@ -193,7 +202,7 @@ data:
       maptype: point
       maxLatitude: 59.602
       maxLongitude: -151.4088
-      maxTime: '2024-07-24T13:15:00Z'
+      maxTime: '2024-08-14T14:15:00Z'
       minLatitude: 59.602
       minLongitude: -151.4088
       minTime: '2003-01-01T09:00:00Z'
@@ -201,14 +210,14 @@ data:
         data:
           height: 300
           hover_cols:
-          - time
-          - sea_surface_height_above_sea_level_geoid_local_station_datum
-          - latitude
-          - longitude
           - station
           - sea_water_practical_salinity
-          - z
           - sea_water_temperature
+          - time
+          - sea_surface_height_above_sea_level_geoid_local_station_datum
+          - longitude
+          - z
+          - latitude
           kind: line
           legend: top
           shared_axes: false
@@ -236,8 +245,8 @@ metadata:
   included: true
   key_variables:
   - salt
-  - ssh
   - temp
+  - ssh
   map:
     c: station
     coastline: false
@@ -274,7 +283,7 @@ metadata:
   maptype: point
   maxLatitude: 59.60205
   maxLongitude: -151.40878
-  maxTime: '2024-07-24T13:15:00Z'
+  maxTime: '2024-08-14T14:15:00Z'
   minLatitude: 59.602
   minLongitude: -151.40942
   minTime: '2003-01-01T09:00:00Z'

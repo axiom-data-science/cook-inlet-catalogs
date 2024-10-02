@@ -34,6 +34,7 @@ data:
       - z
       - sea_water_temperature
       - sea_water_practical_salinity
+      - sea_surface_temperature
       - sea_surface_height_above_sea_level_geoid_local_station_datum
       - sea_surface_height_above_sea_level_geoid_mllw
     metadata:
@@ -56,12 +57,12 @@ data:
         data:
           height: 300
           hover_cols:
-          - time
-          - latitude
           - longitude
-          - station
-          - sea_surface_height_above_sea_level_geoid_mllw
+          - time
           - z
+          - sea_surface_height_above_sea_level_geoid_mllw
+          - latitude
+          - station
           kind: line
           legend: top
           shared_axes: false
@@ -102,6 +103,7 @@ data:
       - z
       - sea_water_temperature
       - sea_water_practical_salinity
+      - sea_surface_temperature
       - sea_surface_height_above_sea_level_geoid_local_station_datum
       - sea_surface_height_above_sea_level_geoid_mllw
     metadata:
@@ -124,12 +126,12 @@ data:
         data:
           height: 300
           hover_cols:
-          - time
-          - latitude
           - longitude
-          - station
-          - sea_surface_height_above_sea_level_geoid_mllw
+          - time
           - z
+          - sea_surface_height_above_sea_level_geoid_mllw
+          - latitude
+          - station
           kind: line
           legend: top
           shared_axes: false
@@ -170,6 +172,7 @@ data:
       - z
       - sea_water_temperature
       - sea_water_practical_salinity
+      - sea_surface_temperature
       - sea_surface_height_above_sea_level_geoid_local_station_datum
       - sea_surface_height_above_sea_level_geoid_mllw
     metadata:
@@ -185,7 +188,7 @@ data:
       maptype: point
       maxLatitude: 59.440528
       maxLongitude: -151.719944
-      maxTime: '2024-07-24T15:00:00Z'
+      maxTime: '2024-09-15T07:00:00Z'
       minLatitude: 59.440528
       minLongitude: -151.719944
       minTime: '1975-07-12T10:00:00Z'
@@ -193,13 +196,13 @@ data:
         data:
           height: 300
           hover_cols:
-          - time
-          - latitude
-          - longitude
-          - station
-          - sea_surface_height_above_sea_level_geoid_mllw
-          - z
           - sea_water_temperature
+          - longitude
+          - time
+          - z
+          - sea_surface_height_above_sea_level_geoid_mllw
+          - latitude
+          - station
           kind: line
           legend: top
           shared_axes: false
@@ -242,6 +245,7 @@ data:
       - z
       - sea_water_temperature
       - sea_water_practical_salinity
+      - sea_surface_temperature
       - sea_surface_height_above_sea_level_geoid_local_station_datum
       - sea_surface_height_above_sea_level_geoid_mllw
     metadata:
@@ -256,7 +260,7 @@ data:
       maptype: point
       maxLatitude: 59.725
       maxLongitude: -151.023
-      maxTime: '2024-07-15T11:00:00Z'
+      maxTime: '2024-09-17T12:00:00Z'
       minLatitude: 59.725
       minLongitude: -151.023
       minTime: '2008-07-03T23:00:00Z'
@@ -264,12 +268,12 @@ data:
         data:
           height: 300
           hover_cols:
-          - time
-          - latitude
           - longitude
-          - station
-          - sea_surface_height_above_sea_level_geoid_mllw
+          - time
           - z
+          - sea_surface_height_above_sea_level_geoid_mllw
+          - latitude
+          - station
           kind: line
           legend: top
           shared_axes: false
@@ -310,6 +314,7 @@ data:
       - z
       - sea_water_temperature
       - sea_water_practical_salinity
+      - sea_surface_temperature
       - sea_surface_height_above_sea_level_geoid_local_station_datum
       - sea_surface_height_above_sea_level_geoid_mllw
     metadata:
@@ -325,7 +330,7 @@ data:
       maptype: point
       maxLatitude: 61.2375
       maxLongitude: -149.8904
-      maxTime: '2024-07-24T15:00:00Z'
+      maxTime: '2024-09-15T05:00:00Z'
       minLatitude: 61.2375
       minLongitude: -149.8904
       minTime: '1978-10-02T05:00:00Z'
@@ -333,13 +338,13 @@ data:
         data:
           height: 300
           hover_cols:
-          - time
-          - latitude
-          - longitude
-          - station
-          - sea_surface_height_above_sea_level_geoid_mllw
-          - z
           - sea_water_temperature
+          - longitude
+          - time
+          - z
+          - sea_surface_height_above_sea_level_geoid_mllw
+          - latitude
+          - station
           kind: line
           legend: top
           shared_axes: false
@@ -382,6 +387,7 @@ data:
       - z
       - sea_water_temperature
       - sea_water_practical_salinity
+      - sea_surface_temperature
       - sea_surface_height_above_sea_level_geoid_local_station_datum
       - sea_surface_height_above_sea_level_geoid_mllw
     metadata:
@@ -397,7 +403,7 @@ data:
       maptype: point
       maxLatitude: 57.730278
       maxLongitude: -152.513889
-      maxTime: '2024-07-24T15:00:00Z'
+      maxTime: '2024-09-15T09:00:00Z'
       minLatitude: 57.730278
       minLongitude: -152.513889
       minTime: '1984-07-11T02:00:00Z'
@@ -405,13 +411,13 @@ data:
         data:
           height: 300
           hover_cols:
-          - time
-          - latitude
-          - longitude
-          - station
-          - sea_surface_height_above_sea_level_geoid_mllw
-          - z
           - sea_water_temperature
+          - longitude
+          - time
+          - z
+          - sea_surface_height_above_sea_level_geoid_mllw
+          - latitude
+          - station
           kind: line
           legend: top
           shared_axes: false
@@ -454,6 +460,7 @@ data:
       - z
       - sea_water_temperature
       - sea_water_practical_salinity
+      - sea_surface_temperature
       - sea_surface_height_above_sea_level_geoid_local_station_datum
       - sea_surface_height_above_sea_level_geoid_mllw
     metadata:
@@ -469,7 +476,7 @@ data:
       maptype: point
       maxLatitude: 56.8974
       maxLongitude: -154.248
-      maxTime: '2024-07-24T15:00:00Z'
+      maxTime: '2024-09-15T07:00:00Z'
       minLatitude: 56.8974
       minLongitude: -154.248
       minTime: '2006-05-18T22:00:00Z'
@@ -477,13 +484,13 @@ data:
         data:
           height: 300
           hover_cols:
-          - time
-          - latitude
-          - longitude
-          - station
-          - sea_surface_height_above_sea_level_geoid_mllw
-          - z
           - sea_water_temperature
+          - longitude
+          - time
+          - z
+          - sea_surface_height_above_sea_level_geoid_mllw
+          - latitude
+          - station
           kind: line
           legend: top
           shared_axes: false
@@ -526,6 +533,7 @@ data:
       - z
       - sea_water_temperature
       - sea_water_practical_salinity
+      - sea_surface_temperature
       - sea_surface_height_above_sea_level_geoid_local_station_datum
       - sea_surface_height_above_sea_level_geoid_mllw
     metadata:
@@ -547,12 +555,12 @@ data:
         data:
           height: 300
           hover_cols:
+          - longitude
           - time
+          - z
           - sea_surface_height_above_sea_level_geoid_local_station_datum
           - latitude
-          - longitude
           - station
-          - z
           kind: line
           legend: top
           shared_axes: false
@@ -593,6 +601,7 @@ data:
       - z
       - sea_water_temperature
       - sea_water_practical_salinity
+      - sea_surface_temperature
       - sea_surface_height_above_sea_level_geoid_local_station_datum
       - sea_surface_height_above_sea_level_geoid_mllw
     metadata:
@@ -615,12 +624,12 @@ data:
         data:
           height: 300
           hover_cols:
-          - time
-          - latitude
           - longitude
-          - station
-          - sea_surface_height_above_sea_level_geoid_mllw
+          - time
           - z
+          - sea_surface_height_above_sea_level_geoid_mllw
+          - latitude
+          - station
           kind: line
           legend: top
           shared_axes: false
@@ -661,6 +670,7 @@ data:
       - z
       - sea_water_temperature
       - sea_water_practical_salinity
+      - sea_surface_temperature
       - sea_surface_height_above_sea_level_geoid_local_station_datum
       - sea_surface_height_above_sea_level_geoid_mllw
     metadata:
@@ -674,7 +684,7 @@ data:
       maptype: point
       maxLatitude: 57.892
       maxLongitude: -154.291
-      maxTime: '2024-07-24T14:00:00Z'
+      maxTime: '2024-09-10T13:00:00Z'
       minLatitude: 57.892
       minLongitude: -154.291
       minTime: '2006-01-01T00:00:00Z'
@@ -682,12 +692,12 @@ data:
         data:
           height: 300
           hover_cols:
-          - time
-          - latitude
           - longitude
-          - station
-          - z
           - sea_surface_temperature
+          - time
+          - z
+          - latitude
+          - station
           kind: line
           legend: top
           shared_axes: false
@@ -714,6 +724,9 @@ metadata:
   - temp
   map:
     c: station
+    clabel: ''
+    clim: null
+    cmap: null
     coastline: false
     color: k
     geo: true
@@ -748,7 +761,7 @@ metadata:
   maptype: point
   maxLatitude: 61.2375
   maxLongitude: -149.8904
-  maxTime: '2024-07-24T15:00:00Z'
+  maxTime: '2024-09-17T12:00:00Z'
   minLatitude: 56.594694
   minLongitude: -154.291
   minTime: '1975-07-12T10:00:00Z'

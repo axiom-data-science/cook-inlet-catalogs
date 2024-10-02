@@ -5,7 +5,10 @@ data:
   peterson-bay-ak-gnss-r:
     datatype: intake_erddap.erddap:TableDAPReader
     kwargs:
-      cache_kwargs: null
+      cache_kwargs:
+        simplecache:
+          cache_storage: /home/kristen/.cache/cook-inlet-catalogs
+          same_names: true
       constraints:
         time>=: '1999-01-01T00:00:00Z'
       dataset_id: peterson-bay-ak-gnss-r
@@ -39,7 +42,7 @@ data:
       maptype: point
       maxLatitude: 59.572708
       maxLongitude: -151.272242
-      maxTime: '2024-07-22T23:21:00Z'
+      maxTime: '2024-08-12T23:43:00Z'
       minLatitude: 59.572708
       minLongitude: -151.272242
       minTime: '2017-01-01T00:22:00Z'
@@ -47,12 +50,12 @@ data:
         data:
           height: 300
           hover_cols:
+          - station
           - time
           - sea_surface_height_above_sea_level_geoid_local_station_datum
-          - latitude
           - longitude
-          - station
           - z
+          - latitude
           kind: line
           legend: top
           shared_axes: false
@@ -72,7 +75,10 @@ data:
   uaf_ocean_acidification_resea_ko:
     datatype: intake_erddap.erddap:TableDAPReader
     kwargs:
-      cache_kwargs: null
+      cache_kwargs:
+        simplecache:
+          cache_storage: /home/kristen/.cache/cook-inlet-catalogs
+          same_names: true
       constraints:
         time>=: '1999-01-01T00:00:00Z'
       dataset_id: uaf_ocean_acidification_resea_ko
@@ -115,13 +121,13 @@ data:
         data:
           height: 300
           hover_cols:
-          - time
-          - latitude
-          - longitude
           - station
           - sea_water_practical_salinity
-          - z
           - sea_water_temperature
+          - time
+          - longitude
+          - z
+          - latitude
           kind: line
           legend: top
           shared_axes: false
@@ -148,8 +154,8 @@ metadata:
   included: true
   key_variables:
   - salt
-  - ssh
   - temp
+  - ssh
   map:
     c: station
     coastline: false
@@ -186,7 +192,7 @@ metadata:
   maptype: point
   maxLatitude: 59.572708
   maxLongitude: -151.272242
-  maxTime: '2024-07-22T23:21:00Z'
+  maxTime: '2024-08-12T23:43:00Z'
   minLatitude: 57.7
   minLongitude: -152.31
   minTime: '2013-03-30T00:17:00Z'

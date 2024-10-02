@@ -176,13 +176,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - Depth [m]
           - date_time
           - Latitude [degrees_north]
-          - Longitude [degrees_east]
-          - Temperature [C]
+          - distance [km]
           - Station
+          - Depth [m]
+          - Temperature [C]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 0, Line 4 (2004-03-13)
@@ -196,13 +196,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - Depth [m]
           - date_time
           - Latitude [degrees_north]
-          - Longitude [degrees_east]
-          - Temperature [C]
+          - distance [km]
           - Station
+          - Depth [m]
+          - Temperature [C]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 0, Line 4 (2004-03-13)
@@ -252,13 +252,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - Depth [m]
           - date_time
           - Latitude [degrees_north]
-          - Longitude [degrees_east]
-          - Temperature [C]
+          - distance [km]
           - Station
+          - Depth [m]
+          - Temperature [C]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 1, Line 1 (2004-04-20)
@@ -272,13 +272,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - Depth [m]
           - date_time
           - Latitude [degrees_north]
-          - Longitude [degrees_east]
-          - Temperature [C]
+          - distance [km]
           - Station
+          - Depth [m]
+          - Temperature [C]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 1, Line 1 (2004-04-20)
@@ -328,13 +328,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - Depth [m]
           - date_time
           - Latitude [degrees_north]
-          - Longitude [degrees_east]
-          - Temperature [C]
+          - distance [km]
           - Station
+          - Depth [m]
+          - Temperature [C]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 1, Line 2 (2004-04-19)
@@ -348,13 +348,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - Depth [m]
           - date_time
           - Latitude [degrees_north]
-          - Longitude [degrees_east]
-          - Temperature [C]
+          - distance [km]
           - Station
+          - Depth [m]
+          - Temperature [C]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 1, Line 2 (2004-04-19)
@@ -404,13 +404,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - Depth [m]
           - date_time
           - Latitude [degrees_north]
-          - Longitude [degrees_east]
-          - Temperature [C]
+          - distance [km]
           - Station
+          - Depth [m]
+          - Temperature [C]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 1, Line 3 (2004-04-18)
@@ -424,13 +424,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - Depth [m]
           - date_time
           - Latitude [degrees_north]
-          - Longitude [degrees_east]
-          - Temperature [C]
+          - distance [km]
           - Station
+          - Depth [m]
+          - Temperature [C]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 1, Line 3 (2004-04-18)
@@ -480,13 +480,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - Depth [m]
           - date_time
           - Latitude [degrees_north]
-          - Longitude [degrees_east]
-          - Temperature [C]
+          - distance [km]
           - Station
+          - Depth [m]
+          - Temperature [C]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 1, Line 4 (2004-04-21)
@@ -500,13 +500,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - Depth [m]
           - date_time
           - Latitude [degrees_north]
-          - Longitude [degrees_east]
-          - Temperature [C]
+          - distance [km]
           - Station
+          - Depth [m]
+          - Temperature [C]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 1, Line 4 (2004-04-21)
@@ -556,13 +556,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - Depth [m]
           - date_time
           - Latitude [degrees_north]
-          - Longitude [degrees_east]
-          - Temperature [C]
+          - distance [km]
           - Station
+          - Depth [m]
+          - Temperature [C]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 2, Line 1 (2004-05-26)
@@ -576,13 +576,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - Depth [m]
           - date_time
           - Latitude [degrees_north]
-          - Longitude [degrees_east]
-          - Temperature [C]
+          - distance [km]
           - Station
+          - Depth [m]
+          - Temperature [C]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 2, Line 1 (2004-05-26)
@@ -632,13 +632,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - Depth [m]
           - date_time
           - Latitude [degrees_north]
-          - Longitude [degrees_east]
-          - Temperature [C]
+          - distance [km]
           - Station
+          - Depth [m]
+          - Temperature [C]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 2, Line 2 (2004-05-26)
@@ -652,13 +652,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - Depth [m]
           - date_time
           - Latitude [degrees_north]
-          - Longitude [degrees_east]
-          - Temperature [C]
+          - distance [km]
           - Station
+          - Depth [m]
+          - Temperature [C]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 2, Line 2 (2004-05-26)
@@ -708,13 +708,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - Depth [m]
           - date_time
           - Latitude [degrees_north]
-          - Longitude [degrees_east]
-          - Temperature [C]
+          - distance [km]
           - Station
+          - Depth [m]
+          - Temperature [C]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 2, Line 3 (2004-05-25)
@@ -728,13 +728,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - Depth [m]
           - date_time
           - Latitude [degrees_north]
-          - Longitude [degrees_east]
-          - Temperature [C]
+          - distance [km]
           - Station
+          - Depth [m]
+          - Temperature [C]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 2, Line 3 (2004-05-25)
@@ -784,13 +784,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - Depth [m]
           - date_time
           - Latitude [degrees_north]
-          - Longitude [degrees_east]
-          - Temperature [C]
+          - distance [km]
           - Station
+          - Depth [m]
+          - Temperature [C]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 2, Line 4 (2004-05-27)
@@ -804,13 +804,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - Depth [m]
           - date_time
           - Latitude [degrees_north]
-          - Longitude [degrees_east]
-          - Temperature [C]
+          - distance [km]
           - Station
+          - Depth [m]
+          - Temperature [C]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 2, Line 4 (2004-05-27)
@@ -860,13 +860,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - Depth [m]
           - date_time
           - Latitude [degrees_north]
-          - Longitude [degrees_east]
-          - Temperature [C]
+          - distance [km]
           - Station
+          - Depth [m]
+          - Temperature [C]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 3, Line 1 (2004-06-13)
@@ -880,13 +880,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - Depth [m]
           - date_time
           - Latitude [degrees_north]
-          - Longitude [degrees_east]
-          - Temperature [C]
+          - distance [km]
           - Station
+          - Depth [m]
+          - Temperature [C]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 3, Line 1 (2004-06-13)
@@ -936,13 +936,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - Depth [m]
           - date_time
           - Latitude [degrees_north]
-          - Longitude [degrees_east]
-          - Temperature [C]
+          - distance [km]
           - Station
+          - Depth [m]
+          - Temperature [C]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 3, Line 2 (2004-06-13)
@@ -956,13 +956,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - Depth [m]
           - date_time
           - Latitude [degrees_north]
-          - Longitude [degrees_east]
-          - Temperature [C]
+          - distance [km]
           - Station
+          - Depth [m]
+          - Temperature [C]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 3, Line 2 (2004-06-13)
@@ -1012,13 +1012,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - Depth [m]
           - date_time
           - Latitude [degrees_north]
-          - Longitude [degrees_east]
-          - Temperature [C]
+          - distance [km]
           - Station
+          - Depth [m]
+          - Temperature [C]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 3, Line 3 (2004-06-14)
@@ -1032,13 +1032,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - Depth [m]
           - date_time
           - Latitude [degrees_north]
-          - Longitude [degrees_east]
-          - Temperature [C]
+          - distance [km]
           - Station
+          - Depth [m]
+          - Temperature [C]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 3, Line 3 (2004-06-14)
@@ -1088,13 +1088,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - Depth [m]
           - date_time
           - Latitude [degrees_north]
-          - Longitude [degrees_east]
-          - Temperature [C]
+          - distance [km]
           - Station
+          - Depth [m]
+          - Temperature [C]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 3, Line 4 (2004-06-14)
@@ -1108,13 +1108,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - Depth [m]
           - date_time
           - Latitude [degrees_north]
-          - Longitude [degrees_east]
-          - Temperature [C]
+          - distance [km]
           - Station
+          - Depth [m]
+          - Temperature [C]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 3, Line 4 (2004-06-14)
@@ -1164,13 +1164,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - Depth [m]
           - date_time
           - Latitude [degrees_north]
-          - Longitude [degrees_east]
-          - Temperature [C]
+          - distance [km]
           - Station
+          - Depth [m]
+          - Temperature [C]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 5, Line 1 (2004-08-17)
@@ -1184,13 +1184,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - Depth [m]
           - date_time
           - Latitude [degrees_north]
-          - Longitude [degrees_east]
-          - Temperature [C]
+          - distance [km]
           - Station
+          - Depth [m]
+          - Temperature [C]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 5, Line 1 (2004-08-17)
@@ -1240,13 +1240,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - Depth [m]
           - date_time
           - Latitude [degrees_north]
-          - Longitude [degrees_east]
-          - Temperature [C]
+          - distance [km]
           - Station
+          - Depth [m]
+          - Temperature [C]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 5, Line 2 (2004-08-17)
@@ -1260,13 +1260,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - Depth [m]
           - date_time
           - Latitude [degrees_north]
-          - Longitude [degrees_east]
-          - Temperature [C]
+          - distance [km]
           - Station
+          - Depth [m]
+          - Temperature [C]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 5, Line 2 (2004-08-17)
@@ -1316,13 +1316,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - Depth [m]
           - date_time
           - Latitude [degrees_north]
-          - Longitude [degrees_east]
-          - Temperature [C]
+          - distance [km]
           - Station
+          - Depth [m]
+          - Temperature [C]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 5, Line 3 (2004-08-16)
@@ -1336,13 +1336,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - Depth [m]
           - date_time
           - Latitude [degrees_north]
-          - Longitude [degrees_east]
-          - Temperature [C]
+          - distance [km]
           - Station
+          - Depth [m]
+          - Temperature [C]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 5, Line 3 (2004-08-16)
@@ -1392,13 +1392,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - Depth [m]
           - date_time
           - Latitude [degrees_north]
-          - Longitude [degrees_east]
-          - Temperature [C]
+          - distance [km]
           - Station
+          - Depth [m]
+          - Temperature [C]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 5, Line 4 (2004-08-18)
@@ -1412,13 +1412,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - Depth [m]
           - date_time
           - Latitude [degrees_north]
-          - Longitude [degrees_east]
-          - Temperature [C]
+          - distance [km]
           - Station
+          - Depth [m]
+          - Temperature [C]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 5, Line 4 (2004-08-18)
@@ -1468,13 +1468,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - Depth [m]
           - date_time
           - Latitude [degrees_north]
-          - Longitude [degrees_east]
-          - Temperature [C]
+          - distance [km]
           - Station
+          - Depth [m]
+          - Temperature [C]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 6, Line 1 (2004-09-07)
@@ -1488,13 +1488,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - Depth [m]
           - date_time
           - Latitude [degrees_north]
-          - Longitude [degrees_east]
-          - Temperature [C]
+          - distance [km]
           - Station
+          - Depth [m]
+          - Temperature [C]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 6, Line 1 (2004-09-07)
@@ -1544,13 +1544,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - Depth [m]
           - date_time
           - Latitude [degrees_north]
-          - Longitude [degrees_east]
-          - Temperature [C]
+          - distance [km]
           - Station
+          - Depth [m]
+          - Temperature [C]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 6, Line 2 (2004-09-08)
@@ -1564,13 +1564,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - Depth [m]
           - date_time
           - Latitude [degrees_north]
-          - Longitude [degrees_east]
-          - Temperature [C]
+          - distance [km]
           - Station
+          - Depth [m]
+          - Temperature [C]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 6, Line 2 (2004-09-08)
@@ -1620,13 +1620,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - Depth [m]
           - date_time
           - Latitude [degrees_north]
-          - Longitude [degrees_east]
-          - Temperature [C]
+          - distance [km]
           - Station
+          - Depth [m]
+          - Temperature [C]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 6, Line 3 (2004-09-09)
@@ -1640,13 +1640,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - Depth [m]
           - date_time
           - Latitude [degrees_north]
-          - Longitude [degrees_east]
-          - Temperature [C]
+          - distance [km]
           - Station
+          - Depth [m]
+          - Temperature [C]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 6, Line 3 (2004-09-09)
@@ -1696,13 +1696,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - Depth [m]
           - date_time
           - Latitude [degrees_north]
-          - Longitude [degrees_east]
-          - Temperature [C]
+          - distance [km]
           - Station
+          - Depth [m]
+          - Temperature [C]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 6, Line 4 (2004-09-09)
@@ -1716,13 +1716,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - Depth [m]
           - date_time
           - Latitude [degrees_north]
-          - Longitude [degrees_east]
-          - Temperature [C]
+          - distance [km]
           - Station
+          - Depth [m]
+          - Temperature [C]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 6, Line 4 (2004-09-09)
@@ -1772,13 +1772,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - Depth [m]
           - date_time
           - Latitude [degrees_north]
-          - Longitude [degrees_east]
-          - Temperature [C]
+          - distance [km]
           - Station
+          - Depth [m]
+          - Temperature [C]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 7, Line 1 (2005-01-08)
@@ -1792,13 +1792,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - Depth [m]
           - date_time
           - Latitude [degrees_north]
-          - Longitude [degrees_east]
-          - Temperature [C]
+          - distance [km]
           - Station
+          - Depth [m]
+          - Temperature [C]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 7, Line 1 (2005-01-08)
@@ -1848,13 +1848,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - Depth [m]
           - date_time
           - Latitude [degrees_north]
-          - Longitude [degrees_east]
-          - Temperature [C]
+          - distance [km]
           - Station
+          - Depth [m]
+          - Temperature [C]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 7, Line 2 (2005-01-09)
@@ -1868,13 +1868,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - Depth [m]
           - date_time
           - Latitude [degrees_north]
-          - Longitude [degrees_east]
-          - Temperature [C]
+          - distance [km]
           - Station
+          - Depth [m]
+          - Temperature [C]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 7, Line 2 (2005-01-09)
@@ -1924,13 +1924,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - Depth [m]
           - date_time
           - Latitude [degrees_north]
-          - Longitude [degrees_east]
-          - Temperature [C]
+          - distance [km]
           - Station
+          - Depth [m]
+          - Temperature [C]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 7, Line 3 (2005-01-10)
@@ -1944,13 +1944,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - Depth [m]
           - date_time
           - Latitude [degrees_north]
-          - Longitude [degrees_east]
-          - Temperature [C]
+          - distance [km]
           - Station
+          - Depth [m]
+          - Temperature [C]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 7, Line 3 (2005-01-10)
@@ -2000,13 +2000,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - Depth [m]
           - date_time
           - Latitude [degrees_north]
-          - Longitude [degrees_east]
-          - Temperature [C]
+          - distance [km]
           - Station
+          - Depth [m]
+          - Temperature [C]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 7, Line 4 (2005-01-10)
@@ -2020,13 +2020,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - Depth [m]
           - date_time
           - Latitude [degrees_north]
-          - Longitude [degrees_east]
-          - Temperature [C]
+          - distance [km]
           - Station
+          - Depth [m]
+          - Temperature [C]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 7, Line 4 (2005-01-10)
@@ -2076,13 +2076,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - Depth [m]
           - date_time
           - Latitude [degrees_north]
-          - Longitude [degrees_east]
-          - Temperature [C]
+          - distance [km]
           - Station
+          - Depth [m]
+          - Temperature [C]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 8, Line 1 (2005-04-25)
@@ -2096,13 +2096,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - Depth [m]
           - date_time
           - Latitude [degrees_north]
-          - Longitude [degrees_east]
-          - Temperature [C]
+          - distance [km]
           - Station
+          - Depth [m]
+          - Temperature [C]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 8, Line 1 (2005-04-25)
@@ -2152,13 +2152,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - Depth [m]
           - date_time
           - Latitude [degrees_north]
-          - Longitude [degrees_east]
-          - Temperature [C]
+          - distance [km]
           - Station
+          - Depth [m]
+          - Temperature [C]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 8, Line 2 (2005-04-26)
@@ -2172,13 +2172,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - Depth [m]
           - date_time
           - Latitude [degrees_north]
-          - Longitude [degrees_east]
-          - Temperature [C]
+          - distance [km]
           - Station
+          - Depth [m]
+          - Temperature [C]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 8, Line 2 (2005-04-26)
@@ -2228,13 +2228,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - Depth [m]
           - date_time
           - Latitude [degrees_north]
-          - Longitude [degrees_east]
-          - Temperature [C]
+          - distance [km]
           - Station
+          - Depth [m]
+          - Temperature [C]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 8, Line 3 (2005-04-27)
@@ -2248,13 +2248,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - Depth [m]
           - date_time
           - Latitude [degrees_north]
-          - Longitude [degrees_east]
-          - Temperature [C]
+          - distance [km]
           - Station
+          - Depth [m]
+          - Temperature [C]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 8, Line 3 (2005-04-27)
@@ -2304,13 +2304,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - Depth [m]
           - date_time
           - Latitude [degrees_north]
-          - Longitude [degrees_east]
-          - Temperature [C]
+          - distance [km]
           - Station
+          - Depth [m]
+          - Temperature [C]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 8, Line 4 (2005-04-25)
@@ -2324,13 +2324,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - Depth [m]
           - date_time
           - Latitude [degrees_north]
-          - Longitude [degrees_east]
-          - Temperature [C]
+          - distance [km]
           - Station
+          - Depth [m]
+          - Temperature [C]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 8, Line 4 (2005-04-25)
@@ -2380,13 +2380,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - Depth [m]
           - date_time
           - Latitude [degrees_north]
-          - Longitude [degrees_east]
-          - Temperature [C]
+          - distance [km]
           - Station
+          - Depth [m]
+          - Temperature [C]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 9, Line 1 (2005-06-14)
@@ -2400,13 +2400,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - Depth [m]
           - date_time
           - Latitude [degrees_north]
-          - Longitude [degrees_east]
-          - Temperature [C]
+          - distance [km]
           - Station
+          - Depth [m]
+          - Temperature [C]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 9, Line 1 (2005-06-14)
@@ -2456,13 +2456,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - Depth [m]
           - date_time
           - Latitude [degrees_north]
-          - Longitude [degrees_east]
-          - Temperature [C]
+          - distance [km]
           - Station
+          - Depth [m]
+          - Temperature [C]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 9, Line 2 (2005-06-14)
@@ -2476,13 +2476,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - Depth [m]
           - date_time
           - Latitude [degrees_north]
-          - Longitude [degrees_east]
-          - Temperature [C]
+          - distance [km]
           - Station
+          - Depth [m]
+          - Temperature [C]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 9, Line 2 (2005-06-14)
@@ -2532,13 +2532,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - Depth [m]
           - date_time
           - Latitude [degrees_north]
-          - Longitude [degrees_east]
-          - Temperature [C]
+          - distance [km]
           - Station
+          - Depth [m]
+          - Temperature [C]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 9, Line 3 (2005-06-15)
@@ -2552,13 +2552,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - Depth [m]
           - date_time
           - Latitude [degrees_north]
-          - Longitude [degrees_east]
-          - Temperature [C]
+          - distance [km]
           - Station
+          - Depth [m]
+          - Temperature [C]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 9, Line 3 (2005-06-15)
@@ -2608,13 +2608,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - Depth [m]
           - date_time
           - Latitude [degrees_north]
-          - Longitude [degrees_east]
-          - Temperature [C]
+          - distance [km]
           - Station
+          - Depth [m]
+          - Temperature [C]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 9, Line 4 (2005-06-16)
@@ -2628,13 +2628,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - Depth [m]
           - date_time
           - Latitude [degrees_north]
-          - Longitude [degrees_east]
-          - Temperature [C]
+          - distance [km]
           - Station
+          - Depth [m]
+          - Temperature [C]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 9, Line 4 (2005-06-16)
@@ -2684,13 +2684,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - Depth [m]
           - date_time
           - Latitude [degrees_north]
-          - Longitude [degrees_east]
-          - Temperature [C]
+          - distance [km]
           - Station
+          - Depth [m]
+          - Temperature [C]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 10, Line 1 (2005-07-29)
@@ -2704,13 +2704,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - Depth [m]
           - date_time
           - Latitude [degrees_north]
-          - Longitude [degrees_east]
-          - Temperature [C]
+          - distance [km]
           - Station
+          - Depth [m]
+          - Temperature [C]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 10, Line 1 (2005-07-29)
@@ -2760,13 +2760,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - Depth [m]
           - date_time
           - Latitude [degrees_north]
-          - Longitude [degrees_east]
-          - Temperature [C]
+          - distance [km]
           - Station
+          - Depth [m]
+          - Temperature [C]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 10, Line 2 (2005-07-29)
@@ -2780,13 +2780,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - Depth [m]
           - date_time
           - Latitude [degrees_north]
-          - Longitude [degrees_east]
-          - Temperature [C]
+          - distance [km]
           - Station
+          - Depth [m]
+          - Temperature [C]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 10, Line 2 (2005-07-29)
@@ -2836,13 +2836,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - Depth [m]
           - date_time
           - Latitude [degrees_north]
-          - Longitude [degrees_east]
-          - Temperature [C]
+          - distance [km]
           - Station
+          - Depth [m]
+          - Temperature [C]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 10, Line 3 (2005-07-28)
@@ -2856,13 +2856,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - Depth [m]
           - date_time
           - Latitude [degrees_north]
-          - Longitude [degrees_east]
-          - Temperature [C]
+          - distance [km]
           - Station
+          - Depth [m]
+          - Temperature [C]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 10, Line 3 (2005-07-28)
@@ -2912,13 +2912,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - Depth [m]
           - date_time
           - Latitude [degrees_north]
-          - Longitude [degrees_east]
-          - Temperature [C]
+          - distance [km]
           - Station
+          - Depth [m]
+          - Temperature [C]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 10, Line 4 (2005-07-30)
@@ -2932,13 +2932,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - Depth [m]
           - date_time
           - Latitude [degrees_north]
-          - Longitude [degrees_east]
-          - Temperature [C]
+          - distance [km]
           - Station
+          - Depth [m]
+          - Temperature [C]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 10, Line 4 (2005-07-30)
@@ -2988,13 +2988,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - Depth [m]
           - date_time
           - Latitude [degrees_north]
-          - Longitude [degrees_east]
-          - Temperature [C]
+          - distance [km]
           - Station
+          - Depth [m]
+          - Temperature [C]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 11, Line 1 (2005-09-04)
@@ -3008,13 +3008,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - Depth [m]
           - date_time
           - Latitude [degrees_north]
-          - Longitude [degrees_east]
-          - Temperature [C]
+          - distance [km]
           - Station
+          - Depth [m]
+          - Temperature [C]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 11, Line 1 (2005-09-04)
@@ -3064,13 +3064,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - Depth [m]
           - date_time
           - Latitude [degrees_north]
-          - Longitude [degrees_east]
-          - Temperature [C]
+          - distance [km]
           - Station
+          - Depth [m]
+          - Temperature [C]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 11, Line 2 (2005-09-05)
@@ -3084,13 +3084,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - Depth [m]
           - date_time
           - Latitude [degrees_north]
-          - Longitude [degrees_east]
-          - Temperature [C]
+          - distance [km]
           - Station
+          - Depth [m]
+          - Temperature [C]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 11, Line 2 (2005-09-05)
@@ -3140,13 +3140,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - Depth [m]
           - date_time
           - Latitude [degrees_north]
-          - Longitude [degrees_east]
-          - Temperature [C]
+          - distance [km]
           - Station
+          - Depth [m]
+          - Temperature [C]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 11, Line 3 (2005-09-06)
@@ -3160,13 +3160,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - Depth [m]
           - date_time
           - Latitude [degrees_north]
-          - Longitude [degrees_east]
-          - Temperature [C]
+          - distance [km]
           - Station
+          - Depth [m]
+          - Temperature [C]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 11, Line 3 (2005-09-06)
@@ -3216,13 +3216,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - Depth [m]
           - date_time
           - Latitude [degrees_north]
-          - Longitude [degrees_east]
-          - Temperature [C]
+          - distance [km]
           - Station
+          - Depth [m]
+          - Temperature [C]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 11, Line 4 (2005-09-06)
@@ -3236,13 +3236,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - Depth [m]
           - date_time
           - Latitude [degrees_north]
-          - Longitude [degrees_east]
-          - Temperature [C]
+          - distance [km]
           - Station
+          - Depth [m]
+          - Temperature [C]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 11, Line 4 (2005-09-06)
@@ -3292,13 +3292,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - Depth [m]
           - date_time
           - Latitude [degrees_north]
-          - Longitude [degrees_east]
-          - Temperature [C]
+          - distance [km]
           - Station
+          - Depth [m]
+          - Temperature [C]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 12, Line 1 (2005-10-13)
@@ -3312,13 +3312,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - Depth [m]
           - date_time
           - Latitude [degrees_north]
-          - Longitude [degrees_east]
-          - Temperature [C]
+          - distance [km]
           - Station
+          - Depth [m]
+          - Temperature [C]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 12, Line 1 (2005-10-13)
@@ -3368,13 +3368,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - Depth [m]
           - date_time
           - Latitude [degrees_north]
-          - Longitude [degrees_east]
-          - Temperature [C]
+          - distance [km]
           - Station
+          - Depth [m]
+          - Temperature [C]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 12, Line 2 (2005-10-14)
@@ -3388,13 +3388,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - Depth [m]
           - date_time
           - Latitude [degrees_north]
-          - Longitude [degrees_east]
-          - Temperature [C]
+          - distance [km]
           - Station
+          - Depth [m]
+          - Temperature [C]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 12, Line 2 (2005-10-14)
@@ -3444,13 +3444,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - Depth [m]
           - date_time
           - Latitude [degrees_north]
-          - Longitude [degrees_east]
-          - Temperature [C]
+          - distance [km]
           - Station
+          - Depth [m]
+          - Temperature [C]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 12, Line 3 (2005-10-14)
@@ -3464,13 +3464,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - Depth [m]
           - date_time
           - Latitude [degrees_north]
-          - Longitude [degrees_east]
-          - Temperature [C]
+          - distance [km]
           - Station
+          - Depth [m]
+          - Temperature [C]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 12, Line 3 (2005-10-14)
@@ -3520,13 +3520,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - Depth [m]
           - date_time
           - Latitude [degrees_north]
-          - Longitude [degrees_east]
-          - Temperature [C]
+          - distance [km]
           - Station
+          - Depth [m]
+          - Temperature [C]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 12, Line 4 (2005-10-14)
@@ -3540,13 +3540,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - Depth [m]
           - date_time
           - Latitude [degrees_north]
-          - Longitude [degrees_east]
-          - Temperature [C]
+          - distance [km]
           - Station
+          - Depth [m]
+          - Temperature [C]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 12, Line 4 (2005-10-14)
@@ -3596,13 +3596,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - Depth [m]
           - date_time
           - Latitude [degrees_north]
-          - Longitude [degrees_east]
-          - Temperature [C]
+          - distance [km]
           - Station
+          - Depth [m]
+          - Temperature [C]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 13, Line 1 (2006-07-26)
@@ -3616,13 +3616,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - Depth [m]
           - date_time
           - Latitude [degrees_north]
-          - Longitude [degrees_east]
-          - Temperature [C]
+          - distance [km]
           - Station
+          - Depth [m]
+          - Temperature [C]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 13, Line 1 (2006-07-26)
@@ -3672,13 +3672,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - Depth [m]
           - date_time
           - Latitude [degrees_north]
-          - Longitude [degrees_east]
-          - Temperature [C]
+          - distance [km]
           - Station
+          - Depth [m]
+          - Temperature [C]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 13, Line 3 (2006-07-26)
@@ -3692,13 +3692,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - Depth [m]
           - date_time
           - Latitude [degrees_north]
-          - Longitude [degrees_east]
-          - Temperature [C]
+          - distance [km]
           - Station
+          - Depth [m]
+          - Temperature [C]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 13, Line 3 (2006-07-26)
@@ -3748,13 +3748,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - Depth [m]
           - date_time
           - Latitude [degrees_north]
-          - Longitude [degrees_east]
-          - Temperature [C]
+          - distance [km]
           - Station
+          - Depth [m]
+          - Temperature [C]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 13, Line 4 (2006-07-28)
@@ -3768,13 +3768,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - Depth [m]
           - date_time
           - Latitude [degrees_north]
-          - Longitude [degrees_east]
-          - Temperature [C]
+          - distance [km]
           - Station
+          - Depth [m]
+          - Temperature [C]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 13, Line 4 (2006-07-28)
@@ -3824,13 +3824,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - Depth [m]
           - date_time
           - Latitude [degrees_north]
-          - Longitude [degrees_east]
-          - Temperature [C]
+          - distance [km]
           - Station
+          - Depth [m]
+          - Temperature [C]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 13, Line 6 (2006-07-27)
@@ -3844,13 +3844,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - Depth [m]
           - date_time
           - Latitude [degrees_north]
-          - Longitude [degrees_east]
-          - Temperature [C]
+          - distance [km]
           - Station
+          - Depth [m]
+          - Temperature [C]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 13, Line 6 (2006-07-27)
@@ -3900,13 +3900,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - Depth [m]
           - date_time
           - Latitude [degrees_north]
-          - Longitude [degrees_east]
-          - Temperature [C]
+          - distance [km]
           - Station
+          - Depth [m]
+          - Temperature [C]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 13, Line 7 (2006-07-26)
@@ -3920,13 +3920,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - Depth [m]
           - date_time
           - Latitude [degrees_north]
-          - Longitude [degrees_east]
-          - Temperature [C]
+          - distance [km]
           - Station
+          - Depth [m]
+          - Temperature [C]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 13, Line 7 (2006-07-26)
@@ -3976,13 +3976,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - Depth [m]
           - date_time
           - Latitude [degrees_north]
-          - Longitude [degrees_east]
-          - Temperature [C]
+          - distance [km]
           - Station
+          - Depth [m]
+          - Temperature [C]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 14, Line 1 (2006-08-06)
@@ -3996,13 +3996,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - Depth [m]
           - date_time
           - Latitude [degrees_north]
-          - Longitude [degrees_east]
-          - Temperature [C]
+          - distance [km]
           - Station
+          - Depth [m]
+          - Temperature [C]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 14, Line 1 (2006-08-06)
@@ -4052,13 +4052,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - Depth [m]
           - date_time
           - Latitude [degrees_north]
-          - Longitude [degrees_east]
-          - Temperature [C]
+          - distance [km]
           - Station
+          - Depth [m]
+          - Temperature [C]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 14, Line 2 (2006-08-06)
@@ -4072,13 +4072,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - Depth [m]
           - date_time
           - Latitude [degrees_north]
-          - Longitude [degrees_east]
-          - Temperature [C]
+          - distance [km]
           - Station
+          - Depth [m]
+          - Temperature [C]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 14, Line 2 (2006-08-06)
@@ -4128,13 +4128,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - Depth [m]
           - date_time
           - Latitude [degrees_north]
-          - Longitude [degrees_east]
-          - Temperature [C]
+          - distance [km]
           - Station
+          - Depth [m]
+          - Temperature [C]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 14, Line 3 (2006-08-05)
@@ -4148,13 +4148,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - Depth [m]
           - date_time
           - Latitude [degrees_north]
-          - Longitude [degrees_east]
-          - Temperature [C]
+          - distance [km]
           - Station
+          - Depth [m]
+          - Temperature [C]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 14, Line 3 (2006-08-05)
@@ -4204,13 +4204,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - Depth [m]
           - date_time
           - Latitude [degrees_north]
-          - Longitude [degrees_east]
-          - Temperature [C]
+          - distance [km]
           - Station
+          - Depth [m]
+          - Temperature [C]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 14, Line 4 (2006-08-07)
@@ -4224,13 +4224,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - Depth [m]
           - date_time
           - Latitude [degrees_north]
-          - Longitude [degrees_east]
-          - Temperature [C]
+          - distance [km]
           - Station
+          - Depth [m]
+          - Temperature [C]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 14, Line 4 (2006-08-07)
@@ -4280,13 +4280,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - Depth [m]
           - date_time
           - Latitude [degrees_north]
-          - Longitude [degrees_east]
-          - Temperature [C]
+          - distance [km]
           - Station
+          - Depth [m]
+          - Temperature [C]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 14, Line 6 (2006-08-06)
@@ -4300,13 +4300,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - Depth [m]
           - date_time
           - Latitude [degrees_north]
-          - Longitude [degrees_east]
-          - Temperature [C]
+          - distance [km]
           - Station
+          - Depth [m]
+          - Temperature [C]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 14, Line 6 (2006-08-06)
@@ -4356,13 +4356,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - Depth [m]
           - date_time
           - Latitude [degrees_north]
-          - Longitude [degrees_east]
-          - Temperature [C]
+          - distance [km]
           - Station
+          - Depth [m]
+          - Temperature [C]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 14, Line 7 (2006-08-05)
@@ -4376,13 +4376,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - Depth [m]
           - date_time
           - Latitude [degrees_north]
-          - Longitude [degrees_east]
-          - Temperature [C]
+          - distance [km]
           - Station
+          - Depth [m]
+          - Temperature [C]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 14, Line 7 (2006-08-05)
@@ -4432,13 +4432,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - Depth [m]
           - date_time
           - Latitude [degrees_north]
-          - Longitude [degrees_east]
-          - Temperature [C]
+          - distance [km]
           - Station
+          - Depth [m]
+          - Temperature [C]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 15, Line 1 (2006-08-12)
@@ -4452,13 +4452,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - Depth [m]
           - date_time
           - Latitude [degrees_north]
-          - Longitude [degrees_east]
-          - Temperature [C]
+          - distance [km]
           - Station
+          - Depth [m]
+          - Temperature [C]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 15, Line 1 (2006-08-12)
@@ -4508,13 +4508,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - Depth [m]
           - date_time
           - Latitude [degrees_north]
-          - Longitude [degrees_east]
-          - Temperature [C]
+          - distance [km]
           - Station
+          - Depth [m]
+          - Temperature [C]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 15, Line 3 (2006-08-12)
@@ -4528,13 +4528,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - Depth [m]
           - date_time
           - Latitude [degrees_north]
-          - Longitude [degrees_east]
-          - Temperature [C]
+          - distance [km]
           - Station
+          - Depth [m]
+          - Temperature [C]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 15, Line 3 (2006-08-12)
@@ -4584,13 +4584,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - Depth [m]
           - date_time
           - Latitude [degrees_north]
-          - Longitude [degrees_east]
-          - Temperature [C]
+          - distance [km]
           - Station
+          - Depth [m]
+          - Temperature [C]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 15, Line 4 (2006-08-14)
@@ -4604,13 +4604,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - Depth [m]
           - date_time
           - Latitude [degrees_north]
-          - Longitude [degrees_east]
-          - Temperature [C]
+          - distance [km]
           - Station
+          - Depth [m]
+          - Temperature [C]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 15, Line 4 (2006-08-14)
@@ -4660,13 +4660,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - Depth [m]
           - date_time
           - Latitude [degrees_north]
-          - Longitude [degrees_east]
-          - Temperature [C]
+          - distance [km]
           - Station
+          - Depth [m]
+          - Temperature [C]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 15, Line 6 (2006-08-13)
@@ -4680,13 +4680,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - Depth [m]
           - date_time
           - Latitude [degrees_north]
-          - Longitude [degrees_east]
-          - Temperature [C]
+          - distance [km]
           - Station
+          - Depth [m]
+          - Temperature [C]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 15, Line 6 (2006-08-13)
@@ -4736,13 +4736,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - Depth [m]
           - date_time
           - Latitude [degrees_north]
-          - Longitude [degrees_east]
-          - Temperature [C]
+          - distance [km]
           - Station
+          - Depth [m]
+          - Temperature [C]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 15, Line 7 (2006-08-12)
@@ -4756,13 +4756,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - Depth [m]
           - date_time
           - Latitude [degrees_north]
-          - Longitude [degrees_east]
-          - Temperature [C]
+          - distance [km]
           - Station
+          - Depth [m]
+          - Temperature [C]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 15, Line 7 (2006-08-12)
@@ -4812,13 +4812,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - Depth [m]
           - date_time
           - Latitude [degrees_north]
-          - Longitude [degrees_east]
-          - Temperature [C]
+          - distance [km]
           - Station
+          - Depth [m]
+          - Temperature [C]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 16, Line 1 (2006-09-12)
@@ -4832,13 +4832,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - Depth [m]
           - date_time
           - Latitude [degrees_north]
-          - Longitude [degrees_east]
-          - Temperature [C]
+          - distance [km]
           - Station
+          - Depth [m]
+          - Temperature [C]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 16, Line 1 (2006-09-12)
@@ -4888,13 +4888,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - Depth [m]
           - date_time
           - Latitude [degrees_north]
-          - Longitude [degrees_east]
-          - Temperature [C]
+          - distance [km]
           - Station
+          - Depth [m]
+          - Temperature [C]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 16, Line 2 (2006-09-13)
@@ -4908,13 +4908,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - Depth [m]
           - date_time
           - Latitude [degrees_north]
-          - Longitude [degrees_east]
-          - Temperature [C]
+          - distance [km]
           - Station
+          - Depth [m]
+          - Temperature [C]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 16, Line 2 (2006-09-13)
@@ -4964,13 +4964,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - Depth [m]
           - date_time
           - Latitude [degrees_north]
-          - Longitude [degrees_east]
-          - Temperature [C]
+          - distance [km]
           - Station
+          - Depth [m]
+          - Temperature [C]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 16, Line 3 (2006-09-11)
@@ -4984,13 +4984,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - Depth [m]
           - date_time
           - Latitude [degrees_north]
-          - Longitude [degrees_east]
-          - Temperature [C]
+          - distance [km]
           - Station
+          - Depth [m]
+          - Temperature [C]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 16, Line 3 (2006-09-11)
@@ -5040,13 +5040,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - Depth [m]
           - date_time
           - Latitude [degrees_north]
-          - Longitude [degrees_east]
-          - Temperature [C]
+          - distance [km]
           - Station
+          - Depth [m]
+          - Temperature [C]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 16, Line 4 (2006-09-13)
@@ -5060,13 +5060,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - Depth [m]
           - date_time
           - Latitude [degrees_north]
-          - Longitude [degrees_east]
-          - Temperature [C]
+          - distance [km]
           - Station
+          - Depth [m]
+          - Temperature [C]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 16, Line 4 (2006-09-13)
@@ -5116,13 +5116,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - Depth [m]
           - date_time
           - Latitude [degrees_north]
-          - Longitude [degrees_east]
-          - Temperature [C]
+          - distance [km]
           - Station
+          - Depth [m]
+          - Temperature [C]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 16, Line 6 (2006-09-13)
@@ -5136,13 +5136,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - Depth [m]
           - date_time
           - Latitude [degrees_north]
-          - Longitude [degrees_east]
-          - Temperature [C]
+          - distance [km]
           - Station
+          - Depth [m]
+          - Temperature [C]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 16, Line 6 (2006-09-13)
@@ -5192,13 +5192,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - Depth [m]
           - date_time
           - Latitude [degrees_north]
-          - Longitude [degrees_east]
-          - Temperature [C]
+          - distance [km]
           - Station
+          - Depth [m]
+          - Temperature [C]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 16, Line 7 (2006-09-11)
@@ -5212,13 +5212,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - Depth [m]
           - date_time
           - Latitude [degrees_north]
-          - Longitude [degrees_east]
-          - Temperature [C]
+          - distance [km]
           - Station
+          - Depth [m]
+          - Temperature [C]
+          - Longitude [degrees_east]
           kind: scatter
           shared_axes: false
           title: Cruise 16, Line 7 (2006-09-11)
@@ -5261,7 +5261,7 @@ entries:
         - []
         - func: '{func(cook_inlet_catalogs.utils:calculate_distance)}'
     metadata:
-      featuretype: timeSeries
+      featuretype: trajectoryProfile
       key_variables:
       - temp
       - salt
@@ -5283,11 +5283,11 @@ entries:
           height: 300
           hover_cols:
           - Press
-          - "Lat (\xB0N)"
+          - datetime
+          - Station
           - "Lon (\xB0E)"
           - Temperature [C]
-          - Station
-          - datetime
+          - "Lat (\xB0N)"
           kind: scatter
           shared_axes: false
           title: null
@@ -5302,11 +5302,11 @@ entries:
           height: 300
           hover_cols:
           - Press
-          - "Lat (\xB0N)"
+          - datetime
+          - Station
           - "Lon (\xB0E)"
           - Temperature [C]
-          - Station
-          - datetime
+          - "Lat (\xB0N)"
           kind: scatter
           shared_axes: false
           title: null
@@ -5406,13 +5406,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
           - Press
-          - "Lat (\xB0N)"
+          - datetime
+          - distance [km]
+          - Station
           - "Lon (\xB0E)"
           - Temperature [C]
-          - Station
-          - datetime
+          - "Lat (\xB0N)"
           kind: scatter
           shared_axes: false
           title: null
@@ -5426,13 +5426,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
           - Press
-          - "Lat (\xB0N)"
+          - datetime
+          - distance [km]
+          - Station
           - "Lon (\xB0E)"
           - Temperature [C]
-          - Station
-          - datetime
+          - "Lat (\xB0N)"
           kind: scatter
           shared_axes: false
           title: null

@@ -6,65 +6,57 @@ aliases:
   PtAdam_jul-02: PtAdam_jul-02
   pogibshi_Jul-02: pogibshi_Jul-02
 data:
-  71de20487c3f004b:
+  15f28d061ae68002:
     datatype: intake.readers.datatypes:CSV
     kwargs:
       storage_options: null
-      url: https://researchworkspace.com/files/42186397/Cohen.csv
+      url: simplecache://::https://researchworkspace.com/files/42200000/PtAdam_jul-02.csv
     metadata: {}
     user_parameters: {}
-  88505efc37e1cb95:
+  3679a77df3c650ef:
     datatype: intake.readers.datatypes:CSV
     kwargs:
       storage_options: null
-      url: https://researchworkspace.com/files/42200000/PtAdam_jul-02.csv
+      url: simplecache://::https://researchworkspace.com/files/42186319/Bear_Jul-02.csv
     metadata: {}
     user_parameters: {}
-  b82bb585f259a678:
+  5c75255eddae5905:
     datatype: intake.readers.datatypes:CSV
     kwargs:
       storage_options: null
-      url: https://researchworkspace.com/files/42186319/Bear_Jul-02.csv
+      url: simplecache://::https://researchworkspace.com/files/42199566/Peterson_Jul-02.csv
     metadata: {}
     user_parameters: {}
-  bed6ff2ff87d861e:
+  93763428ac316a97:
     datatype: intake.readers.datatypes:CSV
     kwargs:
       storage_options: null
-      url: https://researchworkspace.com/files/42199559/Glacier.csv
+      url: simplecache://::https://researchworkspace.com/files/42199989/pogibshi_Jul-02.csv
     metadata: {}
     user_parameters: {}
-  c81d99185b5ef728:
+  a3919639910ca0df:
     datatype: intake.readers.datatypes:CSV
     kwargs:
       storage_options: null
-      url: https://researchworkspace.com/files/42199566/Peterson_Jul-02.csv
+      url: simplecache://::https://researchworkspace.com/files/42199559/Glacier.csv
     metadata: {}
     user_parameters: {}
-  cf934c47f96cc106:
+  deb841d06f39e243:
     datatype: intake.readers.datatypes:CSV
     kwargs:
       storage_options: null
-      url: https://researchworkspace.com/files/42199989/pogibshi_Jul-02.csv
+      url: simplecache://::https://researchworkspace.com/files/42186397/Cohen.csv
     metadata: {}
     user_parameters: {}
 entries:
-  1a61a69daf5c3db7:
-    kwargs:
-      args:
-      - '{data(88505efc37e1cb95)}'
-    metadata: {}
-    output_instance: pandas:DataFrame
-    reader: intake.readers.readers:PandasCSV
-    user_parameters: {}
-  22906e221a76d328:
+  091a6cca7c835c6b:
     kwargs:
       out_instances:
       - pandas:DataFrame
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(3d410b57e5fbf674)}'
+      - - '{data(6249190f08270b11)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -80,30 +72,26 @@ entries:
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
-  3d410b57e5fbf674:
+  25bdb2ff1c3f48db:
     kwargs:
       args:
-      - '{data(71de20487c3f004b)}'
+      - '{data(deb841d06f39e243)}'
+      storage_options:
+        simplecache:
+          cache_storage: /home/kristen/.cache/cook-inlet-catalogs
+          same_names: true
     metadata: {}
     output_instance: pandas:DataFrame
     reader: intake.readers.readers:PandasCSV
     user_parameters: {}
-  44b17f1faee55c1e:
-    kwargs:
-      args:
-      - '{data(b82bb585f259a678)}'
-    metadata: {}
-    output_instance: pandas:DataFrame
-    reader: intake.readers.readers:PandasCSV
-    user_parameters: {}
-  467b29e6b018a6e8:
+  4b051f942a55d916:
     kwargs:
       out_instances:
       - pandas:DataFrame
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(4cdc5a85e0012a25)}'
+      - - '{data(e089da0a854aebd5)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -119,107 +107,38 @@ entries:
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
-  4cdc5a85e0012a25:
+  6249190f08270b11:
     kwargs:
       args:
-      - '{data(bed6ff2ff87d861e)}'
+      - '{data(15f28d061ae68002)}'
+      storage_options:
+        simplecache:
+          cache_storage: /home/kristen/.cache/cook-inlet-catalogs
+          same_names: true
     metadata: {}
     output_instance: pandas:DataFrame
     reader: intake.readers.readers:PandasCSV
     user_parameters: {}
-  526f4e47d1541127:
+  7a71f18fbb629f05:
     kwargs:
       args:
-      - '{data(c81d99185b5ef728)}'
+      - '{data(93763428ac316a97)}'
+      storage_options:
+        simplecache:
+          cache_storage: /home/kristen/.cache/cook-inlet-catalogs
+          same_names: true
     metadata: {}
     output_instance: pandas:DataFrame
     reader: intake.readers.readers:PandasCSV
     user_parameters: {}
-  5bb523590a905e15:
-    kwargs:
-      args:
-      - '{data(cf934c47f96cc106)}'
-    metadata: {}
-    output_instance: pandas:DataFrame
-    reader: intake.readers.readers:PandasCSV
-    user_parameters: {}
-  67131f8d4c7cbeba:
+  8252735277b996d3:
     kwargs:
       out_instances:
       - pandas:DataFrame
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(1a61a69daf5c3db7)}'
-        - []
-        - {}
-      - - '{func(intake.readers.transform:Method)}'
-        - []
-        - columns:
-            Date: date
-            Time (local 24 hr): time
-          method_name: rename
-      - - '{func(intake.readers.convert:GenericFunc)}'
-        - []
-        - func: '{func(cook_inlet_catalogs.utils:parse_date_time)}'
-    metadata: {}
-    output_instance: pandas:DataFrame
-    reader: intake.readers.convert:Pipeline
-    user_parameters: {}
-  714cc380c30158b8:
-    kwargs:
-      out_instances:
-      - pandas:DataFrame
-      - pandas:DataFrame
-      - pandas:DataFrame
-      steps:
-      - - '{data(44b17f1faee55c1e)}'
-        - []
-        - {}
-      - - '{func(intake.readers.transform:Method)}'
-        - []
-        - columns:
-            Date: date
-            Time (local 24 hr): time
-          method_name: rename
-      - - '{func(intake.readers.convert:GenericFunc)}'
-        - []
-        - func: '{func(cook_inlet_catalogs.utils:parse_date_time)}'
-    metadata: {}
-    output_instance: pandas:DataFrame
-    reader: intake.readers.convert:Pipeline
-    user_parameters: {}
-  814a2162bc2700cf:
-    kwargs:
-      out_instances:
-      - pandas:DataFrame
-      - pandas:DataFrame
-      - pandas:DataFrame
-      steps:
-      - - '{data(526f4e47d1541127)}'
-        - []
-        - {}
-      - - '{func(intake.readers.transform:Method)}'
-        - []
-        - columns:
-            Date: date
-            Time (local 24 hr): time
-          method_name: rename
-      - - '{func(intake.readers.convert:GenericFunc)}'
-        - []
-        - func: '{func(cook_inlet_catalogs.utils:parse_date_time)}'
-    metadata: {}
-    output_instance: pandas:DataFrame
-    reader: intake.readers.convert:Pipeline
-    user_parameters: {}
-  932a43dcf9d5b106:
-    kwargs:
-      out_instances:
-      - pandas:DataFrame
-      - pandas:DataFrame
-      - pandas:DataFrame
-      steps:
-      - - '{data(5bb523590a905e15)}'
+      - - '{data(ed1a15a94cc33b3c)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -245,7 +164,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(44b17f1faee55c1e)}'
+      - - '{data(ed1a15a94cc33b3c)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -256,7 +175,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(714cc380c30158b8)}'
+        - datetime: '{data(8252735277b996d3)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -292,13 +211,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
           - Station
-          - Depth
-          - Lat (N)
-          - Long (E)
           - datetime
+          - Long (E)
+          - Depth
           - Temperature
+          - distance [km]
+          - Lat (N)
           kind: scatter
           shared_axes: false
           title: null
@@ -312,20 +231,20 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
           - Station
-          - Depth
-          - Lat (N)
-          - Long (E)
           - datetime
+          - Long (E)
+          - Depth
           - Temperature
+          - distance [km]
+          - Lat (N)
           kind: scatter
           shared_axes: false
           title: null
           width: 500
           x: distance [km]
           y: Depth
-      urlpath: https://researchworkspace.com/files/42186319/Bear_Jul-02.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42186319/Bear_Jul-02.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -339,7 +258,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(3d410b57e5fbf674)}'
+      - - '{data(25bdb2ff1c3f48db)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -350,7 +269,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(22906e221a76d328)}'
+        - datetime: '{data(d664ccc5411e60c0)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -386,13 +305,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
           - Station
-          - Depth
-          - Lat (N)
-          - Long (E)
           - datetime
+          - Long (E)
+          - Depth
           - Temperature
+          - distance [km]
+          - Lat (N)
           kind: scatter
           shared_axes: false
           title: null
@@ -406,20 +325,20 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
           - Station
-          - Depth
-          - Lat (N)
-          - Long (E)
           - datetime
+          - Long (E)
+          - Depth
           - Temperature
+          - distance [km]
+          - Lat (N)
           kind: scatter
           shared_axes: false
           title: null
           width: 500
           x: distance [km]
           y: Depth
-      urlpath: https://researchworkspace.com/files/42186397/Cohen.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42186397/Cohen.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -433,7 +352,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(4cdc5a85e0012a25)}'
+      - - '{data(e089da0a854aebd5)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -444,7 +363,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(467b29e6b018a6e8)}'
+        - datetime: '{data(4b051f942a55d916)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -480,13 +399,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
           - Station
-          - Depth
-          - Lat (N)
-          - Long (E)
           - datetime
+          - Long (E)
+          - Depth
           - Temperature
+          - distance [km]
+          - Lat (N)
           kind: scatter
           shared_axes: false
           title: null
@@ -500,20 +419,20 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
           - Station
-          - Depth
-          - Lat (N)
-          - Long (E)
           - datetime
+          - Long (E)
+          - Depth
           - Temperature
+          - distance [km]
+          - Lat (N)
           kind: scatter
           shared_axes: false
           title: null
           width: 500
           x: distance [km]
           y: Depth
-      urlpath: https://researchworkspace.com/files/42199559/Glacier.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42199559/Glacier.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -527,7 +446,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(526f4e47d1541127)}'
+      - - '{data(c57f1f95b8db54f4)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -538,7 +457,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(814a2162bc2700cf)}'
+        - datetime: '{data(d896793b6006dc9c)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -574,13 +493,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
           - Station
-          - Depth
-          - Lat (N)
-          - Long (E)
           - datetime
+          - Long (E)
+          - Depth
           - Temperature
+          - distance [km]
+          - Lat (N)
           kind: scatter
           shared_axes: false
           title: null
@@ -594,20 +513,20 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
           - Station
-          - Depth
-          - Lat (N)
-          - Long (E)
           - datetime
+          - Long (E)
+          - Depth
           - Temperature
+          - distance [km]
+          - Lat (N)
           kind: scatter
           shared_axes: false
           title: null
           width: 500
           x: distance [km]
           y: Depth
-      urlpath: https://researchworkspace.com/files/42199566/Peterson_Jul-02.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42199566/Peterson_Jul-02.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -621,7 +540,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(1a61a69daf5c3db7)}'
+      - - '{data(6249190f08270b11)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -632,7 +551,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(67131f8d4c7cbeba)}'
+        - datetime: '{data(091a6cca7c835c6b)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -668,13 +587,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
           - Station
-          - Depth
-          - Lat (N)
-          - Long (E)
           - datetime
+          - Long (E)
+          - Depth
           - Temperature
+          - distance [km]
+          - Lat (N)
           kind: scatter
           shared_axes: false
           title: null
@@ -688,22 +607,127 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
           - Station
-          - Depth
-          - Lat (N)
-          - Long (E)
           - datetime
+          - Long (E)
+          - Depth
           - Temperature
+          - distance [km]
+          - Lat (N)
           kind: scatter
           shared_axes: false
           title: null
           width: 500
           x: distance [km]
           y: Depth
-      urlpath: https://researchworkspace.com/files/42200000/PtAdam_jul-02.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42200000/PtAdam_jul-02.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
+    user_parameters: {}
+  c57f1f95b8db54f4:
+    kwargs:
+      args:
+      - '{data(5c75255eddae5905)}'
+      storage_options:
+        simplecache:
+          cache_storage: /home/kristen/.cache/cook-inlet-catalogs
+          same_names: true
+    metadata: {}
+    output_instance: pandas:DataFrame
+    reader: intake.readers.readers:PandasCSV
+    user_parameters: {}
+  d664ccc5411e60c0:
+    kwargs:
+      out_instances:
+      - pandas:DataFrame
+      - pandas:DataFrame
+      - pandas:DataFrame
+      steps:
+      - - '{data(25bdb2ff1c3f48db)}'
+        - []
+        - {}
+      - - '{func(intake.readers.transform:Method)}'
+        - []
+        - columns:
+            Date: date
+            Time (local 24 hr): time
+          method_name: rename
+      - - '{func(intake.readers.convert:GenericFunc)}'
+        - []
+        - func: '{func(cook_inlet_catalogs.utils:parse_date_time)}'
+    metadata: {}
+    output_instance: pandas:DataFrame
+    reader: intake.readers.convert:Pipeline
+    user_parameters: {}
+  d896793b6006dc9c:
+    kwargs:
+      out_instances:
+      - pandas:DataFrame
+      - pandas:DataFrame
+      - pandas:DataFrame
+      steps:
+      - - '{data(c57f1f95b8db54f4)}'
+        - []
+        - {}
+      - - '{func(intake.readers.transform:Method)}'
+        - []
+        - columns:
+            Date: date
+            Time (local 24 hr): time
+          method_name: rename
+      - - '{func(intake.readers.convert:GenericFunc)}'
+        - []
+        - func: '{func(cook_inlet_catalogs.utils:parse_date_time)}'
+    metadata: {}
+    output_instance: pandas:DataFrame
+    reader: intake.readers.convert:Pipeline
+    user_parameters: {}
+  e051082482c855d2:
+    kwargs:
+      out_instances:
+      - pandas:DataFrame
+      - pandas:DataFrame
+      - pandas:DataFrame
+      steps:
+      - - '{data(7a71f18fbb629f05)}'
+        - []
+        - {}
+      - - '{func(intake.readers.transform:Method)}'
+        - []
+        - columns:
+            Date: date
+            Time (local 24 hr): time
+          method_name: rename
+      - - '{func(intake.readers.convert:GenericFunc)}'
+        - []
+        - func: '{func(cook_inlet_catalogs.utils:parse_date_time)}'
+    metadata: {}
+    output_instance: pandas:DataFrame
+    reader: intake.readers.convert:Pipeline
+    user_parameters: {}
+  e089da0a854aebd5:
+    kwargs:
+      args:
+      - '{data(a3919639910ca0df)}'
+      storage_options:
+        simplecache:
+          cache_storage: /home/kristen/.cache/cook-inlet-catalogs
+          same_names: true
+    metadata: {}
+    output_instance: pandas:DataFrame
+    reader: intake.readers.readers:PandasCSV
+    user_parameters: {}
+  ed1a15a94cc33b3c:
+    kwargs:
+      args:
+      - '{data(3679a77df3c650ef)}'
+      storage_options:
+        simplecache:
+          cache_storage: /home/kristen/.cache/cook-inlet-catalogs
+          same_names: true
+    metadata: {}
+    output_instance: pandas:DataFrame
+    reader: intake.readers.readers:PandasCSV
     user_parameters: {}
   pogibshi_Jul-02:
     kwargs:
@@ -715,7 +739,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(5bb523590a905e15)}'
+      - - '{data(7a71f18fbb629f05)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -726,7 +750,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(932a43dcf9d5b106)}'
+        - datetime: '{data(e051082482c855d2)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -762,13 +786,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
           - Station
-          - Depth
-          - Lat (N)
-          - Long (E)
           - datetime
+          - Long (E)
+          - Depth
           - Temperature
+          - distance [km]
+          - Lat (N)
           kind: scatter
           shared_axes: false
           title: null
@@ -782,20 +806,20 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
           - Station
-          - Depth
-          - Lat (N)
-          - Long (E)
           - datetime
+          - Long (E)
+          - Depth
           - Temperature
+          - distance [km]
+          - Lat (N)
           kind: scatter
           shared_axes: false
           title: null
           width: 500
           x: distance [km]
           y: Depth
-      urlpath: https://researchworkspace.com/files/42199989/pogibshi_Jul-02.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42199989/pogibshi_Jul-02.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}

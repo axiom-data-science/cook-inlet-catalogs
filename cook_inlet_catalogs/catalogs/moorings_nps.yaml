@@ -47,12 +47,12 @@ data:
         data:
           height: 300
           hover_cols:
-          - time
-          - sea_surface_height_above_sea_level_geoid_local_station_datum
-          - latitude
           - longitude
-          - station
           - z
+          - station
+          - time
+          - latitude
+          - sea_surface_height_above_sea_level_geoid_local_station_datum
           kind: line
           legend: top
           shared_axes: false
@@ -114,12 +114,12 @@ data:
         data:
           height: 300
           hover_cols:
-          - time
-          - sea_surface_height_above_sea_level_geoid_local_station_datum
-          - latitude
           - longitude
-          - station
           - z
+          - station
+          - time
+          - latitude
+          - sea_surface_height_above_sea_level_geoid_local_station_datum
           kind: line
           legend: top
           shared_axes: false
@@ -145,6 +145,9 @@ metadata:
   - ssh
   map:
     c: station
+    clabel: ''
+    clim: null
+    cmap: null
     coastline: false
     color: k
     geo: true

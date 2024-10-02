@@ -2,28 +2,32 @@ aliases:
   Deployment1: Deployment1
   Deployment2: Deployment2
 data:
-  b030a602e19a7434:
+  9c016d2d43460d4f:
     datatype: intake.readers.datatypes:CSV
     kwargs:
       storage_options: null
-      url: https://researchworkspace.com/files/39886044/chrome_bay_mooring_deployment_1.txt
+      url: simplecache://::https://researchworkspace.com/files/39886045/chrome_bay_mooring_deployment_2.txt
     metadata: {}
     user_parameters: {}
-  d3c851495278ba3e:
+  ff88b4ad1933d1c0:
     datatype: intake.readers.datatypes:CSV
     kwargs:
       storage_options: null
-      url: https://researchworkspace.com/files/39886045/chrome_bay_mooring_deployment_2.txt
+      url: simplecache://::https://researchworkspace.com/files/39886044/chrome_bay_mooring_deployment_1.txt
     metadata: {}
     user_parameters: {}
 entries:
-  286bcf7a4aa3c9ee:
+  9c7961d6d12bc5de:
     kwargs:
       args:
-      - '{data(d3c851495278ba3e)}'
+      - '{data(9c016d2d43460d4f)}'
       parse_dates:
       - 0
       sep: "\t"
+      storage_options:
+        simplecache:
+          cache_storage: /home/kristen/.cache/cook-inlet-catalogs
+          same_names: true
     metadata: {}
     output_instance: pandas:DataFrame
     reader: intake.readers.readers:PandasCSV
@@ -35,7 +39,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(c09cddd226fdc10b)}'
+      - - '{data(f767ad00bffefb88)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -62,11 +66,11 @@ entries:
         data:
           height: 300
           hover_cols:
-          - Date-time
-          - latitude_deg
           - Depth
-          - Temperature
           - longitude_deg
+          - Temperature
+          - latitude_deg
+          - Date-time
           kind: line
           legend: top
           shared_axes: false
@@ -77,7 +81,7 @@ entries:
           y:
           - Temperature
           - Salinity
-      urlpath: https://researchworkspace.com/files/39886044/chrome_bay_mooring_deployment_1.txt
+      urlpath: simplecache://::https://researchworkspace.com/files/39886044/chrome_bay_mooring_deployment_1.txt
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -88,7 +92,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(286bcf7a4aa3c9ee)}'
+      - - '{data(9c7961d6d12bc5de)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -115,11 +119,11 @@ entries:
         data:
           height: 300
           hover_cols:
-          - latitude_deg
-          - Depth
           - temperature
           - Datetime
+          - Depth
           - longitude_deg
+          - latitude_deg
           kind: line
           legend: top
           shared_axes: false
@@ -130,17 +134,21 @@ entries:
           y:
           - temperature
           - Salinity
-      urlpath: https://researchworkspace.com/files/39886045/chrome_bay_mooring_deployment_2.txt
+      urlpath: simplecache://::https://researchworkspace.com/files/39886045/chrome_bay_mooring_deployment_2.txt
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
-  c09cddd226fdc10b:
+  f767ad00bffefb88:
     kwargs:
       args:
-      - '{data(b030a602e19a7434)}'
+      - '{data(ff88b4ad1933d1c0)}'
       parse_dates:
       - 0
       sep: "\t"
+      storage_options:
+        simplecache:
+          cache_storage: /home/kristen/.cache/cook-inlet-catalogs
+          same_names: true
     metadata: {}
     output_instance: pandas:DataFrame
     reader: intake.readers.readers:PandasCSV

@@ -1352,6 +1352,14 @@ Files are:
 * Lower Cook Inlet (System B): 2006-2007
 
 Data variables available include tidally filtered and weekly averaged along with tidal constituents calculated from hourly data.
+
+Several new datasets were derived in 2024 with the CIOFS freshwater project which narrow the full time datasets (lower-ci_system-B_2006-2007.nc and upper-ci_system-A_2002-2003.nc) in time to just 2003 and 2006, respectively, before running processing in Research Workspace and are otherwise identical. See processing notebook https://researchworkspace.com/file/44879475/add_variables_to_notebooks_limited_time_range.ipynb:
+* lower-ci_system-B_2006_subtidal_daily_mean.nc
+* lower-ci_system-B_2006_tidecons_base.nc
+* lower-ci_system-B_2006_subtidal_weekly_mean.nc
+* upper-ci_system-A_2003_subtidal_daily_mean
+* upper-ci_system-A_2003_tidecons_base
+* upper-ci_system-A_2003_subtidal_weekly_mean.nc
     
 Some of the data is written up in reports:
 
@@ -1365,9 +1373,15 @@ Some of the data is written up in reports:
     urls = ["https://researchworkspace.com/files/42712165/lower-ci_system-B_2006-2007.nc",
             "https://researchworkspace.com/files/42712210/lower-ci_system-B_2006-2007_subtidal_weekly_mean.nc",
             "https://researchworkspace.com/files/42712190/lower-ci_system-B_2006-2007_tidecons_base.nc",
+            "https://researchworkspace.com/files/44879883/lower-ci_system-B_2006_subtidal_daily_mean.nc",
+            "https://researchworkspace.com/files/44879885/lower-ci_system-B_2006_tidecons_base.nc",
+            "https://researchworkspace.com/files/44879896/lower-ci_system-B_2006_subtidal_weekly_mean.nc",
             "https://researchworkspace.com/files/42712163/upper-ci_system-A_2002-2003.nc",
             "https://researchworkspace.com/files/42712206/upper-ci_system-A_2002-2003_subtidal_weekly_mean.nc",
             "https://researchworkspace.com/files/42712182/upper-ci_system-A_2002-2003_tidecons_base.nc",
+            "https://researchworkspace.com/files/44879877/upper-ci_system-A_2003_subtidal_daily_mean.nc",
+            "https://researchworkspace.com/files/44879879/upper-ci_system-A_2003_tidecons_base.nc",
+            "https://researchworkspace.com/files/44879894/upper-ci_system-A_2003_subtidal_weekly_mean.nc",
             "https://researchworkspace.com/files/42712167/upper-ci_system-A_2009.nc",
             "https://researchworkspace.com/files/42712214/upper-ci_system-A_2009_subtidal_weekly_mean.nc",
             "https://researchworkspace.com/files/42712200/upper-ci_system-A_2009_tidecons_base.nc",
@@ -1439,6 +1453,7 @@ def make_erddap_catalog(slug, project_name, overall_desc, time, included, notes,
                     map_description = map_description, summary = summary)
     import intake_erddap
     vars = ["sea_water_temperature", "sea_water_practical_salinity",
+            "sea_surface_temperature",
             "sea_surface_height_above_sea_level_geoid_local_station_datum",
             "sea_surface_height_above_sea_level_geoid_mllw"]
     inputs = dict(search_for=stations, 
@@ -1800,6 +1815,8 @@ ADCP data has been converted to eastward, northward velocities as well as along-
                     "maxLatitude": cat[source_name].metadata["lat"],
                     "minTime": cat[source_name].metadata["deployments"]["first_good_data"],
                     "maxTime": cat[source_name].metadata["deployments"]["last_good_data"],
+                    "flood_direction_degrees": cat[source_name].metadata["deployments"]["flood_direction_degrees"],
+                    "angle": cat[source_name].metadata["deployments"]["flood_direction_degrees"],
                     "maptype": metadata["maptype"],
                     "featuretype": metadata["featuretype"],
                     "key_variables": ["east","north","along","across","speed"],
@@ -1858,6 +1875,8 @@ ADCP data has been converted to eastward, northward velocities as well as along-
                     "maxLatitude": cat[source_name].metadata["lat"],
                     "minTime": cat[source_name].metadata["deployments"]["first_good_data"],
                     "maxTime": cat[source_name].metadata["deployments"]["last_good_data"],
+                    "flood_direction_degrees": cat[source_name].metadata["deployments"]["flood_direction_degrees"],
+                    "angle": cat[source_name].metadata["deployments"]["flood_direction_degrees"],
                     "maptype": metadata["maptype"],
                     "featuretype": metadata["featuretype"],
                     "key_variables": ["east","north","along","across","speed"],
@@ -1921,6 +1940,8 @@ Stations "KOD0914", "KOD0915", "KOD0916", "KOD0917", "KOD0918", "KOD0919", "KOD0
                     "maxLatitude": cat[source_name].metadata["lat"],
                     "minTime": cat[source_name].metadata["deployments"]["first_good_data"],
                     "maxTime": cat[source_name].metadata["deployments"]["last_good_data"],
+                    "flood_direction_degrees": cat[source_name].metadata["deployments"]["flood_direction_degrees"],
+                    "angle": cat[source_name].metadata["deployments"]["flood_direction_degrees"],
                     "maptype": metadata["maptype"],
                     "featuretype": metadata["featuretype"],
                     "key_variables": ["east","north","along","across","speed"],
@@ -1982,6 +2003,8 @@ ADCP data has been converted to eastward, northward velocities as well as along-
                     "maxLatitude": cat[source_name].metadata["lat"],
                     "minTime": cat[source_name].metadata["deployments"]["first_good_data"],
                     "maxTime": cat[source_name].metadata["deployments"]["last_good_data"],
+                    "flood_direction_degrees": cat[source_name].metadata["deployments"]["flood_direction_degrees"],
+                    "angle": cat[source_name].metadata["deployments"]["flood_direction_degrees"],
                     "maptype": metadata["maptype"],
                     "featuretype": metadata["featuretype"],
                     "key_variables": ["east","north","along","across","speed"],
@@ -2247,7 +2270,7 @@ Several years of EcoFOCI drifter data are also available in a private Research W
 
     # drifter_ids = []
     for i, url in enumerate(urls):
-        # print(url)
+        print(url)
 
         data = intake.readers.datatypes.CSV(url)
         # data = intake.readers.readers.PandasCSV(url)
@@ -2257,7 +2280,10 @@ Several years of EcoFOCI drifter data are also available in a private Research W
         depth = df[df.iloc[:, 0].str.startswith("Drogue depth:")].values[0][0].split()[-1]
         del(df)
         if depth == 'depth:':  # this means the actual depth value is missing, then skip the drifter
-            continue
+            print("WARNING: using 40m as the default depth when no other information is available.")
+            # Ladd, Carol, et al. "Northern Gulf of Alaska eddies and associated anomalies." Deep Sea Research Part I: Oceanographic Research Papers 54.4 (2007): 487-509.
+            # Stabeno, Phyllis J., et al. "Long-term observations of Alaska Coastal Current in the northern Gulf of Alaska." Deep Sea Research Part II: Topical Studies in Oceanography 132 (2016): 24-40.
+            depth = 40
         # import pdb; pdb.set_trace()
         
         # this can't work for some reason: must be a problem in intake

@@ -11,190 +11,234 @@ aliases:
   mic072903_subsampled: mic072903_subsampled
   mic073003_subsampled: mic073003_subsampled
 data:
-  0045e432ae6cb462:
+  2e4d86fdd8525ec2:
     datatype: intake.readers.datatypes:CSV
     kwargs:
       storage_options: null
-      url: https://researchworkspace.com/files/42202378/mic072603_subsampled.csv
+      url: simplecache://::https://researchworkspace.com/files/42202373/mic072003_subsampled.csv
     metadata: {}
     user_parameters: {}
-  1a2962d332d0bcde:
+  68f052f5fecc9106:
     datatype: intake.readers.datatypes:CSV
     kwargs:
       storage_options: null
-      url: https://researchworkspace.com/files/42202377/mic072503_subsampled.csv
+      url: simplecache://::https://researchworkspace.com/files/42202372/mic071903_subsampled.csv
     metadata: {}
     user_parameters: {}
-  21fd57f5f1116261:
+  78e4da9d78595abc:
     datatype: intake.readers.datatypes:CSV
     kwargs:
       storage_options: null
-      url: https://researchworkspace.com/files/42202373/mic072003_subsampled.csv
+      url: simplecache://::https://researchworkspace.com/files/42202376/mic072403_subsampled.csv
     metadata: {}
     user_parameters: {}
-  40a94cc6d369a374:
+  7bc98a76c63320ae:
     datatype: intake.readers.datatypes:CSV
     kwargs:
       storage_options: null
-      url: https://researchworkspace.com/files/42202380/mic072903_subsampled.csv
+      url: simplecache://::https://researchworkspace.com/files/42202378/mic072603_subsampled.csv
     metadata: {}
     user_parameters: {}
-  42bb6a2caee932e6:
+  81f488f329724233:
     datatype: intake.readers.datatypes:CSV
     kwargs:
       storage_options: null
-      url: https://researchworkspace.com/files/42202371/mic071303_subsampled.csv
+      url: simplecache://::https://researchworkspace.com/files/42202374/mic072103_subsampled.csv
     metadata: {}
     user_parameters: {}
-  63f255609bb8423a:
+  86c415c46214e7d7:
     datatype: intake.readers.datatypes:CSV
     kwargs:
       storage_options: null
-      url: https://researchworkspace.com/files/42202372/mic071903_subsampled.csv
+      url: simplecache://::https://researchworkspace.com/files/42202379/mic072803_65-8_subsampled.csv
     metadata: {}
     user_parameters: {}
-  65a24bfa05ada207:
+  a732175b0f0d93c8:
     datatype: intake.readers.datatypes:CSV
     kwargs:
       storage_options: null
-      url: https://researchworkspace.com/files/42202374/mic072103_subsampled.csv
+      url: simplecache://::https://researchworkspace.com/files/42202375/mic072203_subsampled.csv
     metadata: {}
     user_parameters: {}
-  82ff74daa14ecccd:
+  ac951b6a28f67ece:
     datatype: intake.readers.datatypes:CSV
     kwargs:
       storage_options: null
-      url: https://researchworkspace.com/files/42202376/mic072403_subsampled.csv
+      url: simplecache://::https://researchworkspace.com/files/42202377/mic072503_subsampled.csv
     metadata: {}
     user_parameters: {}
-  8a79dbe3f01b545d:
+  cf4ba4b10b76b068:
     datatype: intake.readers.datatypes:CSV
     kwargs:
       storage_options: null
-      url: https://researchworkspace.com/files/42202379/mic072803_65-8_subsampled.csv
+      url: simplecache://::https://researchworkspace.com/files/42202380/mic072903_subsampled.csv
     metadata: {}
     user_parameters: {}
-  9aaa61db74842342:
+  f31ba17d36b4979e:
     datatype: intake.readers.datatypes:CSV
     kwargs:
       storage_options: null
-      url: https://researchworkspace.com/files/42202375/mic072203_subsampled.csv
+      url: simplecache://::https://researchworkspace.com/files/42202381/mic073003_subsampled.csv
     metadata: {}
     user_parameters: {}
-  a774401b63bc2eb5:
+  f9eeace0acb9e52c:
     datatype: intake.readers.datatypes:CSV
     kwargs:
       storage_options: null
-      url: https://researchworkspace.com/files/42202381/mic073003_subsampled.csv
+      url: simplecache://::https://researchworkspace.com/files/42202371/mic071303_subsampled.csv
     metadata: {}
     user_parameters: {}
 entries:
-  260a87d8b5c89768:
+  0a9bf8e544bd2119:
     kwargs:
       args:
-      - '{data(82ff74daa14ecccd)}'
+      - '{data(68f052f5fecc9106)}'
       parse_dates:
       - 0
+      storage_options:
+        simplecache:
+          cache_storage: /home/kristen/.cache/cook-inlet-catalogs
+          same_names: true
     metadata: {}
     output_instance: pandas:DataFrame
     reader: intake.readers.readers:PandasCSV
     user_parameters: {}
-  '3097209794783501':
+  0c60b1f2b7305506:
     kwargs:
       args:
-      - '{data(9aaa61db74842342)}'
+      - '{data(a732175b0f0d93c8)}'
       parse_dates:
       - 0
+      storage_options:
+        simplecache:
+          cache_storage: /home/kristen/.cache/cook-inlet-catalogs
+          same_names: true
     metadata: {}
     output_instance: pandas:DataFrame
     reader: intake.readers.readers:PandasCSV
     user_parameters: {}
-  3d832fa0c6c4c4da:
+  812a19cf1b11387e:
     kwargs:
       args:
-      - '{data(63f255609bb8423a)}'
+      - '{data(7bc98a76c63320ae)}'
       parse_dates:
       - 0
+      storage_options:
+        simplecache:
+          cache_storage: /home/kristen/.cache/cook-inlet-catalogs
+          same_names: true
     metadata: {}
     output_instance: pandas:DataFrame
     reader: intake.readers.readers:PandasCSV
     user_parameters: {}
-  423eadabf7770655:
+  81818afff22c3feb:
     kwargs:
       args:
-      - '{data(0045e432ae6cb462)}'
+      - '{data(2e4d86fdd8525ec2)}'
       parse_dates:
       - 0
+      storage_options:
+        simplecache:
+          cache_storage: /home/kristen/.cache/cook-inlet-catalogs
+          same_names: true
     metadata: {}
     output_instance: pandas:DataFrame
     reader: intake.readers.readers:PandasCSV
     user_parameters: {}
-  67cba21190d8e83d:
+  8c79387752830b55:
     kwargs:
       args:
-      - '{data(1a2962d332d0bcde)}'
+      - '{data(cf4ba4b10b76b068)}'
       parse_dates:
       - 0
+      storage_options:
+        simplecache:
+          cache_storage: /home/kristen/.cache/cook-inlet-catalogs
+          same_names: true
     metadata: {}
     output_instance: pandas:DataFrame
     reader: intake.readers.readers:PandasCSV
     user_parameters: {}
-  73c64b5c358ed547:
+  b8bce54e5cc7704a:
     kwargs:
       args:
-      - '{data(65a24bfa05ada207)}'
+      - '{data(86c415c46214e7d7)}'
       parse_dates:
       - 0
+      storage_options:
+        simplecache:
+          cache_storage: /home/kristen/.cache/cook-inlet-catalogs
+          same_names: true
     metadata: {}
     output_instance: pandas:DataFrame
     reader: intake.readers.readers:PandasCSV
     user_parameters: {}
-  91a989bec9aca563:
+  baaaf3b9cb078bbd:
     kwargs:
       args:
-      - '{data(40a94cc6d369a374)}'
+      - '{data(78e4da9d78595abc)}'
       parse_dates:
       - 0
+      storage_options:
+        simplecache:
+          cache_storage: /home/kristen/.cache/cook-inlet-catalogs
+          same_names: true
     metadata: {}
     output_instance: pandas:DataFrame
     reader: intake.readers.readers:PandasCSV
     user_parameters: {}
-  b98bf9691c0c91c3:
+  ddbf0cc811b9b125:
     kwargs:
       args:
-      - '{data(a774401b63bc2eb5)}'
+      - '{data(f9eeace0acb9e52c)}'
       parse_dates:
       - 0
+      storage_options:
+        simplecache:
+          cache_storage: /home/kristen/.cache/cook-inlet-catalogs
+          same_names: true
     metadata: {}
     output_instance: pandas:DataFrame
     reader: intake.readers.readers:PandasCSV
     user_parameters: {}
-  c779f8502d43db15:
+  e0026e9858deb13c:
     kwargs:
       args:
-      - '{data(8a79dbe3f01b545d)}'
+      - '{data(f31ba17d36b4979e)}'
       parse_dates:
       - 0
+      storage_options:
+        simplecache:
+          cache_storage: /home/kristen/.cache/cook-inlet-catalogs
+          same_names: true
     metadata: {}
     output_instance: pandas:DataFrame
     reader: intake.readers.readers:PandasCSV
     user_parameters: {}
-  dafd4e0dd0ea57f8:
+  e746d177ad22e5b8:
     kwargs:
       args:
-      - '{data(42bb6a2caee932e6)}'
+      - '{data(81f488f329724233)}'
       parse_dates:
       - 0
+      storage_options:
+        simplecache:
+          cache_storage: /home/kristen/.cache/cook-inlet-catalogs
+          same_names: true
     metadata: {}
     output_instance: pandas:DataFrame
     reader: intake.readers.readers:PandasCSV
     user_parameters: {}
-  f4dc8c1468e15b95:
+  f771941685b2b154:
     kwargs:
       args:
-      - '{data(21fd57f5f1116261)}'
+      - '{data(ac951b6a28f67ece)}'
       parse_dates:
       - 0
+      storage_options:
+        simplecache:
+          cache_storage: /home/kristen/.cache/cook-inlet-catalogs
+          same_names: true
     metadata: {}
     output_instance: pandas:DataFrame
     reader: intake.readers.readers:PandasCSV
@@ -205,7 +249,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(dafd4e0dd0ea57f8)}'
+      - - '{data(ddbf0cc811b9b125)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -243,13 +287,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - date_time
           - lon
+          - temperature
+          - date_time
+          - pressure
           - lat
           - station
-          - temperature
-          - pressure
+          - distance [km]
           kind: scatter
           shared_axes: false
           title: '2003-07-13 06:50:00'
@@ -263,20 +307,20 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - date_time
           - lon
+          - temperature
+          - date_time
+          - pressure
           - lat
           - station
-          - temperature
-          - pressure
+          - distance [km]
           kind: scatter
           shared_axes: false
           title: '2003-07-13 06:50:00'
           width: 500
           x: distance [km]
           y: pressure
-      urlpath: https://researchworkspace.com/files/42202371/mic071303_subsampled.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42202371/mic071303_subsampled.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -286,7 +330,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(3d832fa0c6c4c4da)}'
+      - - '{data(0a9bf8e544bd2119)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -324,13 +368,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - date_time
           - lon
+          - temperature
+          - date_time
+          - pressure
           - lat
           - station
-          - temperature
-          - pressure
+          - distance [km]
           kind: scatter
           shared_axes: false
           title: '2003-07-19 06:40:00'
@@ -344,20 +388,20 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - date_time
           - lon
+          - temperature
+          - date_time
+          - pressure
           - lat
           - station
-          - temperature
-          - pressure
+          - distance [km]
           kind: scatter
           shared_axes: false
           title: '2003-07-19 06:40:00'
           width: 500
           x: distance [km]
           y: pressure
-      urlpath: https://researchworkspace.com/files/42202372/mic071903_subsampled.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42202372/mic071903_subsampled.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -367,7 +411,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(f4dc8c1468e15b95)}'
+      - - '{data(81818afff22c3feb)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -405,13 +449,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - date_time
           - lon
+          - temperature
+          - date_time
+          - pressure
           - lat
           - station
-          - temperature
-          - pressure
+          - distance [km]
           kind: scatter
           shared_axes: false
           title: '2003-07-20 11:00:00'
@@ -425,20 +469,20 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - date_time
           - lon
+          - temperature
+          - date_time
+          - pressure
           - lat
           - station
-          - temperature
-          - pressure
+          - distance [km]
           kind: scatter
           shared_axes: false
           title: '2003-07-20 11:00:00'
           width: 500
           x: distance [km]
           y: pressure
-      urlpath: https://researchworkspace.com/files/42202373/mic072003_subsampled.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42202373/mic072003_subsampled.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -448,7 +492,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(73c64b5c358ed547)}'
+      - - '{data(e746d177ad22e5b8)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -486,13 +530,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - date_time
           - lon
+          - temperature
+          - date_time
+          - pressure
           - lat
           - station
-          - temperature
-          - pressure
+          - distance [km]
           kind: scatter
           shared_axes: false
           title: '2003-07-21 06:25:00'
@@ -506,20 +550,20 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - date_time
           - lon
+          - temperature
+          - date_time
+          - pressure
           - lat
           - station
-          - temperature
-          - pressure
+          - distance [km]
           kind: scatter
           shared_axes: false
           title: '2003-07-21 06:25:00'
           width: 500
           x: distance [km]
           y: pressure
-      urlpath: https://researchworkspace.com/files/42202374/mic072103_subsampled.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42202374/mic072103_subsampled.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -529,7 +573,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(3097209794783501)}'
+      - - '{data(0c60b1f2b7305506)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -567,13 +611,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - date_time
           - lon
+          - temperature
+          - date_time
+          - pressure
           - lat
           - station
-          - temperature
-          - pressure
+          - distance [km]
           kind: scatter
           shared_axes: false
           title: '2003-07-22 11:15:00'
@@ -587,20 +631,20 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - date_time
           - lon
+          - temperature
+          - date_time
+          - pressure
           - lat
           - station
-          - temperature
-          - pressure
+          - distance [km]
           kind: scatter
           shared_axes: false
           title: '2003-07-22 11:15:00'
           width: 500
           x: distance [km]
           y: pressure
-      urlpath: https://researchworkspace.com/files/42202375/mic072203_subsampled.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42202375/mic072203_subsampled.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -610,7 +654,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(260a87d8b5c89768)}'
+      - - '{data(baaaf3b9cb078bbd)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -648,13 +692,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - date_time
           - lon
+          - temperature
+          - date_time
+          - pressure
           - lat
           - station
-          - temperature
-          - pressure
+          - distance [km]
           kind: scatter
           shared_axes: false
           title: '2003-07-24 11:30:00'
@@ -668,20 +712,20 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - date_time
           - lon
+          - temperature
+          - date_time
+          - pressure
           - lat
           - station
-          - temperature
-          - pressure
+          - distance [km]
           kind: scatter
           shared_axes: false
           title: '2003-07-24 11:30:00'
           width: 500
           x: distance [km]
           y: pressure
-      urlpath: https://researchworkspace.com/files/42202376/mic072403_subsampled.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42202376/mic072403_subsampled.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -691,7 +735,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(67cba21190d8e83d)}'
+      - - '{data(f771941685b2b154)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -729,13 +773,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - date_time
           - lon
+          - temperature
+          - date_time
+          - pressure
           - lat
           - station
-          - temperature
-          - pressure
+          - distance [km]
           kind: scatter
           shared_axes: false
           title: '2003-07-25 06:55:00'
@@ -749,20 +793,20 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - date_time
           - lon
+          - temperature
+          - date_time
+          - pressure
           - lat
           - station
-          - temperature
-          - pressure
+          - distance [km]
           kind: scatter
           shared_axes: false
           title: '2003-07-25 06:55:00'
           width: 500
           x: distance [km]
           y: pressure
-      urlpath: https://researchworkspace.com/files/42202377/mic072503_subsampled.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42202377/mic072503_subsampled.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -772,7 +816,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(423eadabf7770655)}'
+      - - '{data(812a19cf1b11387e)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -810,13 +854,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - date_time
           - lon
+          - temperature
+          - date_time
+          - pressure
           - lat
           - station
-          - temperature
-          - pressure
+          - distance [km]
           kind: scatter
           shared_axes: false
           title: '2003-07-26 11:05:00'
@@ -830,20 +874,20 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - date_time
           - lon
+          - temperature
+          - date_time
+          - pressure
           - lat
           - station
-          - temperature
-          - pressure
+          - distance [km]
           kind: scatter
           shared_axes: false
           title: '2003-07-26 11:05:00'
           width: 500
           x: distance [km]
           y: pressure
-      urlpath: https://researchworkspace.com/files/42202378/mic072603_subsampled.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42202378/mic072603_subsampled.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -853,7 +897,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(c779f8502d43db15)}'
+      - - '{data(b8bce54e5cc7704a)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -891,13 +935,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - date_time
           - lon
+          - temperature
+          - date_time
+          - pressure
           - lat
           - station
-          - temperature
-          - pressure
+          - distance [km]
           kind: scatter
           shared_axes: false
           title: '2003-07-28 14:50:00'
@@ -911,20 +955,20 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - date_time
           - lon
+          - temperature
+          - date_time
+          - pressure
           - lat
           - station
-          - temperature
-          - pressure
+          - distance [km]
           kind: scatter
           shared_axes: false
           title: '2003-07-28 14:50:00'
           width: 500
           x: distance [km]
           y: pressure
-      urlpath: https://researchworkspace.com/files/42202379/mic072803_65-8_subsampled.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42202379/mic072803_65-8_subsampled.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -934,7 +978,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(91a989bec9aca563)}'
+      - - '{data(8c79387752830b55)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -972,13 +1016,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - date_time
           - lon
+          - temperature
+          - date_time
+          - pressure
           - lat
           - station
-          - temperature
-          - pressure
+          - distance [km]
           kind: scatter
           shared_axes: false
           title: '2003-07-29 05:35:00'
@@ -992,20 +1036,20 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - date_time
           - lon
+          - temperature
+          - date_time
+          - pressure
           - lat
           - station
-          - temperature
-          - pressure
+          - distance [km]
           kind: scatter
           shared_axes: false
           title: '2003-07-29 05:35:00'
           width: 500
           x: distance [km]
           y: pressure
-      urlpath: https://researchworkspace.com/files/42202380/mic072903_subsampled.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42202380/mic072903_subsampled.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -1015,7 +1059,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(b98bf9691c0c91c3)}'
+      - - '{data(e0026e9858deb13c)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -1053,13 +1097,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - date_time
           - lon
+          - temperature
+          - date_time
+          - pressure
           - lat
           - station
-          - temperature
-          - pressure
+          - distance [km]
           kind: scatter
           shared_axes: false
           title: '2003-07-30 10:05:00'
@@ -1073,20 +1117,20 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - date_time
           - lon
+          - temperature
+          - date_time
+          - pressure
           - lat
           - station
-          - temperature
-          - pressure
+          - distance [km]
           kind: scatter
           shared_axes: false
           title: '2003-07-30 10:05:00'
           width: 500
           x: distance [km]
           y: pressure
-      urlpath: https://researchworkspace.com/files/42202381/mic073003_subsampled.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42202381/mic073003_subsampled.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}

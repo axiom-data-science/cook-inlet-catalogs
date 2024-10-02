@@ -78,11 +78,11 @@ aliases:
   '2021224001': '2021224001'
   '2021226001': '2021226001'
 data:
-  1ca9f38f945fb11f:
+  83d6037e9bccdacf:
     datatype: intake.readers.datatypes:CSV
     kwargs:
       storage_options: null
-      url: https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
+      url: simplecache://::https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
     metadata: {}
     user_parameters: {}
 entries:
@@ -92,7 +92,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(ba93610366e8b517)}'
+      - - '{data(c273bdad8303c078)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -115,12 +115,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - ctd_longitude
           - date_time
-          - ctd_latitude
           - temp
-          - pressure
           - station_number
+          - pressure
+          - ctd_longitude
+          - ctd_latitude
           invert: true
           kind: line
           shared_axes: true
@@ -132,7 +132,7 @@ entries:
           y:
           - temp
           - salt
-      urlpath: https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -142,7 +142,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(ba93610366e8b517)}'
+      - - '{data(c273bdad8303c078)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -165,12 +165,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - ctd_longitude
           - date_time
-          - ctd_latitude
           - temp
-          - pressure
           - station_number
+          - pressure
+          - ctd_longitude
+          - ctd_latitude
           invert: true
           kind: line
           shared_axes: true
@@ -182,7 +182,7 @@ entries:
           y:
           - temp
           - salt
-      urlpath: https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -192,7 +192,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(ba93610366e8b517)}'
+      - - '{data(c273bdad8303c078)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -215,12 +215,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - ctd_longitude
           - date_time
-          - ctd_latitude
           - temp
-          - pressure
           - station_number
+          - pressure
+          - ctd_longitude
+          - ctd_latitude
           invert: true
           kind: line
           shared_axes: true
@@ -232,7 +232,7 @@ entries:
           y:
           - temp
           - salt
-      urlpath: https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -242,7 +242,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(ba93610366e8b517)}'
+      - - '{data(c273bdad8303c078)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -265,12 +265,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - ctd_longitude
           - date_time
-          - ctd_latitude
           - temp
-          - pressure
           - station_number
+          - pressure
+          - ctd_longitude
+          - ctd_latitude
           invert: true
           kind: line
           shared_axes: true
@@ -282,7 +282,7 @@ entries:
           y:
           - temp
           - salt
-      urlpath: https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -292,7 +292,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(ba93610366e8b517)}'
+      - - '{data(c273bdad8303c078)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -315,12 +315,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - ctd_longitude
           - date_time
-          - ctd_latitude
           - temp
-          - pressure
           - station_number
+          - pressure
+          - ctd_longitude
+          - ctd_latitude
           invert: true
           kind: line
           shared_axes: true
@@ -332,7 +332,7 @@ entries:
           y:
           - temp
           - salt
-      urlpath: https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -342,7 +342,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(ba93610366e8b517)}'
+      - - '{data(c273bdad8303c078)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -365,12 +365,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - ctd_longitude
           - date_time
-          - ctd_latitude
           - temp
-          - pressure
           - station_number
+          - pressure
+          - ctd_longitude
+          - ctd_latitude
           invert: true
           kind: line
           shared_axes: true
@@ -382,7 +382,7 @@ entries:
           y:
           - temp
           - salt
-      urlpath: https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -392,7 +392,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(ba93610366e8b517)}'
+      - - '{data(c273bdad8303c078)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -415,12 +415,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - ctd_longitude
           - date_time
-          - ctd_latitude
           - temp
-          - pressure
           - station_number
+          - pressure
+          - ctd_longitude
+          - ctd_latitude
           invert: true
           kind: line
           shared_axes: true
@@ -432,7 +432,7 @@ entries:
           y:
           - temp
           - salt
-      urlpath: https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -442,7 +442,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(ba93610366e8b517)}'
+      - - '{data(c273bdad8303c078)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -465,12 +465,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - ctd_longitude
           - date_time
-          - ctd_latitude
           - temp
-          - pressure
           - station_number
+          - pressure
+          - ctd_longitude
+          - ctd_latitude
           invert: true
           kind: line
           shared_axes: true
@@ -482,7 +482,7 @@ entries:
           y:
           - temp
           - salt
-      urlpath: https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -492,7 +492,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(ba93610366e8b517)}'
+      - - '{data(c273bdad8303c078)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -515,12 +515,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - ctd_longitude
           - date_time
-          - ctd_latitude
           - temp
-          - pressure
           - station_number
+          - pressure
+          - ctd_longitude
+          - ctd_latitude
           invert: true
           kind: line
           shared_axes: true
@@ -532,7 +532,7 @@ entries:
           y:
           - temp
           - salt
-      urlpath: https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -542,7 +542,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(ba93610366e8b517)}'
+      - - '{data(c273bdad8303c078)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -565,12 +565,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - ctd_longitude
           - date_time
-          - ctd_latitude
           - temp
-          - pressure
           - station_number
+          - pressure
+          - ctd_longitude
+          - ctd_latitude
           invert: true
           kind: line
           shared_axes: true
@@ -582,7 +582,7 @@ entries:
           y:
           - temp
           - salt
-      urlpath: https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -592,7 +592,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(ba93610366e8b517)}'
+      - - '{data(c273bdad8303c078)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -615,12 +615,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - ctd_longitude
           - date_time
-          - ctd_latitude
           - temp
-          - pressure
           - station_number
+          - pressure
+          - ctd_longitude
+          - ctd_latitude
           invert: true
           kind: line
           shared_axes: true
@@ -632,7 +632,7 @@ entries:
           y:
           - temp
           - salt
-      urlpath: https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -642,7 +642,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(ba93610366e8b517)}'
+      - - '{data(c273bdad8303c078)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -665,12 +665,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - ctd_longitude
           - date_time
-          - ctd_latitude
           - temp
-          - pressure
           - station_number
+          - pressure
+          - ctd_longitude
+          - ctd_latitude
           invert: true
           kind: line
           shared_axes: true
@@ -682,7 +682,7 @@ entries:
           y:
           - temp
           - salt
-      urlpath: https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -692,7 +692,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(ba93610366e8b517)}'
+      - - '{data(c273bdad8303c078)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -715,12 +715,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - ctd_longitude
           - date_time
-          - ctd_latitude
           - temp
-          - pressure
           - station_number
+          - pressure
+          - ctd_longitude
+          - ctd_latitude
           invert: true
           kind: line
           shared_axes: true
@@ -732,7 +732,7 @@ entries:
           y:
           - temp
           - salt
-      urlpath: https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -742,7 +742,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(ba93610366e8b517)}'
+      - - '{data(c273bdad8303c078)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -765,12 +765,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - ctd_longitude
           - date_time
-          - ctd_latitude
           - temp
-          - pressure
           - station_number
+          - pressure
+          - ctd_longitude
+          - ctd_latitude
           invert: true
           kind: line
           shared_axes: true
@@ -782,7 +782,7 @@ entries:
           y:
           - temp
           - salt
-      urlpath: https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -792,7 +792,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(ba93610366e8b517)}'
+      - - '{data(c273bdad8303c078)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -815,12 +815,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - ctd_longitude
           - date_time
-          - ctd_latitude
           - temp
-          - pressure
           - station_number
+          - pressure
+          - ctd_longitude
+          - ctd_latitude
           invert: true
           kind: line
           shared_axes: true
@@ -832,7 +832,7 @@ entries:
           y:
           - temp
           - salt
-      urlpath: https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -842,7 +842,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(ba93610366e8b517)}'
+      - - '{data(c273bdad8303c078)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -865,12 +865,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - ctd_longitude
           - date_time
-          - ctd_latitude
           - temp
-          - pressure
           - station_number
+          - pressure
+          - ctd_longitude
+          - ctd_latitude
           invert: true
           kind: line
           shared_axes: true
@@ -882,7 +882,7 @@ entries:
           y:
           - temp
           - salt
-      urlpath: https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -892,7 +892,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(ba93610366e8b517)}'
+      - - '{data(c273bdad8303c078)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -915,12 +915,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - ctd_longitude
           - date_time
-          - ctd_latitude
           - temp
-          - pressure
           - station_number
+          - pressure
+          - ctd_longitude
+          - ctd_latitude
           invert: true
           kind: line
           shared_axes: true
@@ -932,7 +932,7 @@ entries:
           y:
           - temp
           - salt
-      urlpath: https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -942,7 +942,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(ba93610366e8b517)}'
+      - - '{data(c273bdad8303c078)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -965,12 +965,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - ctd_longitude
           - date_time
-          - ctd_latitude
           - temp
-          - pressure
           - station_number
+          - pressure
+          - ctd_longitude
+          - ctd_latitude
           invert: true
           kind: line
           shared_axes: true
@@ -982,7 +982,7 @@ entries:
           y:
           - temp
           - salt
-      urlpath: https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -992,7 +992,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(ba93610366e8b517)}'
+      - - '{data(c273bdad8303c078)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -1015,12 +1015,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - ctd_longitude
           - date_time
-          - ctd_latitude
           - temp
-          - pressure
           - station_number
+          - pressure
+          - ctd_longitude
+          - ctd_latitude
           invert: true
           kind: line
           shared_axes: true
@@ -1032,7 +1032,7 @@ entries:
           y:
           - temp
           - salt
-      urlpath: https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -1042,7 +1042,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(ba93610366e8b517)}'
+      - - '{data(c273bdad8303c078)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -1065,12 +1065,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - ctd_longitude
           - date_time
-          - ctd_latitude
           - temp
-          - pressure
           - station_number
+          - pressure
+          - ctd_longitude
+          - ctd_latitude
           invert: true
           kind: line
           shared_axes: true
@@ -1082,7 +1082,7 @@ entries:
           y:
           - temp
           - salt
-      urlpath: https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -1092,7 +1092,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(ba93610366e8b517)}'
+      - - '{data(c273bdad8303c078)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -1115,12 +1115,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - ctd_longitude
           - date_time
-          - ctd_latitude
           - temp
-          - pressure
           - station_number
+          - pressure
+          - ctd_longitude
+          - ctd_latitude
           invert: true
           kind: line
           shared_axes: true
@@ -1132,7 +1132,7 @@ entries:
           y:
           - temp
           - salt
-      urlpath: https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -1142,7 +1142,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(ba93610366e8b517)}'
+      - - '{data(c273bdad8303c078)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -1165,12 +1165,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - ctd_longitude
           - date_time
-          - ctd_latitude
           - temp
-          - pressure
           - station_number
+          - pressure
+          - ctd_longitude
+          - ctd_latitude
           invert: true
           kind: line
           shared_axes: true
@@ -1182,7 +1182,7 @@ entries:
           y:
           - temp
           - salt
-      urlpath: https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -1192,7 +1192,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(ba93610366e8b517)}'
+      - - '{data(c273bdad8303c078)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -1215,12 +1215,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - ctd_longitude
           - date_time
-          - ctd_latitude
           - temp
-          - pressure
           - station_number
+          - pressure
+          - ctd_longitude
+          - ctd_latitude
           invert: true
           kind: line
           shared_axes: true
@@ -1232,7 +1232,7 @@ entries:
           y:
           - temp
           - salt
-      urlpath: https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -1242,7 +1242,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(ba93610366e8b517)}'
+      - - '{data(c273bdad8303c078)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -1265,12 +1265,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - ctd_longitude
           - date_time
-          - ctd_latitude
           - temp
-          - pressure
           - station_number
+          - pressure
+          - ctd_longitude
+          - ctd_latitude
           invert: true
           kind: line
           shared_axes: true
@@ -1282,7 +1282,7 @@ entries:
           y:
           - temp
           - salt
-      urlpath: https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -1292,7 +1292,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(ba93610366e8b517)}'
+      - - '{data(c273bdad8303c078)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -1315,12 +1315,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - ctd_longitude
           - date_time
-          - ctd_latitude
           - temp
-          - pressure
           - station_number
+          - pressure
+          - ctd_longitude
+          - ctd_latitude
           invert: true
           kind: line
           shared_axes: true
@@ -1332,7 +1332,7 @@ entries:
           y:
           - temp
           - salt
-      urlpath: https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -1342,7 +1342,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(ba93610366e8b517)}'
+      - - '{data(c273bdad8303c078)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -1365,12 +1365,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - ctd_longitude
           - date_time
-          - ctd_latitude
           - temp
-          - pressure
           - station_number
+          - pressure
+          - ctd_longitude
+          - ctd_latitude
           invert: true
           kind: line
           shared_axes: true
@@ -1382,7 +1382,7 @@ entries:
           y:
           - temp
           - salt
-      urlpath: https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -1392,7 +1392,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(ba93610366e8b517)}'
+      - - '{data(c273bdad8303c078)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -1415,12 +1415,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - ctd_longitude
           - date_time
-          - ctd_latitude
           - temp
-          - pressure
           - station_number
+          - pressure
+          - ctd_longitude
+          - ctd_latitude
           invert: true
           kind: line
           shared_axes: true
@@ -1432,7 +1432,7 @@ entries:
           y:
           - temp
           - salt
-      urlpath: https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -1442,7 +1442,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(ba93610366e8b517)}'
+      - - '{data(c273bdad8303c078)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -1465,12 +1465,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - ctd_longitude
           - date_time
-          - ctd_latitude
           - temp
-          - pressure
           - station_number
+          - pressure
+          - ctd_longitude
+          - ctd_latitude
           invert: true
           kind: line
           shared_axes: true
@@ -1482,7 +1482,7 @@ entries:
           y:
           - temp
           - salt
-      urlpath: https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -1492,7 +1492,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(ba93610366e8b517)}'
+      - - '{data(c273bdad8303c078)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -1515,12 +1515,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - ctd_longitude
           - date_time
-          - ctd_latitude
           - temp
-          - pressure
           - station_number
+          - pressure
+          - ctd_longitude
+          - ctd_latitude
           invert: true
           kind: line
           shared_axes: true
@@ -1532,7 +1532,7 @@ entries:
           y:
           - temp
           - salt
-      urlpath: https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -1542,7 +1542,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(ba93610366e8b517)}'
+      - - '{data(c273bdad8303c078)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -1565,12 +1565,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - ctd_longitude
           - date_time
-          - ctd_latitude
           - temp
-          - pressure
           - station_number
+          - pressure
+          - ctd_longitude
+          - ctd_latitude
           invert: true
           kind: line
           shared_axes: true
@@ -1582,7 +1582,7 @@ entries:
           y:
           - temp
           - salt
-      urlpath: https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -1592,7 +1592,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(ba93610366e8b517)}'
+      - - '{data(c273bdad8303c078)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -1615,12 +1615,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - ctd_longitude
           - date_time
-          - ctd_latitude
           - temp
-          - pressure
           - station_number
+          - pressure
+          - ctd_longitude
+          - ctd_latitude
           invert: true
           kind: line
           shared_axes: true
@@ -1632,7 +1632,7 @@ entries:
           y:
           - temp
           - salt
-      urlpath: https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -1642,7 +1642,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(ba93610366e8b517)}'
+      - - '{data(c273bdad8303c078)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -1665,12 +1665,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - ctd_longitude
           - date_time
-          - ctd_latitude
           - temp
-          - pressure
           - station_number
+          - pressure
+          - ctd_longitude
+          - ctd_latitude
           invert: true
           kind: line
           shared_axes: true
@@ -1682,7 +1682,7 @@ entries:
           y:
           - temp
           - salt
-      urlpath: https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -1692,7 +1692,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(ba93610366e8b517)}'
+      - - '{data(c273bdad8303c078)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -1715,12 +1715,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - ctd_longitude
           - date_time
-          - ctd_latitude
           - temp
-          - pressure
           - station_number
+          - pressure
+          - ctd_longitude
+          - ctd_latitude
           invert: true
           kind: line
           shared_axes: true
@@ -1732,7 +1732,7 @@ entries:
           y:
           - temp
           - salt
-      urlpath: https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -1742,7 +1742,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(ba93610366e8b517)}'
+      - - '{data(c273bdad8303c078)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -1765,12 +1765,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - ctd_longitude
           - date_time
-          - ctd_latitude
           - temp
-          - pressure
           - station_number
+          - pressure
+          - ctd_longitude
+          - ctd_latitude
           invert: true
           kind: line
           shared_axes: true
@@ -1782,7 +1782,7 @@ entries:
           y:
           - temp
           - salt
-      urlpath: https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -1792,7 +1792,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(ba93610366e8b517)}'
+      - - '{data(c273bdad8303c078)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -1815,12 +1815,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - ctd_longitude
           - date_time
-          - ctd_latitude
           - temp
-          - pressure
           - station_number
+          - pressure
+          - ctd_longitude
+          - ctd_latitude
           invert: true
           kind: line
           shared_axes: true
@@ -1832,7 +1832,7 @@ entries:
           y:
           - temp
           - salt
-      urlpath: https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -1842,7 +1842,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(ba93610366e8b517)}'
+      - - '{data(c273bdad8303c078)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -1865,12 +1865,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - ctd_longitude
           - date_time
-          - ctd_latitude
           - temp
-          - pressure
           - station_number
+          - pressure
+          - ctd_longitude
+          - ctd_latitude
           invert: true
           kind: line
           shared_axes: true
@@ -1882,7 +1882,7 @@ entries:
           y:
           - temp
           - salt
-      urlpath: https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -1892,7 +1892,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(ba93610366e8b517)}'
+      - - '{data(c273bdad8303c078)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -1915,12 +1915,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - ctd_longitude
           - date_time
-          - ctd_latitude
           - temp
-          - pressure
           - station_number
+          - pressure
+          - ctd_longitude
+          - ctd_latitude
           invert: true
           kind: line
           shared_axes: true
@@ -1932,7 +1932,7 @@ entries:
           y:
           - temp
           - salt
-      urlpath: https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -1942,7 +1942,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(ba93610366e8b517)}'
+      - - '{data(c273bdad8303c078)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -1965,12 +1965,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - ctd_longitude
           - date_time
-          - ctd_latitude
           - temp
-          - pressure
           - station_number
+          - pressure
+          - ctd_longitude
+          - ctd_latitude
           invert: true
           kind: line
           shared_axes: true
@@ -1982,7 +1982,7 @@ entries:
           y:
           - temp
           - salt
-      urlpath: https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -1992,7 +1992,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(ba93610366e8b517)}'
+      - - '{data(c273bdad8303c078)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -2015,12 +2015,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - ctd_longitude
           - date_time
-          - ctd_latitude
           - temp
-          - pressure
           - station_number
+          - pressure
+          - ctd_longitude
+          - ctd_latitude
           invert: true
           kind: line
           shared_axes: true
@@ -2032,7 +2032,7 @@ entries:
           y:
           - temp
           - salt
-      urlpath: https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -2042,7 +2042,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(ba93610366e8b517)}'
+      - - '{data(c273bdad8303c078)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -2065,12 +2065,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - ctd_longitude
           - date_time
-          - ctd_latitude
           - temp
-          - pressure
           - station_number
+          - pressure
+          - ctd_longitude
+          - ctd_latitude
           invert: true
           kind: line
           shared_axes: true
@@ -2082,7 +2082,7 @@ entries:
           y:
           - temp
           - salt
-      urlpath: https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -2092,7 +2092,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(ba93610366e8b517)}'
+      - - '{data(c273bdad8303c078)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -2115,12 +2115,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - ctd_longitude
           - date_time
-          - ctd_latitude
           - temp
-          - pressure
           - station_number
+          - pressure
+          - ctd_longitude
+          - ctd_latitude
           invert: true
           kind: line
           shared_axes: true
@@ -2132,7 +2132,7 @@ entries:
           y:
           - temp
           - salt
-      urlpath: https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -2142,7 +2142,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(ba93610366e8b517)}'
+      - - '{data(c273bdad8303c078)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -2165,12 +2165,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - ctd_longitude
           - date_time
-          - ctd_latitude
           - temp
-          - pressure
           - station_number
+          - pressure
+          - ctd_longitude
+          - ctd_latitude
           invert: true
           kind: line
           shared_axes: true
@@ -2182,7 +2182,7 @@ entries:
           y:
           - temp
           - salt
-      urlpath: https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -2192,7 +2192,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(ba93610366e8b517)}'
+      - - '{data(c273bdad8303c078)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -2215,12 +2215,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - ctd_longitude
           - date_time
-          - ctd_latitude
           - temp
-          - pressure
           - station_number
+          - pressure
+          - ctd_longitude
+          - ctd_latitude
           invert: true
           kind: line
           shared_axes: true
@@ -2232,7 +2232,7 @@ entries:
           y:
           - temp
           - salt
-      urlpath: https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -2242,7 +2242,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(ba93610366e8b517)}'
+      - - '{data(c273bdad8303c078)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -2265,12 +2265,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - ctd_longitude
           - date_time
-          - ctd_latitude
           - temp
-          - pressure
           - station_number
+          - pressure
+          - ctd_longitude
+          - ctd_latitude
           invert: true
           kind: line
           shared_axes: true
@@ -2282,7 +2282,7 @@ entries:
           y:
           - temp
           - salt
-      urlpath: https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -2292,7 +2292,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(ba93610366e8b517)}'
+      - - '{data(c273bdad8303c078)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -2315,12 +2315,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - ctd_longitude
           - date_time
-          - ctd_latitude
           - temp
-          - pressure
           - station_number
+          - pressure
+          - ctd_longitude
+          - ctd_latitude
           invert: true
           kind: line
           shared_axes: true
@@ -2332,7 +2332,7 @@ entries:
           y:
           - temp
           - salt
-      urlpath: https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -2342,7 +2342,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(ba93610366e8b517)}'
+      - - '{data(c273bdad8303c078)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -2365,12 +2365,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - ctd_longitude
           - date_time
-          - ctd_latitude
           - temp
-          - pressure
           - station_number
+          - pressure
+          - ctd_longitude
+          - ctd_latitude
           invert: true
           kind: line
           shared_axes: true
@@ -2382,7 +2382,7 @@ entries:
           y:
           - temp
           - salt
-      urlpath: https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -2392,7 +2392,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(ba93610366e8b517)}'
+      - - '{data(c273bdad8303c078)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -2415,12 +2415,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - ctd_longitude
           - date_time
-          - ctd_latitude
           - temp
-          - pressure
           - station_number
+          - pressure
+          - ctd_longitude
+          - ctd_latitude
           invert: true
           kind: line
           shared_axes: true
@@ -2432,7 +2432,7 @@ entries:
           y:
           - temp
           - salt
-      urlpath: https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -2442,7 +2442,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(ba93610366e8b517)}'
+      - - '{data(c273bdad8303c078)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -2465,12 +2465,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - ctd_longitude
           - date_time
-          - ctd_latitude
           - temp
-          - pressure
           - station_number
+          - pressure
+          - ctd_longitude
+          - ctd_latitude
           invert: true
           kind: line
           shared_axes: true
@@ -2482,7 +2482,7 @@ entries:
           y:
           - temp
           - salt
-      urlpath: https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -2492,7 +2492,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(ba93610366e8b517)}'
+      - - '{data(c273bdad8303c078)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -2515,12 +2515,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - ctd_longitude
           - date_time
-          - ctd_latitude
           - temp
-          - pressure
           - station_number
+          - pressure
+          - ctd_longitude
+          - ctd_latitude
           invert: true
           kind: line
           shared_axes: true
@@ -2532,7 +2532,7 @@ entries:
           y:
           - temp
           - salt
-      urlpath: https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -2542,7 +2542,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(ba93610366e8b517)}'
+      - - '{data(c273bdad8303c078)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -2565,12 +2565,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - ctd_longitude
           - date_time
-          - ctd_latitude
           - temp
-          - pressure
           - station_number
+          - pressure
+          - ctd_longitude
+          - ctd_latitude
           invert: true
           kind: line
           shared_axes: true
@@ -2582,7 +2582,7 @@ entries:
           y:
           - temp
           - salt
-      urlpath: https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -2592,7 +2592,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(ba93610366e8b517)}'
+      - - '{data(c273bdad8303c078)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -2615,12 +2615,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - ctd_longitude
           - date_time
-          - ctd_latitude
           - temp
-          - pressure
           - station_number
+          - pressure
+          - ctd_longitude
+          - ctd_latitude
           invert: true
           kind: line
           shared_axes: true
@@ -2632,7 +2632,7 @@ entries:
           y:
           - temp
           - salt
-      urlpath: https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -2642,7 +2642,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(ba93610366e8b517)}'
+      - - '{data(c273bdad8303c078)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -2665,12 +2665,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - ctd_longitude
           - date_time
-          - ctd_latitude
           - temp
-          - pressure
           - station_number
+          - pressure
+          - ctd_longitude
+          - ctd_latitude
           invert: true
           kind: line
           shared_axes: true
@@ -2682,7 +2682,7 @@ entries:
           y:
           - temp
           - salt
-      urlpath: https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -2692,7 +2692,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(ba93610366e8b517)}'
+      - - '{data(c273bdad8303c078)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -2715,12 +2715,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - ctd_longitude
           - date_time
-          - ctd_latitude
           - temp
-          - pressure
           - station_number
+          - pressure
+          - ctd_longitude
+          - ctd_latitude
           invert: true
           kind: line
           shared_axes: true
@@ -2732,7 +2732,7 @@ entries:
           y:
           - temp
           - salt
-      urlpath: https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -2742,7 +2742,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(ba93610366e8b517)}'
+      - - '{data(c273bdad8303c078)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -2765,12 +2765,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - ctd_longitude
           - date_time
-          - ctd_latitude
           - temp
-          - pressure
           - station_number
+          - pressure
+          - ctd_longitude
+          - ctd_latitude
           invert: true
           kind: line
           shared_axes: true
@@ -2782,7 +2782,7 @@ entries:
           y:
           - temp
           - salt
-      urlpath: https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -2792,7 +2792,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(ba93610366e8b517)}'
+      - - '{data(c273bdad8303c078)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -2815,12 +2815,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - ctd_longitude
           - date_time
-          - ctd_latitude
           - temp
-          - pressure
           - station_number
+          - pressure
+          - ctd_longitude
+          - ctd_latitude
           invert: true
           kind: line
           shared_axes: true
@@ -2832,7 +2832,7 @@ entries:
           y:
           - temp
           - salt
-      urlpath: https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -2842,7 +2842,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(ba93610366e8b517)}'
+      - - '{data(c273bdad8303c078)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -2865,12 +2865,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - ctd_longitude
           - date_time
-          - ctd_latitude
           - temp
-          - pressure
           - station_number
+          - pressure
+          - ctd_longitude
+          - ctd_latitude
           invert: true
           kind: line
           shared_axes: true
@@ -2882,7 +2882,7 @@ entries:
           y:
           - temp
           - salt
-      urlpath: https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -2892,7 +2892,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(ba93610366e8b517)}'
+      - - '{data(c273bdad8303c078)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -2915,12 +2915,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - ctd_longitude
           - date_time
-          - ctd_latitude
           - temp
-          - pressure
           - station_number
+          - pressure
+          - ctd_longitude
+          - ctd_latitude
           invert: true
           kind: line
           shared_axes: true
@@ -2932,7 +2932,7 @@ entries:
           y:
           - temp
           - salt
-      urlpath: https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -2942,7 +2942,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(ba93610366e8b517)}'
+      - - '{data(c273bdad8303c078)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -2965,12 +2965,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - ctd_longitude
           - date_time
-          - ctd_latitude
           - temp
-          - pressure
           - station_number
+          - pressure
+          - ctd_longitude
+          - ctd_latitude
           invert: true
           kind: line
           shared_axes: true
@@ -2982,7 +2982,7 @@ entries:
           y:
           - temp
           - salt
-      urlpath: https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -2992,7 +2992,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(ba93610366e8b517)}'
+      - - '{data(c273bdad8303c078)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -3015,12 +3015,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - ctd_longitude
           - date_time
-          - ctd_latitude
           - temp
-          - pressure
           - station_number
+          - pressure
+          - ctd_longitude
+          - ctd_latitude
           invert: true
           kind: line
           shared_axes: true
@@ -3032,7 +3032,7 @@ entries:
           y:
           - temp
           - salt
-      urlpath: https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -3042,7 +3042,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(ba93610366e8b517)}'
+      - - '{data(c273bdad8303c078)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -3065,12 +3065,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - ctd_longitude
           - date_time
-          - ctd_latitude
           - temp
-          - pressure
           - station_number
+          - pressure
+          - ctd_longitude
+          - ctd_latitude
           invert: true
           kind: line
           shared_axes: true
@@ -3082,7 +3082,7 @@ entries:
           y:
           - temp
           - salt
-      urlpath: https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -3092,7 +3092,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(ba93610366e8b517)}'
+      - - '{data(c273bdad8303c078)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -3115,12 +3115,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - ctd_longitude
           - date_time
-          - ctd_latitude
           - temp
-          - pressure
           - station_number
+          - pressure
+          - ctd_longitude
+          - ctd_latitude
           invert: true
           kind: line
           shared_axes: true
@@ -3132,7 +3132,7 @@ entries:
           y:
           - temp
           - salt
-      urlpath: https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -3142,7 +3142,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(ba93610366e8b517)}'
+      - - '{data(c273bdad8303c078)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -3165,12 +3165,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - ctd_longitude
           - date_time
-          - ctd_latitude
           - temp
-          - pressure
           - station_number
+          - pressure
+          - ctd_longitude
+          - ctd_latitude
           invert: true
           kind: line
           shared_axes: true
@@ -3182,7 +3182,7 @@ entries:
           y:
           - temp
           - salt
-      urlpath: https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -3192,7 +3192,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(ba93610366e8b517)}'
+      - - '{data(c273bdad8303c078)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -3215,12 +3215,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - ctd_longitude
           - date_time
-          - ctd_latitude
           - temp
-          - pressure
           - station_number
+          - pressure
+          - ctd_longitude
+          - ctd_latitude
           invert: true
           kind: line
           shared_axes: true
@@ -3232,7 +3232,7 @@ entries:
           y:
           - temp
           - salt
-      urlpath: https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -3242,7 +3242,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(ba93610366e8b517)}'
+      - - '{data(c273bdad8303c078)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -3265,12 +3265,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - ctd_longitude
           - date_time
-          - ctd_latitude
           - temp
-          - pressure
           - station_number
+          - pressure
+          - ctd_longitude
+          - ctd_latitude
           invert: true
           kind: line
           shared_axes: true
@@ -3282,7 +3282,7 @@ entries:
           y:
           - temp
           - salt
-      urlpath: https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -3292,7 +3292,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(ba93610366e8b517)}'
+      - - '{data(c273bdad8303c078)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -3315,12 +3315,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - ctd_longitude
           - date_time
-          - ctd_latitude
           - temp
-          - pressure
           - station_number
+          - pressure
+          - ctd_longitude
+          - ctd_latitude
           invert: true
           kind: line
           shared_axes: true
@@ -3332,7 +3332,7 @@ entries:
           y:
           - temp
           - salt
-      urlpath: https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -3342,7 +3342,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(ba93610366e8b517)}'
+      - - '{data(c273bdad8303c078)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -3365,12 +3365,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - ctd_longitude
           - date_time
-          - ctd_latitude
           - temp
-          - pressure
           - station_number
+          - pressure
+          - ctd_longitude
+          - ctd_latitude
           invert: true
           kind: line
           shared_axes: true
@@ -3382,7 +3382,7 @@ entries:
           y:
           - temp
           - salt
-      urlpath: https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -3392,7 +3392,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(ba93610366e8b517)}'
+      - - '{data(c273bdad8303c078)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -3415,12 +3415,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - ctd_longitude
           - date_time
-          - ctd_latitude
           - temp
-          - pressure
           - station_number
+          - pressure
+          - ctd_longitude
+          - ctd_latitude
           invert: true
           kind: line
           shared_axes: true
@@ -3432,7 +3432,7 @@ entries:
           y:
           - temp
           - salt
-      urlpath: https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -3442,7 +3442,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(ba93610366e8b517)}'
+      - - '{data(c273bdad8303c078)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -3465,12 +3465,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - ctd_longitude
           - date_time
-          - ctd_latitude
           - temp
-          - pressure
           - station_number
+          - pressure
+          - ctd_longitude
+          - ctd_latitude
           invert: true
           kind: line
           shared_axes: true
@@ -3482,7 +3482,7 @@ entries:
           y:
           - temp
           - salt
-      urlpath: https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -3492,7 +3492,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(ba93610366e8b517)}'
+      - - '{data(c273bdad8303c078)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -3515,12 +3515,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - ctd_longitude
           - date_time
-          - ctd_latitude
           - temp
-          - pressure
           - station_number
+          - pressure
+          - ctd_longitude
+          - ctd_latitude
           invert: true
           kind: line
           shared_axes: true
@@ -3532,7 +3532,7 @@ entries:
           y:
           - temp
           - salt
-      urlpath: https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -3542,7 +3542,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(ba93610366e8b517)}'
+      - - '{data(c273bdad8303c078)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -3565,12 +3565,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - ctd_longitude
           - date_time
-          - ctd_latitude
           - temp
-          - pressure
           - station_number
+          - pressure
+          - ctd_longitude
+          - ctd_latitude
           invert: true
           kind: line
           shared_axes: true
@@ -3582,7 +3582,7 @@ entries:
           y:
           - temp
           - salt
-      urlpath: https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -3592,7 +3592,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(ba93610366e8b517)}'
+      - - '{data(c273bdad8303c078)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -3615,12 +3615,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - ctd_longitude
           - date_time
-          - ctd_latitude
           - temp
-          - pressure
           - station_number
+          - pressure
+          - ctd_longitude
+          - ctd_latitude
           invert: true
           kind: line
           shared_axes: true
@@ -3632,7 +3632,7 @@ entries:
           y:
           - temp
           - salt
-      urlpath: https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -3642,7 +3642,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(ba93610366e8b517)}'
+      - - '{data(c273bdad8303c078)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -3665,12 +3665,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - ctd_longitude
           - date_time
-          - ctd_latitude
           - temp
-          - pressure
           - station_number
+          - pressure
+          - ctd_longitude
+          - ctd_latitude
           invert: true
           kind: line
           shared_axes: true
@@ -3682,7 +3682,7 @@ entries:
           y:
           - temp
           - salt
-      urlpath: https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -3692,7 +3692,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(ba93610366e8b517)}'
+      - - '{data(c273bdad8303c078)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -3715,12 +3715,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - ctd_longitude
           - date_time
-          - ctd_latitude
           - temp
-          - pressure
           - station_number
+          - pressure
+          - ctd_longitude
+          - ctd_latitude
           invert: true
           kind: line
           shared_axes: true
@@ -3732,7 +3732,7 @@ entries:
           y:
           - temp
           - salt
-      urlpath: https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -3742,7 +3742,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(ba93610366e8b517)}'
+      - - '{data(c273bdad8303c078)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -3765,12 +3765,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - ctd_longitude
           - date_time
-          - ctd_latitude
           - temp
-          - pressure
           - station_number
+          - pressure
+          - ctd_longitude
+          - ctd_latitude
           invert: true
           kind: line
           shared_axes: true
@@ -3782,7 +3782,7 @@ entries:
           y:
           - temp
           - salt
-      urlpath: https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -3792,7 +3792,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(ba93610366e8b517)}'
+      - - '{data(c273bdad8303c078)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -3815,12 +3815,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - ctd_longitude
           - date_time
-          - ctd_latitude
           - temp
-          - pressure
           - station_number
+          - pressure
+          - ctd_longitude
+          - ctd_latitude
           invert: true
           kind: line
           shared_axes: true
@@ -3832,7 +3832,7 @@ entries:
           y:
           - temp
           - salt
-      urlpath: https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -3842,7 +3842,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(ba93610366e8b517)}'
+      - - '{data(c273bdad8303c078)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -3865,12 +3865,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - ctd_longitude
           - date_time
-          - ctd_latitude
           - temp
-          - pressure
           - station_number
+          - pressure
+          - ctd_longitude
+          - ctd_latitude
           invert: true
           kind: line
           shared_axes: true
@@ -3882,7 +3882,7 @@ entries:
           y:
           - temp
           - salt
-      urlpath: https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -3892,7 +3892,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(ba93610366e8b517)}'
+      - - '{data(c273bdad8303c078)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -3915,12 +3915,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - ctd_longitude
           - date_time
-          - ctd_latitude
           - temp
-          - pressure
           - station_number
+          - pressure
+          - ctd_longitude
+          - ctd_latitude
           invert: true
           kind: line
           shared_axes: true
@@ -3932,7 +3932,7 @@ entries:
           y:
           - temp
           - salt
-      urlpath: https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -3942,7 +3942,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(ba93610366e8b517)}'
+      - - '{data(c273bdad8303c078)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -3965,12 +3965,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - ctd_longitude
           - date_time
-          - ctd_latitude
           - temp
-          - pressure
           - station_number
+          - pressure
+          - ctd_longitude
+          - ctd_latitude
           invert: true
           kind: line
           shared_axes: true
@@ -3982,20 +3982,24 @@ entries:
           y:
           - temp
           - salt
-      urlpath: https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42202136/Arimitsu_CookInlet_CTD.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
-  ba93610366e8b517:
+  c273bdad8303c078:
     kwargs:
       args:
-      - '{data(1ca9f38f945fb11f)}'
+      - '{data(83d6037e9bccdacf)}'
       dtype:
         station_number: '{func(builtins:str)}'
       na_values:
       - '-999'
       parse_dates:
       - 0
+      storage_options:
+        simplecache:
+          cache_storage: /home/kristen/.cache/cook-inlet-catalogs
+          same_names: true
       usecols:
       - date_time
       - station_number

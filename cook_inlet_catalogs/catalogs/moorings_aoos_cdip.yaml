@@ -40,7 +40,7 @@ data:
       maptype: point
       maxLatitude: 59.5973
       maxLongitude: -151.8291
-      maxTime: '2024-07-24T14:45:00Z'
+      maxTime: '2024-09-05T16:45:00Z'
       minLatitude: 59.5973
       minLongitude: -151.8291
       minTime: '2013-07-21T19:22:27Z'
@@ -48,12 +48,12 @@ data:
         data:
           height: 300
           hover_cols:
+          - z
           - time
-          - latitude
           - longitude
           - station
-          - z
           - sea_water_temperature
+          - latitude
           kind: line
           legend: top
           shared_axes: false
@@ -116,12 +116,12 @@ data:
         data:
           height: 300
           hover_cols:
+          - z
           - time
-          - latitude
           - longitude
           - station
-          - z
           - sea_water_temperature
+          - latitude
           kind: line
           legend: top
           shared_axes: false
@@ -184,12 +184,12 @@ data:
         data:
           height: 300
           hover_cols:
+          - z
           - time
-          - latitude
           - longitude
           - station
-          - z
           - sea_water_temperature
+          - latitude
           kind: line
           legend: top
           shared_axes: false
@@ -215,6 +215,9 @@ metadata:
   - temp
   map:
     c: station
+    clabel: ''
+    clim: null
+    cmap: null
     coastline: false
     color: k
     geo: true
@@ -249,7 +252,7 @@ metadata:
   maptype: point
   maxLatitude: 59.7335
   maxLongitude: -151.6953
-  maxTime: '2024-07-24T14:45:00Z'
+  maxTime: '2024-09-05T16:45:00Z'
   minLatitude: 57.4795
   minLongitude: -152.0045
   minTime: '2011-05-09T23:00:27Z'

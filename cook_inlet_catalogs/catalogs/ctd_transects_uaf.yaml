@@ -9,14 +9,28 @@ aliases:
   Transect_08: Transect_08
   Transect_09: Transect_09
 data:
-  36dfdc7aa5208855:
+  0fe743491d86c382:
     datatype: intake.readers.datatypes:CSV
     kwargs:
       storage_options: null
-      url: https://researchworkspace.com/files/42202256/TS%20downcasts.csv
+      url: simplecache://::https://researchworkspace.com/files/42202256/TS%20downcasts.csv
     metadata: {}
     user_parameters: {}
 entries:
+  54d75197e2b76b4c:
+    kwargs:
+      args:
+      - '{data(0fe743491d86c382)}'
+      parse_dates:
+      - date_time
+      storage_options:
+        simplecache:
+          cache_storage: /home/kristen/.cache/cook-inlet-catalogs
+          same_names: true
+    metadata: {}
+    output_instance: pandas:DataFrame
+    reader: intake.readers.readers:PandasCSV
+    user_parameters: {}
   Transect_01:
     kwargs:
       out_instances:
@@ -24,7 +38,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(d3418f3e690c76b1)}'
+      - - '{data(54d75197e2b76b4c)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -56,13 +70,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - date_time
-          - Lat
-          - Station
           - Lon
-          - Pressure
+          - date_time
+          - Station
+          - Lat
           - Temperature
+          - Pressure
+          - distance [km]
           kind: scatter
           shared_axes: false
           title: '2003-08-09 20:36:00'
@@ -76,20 +90,20 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - date_time
-          - Lat
-          - Station
           - Lon
-          - Pressure
+          - date_time
+          - Station
+          - Lat
           - Temperature
+          - Pressure
+          - distance [km]
           kind: scatter
           shared_axes: false
           title: '2003-08-09 20:36:00'
           width: 500
           x: distance [km]
           y: Pressure
-      urlpath: https://researchworkspace.com/files/42202256/TS%20downcasts.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42202256/TS%20downcasts.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -100,7 +114,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(d3418f3e690c76b1)}'
+      - - '{data(54d75197e2b76b4c)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -132,13 +146,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - date_time
-          - Lat
-          - Station
           - Lon
-          - Pressure
+          - date_time
+          - Station
+          - Lat
           - Temperature
+          - Pressure
+          - distance [km]
           kind: scatter
           shared_axes: false
           title: '2003-08-09 23:12:00'
@@ -152,20 +166,20 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - date_time
-          - Lat
-          - Station
           - Lon
-          - Pressure
+          - date_time
+          - Station
+          - Lat
           - Temperature
+          - Pressure
+          - distance [km]
           kind: scatter
           shared_axes: false
           title: '2003-08-09 23:12:00'
           width: 500
           x: distance [km]
           y: Pressure
-      urlpath: https://researchworkspace.com/files/42202256/TS%20downcasts.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42202256/TS%20downcasts.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -176,7 +190,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(d3418f3e690c76b1)}'
+      - - '{data(54d75197e2b76b4c)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -208,13 +222,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - date_time
-          - Lat
-          - Station
           - Lon
-          - Pressure
+          - date_time
+          - Station
+          - Lat
           - Temperature
+          - Pressure
+          - distance [km]
           kind: scatter
           shared_axes: false
           title: '2003-08-10 01:35:00'
@@ -228,20 +242,20 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - date_time
-          - Lat
-          - Station
           - Lon
-          - Pressure
+          - date_time
+          - Station
+          - Lat
           - Temperature
+          - Pressure
+          - distance [km]
           kind: scatter
           shared_axes: false
           title: '2003-08-10 01:35:00'
           width: 500
           x: distance [km]
           y: Pressure
-      urlpath: https://researchworkspace.com/files/42202256/TS%20downcasts.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42202256/TS%20downcasts.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -252,7 +266,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(d3418f3e690c76b1)}'
+      - - '{data(54d75197e2b76b4c)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -284,13 +298,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - date_time
-          - Lat
-          - Station
           - Lon
-          - Pressure
+          - date_time
+          - Station
+          - Lat
           - Temperature
+          - Pressure
+          - distance [km]
           kind: scatter
           shared_axes: false
           title: '2003-08-10 04:14:00'
@@ -304,20 +318,20 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - date_time
-          - Lat
-          - Station
           - Lon
-          - Pressure
+          - date_time
+          - Station
+          - Lat
           - Temperature
+          - Pressure
+          - distance [km]
           kind: scatter
           shared_axes: false
           title: '2003-08-10 04:14:00'
           width: 500
           x: distance [km]
           y: Pressure
-      urlpath: https://researchworkspace.com/files/42202256/TS%20downcasts.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42202256/TS%20downcasts.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -328,7 +342,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(d3418f3e690c76b1)}'
+      - - '{data(54d75197e2b76b4c)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -360,13 +374,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - date_time
-          - Lat
-          - Station
           - Lon
-          - Pressure
+          - date_time
+          - Station
+          - Lat
           - Temperature
+          - Pressure
+          - distance [km]
           kind: scatter
           shared_axes: false
           title: '2003-08-10 07:16:00'
@@ -380,20 +394,20 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - date_time
-          - Lat
-          - Station
           - Lon
-          - Pressure
+          - date_time
+          - Station
+          - Lat
           - Temperature
+          - Pressure
+          - distance [km]
           kind: scatter
           shared_axes: false
           title: '2003-08-10 07:16:00'
           width: 500
           x: distance [km]
           y: Pressure
-      urlpath: https://researchworkspace.com/files/42202256/TS%20downcasts.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42202256/TS%20downcasts.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -404,7 +418,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(d3418f3e690c76b1)}'
+      - - '{data(54d75197e2b76b4c)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -436,13 +450,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - date_time
-          - Lat
-          - Station
           - Lon
-          - Pressure
+          - date_time
+          - Station
+          - Lat
           - Temperature
+          - Pressure
+          - distance [km]
           kind: scatter
           shared_axes: false
           title: '2003-08-10 10:11:00'
@@ -456,20 +470,20 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - date_time
-          - Lat
-          - Station
           - Lon
-          - Pressure
+          - date_time
+          - Station
+          - Lat
           - Temperature
+          - Pressure
+          - distance [km]
           kind: scatter
           shared_axes: false
           title: '2003-08-10 10:11:00'
           width: 500
           x: distance [km]
           y: Pressure
-      urlpath: https://researchworkspace.com/files/42202256/TS%20downcasts.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42202256/TS%20downcasts.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -480,7 +494,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(d3418f3e690c76b1)}'
+      - - '{data(54d75197e2b76b4c)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -512,13 +526,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - date_time
-          - Lat
-          - Station
           - Lon
-          - Pressure
+          - date_time
+          - Station
+          - Lat
           - Temperature
+          - Pressure
+          - distance [km]
           kind: scatter
           shared_axes: false
           title: '2003-08-10 14:01:00'
@@ -532,20 +546,20 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - date_time
-          - Lat
-          - Station
           - Lon
-          - Pressure
+          - date_time
+          - Station
+          - Lat
           - Temperature
+          - Pressure
+          - distance [km]
           kind: scatter
           shared_axes: false
           title: '2003-08-10 14:01:00'
           width: 500
           x: distance [km]
           y: Pressure
-      urlpath: https://researchworkspace.com/files/42202256/TS%20downcasts.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42202256/TS%20downcasts.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -556,7 +570,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(d3418f3e690c76b1)}'
+      - - '{data(54d75197e2b76b4c)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -588,13 +602,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - date_time
-          - Lat
-          - Station
           - Lon
-          - Pressure
+          - date_time
+          - Station
+          - Lat
           - Temperature
+          - Pressure
+          - distance [km]
           kind: scatter
           shared_axes: false
           title: '2003-08-10 17:09:00'
@@ -608,20 +622,20 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - date_time
-          - Lat
-          - Station
           - Lon
-          - Pressure
+          - date_time
+          - Station
+          - Lat
           - Temperature
+          - Pressure
+          - distance [km]
           kind: scatter
           shared_axes: false
           title: '2003-08-10 17:09:00'
           width: 500
           x: distance [km]
           y: Pressure
-      urlpath: https://researchworkspace.com/files/42202256/TS%20downcasts.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42202256/TS%20downcasts.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -632,7 +646,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(d3418f3e690c76b1)}'
+      - - '{data(54d75197e2b76b4c)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -664,13 +678,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - date_time
-          - Lat
-          - Station
           - Lon
-          - Pressure
+          - date_time
+          - Station
+          - Lat
           - Temperature
+          - Pressure
+          - distance [km]
           kind: scatter
           shared_axes: false
           title: '2003-08-10 20:26:00'
@@ -684,32 +698,22 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - distance [km]
-          - date_time
-          - Lat
-          - Station
           - Lon
-          - Pressure
+          - date_time
+          - Station
+          - Lat
           - Temperature
+          - Pressure
+          - distance [km]
           kind: scatter
           shared_axes: false
           title: '2003-08-10 20:26:00'
           width: 500
           x: distance [km]
           y: Pressure
-      urlpath: https://researchworkspace.com/files/42202256/TS%20downcasts.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42202256/TS%20downcasts.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
-    user_parameters: {}
-  d3418f3e690c76b1:
-    kwargs:
-      args:
-      - '{data(36dfdc7aa5208855)}'
-      parse_dates:
-      - date_time
-    metadata: {}
-    output_instance: pandas:DataFrame
-    reader: intake.readers.readers:PandasCSV
     user_parameters: {}
 metadata:
   featuretype: trajectoryProfile

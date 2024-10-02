@@ -116,11 +116,11 @@ aliases:
   '9082122': '9082122'
   '9082123': '9082123'
 data:
-  c65d462627c1676b:
+  98fd21a75789a6e9:
     datatype: intake.readers.datatypes:CSV
     kwargs:
       storage_options: null
-      url: https://researchworkspace.com/files/42400652/Piatt1999.csv
+      url: simplecache://::https://researchworkspace.com/files/42400652/Piatt1999.csv
     metadata: {}
     user_parameters: {}
 entries:
@@ -133,7 +133,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(12495833aa6810fd)}'
+      - - '{data(d94dabfd9f4efe52)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -144,7 +144,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(bf9ba6d3a8b7d215)}'
+        - datetime: '{data(1d75669f67afdafe)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -172,12 +172,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Depth [m]
-          - Lat
-          - datetime
-          - Temperature [C]
-          - Station
           - Lon
+          - Station
+          - datetime
+          - Lat
+          - Depth [m]
+          - Temperature [C]
           invert: true
           kind: line
           shared_axes: true
@@ -189,7 +189,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: https://researchworkspace.com/files/42400652/Piatt1999.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42400652/Piatt1999.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -202,7 +202,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(12495833aa6810fd)}'
+      - - '{data(d94dabfd9f4efe52)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -213,7 +213,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(bf9ba6d3a8b7d215)}'
+        - datetime: '{data(1d75669f67afdafe)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -241,12 +241,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Depth [m]
-          - Lat
-          - datetime
-          - Temperature [C]
-          - Station
           - Lon
+          - Station
+          - datetime
+          - Lat
+          - Depth [m]
+          - Temperature [C]
           invert: true
           kind: line
           shared_axes: true
@@ -258,7 +258,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: https://researchworkspace.com/files/42400652/Piatt1999.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42400652/Piatt1999.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -271,7 +271,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(12495833aa6810fd)}'
+      - - '{data(d94dabfd9f4efe52)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -282,7 +282,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(bf9ba6d3a8b7d215)}'
+        - datetime: '{data(1d75669f67afdafe)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -310,12 +310,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Depth [m]
-          - Lat
-          - datetime
-          - Temperature [C]
-          - Station
           - Lon
+          - Station
+          - datetime
+          - Lat
+          - Depth [m]
+          - Temperature [C]
           invert: true
           kind: line
           shared_axes: true
@@ -327,7 +327,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: https://researchworkspace.com/files/42400652/Piatt1999.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42400652/Piatt1999.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -340,7 +340,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(12495833aa6810fd)}'
+      - - '{data(d94dabfd9f4efe52)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -351,7 +351,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(bf9ba6d3a8b7d215)}'
+        - datetime: '{data(1d75669f67afdafe)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -379,12 +379,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Depth [m]
-          - Lat
-          - datetime
-          - Temperature [C]
-          - Station
           - Lon
+          - Station
+          - datetime
+          - Lat
+          - Depth [m]
+          - Temperature [C]
           invert: true
           kind: line
           shared_axes: true
@@ -396,7 +396,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: https://researchworkspace.com/files/42400652/Piatt1999.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42400652/Piatt1999.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -409,7 +409,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(12495833aa6810fd)}'
+      - - '{data(d94dabfd9f4efe52)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -420,7 +420,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(bf9ba6d3a8b7d215)}'
+        - datetime: '{data(1d75669f67afdafe)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -448,12 +448,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Depth [m]
-          - Lat
-          - datetime
-          - Temperature [C]
-          - Station
           - Lon
+          - Station
+          - datetime
+          - Lat
+          - Depth [m]
+          - Temperature [C]
           invert: true
           kind: line
           shared_axes: true
@@ -465,7 +465,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: https://researchworkspace.com/files/42400652/Piatt1999.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42400652/Piatt1999.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -478,7 +478,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(12495833aa6810fd)}'
+      - - '{data(d94dabfd9f4efe52)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -489,7 +489,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(bf9ba6d3a8b7d215)}'
+        - datetime: '{data(1d75669f67afdafe)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -517,12 +517,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Depth [m]
-          - Lat
-          - datetime
-          - Temperature [C]
-          - Station
           - Lon
+          - Station
+          - datetime
+          - Lat
+          - Depth [m]
+          - Temperature [C]
           invert: true
           kind: line
           shared_axes: true
@@ -534,7 +534,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: https://researchworkspace.com/files/42400652/Piatt1999.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42400652/Piatt1999.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -547,7 +547,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(12495833aa6810fd)}'
+      - - '{data(d94dabfd9f4efe52)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -558,7 +558,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(bf9ba6d3a8b7d215)}'
+        - datetime: '{data(1d75669f67afdafe)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -586,12 +586,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Depth [m]
-          - Lat
-          - datetime
-          - Temperature [C]
-          - Station
           - Lon
+          - Station
+          - datetime
+          - Lat
+          - Depth [m]
+          - Temperature [C]
           invert: true
           kind: line
           shared_axes: true
@@ -603,7 +603,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: https://researchworkspace.com/files/42400652/Piatt1999.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42400652/Piatt1999.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -616,7 +616,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(12495833aa6810fd)}'
+      - - '{data(d94dabfd9f4efe52)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -627,7 +627,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(bf9ba6d3a8b7d215)}'
+        - datetime: '{data(1d75669f67afdafe)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -655,12 +655,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Depth [m]
-          - Lat
-          - datetime
-          - Temperature [C]
-          - Station
           - Lon
+          - Station
+          - datetime
+          - Lat
+          - Depth [m]
+          - Temperature [C]
           invert: true
           kind: line
           shared_axes: true
@@ -672,7 +672,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: https://researchworkspace.com/files/42400652/Piatt1999.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42400652/Piatt1999.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -685,7 +685,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(12495833aa6810fd)}'
+      - - '{data(d94dabfd9f4efe52)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -696,7 +696,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(bf9ba6d3a8b7d215)}'
+        - datetime: '{data(1d75669f67afdafe)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -724,12 +724,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Depth [m]
-          - Lat
-          - datetime
-          - Temperature [C]
-          - Station
           - Lon
+          - Station
+          - datetime
+          - Lat
+          - Depth [m]
+          - Temperature [C]
           invert: true
           kind: line
           shared_axes: true
@@ -741,7 +741,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: https://researchworkspace.com/files/42400652/Piatt1999.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42400652/Piatt1999.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -754,7 +754,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(12495833aa6810fd)}'
+      - - '{data(d94dabfd9f4efe52)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -765,7 +765,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(bf9ba6d3a8b7d215)}'
+        - datetime: '{data(1d75669f67afdafe)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -793,12 +793,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Depth [m]
-          - Lat
-          - datetime
-          - Temperature [C]
-          - Station
           - Lon
+          - Station
+          - datetime
+          - Lat
+          - Depth [m]
+          - Temperature [C]
           invert: true
           kind: line
           shared_axes: true
@@ -810,7 +810,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: https://researchworkspace.com/files/42400652/Piatt1999.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42400652/Piatt1999.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -823,7 +823,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(12495833aa6810fd)}'
+      - - '{data(d94dabfd9f4efe52)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -834,7 +834,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(bf9ba6d3a8b7d215)}'
+        - datetime: '{data(1d75669f67afdafe)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -862,12 +862,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Depth [m]
-          - Lat
-          - datetime
-          - Temperature [C]
-          - Station
           - Lon
+          - Station
+          - datetime
+          - Lat
+          - Depth [m]
+          - Temperature [C]
           invert: true
           kind: line
           shared_axes: true
@@ -879,7 +879,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: https://researchworkspace.com/files/42400652/Piatt1999.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42400652/Piatt1999.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -892,7 +892,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(12495833aa6810fd)}'
+      - - '{data(d94dabfd9f4efe52)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -903,7 +903,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(bf9ba6d3a8b7d215)}'
+        - datetime: '{data(1d75669f67afdafe)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -931,12 +931,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Depth [m]
-          - Lat
-          - datetime
-          - Temperature [C]
-          - Station
           - Lon
+          - Station
+          - datetime
+          - Lat
+          - Depth [m]
+          - Temperature [C]
           invert: true
           kind: line
           shared_axes: true
@@ -948,7 +948,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: https://researchworkspace.com/files/42400652/Piatt1999.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42400652/Piatt1999.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -961,7 +961,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(12495833aa6810fd)}'
+      - - '{data(d94dabfd9f4efe52)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -972,7 +972,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(bf9ba6d3a8b7d215)}'
+        - datetime: '{data(1d75669f67afdafe)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -1000,12 +1000,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Depth [m]
-          - Lat
-          - datetime
-          - Temperature [C]
-          - Station
           - Lon
+          - Station
+          - datetime
+          - Lat
+          - Depth [m]
+          - Temperature [C]
           invert: true
           kind: line
           shared_axes: true
@@ -1017,7 +1017,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: https://researchworkspace.com/files/42400652/Piatt1999.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42400652/Piatt1999.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -1030,7 +1030,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(12495833aa6810fd)}'
+      - - '{data(d94dabfd9f4efe52)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -1041,7 +1041,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(bf9ba6d3a8b7d215)}'
+        - datetime: '{data(1d75669f67afdafe)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -1069,12 +1069,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Depth [m]
-          - Lat
-          - datetime
-          - Temperature [C]
-          - Station
           - Lon
+          - Station
+          - datetime
+          - Lat
+          - Depth [m]
+          - Temperature [C]
           invert: true
           kind: line
           shared_axes: true
@@ -1086,7 +1086,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: https://researchworkspace.com/files/42400652/Piatt1999.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42400652/Piatt1999.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -1099,7 +1099,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(12495833aa6810fd)}'
+      - - '{data(d94dabfd9f4efe52)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -1110,7 +1110,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(bf9ba6d3a8b7d215)}'
+        - datetime: '{data(1d75669f67afdafe)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -1138,12 +1138,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Depth [m]
-          - Lat
-          - datetime
-          - Temperature [C]
-          - Station
           - Lon
+          - Station
+          - datetime
+          - Lat
+          - Depth [m]
+          - Temperature [C]
           invert: true
           kind: line
           shared_axes: true
@@ -1155,53 +1155,32 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: https://researchworkspace.com/files/42400652/Piatt1999.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42400652/Piatt1999.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
-  12495833aa6810fd:
+  1d75669f67afdafe:
     kwargs:
-      args:
-      - '{data(c65d462627c1676b)}'
-      dtype:
-        Station: '{func(builtins:str)}'
-        hh:mm: '{func(builtins:str)}'
-        mon/day/yr: '{func(builtins:str)}'
-      encoding: unicode_escape
-      header: 0
-      names:
-      - Cruise
-      - Station
-      - Type
-      - mon/day/yr
-      - hh:mm
-      - Lon
-      - Lat
-      - Bot. Depth
-      - Depth [m]
-      - Temperature [C]
-      - Salinity [psu]
-      - Sigma
-      - Backscatter
-      - CHL
-      - empty
-      usecols:
-      - Cruise
-      - Station
-      - Type
-      - mon/day/yr
-      - hh:mm
-      - Lon
-      - Lat
-      - Bot. Depth
-      - Depth [m]
-      - Temperature [C]
-      - Salinity [psu]
-      - Backscatter
-      - CHL
+      out_instances:
+      - pandas:DataFrame
+      - pandas:DataFrame
+      - pandas:DataFrame
+      steps:
+      - - '{data(d94dabfd9f4efe52)}'
+        - []
+        - {}
+      - - '{func(intake.readers.transform:Method)}'
+        - []
+        - columns:
+            hh:mm: time
+            mon/day/yr: date
+          method_name: rename
+      - - '{func(intake.readers.convert:GenericFunc)}'
+        - []
+        - func: '{func(cook_inlet_catalogs.utils:parse_date_time)}'
     metadata: {}
     output_instance: pandas:DataFrame
-    reader: intake.readers.readers:PandasCSV
+    reader: intake.readers.convert:Pipeline
     user_parameters: {}
   '9051600':
     kwargs:
@@ -1212,7 +1191,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(12495833aa6810fd)}'
+      - - '{data(d94dabfd9f4efe52)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -1223,7 +1202,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(bf9ba6d3a8b7d215)}'
+        - datetime: '{data(1d75669f67afdafe)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -1251,12 +1230,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Depth [m]
-          - Lat
-          - datetime
-          - Temperature [C]
-          - Station
           - Lon
+          - Station
+          - datetime
+          - Lat
+          - Depth [m]
+          - Temperature [C]
           invert: true
           kind: line
           shared_axes: true
@@ -1268,7 +1247,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: https://researchworkspace.com/files/42400652/Piatt1999.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42400652/Piatt1999.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -1281,7 +1260,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(12495833aa6810fd)}'
+      - - '{data(d94dabfd9f4efe52)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -1292,7 +1271,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(bf9ba6d3a8b7d215)}'
+        - datetime: '{data(1d75669f67afdafe)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -1320,12 +1299,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Depth [m]
-          - Lat
-          - datetime
-          - Temperature [C]
-          - Station
           - Lon
+          - Station
+          - datetime
+          - Lat
+          - Depth [m]
+          - Temperature [C]
           invert: true
           kind: line
           shared_axes: true
@@ -1337,7 +1316,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: https://researchworkspace.com/files/42400652/Piatt1999.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42400652/Piatt1999.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -1350,7 +1329,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(12495833aa6810fd)}'
+      - - '{data(d94dabfd9f4efe52)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -1361,7 +1340,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(bf9ba6d3a8b7d215)}'
+        - datetime: '{data(1d75669f67afdafe)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -1389,12 +1368,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Depth [m]
-          - Lat
-          - datetime
-          - Temperature [C]
-          - Station
           - Lon
+          - Station
+          - datetime
+          - Lat
+          - Depth [m]
+          - Temperature [C]
           invert: true
           kind: line
           shared_axes: true
@@ -1406,7 +1385,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: https://researchworkspace.com/files/42400652/Piatt1999.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42400652/Piatt1999.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -1419,7 +1398,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(12495833aa6810fd)}'
+      - - '{data(d94dabfd9f4efe52)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -1430,7 +1409,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(bf9ba6d3a8b7d215)}'
+        - datetime: '{data(1d75669f67afdafe)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -1458,12 +1437,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Depth [m]
-          - Lat
-          - datetime
-          - Temperature [C]
-          - Station
           - Lon
+          - Station
+          - datetime
+          - Lat
+          - Depth [m]
+          - Temperature [C]
           invert: true
           kind: line
           shared_axes: true
@@ -1475,7 +1454,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: https://researchworkspace.com/files/42400652/Piatt1999.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42400652/Piatt1999.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -1488,7 +1467,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(12495833aa6810fd)}'
+      - - '{data(d94dabfd9f4efe52)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -1499,7 +1478,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(bf9ba6d3a8b7d215)}'
+        - datetime: '{data(1d75669f67afdafe)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -1527,12 +1506,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Depth [m]
-          - Lat
-          - datetime
-          - Temperature [C]
-          - Station
           - Lon
+          - Station
+          - datetime
+          - Lat
+          - Depth [m]
+          - Temperature [C]
           invert: true
           kind: line
           shared_axes: true
@@ -1544,7 +1523,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: https://researchworkspace.com/files/42400652/Piatt1999.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42400652/Piatt1999.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -1557,7 +1536,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(12495833aa6810fd)}'
+      - - '{data(d94dabfd9f4efe52)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -1568,7 +1547,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(bf9ba6d3a8b7d215)}'
+        - datetime: '{data(1d75669f67afdafe)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -1596,12 +1575,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Depth [m]
-          - Lat
-          - datetime
-          - Temperature [C]
-          - Station
           - Lon
+          - Station
+          - datetime
+          - Lat
+          - Depth [m]
+          - Temperature [C]
           invert: true
           kind: line
           shared_axes: true
@@ -1613,7 +1592,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: https://researchworkspace.com/files/42400652/Piatt1999.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42400652/Piatt1999.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -1626,7 +1605,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(12495833aa6810fd)}'
+      - - '{data(d94dabfd9f4efe52)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -1637,7 +1616,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(bf9ba6d3a8b7d215)}'
+        - datetime: '{data(1d75669f67afdafe)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -1665,12 +1644,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Depth [m]
-          - Lat
-          - datetime
-          - Temperature [C]
-          - Station
           - Lon
+          - Station
+          - datetime
+          - Lat
+          - Depth [m]
+          - Temperature [C]
           invert: true
           kind: line
           shared_axes: true
@@ -1682,7 +1661,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: https://researchworkspace.com/files/42400652/Piatt1999.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42400652/Piatt1999.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -1695,7 +1674,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(12495833aa6810fd)}'
+      - - '{data(d94dabfd9f4efe52)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -1706,7 +1685,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(bf9ba6d3a8b7d215)}'
+        - datetime: '{data(1d75669f67afdafe)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -1734,12 +1713,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Depth [m]
-          - Lat
-          - datetime
-          - Temperature [C]
-          - Station
           - Lon
+          - Station
+          - datetime
+          - Lat
+          - Depth [m]
+          - Temperature [C]
           invert: true
           kind: line
           shared_axes: true
@@ -1751,7 +1730,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: https://researchworkspace.com/files/42400652/Piatt1999.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42400652/Piatt1999.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -1764,7 +1743,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(12495833aa6810fd)}'
+      - - '{data(d94dabfd9f4efe52)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -1775,7 +1754,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(bf9ba6d3a8b7d215)}'
+        - datetime: '{data(1d75669f67afdafe)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -1803,12 +1782,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Depth [m]
-          - Lat
-          - datetime
-          - Temperature [C]
-          - Station
           - Lon
+          - Station
+          - datetime
+          - Lat
+          - Depth [m]
+          - Temperature [C]
           invert: true
           kind: line
           shared_axes: true
@@ -1820,7 +1799,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: https://researchworkspace.com/files/42400652/Piatt1999.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42400652/Piatt1999.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -1833,7 +1812,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(12495833aa6810fd)}'
+      - - '{data(d94dabfd9f4efe52)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -1844,7 +1823,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(bf9ba6d3a8b7d215)}'
+        - datetime: '{data(1d75669f67afdafe)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -1872,12 +1851,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Depth [m]
-          - Lat
-          - datetime
-          - Temperature [C]
-          - Station
           - Lon
+          - Station
+          - datetime
+          - Lat
+          - Depth [m]
+          - Temperature [C]
           invert: true
           kind: line
           shared_axes: true
@@ -1889,7 +1868,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: https://researchworkspace.com/files/42400652/Piatt1999.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42400652/Piatt1999.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -1902,7 +1881,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(12495833aa6810fd)}'
+      - - '{data(d94dabfd9f4efe52)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -1913,7 +1892,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(bf9ba6d3a8b7d215)}'
+        - datetime: '{data(1d75669f67afdafe)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -1941,12 +1920,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Depth [m]
-          - Lat
-          - datetime
-          - Temperature [C]
-          - Station
           - Lon
+          - Station
+          - datetime
+          - Lat
+          - Depth [m]
+          - Temperature [C]
           invert: true
           kind: line
           shared_axes: true
@@ -1958,7 +1937,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: https://researchworkspace.com/files/42400652/Piatt1999.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42400652/Piatt1999.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -1971,7 +1950,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(12495833aa6810fd)}'
+      - - '{data(d94dabfd9f4efe52)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -1982,7 +1961,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(bf9ba6d3a8b7d215)}'
+        - datetime: '{data(1d75669f67afdafe)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -2010,12 +1989,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Depth [m]
-          - Lat
-          - datetime
-          - Temperature [C]
-          - Station
           - Lon
+          - Station
+          - datetime
+          - Lat
+          - Depth [m]
+          - Temperature [C]
           invert: true
           kind: line
           shared_axes: true
@@ -2027,7 +2006,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: https://researchworkspace.com/files/42400652/Piatt1999.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42400652/Piatt1999.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -2040,7 +2019,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(12495833aa6810fd)}'
+      - - '{data(d94dabfd9f4efe52)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -2051,7 +2030,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(bf9ba6d3a8b7d215)}'
+        - datetime: '{data(1d75669f67afdafe)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -2079,12 +2058,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Depth [m]
-          - Lat
-          - datetime
-          - Temperature [C]
-          - Station
           - Lon
+          - Station
+          - datetime
+          - Lat
+          - Depth [m]
+          - Temperature [C]
           invert: true
           kind: line
           shared_axes: true
@@ -2096,7 +2075,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: https://researchworkspace.com/files/42400652/Piatt1999.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42400652/Piatt1999.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -2109,7 +2088,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(12495833aa6810fd)}'
+      - - '{data(d94dabfd9f4efe52)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -2120,7 +2099,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(bf9ba6d3a8b7d215)}'
+        - datetime: '{data(1d75669f67afdafe)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -2148,12 +2127,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Depth [m]
-          - Lat
-          - datetime
-          - Temperature [C]
-          - Station
           - Lon
+          - Station
+          - datetime
+          - Lat
+          - Depth [m]
+          - Temperature [C]
           invert: true
           kind: line
           shared_axes: true
@@ -2165,7 +2144,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: https://researchworkspace.com/files/42400652/Piatt1999.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42400652/Piatt1999.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -2178,7 +2157,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(12495833aa6810fd)}'
+      - - '{data(d94dabfd9f4efe52)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -2189,7 +2168,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(bf9ba6d3a8b7d215)}'
+        - datetime: '{data(1d75669f67afdafe)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -2217,12 +2196,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Depth [m]
-          - Lat
-          - datetime
-          - Temperature [C]
-          - Station
           - Lon
+          - Station
+          - datetime
+          - Lat
+          - Depth [m]
+          - Temperature [C]
           invert: true
           kind: line
           shared_axes: true
@@ -2234,7 +2213,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: https://researchworkspace.com/files/42400652/Piatt1999.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42400652/Piatt1999.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -2247,7 +2226,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(12495833aa6810fd)}'
+      - - '{data(d94dabfd9f4efe52)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -2258,7 +2237,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(bf9ba6d3a8b7d215)}'
+        - datetime: '{data(1d75669f67afdafe)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -2286,12 +2265,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Depth [m]
-          - Lat
-          - datetime
-          - Temperature [C]
-          - Station
           - Lon
+          - Station
+          - datetime
+          - Lat
+          - Depth [m]
+          - Temperature [C]
           invert: true
           kind: line
           shared_axes: true
@@ -2303,7 +2282,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: https://researchworkspace.com/files/42400652/Piatt1999.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42400652/Piatt1999.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -2316,7 +2295,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(12495833aa6810fd)}'
+      - - '{data(d94dabfd9f4efe52)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -2327,7 +2306,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(bf9ba6d3a8b7d215)}'
+        - datetime: '{data(1d75669f67afdafe)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -2355,12 +2334,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Depth [m]
-          - Lat
-          - datetime
-          - Temperature [C]
-          - Station
           - Lon
+          - Station
+          - datetime
+          - Lat
+          - Depth [m]
+          - Temperature [C]
           invert: true
           kind: line
           shared_axes: true
@@ -2372,7 +2351,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: https://researchworkspace.com/files/42400652/Piatt1999.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42400652/Piatt1999.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -2385,7 +2364,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(12495833aa6810fd)}'
+      - - '{data(d94dabfd9f4efe52)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -2396,7 +2375,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(bf9ba6d3a8b7d215)}'
+        - datetime: '{data(1d75669f67afdafe)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -2424,12 +2403,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Depth [m]
-          - Lat
-          - datetime
-          - Temperature [C]
-          - Station
           - Lon
+          - Station
+          - datetime
+          - Lat
+          - Depth [m]
+          - Temperature [C]
           invert: true
           kind: line
           shared_axes: true
@@ -2441,7 +2420,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: https://researchworkspace.com/files/42400652/Piatt1999.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42400652/Piatt1999.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -2454,7 +2433,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(12495833aa6810fd)}'
+      - - '{data(d94dabfd9f4efe52)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -2465,7 +2444,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(bf9ba6d3a8b7d215)}'
+        - datetime: '{data(1d75669f67afdafe)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -2493,12 +2472,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Depth [m]
-          - Lat
-          - datetime
-          - Temperature [C]
-          - Station
           - Lon
+          - Station
+          - datetime
+          - Lat
+          - Depth [m]
+          - Temperature [C]
           invert: true
           kind: line
           shared_axes: true
@@ -2510,7 +2489,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: https://researchworkspace.com/files/42400652/Piatt1999.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42400652/Piatt1999.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -2523,7 +2502,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(12495833aa6810fd)}'
+      - - '{data(d94dabfd9f4efe52)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -2534,7 +2513,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(bf9ba6d3a8b7d215)}'
+        - datetime: '{data(1d75669f67afdafe)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -2562,12 +2541,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Depth [m]
-          - Lat
-          - datetime
-          - Temperature [C]
-          - Station
           - Lon
+          - Station
+          - datetime
+          - Lat
+          - Depth [m]
+          - Temperature [C]
           invert: true
           kind: line
           shared_axes: true
@@ -2579,7 +2558,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: https://researchworkspace.com/files/42400652/Piatt1999.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42400652/Piatt1999.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -2592,7 +2571,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(12495833aa6810fd)}'
+      - - '{data(d94dabfd9f4efe52)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -2603,7 +2582,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(bf9ba6d3a8b7d215)}'
+        - datetime: '{data(1d75669f67afdafe)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -2631,12 +2610,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Depth [m]
-          - Lat
-          - datetime
-          - Temperature [C]
-          - Station
           - Lon
+          - Station
+          - datetime
+          - Lat
+          - Depth [m]
+          - Temperature [C]
           invert: true
           kind: line
           shared_axes: true
@@ -2648,7 +2627,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: https://researchworkspace.com/files/42400652/Piatt1999.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42400652/Piatt1999.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -2661,7 +2640,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(12495833aa6810fd)}'
+      - - '{data(d94dabfd9f4efe52)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -2672,7 +2651,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(bf9ba6d3a8b7d215)}'
+        - datetime: '{data(1d75669f67afdafe)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -2700,12 +2679,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Depth [m]
-          - Lat
-          - datetime
-          - Temperature [C]
-          - Station
           - Lon
+          - Station
+          - datetime
+          - Lat
+          - Depth [m]
+          - Temperature [C]
           invert: true
           kind: line
           shared_axes: true
@@ -2717,7 +2696,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: https://researchworkspace.com/files/42400652/Piatt1999.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42400652/Piatt1999.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -2730,7 +2709,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(12495833aa6810fd)}'
+      - - '{data(d94dabfd9f4efe52)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -2741,7 +2720,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(bf9ba6d3a8b7d215)}'
+        - datetime: '{data(1d75669f67afdafe)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -2769,12 +2748,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Depth [m]
-          - Lat
-          - datetime
-          - Temperature [C]
-          - Station
           - Lon
+          - Station
+          - datetime
+          - Lat
+          - Depth [m]
+          - Temperature [C]
           invert: true
           kind: line
           shared_axes: true
@@ -2786,7 +2765,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: https://researchworkspace.com/files/42400652/Piatt1999.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42400652/Piatt1999.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -2799,7 +2778,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(12495833aa6810fd)}'
+      - - '{data(d94dabfd9f4efe52)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -2810,7 +2789,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(bf9ba6d3a8b7d215)}'
+        - datetime: '{data(1d75669f67afdafe)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -2838,12 +2817,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Depth [m]
-          - Lat
-          - datetime
-          - Temperature [C]
-          - Station
           - Lon
+          - Station
+          - datetime
+          - Lat
+          - Depth [m]
+          - Temperature [C]
           invert: true
           kind: line
           shared_axes: true
@@ -2855,7 +2834,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: https://researchworkspace.com/files/42400652/Piatt1999.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42400652/Piatt1999.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -2868,7 +2847,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(12495833aa6810fd)}'
+      - - '{data(d94dabfd9f4efe52)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -2879,7 +2858,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(bf9ba6d3a8b7d215)}'
+        - datetime: '{data(1d75669f67afdafe)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -2907,12 +2886,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Depth [m]
-          - Lat
-          - datetime
-          - Temperature [C]
-          - Station
           - Lon
+          - Station
+          - datetime
+          - Lat
+          - Depth [m]
+          - Temperature [C]
           invert: true
           kind: line
           shared_axes: true
@@ -2924,7 +2903,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: https://researchworkspace.com/files/42400652/Piatt1999.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42400652/Piatt1999.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -2937,7 +2916,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(12495833aa6810fd)}'
+      - - '{data(d94dabfd9f4efe52)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -2948,7 +2927,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(bf9ba6d3a8b7d215)}'
+        - datetime: '{data(1d75669f67afdafe)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -2976,12 +2955,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Depth [m]
-          - Lat
-          - datetime
-          - Temperature [C]
-          - Station
           - Lon
+          - Station
+          - datetime
+          - Lat
+          - Depth [m]
+          - Temperature [C]
           invert: true
           kind: line
           shared_axes: true
@@ -2993,7 +2972,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: https://researchworkspace.com/files/42400652/Piatt1999.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42400652/Piatt1999.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -3006,7 +2985,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(12495833aa6810fd)}'
+      - - '{data(d94dabfd9f4efe52)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -3017,7 +2996,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(bf9ba6d3a8b7d215)}'
+        - datetime: '{data(1d75669f67afdafe)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -3045,12 +3024,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Depth [m]
-          - Lat
-          - datetime
-          - Temperature [C]
-          - Station
           - Lon
+          - Station
+          - datetime
+          - Lat
+          - Depth [m]
+          - Temperature [C]
           invert: true
           kind: line
           shared_axes: true
@@ -3062,7 +3041,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: https://researchworkspace.com/files/42400652/Piatt1999.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42400652/Piatt1999.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -3075,7 +3054,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(12495833aa6810fd)}'
+      - - '{data(d94dabfd9f4efe52)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -3086,7 +3065,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(bf9ba6d3a8b7d215)}'
+        - datetime: '{data(1d75669f67afdafe)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -3114,12 +3093,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Depth [m]
-          - Lat
-          - datetime
-          - Temperature [C]
-          - Station
           - Lon
+          - Station
+          - datetime
+          - Lat
+          - Depth [m]
+          - Temperature [C]
           invert: true
           kind: line
           shared_axes: true
@@ -3131,7 +3110,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: https://researchworkspace.com/files/42400652/Piatt1999.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42400652/Piatt1999.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -3144,7 +3123,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(12495833aa6810fd)}'
+      - - '{data(d94dabfd9f4efe52)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -3155,7 +3134,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(bf9ba6d3a8b7d215)}'
+        - datetime: '{data(1d75669f67afdafe)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -3183,12 +3162,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Depth [m]
-          - Lat
-          - datetime
-          - Temperature [C]
-          - Station
           - Lon
+          - Station
+          - datetime
+          - Lat
+          - Depth [m]
+          - Temperature [C]
           invert: true
           kind: line
           shared_axes: true
@@ -3200,7 +3179,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: https://researchworkspace.com/files/42400652/Piatt1999.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42400652/Piatt1999.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -3213,7 +3192,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(12495833aa6810fd)}'
+      - - '{data(d94dabfd9f4efe52)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -3224,7 +3203,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(bf9ba6d3a8b7d215)}'
+        - datetime: '{data(1d75669f67afdafe)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -3252,12 +3231,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Depth [m]
-          - Lat
-          - datetime
-          - Temperature [C]
-          - Station
           - Lon
+          - Station
+          - datetime
+          - Lat
+          - Depth [m]
+          - Temperature [C]
           invert: true
           kind: line
           shared_axes: true
@@ -3269,7 +3248,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: https://researchworkspace.com/files/42400652/Piatt1999.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42400652/Piatt1999.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -3282,7 +3261,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(12495833aa6810fd)}'
+      - - '{data(d94dabfd9f4efe52)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -3293,7 +3272,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(bf9ba6d3a8b7d215)}'
+        - datetime: '{data(1d75669f67afdafe)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -3321,12 +3300,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Depth [m]
-          - Lat
-          - datetime
-          - Temperature [C]
-          - Station
           - Lon
+          - Station
+          - datetime
+          - Lat
+          - Depth [m]
+          - Temperature [C]
           invert: true
           kind: line
           shared_axes: true
@@ -3338,7 +3317,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: https://researchworkspace.com/files/42400652/Piatt1999.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42400652/Piatt1999.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -3351,7 +3330,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(12495833aa6810fd)}'
+      - - '{data(d94dabfd9f4efe52)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -3362,7 +3341,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(bf9ba6d3a8b7d215)}'
+        - datetime: '{data(1d75669f67afdafe)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -3390,12 +3369,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Depth [m]
-          - Lat
-          - datetime
-          - Temperature [C]
-          - Station
           - Lon
+          - Station
+          - datetime
+          - Lat
+          - Depth [m]
+          - Temperature [C]
           invert: true
           kind: line
           shared_axes: true
@@ -3407,7 +3386,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: https://researchworkspace.com/files/42400652/Piatt1999.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42400652/Piatt1999.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -3420,7 +3399,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(12495833aa6810fd)}'
+      - - '{data(d94dabfd9f4efe52)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -3431,7 +3410,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(bf9ba6d3a8b7d215)}'
+        - datetime: '{data(1d75669f67afdafe)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -3459,12 +3438,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Depth [m]
-          - Lat
-          - datetime
-          - Temperature [C]
-          - Station
           - Lon
+          - Station
+          - datetime
+          - Lat
+          - Depth [m]
+          - Temperature [C]
           invert: true
           kind: line
           shared_axes: true
@@ -3476,7 +3455,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: https://researchworkspace.com/files/42400652/Piatt1999.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42400652/Piatt1999.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -3489,7 +3468,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(12495833aa6810fd)}'
+      - - '{data(d94dabfd9f4efe52)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -3500,7 +3479,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(bf9ba6d3a8b7d215)}'
+        - datetime: '{data(1d75669f67afdafe)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -3528,12 +3507,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Depth [m]
-          - Lat
-          - datetime
-          - Temperature [C]
-          - Station
           - Lon
+          - Station
+          - datetime
+          - Lat
+          - Depth [m]
+          - Temperature [C]
           invert: true
           kind: line
           shared_axes: true
@@ -3545,7 +3524,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: https://researchworkspace.com/files/42400652/Piatt1999.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42400652/Piatt1999.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -3558,7 +3537,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(12495833aa6810fd)}'
+      - - '{data(d94dabfd9f4efe52)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -3569,7 +3548,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(bf9ba6d3a8b7d215)}'
+        - datetime: '{data(1d75669f67afdafe)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -3597,12 +3576,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Depth [m]
-          - Lat
-          - datetime
-          - Temperature [C]
-          - Station
           - Lon
+          - Station
+          - datetime
+          - Lat
+          - Depth [m]
+          - Temperature [C]
           invert: true
           kind: line
           shared_axes: true
@@ -3614,7 +3593,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: https://researchworkspace.com/files/42400652/Piatt1999.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42400652/Piatt1999.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -3627,7 +3606,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(12495833aa6810fd)}'
+      - - '{data(d94dabfd9f4efe52)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -3638,7 +3617,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(bf9ba6d3a8b7d215)}'
+        - datetime: '{data(1d75669f67afdafe)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -3666,12 +3645,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Depth [m]
-          - Lat
-          - datetime
-          - Temperature [C]
-          - Station
           - Lon
+          - Station
+          - datetime
+          - Lat
+          - Depth [m]
+          - Temperature [C]
           invert: true
           kind: line
           shared_axes: true
@@ -3683,7 +3662,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: https://researchworkspace.com/files/42400652/Piatt1999.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42400652/Piatt1999.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -3696,7 +3675,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(12495833aa6810fd)}'
+      - - '{data(d94dabfd9f4efe52)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -3707,7 +3686,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(bf9ba6d3a8b7d215)}'
+        - datetime: '{data(1d75669f67afdafe)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -3735,12 +3714,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Depth [m]
-          - Lat
-          - datetime
-          - Temperature [C]
-          - Station
           - Lon
+          - Station
+          - datetime
+          - Lat
+          - Depth [m]
+          - Temperature [C]
           invert: true
           kind: line
           shared_axes: true
@@ -3752,7 +3731,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: https://researchworkspace.com/files/42400652/Piatt1999.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42400652/Piatt1999.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -3765,7 +3744,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(12495833aa6810fd)}'
+      - - '{data(d94dabfd9f4efe52)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -3776,7 +3755,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(bf9ba6d3a8b7d215)}'
+        - datetime: '{data(1d75669f67afdafe)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -3804,12 +3783,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Depth [m]
-          - Lat
-          - datetime
-          - Temperature [C]
-          - Station
           - Lon
+          - Station
+          - datetime
+          - Lat
+          - Depth [m]
+          - Temperature [C]
           invert: true
           kind: line
           shared_axes: true
@@ -3821,7 +3800,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: https://researchworkspace.com/files/42400652/Piatt1999.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42400652/Piatt1999.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -3834,7 +3813,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(12495833aa6810fd)}'
+      - - '{data(d94dabfd9f4efe52)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -3845,7 +3824,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(bf9ba6d3a8b7d215)}'
+        - datetime: '{data(1d75669f67afdafe)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -3873,12 +3852,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Depth [m]
-          - Lat
-          - datetime
-          - Temperature [C]
-          - Station
           - Lon
+          - Station
+          - datetime
+          - Lat
+          - Depth [m]
+          - Temperature [C]
           invert: true
           kind: line
           shared_axes: true
@@ -3890,7 +3869,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: https://researchworkspace.com/files/42400652/Piatt1999.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42400652/Piatt1999.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -3903,7 +3882,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(12495833aa6810fd)}'
+      - - '{data(d94dabfd9f4efe52)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -3914,7 +3893,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(bf9ba6d3a8b7d215)}'
+        - datetime: '{data(1d75669f67afdafe)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -3942,12 +3921,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Depth [m]
-          - Lat
-          - datetime
-          - Temperature [C]
-          - Station
           - Lon
+          - Station
+          - datetime
+          - Lat
+          - Depth [m]
+          - Temperature [C]
           invert: true
           kind: line
           shared_axes: true
@@ -3959,7 +3938,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: https://researchworkspace.com/files/42400652/Piatt1999.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42400652/Piatt1999.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -3972,7 +3951,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(12495833aa6810fd)}'
+      - - '{data(d94dabfd9f4efe52)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -3983,7 +3962,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(bf9ba6d3a8b7d215)}'
+        - datetime: '{data(1d75669f67afdafe)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -4011,12 +3990,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Depth [m]
-          - Lat
-          - datetime
-          - Temperature [C]
-          - Station
           - Lon
+          - Station
+          - datetime
+          - Lat
+          - Depth [m]
+          - Temperature [C]
           invert: true
           kind: line
           shared_axes: true
@@ -4028,7 +4007,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: https://researchworkspace.com/files/42400652/Piatt1999.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42400652/Piatt1999.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -4041,7 +4020,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(12495833aa6810fd)}'
+      - - '{data(d94dabfd9f4efe52)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -4052,7 +4031,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(bf9ba6d3a8b7d215)}'
+        - datetime: '{data(1d75669f67afdafe)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -4080,12 +4059,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Depth [m]
-          - Lat
-          - datetime
-          - Temperature [C]
-          - Station
           - Lon
+          - Station
+          - datetime
+          - Lat
+          - Depth [m]
+          - Temperature [C]
           invert: true
           kind: line
           shared_axes: true
@@ -4097,7 +4076,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: https://researchworkspace.com/files/42400652/Piatt1999.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42400652/Piatt1999.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -4110,7 +4089,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(12495833aa6810fd)}'
+      - - '{data(d94dabfd9f4efe52)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -4121,7 +4100,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(bf9ba6d3a8b7d215)}'
+        - datetime: '{data(1d75669f67afdafe)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -4149,12 +4128,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Depth [m]
-          - Lat
-          - datetime
-          - Temperature [C]
-          - Station
           - Lon
+          - Station
+          - datetime
+          - Lat
+          - Depth [m]
+          - Temperature [C]
           invert: true
           kind: line
           shared_axes: true
@@ -4166,7 +4145,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: https://researchworkspace.com/files/42400652/Piatt1999.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42400652/Piatt1999.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -4179,7 +4158,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(12495833aa6810fd)}'
+      - - '{data(d94dabfd9f4efe52)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -4190,7 +4169,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(bf9ba6d3a8b7d215)}'
+        - datetime: '{data(1d75669f67afdafe)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -4218,12 +4197,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Depth [m]
-          - Lat
-          - datetime
-          - Temperature [C]
-          - Station
           - Lon
+          - Station
+          - datetime
+          - Lat
+          - Depth [m]
+          - Temperature [C]
           invert: true
           kind: line
           shared_axes: true
@@ -4235,7 +4214,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: https://researchworkspace.com/files/42400652/Piatt1999.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42400652/Piatt1999.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -4248,7 +4227,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(12495833aa6810fd)}'
+      - - '{data(d94dabfd9f4efe52)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -4259,7 +4238,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(bf9ba6d3a8b7d215)}'
+        - datetime: '{data(1d75669f67afdafe)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -4287,12 +4266,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Depth [m]
-          - Lat
-          - datetime
-          - Temperature [C]
-          - Station
           - Lon
+          - Station
+          - datetime
+          - Lat
+          - Depth [m]
+          - Temperature [C]
           invert: true
           kind: line
           shared_axes: true
@@ -4304,7 +4283,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: https://researchworkspace.com/files/42400652/Piatt1999.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42400652/Piatt1999.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -4317,7 +4296,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(12495833aa6810fd)}'
+      - - '{data(d94dabfd9f4efe52)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -4328,7 +4307,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(bf9ba6d3a8b7d215)}'
+        - datetime: '{data(1d75669f67afdafe)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -4356,12 +4335,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Depth [m]
-          - Lat
-          - datetime
-          - Temperature [C]
-          - Station
           - Lon
+          - Station
+          - datetime
+          - Lat
+          - Depth [m]
+          - Temperature [C]
           invert: true
           kind: line
           shared_axes: true
@@ -4373,7 +4352,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: https://researchworkspace.com/files/42400652/Piatt1999.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42400652/Piatt1999.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -4386,7 +4365,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(12495833aa6810fd)}'
+      - - '{data(d94dabfd9f4efe52)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -4397,7 +4376,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(bf9ba6d3a8b7d215)}'
+        - datetime: '{data(1d75669f67afdafe)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -4425,12 +4404,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Depth [m]
-          - Lat
-          - datetime
-          - Temperature [C]
-          - Station
           - Lon
+          - Station
+          - datetime
+          - Lat
+          - Depth [m]
+          - Temperature [C]
           invert: true
           kind: line
           shared_axes: true
@@ -4442,7 +4421,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: https://researchworkspace.com/files/42400652/Piatt1999.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42400652/Piatt1999.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -4455,7 +4434,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(12495833aa6810fd)}'
+      - - '{data(d94dabfd9f4efe52)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -4466,7 +4445,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(bf9ba6d3a8b7d215)}'
+        - datetime: '{data(1d75669f67afdafe)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -4494,12 +4473,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Depth [m]
-          - Lat
-          - datetime
-          - Temperature [C]
-          - Station
           - Lon
+          - Station
+          - datetime
+          - Lat
+          - Depth [m]
+          - Temperature [C]
           invert: true
           kind: line
           shared_axes: true
@@ -4511,7 +4490,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: https://researchworkspace.com/files/42400652/Piatt1999.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42400652/Piatt1999.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -4524,7 +4503,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(12495833aa6810fd)}'
+      - - '{data(d94dabfd9f4efe52)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -4535,7 +4514,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(bf9ba6d3a8b7d215)}'
+        - datetime: '{data(1d75669f67afdafe)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -4563,12 +4542,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Depth [m]
-          - Lat
-          - datetime
-          - Temperature [C]
-          - Station
           - Lon
+          - Station
+          - datetime
+          - Lat
+          - Depth [m]
+          - Temperature [C]
           invert: true
           kind: line
           shared_axes: true
@@ -4580,7 +4559,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: https://researchworkspace.com/files/42400652/Piatt1999.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42400652/Piatt1999.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -4593,7 +4572,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(12495833aa6810fd)}'
+      - - '{data(d94dabfd9f4efe52)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -4604,7 +4583,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(bf9ba6d3a8b7d215)}'
+        - datetime: '{data(1d75669f67afdafe)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -4632,12 +4611,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Depth [m]
-          - Lat
-          - datetime
-          - Temperature [C]
-          - Station
           - Lon
+          - Station
+          - datetime
+          - Lat
+          - Depth [m]
+          - Temperature [C]
           invert: true
           kind: line
           shared_axes: true
@@ -4649,7 +4628,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: https://researchworkspace.com/files/42400652/Piatt1999.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42400652/Piatt1999.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -4662,7 +4641,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(12495833aa6810fd)}'
+      - - '{data(d94dabfd9f4efe52)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -4673,7 +4652,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(bf9ba6d3a8b7d215)}'
+        - datetime: '{data(1d75669f67afdafe)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -4701,12 +4680,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Depth [m]
-          - Lat
-          - datetime
-          - Temperature [C]
-          - Station
           - Lon
+          - Station
+          - datetime
+          - Lat
+          - Depth [m]
+          - Temperature [C]
           invert: true
           kind: line
           shared_axes: true
@@ -4718,7 +4697,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: https://researchworkspace.com/files/42400652/Piatt1999.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42400652/Piatt1999.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -4731,7 +4710,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(12495833aa6810fd)}'
+      - - '{data(d94dabfd9f4efe52)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -4742,7 +4721,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(bf9ba6d3a8b7d215)}'
+        - datetime: '{data(1d75669f67afdafe)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -4770,12 +4749,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Depth [m]
-          - Lat
-          - datetime
-          - Temperature [C]
-          - Station
           - Lon
+          - Station
+          - datetime
+          - Lat
+          - Depth [m]
+          - Temperature [C]
           invert: true
           kind: line
           shared_axes: true
@@ -4787,7 +4766,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: https://researchworkspace.com/files/42400652/Piatt1999.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42400652/Piatt1999.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -4800,7 +4779,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(12495833aa6810fd)}'
+      - - '{data(d94dabfd9f4efe52)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -4811,7 +4790,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(bf9ba6d3a8b7d215)}'
+        - datetime: '{data(1d75669f67afdafe)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -4839,12 +4818,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Depth [m]
-          - Lat
-          - datetime
-          - Temperature [C]
-          - Station
           - Lon
+          - Station
+          - datetime
+          - Lat
+          - Depth [m]
+          - Temperature [C]
           invert: true
           kind: line
           shared_axes: true
@@ -4856,7 +4835,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: https://researchworkspace.com/files/42400652/Piatt1999.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42400652/Piatt1999.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -4869,7 +4848,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(12495833aa6810fd)}'
+      - - '{data(d94dabfd9f4efe52)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -4880,7 +4859,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(bf9ba6d3a8b7d215)}'
+        - datetime: '{data(1d75669f67afdafe)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -4908,12 +4887,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Depth [m]
-          - Lat
-          - datetime
-          - Temperature [C]
-          - Station
           - Lon
+          - Station
+          - datetime
+          - Lat
+          - Depth [m]
+          - Temperature [C]
           invert: true
           kind: line
           shared_axes: true
@@ -4925,7 +4904,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: https://researchworkspace.com/files/42400652/Piatt1999.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42400652/Piatt1999.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -4938,7 +4917,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(12495833aa6810fd)}'
+      - - '{data(d94dabfd9f4efe52)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -4949,7 +4928,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(bf9ba6d3a8b7d215)}'
+        - datetime: '{data(1d75669f67afdafe)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -4977,12 +4956,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Depth [m]
-          - Lat
-          - datetime
-          - Temperature [C]
-          - Station
           - Lon
+          - Station
+          - datetime
+          - Lat
+          - Depth [m]
+          - Temperature [C]
           invert: true
           kind: line
           shared_axes: true
@@ -4994,7 +4973,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: https://researchworkspace.com/files/42400652/Piatt1999.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42400652/Piatt1999.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -5007,7 +4986,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(12495833aa6810fd)}'
+      - - '{data(d94dabfd9f4efe52)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -5018,7 +4997,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(bf9ba6d3a8b7d215)}'
+        - datetime: '{data(1d75669f67afdafe)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -5046,12 +5025,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Depth [m]
-          - Lat
-          - datetime
-          - Temperature [C]
-          - Station
           - Lon
+          - Station
+          - datetime
+          - Lat
+          - Depth [m]
+          - Temperature [C]
           invert: true
           kind: line
           shared_axes: true
@@ -5063,7 +5042,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: https://researchworkspace.com/files/42400652/Piatt1999.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42400652/Piatt1999.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -5076,7 +5055,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(12495833aa6810fd)}'
+      - - '{data(d94dabfd9f4efe52)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -5087,7 +5066,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(bf9ba6d3a8b7d215)}'
+        - datetime: '{data(1d75669f67afdafe)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -5115,12 +5094,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Depth [m]
-          - Lat
-          - datetime
-          - Temperature [C]
-          - Station
           - Lon
+          - Station
+          - datetime
+          - Lat
+          - Depth [m]
+          - Temperature [C]
           invert: true
           kind: line
           shared_axes: true
@@ -5132,7 +5111,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: https://researchworkspace.com/files/42400652/Piatt1999.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42400652/Piatt1999.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -5145,7 +5124,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(12495833aa6810fd)}'
+      - - '{data(d94dabfd9f4efe52)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -5156,7 +5135,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(bf9ba6d3a8b7d215)}'
+        - datetime: '{data(1d75669f67afdafe)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -5184,12 +5163,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Depth [m]
-          - Lat
-          - datetime
-          - Temperature [C]
-          - Station
           - Lon
+          - Station
+          - datetime
+          - Lat
+          - Depth [m]
+          - Temperature [C]
           invert: true
           kind: line
           shared_axes: true
@@ -5201,7 +5180,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: https://researchworkspace.com/files/42400652/Piatt1999.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42400652/Piatt1999.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -5214,7 +5193,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(12495833aa6810fd)}'
+      - - '{data(d94dabfd9f4efe52)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -5225,7 +5204,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(bf9ba6d3a8b7d215)}'
+        - datetime: '{data(1d75669f67afdafe)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -5253,12 +5232,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Depth [m]
-          - Lat
-          - datetime
-          - Temperature [C]
-          - Station
           - Lon
+          - Station
+          - datetime
+          - Lat
+          - Depth [m]
+          - Temperature [C]
           invert: true
           kind: line
           shared_axes: true
@@ -5270,7 +5249,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: https://researchworkspace.com/files/42400652/Piatt1999.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42400652/Piatt1999.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -5283,7 +5262,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(12495833aa6810fd)}'
+      - - '{data(d94dabfd9f4efe52)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -5294,7 +5273,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(bf9ba6d3a8b7d215)}'
+        - datetime: '{data(1d75669f67afdafe)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -5322,12 +5301,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Depth [m]
-          - Lat
-          - datetime
-          - Temperature [C]
-          - Station
           - Lon
+          - Station
+          - datetime
+          - Lat
+          - Depth [m]
+          - Temperature [C]
           invert: true
           kind: line
           shared_axes: true
@@ -5339,7 +5318,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: https://researchworkspace.com/files/42400652/Piatt1999.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42400652/Piatt1999.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -5352,7 +5331,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(12495833aa6810fd)}'
+      - - '{data(d94dabfd9f4efe52)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -5363,7 +5342,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(bf9ba6d3a8b7d215)}'
+        - datetime: '{data(1d75669f67afdafe)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -5391,12 +5370,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Depth [m]
-          - Lat
-          - datetime
-          - Temperature [C]
-          - Station
           - Lon
+          - Station
+          - datetime
+          - Lat
+          - Depth [m]
+          - Temperature [C]
           invert: true
           kind: line
           shared_axes: true
@@ -5408,7 +5387,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: https://researchworkspace.com/files/42400652/Piatt1999.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42400652/Piatt1999.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -5421,7 +5400,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(12495833aa6810fd)}'
+      - - '{data(d94dabfd9f4efe52)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -5432,7 +5411,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(bf9ba6d3a8b7d215)}'
+        - datetime: '{data(1d75669f67afdafe)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -5460,12 +5439,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Depth [m]
-          - Lat
-          - datetime
-          - Temperature [C]
-          - Station
           - Lon
+          - Station
+          - datetime
+          - Lat
+          - Depth [m]
+          - Temperature [C]
           invert: true
           kind: line
           shared_axes: true
@@ -5477,7 +5456,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: https://researchworkspace.com/files/42400652/Piatt1999.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42400652/Piatt1999.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -5490,7 +5469,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(12495833aa6810fd)}'
+      - - '{data(d94dabfd9f4efe52)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -5501,7 +5480,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(bf9ba6d3a8b7d215)}'
+        - datetime: '{data(1d75669f67afdafe)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -5529,12 +5508,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Depth [m]
-          - Lat
-          - datetime
-          - Temperature [C]
-          - Station
           - Lon
+          - Station
+          - datetime
+          - Lat
+          - Depth [m]
+          - Temperature [C]
           invert: true
           kind: line
           shared_axes: true
@@ -5546,7 +5525,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: https://researchworkspace.com/files/42400652/Piatt1999.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42400652/Piatt1999.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -5559,7 +5538,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(12495833aa6810fd)}'
+      - - '{data(d94dabfd9f4efe52)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -5570,7 +5549,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(bf9ba6d3a8b7d215)}'
+        - datetime: '{data(1d75669f67afdafe)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -5598,12 +5577,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Depth [m]
-          - Lat
-          - datetime
-          - Temperature [C]
-          - Station
           - Lon
+          - Station
+          - datetime
+          - Lat
+          - Depth [m]
+          - Temperature [C]
           invert: true
           kind: line
           shared_axes: true
@@ -5615,7 +5594,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: https://researchworkspace.com/files/42400652/Piatt1999.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42400652/Piatt1999.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -5628,7 +5607,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(12495833aa6810fd)}'
+      - - '{data(d94dabfd9f4efe52)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -5639,7 +5618,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(bf9ba6d3a8b7d215)}'
+        - datetime: '{data(1d75669f67afdafe)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -5667,12 +5646,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Depth [m]
-          - Lat
-          - datetime
-          - Temperature [C]
-          - Station
           - Lon
+          - Station
+          - datetime
+          - Lat
+          - Depth [m]
+          - Temperature [C]
           invert: true
           kind: line
           shared_axes: true
@@ -5684,7 +5663,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: https://researchworkspace.com/files/42400652/Piatt1999.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42400652/Piatt1999.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -5697,7 +5676,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(12495833aa6810fd)}'
+      - - '{data(d94dabfd9f4efe52)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -5708,7 +5687,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(bf9ba6d3a8b7d215)}'
+        - datetime: '{data(1d75669f67afdafe)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -5736,12 +5715,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Depth [m]
-          - Lat
-          - datetime
-          - Temperature [C]
-          - Station
           - Lon
+          - Station
+          - datetime
+          - Lat
+          - Depth [m]
+          - Temperature [C]
           invert: true
           kind: line
           shared_axes: true
@@ -5753,7 +5732,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: https://researchworkspace.com/files/42400652/Piatt1999.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42400652/Piatt1999.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -5766,7 +5745,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(12495833aa6810fd)}'
+      - - '{data(d94dabfd9f4efe52)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -5777,7 +5756,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(bf9ba6d3a8b7d215)}'
+        - datetime: '{data(1d75669f67afdafe)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -5805,12 +5784,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Depth [m]
-          - Lat
-          - datetime
-          - Temperature [C]
-          - Station
           - Lon
+          - Station
+          - datetime
+          - Lat
+          - Depth [m]
+          - Temperature [C]
           invert: true
           kind: line
           shared_axes: true
@@ -5822,7 +5801,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: https://researchworkspace.com/files/42400652/Piatt1999.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42400652/Piatt1999.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -5835,7 +5814,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(12495833aa6810fd)}'
+      - - '{data(d94dabfd9f4efe52)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -5846,7 +5825,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(bf9ba6d3a8b7d215)}'
+        - datetime: '{data(1d75669f67afdafe)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -5874,12 +5853,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Depth [m]
-          - Lat
-          - datetime
-          - Temperature [C]
-          - Station
           - Lon
+          - Station
+          - datetime
+          - Lat
+          - Depth [m]
+          - Temperature [C]
           invert: true
           kind: line
           shared_axes: true
@@ -5891,7 +5870,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: https://researchworkspace.com/files/42400652/Piatt1999.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42400652/Piatt1999.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -5904,7 +5883,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(12495833aa6810fd)}'
+      - - '{data(d94dabfd9f4efe52)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -5915,7 +5894,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(bf9ba6d3a8b7d215)}'
+        - datetime: '{data(1d75669f67afdafe)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -5943,12 +5922,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Depth [m]
-          - Lat
-          - datetime
-          - Temperature [C]
-          - Station
           - Lon
+          - Station
+          - datetime
+          - Lat
+          - Depth [m]
+          - Temperature [C]
           invert: true
           kind: line
           shared_axes: true
@@ -5960,7 +5939,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: https://researchworkspace.com/files/42400652/Piatt1999.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42400652/Piatt1999.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -5973,7 +5952,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(12495833aa6810fd)}'
+      - - '{data(d94dabfd9f4efe52)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -5984,7 +5963,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(bf9ba6d3a8b7d215)}'
+        - datetime: '{data(1d75669f67afdafe)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -6012,12 +5991,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Depth [m]
-          - Lat
-          - datetime
-          - Temperature [C]
-          - Station
           - Lon
+          - Station
+          - datetime
+          - Lat
+          - Depth [m]
+          - Temperature [C]
           invert: true
           kind: line
           shared_axes: true
@@ -6029,7 +6008,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: https://researchworkspace.com/files/42400652/Piatt1999.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42400652/Piatt1999.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -6042,7 +6021,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(12495833aa6810fd)}'
+      - - '{data(d94dabfd9f4efe52)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -6053,7 +6032,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(bf9ba6d3a8b7d215)}'
+        - datetime: '{data(1d75669f67afdafe)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -6081,12 +6060,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Depth [m]
-          - Lat
-          - datetime
-          - Temperature [C]
-          - Station
           - Lon
+          - Station
+          - datetime
+          - Lat
+          - Depth [m]
+          - Temperature [C]
           invert: true
           kind: line
           shared_axes: true
@@ -6098,7 +6077,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: https://researchworkspace.com/files/42400652/Piatt1999.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42400652/Piatt1999.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -6111,7 +6090,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(12495833aa6810fd)}'
+      - - '{data(d94dabfd9f4efe52)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -6122,7 +6101,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(bf9ba6d3a8b7d215)}'
+        - datetime: '{data(1d75669f67afdafe)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -6150,12 +6129,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Depth [m]
-          - Lat
-          - datetime
-          - Temperature [C]
-          - Station
           - Lon
+          - Station
+          - datetime
+          - Lat
+          - Depth [m]
+          - Temperature [C]
           invert: true
           kind: line
           shared_axes: true
@@ -6167,7 +6146,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: https://researchworkspace.com/files/42400652/Piatt1999.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42400652/Piatt1999.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -6180,7 +6159,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(12495833aa6810fd)}'
+      - - '{data(d94dabfd9f4efe52)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -6191,7 +6170,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(bf9ba6d3a8b7d215)}'
+        - datetime: '{data(1d75669f67afdafe)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -6219,12 +6198,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Depth [m]
-          - Lat
-          - datetime
-          - Temperature [C]
-          - Station
           - Lon
+          - Station
+          - datetime
+          - Lat
+          - Depth [m]
+          - Temperature [C]
           invert: true
           kind: line
           shared_axes: true
@@ -6236,7 +6215,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: https://researchworkspace.com/files/42400652/Piatt1999.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42400652/Piatt1999.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -6249,7 +6228,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(12495833aa6810fd)}'
+      - - '{data(d94dabfd9f4efe52)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -6260,7 +6239,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(bf9ba6d3a8b7d215)}'
+        - datetime: '{data(1d75669f67afdafe)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -6288,12 +6267,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Depth [m]
-          - Lat
-          - datetime
-          - Temperature [C]
-          - Station
           - Lon
+          - Station
+          - datetime
+          - Lat
+          - Depth [m]
+          - Temperature [C]
           invert: true
           kind: line
           shared_axes: true
@@ -6305,7 +6284,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: https://researchworkspace.com/files/42400652/Piatt1999.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42400652/Piatt1999.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -6318,7 +6297,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(12495833aa6810fd)}'
+      - - '{data(d94dabfd9f4efe52)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -6329,7 +6308,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(bf9ba6d3a8b7d215)}'
+        - datetime: '{data(1d75669f67afdafe)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -6357,12 +6336,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Depth [m]
-          - Lat
-          - datetime
-          - Temperature [C]
-          - Station
           - Lon
+          - Station
+          - datetime
+          - Lat
+          - Depth [m]
+          - Temperature [C]
           invert: true
           kind: line
           shared_axes: true
@@ -6374,7 +6353,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: https://researchworkspace.com/files/42400652/Piatt1999.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42400652/Piatt1999.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -6387,7 +6366,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(12495833aa6810fd)}'
+      - - '{data(d94dabfd9f4efe52)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -6398,7 +6377,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(bf9ba6d3a8b7d215)}'
+        - datetime: '{data(1d75669f67afdafe)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -6426,12 +6405,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Depth [m]
-          - Lat
-          - datetime
-          - Temperature [C]
-          - Station
           - Lon
+          - Station
+          - datetime
+          - Lat
+          - Depth [m]
+          - Temperature [C]
           invert: true
           kind: line
           shared_axes: true
@@ -6443,7 +6422,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: https://researchworkspace.com/files/42400652/Piatt1999.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42400652/Piatt1999.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -6456,7 +6435,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(12495833aa6810fd)}'
+      - - '{data(d94dabfd9f4efe52)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -6467,7 +6446,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(bf9ba6d3a8b7d215)}'
+        - datetime: '{data(1d75669f67afdafe)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -6495,12 +6474,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Depth [m]
-          - Lat
-          - datetime
-          - Temperature [C]
-          - Station
           - Lon
+          - Station
+          - datetime
+          - Lat
+          - Depth [m]
+          - Temperature [C]
           invert: true
           kind: line
           shared_axes: true
@@ -6512,7 +6491,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: https://researchworkspace.com/files/42400652/Piatt1999.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42400652/Piatt1999.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -6525,7 +6504,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(12495833aa6810fd)}'
+      - - '{data(d94dabfd9f4efe52)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -6536,7 +6515,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(bf9ba6d3a8b7d215)}'
+        - datetime: '{data(1d75669f67afdafe)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -6564,12 +6543,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Depth [m]
-          - Lat
-          - datetime
-          - Temperature [C]
-          - Station
           - Lon
+          - Station
+          - datetime
+          - Lat
+          - Depth [m]
+          - Temperature [C]
           invert: true
           kind: line
           shared_axes: true
@@ -6581,7 +6560,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: https://researchworkspace.com/files/42400652/Piatt1999.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42400652/Piatt1999.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -6594,7 +6573,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(12495833aa6810fd)}'
+      - - '{data(d94dabfd9f4efe52)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -6605,7 +6584,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(bf9ba6d3a8b7d215)}'
+        - datetime: '{data(1d75669f67afdafe)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -6633,12 +6612,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Depth [m]
-          - Lat
-          - datetime
-          - Temperature [C]
-          - Station
           - Lon
+          - Station
+          - datetime
+          - Lat
+          - Depth [m]
+          - Temperature [C]
           invert: true
           kind: line
           shared_axes: true
@@ -6650,7 +6629,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: https://researchworkspace.com/files/42400652/Piatt1999.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42400652/Piatt1999.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -6663,7 +6642,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(12495833aa6810fd)}'
+      - - '{data(d94dabfd9f4efe52)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -6674,7 +6653,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(bf9ba6d3a8b7d215)}'
+        - datetime: '{data(1d75669f67afdafe)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -6702,12 +6681,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Depth [m]
-          - Lat
-          - datetime
-          - Temperature [C]
-          - Station
           - Lon
+          - Station
+          - datetime
+          - Lat
+          - Depth [m]
+          - Temperature [C]
           invert: true
           kind: line
           shared_axes: true
@@ -6719,7 +6698,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: https://researchworkspace.com/files/42400652/Piatt1999.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42400652/Piatt1999.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -6732,7 +6711,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(12495833aa6810fd)}'
+      - - '{data(d94dabfd9f4efe52)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -6743,7 +6722,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(bf9ba6d3a8b7d215)}'
+        - datetime: '{data(1d75669f67afdafe)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -6771,12 +6750,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Depth [m]
-          - Lat
-          - datetime
-          - Temperature [C]
-          - Station
           - Lon
+          - Station
+          - datetime
+          - Lat
+          - Depth [m]
+          - Temperature [C]
           invert: true
           kind: line
           shared_axes: true
@@ -6788,7 +6767,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: https://researchworkspace.com/files/42400652/Piatt1999.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42400652/Piatt1999.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -6801,7 +6780,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(12495833aa6810fd)}'
+      - - '{data(d94dabfd9f4efe52)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -6812,7 +6791,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(bf9ba6d3a8b7d215)}'
+        - datetime: '{data(1d75669f67afdafe)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -6840,12 +6819,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Depth [m]
-          - Lat
-          - datetime
-          - Temperature [C]
-          - Station
           - Lon
+          - Station
+          - datetime
+          - Lat
+          - Depth [m]
+          - Temperature [C]
           invert: true
           kind: line
           shared_axes: true
@@ -6857,7 +6836,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: https://researchworkspace.com/files/42400652/Piatt1999.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42400652/Piatt1999.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -6870,7 +6849,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(12495833aa6810fd)}'
+      - - '{data(d94dabfd9f4efe52)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -6881,7 +6860,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(bf9ba6d3a8b7d215)}'
+        - datetime: '{data(1d75669f67afdafe)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -6909,12 +6888,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Depth [m]
-          - Lat
-          - datetime
-          - Temperature [C]
-          - Station
           - Lon
+          - Station
+          - datetime
+          - Lat
+          - Depth [m]
+          - Temperature [C]
           invert: true
           kind: line
           shared_axes: true
@@ -6926,7 +6905,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: https://researchworkspace.com/files/42400652/Piatt1999.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42400652/Piatt1999.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -6939,7 +6918,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(12495833aa6810fd)}'
+      - - '{data(d94dabfd9f4efe52)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -6950,7 +6929,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(bf9ba6d3a8b7d215)}'
+        - datetime: '{data(1d75669f67afdafe)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -6978,12 +6957,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Depth [m]
-          - Lat
-          - datetime
-          - Temperature [C]
-          - Station
           - Lon
+          - Station
+          - datetime
+          - Lat
+          - Depth [m]
+          - Temperature [C]
           invert: true
           kind: line
           shared_axes: true
@@ -6995,7 +6974,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: https://researchworkspace.com/files/42400652/Piatt1999.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42400652/Piatt1999.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -7008,7 +6987,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(12495833aa6810fd)}'
+      - - '{data(d94dabfd9f4efe52)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -7019,7 +6998,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(bf9ba6d3a8b7d215)}'
+        - datetime: '{data(1d75669f67afdafe)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -7047,12 +7026,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Depth [m]
-          - Lat
-          - datetime
-          - Temperature [C]
-          - Station
           - Lon
+          - Station
+          - datetime
+          - Lat
+          - Depth [m]
+          - Temperature [C]
           invert: true
           kind: line
           shared_axes: true
@@ -7064,7 +7043,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: https://researchworkspace.com/files/42400652/Piatt1999.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42400652/Piatt1999.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -7077,7 +7056,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(12495833aa6810fd)}'
+      - - '{data(d94dabfd9f4efe52)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -7088,7 +7067,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(bf9ba6d3a8b7d215)}'
+        - datetime: '{data(1d75669f67afdafe)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -7116,12 +7095,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Depth [m]
-          - Lat
-          - datetime
-          - Temperature [C]
-          - Station
           - Lon
+          - Station
+          - datetime
+          - Lat
+          - Depth [m]
+          - Temperature [C]
           invert: true
           kind: line
           shared_axes: true
@@ -7133,7 +7112,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: https://researchworkspace.com/files/42400652/Piatt1999.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42400652/Piatt1999.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -7146,7 +7125,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(12495833aa6810fd)}'
+      - - '{data(d94dabfd9f4efe52)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -7157,7 +7136,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(bf9ba6d3a8b7d215)}'
+        - datetime: '{data(1d75669f67afdafe)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -7185,12 +7164,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Depth [m]
-          - Lat
-          - datetime
-          - Temperature [C]
-          - Station
           - Lon
+          - Station
+          - datetime
+          - Lat
+          - Depth [m]
+          - Temperature [C]
           invert: true
           kind: line
           shared_axes: true
@@ -7202,7 +7181,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: https://researchworkspace.com/files/42400652/Piatt1999.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42400652/Piatt1999.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -7215,7 +7194,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(12495833aa6810fd)}'
+      - - '{data(d94dabfd9f4efe52)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -7226,7 +7205,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(bf9ba6d3a8b7d215)}'
+        - datetime: '{data(1d75669f67afdafe)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -7254,12 +7233,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Depth [m]
-          - Lat
-          - datetime
-          - Temperature [C]
-          - Station
           - Lon
+          - Station
+          - datetime
+          - Lat
+          - Depth [m]
+          - Temperature [C]
           invert: true
           kind: line
           shared_axes: true
@@ -7271,7 +7250,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: https://researchworkspace.com/files/42400652/Piatt1999.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42400652/Piatt1999.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -7284,7 +7263,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(12495833aa6810fd)}'
+      - - '{data(d94dabfd9f4efe52)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -7295,7 +7274,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(bf9ba6d3a8b7d215)}'
+        - datetime: '{data(1d75669f67afdafe)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -7323,12 +7302,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Depth [m]
-          - Lat
-          - datetime
-          - Temperature [C]
-          - Station
           - Lon
+          - Station
+          - datetime
+          - Lat
+          - Depth [m]
+          - Temperature [C]
           invert: true
           kind: line
           shared_axes: true
@@ -7340,7 +7319,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: https://researchworkspace.com/files/42400652/Piatt1999.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42400652/Piatt1999.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -7353,7 +7332,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(12495833aa6810fd)}'
+      - - '{data(d94dabfd9f4efe52)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -7364,7 +7343,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(bf9ba6d3a8b7d215)}'
+        - datetime: '{data(1d75669f67afdafe)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -7392,12 +7371,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Depth [m]
-          - Lat
-          - datetime
-          - Temperature [C]
-          - Station
           - Lon
+          - Station
+          - datetime
+          - Lat
+          - Depth [m]
+          - Temperature [C]
           invert: true
           kind: line
           shared_axes: true
@@ -7409,7 +7388,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: https://researchworkspace.com/files/42400652/Piatt1999.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42400652/Piatt1999.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -7422,7 +7401,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(12495833aa6810fd)}'
+      - - '{data(d94dabfd9f4efe52)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -7433,7 +7412,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(bf9ba6d3a8b7d215)}'
+        - datetime: '{data(1d75669f67afdafe)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -7461,12 +7440,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Depth [m]
-          - Lat
-          - datetime
-          - Temperature [C]
-          - Station
           - Lon
+          - Station
+          - datetime
+          - Lat
+          - Depth [m]
+          - Temperature [C]
           invert: true
           kind: line
           shared_axes: true
@@ -7478,7 +7457,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: https://researchworkspace.com/files/42400652/Piatt1999.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42400652/Piatt1999.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -7491,7 +7470,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(12495833aa6810fd)}'
+      - - '{data(d94dabfd9f4efe52)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -7502,7 +7481,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(bf9ba6d3a8b7d215)}'
+        - datetime: '{data(1d75669f67afdafe)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -7530,12 +7509,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Depth [m]
-          - Lat
-          - datetime
-          - Temperature [C]
-          - Station
           - Lon
+          - Station
+          - datetime
+          - Lat
+          - Depth [m]
+          - Temperature [C]
           invert: true
           kind: line
           shared_axes: true
@@ -7547,7 +7526,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: https://researchworkspace.com/files/42400652/Piatt1999.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42400652/Piatt1999.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -7560,7 +7539,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(12495833aa6810fd)}'
+      - - '{data(d94dabfd9f4efe52)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -7571,7 +7550,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(bf9ba6d3a8b7d215)}'
+        - datetime: '{data(1d75669f67afdafe)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -7599,12 +7578,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Depth [m]
-          - Lat
-          - datetime
-          - Temperature [C]
-          - Station
           - Lon
+          - Station
+          - datetime
+          - Lat
+          - Depth [m]
+          - Temperature [C]
           invert: true
           kind: line
           shared_axes: true
@@ -7616,7 +7595,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: https://researchworkspace.com/files/42400652/Piatt1999.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42400652/Piatt1999.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -7629,7 +7608,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(12495833aa6810fd)}'
+      - - '{data(d94dabfd9f4efe52)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -7640,7 +7619,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(bf9ba6d3a8b7d215)}'
+        - datetime: '{data(1d75669f67afdafe)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -7668,12 +7647,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Depth [m]
-          - Lat
-          - datetime
-          - Temperature [C]
-          - Station
           - Lon
+          - Station
+          - datetime
+          - Lat
+          - Depth [m]
+          - Temperature [C]
           invert: true
           kind: line
           shared_axes: true
@@ -7685,7 +7664,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: https://researchworkspace.com/files/42400652/Piatt1999.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42400652/Piatt1999.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -7698,7 +7677,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(12495833aa6810fd)}'
+      - - '{data(d94dabfd9f4efe52)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -7709,7 +7688,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(bf9ba6d3a8b7d215)}'
+        - datetime: '{data(1d75669f67afdafe)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -7737,12 +7716,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Depth [m]
-          - Lat
-          - datetime
-          - Temperature [C]
-          - Station
           - Lon
+          - Station
+          - datetime
+          - Lat
+          - Depth [m]
+          - Temperature [C]
           invert: true
           kind: line
           shared_axes: true
@@ -7754,7 +7733,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: https://researchworkspace.com/files/42400652/Piatt1999.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42400652/Piatt1999.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -7767,7 +7746,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(12495833aa6810fd)}'
+      - - '{data(d94dabfd9f4efe52)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -7778,7 +7757,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(bf9ba6d3a8b7d215)}'
+        - datetime: '{data(1d75669f67afdafe)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -7806,12 +7785,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Depth [m]
-          - Lat
-          - datetime
-          - Temperature [C]
-          - Station
           - Lon
+          - Station
+          - datetime
+          - Lat
+          - Depth [m]
+          - Temperature [C]
           invert: true
           kind: line
           shared_axes: true
@@ -7823,7 +7802,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: https://researchworkspace.com/files/42400652/Piatt1999.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42400652/Piatt1999.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -7836,7 +7815,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(12495833aa6810fd)}'
+      - - '{data(d94dabfd9f4efe52)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -7847,7 +7826,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(bf9ba6d3a8b7d215)}'
+        - datetime: '{data(1d75669f67afdafe)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -7875,12 +7854,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Depth [m]
-          - Lat
-          - datetime
-          - Temperature [C]
-          - Station
           - Lon
+          - Station
+          - datetime
+          - Lat
+          - Depth [m]
+          - Temperature [C]
           invert: true
           kind: line
           shared_axes: true
@@ -7892,7 +7871,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: https://researchworkspace.com/files/42400652/Piatt1999.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42400652/Piatt1999.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -7905,7 +7884,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(12495833aa6810fd)}'
+      - - '{data(d94dabfd9f4efe52)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -7916,7 +7895,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(bf9ba6d3a8b7d215)}'
+        - datetime: '{data(1d75669f67afdafe)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -7944,12 +7923,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Depth [m]
-          - Lat
-          - datetime
-          - Temperature [C]
-          - Station
           - Lon
+          - Station
+          - datetime
+          - Lat
+          - Depth [m]
+          - Temperature [C]
           invert: true
           kind: line
           shared_axes: true
@@ -7961,7 +7940,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: https://researchworkspace.com/files/42400652/Piatt1999.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42400652/Piatt1999.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -7974,7 +7953,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(12495833aa6810fd)}'
+      - - '{data(d94dabfd9f4efe52)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -7985,7 +7964,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(bf9ba6d3a8b7d215)}'
+        - datetime: '{data(1d75669f67afdafe)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -8013,12 +7992,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Depth [m]
-          - Lat
-          - datetime
-          - Temperature [C]
-          - Station
           - Lon
+          - Station
+          - datetime
+          - Lat
+          - Depth [m]
+          - Temperature [C]
           invert: true
           kind: line
           shared_axes: true
@@ -8030,7 +8009,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: https://researchworkspace.com/files/42400652/Piatt1999.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42400652/Piatt1999.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -8043,7 +8022,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(12495833aa6810fd)}'
+      - - '{data(d94dabfd9f4efe52)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -8054,7 +8033,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(bf9ba6d3a8b7d215)}'
+        - datetime: '{data(1d75669f67afdafe)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -8082,12 +8061,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Depth [m]
-          - Lat
-          - datetime
-          - Temperature [C]
-          - Station
           - Lon
+          - Station
+          - datetime
+          - Lat
+          - Depth [m]
+          - Temperature [C]
           invert: true
           kind: line
           shared_axes: true
@@ -8099,7 +8078,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: https://researchworkspace.com/files/42400652/Piatt1999.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42400652/Piatt1999.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -8112,7 +8091,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(12495833aa6810fd)}'
+      - - '{data(d94dabfd9f4efe52)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -8123,7 +8102,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(bf9ba6d3a8b7d215)}'
+        - datetime: '{data(1d75669f67afdafe)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -8151,12 +8130,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Depth [m]
-          - Lat
-          - datetime
-          - Temperature [C]
-          - Station
           - Lon
+          - Station
+          - datetime
+          - Lat
+          - Depth [m]
+          - Temperature [C]
           invert: true
           kind: line
           shared_axes: true
@@ -8168,32 +8147,57 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: https://researchworkspace.com/files/42400652/Piatt1999.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42400652/Piatt1999.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
-  bf9ba6d3a8b7d215:
+  d94dabfd9f4efe52:
     kwargs:
-      out_instances:
-      - pandas:DataFrame
-      - pandas:DataFrame
-      - pandas:DataFrame
-      steps:
-      - - '{data(12495833aa6810fd)}'
-        - []
-        - {}
-      - - '{func(intake.readers.transform:Method)}'
-        - []
-        - columns:
-            hh:mm: time
-            mon/day/yr: date
-          method_name: rename
-      - - '{func(intake.readers.convert:GenericFunc)}'
-        - []
-        - func: '{func(cook_inlet_catalogs.utils:parse_date_time)}'
+      args:
+      - '{data(98fd21a75789a6e9)}'
+      dtype:
+        Station: '{func(builtins:str)}'
+        hh:mm: '{func(builtins:str)}'
+        mon/day/yr: '{func(builtins:str)}'
+      encoding: unicode_escape
+      header: 0
+      names:
+      - Cruise
+      - Station
+      - Type
+      - mon/day/yr
+      - hh:mm
+      - Lon
+      - Lat
+      - Bot. Depth
+      - Depth [m]
+      - Temperature [C]
+      - Salinity [psu]
+      - Sigma
+      - Backscatter
+      - CHL
+      - empty
+      storage_options:
+        simplecache:
+          cache_storage: /home/kristen/.cache/cook-inlet-catalogs
+          same_names: true
+      usecols:
+      - Cruise
+      - Station
+      - Type
+      - mon/day/yr
+      - hh:mm
+      - Lon
+      - Lat
+      - Bot. Depth
+      - Depth [m]
+      - Temperature [C]
+      - Salinity [psu]
+      - Backscatter
+      - CHL
     metadata: {}
     output_instance: pandas:DataFrame
-    reader: intake.readers.convert:Pipeline
+    reader: intake.readers.readers:PandasCSV
     user_parameters: {}
 metadata:
   featuretype: profile

@@ -26,55 +26,59 @@ aliases:
   '2016-08-29': '2016-08-29'
   '2016-10-02': '2016-10-02'
 data:
-  0450b8db7921ec60:
+  7a807ba9f2b43fe5:
     datatype: intake.readers.datatypes:CSV
     kwargs:
       storage_options: null
-      url: https://researchworkspace.com/files/42202622/CPR_TemperatureData_2014_subsetted.csv
+      url: simplecache://::https://researchworkspace.com/files/42202624/CPR_TemperatureData_2015_subsetted.csv
     metadata: {}
     user_parameters: {}
-  31949f4e583c9e81:
+  853f9d94de6761f5:
     datatype: intake.readers.datatypes:CSV
     kwargs:
       storage_options: null
-      url: https://researchworkspace.com/files/42202616/CPR_TemperatureData_2011_subsetted.csv
+      url: simplecache://::https://researchworkspace.com/files/42202620/CPR_TemperatureData_2013_subsetted.csv
     metadata: {}
     user_parameters: {}
-  6001730c95dce5d7:
+  8aaf98cfed536cd4:
     datatype: intake.readers.datatypes:CSV
     kwargs:
       storage_options: null
-      url: https://researchworkspace.com/files/42202620/CPR_TemperatureData_2013_subsetted.csv
+      url: simplecache://::https://researchworkspace.com/files/42202622/CPR_TemperatureData_2014_subsetted.csv
     metadata: {}
     user_parameters: {}
-  9344960c6452f369:
+  92dfe2aa83b437d4:
     datatype: intake.readers.datatypes:CSV
     kwargs:
       storage_options: null
-      url: https://researchworkspace.com/files/42202626/CPR_TemperatureData_2016_subsetted.csv
+      url: simplecache://::https://researchworkspace.com/files/42202618/CPR_TemperatureData_2012_subsetted.csv
     metadata: {}
     user_parameters: {}
-  c06e5de592384edf:
+  c1171e4576e15159:
     datatype: intake.readers.datatypes:CSV
     kwargs:
       storage_options: null
-      url: https://researchworkspace.com/files/42202618/CPR_TemperatureData_2012_subsetted.csv
+      url: simplecache://::https://researchworkspace.com/files/42202616/CPR_TemperatureData_2011_subsetted.csv
     metadata: {}
     user_parameters: {}
-  eda8e2005e4ea304:
+  c2979b41c51f421b:
     datatype: intake.readers.datatypes:CSV
     kwargs:
       storage_options: null
-      url: https://researchworkspace.com/files/42202624/CPR_TemperatureData_2015_subsetted.csv
+      url: simplecache://::https://researchworkspace.com/files/42202626/CPR_TemperatureData_2016_subsetted.csv
     metadata: {}
     user_parameters: {}
 entries:
-  0ca7ce610ca74ebc:
+  1d451c1bcce106d0:
     kwargs:
       args:
-      - '{data(6001730c95dce5d7)}'
+      - '{data(853f9d94de6761f5)}'
       parse_dates:
       - 0
+      storage_options:
+        simplecache:
+          cache_storage: /home/kristen/.cache/cook-inlet-catalogs
+          same_names: true
     metadata: {}
     output_instance: pandas:DataFrame
     reader: intake.readers.readers:PandasCSV
@@ -86,7 +90,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(4bba3e6a9b456e45)}'
+      - - '{data(324d18968780ccf8)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -114,18 +118,18 @@ entries:
           flip_yaxis: false
           height: 300
           hover_cols:
+          - temperature
           - date_time
+          - Latitude (deg N)
           - Longitude (-ve west)
           - depth [m]
-          - temperature
-          - Latitude (deg N)
           kind: scatter
           shared_axes: false
           title: '2011-06-20'
           width: 500
           x: Longitude (-ve west)
           y: Latitude (deg N)
-      urlpath: https://researchworkspace.com/files/42202616/CPR_TemperatureData_2011_subsetted.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42202616/CPR_TemperatureData_2011_subsetted.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -136,7 +140,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(4bba3e6a9b456e45)}'
+      - - '{data(324d18968780ccf8)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -164,18 +168,18 @@ entries:
           flip_yaxis: false
           height: 300
           hover_cols:
+          - temperature
           - date_time
+          - Latitude (deg N)
           - Longitude (-ve west)
           - depth [m]
-          - temperature
-          - Latitude (deg N)
           kind: scatter
           shared_axes: false
           title: '2011-07-23'
           width: 500
           x: Longitude (-ve west)
           y: Latitude (deg N)
-      urlpath: https://researchworkspace.com/files/42202616/CPR_TemperatureData_2011_subsetted.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42202616/CPR_TemperatureData_2011_subsetted.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -186,7 +190,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(4bba3e6a9b456e45)}'
+      - - '{data(324d18968780ccf8)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -214,18 +218,18 @@ entries:
           flip_yaxis: false
           height: 300
           hover_cols:
+          - temperature
           - date_time
+          - Latitude (deg N)
           - Longitude (-ve west)
           - depth [m]
-          - temperature
-          - Latitude (deg N)
           kind: scatter
           shared_axes: false
           title: '2011-08-22'
           width: 500
           x: Longitude (-ve west)
           y: Latitude (deg N)
-      urlpath: https://researchworkspace.com/files/42202616/CPR_TemperatureData_2011_subsetted.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42202616/CPR_TemperatureData_2011_subsetted.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -236,7 +240,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(4b5f247a5e5817e2)}'
+      - - '{data(67c9aabd63ff1c5c)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -264,18 +268,18 @@ entries:
           flip_yaxis: false
           height: 300
           hover_cols:
-          - date_time
           - lon
-          - lat
+          - date_time
           - temp
           - depth
+          - lat
           kind: scatter
           shared_axes: false
           title: '2012-04-09'
           width: 500
           x: lon
           y: lat
-      urlpath: https://researchworkspace.com/files/42202618/CPR_TemperatureData_2012_subsetted.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42202618/CPR_TemperatureData_2012_subsetted.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -286,7 +290,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(4b5f247a5e5817e2)}'
+      - - '{data(67c9aabd63ff1c5c)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -314,18 +318,18 @@ entries:
           flip_yaxis: false
           height: 300
           hover_cols:
-          - date_time
           - lon
-          - lat
+          - date_time
           - temp
           - depth
+          - lat
           kind: scatter
           shared_axes: false
           title: '2012-05-13'
           width: 500
           x: lon
           y: lat
-      urlpath: https://researchworkspace.com/files/42202618/CPR_TemperatureData_2012_subsetted.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42202618/CPR_TemperatureData_2012_subsetted.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -336,7 +340,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(4b5f247a5e5817e2)}'
+      - - '{data(67c9aabd63ff1c5c)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -364,18 +368,18 @@ entries:
           flip_yaxis: false
           height: 300
           hover_cols:
-          - date_time
           - lon
-          - lat
+          - date_time
           - temp
           - depth
+          - lat
           kind: scatter
           shared_axes: false
           title: '2012-06-11'
           width: 500
           x: lon
           y: lat
-      urlpath: https://researchworkspace.com/files/42202618/CPR_TemperatureData_2012_subsetted.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42202618/CPR_TemperatureData_2012_subsetted.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -386,7 +390,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(4b5f247a5e5817e2)}'
+      - - '{data(67c9aabd63ff1c5c)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -414,18 +418,18 @@ entries:
           flip_yaxis: false
           height: 300
           hover_cols:
-          - date_time
           - lon
-          - lat
+          - date_time
           - temp
           - depth
+          - lat
           kind: scatter
           shared_axes: false
           title: '2012-09-16'
           width: 500
           x: lon
           y: lat
-      urlpath: https://researchworkspace.com/files/42202618/CPR_TemperatureData_2012_subsetted.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42202618/CPR_TemperatureData_2012_subsetted.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -436,7 +440,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(4b5f247a5e5817e2)}'
+      - - '{data(67c9aabd63ff1c5c)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -464,18 +468,18 @@ entries:
           flip_yaxis: false
           height: 300
           hover_cols:
-          - date_time
           - lon
-          - lat
+          - date_time
           - temp
           - depth
+          - lat
           kind: scatter
           shared_axes: false
           title: '2012-10-16'
           width: 500
           x: lon
           y: lat
-      urlpath: https://researchworkspace.com/files/42202618/CPR_TemperatureData_2012_subsetted.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42202618/CPR_TemperatureData_2012_subsetted.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -486,7 +490,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(0ca7ce610ca74ebc)}'
+      - - '{data(1d451c1bcce106d0)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -514,18 +518,18 @@ entries:
           flip_yaxis: false
           height: 300
           hover_cols:
-          - date_time
           - lon
-          - lat
+          - date_time
           - temp
           - depth
+          - lat
           kind: scatter
           shared_axes: false
           title: '2013-04-14'
           width: 500
           x: lon
           y: lat
-      urlpath: https://researchworkspace.com/files/42202620/CPR_TemperatureData_2013_subsetted.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42202620/CPR_TemperatureData_2013_subsetted.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -536,7 +540,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(0ca7ce610ca74ebc)}'
+      - - '{data(1d451c1bcce106d0)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -564,18 +568,18 @@ entries:
           flip_yaxis: false
           height: 300
           hover_cols:
-          - date_time
           - lon
-          - lat
+          - date_time
           - temp
           - depth
+          - lat
           kind: scatter
           shared_axes: false
           title: '2013-05-13'
           width: 500
           x: lon
           y: lat
-      urlpath: https://researchworkspace.com/files/42202620/CPR_TemperatureData_2013_subsetted.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42202620/CPR_TemperatureData_2013_subsetted.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -586,7 +590,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(0ca7ce610ca74ebc)}'
+      - - '{data(1d451c1bcce106d0)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -614,18 +618,18 @@ entries:
           flip_yaxis: false
           height: 300
           hover_cols:
-          - date_time
           - lon
-          - lat
+          - date_time
           - temp
           - depth
+          - lat
           kind: scatter
           shared_axes: false
           title: '2013-06-15'
           width: 500
           x: lon
           y: lat
-      urlpath: https://researchworkspace.com/files/42202620/CPR_TemperatureData_2013_subsetted.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42202620/CPR_TemperatureData_2013_subsetted.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -636,7 +640,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(0ca7ce610ca74ebc)}'
+      - - '{data(1d451c1bcce106d0)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -664,18 +668,18 @@ entries:
           flip_yaxis: false
           height: 300
           hover_cols:
-          - date_time
           - lon
-          - lat
+          - date_time
           - temp
           - depth
+          - lat
           kind: scatter
           shared_axes: false
           title: '2013-07-15'
           width: 500
           x: lon
           y: lat
-      urlpath: https://researchworkspace.com/files/42202620/CPR_TemperatureData_2013_subsetted.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42202620/CPR_TemperatureData_2013_subsetted.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -686,7 +690,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(0ca7ce610ca74ebc)}'
+      - - '{data(1d451c1bcce106d0)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -714,18 +718,18 @@ entries:
           flip_yaxis: false
           height: 300
           hover_cols:
-          - date_time
           - lon
-          - lat
+          - date_time
           - temp
           - depth
+          - lat
           kind: scatter
           shared_axes: false
           title: '2013-08-17'
           width: 500
           x: lon
           y: lat
-      urlpath: https://researchworkspace.com/files/42202620/CPR_TemperatureData_2013_subsetted.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42202620/CPR_TemperatureData_2013_subsetted.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -736,7 +740,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(f8c85345e2775970)}'
+      - - '{data(6321e1cc9f3a2827)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -764,18 +768,18 @@ entries:
           flip_yaxis: false
           height: 300
           hover_cols:
-          - date_time
           - lon
-          - lat
+          - date_time
           - temp
           - depth
+          - lat
           kind: scatter
           shared_axes: false
           title: '2014-04-27'
           width: 500
           x: lon
           y: lat
-      urlpath: https://researchworkspace.com/files/42202622/CPR_TemperatureData_2014_subsetted.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42202622/CPR_TemperatureData_2014_subsetted.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -786,7 +790,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(f8c85345e2775970)}'
+      - - '{data(6321e1cc9f3a2827)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -814,18 +818,18 @@ entries:
           flip_yaxis: false
           height: 300
           hover_cols:
-          - date_time
           - lon
-          - lat
+          - date_time
           - temp
           - depth
+          - lat
           kind: scatter
           shared_axes: false
           title: '2014-05-27'
           width: 500
           x: lon
           y: lat
-      urlpath: https://researchworkspace.com/files/42202622/CPR_TemperatureData_2014_subsetted.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42202622/CPR_TemperatureData_2014_subsetted.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -836,7 +840,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(f8c85345e2775970)}'
+      - - '{data(6321e1cc9f3a2827)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -864,18 +868,18 @@ entries:
           flip_yaxis: false
           height: 300
           hover_cols:
-          - date_time
           - lon
-          - lat
+          - date_time
           - temp
           - depth
+          - lat
           kind: scatter
           shared_axes: false
           title: '2014-06-29'
           width: 500
           x: lon
           y: lat
-      urlpath: https://researchworkspace.com/files/42202622/CPR_TemperatureData_2014_subsetted.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42202622/CPR_TemperatureData_2014_subsetted.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -886,7 +890,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(f8c85345e2775970)}'
+      - - '{data(6321e1cc9f3a2827)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -914,18 +918,18 @@ entries:
           flip_yaxis: false
           height: 300
           hover_cols:
-          - date_time
           - lon
-          - lat
+          - date_time
           - temp
           - depth
+          - lat
           kind: scatter
           shared_axes: false
           title: '2014-07-29'
           width: 500
           x: lon
           y: lat
-      urlpath: https://researchworkspace.com/files/42202622/CPR_TemperatureData_2014_subsetted.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42202622/CPR_TemperatureData_2014_subsetted.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -936,7 +940,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(f8c85345e2775970)}'
+      - - '{data(6321e1cc9f3a2827)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -964,18 +968,18 @@ entries:
           flip_yaxis: false
           height: 300
           hover_cols:
-          - date_time
           - lon
-          - lat
+          - date_time
           - temp
           - depth
+          - lat
           kind: scatter
           shared_axes: false
           title: '2014-08-31'
           width: 500
           x: lon
           y: lat
-      urlpath: https://researchworkspace.com/files/42202622/CPR_TemperatureData_2014_subsetted.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42202622/CPR_TemperatureData_2014_subsetted.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -986,7 +990,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(a23807a0bd78d64d)}'
+      - - '{data(6898c4b99185e7d5)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -1014,18 +1018,18 @@ entries:
           flip_yaxis: false
           height: 300
           hover_cols:
-          - date_time
           - lon
-          - lat
+          - date_time
           - temp
           - depth
+          - lat
           kind: scatter
           shared_axes: false
           title: '2015-08-23'
           width: 500
           x: lon
           y: lat
-      urlpath: https://researchworkspace.com/files/42202624/CPR_TemperatureData_2015_subsetted.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42202624/CPR_TemperatureData_2015_subsetted.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -1036,7 +1040,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(a23807a0bd78d64d)}'
+      - - '{data(6898c4b99185e7d5)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -1064,18 +1068,18 @@ entries:
           flip_yaxis: false
           height: 300
           hover_cols:
-          - date_time
           - lon
-          - lat
+          - date_time
           - temp
           - depth
+          - lat
           kind: scatter
           shared_axes: false
           title: '2015-09-01'
           width: 500
           x: lon
           y: lat
-      urlpath: https://researchworkspace.com/files/42202624/CPR_TemperatureData_2015_subsetted.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42202624/CPR_TemperatureData_2015_subsetted.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -1086,7 +1090,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(b1ef85a970e5d649)}'
+      - - '{data(dd1eb4d1f5e8b6ce)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -1114,18 +1118,18 @@ entries:
           flip_yaxis: false
           height: 300
           hover_cols:
-          - date_time
           - lon
-          - lat
+          - date_time
           - temp
           - depth
+          - lat
           kind: scatter
           shared_axes: false
           title: '2016-04-17'
           width: 500
           x: lon
           y: lat
-      urlpath: https://researchworkspace.com/files/42202626/CPR_TemperatureData_2016_subsetted.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42202626/CPR_TemperatureData_2016_subsetted.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -1136,7 +1140,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(b1ef85a970e5d649)}'
+      - - '{data(dd1eb4d1f5e8b6ce)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -1164,18 +1168,18 @@ entries:
           flip_yaxis: false
           height: 300
           hover_cols:
-          - date_time
           - lon
-          - lat
+          - date_time
           - temp
           - depth
+          - lat
           kind: scatter
           shared_axes: false
           title: '2016-05-16'
           width: 500
           x: lon
           y: lat
-      urlpath: https://researchworkspace.com/files/42202626/CPR_TemperatureData_2016_subsetted.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42202626/CPR_TemperatureData_2016_subsetted.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -1186,7 +1190,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(b1ef85a970e5d649)}'
+      - - '{data(dd1eb4d1f5e8b6ce)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -1214,18 +1218,18 @@ entries:
           flip_yaxis: false
           height: 300
           hover_cols:
-          - date_time
           - lon
-          - lat
+          - date_time
           - temp
           - depth
+          - lat
           kind: scatter
           shared_axes: false
           title: '2016-06-19'
           width: 500
           x: lon
           y: lat
-      urlpath: https://researchworkspace.com/files/42202626/CPR_TemperatureData_2016_subsetted.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42202626/CPR_TemperatureData_2016_subsetted.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -1236,7 +1240,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(b1ef85a970e5d649)}'
+      - - '{data(dd1eb4d1f5e8b6ce)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -1264,18 +1268,18 @@ entries:
           flip_yaxis: false
           height: 300
           hover_cols:
-          - date_time
           - lon
-          - lat
+          - date_time
           - temp
           - depth
+          - lat
           kind: scatter
           shared_axes: false
           title: '2016-07-19'
           width: 500
           x: lon
           y: lat
-      urlpath: https://researchworkspace.com/files/42202626/CPR_TemperatureData_2016_subsetted.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42202626/CPR_TemperatureData_2016_subsetted.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -1286,7 +1290,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(b1ef85a970e5d649)}'
+      - - '{data(dd1eb4d1f5e8b6ce)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -1314,18 +1318,18 @@ entries:
           flip_yaxis: false
           height: 300
           hover_cols:
-          - date_time
           - lon
-          - lat
+          - date_time
           - temp
           - depth
+          - lat
           kind: scatter
           shared_axes: false
           title: '2016-08-29'
           width: 500
           x: lon
           y: lat
-      urlpath: https://researchworkspace.com/files/42202626/CPR_TemperatureData_2016_subsetted.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42202626/CPR_TemperatureData_2016_subsetted.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -1336,7 +1340,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(b1ef85a970e5d649)}'
+      - - '{data(dd1eb4d1f5e8b6ce)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -1364,67 +1368,87 @@ entries:
           flip_yaxis: false
           height: 300
           hover_cols:
-          - date_time
           - lon
-          - lat
+          - date_time
           - temp
           - depth
+          - lat
           kind: scatter
           shared_axes: false
           title: '2016-10-02'
           width: 500
           x: lon
           y: lat
-      urlpath: https://researchworkspace.com/files/42202626/CPR_TemperatureData_2016_subsetted.csv
+      urlpath: simplecache://::https://researchworkspace.com/files/42202626/CPR_TemperatureData_2016_subsetted.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
-  4b5f247a5e5817e2:
+  324d18968780ccf8:
     kwargs:
       args:
-      - '{data(c06e5de592384edf)}'
+      - '{data(c1171e4576e15159)}'
       parse_dates:
       - 0
+      storage_options:
+        simplecache:
+          cache_storage: /home/kristen/.cache/cook-inlet-catalogs
+          same_names: true
     metadata: {}
     output_instance: pandas:DataFrame
     reader: intake.readers.readers:PandasCSV
     user_parameters: {}
-  4bba3e6a9b456e45:
+  6321e1cc9f3a2827:
     kwargs:
       args:
-      - '{data(31949f4e583c9e81)}'
+      - '{data(8aaf98cfed536cd4)}'
       parse_dates:
       - 0
+      storage_options:
+        simplecache:
+          cache_storage: /home/kristen/.cache/cook-inlet-catalogs
+          same_names: true
     metadata: {}
     output_instance: pandas:DataFrame
     reader: intake.readers.readers:PandasCSV
     user_parameters: {}
-  a23807a0bd78d64d:
+  67c9aabd63ff1c5c:
     kwargs:
       args:
-      - '{data(eda8e2005e4ea304)}'
+      - '{data(92dfe2aa83b437d4)}'
       parse_dates:
       - 0
+      storage_options:
+        simplecache:
+          cache_storage: /home/kristen/.cache/cook-inlet-catalogs
+          same_names: true
     metadata: {}
     output_instance: pandas:DataFrame
     reader: intake.readers.readers:PandasCSV
     user_parameters: {}
-  b1ef85a970e5d649:
+  6898c4b99185e7d5:
     kwargs:
       args:
-      - '{data(9344960c6452f369)}'
+      - '{data(7a807ba9f2b43fe5)}'
       parse_dates:
       - 0
+      storage_options:
+        simplecache:
+          cache_storage: /home/kristen/.cache/cook-inlet-catalogs
+          same_names: true
     metadata: {}
     output_instance: pandas:DataFrame
     reader: intake.readers.readers:PandasCSV
     user_parameters: {}
-  f8c85345e2775970:
+  dd1eb4d1f5e8b6ce:
     kwargs:
       args:
-      - '{data(0450b8db7921ec60)}'
+      - '{data(c2979b41c51f421b)}'
       parse_dates:
       - 0
+      storage_options:
+        simplecache:
+          cache_storage: /home/kristen/.cache/cook-inlet-catalogs
+          same_names: true
     metadata: {}
     output_instance: pandas:DataFrame
     reader: intake.readers.readers:PandasCSV

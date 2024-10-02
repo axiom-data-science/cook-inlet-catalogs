@@ -2,9 +2,15 @@ aliases:
   lower-ci_system-B_2006-2007: lower-ci_system-B_2006-2007
   lower-ci_system-B_2006-2007_subtidal_weekly_mean: lower-ci_system-B_2006-2007_subtidal_weekly_mean
   lower-ci_system-B_2006-2007_tidecons: lower-ci_system-B_2006-2007_tidecons
+  lower-ci_system-B_2006_subtidal_daily_mean: lower-ci_system-B_2006_subtidal_daily_mean
+  lower-ci_system-B_2006_subtidal_weekly_mean: lower-ci_system-B_2006_subtidal_weekly_mean
+  lower-ci_system-B_2006_tidecons: lower-ci_system-B_2006_tidecons
   upper-ci_system-A_2002-2003: upper-ci_system-A_2002-2003
   upper-ci_system-A_2002-2003_subtidal_weekly_mean: upper-ci_system-A_2002-2003_subtidal_weekly_mean
   upper-ci_system-A_2002-2003_tidecons: upper-ci_system-A_2002-2003_tidecons
+  upper-ci_system-A_2003_subtidal_daily_mean: upper-ci_system-A_2003_subtidal_daily_mean
+  upper-ci_system-A_2003_subtidal_weekly_mean: upper-ci_system-A_2003_subtidal_weekly_mean
+  upper-ci_system-A_2003_tidecons: upper-ci_system-A_2003_tidecons
   upper-ci_system-A_2009: upper-ci_system-A_2009
   upper-ci_system-A_2009_subtidal_weekly_mean: upper-ci_system-A_2009_subtidal_weekly_mean
   upper-ci_system-A_2009_tidecons: upper-ci_system-A_2009_tidecons
@@ -25,6 +31,14 @@ data:
       url: simplecache://::https://researchworkspace.com/files/42712206/upper-ci_system-A_2002-2003_subtidal_weekly_mean.nc
     metadata: {}
     user_parameters: {}
+  28546c0863a8caac:
+    datatype: intake.readers.datatypes:HDF5
+    kwargs:
+      path: ''
+      storage_options: null
+      url: simplecache://::https://researchworkspace.com/files/44879877/upper-ci_system-A_2003_subtidal_daily_mean.nc
+    metadata: {}
+    user_parameters: {}
   3057834667927ec4:
     datatype: intake.readers.datatypes:HDF5
     kwargs:
@@ -33,12 +47,36 @@ data:
       url: simplecache://::https://researchworkspace.com/files/42712165/lower-ci_system-B_2006-2007.nc
     metadata: {}
     user_parameters: {}
+  404008e431bec77a:
+    datatype: intake.readers.datatypes:HDF5
+    kwargs:
+      path: ''
+      storage_options: null
+      url: simplecache://::https://researchworkspace.com/files/44879894/upper-ci_system-A_2003_subtidal_weekly_mean.nc
+    metadata: {}
+    user_parameters: {}
   6737586fd86bada1:
     datatype: intake.readers.datatypes:HDF5
     kwargs:
       path: ''
       storage_options: null
       url: simplecache://::https://researchworkspace.com/files/42712214/upper-ci_system-A_2009_subtidal_weekly_mean.nc
+    metadata: {}
+    user_parameters: {}
+  7e9c42b71fff2552:
+    datatype: intake.readers.datatypes:HDF5
+    kwargs:
+      path: ''
+      storage_options: null
+      url: simplecache://::https://researchworkspace.com/files/44879885/lower-ci_system-B_2006_tidecons_base.nc
+    metadata: {}
+    user_parameters: {}
+  869d166f31953ed0:
+    datatype: intake.readers.datatypes:HDF5
+    kwargs:
+      path: ''
+      storage_options: null
+      url: simplecache://::https://researchworkspace.com/files/44879883/lower-ci_system-B_2006_subtidal_daily_mean.nc
     metadata: {}
     user_parameters: {}
   8dd1c812aa44a8fc:
@@ -55,6 +93,14 @@ data:
       path: ''
       storage_options: null
       url: simplecache://::https://researchworkspace.com/files/42712163/upper-ci_system-A_2002-2003.nc
+    metadata: {}
+    user_parameters: {}
+  a0d13da822cbe4dd:
+    datatype: intake.readers.datatypes:HDF5
+    kwargs:
+      path: ''
+      storage_options: null
+      url: simplecache://::https://researchworkspace.com/files/44879879/upper-ci_system-A_2003_tidecons_base.nc
     metadata: {}
     user_parameters: {}
   bb93f99350577317:
@@ -79,6 +125,14 @@ data:
       path: ''
       storage_options: null
       url: simplecache://::https://researchworkspace.com/files/42712182/upper-ci_system-A_2002-2003_tidecons_base.nc
+    metadata: {}
+    user_parameters: {}
+  fd397eba7d582388:
+    datatype: intake.readers.datatypes:HDF5
+    kwargs:
+      path: ''
+      storage_options: null
+      url: simplecache://::https://researchworkspace.com/files/44879896/lower-ci_system-B_2006_subtidal_weekly_mean.nc
     metadata: {}
     user_parameters: {}
 entries:
@@ -243,6 +297,158 @@ entries:
     output_instance: xarray:Dataset
     reader: intake.readers.readers:XArrayDatasetReader
     user_parameters: {}
+  lower-ci_system-B_2006_subtidal_daily_mean:
+    kwargs:
+      chunks: {}
+      data: '{data(869d166f31953ed0)}'
+    metadata:
+      featuretype: grid
+      key_variables: []
+      maptype: box
+      maxLatitude: 60.0411057
+      maxLongitude: -151.8989539
+      maxTime: '2007-01-01T00:00:00.000000000'
+      minLatitude: 59.1251471
+      minLongitude: -153.23039
+      minTime: '2006-11-12T00:00:00.000000000'
+      plots:
+        direction:
+          angle: direction_subtidal
+          dynamic: true
+          geo: true
+          height: 550
+          hover_cols: false
+          kind: vectorfield
+          mag: speed_subtidal
+          tiles: true
+          width: 700
+          x: lon
+          xlabel: Longitude
+          y: lat
+          ylabel: Latitude
+        speed:
+          clabel: speed_subtidal
+          clim:
+          - 0
+          - 147
+          cmap: cmo.tempo
+          dynamic: true
+          flip_yaxis: false
+          geo: true
+          height: 550
+          hover: true
+          kind: quadmesh
+          rasterize: false
+          shared_axes: false
+          symmetric: false
+          tiles: true
+          title: ''
+          width: 700
+          x: lon
+          xlabel: Longitude
+          y: lat
+          ylabel: Latitude
+          z: speed_subtidal
+      urlpath: simplecache://::https://researchworkspace.com/files/44879883/lower-ci_system-B_2006_subtidal_daily_mean.nc
+    output_instance: xarray:Dataset
+    reader: intake.readers.readers:XArrayDatasetReader
+    user_parameters: {}
+  lower-ci_system-B_2006_subtidal_weekly_mean:
+    kwargs:
+      chunks: {}
+      data: '{data(fd397eba7d582388)}'
+    metadata:
+      featuretype: grid
+      key_variables: []
+      maptype: box
+      maxLatitude: 60.0411057
+      maxLongitude: -151.8989539
+      maxTime: '2007-01-07T00:00:00.000000000'
+      minLatitude: 59.1251471
+      minLongitude: -153.23039
+      minTime: '2006-11-12T00:00:00.000000000'
+      plots:
+        direction:
+          angle: direction_subtidal
+          dynamic: true
+          geo: true
+          height: 550
+          hover_cols: false
+          kind: vectorfield
+          mag: speed_subtidal
+          tiles: true
+          width: 700
+          x: lon
+          xlabel: Longitude
+          y: lat
+          ylabel: Latitude
+        speed:
+          clabel: speed_subtidal
+          clim:
+          - 0
+          - 116
+          cmap: cmo.tempo
+          dynamic: true
+          flip_yaxis: false
+          geo: true
+          height: 550
+          hover: true
+          kind: quadmesh
+          rasterize: false
+          shared_axes: false
+          symmetric: false
+          tiles: true
+          title: ''
+          width: 700
+          x: lon
+          xlabel: Longitude
+          y: lat
+          ylabel: Latitude
+          z: speed_subtidal
+      urlpath: simplecache://::https://researchworkspace.com/files/44879896/lower-ci_system-B_2006_subtidal_weekly_mean.nc
+    output_instance: xarray:Dataset
+    reader: intake.readers.readers:XArrayDatasetReader
+    user_parameters: {}
+  lower-ci_system-B_2006_tidecons:
+    kwargs:
+      chunks: {}
+      data: '{data(7e9c42b71fff2552)}'
+    metadata:
+      featuretype: grid
+      key_variables: []
+      maptype: box
+      maxLatitude: 60.0411057
+      maxLongitude: -151.8989539
+      maxTime: null
+      minLatitude: 59.1251471
+      minLongitude: -153.23039
+      minTime: null
+      plots:
+        tidecons:
+          clabel: tidecons
+          clim: null
+          cmap: cmo.tarn
+          dynamic: true
+          flip_yaxis: false
+          geo: true
+          height: 550
+          hover: true
+          kind: quadmesh
+          rasterize: false
+          shared_axes: false
+          symmetric: true
+          tiles: true
+          title: ''
+          width: 700
+          x: lon
+          xlabel: Longitude
+          y: lat
+          ylabel: Latitude
+          z: tidecons
+      urlpath: simplecache://::https://researchworkspace.com/files/44879885/lower-ci_system-B_2006_tidecons_base.nc
+    output_instance: xarray:Dataset
+    reader: intake.readers.readers:XArrayDatasetReader
+    user_parameters: {}
   upper-ci_system-A_2002-2003:
     kwargs:
       chunks: {}
@@ -401,6 +607,158 @@ entries:
           ylabel: Latitude
           z: tidecons
       urlpath: simplecache://::https://researchworkspace.com/files/42712182/upper-ci_system-A_2002-2003_tidecons_base.nc
+    output_instance: xarray:Dataset
+    reader: intake.readers.readers:XArrayDatasetReader
+    user_parameters: {}
+  upper-ci_system-A_2003_subtidal_daily_mean:
+    kwargs:
+      chunks: {}
+      data: '{data(28546c0863a8caac)}'
+    metadata:
+      featuretype: grid
+      key_variables: []
+      maptype: box
+      maxLatitude: 60.749672
+      maxLongitude: -151.357941
+      maxTime: '2003-06-09T00:00:00.000000000'
+      minLatitude: 60.263489
+      minLongitude: -152.126266
+      minTime: '2003-01-01T00:00:00.000000000'
+      plots:
+        direction:
+          angle: direction_subtidal
+          dynamic: true
+          geo: true
+          height: 550
+          hover_cols: false
+          kind: vectorfield
+          mag: speed_subtidal
+          tiles: true
+          width: 700
+          x: lon
+          xlabel: Longitude
+          y: lat
+          ylabel: Latitude
+        speed:
+          clabel: speed_subtidal
+          clim:
+          - 0
+          - 198
+          cmap: cmo.tempo
+          dynamic: true
+          flip_yaxis: false
+          geo: true
+          height: 550
+          hover: true
+          kind: quadmesh
+          rasterize: false
+          shared_axes: false
+          symmetric: false
+          tiles: true
+          title: ''
+          width: 700
+          x: lon
+          xlabel: Longitude
+          y: lat
+          ylabel: Latitude
+          z: speed_subtidal
+      urlpath: simplecache://::https://researchworkspace.com/files/44879877/upper-ci_system-A_2003_subtidal_daily_mean.nc
+    output_instance: xarray:Dataset
+    reader: intake.readers.readers:XArrayDatasetReader
+    user_parameters: {}
+  upper-ci_system-A_2003_subtidal_weekly_mean:
+    kwargs:
+      chunks: {}
+      data: '{data(404008e431bec77a)}'
+    metadata:
+      featuretype: grid
+      key_variables: []
+      maptype: box
+      maxLatitude: 60.749672
+      maxLongitude: -151.357941
+      maxTime: '2003-06-15T00:00:00.000000000'
+      minLatitude: 60.263489
+      minLongitude: -152.126266
+      minTime: '2003-01-05T00:00:00.000000000'
+      plots:
+        direction:
+          angle: direction_subtidal
+          dynamic: true
+          geo: true
+          height: 550
+          hover_cols: false
+          kind: vectorfield
+          mag: speed_subtidal
+          tiles: true
+          width: 700
+          x: lon
+          xlabel: Longitude
+          y: lat
+          ylabel: Latitude
+        speed:
+          clabel: speed_subtidal
+          clim:
+          - 0
+          - 105
+          cmap: cmo.tempo
+          dynamic: true
+          flip_yaxis: false
+          geo: true
+          height: 550
+          hover: true
+          kind: quadmesh
+          rasterize: false
+          shared_axes: false
+          symmetric: false
+          tiles: true
+          title: ''
+          width: 700
+          x: lon
+          xlabel: Longitude
+          y: lat
+          ylabel: Latitude
+          z: speed_subtidal
+      urlpath: simplecache://::https://researchworkspace.com/files/44879894/upper-ci_system-A_2003_subtidal_weekly_mean.nc
+    output_instance: xarray:Dataset
+    reader: intake.readers.readers:XArrayDatasetReader
+    user_parameters: {}
+  upper-ci_system-A_2003_tidecons:
+    kwargs:
+      chunks: {}
+      data: '{data(a0d13da822cbe4dd)}'
+    metadata:
+      featuretype: grid
+      key_variables: []
+      maptype: box
+      maxLatitude: 60.749672
+      maxLongitude: -151.357941
+      maxTime: null
+      minLatitude: 60.263489
+      minLongitude: -152.126266
+      minTime: null
+      plots:
+        tidecons:
+          clabel: tidecons
+          clim: null
+          cmap: cmo.tarn
+          dynamic: true
+          flip_yaxis: false
+          geo: true
+          height: 550
+          hover: true
+          kind: quadmesh
+          rasterize: false
+          shared_axes: false
+          symmetric: true
+          tiles: true
+          title: ''
+          width: 700
+          x: lon
+          xlabel: Longitude
+          y: lat
+          ylabel: Latitude
+          z: tidecons
+      urlpath: simplecache://::https://researchworkspace.com/files/44879879/upper-ci_system-A_2003_tidecons_base.nc
     output_instance: xarray:Dataset
     reader: intake.readers.readers:XArrayDatasetReader
     user_parameters: {}
@@ -616,7 +974,15 @@ metadata:
   summary: "HF Radar from UAF.\n\nFiles are:\n\n* Upper Cook Inlet (System A): 2002-2003\
     \ and 2009\n* Lower Cook Inlet (System B): 2006-2007\n\nData variables available\
     \ include tidally filtered and weekly averaged along with tidal constituents calculated\
-    \ from hourly data.\n    \nSome of the data is written up in reports:\n\n* https://espis.boem.gov/final%20reports/5009.pdf\n\
+    \ from hourly data.\n\nSeveral new datasets were derived in 2024 with the CIOFS\
+    \ freshwater project which narrow the full time datasets (lower-ci_system-B_2006-2007.nc\
+    \ and upper-ci_system-A_2002-2003.nc) in time to just 2003 and 2006, respectively,\
+    \ before running processing in Research Workspace and are otherwise identical.\
+    \ See processing notebook https://researchworkspace.com/file/44879475/add_variables_to_notebooks_limited_time_range.ipynb:\n\
+    * lower-ci_system-B_2006_subtidal_daily_mean.nc\n* lower-ci_system-B_2006_tidecons_base.nc\n\
+    * lower-ci_system-B_2006_subtidal_weekly_mean.nc\n* upper-ci_system-A_2003_subtidal_daily_mean\n\
+    * upper-ci_system-A_2003_tidecons_base\n* upper-ci_system-A_2003_subtidal_weekly_mean.nc\n\
+    \    \nSome of the data is written up in reports:\n\n* https://espis.boem.gov/final%20reports/5009.pdf\n\
     * https://www.govinfo.gov/app/details/GOVPUB-I-47b721482d69e308aec1cca9b3e51955\n\
     \n![pic](https://researchworkspace.com/files/40338104/UAcoverage.gif)\n"
   time: 2002-2009

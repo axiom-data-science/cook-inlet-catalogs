@@ -42,12 +42,15 @@ aliases:
   2008-8: 2008-8
   2008-9: 2008-9
 data:
-  376e1836a2febe51:
+  a978d6e780933a9b:
     datatype: intake.readers.datatypes:HDF5
     kwargs:
       path: ''
-      storage_options: null
-      url: https://researchworkspace.com/files/42202265/Tustumena_t_s_chl_cdom_tr_final_data_subsetted.nc
+      storage_options:
+        simplecache:
+          cache_storage: /home/kristen/.cache/cook-inlet-catalogs
+          same_names: true
+      url: simplecache://::https://researchworkspace.com/files/42202265/Tustumena_t_s_chl_cdom_tr_final_data_subsetted.nc
     metadata: {}
     user_parameters: {}
 entries:
@@ -57,7 +60,7 @@ entries:
       - xarray:Dataset
       - xarray:Dataset
       steps:
-      - - '{data(459fb8b58db57b6e)}'
+      - - '{data(cb356a1bc326efe6)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -83,8 +86,8 @@ entries:
           height: 300
           hover_cols:
           - LAT
-          - depth
           - LON
+          - depth
           - T_30_EQ_AX
           kind: scatter
           shared_axes: false
@@ -100,8 +103,8 @@ entries:
           height: 300
           hover_cols:
           - LAT
-          - depth
           - LON
+          - depth
           - T_30_EQ_AX
           kind: scatter
           shared_axes: false
@@ -109,7 +112,7 @@ entries:
           width: 500
           x: LON
           y: LAT
-      urlpath: https://researchworkspace.com/files/42202265/Tustumena_t_s_chl_cdom_tr_final_data_subsetted.nc
+      urlpath: simplecache://::https://researchworkspace.com/files/42202265/Tustumena_t_s_chl_cdom_tr_final_data_subsetted.nc
     output_instance: xarray:Dataset
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -119,7 +122,7 @@ entries:
       - xarray:Dataset
       - xarray:Dataset
       steps:
-      - - '{data(459fb8b58db57b6e)}'
+      - - '{data(cb356a1bc326efe6)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -145,8 +148,8 @@ entries:
           height: 300
           hover_cols:
           - LAT
-          - depth
           - LON
+          - depth
           - T_30_EQ_AX
           kind: scatter
           shared_axes: false
@@ -162,8 +165,8 @@ entries:
           height: 300
           hover_cols:
           - LAT
-          - depth
           - LON
+          - depth
           - T_30_EQ_AX
           kind: scatter
           shared_axes: false
@@ -171,7 +174,7 @@ entries:
           width: 500
           x: LON
           y: LAT
-      urlpath: https://researchworkspace.com/files/42202265/Tustumena_t_s_chl_cdom_tr_final_data_subsetted.nc
+      urlpath: simplecache://::https://researchworkspace.com/files/42202265/Tustumena_t_s_chl_cdom_tr_final_data_subsetted.nc
     output_instance: xarray:Dataset
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -181,7 +184,7 @@ entries:
       - xarray:Dataset
       - xarray:Dataset
       steps:
-      - - '{data(459fb8b58db57b6e)}'
+      - - '{data(cb356a1bc326efe6)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -207,8 +210,8 @@ entries:
           height: 300
           hover_cols:
           - LAT
-          - depth
           - LON
+          - depth
           - T_30_EQ_AX
           kind: scatter
           shared_axes: false
@@ -224,8 +227,8 @@ entries:
           height: 300
           hover_cols:
           - LAT
-          - depth
           - LON
+          - depth
           - T_30_EQ_AX
           kind: scatter
           shared_axes: false
@@ -233,7 +236,7 @@ entries:
           width: 500
           x: LON
           y: LAT
-      urlpath: https://researchworkspace.com/files/42202265/Tustumena_t_s_chl_cdom_tr_final_data_subsetted.nc
+      urlpath: simplecache://::https://researchworkspace.com/files/42202265/Tustumena_t_s_chl_cdom_tr_final_data_subsetted.nc
     output_instance: xarray:Dataset
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -243,7 +246,7 @@ entries:
       - xarray:Dataset
       - xarray:Dataset
       steps:
-      - - '{data(459fb8b58db57b6e)}'
+      - - '{data(cb356a1bc326efe6)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -269,8 +272,8 @@ entries:
           height: 300
           hover_cols:
           - LAT
-          - depth
           - LON
+          - depth
           - T_30_EQ_AX
           kind: scatter
           shared_axes: false
@@ -286,8 +289,8 @@ entries:
           height: 300
           hover_cols:
           - LAT
-          - depth
           - LON
+          - depth
           - T_30_EQ_AX
           kind: scatter
           shared_axes: false
@@ -295,7 +298,7 @@ entries:
           width: 500
           x: LON
           y: LAT
-      urlpath: https://researchworkspace.com/files/42202265/Tustumena_t_s_chl_cdom_tr_final_data_subsetted.nc
+      urlpath: simplecache://::https://researchworkspace.com/files/42202265/Tustumena_t_s_chl_cdom_tr_final_data_subsetted.nc
     output_instance: xarray:Dataset
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -305,7 +308,7 @@ entries:
       - xarray:Dataset
       - xarray:Dataset
       steps:
-      - - '{data(459fb8b58db57b6e)}'
+      - - '{data(cb356a1bc326efe6)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -331,8 +334,8 @@ entries:
           height: 300
           hover_cols:
           - LAT
-          - depth
           - LON
+          - depth
           - T_30_EQ_AX
           kind: scatter
           shared_axes: false
@@ -348,8 +351,8 @@ entries:
           height: 300
           hover_cols:
           - LAT
-          - depth
           - LON
+          - depth
           - T_30_EQ_AX
           kind: scatter
           shared_axes: false
@@ -357,7 +360,7 @@ entries:
           width: 500
           x: LON
           y: LAT
-      urlpath: https://researchworkspace.com/files/42202265/Tustumena_t_s_chl_cdom_tr_final_data_subsetted.nc
+      urlpath: simplecache://::https://researchworkspace.com/files/42202265/Tustumena_t_s_chl_cdom_tr_final_data_subsetted.nc
     output_instance: xarray:Dataset
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -367,7 +370,7 @@ entries:
       - xarray:Dataset
       - xarray:Dataset
       steps:
-      - - '{data(459fb8b58db57b6e)}'
+      - - '{data(cb356a1bc326efe6)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -393,8 +396,8 @@ entries:
           height: 300
           hover_cols:
           - LAT
-          - depth
           - LON
+          - depth
           - T_30_EQ_AX
           kind: scatter
           shared_axes: false
@@ -410,8 +413,8 @@ entries:
           height: 300
           hover_cols:
           - LAT
-          - depth
           - LON
+          - depth
           - T_30_EQ_AX
           kind: scatter
           shared_axes: false
@@ -419,7 +422,7 @@ entries:
           width: 500
           x: LON
           y: LAT
-      urlpath: https://researchworkspace.com/files/42202265/Tustumena_t_s_chl_cdom_tr_final_data_subsetted.nc
+      urlpath: simplecache://::https://researchworkspace.com/files/42202265/Tustumena_t_s_chl_cdom_tr_final_data_subsetted.nc
     output_instance: xarray:Dataset
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -429,7 +432,7 @@ entries:
       - xarray:Dataset
       - xarray:Dataset
       steps:
-      - - '{data(459fb8b58db57b6e)}'
+      - - '{data(cb356a1bc326efe6)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -455,8 +458,8 @@ entries:
           height: 300
           hover_cols:
           - LAT
-          - depth
           - LON
+          - depth
           - T_30_EQ_AX
           kind: scatter
           shared_axes: false
@@ -472,8 +475,8 @@ entries:
           height: 300
           hover_cols:
           - LAT
-          - depth
           - LON
+          - depth
           - T_30_EQ_AX
           kind: scatter
           shared_axes: false
@@ -481,7 +484,7 @@ entries:
           width: 500
           x: LON
           y: LAT
-      urlpath: https://researchworkspace.com/files/42202265/Tustumena_t_s_chl_cdom_tr_final_data_subsetted.nc
+      urlpath: simplecache://::https://researchworkspace.com/files/42202265/Tustumena_t_s_chl_cdom_tr_final_data_subsetted.nc
     output_instance: xarray:Dataset
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -491,7 +494,7 @@ entries:
       - xarray:Dataset
       - xarray:Dataset
       steps:
-      - - '{data(459fb8b58db57b6e)}'
+      - - '{data(cb356a1bc326efe6)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -517,8 +520,8 @@ entries:
           height: 300
           hover_cols:
           - LAT
-          - depth
           - LON
+          - depth
           - T_30_EQ_AX
           kind: scatter
           shared_axes: false
@@ -534,8 +537,8 @@ entries:
           height: 300
           hover_cols:
           - LAT
-          - depth
           - LON
+          - depth
           - T_30_EQ_AX
           kind: scatter
           shared_axes: false
@@ -543,7 +546,7 @@ entries:
           width: 500
           x: LON
           y: LAT
-      urlpath: https://researchworkspace.com/files/42202265/Tustumena_t_s_chl_cdom_tr_final_data_subsetted.nc
+      urlpath: simplecache://::https://researchworkspace.com/files/42202265/Tustumena_t_s_chl_cdom_tr_final_data_subsetted.nc
     output_instance: xarray:Dataset
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -553,7 +556,7 @@ entries:
       - xarray:Dataset
       - xarray:Dataset
       steps:
-      - - '{data(459fb8b58db57b6e)}'
+      - - '{data(cb356a1bc326efe6)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -579,8 +582,8 @@ entries:
           height: 300
           hover_cols:
           - LAT
-          - depth
           - LON
+          - depth
           - T_30_EQ_AX
           kind: scatter
           shared_axes: false
@@ -596,8 +599,8 @@ entries:
           height: 300
           hover_cols:
           - LAT
-          - depth
           - LON
+          - depth
           - T_30_EQ_AX
           kind: scatter
           shared_axes: false
@@ -605,7 +608,7 @@ entries:
           width: 500
           x: LON
           y: LAT
-      urlpath: https://researchworkspace.com/files/42202265/Tustumena_t_s_chl_cdom_tr_final_data_subsetted.nc
+      urlpath: simplecache://::https://researchworkspace.com/files/42202265/Tustumena_t_s_chl_cdom_tr_final_data_subsetted.nc
     output_instance: xarray:Dataset
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -615,7 +618,7 @@ entries:
       - xarray:Dataset
       - xarray:Dataset
       steps:
-      - - '{data(459fb8b58db57b6e)}'
+      - - '{data(cb356a1bc326efe6)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -641,8 +644,8 @@ entries:
           height: 300
           hover_cols:
           - LAT
-          - depth
           - LON
+          - depth
           - T_30_EQ_AX
           kind: scatter
           shared_axes: false
@@ -658,8 +661,8 @@ entries:
           height: 300
           hover_cols:
           - LAT
-          - depth
           - LON
+          - depth
           - T_30_EQ_AX
           kind: scatter
           shared_axes: false
@@ -667,7 +670,7 @@ entries:
           width: 500
           x: LON
           y: LAT
-      urlpath: https://researchworkspace.com/files/42202265/Tustumena_t_s_chl_cdom_tr_final_data_subsetted.nc
+      urlpath: simplecache://::https://researchworkspace.com/files/42202265/Tustumena_t_s_chl_cdom_tr_final_data_subsetted.nc
     output_instance: xarray:Dataset
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -677,7 +680,7 @@ entries:
       - xarray:Dataset
       - xarray:Dataset
       steps:
-      - - '{data(459fb8b58db57b6e)}'
+      - - '{data(cb356a1bc326efe6)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -703,8 +706,8 @@ entries:
           height: 300
           hover_cols:
           - LAT
-          - depth
           - LON
+          - depth
           - T_30_EQ_AX
           kind: scatter
           shared_axes: false
@@ -720,8 +723,8 @@ entries:
           height: 300
           hover_cols:
           - LAT
-          - depth
           - LON
+          - depth
           - T_30_EQ_AX
           kind: scatter
           shared_axes: false
@@ -729,7 +732,7 @@ entries:
           width: 500
           x: LON
           y: LAT
-      urlpath: https://researchworkspace.com/files/42202265/Tustumena_t_s_chl_cdom_tr_final_data_subsetted.nc
+      urlpath: simplecache://::https://researchworkspace.com/files/42202265/Tustumena_t_s_chl_cdom_tr_final_data_subsetted.nc
     output_instance: xarray:Dataset
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -739,7 +742,7 @@ entries:
       - xarray:Dataset
       - xarray:Dataset
       steps:
-      - - '{data(459fb8b58db57b6e)}'
+      - - '{data(cb356a1bc326efe6)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -765,8 +768,8 @@ entries:
           height: 300
           hover_cols:
           - LAT
-          - depth
           - LON
+          - depth
           - T_30_EQ_AX
           kind: scatter
           shared_axes: false
@@ -782,8 +785,8 @@ entries:
           height: 300
           hover_cols:
           - LAT
-          - depth
           - LON
+          - depth
           - T_30_EQ_AX
           kind: scatter
           shared_axes: false
@@ -791,7 +794,7 @@ entries:
           width: 500
           x: LON
           y: LAT
-      urlpath: https://researchworkspace.com/files/42202265/Tustumena_t_s_chl_cdom_tr_final_data_subsetted.nc
+      urlpath: simplecache://::https://researchworkspace.com/files/42202265/Tustumena_t_s_chl_cdom_tr_final_data_subsetted.nc
     output_instance: xarray:Dataset
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -801,7 +804,7 @@ entries:
       - xarray:Dataset
       - xarray:Dataset
       steps:
-      - - '{data(459fb8b58db57b6e)}'
+      - - '{data(cb356a1bc326efe6)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -827,8 +830,8 @@ entries:
           height: 300
           hover_cols:
           - LAT
-          - depth
           - LON
+          - depth
           - T_30_EQ_AX
           kind: scatter
           shared_axes: false
@@ -844,8 +847,8 @@ entries:
           height: 300
           hover_cols:
           - LAT
-          - depth
           - LON
+          - depth
           - T_30_EQ_AX
           kind: scatter
           shared_axes: false
@@ -853,7 +856,7 @@ entries:
           width: 500
           x: LON
           y: LAT
-      urlpath: https://researchworkspace.com/files/42202265/Tustumena_t_s_chl_cdom_tr_final_data_subsetted.nc
+      urlpath: simplecache://::https://researchworkspace.com/files/42202265/Tustumena_t_s_chl_cdom_tr_final_data_subsetted.nc
     output_instance: xarray:Dataset
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -863,7 +866,7 @@ entries:
       - xarray:Dataset
       - xarray:Dataset
       steps:
-      - - '{data(459fb8b58db57b6e)}'
+      - - '{data(cb356a1bc326efe6)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -889,8 +892,8 @@ entries:
           height: 300
           hover_cols:
           - LAT
-          - depth
           - LON
+          - depth
           - T_30_EQ_AX
           kind: scatter
           shared_axes: false
@@ -906,8 +909,8 @@ entries:
           height: 300
           hover_cols:
           - LAT
-          - depth
           - LON
+          - depth
           - T_30_EQ_AX
           kind: scatter
           shared_axes: false
@@ -915,7 +918,7 @@ entries:
           width: 500
           x: LON
           y: LAT
-      urlpath: https://researchworkspace.com/files/42202265/Tustumena_t_s_chl_cdom_tr_final_data_subsetted.nc
+      urlpath: simplecache://::https://researchworkspace.com/files/42202265/Tustumena_t_s_chl_cdom_tr_final_data_subsetted.nc
     output_instance: xarray:Dataset
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -925,7 +928,7 @@ entries:
       - xarray:Dataset
       - xarray:Dataset
       steps:
-      - - '{data(459fb8b58db57b6e)}'
+      - - '{data(cb356a1bc326efe6)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -951,8 +954,8 @@ entries:
           height: 300
           hover_cols:
           - LAT
-          - depth
           - LON
+          - depth
           - T_30_EQ_AX
           kind: scatter
           shared_axes: false
@@ -968,8 +971,8 @@ entries:
           height: 300
           hover_cols:
           - LAT
-          - depth
           - LON
+          - depth
           - T_30_EQ_AX
           kind: scatter
           shared_axes: false
@@ -977,7 +980,7 @@ entries:
           width: 500
           x: LON
           y: LAT
-      urlpath: https://researchworkspace.com/files/42202265/Tustumena_t_s_chl_cdom_tr_final_data_subsetted.nc
+      urlpath: simplecache://::https://researchworkspace.com/files/42202265/Tustumena_t_s_chl_cdom_tr_final_data_subsetted.nc
     output_instance: xarray:Dataset
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -987,7 +990,7 @@ entries:
       - xarray:Dataset
       - xarray:Dataset
       steps:
-      - - '{data(459fb8b58db57b6e)}'
+      - - '{data(cb356a1bc326efe6)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -1013,8 +1016,8 @@ entries:
           height: 300
           hover_cols:
           - LAT
-          - depth
           - LON
+          - depth
           - T_30_EQ_AX
           kind: scatter
           shared_axes: false
@@ -1030,8 +1033,8 @@ entries:
           height: 300
           hover_cols:
           - LAT
-          - depth
           - LON
+          - depth
           - T_30_EQ_AX
           kind: scatter
           shared_axes: false
@@ -1039,7 +1042,7 @@ entries:
           width: 500
           x: LON
           y: LAT
-      urlpath: https://researchworkspace.com/files/42202265/Tustumena_t_s_chl_cdom_tr_final_data_subsetted.nc
+      urlpath: simplecache://::https://researchworkspace.com/files/42202265/Tustumena_t_s_chl_cdom_tr_final_data_subsetted.nc
     output_instance: xarray:Dataset
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -1049,7 +1052,7 @@ entries:
       - xarray:Dataset
       - xarray:Dataset
       steps:
-      - - '{data(459fb8b58db57b6e)}'
+      - - '{data(cb356a1bc326efe6)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -1075,8 +1078,8 @@ entries:
           height: 300
           hover_cols:
           - LAT
-          - depth
           - LON
+          - depth
           - T_30_EQ_AX
           kind: scatter
           shared_axes: false
@@ -1092,8 +1095,8 @@ entries:
           height: 300
           hover_cols:
           - LAT
-          - depth
           - LON
+          - depth
           - T_30_EQ_AX
           kind: scatter
           shared_axes: false
@@ -1101,7 +1104,7 @@ entries:
           width: 500
           x: LON
           y: LAT
-      urlpath: https://researchworkspace.com/files/42202265/Tustumena_t_s_chl_cdom_tr_final_data_subsetted.nc
+      urlpath: simplecache://::https://researchworkspace.com/files/42202265/Tustumena_t_s_chl_cdom_tr_final_data_subsetted.nc
     output_instance: xarray:Dataset
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -1111,7 +1114,7 @@ entries:
       - xarray:Dataset
       - xarray:Dataset
       steps:
-      - - '{data(459fb8b58db57b6e)}'
+      - - '{data(cb356a1bc326efe6)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -1137,8 +1140,8 @@ entries:
           height: 300
           hover_cols:
           - LAT
-          - depth
           - LON
+          - depth
           - T_30_EQ_AX
           kind: scatter
           shared_axes: false
@@ -1154,8 +1157,8 @@ entries:
           height: 300
           hover_cols:
           - LAT
-          - depth
           - LON
+          - depth
           - T_30_EQ_AX
           kind: scatter
           shared_axes: false
@@ -1163,7 +1166,7 @@ entries:
           width: 500
           x: LON
           y: LAT
-      urlpath: https://researchworkspace.com/files/42202265/Tustumena_t_s_chl_cdom_tr_final_data_subsetted.nc
+      urlpath: simplecache://::https://researchworkspace.com/files/42202265/Tustumena_t_s_chl_cdom_tr_final_data_subsetted.nc
     output_instance: xarray:Dataset
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -1173,7 +1176,7 @@ entries:
       - xarray:Dataset
       - xarray:Dataset
       steps:
-      - - '{data(459fb8b58db57b6e)}'
+      - - '{data(cb356a1bc326efe6)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -1199,8 +1202,8 @@ entries:
           height: 300
           hover_cols:
           - LAT
-          - depth
           - LON
+          - depth
           - T_30_EQ_AX
           kind: scatter
           shared_axes: false
@@ -1216,8 +1219,8 @@ entries:
           height: 300
           hover_cols:
           - LAT
-          - depth
           - LON
+          - depth
           - T_30_EQ_AX
           kind: scatter
           shared_axes: false
@@ -1225,7 +1228,7 @@ entries:
           width: 500
           x: LON
           y: LAT
-      urlpath: https://researchworkspace.com/files/42202265/Tustumena_t_s_chl_cdom_tr_final_data_subsetted.nc
+      urlpath: simplecache://::https://researchworkspace.com/files/42202265/Tustumena_t_s_chl_cdom_tr_final_data_subsetted.nc
     output_instance: xarray:Dataset
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -1235,7 +1238,7 @@ entries:
       - xarray:Dataset
       - xarray:Dataset
       steps:
-      - - '{data(459fb8b58db57b6e)}'
+      - - '{data(cb356a1bc326efe6)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -1261,8 +1264,8 @@ entries:
           height: 300
           hover_cols:
           - LAT
-          - depth
           - LON
+          - depth
           - T_30_EQ_AX
           kind: scatter
           shared_axes: false
@@ -1278,8 +1281,8 @@ entries:
           height: 300
           hover_cols:
           - LAT
-          - depth
           - LON
+          - depth
           - T_30_EQ_AX
           kind: scatter
           shared_axes: false
@@ -1287,7 +1290,7 @@ entries:
           width: 500
           x: LON
           y: LAT
-      urlpath: https://researchworkspace.com/files/42202265/Tustumena_t_s_chl_cdom_tr_final_data_subsetted.nc
+      urlpath: simplecache://::https://researchworkspace.com/files/42202265/Tustumena_t_s_chl_cdom_tr_final_data_subsetted.nc
     output_instance: xarray:Dataset
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -1297,7 +1300,7 @@ entries:
       - xarray:Dataset
       - xarray:Dataset
       steps:
-      - - '{data(459fb8b58db57b6e)}'
+      - - '{data(cb356a1bc326efe6)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -1323,8 +1326,8 @@ entries:
           height: 300
           hover_cols:
           - LAT
-          - depth
           - LON
+          - depth
           - T_30_EQ_AX
           kind: scatter
           shared_axes: false
@@ -1340,8 +1343,8 @@ entries:
           height: 300
           hover_cols:
           - LAT
-          - depth
           - LON
+          - depth
           - T_30_EQ_AX
           kind: scatter
           shared_axes: false
@@ -1349,7 +1352,7 @@ entries:
           width: 500
           x: LON
           y: LAT
-      urlpath: https://researchworkspace.com/files/42202265/Tustumena_t_s_chl_cdom_tr_final_data_subsetted.nc
+      urlpath: simplecache://::https://researchworkspace.com/files/42202265/Tustumena_t_s_chl_cdom_tr_final_data_subsetted.nc
     output_instance: xarray:Dataset
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -1359,7 +1362,7 @@ entries:
       - xarray:Dataset
       - xarray:Dataset
       steps:
-      - - '{data(459fb8b58db57b6e)}'
+      - - '{data(cb356a1bc326efe6)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -1385,8 +1388,8 @@ entries:
           height: 300
           hover_cols:
           - LAT
-          - depth
           - LON
+          - depth
           - T_30_EQ_AX
           kind: scatter
           shared_axes: false
@@ -1402,8 +1405,8 @@ entries:
           height: 300
           hover_cols:
           - LAT
-          - depth
           - LON
+          - depth
           - T_30_EQ_AX
           kind: scatter
           shared_axes: false
@@ -1411,7 +1414,7 @@ entries:
           width: 500
           x: LON
           y: LAT
-      urlpath: https://researchworkspace.com/files/42202265/Tustumena_t_s_chl_cdom_tr_final_data_subsetted.nc
+      urlpath: simplecache://::https://researchworkspace.com/files/42202265/Tustumena_t_s_chl_cdom_tr_final_data_subsetted.nc
     output_instance: xarray:Dataset
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -1421,7 +1424,7 @@ entries:
       - xarray:Dataset
       - xarray:Dataset
       steps:
-      - - '{data(459fb8b58db57b6e)}'
+      - - '{data(cb356a1bc326efe6)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -1447,8 +1450,8 @@ entries:
           height: 300
           hover_cols:
           - LAT
-          - depth
           - LON
+          - depth
           - T_30_EQ_AX
           kind: scatter
           shared_axes: false
@@ -1464,8 +1467,8 @@ entries:
           height: 300
           hover_cols:
           - LAT
-          - depth
           - LON
+          - depth
           - T_30_EQ_AX
           kind: scatter
           shared_axes: false
@@ -1473,7 +1476,7 @@ entries:
           width: 500
           x: LON
           y: LAT
-      urlpath: https://researchworkspace.com/files/42202265/Tustumena_t_s_chl_cdom_tr_final_data_subsetted.nc
+      urlpath: simplecache://::https://researchworkspace.com/files/42202265/Tustumena_t_s_chl_cdom_tr_final_data_subsetted.nc
     output_instance: xarray:Dataset
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -1483,7 +1486,7 @@ entries:
       - xarray:Dataset
       - xarray:Dataset
       steps:
-      - - '{data(459fb8b58db57b6e)}'
+      - - '{data(cb356a1bc326efe6)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -1509,8 +1512,8 @@ entries:
           height: 300
           hover_cols:
           - LAT
-          - depth
           - LON
+          - depth
           - T_30_EQ_AX
           kind: scatter
           shared_axes: false
@@ -1526,8 +1529,8 @@ entries:
           height: 300
           hover_cols:
           - LAT
-          - depth
           - LON
+          - depth
           - T_30_EQ_AX
           kind: scatter
           shared_axes: false
@@ -1535,7 +1538,7 @@ entries:
           width: 500
           x: LON
           y: LAT
-      urlpath: https://researchworkspace.com/files/42202265/Tustumena_t_s_chl_cdom_tr_final_data_subsetted.nc
+      urlpath: simplecache://::https://researchworkspace.com/files/42202265/Tustumena_t_s_chl_cdom_tr_final_data_subsetted.nc
     output_instance: xarray:Dataset
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -1545,7 +1548,7 @@ entries:
       - xarray:Dataset
       - xarray:Dataset
       steps:
-      - - '{data(459fb8b58db57b6e)}'
+      - - '{data(cb356a1bc326efe6)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -1571,8 +1574,8 @@ entries:
           height: 300
           hover_cols:
           - LAT
-          - depth
           - LON
+          - depth
           - T_30_EQ_AX
           kind: scatter
           shared_axes: false
@@ -1588,8 +1591,8 @@ entries:
           height: 300
           hover_cols:
           - LAT
-          - depth
           - LON
+          - depth
           - T_30_EQ_AX
           kind: scatter
           shared_axes: false
@@ -1597,7 +1600,7 @@ entries:
           width: 500
           x: LON
           y: LAT
-      urlpath: https://researchworkspace.com/files/42202265/Tustumena_t_s_chl_cdom_tr_final_data_subsetted.nc
+      urlpath: simplecache://::https://researchworkspace.com/files/42202265/Tustumena_t_s_chl_cdom_tr_final_data_subsetted.nc
     output_instance: xarray:Dataset
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -1607,7 +1610,7 @@ entries:
       - xarray:Dataset
       - xarray:Dataset
       steps:
-      - - '{data(459fb8b58db57b6e)}'
+      - - '{data(cb356a1bc326efe6)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -1633,8 +1636,8 @@ entries:
           height: 300
           hover_cols:
           - LAT
-          - depth
           - LON
+          - depth
           - T_30_EQ_AX
           kind: scatter
           shared_axes: false
@@ -1650,8 +1653,8 @@ entries:
           height: 300
           hover_cols:
           - LAT
-          - depth
           - LON
+          - depth
           - T_30_EQ_AX
           kind: scatter
           shared_axes: false
@@ -1659,7 +1662,7 @@ entries:
           width: 500
           x: LON
           y: LAT
-      urlpath: https://researchworkspace.com/files/42202265/Tustumena_t_s_chl_cdom_tr_final_data_subsetted.nc
+      urlpath: simplecache://::https://researchworkspace.com/files/42202265/Tustumena_t_s_chl_cdom_tr_final_data_subsetted.nc
     output_instance: xarray:Dataset
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -1669,7 +1672,7 @@ entries:
       - xarray:Dataset
       - xarray:Dataset
       steps:
-      - - '{data(459fb8b58db57b6e)}'
+      - - '{data(cb356a1bc326efe6)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -1695,8 +1698,8 @@ entries:
           height: 300
           hover_cols:
           - LAT
-          - depth
           - LON
+          - depth
           - T_30_EQ_AX
           kind: scatter
           shared_axes: false
@@ -1712,8 +1715,8 @@ entries:
           height: 300
           hover_cols:
           - LAT
-          - depth
           - LON
+          - depth
           - T_30_EQ_AX
           kind: scatter
           shared_axes: false
@@ -1721,7 +1724,7 @@ entries:
           width: 500
           x: LON
           y: LAT
-      urlpath: https://researchworkspace.com/files/42202265/Tustumena_t_s_chl_cdom_tr_final_data_subsetted.nc
+      urlpath: simplecache://::https://researchworkspace.com/files/42202265/Tustumena_t_s_chl_cdom_tr_final_data_subsetted.nc
     output_instance: xarray:Dataset
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -1731,7 +1734,7 @@ entries:
       - xarray:Dataset
       - xarray:Dataset
       steps:
-      - - '{data(459fb8b58db57b6e)}'
+      - - '{data(cb356a1bc326efe6)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -1757,8 +1760,8 @@ entries:
           height: 300
           hover_cols:
           - LAT
-          - depth
           - LON
+          - depth
           - T_30_EQ_AX
           kind: scatter
           shared_axes: false
@@ -1774,8 +1777,8 @@ entries:
           height: 300
           hover_cols:
           - LAT
-          - depth
           - LON
+          - depth
           - T_30_EQ_AX
           kind: scatter
           shared_axes: false
@@ -1783,7 +1786,7 @@ entries:
           width: 500
           x: LON
           y: LAT
-      urlpath: https://researchworkspace.com/files/42202265/Tustumena_t_s_chl_cdom_tr_final_data_subsetted.nc
+      urlpath: simplecache://::https://researchworkspace.com/files/42202265/Tustumena_t_s_chl_cdom_tr_final_data_subsetted.nc
     output_instance: xarray:Dataset
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -1793,7 +1796,7 @@ entries:
       - xarray:Dataset
       - xarray:Dataset
       steps:
-      - - '{data(459fb8b58db57b6e)}'
+      - - '{data(cb356a1bc326efe6)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -1819,8 +1822,8 @@ entries:
           height: 300
           hover_cols:
           - LAT
-          - depth
           - LON
+          - depth
           - T_30_EQ_AX
           kind: scatter
           shared_axes: false
@@ -1836,8 +1839,8 @@ entries:
           height: 300
           hover_cols:
           - LAT
-          - depth
           - LON
+          - depth
           - T_30_EQ_AX
           kind: scatter
           shared_axes: false
@@ -1845,7 +1848,7 @@ entries:
           width: 500
           x: LON
           y: LAT
-      urlpath: https://researchworkspace.com/files/42202265/Tustumena_t_s_chl_cdom_tr_final_data_subsetted.nc
+      urlpath: simplecache://::https://researchworkspace.com/files/42202265/Tustumena_t_s_chl_cdom_tr_final_data_subsetted.nc
     output_instance: xarray:Dataset
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -1855,7 +1858,7 @@ entries:
       - xarray:Dataset
       - xarray:Dataset
       steps:
-      - - '{data(459fb8b58db57b6e)}'
+      - - '{data(cb356a1bc326efe6)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -1881,8 +1884,8 @@ entries:
           height: 300
           hover_cols:
           - LAT
-          - depth
           - LON
+          - depth
           - T_30_EQ_AX
           kind: scatter
           shared_axes: false
@@ -1898,8 +1901,8 @@ entries:
           height: 300
           hover_cols:
           - LAT
-          - depth
           - LON
+          - depth
           - T_30_EQ_AX
           kind: scatter
           shared_axes: false
@@ -1907,7 +1910,7 @@ entries:
           width: 500
           x: LON
           y: LAT
-      urlpath: https://researchworkspace.com/files/42202265/Tustumena_t_s_chl_cdom_tr_final_data_subsetted.nc
+      urlpath: simplecache://::https://researchworkspace.com/files/42202265/Tustumena_t_s_chl_cdom_tr_final_data_subsetted.nc
     output_instance: xarray:Dataset
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -1917,7 +1920,7 @@ entries:
       - xarray:Dataset
       - xarray:Dataset
       steps:
-      - - '{data(459fb8b58db57b6e)}'
+      - - '{data(cb356a1bc326efe6)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -1943,8 +1946,8 @@ entries:
           height: 300
           hover_cols:
           - LAT
-          - depth
           - LON
+          - depth
           - T_30_EQ_AX
           kind: scatter
           shared_axes: false
@@ -1960,8 +1963,8 @@ entries:
           height: 300
           hover_cols:
           - LAT
-          - depth
           - LON
+          - depth
           - T_30_EQ_AX
           kind: scatter
           shared_axes: false
@@ -1969,7 +1972,7 @@ entries:
           width: 500
           x: LON
           y: LAT
-      urlpath: https://researchworkspace.com/files/42202265/Tustumena_t_s_chl_cdom_tr_final_data_subsetted.nc
+      urlpath: simplecache://::https://researchworkspace.com/files/42202265/Tustumena_t_s_chl_cdom_tr_final_data_subsetted.nc
     output_instance: xarray:Dataset
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -1979,7 +1982,7 @@ entries:
       - xarray:Dataset
       - xarray:Dataset
       steps:
-      - - '{data(459fb8b58db57b6e)}'
+      - - '{data(cb356a1bc326efe6)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -2005,8 +2008,8 @@ entries:
           height: 300
           hover_cols:
           - LAT
-          - depth
           - LON
+          - depth
           - T_30_EQ_AX
           kind: scatter
           shared_axes: false
@@ -2022,8 +2025,8 @@ entries:
           height: 300
           hover_cols:
           - LAT
-          - depth
           - LON
+          - depth
           - T_30_EQ_AX
           kind: scatter
           shared_axes: false
@@ -2031,7 +2034,7 @@ entries:
           width: 500
           x: LON
           y: LAT
-      urlpath: https://researchworkspace.com/files/42202265/Tustumena_t_s_chl_cdom_tr_final_data_subsetted.nc
+      urlpath: simplecache://::https://researchworkspace.com/files/42202265/Tustumena_t_s_chl_cdom_tr_final_data_subsetted.nc
     output_instance: xarray:Dataset
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -2041,7 +2044,7 @@ entries:
       - xarray:Dataset
       - xarray:Dataset
       steps:
-      - - '{data(459fb8b58db57b6e)}'
+      - - '{data(cb356a1bc326efe6)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -2067,8 +2070,8 @@ entries:
           height: 300
           hover_cols:
           - LAT
-          - depth
           - LON
+          - depth
           - T_30_EQ_AX
           kind: scatter
           shared_axes: false
@@ -2084,8 +2087,8 @@ entries:
           height: 300
           hover_cols:
           - LAT
-          - depth
           - LON
+          - depth
           - T_30_EQ_AX
           kind: scatter
           shared_axes: false
@@ -2093,7 +2096,7 @@ entries:
           width: 500
           x: LON
           y: LAT
-      urlpath: https://researchworkspace.com/files/42202265/Tustumena_t_s_chl_cdom_tr_final_data_subsetted.nc
+      urlpath: simplecache://::https://researchworkspace.com/files/42202265/Tustumena_t_s_chl_cdom_tr_final_data_subsetted.nc
     output_instance: xarray:Dataset
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -2103,7 +2106,7 @@ entries:
       - xarray:Dataset
       - xarray:Dataset
       steps:
-      - - '{data(459fb8b58db57b6e)}'
+      - - '{data(cb356a1bc326efe6)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -2129,8 +2132,8 @@ entries:
           height: 300
           hover_cols:
           - LAT
-          - depth
           - LON
+          - depth
           - T_30_EQ_AX
           kind: scatter
           shared_axes: false
@@ -2146,8 +2149,8 @@ entries:
           height: 300
           hover_cols:
           - LAT
-          - depth
           - LON
+          - depth
           - T_30_EQ_AX
           kind: scatter
           shared_axes: false
@@ -2155,7 +2158,7 @@ entries:
           width: 500
           x: LON
           y: LAT
-      urlpath: https://researchworkspace.com/files/42202265/Tustumena_t_s_chl_cdom_tr_final_data_subsetted.nc
+      urlpath: simplecache://::https://researchworkspace.com/files/42202265/Tustumena_t_s_chl_cdom_tr_final_data_subsetted.nc
     output_instance: xarray:Dataset
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -2165,7 +2168,7 @@ entries:
       - xarray:Dataset
       - xarray:Dataset
       steps:
-      - - '{data(459fb8b58db57b6e)}'
+      - - '{data(cb356a1bc326efe6)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -2191,8 +2194,8 @@ entries:
           height: 300
           hover_cols:
           - LAT
-          - depth
           - LON
+          - depth
           - T_30_EQ_AX
           kind: scatter
           shared_axes: false
@@ -2208,8 +2211,8 @@ entries:
           height: 300
           hover_cols:
           - LAT
-          - depth
           - LON
+          - depth
           - T_30_EQ_AX
           kind: scatter
           shared_axes: false
@@ -2217,7 +2220,7 @@ entries:
           width: 500
           x: LON
           y: LAT
-      urlpath: https://researchworkspace.com/files/42202265/Tustumena_t_s_chl_cdom_tr_final_data_subsetted.nc
+      urlpath: simplecache://::https://researchworkspace.com/files/42202265/Tustumena_t_s_chl_cdom_tr_final_data_subsetted.nc
     output_instance: xarray:Dataset
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -2227,7 +2230,7 @@ entries:
       - xarray:Dataset
       - xarray:Dataset
       steps:
-      - - '{data(459fb8b58db57b6e)}'
+      - - '{data(cb356a1bc326efe6)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -2253,8 +2256,8 @@ entries:
           height: 300
           hover_cols:
           - LAT
-          - depth
           - LON
+          - depth
           - T_30_EQ_AX
           kind: scatter
           shared_axes: false
@@ -2270,8 +2273,8 @@ entries:
           height: 300
           hover_cols:
           - LAT
-          - depth
           - LON
+          - depth
           - T_30_EQ_AX
           kind: scatter
           shared_axes: false
@@ -2279,7 +2282,7 @@ entries:
           width: 500
           x: LON
           y: LAT
-      urlpath: https://researchworkspace.com/files/42202265/Tustumena_t_s_chl_cdom_tr_final_data_subsetted.nc
+      urlpath: simplecache://::https://researchworkspace.com/files/42202265/Tustumena_t_s_chl_cdom_tr_final_data_subsetted.nc
     output_instance: xarray:Dataset
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -2289,7 +2292,7 @@ entries:
       - xarray:Dataset
       - xarray:Dataset
       steps:
-      - - '{data(459fb8b58db57b6e)}'
+      - - '{data(cb356a1bc326efe6)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -2315,8 +2318,8 @@ entries:
           height: 300
           hover_cols:
           - LAT
-          - depth
           - LON
+          - depth
           - T_30_EQ_AX
           kind: scatter
           shared_axes: false
@@ -2332,8 +2335,8 @@ entries:
           height: 300
           hover_cols:
           - LAT
-          - depth
           - LON
+          - depth
           - T_30_EQ_AX
           kind: scatter
           shared_axes: false
@@ -2341,7 +2344,7 @@ entries:
           width: 500
           x: LON
           y: LAT
-      urlpath: https://researchworkspace.com/files/42202265/Tustumena_t_s_chl_cdom_tr_final_data_subsetted.nc
+      urlpath: simplecache://::https://researchworkspace.com/files/42202265/Tustumena_t_s_chl_cdom_tr_final_data_subsetted.nc
     output_instance: xarray:Dataset
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -2351,7 +2354,7 @@ entries:
       - xarray:Dataset
       - xarray:Dataset
       steps:
-      - - '{data(459fb8b58db57b6e)}'
+      - - '{data(cb356a1bc326efe6)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -2377,8 +2380,8 @@ entries:
           height: 300
           hover_cols:
           - LAT
-          - depth
           - LON
+          - depth
           - T_30_EQ_AX
           kind: scatter
           shared_axes: false
@@ -2394,8 +2397,8 @@ entries:
           height: 300
           hover_cols:
           - LAT
-          - depth
           - LON
+          - depth
           - T_30_EQ_AX
           kind: scatter
           shared_axes: false
@@ -2403,7 +2406,7 @@ entries:
           width: 500
           x: LON
           y: LAT
-      urlpath: https://researchworkspace.com/files/42202265/Tustumena_t_s_chl_cdom_tr_final_data_subsetted.nc
+      urlpath: simplecache://::https://researchworkspace.com/files/42202265/Tustumena_t_s_chl_cdom_tr_final_data_subsetted.nc
     output_instance: xarray:Dataset
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -2413,7 +2416,7 @@ entries:
       - xarray:Dataset
       - xarray:Dataset
       steps:
-      - - '{data(459fb8b58db57b6e)}'
+      - - '{data(cb356a1bc326efe6)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -2439,8 +2442,8 @@ entries:
           height: 300
           hover_cols:
           - LAT
-          - depth
           - LON
+          - depth
           - T_30_EQ_AX
           kind: scatter
           shared_axes: false
@@ -2456,8 +2459,8 @@ entries:
           height: 300
           hover_cols:
           - LAT
-          - depth
           - LON
+          - depth
           - T_30_EQ_AX
           kind: scatter
           shared_axes: false
@@ -2465,7 +2468,7 @@ entries:
           width: 500
           x: LON
           y: LAT
-      urlpath: https://researchworkspace.com/files/42202265/Tustumena_t_s_chl_cdom_tr_final_data_subsetted.nc
+      urlpath: simplecache://::https://researchworkspace.com/files/42202265/Tustumena_t_s_chl_cdom_tr_final_data_subsetted.nc
     output_instance: xarray:Dataset
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -2475,7 +2478,7 @@ entries:
       - xarray:Dataset
       - xarray:Dataset
       steps:
-      - - '{data(459fb8b58db57b6e)}'
+      - - '{data(cb356a1bc326efe6)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -2501,8 +2504,8 @@ entries:
           height: 300
           hover_cols:
           - LAT
-          - depth
           - LON
+          - depth
           - T_30_EQ_AX
           kind: scatter
           shared_axes: false
@@ -2518,8 +2521,8 @@ entries:
           height: 300
           hover_cols:
           - LAT
-          - depth
           - LON
+          - depth
           - T_30_EQ_AX
           kind: scatter
           shared_axes: false
@@ -2527,7 +2530,7 @@ entries:
           width: 500
           x: LON
           y: LAT
-      urlpath: https://researchworkspace.com/files/42202265/Tustumena_t_s_chl_cdom_tr_final_data_subsetted.nc
+      urlpath: simplecache://::https://researchworkspace.com/files/42202265/Tustumena_t_s_chl_cdom_tr_final_data_subsetted.nc
     output_instance: xarray:Dataset
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -2537,7 +2540,7 @@ entries:
       - xarray:Dataset
       - xarray:Dataset
       steps:
-      - - '{data(459fb8b58db57b6e)}'
+      - - '{data(cb356a1bc326efe6)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -2563,8 +2566,8 @@ entries:
           height: 300
           hover_cols:
           - LAT
-          - depth
           - LON
+          - depth
           - T_30_EQ_AX
           kind: scatter
           shared_axes: false
@@ -2580,8 +2583,8 @@ entries:
           height: 300
           hover_cols:
           - LAT
-          - depth
           - LON
+          - depth
           - T_30_EQ_AX
           kind: scatter
           shared_axes: false
@@ -2589,7 +2592,7 @@ entries:
           width: 500
           x: LON
           y: LAT
-      urlpath: https://researchworkspace.com/files/42202265/Tustumena_t_s_chl_cdom_tr_final_data_subsetted.nc
+      urlpath: simplecache://::https://researchworkspace.com/files/42202265/Tustumena_t_s_chl_cdom_tr_final_data_subsetted.nc
     output_instance: xarray:Dataset
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -2599,7 +2602,7 @@ entries:
       - xarray:Dataset
       - xarray:Dataset
       steps:
-      - - '{data(459fb8b58db57b6e)}'
+      - - '{data(cb356a1bc326efe6)}'
         - []
         - {}
       - - '{func(intake.readers.convert:GenericFunc)}'
@@ -2625,8 +2628,8 @@ entries:
           height: 300
           hover_cols:
           - LAT
-          - depth
           - LON
+          - depth
           - T_30_EQ_AX
           kind: scatter
           shared_axes: false
@@ -2642,8 +2645,8 @@ entries:
           height: 300
           hover_cols:
           - LAT
-          - depth
           - LON
+          - depth
           - T_30_EQ_AX
           kind: scatter
           shared_axes: false
@@ -2651,14 +2654,14 @@ entries:
           width: 500
           x: LON
           y: LAT
-      urlpath: https://researchworkspace.com/files/42202265/Tustumena_t_s_chl_cdom_tr_final_data_subsetted.nc
+      urlpath: simplecache://::https://researchworkspace.com/files/42202265/Tustumena_t_s_chl_cdom_tr_final_data_subsetted.nc
     output_instance: xarray:Dataset
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
-  459fb8b58db57b6e:
+  cb356a1bc326efe6:
     kwargs:
       chunks: {}
-      data: '{data(376e1836a2febe51)}'
+      data: '{data(a978d6e780933a9b)}'
     metadata: {}
     output_instance: xarray:Dataset
     reader: intake.readers.readers:XArrayDatasetReader
