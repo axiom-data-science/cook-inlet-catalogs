@@ -1806,7 +1806,7 @@ ADCP data has been converted to eastward, northward velocities as well as along-
                 "COI0524"]
     import intake_coops
     cat = intake_coops.COOPSCatalogReader(station_list, include_source_metadata=True, description=metadata["overall_desc"],
-                                name=slug, process_adcp=True).read()
+                                name=slug, process_adcp="process_uv").read()
     
     for source_name in list(cat):
         md_new = {"minLongitude": cat[source_name].metadata["lng"],
@@ -1866,7 +1866,7 @@ ADCP data has been converted to eastward, northward velocities as well as along-
     
     import intake_coops
     cat = intake_coops.COOPSCatalogReader(station_list, include_source_metadata=True, description=metadata["overall_desc"],
-                                name=slug, process_adcp=True, metadata=metadata).read()
+                                name=slug, process_adcp="process_uv", metadata=metadata).read()
     
     for source_name in list(cat):
         md_new = {"minLongitude": cat[source_name].metadata["lng"],
@@ -1931,7 +1931,7 @@ Stations "KOD0914", "KOD0915", "KOD0916", "KOD0917", "KOD0918", "KOD0919", "KOD0
     
     import intake_coops
     cat = intake_coops.COOPSCatalogReader(station_list, include_source_metadata=True, description=metadata["overall_desc"],
-                                name=slug, process_adcp=True, metadata=metadata).read()
+                                name=slug, process_adcp="process_uv", metadata=metadata).read()
     
     for source_name in list(cat):
         md_new = {"minLongitude": cat[source_name].metadata["lng"],
@@ -1994,7 +1994,7 @@ ADCP data has been converted to eastward, northward velocities as well as along-
     
     import intake_coops
     cat = intake_coops.COOPSCatalogReader(station_list, include_source_metadata=True, description=metadata["overall_desc"],
-                                name=slug, process_adcp=True, metadata=metadata).read()
+                                name=slug, process_adcp="process_uv", metadata=metadata).read()
     
     for source_name in list(cat):
         md_new = {"minLongitude": cat[source_name].metadata["lng"],
@@ -2044,7 +2044,7 @@ def drifters_uaf(slug, simplecache):
         
 * 2003: 7.5m (Cook Inlet)
 * 2004: 5m (Cook Inlet)
-* 2005: 5m, 80m (Cook Inlet)
+* 2005: 5m (Cook Inlet)
 * 2006: 5m (Cook Inlet)
 * 2012: 1m (Cook Inlet), 15m (Cook Inlet)
 * 2013: 1m (Cook Inlet), 15m (Cook Inlet)

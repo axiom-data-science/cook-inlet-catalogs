@@ -1258,10 +1258,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -1302,10 +1302,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -1346,10 +1346,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -1390,10 +1390,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -1434,10 +1434,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -1478,10 +1478,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -1522,10 +1522,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -1566,10 +1566,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -1610,10 +1610,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -1654,10 +1654,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -1698,10 +1698,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -1742,10 +1742,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -1786,10 +1786,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -1830,10 +1830,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -1874,10 +1874,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -1918,10 +1918,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -1962,10 +1962,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -2006,10 +2006,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -2050,10 +2050,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -2094,10 +2094,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -2138,10 +2138,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -2182,10 +2182,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -2226,10 +2226,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -2270,10 +2270,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -2314,10 +2314,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -2358,10 +2358,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -2402,10 +2402,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -2446,10 +2446,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -2490,10 +2490,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -2534,10 +2534,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -2578,10 +2578,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -2622,10 +2622,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -2666,10 +2666,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -2710,10 +2710,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -2754,10 +2754,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -2798,10 +2798,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -2842,10 +2842,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -2886,10 +2886,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -2930,10 +2930,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -2974,10 +2974,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -3018,10 +3018,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -3062,10 +3062,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -3106,10 +3106,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -3150,10 +3150,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -3194,10 +3194,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -3238,10 +3238,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -3282,10 +3282,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -3326,10 +3326,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -3370,10 +3370,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -3414,10 +3414,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -3458,10 +3458,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -3502,10 +3502,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -3546,10 +3546,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -3590,10 +3590,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -3634,10 +3634,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -3678,10 +3678,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -3722,10 +3722,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -3766,10 +3766,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -3810,10 +3810,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -3854,10 +3854,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -3898,10 +3898,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -3942,10 +3942,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -3986,10 +3986,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -4030,10 +4030,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -4074,10 +4074,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -4118,10 +4118,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -4162,10 +4162,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -4206,10 +4206,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -4250,10 +4250,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -4294,10 +4294,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -4338,10 +4338,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -4382,10 +4382,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -4426,10 +4426,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -4470,10 +4470,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -4514,10 +4514,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -4558,10 +4558,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -4602,10 +4602,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -4646,10 +4646,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -4690,10 +4690,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -4734,10 +4734,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -4778,10 +4778,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -4822,10 +4822,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -4866,10 +4866,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -4910,10 +4910,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -4954,10 +4954,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -4998,10 +4998,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -5042,10 +5042,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -5086,10 +5086,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -5130,10 +5130,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -5174,10 +5174,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -5218,10 +5218,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -5262,10 +5262,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -5306,10 +5306,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -5350,10 +5350,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -5394,10 +5394,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -5438,10 +5438,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -5482,10 +5482,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -5526,10 +5526,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -5570,10 +5570,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -5614,10 +5614,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -5658,10 +5658,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -5702,10 +5702,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -5746,10 +5746,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -5790,10 +5790,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -5834,10 +5834,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -5878,10 +5878,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -5922,10 +5922,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -5966,10 +5966,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -6010,10 +6010,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -6054,10 +6054,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -6098,10 +6098,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -6142,10 +6142,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -6186,10 +6186,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -6230,10 +6230,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -6274,10 +6274,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -6318,10 +6318,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -6362,10 +6362,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -6406,10 +6406,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -6450,10 +6450,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -6494,10 +6494,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -6538,10 +6538,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -6582,10 +6582,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -6626,10 +6626,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -6670,10 +6670,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -6714,10 +6714,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -6758,10 +6758,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -6802,10 +6802,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -6846,10 +6846,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -6890,10 +6890,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -6934,10 +6934,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -6978,10 +6978,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -7022,10 +7022,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -7066,10 +7066,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -7110,10 +7110,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -7154,10 +7154,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -7198,10 +7198,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -7242,10 +7242,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -7286,10 +7286,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -7330,10 +7330,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -7374,10 +7374,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -7418,10 +7418,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -7462,10 +7462,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -7506,10 +7506,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -7550,10 +7550,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -7594,10 +7594,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -7638,10 +7638,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -7682,10 +7682,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -7726,10 +7726,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -7770,10 +7770,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -7814,10 +7814,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -7858,10 +7858,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -7902,10 +7902,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -7946,10 +7946,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -7990,10 +7990,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
+          - datetime
+          - Lat
           - depth_m
           - Long
-          - Lat
-          - datetime
           kind: points
           legend: false
           s: null
@@ -8055,10 +8055,10 @@ metadata:
   project_name: Drifters (UAF), multiple projects
   summary: "Drifters run by Mark Johnson and others out of UAF with various years\
     \ and drogue depths.\n        \n* 2003: 7.5m (Cook Inlet)\n* 2004: 5m (Cook Inlet)\n\
-    * 2005: 5m, 80m (Cook Inlet)\n* 2006: 5m (Cook Inlet)\n* 2012: 1m (Cook Inlet),\
-    \ 15m (Cook Inlet)\n* 2013: 1m (Cook Inlet), 15m (Cook Inlet)\n* 2014: 1m (Cook\
-    \ Inlet)\n* 2019: 1m (Kachemak Bay, Lynn Canal)\n* 2020: 1m (Kachemak Bay, Lynn\
-    \ Canal)\n\nDescriptive summary of later drifter deployment: https://www.alaska.edu/epscor/about/newsletters/May-2022-feature-current-events.php,\
+    * 2005: 5m (Cook Inlet)\n* 2006: 5m (Cook Inlet)\n* 2012: 1m (Cook Inlet), 15m\
+    \ (Cook Inlet)\n* 2013: 1m (Cook Inlet), 15m (Cook Inlet)\n* 2014: 1m (Cook Inlet)\n\
+    * 2019: 1m (Kachemak Bay, Lynn Canal)\n* 2020: 1m (Kachemak Bay, Lynn Canal)\n\
+    \nDescriptive summary of later drifter deployment: https://www.alaska.edu/epscor/about/newsletters/May-2022-feature-current-events.php,\
     \ data portal: https://ak-epscor.portal.axds.co/\n"
   time: From 2003 to 2020, variable
 user_parameters: {}
