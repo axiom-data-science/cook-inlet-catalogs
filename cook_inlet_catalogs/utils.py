@@ -28,7 +28,8 @@ reg = cfp.Reg(include="tem", exclude=["F_","qc","air","dew"], ignore_case=True)
 vocab.make_entry("temp", reg.pattern(), attr="name")
 reg = cfp.Reg(include="sal", exclude=["F_","qc"], ignore_case=True)
 vocab.make_entry("salt", reg.pattern(), attr="name")
-reg = cfp.Reg(include_or=["sea_surface_height","zeta"], exclude=["qc","sea_surface_height_amplitude_due_to_geocentric_ocean_tide_geoid_mllw"], ignore_case=True)
+reg = cfp.Reg(include_or=["sea_surface_height","zeta","water_surface_above_station_datum"], exclude=["qc","sea_surface_height_amplitude_due_to_geocentric_ocean_tide"], ignore_case=True)
+# reg = cfp.Reg(include_or=["sea_surface_height","zeta","water_surface_above_station_datum"], exclude=["qc","sea_surface_height_amplitude_due_to_geocentric_ocean_tide_geoid_mllw"], ignore_case=True)
 vocab.make_entry("ssh", reg.pattern(), attr="name")
 vocab.make_entry("speed", ["speed","s$"], attr="name")
 reg = cfp.Reg(include="along", exclude=["subtidal"], ignore_case=True)
@@ -36,7 +37,7 @@ vocab.make_entry("along", reg.pattern(), attr="name")
 reg = cfp.Reg(include="across", exclude=["subtidal"], ignore_case=True)
 vocab.make_entry("across", reg.pattern(), attr="name")
 vocab.make_entry("dir", ["dir","d$"], attr="name")
-vocab.make_entry("station", ["station", "Station"], attr="name")
+vocab.make_entry("station", ["station", "Station","id","drifter"], attr="name")
 vocab.make_entry("cruise", ["cruise", "Cruise"], attr="name")
 vocab.make_entry("distance", ["distance"], attr="name")
 reg = cfp.Reg(include_exact="u", ignore_case=True)
@@ -314,8 +315,9 @@ def overall_metadata(cat, dataset_ids):
         # cat[dataset_id].describe()["metadata"] (intake v1)
         if 'maxLatitude' in cat[dataset_id].metadata:
             metadata = cat[dataset_id].metadata
-        elif 'maxLatitude' in cat[dataset_id].describe()["metadata"]:
-            metadata = cat[dataset_id].describe()["metadata"]
+        # this hangs:
+        # elif 'maxLatitude' in cat[dataset_id].describe()["metadata"]:
+        #     metadata = cat[dataset_id].describe()["metadata"]
         else:
             metadata = None
             raise ValueError("Relevant metadata not found in catalog entry.")
@@ -447,6 +449,10 @@ def select_df_visit_transect(df, visit_transect):
 
 def select_df_year_day_of_july(df, year, day):
     return df.set_index(df.cf["T"].name).loc[f"{year}-07-{day}"].reset_index() 
+
+
+def rename_Date_Visit(df):
+    return df.rename(columns={"Date": "Visit"})
 
 
 def get_hover_cols(df, distance=False, extra_keys=None):

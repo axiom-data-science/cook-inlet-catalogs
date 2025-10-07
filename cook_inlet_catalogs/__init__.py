@@ -21,6 +21,7 @@ slugs = [
         "adcp_moored_noaa_kod_1",
         "adcp_moored_noaa_kod_2",
         "ctd_profiles_2005_noaa",
+        "ctd_profiles_ecofoci",  # after v1.0.1
         "ctd_profiles_emap_2002",
         "ctd_profiles_emap_2008",
         "ctd_profiles_kachemack_kuletz_2005_2007",
@@ -51,4 +52,6 @@ slugs = [
         "moorings_uaf",
         "drifters_ecofoci",
         "drifters_uaf",
+        "drifters_epscor",  # after v1.0.1
+        "drifters_lake_clark",  # after v1.0.1
 ]

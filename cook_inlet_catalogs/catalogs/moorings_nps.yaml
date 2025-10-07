@@ -5,7 +5,10 @@ data:
   aguchik-island-ak-tide-station-9:
     datatype: intake_erddap.erddap:TableDAPReader
     kwargs:
-      cache_kwargs: null
+      cache_kwargs:
+        simplecache:
+          cache_storage: /home/kristen/.cache/cook-inlet-catalogs
+          same_names: true
       constraints:
         time>=: '1999-01-01T00:00:00Z'
       dataset_id: aguchik-island-ak-tide-station-9
@@ -26,6 +29,8 @@ data:
       - z
       - sea_water_temperature
       - sea_water_practical_salinity
+      - sea_surface_temperature
+      - water_surface_above_station_datum
       - sea_surface_height_above_sea_level_geoid_local_station_datum
       - sea_surface_height_above_sea_level_geoid_mllw
     metadata:
@@ -47,12 +52,12 @@ data:
         data:
           height: 300
           hover_cols:
+          - latitude
           - longitude
           - z
+          - water_surface_above_station_datum
           - station
           - time
-          - latitude
-          - sea_surface_height_above_sea_level_geoid_local_station_datum
           kind: line
           legend: top
           shared_axes: false
@@ -61,18 +66,21 @@ data:
           width: 700
           x: time
           y:
-          - sea_surface_height_above_sea_level_geoid_local_station_datum
+          - water_surface_above_station_datum
       summary: Timeseries data from 'Aguchik Island, AK, Tide Station (9456901)' (aguchik-island-ak-tide-station-9)
       tabledap: https://erddap.aoos.org/erddap/tabledap/aguchik-island-ak-tide-station-9
       title: Aguchik Island, AK, Tide Station (9456901)
       urlpath: https://erddap.aoos.org/erddap/tabledap/aguchik-island-ak-tide-station-9
       variables:
-      - sea_surface_height_above_sea_level_geoid_local_station_datum
+      - water_surface_above_station_datum
     user_parameters: {}
   chinitna-bay-ak-tide-station-945:
     datatype: intake_erddap.erddap:TableDAPReader
     kwargs:
-      cache_kwargs: null
+      cache_kwargs:
+        simplecache:
+          cache_storage: /home/kristen/.cache/cook-inlet-catalogs
+          same_names: true
       constraints:
         time>=: '1999-01-01T00:00:00Z'
       dataset_id: chinitna-bay-ak-tide-station-945
@@ -93,6 +101,8 @@ data:
       - z
       - sea_water_temperature
       - sea_water_practical_salinity
+      - sea_surface_temperature
+      - water_surface_above_station_datum
       - sea_surface_height_above_sea_level_geoid_local_station_datum
       - sea_surface_height_above_sea_level_geoid_mllw
     metadata:
@@ -114,12 +124,12 @@ data:
         data:
           height: 300
           hover_cols:
+          - latitude
           - longitude
           - z
+          - water_surface_above_station_datum
           - station
           - time
-          - latitude
-          - sea_surface_height_above_sea_level_geoid_local_station_datum
           kind: line
           legend: top
           shared_axes: false
@@ -128,13 +138,13 @@ data:
           width: 700
           x: time
           y:
-          - sea_surface_height_above_sea_level_geoid_local_station_datum
+          - water_surface_above_station_datum
       summary: Timeseries data from 'Chinitna Bay, AK, Tide Station (9456357)' (chinitna-bay-ak-tide-station-945)
       tabledap: https://erddap.aoos.org/erddap/tabledap/chinitna-bay-ak-tide-station-945
       title: Chinitna Bay, AK, Tide Station (9456357)
       urlpath: https://erddap.aoos.org/erddap/tabledap/chinitna-bay-ak-tide-station-945
       variables:
-      - sea_surface_height_above_sea_level_geoid_local_station_datum
+      - water_surface_above_station_datum
     user_parameters: {}
 entries: {}
 metadata:
