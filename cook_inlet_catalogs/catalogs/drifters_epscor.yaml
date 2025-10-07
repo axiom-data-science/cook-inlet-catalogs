@@ -2553,10 +2553,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - datetime
+          - Lat
           - depth
           - Long
-          - Lat
+          - datetime
           - Temperature
           kind: points
           legend: false
@@ -2624,10 +2624,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - datetime
+          - Lat
           - depth
           - Long
-          - Lat
+          - datetime
           - Temperature
           kind: points
           legend: false
@@ -2695,10 +2695,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - datetime
+          - Lat
           - depth
           - Long
-          - Lat
+          - datetime
           - Temperature
           kind: points
           legend: false
@@ -2766,10 +2766,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - datetime
+          - Lat
           - depth
           - Long
-          - Lat
+          - datetime
           - Temperature
           kind: points
           legend: false
@@ -2837,10 +2837,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - datetime
+          - Lat
           - depth
           - Long
-          - Lat
+          - datetime
           - Temperature
           kind: points
           legend: false
@@ -2908,10 +2908,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - datetime
+          - Lat
           - depth
           - Long
-          - Lat
+          - datetime
           - Temperature
           kind: points
           legend: false
@@ -2979,10 +2979,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - datetime
+          - Lat
           - depth
           - Long
-          - Lat
+          - datetime
           - Temperature
           kind: points
           legend: false
@@ -3050,10 +3050,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - datetime
+          - Lat
           - depth
           - Long
-          - Lat
+          - datetime
           - Temperature
           kind: points
           legend: false
@@ -3121,10 +3121,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - datetime
+          - Lat
           - depth
           - Long
-          - Lat
+          - datetime
           - Temperature
           kind: points
           legend: false
@@ -3192,10 +3192,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - datetime
+          - Lat
           - depth
           - Long
-          - Lat
+          - datetime
           - Temperature
           kind: points
           legend: false
@@ -3263,10 +3263,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - datetime
+          - Lat
           - depth
           - Long
-          - Lat
+          - datetime
           - Temperature
           kind: points
           legend: false
@@ -3334,10 +3334,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - datetime
+          - Lat
           - depth
           - Long
-          - Lat
+          - datetime
           - Temperature
           kind: points
           legend: false
@@ -3405,10 +3405,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - datetime
+          - Lat
           - depth
           - Long
-          - Lat
+          - datetime
           - Temperature
           kind: points
           legend: false
@@ -3476,10 +3476,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - datetime
+          - Lat
           - depth
           - Long
-          - Lat
+          - datetime
           - Temperature
           kind: points
           legend: false
@@ -3547,10 +3547,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - datetime
+          - Lat
           - depth
           - Long
-          - Lat
+          - datetime
           - Temperature
           kind: points
           legend: false
@@ -3618,10 +3618,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - datetime
+          - Lat
           - depth
           - Long
-          - Lat
+          - datetime
           - Temperature
           kind: points
           legend: false
@@ -3689,10 +3689,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - datetime
+          - Lat
           - depth
           - Long
-          - Lat
+          - datetime
           - Temperature
           kind: points
           legend: false
@@ -3760,10 +3760,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - datetime
+          - Lat
           - depth
           - Long
-          - Lat
+          - datetime
           - Temperature
           kind: points
           legend: false
@@ -3831,10 +3831,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - datetime
+          - Lat
           - depth
           - Long
-          - Lat
+          - datetime
           - Temperature
           kind: points
           legend: false
@@ -3902,10 +3902,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - datetime
+          - Lat
           - depth
           - Long
-          - Lat
+          - datetime
           - Temperature
           kind: points
           legend: false
@@ -3973,10 +3973,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - datetime
+          - Lat
           - depth
           - Long
-          - Lat
+          - datetime
           - Temperature
           kind: points
           legend: false
@@ -4044,10 +4044,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - datetime
+          - Lat
           - depth
           - Long
-          - Lat
+          - datetime
           - Temperature
           kind: points
           legend: false
@@ -4115,10 +4115,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - datetime
+          - Lat
           - depth
           - Long
-          - Lat
+          - datetime
           - Temperature
           kind: points
           legend: false
@@ -4186,10 +4186,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - datetime
+          - Lat
           - depth
           - Long
-          - Lat
+          - datetime
           - Temperature
           kind: points
           legend: false
@@ -4257,10 +4257,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - datetime
+          - Lat
           - depth
           - Long
-          - Lat
+          - datetime
           - Temperature
           kind: points
           legend: false
@@ -4328,10 +4328,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - datetime
+          - Lat
           - depth
           - Long
-          - Lat
+          - datetime
           - Temperature
           kind: points
           legend: false
@@ -4399,10 +4399,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - datetime
+          - Lat
           - depth
           - Long
-          - Lat
+          - datetime
           - Temperature
           kind: points
           legend: false
@@ -4470,10 +4470,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - datetime
+          - Lat
           - depth
           - Long
-          - Lat
+          - datetime
           - Temperature
           kind: points
           legend: false
@@ -4541,10 +4541,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - datetime
+          - Lat
           - depth
           - Long
-          - Lat
+          - datetime
           - Temperature
           kind: points
           legend: false
@@ -4612,10 +4612,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - datetime
+          - Lat
           - depth
           - Long
-          - Lat
+          - datetime
           - Temperature
           kind: points
           legend: false
@@ -4683,10 +4683,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - datetime
+          - Lat
           - depth
           - Long
-          - Lat
+          - datetime
           - Temperature
           kind: points
           legend: false
@@ -4754,10 +4754,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - datetime
+          - Lat
           - depth
           - Long
-          - Lat
+          - datetime
           - Temperature
           kind: points
           legend: false
@@ -4825,10 +4825,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - datetime
+          - Lat
           - depth
           - Long
-          - Lat
+          - datetime
           - Temperature
           kind: points
           legend: false
@@ -4896,10 +4896,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - datetime
+          - Lat
           - depth
           - Long
-          - Lat
+          - datetime
           - Temperature
           kind: points
           legend: false
@@ -4967,10 +4967,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - datetime
+          - Lat
           - depth
           - Long
-          - Lat
+          - datetime
           - Temperature
           kind: points
           legend: false
@@ -5038,10 +5038,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - datetime
+          - Lat
           - depth
           - Long
-          - Lat
+          - datetime
           - Temperature
           kind: points
           legend: false
@@ -5109,10 +5109,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - datetime
+          - Lat
           - depth
           - Long
-          - Lat
+          - datetime
           - Temperature
           kind: points
           legend: false
@@ -5180,10 +5180,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - datetime
+          - Lat
           - depth
           - Long
-          - Lat
+          - datetime
           - Temperature
           kind: points
           legend: false
@@ -5251,10 +5251,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - datetime
+          - Lat
           - depth
           - Long
-          - Lat
+          - datetime
           - Temperature
           kind: points
           legend: false
@@ -5322,10 +5322,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - datetime
+          - Lat
           - depth
           - Long
-          - Lat
+          - datetime
           - Temperature
           kind: points
           legend: false
@@ -5393,10 +5393,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - datetime
+          - Lat
           - depth
           - Long
-          - Lat
+          - datetime
           - Temperature
           kind: points
           legend: false
@@ -5464,10 +5464,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - datetime
+          - Lat
           - depth
           - Long
-          - Lat
+          - datetime
           - Temperature
           kind: points
           legend: false
@@ -5535,10 +5535,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - datetime
+          - Lat
           - depth
           - Long
-          - Lat
+          - datetime
           - Temperature
           kind: points
           legend: false
@@ -5606,10 +5606,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - datetime
+          - Lat
           - depth
           - Long
-          - Lat
+          - datetime
           - Temperature
           kind: points
           legend: false
@@ -5677,10 +5677,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - datetime
+          - Lat
           - depth
           - Long
-          - Lat
+          - datetime
           - Temperature
           kind: points
           legend: false
@@ -5748,10 +5748,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - datetime
+          - Lat
           - depth
           - Long
-          - Lat
+          - datetime
           - Temperature
           kind: points
           legend: false
@@ -5819,10 +5819,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - datetime
+          - Lat
           - depth
           - Long
-          - Lat
+          - datetime
           - Temperature
           kind: points
           legend: false
@@ -5890,10 +5890,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - datetime
+          - Lat
           - depth
           - Long
-          - Lat
+          - datetime
           - Temperature
           kind: points
           legend: false
@@ -5961,10 +5961,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - datetime
+          - Lat
           - depth
           - Long
-          - Lat
+          - datetime
           - Temperature
           kind: points
           legend: false
@@ -6032,10 +6032,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - datetime
+          - Lat
           - depth
           - Long
-          - Lat
+          - datetime
           - Temperature
           kind: points
           legend: false
@@ -6103,10 +6103,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - datetime
+          - Lat
           - depth
           - Long
-          - Lat
+          - datetime
           - Temperature
           kind: points
           legend: false
@@ -6174,10 +6174,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - datetime
+          - Lat
           - depth
           - Long
-          - Lat
+          - datetime
           - Temperature
           kind: points
           legend: false
@@ -6245,10 +6245,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - datetime
+          - Lat
           - depth
           - Long
-          - Lat
+          - datetime
           - Temperature
           kind: points
           legend: false
@@ -6316,10 +6316,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - datetime
+          - Lat
           - depth
           - Long
-          - Lat
+          - datetime
           - Temperature
           kind: points
           legend: false
@@ -6387,10 +6387,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - datetime
+          - Lat
           - depth
           - Long
-          - Lat
+          - datetime
           - Temperature
           kind: points
           legend: false
@@ -6458,10 +6458,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - datetime
+          - Lat
           - depth
           - Long
-          - Lat
+          - datetime
           - Temperature
           kind: points
           legend: false
@@ -6529,10 +6529,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - datetime
+          - Lat
           - depth
           - Long
-          - Lat
+          - datetime
           - Temperature
           kind: points
           legend: false
@@ -6600,10 +6600,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - datetime
+          - Lat
           - depth
           - Long
-          - Lat
+          - datetime
           - Temperature
           kind: points
           legend: false
@@ -6671,10 +6671,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - datetime
+          - Lat
           - depth
           - Long
-          - Lat
+          - datetime
           - Temperature
           kind: points
           legend: false
@@ -6742,10 +6742,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - datetime
+          - Lat
           - depth
           - Long
-          - Lat
+          - datetime
           - Temperature
           kind: points
           legend: false
@@ -6813,10 +6813,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - datetime
+          - Lat
           - depth
           - Long
-          - Lat
+          - datetime
           - Temperature
           kind: points
           legend: false
@@ -6884,10 +6884,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - datetime
+          - Lat
           - depth
           - Long
-          - Lat
+          - datetime
           - Temperature
           kind: points
           legend: false
@@ -6955,10 +6955,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - datetime
+          - Lat
           - depth
           - Long
-          - Lat
+          - datetime
           - Temperature
           kind: points
           legend: false
@@ -7026,10 +7026,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - datetime
+          - Lat
           - depth
           - Long
-          - Lat
+          - datetime
           - Temperature
           kind: points
           legend: false
@@ -7097,10 +7097,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - datetime
+          - Lat
           - depth
           - Long
-          - Lat
+          - datetime
           - Temperature
           kind: points
           legend: false
@@ -7168,10 +7168,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - datetime
+          - Lat
           - depth
           - Long
-          - Lat
+          - datetime
           - Temperature
           kind: points
           legend: false
@@ -7239,10 +7239,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - datetime
+          - Lat
           - depth
           - Long
-          - Lat
+          - datetime
           - Temperature
           kind: points
           legend: false
@@ -7310,10 +7310,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - datetime
+          - Lat
           - depth
           - Long
-          - Lat
+          - datetime
           - Temperature
           kind: points
           legend: false
@@ -7381,10 +7381,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - datetime
+          - Lat
           - depth
           - Long
-          - Lat
+          - datetime
           - Temperature
           kind: points
           legend: false
@@ -7452,10 +7452,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - datetime
+          - Lat
           - depth
           - Long
-          - Lat
+          - datetime
           - Temperature
           kind: points
           legend: false
@@ -7523,10 +7523,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - datetime
+          - Lat
           - depth
           - Long
-          - Lat
+          - datetime
           - Temperature
           kind: points
           legend: false
@@ -7594,10 +7594,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - datetime
+          - Lat
           - depth
           - Long
-          - Lat
+          - datetime
           - Temperature
           kind: points
           legend: false
@@ -7665,10 +7665,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - datetime
+          - Lat
           - depth
           - Long
-          - Lat
+          - datetime
           - Temperature
           kind: points
           legend: false
@@ -7736,10 +7736,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - datetime
+          - Lat
           - depth
           - Long
-          - Lat
+          - datetime
           - Temperature
           kind: points
           legend: false
@@ -7807,10 +7807,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - datetime
+          - Lat
           - depth
           - Long
-          - Lat
+          - datetime
           - Temperature
           kind: points
           legend: false
@@ -7878,10 +7878,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - datetime
+          - Lat
           - depth
           - Long
-          - Lat
+          - datetime
           - Temperature
           kind: points
           legend: false
@@ -7949,10 +7949,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - datetime
+          - Lat
           - depth
           - Long
-          - Lat
+          - datetime
           - Temperature
           kind: points
           legend: false
@@ -8020,10 +8020,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - datetime
+          - Lat
           - depth
           - Long
-          - Lat
+          - datetime
           - Temperature
           kind: points
           legend: false
@@ -8091,10 +8091,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - datetime
+          - Lat
           - depth
           - Long
-          - Lat
+          - datetime
           - Temperature
           kind: points
           legend: false
@@ -9093,10 +9093,20 @@ metadata:
   notes: ''
   overall_desc: Drifters (EPSCoR)
   project_name: Drifters (EPSCoR)
-  summary: "\n        \n        Several drifters are run at a time.\n        \n  \
-    \      https://ak-epscor.portal.axds.co/#metadata/e773c142-c003-4441-a32a-8656e051f630/project/folder_metadata/5826151\n\
-    \        \n        files: https://ak-epscor.portal.axds.co/#metadata/e773c142-c003-4441-a32a-8656e051f630/project/files\n\
-    \        "
+  summary: 'Alaska EPSCoR Drifter Deployment
+
+
+    * Several drifters are run at a time.
+
+    * https://ak-epscor.portal.axds.co/#metadata/e773c142-c003-4441-a32a-8656e051f630/project/folder_metadata/5826151
+
+    * files: https://ak-epscor.portal.axds.co/#metadata/e773c142-c003-4441-a32a-8656e051f630/project/files
+
+    * Descriptive summary of drifter deployment: https://www.alaska.edu/epscor/about/newsletters/May-2022-feature-current-events.php
+
+    * data portal: https://ak-epscor.portal.axds.co/
+
+    '
   time: From 2019 to 2022
 user_parameters: {}
 version: 2

@@ -82,8 +82,8 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - longitude
           - time
+          - longitude
           - depth
           - drifter
           - latitude
@@ -146,8 +146,8 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - longitude
           - time
+          - longitude
           - depth
           - drifter
           - latitude
@@ -210,8 +210,8 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - longitude
           - time
+          - longitude
           - depth
           - drifter
           - latitude
@@ -274,8 +274,8 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - longitude
           - time
+          - longitude
           - depth
           - drifter
           - latitude
@@ -338,8 +338,8 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - longitude
           - time
+          - longitude
           - depth
           - drifter
           - latitude
@@ -402,8 +402,8 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - longitude
           - time
+          - longitude
           - depth
           - drifter
           - latitude
@@ -466,8 +466,8 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - longitude
           - time
+          - longitude
           - depth
           - drifter
           - latitude
@@ -530,8 +530,8 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - longitude
           - time
+          - longitude
           - depth
           - drifter
           - latitude
@@ -594,8 +594,8 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - longitude
           - time
+          - longitude
           - depth
           - drifter
           - latitude
@@ -658,8 +658,8 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - longitude
           - time
+          - longitude
           - depth
           - drifter
           - latitude
@@ -722,8 +722,8 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - longitude
           - time
+          - longitude
           - depth
           - drifter
           - latitude
@@ -786,8 +786,8 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - longitude
           - time
+          - longitude
           - depth
           - drifter
           - latitude
@@ -850,8 +850,8 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - longitude
           - time
+          - longitude
           - depth
           - drifter
           - latitude
@@ -914,8 +914,8 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - longitude
           - time
+          - longitude
           - depth
           - drifter
           - latitude
@@ -978,8 +978,8 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - longitude
           - time
+          - longitude
           - depth
           - drifter
           - latitude
@@ -1042,8 +1042,8 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - longitude
           - time
+          - longitude
           - depth
           - drifter
           - latitude
@@ -1106,8 +1106,8 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - longitude
           - time
+          - longitude
           - depth
           - drifter
           - latitude
@@ -1170,8 +1170,8 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - longitude
           - time
+          - longitude
           - depth
           - drifter
           - latitude
@@ -1230,12 +1230,12 @@ metadata:
   minLongitude: -156.4119
   minTime: 01-Jun-2021 00:00:45
   notes: ''
-  overall_desc: Drifters (EPSCoR)
-  project_name: Lake Clark Physical Oceanographic Assessment UPDATEALL
-  summary: "\n        \n        Several drifters are run at a time.\n        \n  \
-    \      https://ak-epscor.portal.axds.co/#metadata/e773c142-c003-4441-a32a-8656e051f630/project/folder_metadata/5826151\n\
-    \        \n        files: https://ak-epscor.portal.axds.co/#metadata/e773c142-c003-4441-a32a-8656e051f630/project/files\n\
-    \        "
-  time: From 2019 to 2022
+  overall_desc: Drifters (Lake Clark)
+  project_name: Lake Clark Physical Oceanographic Assessment
+  summary: "Project: Lake Clark Physical Oceanographic Assessment\n\n* PIs: Tyler\
+    \ Hennon (UAF), Tahzay Jones (NPS), Seth Danielson (UAF)\n* Deployment Vessels:\
+    \ Norseman II (drifters 01-05), Island C (06-18)\n* Drifter Model: STC (surface\
+    \ drogued) \n"
+  time: '2021'
 user_parameters: {}
 version: 2

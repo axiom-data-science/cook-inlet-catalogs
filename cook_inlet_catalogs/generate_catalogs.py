@@ -1877,114 +1877,114 @@ def moorings_uaf(slug, simplecache):
     make_erddap_catalog(slug, **metadata, simplecache=simplecache, stations=stations, open_kwargs=open_kwargs)
 
 
-def adcp_moored_tidal(slug, simplecache):
-    # simplecache doesn't work for adcps
-    metadata = dict(project_name = "Moored ADCP - Tidal UPDATEALL",
-        overall_desc = "Moored ADCP (Tidal): across Alaska",
-        time = "From 2000 to 2023, variable",
-        included = True,
-        notes = "",
-        maptype = "point",
-        featuretype = "timeSeriesProfile",
-        header_names = None,
-        map_description = "Moored ADCPs",
-        summary = f"""Moored ADCPs from various sources, all tidal INCLUDE URLS""")
+# def adcp_moored_tidal(slug, simplecache):
+#     # simplecache doesn't work for adcps
+#     metadata = dict(project_name = "Moored ADCP - Tidal UPDATEALL",
+#         overall_desc = "Moored ADCP (Tidal): across Alaska",
+#         time = "From 2000 to 2023, variable",
+#         included = True,
+#         notes = "",
+#         maptype = "point",
+#         featuretype = "timeSeriesProfile",
+#         header_names = None,
+#         map_description = "Moored ADCPs",
+#         summary = f"""Moored ADCPs from various sources, all tidal INCLUDE URLS""")
     
-    urls = ["https://mhkdr.openei.org/files/575/cia.mwm1_adv-4m.b1.zip",
-            "https://mhkdr.openei.org/files/575/cia.mwm1_dn-10m.b1.zip",
-            "https://mhkdr.openei.org/files/575/cia.mwm1_up-10m.b1.zip",
-            "https://mhkdr.openei.org/files/575/cia.mwm2_adv-4m.b1.zip",
-            "https://mhkdr.openei.org/files/575/cia.mwm2_dn-10m.b1.zip",
-            "https://mhkdr.openei.org/files/575/cia.mwm2_up-10m.b1.zip",
-            "https://mhkdr.openei.org/files/575/cia.theom_sig500-10m.b1.zip",
-            "https://mhkdr.openei.org/files/575/cia.theom_adv-5m.b1.zip"]
-    
-    
-    
-    if not simplecache:
-        raise ValueError("adcp_moored_tidal requires simplecache to work properly")
+#     urls = ["https://mhkdr.openei.org/files/575/cia.mwm1_adv-4m.b1.zip",
+#             "https://mhkdr.openei.org/files/575/cia.mwm1_dn-10m.b1.zip",
+#             "https://mhkdr.openei.org/files/575/cia.mwm1_up-10m.b1.zip",
+#             "https://mhkdr.openei.org/files/575/cia.mwm2_adv-4m.b1.zip",
+#             "https://mhkdr.openei.org/files/575/cia.mwm2_dn-10m.b1.zip",
+#             "https://mhkdr.openei.org/files/575/cia.mwm2_up-10m.b1.zip",
+#             "https://mhkdr.openei.org/files/575/cia.theom_sig500-10m.b1.zip",
+#             "https://mhkdr.openei.org/files/575/cia.theom_adv-5m.b1.zip"]
     
     
-    # csv_kwargs = {}
+    
+#     if not simplecache:
+#         raise ValueError("adcp_moored_tidal requires simplecache to work properly")
+    
+    
+#     # csv_kwargs = {}
 
-    local_paths = []
+#     local_paths = []
              
 
 
-    for url in urls:
+#     for url in urls:
 
-        if simplecache:
-            # do this originally to get all downloaded and save hashes
-            known_hash = None
-            # local_zip_path = pooch.retrieve(url, known_hash=known_hash, fname=Path(url).name, path=cic.utils.cache_dir)
-            local_zip_path = Path(pooch.retrieve(url, known_hash=known_hash, fname=Path(url).name, path=cic.utils.cache_dir))
-            # known_hash = pooch.file_hash(local_path)  # this is how to access so they can be saved
+#         if simplecache:
+#             # do this originally to get all downloaded and save hashes
+#             known_hash = None
+#             # local_zip_path = pooch.retrieve(url, known_hash=known_hash, fname=Path(url).name, path=cic.utils.cache_dir)
+#             local_zip_path = Path(pooch.retrieve(url, known_hash=known_hash, fname=Path(url).name, path=cic.utils.cache_dir))
+#             # known_hash = pooch.file_hash(local_path)  # this is how to access so they can be saved
 
-        # else:
-        #     # to skip caching
-        #     inner_path = "cia.mwm1_adv-4m.b1/cia.mwm1_adv-4m.b1.20210701.185335.nc"
+#         # else:
+#         #     # to skip caching
+#         #     inner_path = "cia.mwm1_adv-4m.b1/cia.mwm1_adv-4m.b1.20210701.185335.nc"
             
-        #     # fsspec zip filesystem, caching the whole zip file
-        #     fs = fsspec.filesystem("zip", fo=url)
+#         #     # fsspec zip filesystem, caching the whole zip file
+#         #     fs = fsspec.filesystem("zip", fo=url)
 
-        #     with fs.open(inner_path) as f:
-        #         ds = xr.open_dataset(f)
+#         #     with fs.open(inner_path) as f:
+#         #         ds = xr.open_dataset(f)
 
 
-            import zipfile
-            # zip_loc_name = cache_url.split("/")[-1]
-            # zip_loc_path = Path(cic.utils.cache_dir) / zip_loc_name
-            # dir_name = zip_loc_name.rstrip(".zip")
-            # local_path = local_zip_path.parent / local_zip_path.stem
-            with zipfile.ZipFile(local_zip_path, "r") as zip_ref:
-                zip_ref.extractall(cic.utils.cache_dir)
+#             import zipfile
+#             # zip_loc_name = cache_url.split("/")[-1]
+#             # zip_loc_path = Path(cic.utils.cache_dir) / zip_loc_name
+#             # dir_name = zip_loc_name.rstrip(".zip")
+#             # local_path = local_zip_path.parent / local_zip_path.stem
+#             with zipfile.ZipFile(local_zip_path, "r") as zip_ref:
+#                 zip_ref.extractall(cic.utils.cache_dir)
 
-        local_paths.extend(Path(cic.utils.cache_dir).glob(f"{local_zip_path.stem}/*.nc"))
+#         local_paths.extend(Path(cic.utils.cache_dir).glob(f"{local_zip_path.stem}/*.nc"))
 
-        # # List all files inside the ZIP
-        # files[cache_url] = [f["filename"] for f in fs.ls("") if f["filename"].endswith(".csv")]
-        # files.extend([f["filename"] for f in fs.ls("") if f["filename"].endswith(".csv")])
-        # print("Files inside ZIP:", files)
-    # csv_kwargs = dict(dtype={"Month": "str", "Year": "str", "Day": "str", "Hour": "str", "Minute": "str"})
+#         # # List all files inside the ZIP
+#         # files[cache_url] = [f["filename"] for f in fs.ls("") if f["filename"].endswith(".csv")]
+#         # files.extend([f["filename"] for f in fs.ls("") if f["filename"].endswith(".csv")])
+#         # print("Files inside ZIP:", files)
+#     # csv_kwargs = dict(dtype={"Month": "str", "Year": "str", "Day": "str", "Hour": "str", "Minute": "str"})
 
-    cat = intake.entry.Catalog(metadata=metadata)
-    for local_path in local_paths:
-        # print(local_path)
+#     cat = intake.entry.Catalog(metadata=metadata)
+#     for local_path in local_paths:
+#         # print(local_path)
         
-        # strip_double_quotes(local_path)
+#         # strip_double_quotes(local_path)
 
 
-        # # Open remote ZIP with fsspec (using caching so it’s only downloaded once)
-        # fs = fsspec.filesystem("zip", fo=f"simplecache::{cache_url}")
+#         # # Open remote ZIP with fsspec (using caching so it’s only downloaded once)
+#         # fs = fsspec.filesystem("zip", fo=f"simplecache::{cache_url}")
 
-        # Read all CSVs into a dict of DataFrames
-        # dfs = {}
+#         # Read all CSVs into a dict of DataFrames
+#         # dfs = {}
 
-        dataset_id = local_path.stem.replace(".", "_")
-        # import pdb; pdb.set_trace()
-        data = intake.readers.datatypes.HDF5(str(local_path))
-        initial_reader = data.to_reader("xarray:Dataset", chunks={})#, open_local=True)
-        # data = intake.readers.datatypes.CSV(str(local_path))
-        # initial_reader = data.to_reader("pandas:DataFrame", **csv_kwargs)
-        # initial_reader = intake.readers.readers.PandasCSV(data, **csv_kwargs)
-        # initial_reader = initial_reader.assign(depth=depth)
-        # new_dates_column = initial_reader.apply(cic.utils.parse_year_month_day_hour_minute)
-        # reader_dates_parsed = initial_reader.assign(datetime=new_dates_column).drop(columns=["Month","Day","Year","Hour","Minute"])
-        df = initial_reader.read()
-        print(df.variables)
-        # import pdb; pdb.set_trace()
-        # print(df)
+#         dataset_id = local_path.stem.replace(".", "_")
+#         # import pdb; pdb.set_trace()
+#         data = intake.readers.datatypes.HDF5(str(local_path))
+#         initial_reader = data.to_reader("xarray:Dataset", chunks={})#, open_local=True)
+#         # data = intake.readers.datatypes.CSV(str(local_path))
+#         # initial_reader = data.to_reader("pandas:DataFrame", **csv_kwargs)
+#         # initial_reader = intake.readers.readers.PandasCSV(data, **csv_kwargs)
+#         # initial_reader = initial_reader.assign(depth=depth)
+#         # new_dates_column = initial_reader.apply(cic.utils.parse_year_month_day_hour_minute)
+#         # reader_dates_parsed = initial_reader.assign(datetime=new_dates_column).drop(columns=["Month","Day","Year","Hour","Minute"])
+#         df = initial_reader.read()
+#         print(df.variables)
+#         # import pdb; pdb.set_trace()
+#         # print(df)
 
-        hover_cols = cic.utils.get_hover_cols(df)
-        # points_dict(x, y, c, s, hover_cols, slug)
-        plot_kwargs = dict(x=df.cf["longitude"].name, y=df.cf["latitude"].name, c=None, s=None, title="", hover_cols=hover_cols)
-        # plot_kwargs = dict(x=df.cf["longitude"].name, y=[df.cf["latitude"].name, df.cf["salt"].name], hover_cols=hover_cols)
-        initial_reader.metadata = {"plots": {"data": cic.utils.points_dict(**plot_kwargs)}}
-        # initial_reader.metadata = {"plots": {"data": cic.utils.line_time_dict(**plot_kwargs)}}
-        initial_reader.metadata.update(cic.utils.add_metadata(df, metadata["maptype"], metadata["featuretype"], str(local_path)))
+#         hover_cols = cic.utils.get_hover_cols(df)
+#         # points_dict(x, y, c, s, hover_cols, slug)
+#         plot_kwargs = dict(x=df.cf["longitude"].name, y=df.cf["latitude"].name, c=None, s=None, title="", hover_cols=hover_cols)
+#         # plot_kwargs = dict(x=df.cf["longitude"].name, y=[df.cf["latitude"].name, df.cf["salt"].name], hover_cols=hover_cols)
+#         initial_reader.metadata = {"plots": {"data": cic.utils.points_dict(**plot_kwargs)}}
+#         # initial_reader.metadata = {"plots": {"data": cic.utils.line_time_dict(**plot_kwargs)}}
+#         initial_reader.metadata.update(cic.utils.add_metadata(df, metadata["maptype"], metadata["featuretype"], str(local_path)))
 
-        cat[dataset_id] = initial_reader
-        cat.aliases[dataset_id] = dataset_id
+#         cat[dataset_id] = initial_reader
+#         cat.aliases[dataset_id] = dataset_id
     
     
     
@@ -2260,8 +2260,6 @@ def drifters_uaf(slug, simplecache):
 * 2014: 1m (Cook Inlet)
 * 2019: 1m (Kachemak Bay, Lynn Canal)
 * 2020: 1m (Kachemak Bay, Lynn Canal)
-
-Descriptive summary of later drifter deployment: https://www.alaska.edu/epscor/about/newsletters/May-2022-feature-current-events.php, data portal: https://ak-epscor.portal.axds.co/
 """
     )
     
@@ -2564,14 +2562,14 @@ def drifters_epscor(slug, simplecache):
         featuretype = "trajectory",
         header_names = None,
         map_description = "Drifters",
-        summary = f"""
-        
-        Several drifters are run at a time.
-        
-        https://ak-epscor.portal.axds.co/#metadata/e773c142-c003-4441-a32a-8656e051f630/project/folder_metadata/5826151
-        
-        files: https://ak-epscor.portal.axds.co/#metadata/e773c142-c003-4441-a32a-8656e051f630/project/files
-        """
+        summary = f"""Alaska EPSCoR Drifter Deployment
+
+* Several drifters are run at a time.
+* https://ak-epscor.portal.axds.co/#metadata/e773c142-c003-4441-a32a-8656e051f630/project/folder_metadata/5826151
+* files: https://ak-epscor.portal.axds.co/#metadata/e773c142-c003-4441-a32a-8656e051f630/project/files
+* Descriptive summary of drifter deployment: https://www.alaska.edu/epscor/about/newsletters/May-2022-feature-current-events.php
+* data portal: https://ak-epscor.portal.axds.co/
+"""
     )
     
     if not simplecache:
@@ -2672,23 +2670,21 @@ def drifters_epscor(slug, simplecache):
     
 
 def drifters_lake_clark(slug, simplecache):
-    metadata = dict(project_name = "Lake Clark Physical Oceanographic Assessment UPDATEALL",
-        overall_desc = "Drifters (EPSCoR)",
-        time = "From 2019 to 2022",
+    metadata = dict(project_name = "Lake Clark Physical Oceanographic Assessment",
+        overall_desc = "Drifters (Lake Clark)",
+        time = "2021",
         included = True,
         notes = "",
         maptype = "box",
         featuretype = "trajectory",
         header_names = None,
         map_description = "Drifters",
-        summary = f"""
-        
-        Several drifters are run at a time.
-        
-        https://ak-epscor.portal.axds.co/#metadata/e773c142-c003-4441-a32a-8656e051f630/project/folder_metadata/5826151
-        
-        files: https://ak-epscor.portal.axds.co/#metadata/e773c142-c003-4441-a32a-8656e051f630/project/files
-        """
+        summary = f"""Project: Lake Clark Physical Oceanographic Assessment
+
+* PIs: Tyler Hennon (UAF), Tahzay Jones (NPS), Seth Danielson (UAF)
+* Deployment Vessels: Norseman II (drifters 01-05), Island C (06-18)
+* Drifter Model: STC (surface drogued) 
+"""
     )
     
     depth = 0  # surface drogued
@@ -2751,7 +2747,7 @@ if __name__ == "__main__":
     simplecache = True
     
     from time import time
-    for slug in ["adcp_moored_tidal"]:# cic.slugs:
+    for slug in ["drifters_lake_clark", "drifters_epscor"]:# cic.slugs:
         if not (base_dir / f"catalogs/{slug}.yaml").is_file():
             start_time = time()
             getattr(cic.generate_catalogs, slug)(slug, simplecache=simplecache)
