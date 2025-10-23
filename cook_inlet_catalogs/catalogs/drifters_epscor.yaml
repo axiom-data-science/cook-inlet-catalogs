@@ -349,12 +349,12 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - depth
-          - lon
-          - drifter
-          - lat
-          - sea_water_temperature
           - time
+          - lat
+          - depth
+          - sea_water_temperature
+          - drifter
+          - lon
           kind: points
           legend: false
           s: null
@@ -406,12 +406,12 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - depth
-          - lon
-          - drifter
-          - lat
-          - sea_water_temperature
           - time
+          - lat
+          - depth
+          - sea_water_temperature
+          - drifter
+          - lon
           kind: points
           legend: false
           s: null
@@ -463,12 +463,12 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - depth
-          - lon
-          - drifter
-          - lat
-          - sea_water_temperature
           - time
+          - lat
+          - depth
+          - sea_water_temperature
+          - drifter
+          - lon
           kind: points
           legend: false
           s: null
@@ -520,12 +520,12 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - depth
-          - lon
-          - drifter
-          - lat
-          - sea_water_temperature
           - time
+          - lat
+          - depth
+          - sea_water_temperature
+          - drifter
+          - lon
           kind: points
           legend: false
           s: null
@@ -585,12 +585,12 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - depth
-          - lon
-          - drifter
-          - lat
-          - sea_water_temperature
           - time
+          - lat
+          - depth
+          - sea_water_temperature
+          - drifter
+          - lon
           kind: points
           legend: false
           s: null
@@ -642,12 +642,12 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - depth
-          - lon
-          - drifter
-          - lat
-          - sea_water_temperature
           - time
+          - lat
+          - depth
+          - sea_water_temperature
+          - drifter
+          - lon
           kind: points
           legend: false
           s: null
@@ -707,12 +707,12 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - depth
-          - lon
-          - drifter
-          - lat
-          - sea_water_temperature
           - time
+          - lat
+          - depth
+          - sea_water_temperature
+          - drifter
+          - lon
           kind: points
           legend: false
           s: null
@@ -764,12 +764,12 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - depth
-          - lon
-          - drifter
-          - lat
-          - sea_water_temperature
           - time
+          - lat
+          - depth
+          - sea_water_temperature
+          - drifter
+          - lon
           kind: points
           legend: false
           s: null
@@ -821,12 +821,12 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - depth
-          - lon
-          - drifter
-          - lat
-          - sea_water_temperature
           - time
+          - lat
+          - depth
+          - sea_water_temperature
+          - drifter
+          - lon
           kind: points
           legend: false
           s: null
@@ -886,12 +886,12 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - depth
-          - lon
-          - drifter
-          - lat
-          - sea_water_temperature
           - time
+          - lat
+          - depth
+          - sea_water_temperature
+          - drifter
+          - lon
           kind: points
           legend: false
           s: null
@@ -943,12 +943,12 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - depth
-          - lon
-          - drifter
-          - lat
-          - sea_water_temperature
           - time
+          - lat
+          - depth
+          - sea_water_temperature
+          - drifter
+          - lon
           kind: points
           legend: false
           s: null
@@ -1000,12 +1000,12 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - depth
-          - lon
-          - drifter
-          - lat
-          - sea_water_temperature
           - time
+          - lat
+          - depth
+          - sea_water_temperature
+          - drifter
+          - lon
           kind: points
           legend: false
           s: null
@@ -1057,12 +1057,12 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - depth
-          - lon
-          - drifter
-          - lat
-          - sea_water_temperature
           - time
+          - lat
+          - depth
+          - sea_water_temperature
+          - drifter
+          - lon
           kind: points
           legend: false
           s: null
@@ -1114,12 +1114,12 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - depth
-          - lon
-          - drifter
-          - lat
-          - sea_water_temperature
           - time
+          - lat
+          - depth
+          - sea_water_temperature
+          - drifter
+          - lon
           kind: points
           legend: false
           s: null
@@ -1171,12 +1171,12 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - depth
-          - lon
-          - drifter
-          - lat
-          - sea_water_temperature
           - time
+          - lat
+          - depth
+          - sea_water_temperature
+          - drifter
+          - lon
           kind: points
           legend: false
           s: null
@@ -1228,12 +1228,12 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - depth
-          - lon
-          - drifter
-          - lat
-          - sea_water_temperature
           - time
+          - lat
+          - depth
+          - sea_water_temperature
+          - drifter
+          - lon
           kind: points
           legend: false
           s: null
@@ -1301,12 +1301,12 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - depth
-          - lon
-          - drifter
-          - lat
-          - sea_water_temperature
           - time
+          - lat
+          - depth
+          - sea_water_temperature
+          - drifter
+          - lon
           kind: points
           legend: false
           s: null
@@ -1358,12 +1358,12 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - depth
-          - lon
-          - drifter
-          - lat
-          - sea_water_temperature
           - time
+          - lat
+          - depth
+          - sea_water_temperature
+          - drifter
+          - lon
           kind: points
           legend: false
           s: null
@@ -1415,12 +1415,12 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - depth
-          - lon
-          - drifter
-          - lat
-          - sea_water_temperature
           - time
+          - lat
+          - depth
+          - sea_water_temperature
+          - drifter
+          - lon
           kind: points
           legend: false
           s: null
@@ -1472,12 +1472,12 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - depth
-          - lon
-          - drifter
-          - lat
-          - sea_water_temperature
           - time
+          - lat
+          - depth
+          - sea_water_temperature
+          - drifter
+          - lon
           kind: points
           legend: false
           s: null
@@ -1529,12 +1529,12 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - depth
-          - lon
-          - drifter
-          - lat
-          - sea_water_temperature
           - time
+          - lat
+          - depth
+          - sea_water_temperature
+          - drifter
+          - lon
           kind: points
           legend: false
           s: null
@@ -1594,12 +1594,12 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - depth
-          - lon
-          - drifter
-          - lat
-          - sea_water_temperature
           - time
+          - lat
+          - depth
+          - sea_water_temperature
+          - drifter
+          - lon
           kind: points
           legend: false
           s: null
@@ -1651,12 +1651,12 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - depth
-          - lon
-          - drifter
-          - lat
-          - sea_water_temperature
           - time
+          - lat
+          - depth
+          - sea_water_temperature
+          - drifter
+          - lon
           kind: points
           legend: false
           s: null
@@ -1708,12 +1708,12 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - depth
-          - lon
-          - drifter
-          - lat
-          - sea_water_temperature
           - time
+          - lat
+          - depth
+          - sea_water_temperature
+          - drifter
+          - lon
           kind: points
           legend: false
           s: null
@@ -1765,12 +1765,12 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - depth
-          - lon
-          - drifter
-          - lat
-          - sea_water_temperature
           - time
+          - lat
+          - depth
+          - sea_water_temperature
+          - drifter
+          - lon
           kind: points
           legend: false
           s: null
@@ -1838,12 +1838,12 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - depth
-          - lon
-          - drifter
-          - lat
-          - sea_water_temperature
           - time
+          - lat
+          - depth
+          - sea_water_temperature
+          - drifter
+          - lon
           kind: points
           legend: false
           s: null
@@ -1895,12 +1895,12 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - depth
-          - lon
-          - drifter
-          - lat
-          - sea_water_temperature
           - time
+          - lat
+          - depth
+          - sea_water_temperature
+          - drifter
+          - lon
           kind: points
           legend: false
           s: null
@@ -1952,12 +1952,12 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - depth
-          - lon
-          - drifter
-          - lat
-          - sea_water_temperature
           - time
+          - lat
+          - depth
+          - sea_water_temperature
+          - drifter
+          - lon
           kind: points
           legend: false
           s: null
@@ -2009,12 +2009,12 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - depth
-          - lon
-          - drifter
-          - lat
-          - sea_water_temperature
           - time
+          - lat
+          - depth
+          - sea_water_temperature
+          - drifter
+          - lon
           kind: points
           legend: false
           s: null
@@ -2066,12 +2066,12 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - depth
-          - lon
-          - drifter
-          - lat
-          - sea_water_temperature
           - time
+          - lat
+          - depth
+          - sea_water_temperature
+          - drifter
+          - lon
           kind: points
           legend: false
           s: null
@@ -2123,12 +2123,12 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - depth
-          - lon
-          - drifter
-          - lat
-          - sea_water_temperature
           - time
+          - lat
+          - depth
+          - sea_water_temperature
+          - drifter
+          - lon
           kind: points
           legend: false
           s: null
@@ -2180,12 +2180,12 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - depth
-          - lon
-          - drifter
-          - lat
-          - sea_water_temperature
           - time
+          - lat
+          - depth
+          - sea_water_temperature
+          - drifter
+          - lon
           kind: points
           legend: false
           s: null
@@ -2342,8 +2342,8 @@ metadata:
   header_names: null
   included: true
   key_variables:
-  - temp
   - salt
+  - temp
   map:
     coastline: false
     geo: true

@@ -74,22 +74,44 @@ aliases:
   KB05: KB05
   KRM: KRM
 data:
-  911173c2d5f6a51f:
+  a8a46874503dff6b:
     datatype: intake.readers.datatypes:CSV
     kwargs:
       storage_options: null
-      url: simplecache://::https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
+      url: https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
     metadata: {}
     user_parameters: {}
 entries:
-  50e04ff96dec3a63:
+  27cc24e101d78147:
+    kwargs:
+      args:
+      - '{data(a8a46874503dff6b)}'
+      dtype:
+        Date: '{func(builtins:str)}'
+        StationID: '{func(builtins:str)}'
+        Time: '{func(builtins:str)}'
+      usecols:
+      - StationID
+      - Lat
+      - Lon
+      - Temperature
+      - Date
+      - Time
+      - Depth (m)
+      - Salinity (PSU)
+      - Oxygen (mg/L)
+    metadata: {}
+    output_instance: pandas:DataFrame
+    reader: intake.readers.readers:PandasCSV
+    user_parameters: {}
+  64dc9d7fe33e1316:
     kwargs:
       out_instances:
       - pandas:DataFrame
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(7dd44e5cfd79c3df)}'
+      - - '{data(27cc24e101d78147)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -105,32 +127,6 @@ entries:
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
-  7dd44e5cfd79c3df:
-    kwargs:
-      args:
-      - '{data(911173c2d5f6a51f)}'
-      dtype:
-        Date: '{func(builtins:str)}'
-        StationID: '{func(builtins:str)}'
-        Time: '{func(builtins:str)}'
-      storage_options:
-        simplecache:
-          cache_storage: /home/kristen/.cache/cook-inlet-catalogs
-          same_names: true
-      usecols:
-      - StationID
-      - Lat
-      - Lon
-      - Temperature
-      - Date
-      - Time
-      - Depth (m)
-      - Salinity (PSU)
-      - Oxygen (mg/L)
-    metadata: {}
-    output_instance: pandas:DataFrame
-    reader: intake.readers.readers:PandasCSV
-    user_parameters: {}
   AKCI08-001:
     kwargs:
       out_instances:
@@ -140,7 +136,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(7dd44e5cfd79c3df)}'
+      - - '{data(27cc24e101d78147)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -151,7 +147,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(50e04ff96dec3a63)}'
+        - datetime: '{data(64dc9d7fe33e1316)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -179,12 +175,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Lat
-          - Depth (m)
-          - StationID
-          - Lon
-          - datetime
           - Temperature
+          - Lon
+          - StationID
+          - Depth (m)
+          - Lat
+          - datetime
           invert: true
           kind: line
           shared_axes: true
@@ -196,7 +192,7 @@ entries:
           y:
           - Temperature
           - Salinity (PSU)
-      urlpath: simplecache://::https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
+      urlpath: https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -209,7 +205,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(7dd44e5cfd79c3df)}'
+      - - '{data(27cc24e101d78147)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -220,7 +216,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(50e04ff96dec3a63)}'
+        - datetime: '{data(64dc9d7fe33e1316)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -248,12 +244,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Lat
-          - Depth (m)
-          - StationID
-          - Lon
-          - datetime
           - Temperature
+          - Lon
+          - StationID
+          - Depth (m)
+          - Lat
+          - datetime
           invert: true
           kind: line
           shared_axes: true
@@ -265,7 +261,7 @@ entries:
           y:
           - Temperature
           - Salinity (PSU)
-      urlpath: simplecache://::https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
+      urlpath: https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -278,7 +274,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(7dd44e5cfd79c3df)}'
+      - - '{data(27cc24e101d78147)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -289,7 +285,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(50e04ff96dec3a63)}'
+        - datetime: '{data(64dc9d7fe33e1316)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -317,12 +313,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Lat
-          - Depth (m)
-          - StationID
-          - Lon
-          - datetime
           - Temperature
+          - Lon
+          - StationID
+          - Depth (m)
+          - Lat
+          - datetime
           invert: true
           kind: line
           shared_axes: true
@@ -334,7 +330,7 @@ entries:
           y:
           - Temperature
           - Salinity (PSU)
-      urlpath: simplecache://::https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
+      urlpath: https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -347,7 +343,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(7dd44e5cfd79c3df)}'
+      - - '{data(27cc24e101d78147)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -358,7 +354,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(50e04ff96dec3a63)}'
+        - datetime: '{data(64dc9d7fe33e1316)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -386,12 +382,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Lat
-          - Depth (m)
-          - StationID
-          - Lon
-          - datetime
           - Temperature
+          - Lon
+          - StationID
+          - Depth (m)
+          - Lat
+          - datetime
           invert: true
           kind: line
           shared_axes: true
@@ -403,7 +399,7 @@ entries:
           y:
           - Temperature
           - Salinity (PSU)
-      urlpath: simplecache://::https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
+      urlpath: https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -416,7 +412,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(7dd44e5cfd79c3df)}'
+      - - '{data(27cc24e101d78147)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -427,7 +423,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(50e04ff96dec3a63)}'
+        - datetime: '{data(64dc9d7fe33e1316)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -455,12 +451,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Lat
-          - Depth (m)
-          - StationID
-          - Lon
-          - datetime
           - Temperature
+          - Lon
+          - StationID
+          - Depth (m)
+          - Lat
+          - datetime
           invert: true
           kind: line
           shared_axes: true
@@ -472,7 +468,7 @@ entries:
           y:
           - Temperature
           - Salinity (PSU)
-      urlpath: simplecache://::https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
+      urlpath: https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -485,7 +481,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(7dd44e5cfd79c3df)}'
+      - - '{data(27cc24e101d78147)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -496,7 +492,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(50e04ff96dec3a63)}'
+        - datetime: '{data(64dc9d7fe33e1316)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -524,12 +520,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Lat
-          - Depth (m)
-          - StationID
-          - Lon
-          - datetime
           - Temperature
+          - Lon
+          - StationID
+          - Depth (m)
+          - Lat
+          - datetime
           invert: true
           kind: line
           shared_axes: true
@@ -541,7 +537,7 @@ entries:
           y:
           - Temperature
           - Salinity (PSU)
-      urlpath: simplecache://::https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
+      urlpath: https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -554,7 +550,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(7dd44e5cfd79c3df)}'
+      - - '{data(27cc24e101d78147)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -565,7 +561,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(50e04ff96dec3a63)}'
+        - datetime: '{data(64dc9d7fe33e1316)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -593,12 +589,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Lat
-          - Depth (m)
-          - StationID
-          - Lon
-          - datetime
           - Temperature
+          - Lon
+          - StationID
+          - Depth (m)
+          - Lat
+          - datetime
           invert: true
           kind: line
           shared_axes: true
@@ -610,7 +606,7 @@ entries:
           y:
           - Temperature
           - Salinity (PSU)
-      urlpath: simplecache://::https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
+      urlpath: https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -623,7 +619,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(7dd44e5cfd79c3df)}'
+      - - '{data(27cc24e101d78147)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -634,7 +630,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(50e04ff96dec3a63)}'
+        - datetime: '{data(64dc9d7fe33e1316)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -662,12 +658,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Lat
-          - Depth (m)
-          - StationID
-          - Lon
-          - datetime
           - Temperature
+          - Lon
+          - StationID
+          - Depth (m)
+          - Lat
+          - datetime
           invert: true
           kind: line
           shared_axes: true
@@ -679,7 +675,7 @@ entries:
           y:
           - Temperature
           - Salinity (PSU)
-      urlpath: simplecache://::https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
+      urlpath: https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -692,7 +688,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(7dd44e5cfd79c3df)}'
+      - - '{data(27cc24e101d78147)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -703,7 +699,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(50e04ff96dec3a63)}'
+        - datetime: '{data(64dc9d7fe33e1316)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -731,12 +727,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Lat
-          - Depth (m)
-          - StationID
-          - Lon
-          - datetime
           - Temperature
+          - Lon
+          - StationID
+          - Depth (m)
+          - Lat
+          - datetime
           invert: true
           kind: line
           shared_axes: true
@@ -748,7 +744,7 @@ entries:
           y:
           - Temperature
           - Salinity (PSU)
-      urlpath: simplecache://::https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
+      urlpath: https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -761,7 +757,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(7dd44e5cfd79c3df)}'
+      - - '{data(27cc24e101d78147)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -772,7 +768,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(50e04ff96dec3a63)}'
+        - datetime: '{data(64dc9d7fe33e1316)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -800,12 +796,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Lat
-          - Depth (m)
-          - StationID
-          - Lon
-          - datetime
           - Temperature
+          - Lon
+          - StationID
+          - Depth (m)
+          - Lat
+          - datetime
           invert: true
           kind: line
           shared_axes: true
@@ -817,7 +813,7 @@ entries:
           y:
           - Temperature
           - Salinity (PSU)
-      urlpath: simplecache://::https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
+      urlpath: https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -830,7 +826,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(7dd44e5cfd79c3df)}'
+      - - '{data(27cc24e101d78147)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -841,7 +837,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(50e04ff96dec3a63)}'
+        - datetime: '{data(64dc9d7fe33e1316)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -869,12 +865,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Lat
-          - Depth (m)
-          - StationID
-          - Lon
-          - datetime
           - Temperature
+          - Lon
+          - StationID
+          - Depth (m)
+          - Lat
+          - datetime
           invert: true
           kind: line
           shared_axes: true
@@ -886,7 +882,7 @@ entries:
           y:
           - Temperature
           - Salinity (PSU)
-      urlpath: simplecache://::https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
+      urlpath: https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -899,7 +895,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(7dd44e5cfd79c3df)}'
+      - - '{data(27cc24e101d78147)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -910,7 +906,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(50e04ff96dec3a63)}'
+        - datetime: '{data(64dc9d7fe33e1316)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -938,12 +934,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Lat
-          - Depth (m)
-          - StationID
-          - Lon
-          - datetime
           - Temperature
+          - Lon
+          - StationID
+          - Depth (m)
+          - Lat
+          - datetime
           invert: true
           kind: line
           shared_axes: true
@@ -955,7 +951,7 @@ entries:
           y:
           - Temperature
           - Salinity (PSU)
-      urlpath: simplecache://::https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
+      urlpath: https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -968,7 +964,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(7dd44e5cfd79c3df)}'
+      - - '{data(27cc24e101d78147)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -979,7 +975,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(50e04ff96dec3a63)}'
+        - datetime: '{data(64dc9d7fe33e1316)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -1007,12 +1003,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Lat
-          - Depth (m)
-          - StationID
-          - Lon
-          - datetime
           - Temperature
+          - Lon
+          - StationID
+          - Depth (m)
+          - Lat
+          - datetime
           invert: true
           kind: line
           shared_axes: true
@@ -1024,7 +1020,7 @@ entries:
           y:
           - Temperature
           - Salinity (PSU)
-      urlpath: simplecache://::https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
+      urlpath: https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -1037,7 +1033,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(7dd44e5cfd79c3df)}'
+      - - '{data(27cc24e101d78147)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -1048,7 +1044,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(50e04ff96dec3a63)}'
+        - datetime: '{data(64dc9d7fe33e1316)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -1076,12 +1072,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Lat
-          - Depth (m)
-          - StationID
-          - Lon
-          - datetime
           - Temperature
+          - Lon
+          - StationID
+          - Depth (m)
+          - Lat
+          - datetime
           invert: true
           kind: line
           shared_axes: true
@@ -1093,7 +1089,7 @@ entries:
           y:
           - Temperature
           - Salinity (PSU)
-      urlpath: simplecache://::https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
+      urlpath: https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -1106,7 +1102,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(7dd44e5cfd79c3df)}'
+      - - '{data(27cc24e101d78147)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -1117,7 +1113,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(50e04ff96dec3a63)}'
+        - datetime: '{data(64dc9d7fe33e1316)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -1145,12 +1141,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Lat
-          - Depth (m)
-          - StationID
-          - Lon
-          - datetime
           - Temperature
+          - Lon
+          - StationID
+          - Depth (m)
+          - Lat
+          - datetime
           invert: true
           kind: line
           shared_axes: true
@@ -1162,7 +1158,7 @@ entries:
           y:
           - Temperature
           - Salinity (PSU)
-      urlpath: simplecache://::https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
+      urlpath: https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -1175,7 +1171,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(7dd44e5cfd79c3df)}'
+      - - '{data(27cc24e101d78147)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -1186,7 +1182,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(50e04ff96dec3a63)}'
+        - datetime: '{data(64dc9d7fe33e1316)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -1214,12 +1210,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Lat
-          - Depth (m)
-          - StationID
-          - Lon
-          - datetime
           - Temperature
+          - Lon
+          - StationID
+          - Depth (m)
+          - Lat
+          - datetime
           invert: true
           kind: line
           shared_axes: true
@@ -1231,7 +1227,7 @@ entries:
           y:
           - Temperature
           - Salinity (PSU)
-      urlpath: simplecache://::https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
+      urlpath: https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -1244,7 +1240,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(7dd44e5cfd79c3df)}'
+      - - '{data(27cc24e101d78147)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -1255,7 +1251,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(50e04ff96dec3a63)}'
+        - datetime: '{data(64dc9d7fe33e1316)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -1283,12 +1279,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Lat
-          - Depth (m)
-          - StationID
-          - Lon
-          - datetime
           - Temperature
+          - Lon
+          - StationID
+          - Depth (m)
+          - Lat
+          - datetime
           invert: true
           kind: line
           shared_axes: true
@@ -1300,7 +1296,7 @@ entries:
           y:
           - Temperature
           - Salinity (PSU)
-      urlpath: simplecache://::https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
+      urlpath: https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -1313,7 +1309,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(7dd44e5cfd79c3df)}'
+      - - '{data(27cc24e101d78147)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -1324,7 +1320,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(50e04ff96dec3a63)}'
+        - datetime: '{data(64dc9d7fe33e1316)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -1352,12 +1348,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Lat
-          - Depth (m)
-          - StationID
-          - Lon
-          - datetime
           - Temperature
+          - Lon
+          - StationID
+          - Depth (m)
+          - Lat
+          - datetime
           invert: true
           kind: line
           shared_axes: true
@@ -1369,7 +1365,7 @@ entries:
           y:
           - Temperature
           - Salinity (PSU)
-      urlpath: simplecache://::https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
+      urlpath: https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -1382,7 +1378,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(7dd44e5cfd79c3df)}'
+      - - '{data(27cc24e101d78147)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -1393,7 +1389,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(50e04ff96dec3a63)}'
+        - datetime: '{data(64dc9d7fe33e1316)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -1421,12 +1417,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Lat
-          - Depth (m)
-          - StationID
-          - Lon
-          - datetime
           - Temperature
+          - Lon
+          - StationID
+          - Depth (m)
+          - Lat
+          - datetime
           invert: true
           kind: line
           shared_axes: true
@@ -1438,7 +1434,7 @@ entries:
           y:
           - Temperature
           - Salinity (PSU)
-      urlpath: simplecache://::https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
+      urlpath: https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -1451,7 +1447,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(7dd44e5cfd79c3df)}'
+      - - '{data(27cc24e101d78147)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -1462,7 +1458,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(50e04ff96dec3a63)}'
+        - datetime: '{data(64dc9d7fe33e1316)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -1490,12 +1486,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Lat
-          - Depth (m)
-          - StationID
-          - Lon
-          - datetime
           - Temperature
+          - Lon
+          - StationID
+          - Depth (m)
+          - Lat
+          - datetime
           invert: true
           kind: line
           shared_axes: true
@@ -1507,7 +1503,7 @@ entries:
           y:
           - Temperature
           - Salinity (PSU)
-      urlpath: simplecache://::https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
+      urlpath: https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -1520,7 +1516,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(7dd44e5cfd79c3df)}'
+      - - '{data(27cc24e101d78147)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -1531,7 +1527,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(50e04ff96dec3a63)}'
+        - datetime: '{data(64dc9d7fe33e1316)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -1559,12 +1555,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Lat
-          - Depth (m)
-          - StationID
-          - Lon
-          - datetime
           - Temperature
+          - Lon
+          - StationID
+          - Depth (m)
+          - Lat
+          - datetime
           invert: true
           kind: line
           shared_axes: true
@@ -1576,7 +1572,7 @@ entries:
           y:
           - Temperature
           - Salinity (PSU)
-      urlpath: simplecache://::https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
+      urlpath: https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -1589,7 +1585,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(7dd44e5cfd79c3df)}'
+      - - '{data(27cc24e101d78147)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -1600,7 +1596,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(50e04ff96dec3a63)}'
+        - datetime: '{data(64dc9d7fe33e1316)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -1628,12 +1624,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Lat
-          - Depth (m)
-          - StationID
-          - Lon
-          - datetime
           - Temperature
+          - Lon
+          - StationID
+          - Depth (m)
+          - Lat
+          - datetime
           invert: true
           kind: line
           shared_axes: true
@@ -1645,7 +1641,7 @@ entries:
           y:
           - Temperature
           - Salinity (PSU)
-      urlpath: simplecache://::https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
+      urlpath: https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -1658,7 +1654,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(7dd44e5cfd79c3df)}'
+      - - '{data(27cc24e101d78147)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -1669,7 +1665,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(50e04ff96dec3a63)}'
+        - datetime: '{data(64dc9d7fe33e1316)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -1697,12 +1693,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Lat
-          - Depth (m)
-          - StationID
-          - Lon
-          - datetime
           - Temperature
+          - Lon
+          - StationID
+          - Depth (m)
+          - Lat
+          - datetime
           invert: true
           kind: line
           shared_axes: true
@@ -1714,7 +1710,7 @@ entries:
           y:
           - Temperature
           - Salinity (PSU)
-      urlpath: simplecache://::https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
+      urlpath: https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -1727,7 +1723,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(7dd44e5cfd79c3df)}'
+      - - '{data(27cc24e101d78147)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -1738,7 +1734,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(50e04ff96dec3a63)}'
+        - datetime: '{data(64dc9d7fe33e1316)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -1766,12 +1762,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Lat
-          - Depth (m)
-          - StationID
-          - Lon
-          - datetime
           - Temperature
+          - Lon
+          - StationID
+          - Depth (m)
+          - Lat
+          - datetime
           invert: true
           kind: line
           shared_axes: true
@@ -1783,7 +1779,7 @@ entries:
           y:
           - Temperature
           - Salinity (PSU)
-      urlpath: simplecache://::https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
+      urlpath: https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -1796,7 +1792,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(7dd44e5cfd79c3df)}'
+      - - '{data(27cc24e101d78147)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -1807,7 +1803,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(50e04ff96dec3a63)}'
+        - datetime: '{data(64dc9d7fe33e1316)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -1835,12 +1831,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Lat
-          - Depth (m)
-          - StationID
-          - Lon
-          - datetime
           - Temperature
+          - Lon
+          - StationID
+          - Depth (m)
+          - Lat
+          - datetime
           invert: true
           kind: line
           shared_axes: true
@@ -1852,7 +1848,7 @@ entries:
           y:
           - Temperature
           - Salinity (PSU)
-      urlpath: simplecache://::https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
+      urlpath: https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -1865,7 +1861,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(7dd44e5cfd79c3df)}'
+      - - '{data(27cc24e101d78147)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -1876,7 +1872,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(50e04ff96dec3a63)}'
+        - datetime: '{data(64dc9d7fe33e1316)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -1904,12 +1900,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Lat
-          - Depth (m)
-          - StationID
-          - Lon
-          - datetime
           - Temperature
+          - Lon
+          - StationID
+          - Depth (m)
+          - Lat
+          - datetime
           invert: true
           kind: line
           shared_axes: true
@@ -1921,7 +1917,7 @@ entries:
           y:
           - Temperature
           - Salinity (PSU)
-      urlpath: simplecache://::https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
+      urlpath: https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -1934,7 +1930,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(7dd44e5cfd79c3df)}'
+      - - '{data(27cc24e101d78147)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -1945,7 +1941,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(50e04ff96dec3a63)}'
+        - datetime: '{data(64dc9d7fe33e1316)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -1973,12 +1969,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Lat
-          - Depth (m)
-          - StationID
-          - Lon
-          - datetime
           - Temperature
+          - Lon
+          - StationID
+          - Depth (m)
+          - Lat
+          - datetime
           invert: true
           kind: line
           shared_axes: true
@@ -1990,7 +1986,7 @@ entries:
           y:
           - Temperature
           - Salinity (PSU)
-      urlpath: simplecache://::https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
+      urlpath: https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -2003,7 +1999,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(7dd44e5cfd79c3df)}'
+      - - '{data(27cc24e101d78147)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -2014,7 +2010,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(50e04ff96dec3a63)}'
+        - datetime: '{data(64dc9d7fe33e1316)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -2042,12 +2038,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Lat
-          - Depth (m)
-          - StationID
-          - Lon
-          - datetime
           - Temperature
+          - Lon
+          - StationID
+          - Depth (m)
+          - Lat
+          - datetime
           invert: true
           kind: line
           shared_axes: true
@@ -2059,7 +2055,7 @@ entries:
           y:
           - Temperature
           - Salinity (PSU)
-      urlpath: simplecache://::https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
+      urlpath: https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -2072,7 +2068,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(7dd44e5cfd79c3df)}'
+      - - '{data(27cc24e101d78147)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -2083,7 +2079,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(50e04ff96dec3a63)}'
+        - datetime: '{data(64dc9d7fe33e1316)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -2111,12 +2107,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Lat
-          - Depth (m)
-          - StationID
-          - Lon
-          - datetime
           - Temperature
+          - Lon
+          - StationID
+          - Depth (m)
+          - Lat
+          - datetime
           invert: true
           kind: line
           shared_axes: true
@@ -2128,7 +2124,7 @@ entries:
           y:
           - Temperature
           - Salinity (PSU)
-      urlpath: simplecache://::https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
+      urlpath: https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -2141,7 +2137,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(7dd44e5cfd79c3df)}'
+      - - '{data(27cc24e101d78147)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -2152,7 +2148,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(50e04ff96dec3a63)}'
+        - datetime: '{data(64dc9d7fe33e1316)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -2180,12 +2176,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Lat
-          - Depth (m)
-          - StationID
-          - Lon
-          - datetime
           - Temperature
+          - Lon
+          - StationID
+          - Depth (m)
+          - Lat
+          - datetime
           invert: true
           kind: line
           shared_axes: true
@@ -2197,7 +2193,7 @@ entries:
           y:
           - Temperature
           - Salinity (PSU)
-      urlpath: simplecache://::https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
+      urlpath: https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -2210,7 +2206,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(7dd44e5cfd79c3df)}'
+      - - '{data(27cc24e101d78147)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -2221,7 +2217,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(50e04ff96dec3a63)}'
+        - datetime: '{data(64dc9d7fe33e1316)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -2249,12 +2245,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Lat
-          - Depth (m)
-          - StationID
-          - Lon
-          - datetime
           - Temperature
+          - Lon
+          - StationID
+          - Depth (m)
+          - Lat
+          - datetime
           invert: true
           kind: line
           shared_axes: true
@@ -2266,7 +2262,7 @@ entries:
           y:
           - Temperature
           - Salinity (PSU)
-      urlpath: simplecache://::https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
+      urlpath: https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -2279,7 +2275,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(7dd44e5cfd79c3df)}'
+      - - '{data(27cc24e101d78147)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -2290,7 +2286,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(50e04ff96dec3a63)}'
+        - datetime: '{data(64dc9d7fe33e1316)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -2318,12 +2314,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Lat
-          - Depth (m)
-          - StationID
-          - Lon
-          - datetime
           - Temperature
+          - Lon
+          - StationID
+          - Depth (m)
+          - Lat
+          - datetime
           invert: true
           kind: line
           shared_axes: true
@@ -2335,7 +2331,7 @@ entries:
           y:
           - Temperature
           - Salinity (PSU)
-      urlpath: simplecache://::https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
+      urlpath: https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -2348,7 +2344,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(7dd44e5cfd79c3df)}'
+      - - '{data(27cc24e101d78147)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -2359,7 +2355,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(50e04ff96dec3a63)}'
+        - datetime: '{data(64dc9d7fe33e1316)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -2387,12 +2383,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Lat
-          - Depth (m)
-          - StationID
-          - Lon
-          - datetime
           - Temperature
+          - Lon
+          - StationID
+          - Depth (m)
+          - Lat
+          - datetime
           invert: true
           kind: line
           shared_axes: true
@@ -2404,7 +2400,7 @@ entries:
           y:
           - Temperature
           - Salinity (PSU)
-      urlpath: simplecache://::https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
+      urlpath: https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -2417,7 +2413,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(7dd44e5cfd79c3df)}'
+      - - '{data(27cc24e101d78147)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -2428,7 +2424,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(50e04ff96dec3a63)}'
+        - datetime: '{data(64dc9d7fe33e1316)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -2456,12 +2452,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Lat
-          - Depth (m)
-          - StationID
-          - Lon
-          - datetime
           - Temperature
+          - Lon
+          - StationID
+          - Depth (m)
+          - Lat
+          - datetime
           invert: true
           kind: line
           shared_axes: true
@@ -2473,7 +2469,7 @@ entries:
           y:
           - Temperature
           - Salinity (PSU)
-      urlpath: simplecache://::https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
+      urlpath: https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -2486,7 +2482,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(7dd44e5cfd79c3df)}'
+      - - '{data(27cc24e101d78147)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -2497,7 +2493,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(50e04ff96dec3a63)}'
+        - datetime: '{data(64dc9d7fe33e1316)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -2525,12 +2521,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Lat
-          - Depth (m)
-          - StationID
-          - Lon
-          - datetime
           - Temperature
+          - Lon
+          - StationID
+          - Depth (m)
+          - Lat
+          - datetime
           invert: true
           kind: line
           shared_axes: true
@@ -2542,7 +2538,7 @@ entries:
           y:
           - Temperature
           - Salinity (PSU)
-      urlpath: simplecache://::https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
+      urlpath: https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -2555,7 +2551,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(7dd44e5cfd79c3df)}'
+      - - '{data(27cc24e101d78147)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -2566,7 +2562,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(50e04ff96dec3a63)}'
+        - datetime: '{data(64dc9d7fe33e1316)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -2594,12 +2590,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Lat
-          - Depth (m)
-          - StationID
-          - Lon
-          - datetime
           - Temperature
+          - Lon
+          - StationID
+          - Depth (m)
+          - Lat
+          - datetime
           invert: true
           kind: line
           shared_axes: true
@@ -2611,7 +2607,7 @@ entries:
           y:
           - Temperature
           - Salinity (PSU)
-      urlpath: simplecache://::https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
+      urlpath: https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -2624,7 +2620,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(7dd44e5cfd79c3df)}'
+      - - '{data(27cc24e101d78147)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -2635,7 +2631,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(50e04ff96dec3a63)}'
+        - datetime: '{data(64dc9d7fe33e1316)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -2663,12 +2659,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Lat
-          - Depth (m)
-          - StationID
-          - Lon
-          - datetime
           - Temperature
+          - Lon
+          - StationID
+          - Depth (m)
+          - Lat
+          - datetime
           invert: true
           kind: line
           shared_axes: true
@@ -2680,7 +2676,7 @@ entries:
           y:
           - Temperature
           - Salinity (PSU)
-      urlpath: simplecache://::https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
+      urlpath: https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -2693,7 +2689,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(7dd44e5cfd79c3df)}'
+      - - '{data(27cc24e101d78147)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -2704,7 +2700,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(50e04ff96dec3a63)}'
+        - datetime: '{data(64dc9d7fe33e1316)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -2732,12 +2728,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Lat
-          - Depth (m)
-          - StationID
-          - Lon
-          - datetime
           - Temperature
+          - Lon
+          - StationID
+          - Depth (m)
+          - Lat
+          - datetime
           invert: true
           kind: line
           shared_axes: true
@@ -2749,7 +2745,7 @@ entries:
           y:
           - Temperature
           - Salinity (PSU)
-      urlpath: simplecache://::https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
+      urlpath: https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -2762,7 +2758,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(7dd44e5cfd79c3df)}'
+      - - '{data(27cc24e101d78147)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -2773,7 +2769,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(50e04ff96dec3a63)}'
+        - datetime: '{data(64dc9d7fe33e1316)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -2801,12 +2797,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Lat
-          - Depth (m)
-          - StationID
-          - Lon
-          - datetime
           - Temperature
+          - Lon
+          - StationID
+          - Depth (m)
+          - Lat
+          - datetime
           invert: true
           kind: line
           shared_axes: true
@@ -2818,7 +2814,7 @@ entries:
           y:
           - Temperature
           - Salinity (PSU)
-      urlpath: simplecache://::https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
+      urlpath: https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -2831,7 +2827,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(7dd44e5cfd79c3df)}'
+      - - '{data(27cc24e101d78147)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -2842,7 +2838,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(50e04ff96dec3a63)}'
+        - datetime: '{data(64dc9d7fe33e1316)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -2870,12 +2866,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Lat
-          - Depth (m)
-          - StationID
-          - Lon
-          - datetime
           - Temperature
+          - Lon
+          - StationID
+          - Depth (m)
+          - Lat
+          - datetime
           invert: true
           kind: line
           shared_axes: true
@@ -2887,7 +2883,7 @@ entries:
           y:
           - Temperature
           - Salinity (PSU)
-      urlpath: simplecache://::https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
+      urlpath: https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -2900,7 +2896,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(7dd44e5cfd79c3df)}'
+      - - '{data(27cc24e101d78147)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -2911,7 +2907,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(50e04ff96dec3a63)}'
+        - datetime: '{data(64dc9d7fe33e1316)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -2939,12 +2935,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Lat
-          - Depth (m)
-          - StationID
-          - Lon
-          - datetime
           - Temperature
+          - Lon
+          - StationID
+          - Depth (m)
+          - Lat
+          - datetime
           invert: true
           kind: line
           shared_axes: true
@@ -2956,7 +2952,7 @@ entries:
           y:
           - Temperature
           - Salinity (PSU)
-      urlpath: simplecache://::https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
+      urlpath: https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -2969,7 +2965,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(7dd44e5cfd79c3df)}'
+      - - '{data(27cc24e101d78147)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -2980,7 +2976,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(50e04ff96dec3a63)}'
+        - datetime: '{data(64dc9d7fe33e1316)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -3008,12 +3004,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Lat
-          - Depth (m)
-          - StationID
-          - Lon
-          - datetime
           - Temperature
+          - Lon
+          - StationID
+          - Depth (m)
+          - Lat
+          - datetime
           invert: true
           kind: line
           shared_axes: true
@@ -3025,7 +3021,7 @@ entries:
           y:
           - Temperature
           - Salinity (PSU)
-      urlpath: simplecache://::https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
+      urlpath: https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -3038,7 +3034,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(7dd44e5cfd79c3df)}'
+      - - '{data(27cc24e101d78147)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -3049,7 +3045,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(50e04ff96dec3a63)}'
+        - datetime: '{data(64dc9d7fe33e1316)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -3077,12 +3073,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Lat
-          - Depth (m)
-          - StationID
-          - Lon
-          - datetime
           - Temperature
+          - Lon
+          - StationID
+          - Depth (m)
+          - Lat
+          - datetime
           invert: true
           kind: line
           shared_axes: true
@@ -3094,7 +3090,7 @@ entries:
           y:
           - Temperature
           - Salinity (PSU)
-      urlpath: simplecache://::https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
+      urlpath: https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -3107,7 +3103,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(7dd44e5cfd79c3df)}'
+      - - '{data(27cc24e101d78147)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -3118,7 +3114,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(50e04ff96dec3a63)}'
+        - datetime: '{data(64dc9d7fe33e1316)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -3146,12 +3142,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Lat
-          - Depth (m)
-          - StationID
-          - Lon
-          - datetime
           - Temperature
+          - Lon
+          - StationID
+          - Depth (m)
+          - Lat
+          - datetime
           invert: true
           kind: line
           shared_axes: true
@@ -3163,7 +3159,7 @@ entries:
           y:
           - Temperature
           - Salinity (PSU)
-      urlpath: simplecache://::https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
+      urlpath: https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -3176,7 +3172,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(7dd44e5cfd79c3df)}'
+      - - '{data(27cc24e101d78147)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -3187,7 +3183,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(50e04ff96dec3a63)}'
+        - datetime: '{data(64dc9d7fe33e1316)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -3215,12 +3211,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Lat
-          - Depth (m)
-          - StationID
-          - Lon
-          - datetime
           - Temperature
+          - Lon
+          - StationID
+          - Depth (m)
+          - Lat
+          - datetime
           invert: true
           kind: line
           shared_axes: true
@@ -3232,7 +3228,7 @@ entries:
           y:
           - Temperature
           - Salinity (PSU)
-      urlpath: simplecache://::https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
+      urlpath: https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -3245,7 +3241,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(7dd44e5cfd79c3df)}'
+      - - '{data(27cc24e101d78147)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -3256,7 +3252,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(50e04ff96dec3a63)}'
+        - datetime: '{data(64dc9d7fe33e1316)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -3284,12 +3280,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Lat
-          - Depth (m)
-          - StationID
-          - Lon
-          - datetime
           - Temperature
+          - Lon
+          - StationID
+          - Depth (m)
+          - Lat
+          - datetime
           invert: true
           kind: line
           shared_axes: true
@@ -3301,7 +3297,7 @@ entries:
           y:
           - Temperature
           - Salinity (PSU)
-      urlpath: simplecache://::https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
+      urlpath: https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -3314,7 +3310,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(7dd44e5cfd79c3df)}'
+      - - '{data(27cc24e101d78147)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -3325,7 +3321,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(50e04ff96dec3a63)}'
+        - datetime: '{data(64dc9d7fe33e1316)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -3353,12 +3349,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Lat
-          - Depth (m)
-          - StationID
-          - Lon
-          - datetime
           - Temperature
+          - Lon
+          - StationID
+          - Depth (m)
+          - Lat
+          - datetime
           invert: true
           kind: line
           shared_axes: true
@@ -3370,7 +3366,7 @@ entries:
           y:
           - Temperature
           - Salinity (PSU)
-      urlpath: simplecache://::https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
+      urlpath: https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -3383,7 +3379,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(7dd44e5cfd79c3df)}'
+      - - '{data(27cc24e101d78147)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -3394,7 +3390,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(50e04ff96dec3a63)}'
+        - datetime: '{data(64dc9d7fe33e1316)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -3422,12 +3418,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Lat
-          - Depth (m)
-          - StationID
-          - Lon
-          - datetime
           - Temperature
+          - Lon
+          - StationID
+          - Depth (m)
+          - Lat
+          - datetime
           invert: true
           kind: line
           shared_axes: true
@@ -3439,7 +3435,7 @@ entries:
           y:
           - Temperature
           - Salinity (PSU)
-      urlpath: simplecache://::https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
+      urlpath: https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -3452,7 +3448,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(7dd44e5cfd79c3df)}'
+      - - '{data(27cc24e101d78147)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -3463,7 +3459,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(50e04ff96dec3a63)}'
+        - datetime: '{data(64dc9d7fe33e1316)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -3491,12 +3487,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Lat
-          - Depth (m)
-          - StationID
-          - Lon
-          - datetime
           - Temperature
+          - Lon
+          - StationID
+          - Depth (m)
+          - Lat
+          - datetime
           invert: true
           kind: line
           shared_axes: true
@@ -3508,7 +3504,7 @@ entries:
           y:
           - Temperature
           - Salinity (PSU)
-      urlpath: simplecache://::https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
+      urlpath: https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -3521,7 +3517,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(7dd44e5cfd79c3df)}'
+      - - '{data(27cc24e101d78147)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -3532,7 +3528,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(50e04ff96dec3a63)}'
+        - datetime: '{data(64dc9d7fe33e1316)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -3560,12 +3556,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Lat
-          - Depth (m)
-          - StationID
-          - Lon
-          - datetime
           - Temperature
+          - Lon
+          - StationID
+          - Depth (m)
+          - Lat
+          - datetime
           invert: true
           kind: line
           shared_axes: true
@@ -3577,7 +3573,7 @@ entries:
           y:
           - Temperature
           - Salinity (PSU)
-      urlpath: simplecache://::https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
+      urlpath: https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -3590,7 +3586,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(7dd44e5cfd79c3df)}'
+      - - '{data(27cc24e101d78147)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -3601,7 +3597,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(50e04ff96dec3a63)}'
+        - datetime: '{data(64dc9d7fe33e1316)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -3629,12 +3625,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Lat
-          - Depth (m)
-          - StationID
-          - Lon
-          - datetime
           - Temperature
+          - Lon
+          - StationID
+          - Depth (m)
+          - Lat
+          - datetime
           invert: true
           kind: line
           shared_axes: true
@@ -3646,7 +3642,7 @@ entries:
           y:
           - Temperature
           - Salinity (PSU)
-      urlpath: simplecache://::https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
+      urlpath: https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -3659,7 +3655,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(7dd44e5cfd79c3df)}'
+      - - '{data(27cc24e101d78147)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -3670,7 +3666,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(50e04ff96dec3a63)}'
+        - datetime: '{data(64dc9d7fe33e1316)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -3698,12 +3694,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Lat
-          - Depth (m)
-          - StationID
-          - Lon
-          - datetime
           - Temperature
+          - Lon
+          - StationID
+          - Depth (m)
+          - Lat
+          - datetime
           invert: true
           kind: line
           shared_axes: true
@@ -3715,7 +3711,7 @@ entries:
           y:
           - Temperature
           - Salinity (PSU)
-      urlpath: simplecache://::https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
+      urlpath: https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -3728,7 +3724,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(7dd44e5cfd79c3df)}'
+      - - '{data(27cc24e101d78147)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -3739,7 +3735,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(50e04ff96dec3a63)}'
+        - datetime: '{data(64dc9d7fe33e1316)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -3767,12 +3763,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Lat
-          - Depth (m)
-          - StationID
-          - Lon
-          - datetime
           - Temperature
+          - Lon
+          - StationID
+          - Depth (m)
+          - Lat
+          - datetime
           invert: true
           kind: line
           shared_axes: true
@@ -3784,7 +3780,7 @@ entries:
           y:
           - Temperature
           - Salinity (PSU)
-      urlpath: simplecache://::https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
+      urlpath: https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -3797,7 +3793,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(7dd44e5cfd79c3df)}'
+      - - '{data(27cc24e101d78147)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -3808,7 +3804,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(50e04ff96dec3a63)}'
+        - datetime: '{data(64dc9d7fe33e1316)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -3836,12 +3832,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Lat
-          - Depth (m)
-          - StationID
-          - Lon
-          - datetime
           - Temperature
+          - Lon
+          - StationID
+          - Depth (m)
+          - Lat
+          - datetime
           invert: true
           kind: line
           shared_axes: true
@@ -3853,7 +3849,7 @@ entries:
           y:
           - Temperature
           - Salinity (PSU)
-      urlpath: simplecache://::https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
+      urlpath: https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -3866,7 +3862,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(7dd44e5cfd79c3df)}'
+      - - '{data(27cc24e101d78147)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -3877,7 +3873,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(50e04ff96dec3a63)}'
+        - datetime: '{data(64dc9d7fe33e1316)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -3905,12 +3901,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Lat
-          - Depth (m)
-          - StationID
-          - Lon
-          - datetime
           - Temperature
+          - Lon
+          - StationID
+          - Depth (m)
+          - Lat
+          - datetime
           invert: true
           kind: line
           shared_axes: true
@@ -3922,7 +3918,7 @@ entries:
           y:
           - Temperature
           - Salinity (PSU)
-      urlpath: simplecache://::https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
+      urlpath: https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -3935,7 +3931,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(7dd44e5cfd79c3df)}'
+      - - '{data(27cc24e101d78147)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -3946,7 +3942,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(50e04ff96dec3a63)}'
+        - datetime: '{data(64dc9d7fe33e1316)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -3974,12 +3970,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Lat
-          - Depth (m)
-          - StationID
-          - Lon
-          - datetime
           - Temperature
+          - Lon
+          - StationID
+          - Depth (m)
+          - Lat
+          - datetime
           invert: true
           kind: line
           shared_axes: true
@@ -3991,7 +3987,7 @@ entries:
           y:
           - Temperature
           - Salinity (PSU)
-      urlpath: simplecache://::https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
+      urlpath: https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -4004,7 +4000,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(7dd44e5cfd79c3df)}'
+      - - '{data(27cc24e101d78147)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -4015,7 +4011,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(50e04ff96dec3a63)}'
+        - datetime: '{data(64dc9d7fe33e1316)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -4043,12 +4039,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Lat
-          - Depth (m)
-          - StationID
-          - Lon
-          - datetime
           - Temperature
+          - Lon
+          - StationID
+          - Depth (m)
+          - Lat
+          - datetime
           invert: true
           kind: line
           shared_axes: true
@@ -4060,7 +4056,7 @@ entries:
           y:
           - Temperature
           - Salinity (PSU)
-      urlpath: simplecache://::https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
+      urlpath: https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -4073,7 +4069,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(7dd44e5cfd79c3df)}'
+      - - '{data(27cc24e101d78147)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -4084,7 +4080,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(50e04ff96dec3a63)}'
+        - datetime: '{data(64dc9d7fe33e1316)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -4112,12 +4108,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Lat
-          - Depth (m)
-          - StationID
-          - Lon
-          - datetime
           - Temperature
+          - Lon
+          - StationID
+          - Depth (m)
+          - Lat
+          - datetime
           invert: true
           kind: line
           shared_axes: true
@@ -4129,7 +4125,7 @@ entries:
           y:
           - Temperature
           - Salinity (PSU)
-      urlpath: simplecache://::https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
+      urlpath: https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -4142,7 +4138,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(7dd44e5cfd79c3df)}'
+      - - '{data(27cc24e101d78147)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -4153,7 +4149,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(50e04ff96dec3a63)}'
+        - datetime: '{data(64dc9d7fe33e1316)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -4181,12 +4177,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Lat
-          - Depth (m)
-          - StationID
-          - Lon
-          - datetime
           - Temperature
+          - Lon
+          - StationID
+          - Depth (m)
+          - Lat
+          - datetime
           invert: true
           kind: line
           shared_axes: true
@@ -4198,7 +4194,7 @@ entries:
           y:
           - Temperature
           - Salinity (PSU)
-      urlpath: simplecache://::https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
+      urlpath: https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -4211,7 +4207,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(7dd44e5cfd79c3df)}'
+      - - '{data(27cc24e101d78147)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -4222,7 +4218,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(50e04ff96dec3a63)}'
+        - datetime: '{data(64dc9d7fe33e1316)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -4250,12 +4246,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Lat
-          - Depth (m)
-          - StationID
-          - Lon
-          - datetime
           - Temperature
+          - Lon
+          - StationID
+          - Depth (m)
+          - Lat
+          - datetime
           invert: true
           kind: line
           shared_axes: true
@@ -4267,7 +4263,7 @@ entries:
           y:
           - Temperature
           - Salinity (PSU)
-      urlpath: simplecache://::https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
+      urlpath: https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -4280,7 +4276,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(7dd44e5cfd79c3df)}'
+      - - '{data(27cc24e101d78147)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -4291,7 +4287,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(50e04ff96dec3a63)}'
+        - datetime: '{data(64dc9d7fe33e1316)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -4319,12 +4315,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Lat
-          - Depth (m)
-          - StationID
-          - Lon
-          - datetime
           - Temperature
+          - Lon
+          - StationID
+          - Depth (m)
+          - Lat
+          - datetime
           invert: true
           kind: line
           shared_axes: true
@@ -4336,7 +4332,7 @@ entries:
           y:
           - Temperature
           - Salinity (PSU)
-      urlpath: simplecache://::https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
+      urlpath: https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -4349,7 +4345,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(7dd44e5cfd79c3df)}'
+      - - '{data(27cc24e101d78147)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -4360,7 +4356,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(50e04ff96dec3a63)}'
+        - datetime: '{data(64dc9d7fe33e1316)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -4388,12 +4384,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Lat
-          - Depth (m)
-          - StationID
-          - Lon
-          - datetime
           - Temperature
+          - Lon
+          - StationID
+          - Depth (m)
+          - Lat
+          - datetime
           invert: true
           kind: line
           shared_axes: true
@@ -4405,7 +4401,7 @@ entries:
           y:
           - Temperature
           - Salinity (PSU)
-      urlpath: simplecache://::https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
+      urlpath: https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -4418,7 +4414,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(7dd44e5cfd79c3df)}'
+      - - '{data(27cc24e101d78147)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -4429,7 +4425,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(50e04ff96dec3a63)}'
+        - datetime: '{data(64dc9d7fe33e1316)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -4457,12 +4453,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Lat
-          - Depth (m)
-          - StationID
-          - Lon
-          - datetime
           - Temperature
+          - Lon
+          - StationID
+          - Depth (m)
+          - Lat
+          - datetime
           invert: true
           kind: line
           shared_axes: true
@@ -4474,7 +4470,7 @@ entries:
           y:
           - Temperature
           - Salinity (PSU)
-      urlpath: simplecache://::https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
+      urlpath: https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -4487,7 +4483,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(7dd44e5cfd79c3df)}'
+      - - '{data(27cc24e101d78147)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -4498,7 +4494,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(50e04ff96dec3a63)}'
+        - datetime: '{data(64dc9d7fe33e1316)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -4526,12 +4522,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Lat
-          - Depth (m)
-          - StationID
-          - Lon
-          - datetime
           - Temperature
+          - Lon
+          - StationID
+          - Depth (m)
+          - Lat
+          - datetime
           invert: true
           kind: line
           shared_axes: true
@@ -4543,7 +4539,7 @@ entries:
           y:
           - Temperature
           - Salinity (PSU)
-      urlpath: simplecache://::https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
+      urlpath: https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -4556,7 +4552,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(7dd44e5cfd79c3df)}'
+      - - '{data(27cc24e101d78147)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -4567,7 +4563,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(50e04ff96dec3a63)}'
+        - datetime: '{data(64dc9d7fe33e1316)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -4595,12 +4591,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Lat
-          - Depth (m)
-          - StationID
-          - Lon
-          - datetime
           - Temperature
+          - Lon
+          - StationID
+          - Depth (m)
+          - Lat
+          - datetime
           invert: true
           kind: line
           shared_axes: true
@@ -4612,7 +4608,7 @@ entries:
           y:
           - Temperature
           - Salinity (PSU)
-      urlpath: simplecache://::https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
+      urlpath: https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -4625,7 +4621,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(7dd44e5cfd79c3df)}'
+      - - '{data(27cc24e101d78147)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -4636,7 +4632,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(50e04ff96dec3a63)}'
+        - datetime: '{data(64dc9d7fe33e1316)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -4664,12 +4660,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Lat
-          - Depth (m)
-          - StationID
-          - Lon
-          - datetime
           - Temperature
+          - Lon
+          - StationID
+          - Depth (m)
+          - Lat
+          - datetime
           invert: true
           kind: line
           shared_axes: true
@@ -4681,7 +4677,7 @@ entries:
           y:
           - Temperature
           - Salinity (PSU)
-      urlpath: simplecache://::https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
+      urlpath: https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -4694,7 +4690,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(7dd44e5cfd79c3df)}'
+      - - '{data(27cc24e101d78147)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -4705,7 +4701,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(50e04ff96dec3a63)}'
+        - datetime: '{data(64dc9d7fe33e1316)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -4733,12 +4729,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Lat
-          - Depth (m)
-          - StationID
-          - Lon
-          - datetime
           - Temperature
+          - Lon
+          - StationID
+          - Depth (m)
+          - Lat
+          - datetime
           invert: true
           kind: line
           shared_axes: true
@@ -4750,7 +4746,7 @@ entries:
           y:
           - Temperature
           - Salinity (PSU)
-      urlpath: simplecache://::https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
+      urlpath: https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -4763,7 +4759,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(7dd44e5cfd79c3df)}'
+      - - '{data(27cc24e101d78147)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -4774,7 +4770,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(50e04ff96dec3a63)}'
+        - datetime: '{data(64dc9d7fe33e1316)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -4802,12 +4798,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Lat
-          - Depth (m)
-          - StationID
-          - Lon
-          - datetime
           - Temperature
+          - Lon
+          - StationID
+          - Depth (m)
+          - Lat
+          - datetime
           invert: true
           kind: line
           shared_axes: true
@@ -4819,7 +4815,7 @@ entries:
           y:
           - Temperature
           - Salinity (PSU)
-      urlpath: simplecache://::https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
+      urlpath: https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -4832,7 +4828,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(7dd44e5cfd79c3df)}'
+      - - '{data(27cc24e101d78147)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -4843,7 +4839,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(50e04ff96dec3a63)}'
+        - datetime: '{data(64dc9d7fe33e1316)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -4871,12 +4867,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Lat
-          - Depth (m)
-          - StationID
-          - Lon
-          - datetime
           - Temperature
+          - Lon
+          - StationID
+          - Depth (m)
+          - Lat
+          - datetime
           invert: true
           kind: line
           shared_axes: true
@@ -4888,7 +4884,7 @@ entries:
           y:
           - Temperature
           - Salinity (PSU)
-      urlpath: simplecache://::https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
+      urlpath: https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -4901,7 +4897,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(7dd44e5cfd79c3df)}'
+      - - '{data(27cc24e101d78147)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -4912,7 +4908,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(50e04ff96dec3a63)}'
+        - datetime: '{data(64dc9d7fe33e1316)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -4940,12 +4936,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Lat
-          - Depth (m)
-          - StationID
-          - Lon
-          - datetime
           - Temperature
+          - Lon
+          - StationID
+          - Depth (m)
+          - Lat
+          - datetime
           invert: true
           kind: line
           shared_axes: true
@@ -4957,7 +4953,7 @@ entries:
           y:
           - Temperature
           - Salinity (PSU)
-      urlpath: simplecache://::https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
+      urlpath: https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -4970,7 +4966,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(7dd44e5cfd79c3df)}'
+      - - '{data(27cc24e101d78147)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -4981,7 +4977,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(50e04ff96dec3a63)}'
+        - datetime: '{data(64dc9d7fe33e1316)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -5009,12 +5005,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Lat
-          - Depth (m)
-          - StationID
-          - Lon
-          - datetime
           - Temperature
+          - Lon
+          - StationID
+          - Depth (m)
+          - Lat
+          - datetime
           invert: true
           kind: line
           shared_axes: true
@@ -5026,7 +5022,7 @@ entries:
           y:
           - Temperature
           - Salinity (PSU)
-      urlpath: simplecache://::https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
+      urlpath: https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -5039,7 +5035,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(7dd44e5cfd79c3df)}'
+      - - '{data(27cc24e101d78147)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -5050,7 +5046,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(50e04ff96dec3a63)}'
+        - datetime: '{data(64dc9d7fe33e1316)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -5078,12 +5074,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Lat
-          - Depth (m)
-          - StationID
-          - Lon
-          - datetime
           - Temperature
+          - Lon
+          - StationID
+          - Depth (m)
+          - Lat
+          - datetime
           invert: true
           kind: line
           shared_axes: true
@@ -5095,7 +5091,7 @@ entries:
           y:
           - Temperature
           - Salinity (PSU)
-      urlpath: simplecache://::https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
+      urlpath: https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -5108,7 +5104,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(7dd44e5cfd79c3df)}'
+      - - '{data(27cc24e101d78147)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -5119,7 +5115,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(50e04ff96dec3a63)}'
+        - datetime: '{data(64dc9d7fe33e1316)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -5147,12 +5143,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Lat
-          - Depth (m)
-          - StationID
-          - Lon
-          - datetime
           - Temperature
+          - Lon
+          - StationID
+          - Depth (m)
+          - Lat
+          - datetime
           invert: true
           kind: line
           shared_axes: true
@@ -5164,7 +5160,7 @@ entries:
           y:
           - Temperature
           - Salinity (PSU)
-      urlpath: simplecache://::https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
+      urlpath: https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -5177,7 +5173,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(7dd44e5cfd79c3df)}'
+      - - '{data(27cc24e101d78147)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -5188,7 +5184,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(50e04ff96dec3a63)}'
+        - datetime: '{data(64dc9d7fe33e1316)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -5216,12 +5212,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Lat
-          - Depth (m)
-          - StationID
-          - Lon
-          - datetime
           - Temperature
+          - Lon
+          - StationID
+          - Depth (m)
+          - Lat
+          - datetime
           invert: true
           kind: line
           shared_axes: true
@@ -5233,7 +5229,7 @@ entries:
           y:
           - Temperature
           - Salinity (PSU)
-      urlpath: simplecache://::https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
+      urlpath: https://researchworkspace.com/files/42199537/Cook_EMAP_CTD-data_08.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -5242,8 +5238,8 @@ metadata:
   header_names: null
   included: true
   key_variables:
-  - temp
   - salt
+  - temp
   map:
     c: station
     clabel: ''

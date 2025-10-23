@@ -22417,8 +22417,8 @@ metadata:
   - speed
   - east
   - along
-  - across
   - north
+  - across
   map:
     c: station
     clabel: ''

@@ -5,10 +5,7 @@ data:
   aguchik-island-ak-tide-station-9:
     datatype: intake_erddap.erddap:TableDAPReader
     kwargs:
-      cache_kwargs:
-        simplecache:
-          cache_storage: /home/kristen/.cache/cook-inlet-catalogs
-          same_names: true
+      cache_kwargs: null
       constraints:
         time>=: '1999-01-01T00:00:00Z'
       dataset_id: aguchik-island-ak-tide-station-9
@@ -52,12 +49,12 @@ data:
         data:
           height: 300
           hover_cols:
-          - longitude
-          - station
-          - latitude
           - time
           - z
+          - station
+          - latitude
           - water_surface_above_station_datum
+          - longitude
           kind: line
           legend: top
           shared_axes: false
@@ -77,10 +74,7 @@ data:
   chinitna-bay-ak-tide-station-945:
     datatype: intake_erddap.erddap:TableDAPReader
     kwargs:
-      cache_kwargs:
-        simplecache:
-          cache_storage: /home/kristen/.cache/cook-inlet-catalogs
-          same_names: true
+      cache_kwargs: null
       constraints:
         time>=: '1999-01-01T00:00:00Z'
       dataset_id: chinitna-bay-ak-tide-station-945
@@ -124,12 +118,12 @@ data:
         data:
           height: 300
           hover_cols:
-          - longitude
-          - station
-          - latitude
           - time
           - z
+          - station
+          - latitude
           - water_surface_above_station_datum
+          - longitude
           kind: line
           legend: top
           shared_axes: false

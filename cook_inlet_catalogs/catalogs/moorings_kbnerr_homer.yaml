@@ -6,10 +6,7 @@ data:
   homer-dolphin-surface-water-q:
     datatype: intake_erddap.erddap:TableDAPReader
     kwargs:
-      cache_kwargs:
-        simplecache:
-          cache_storage: /home/kristen/.cache/cook-inlet-catalogs
-          same_names: true
+      cache_kwargs: null
       constraints:
         time>=: '1999-01-01T00:00:00Z'
       dataset_id: homer-dolphin-surface-water-q
@@ -55,14 +52,14 @@ data:
         data:
           height: 300
           hover_cols:
-          - longitude
-          - sea_water_temperature
-          - station
-          - sea_water_practical_salinity
-          - latitude
           - time
           - z
+          - sea_water_temperature
+          - station
+          - latitude
+          - sea_water_practical_salinity
           - water_surface_above_station_datum
+          - longitude
           kind: line
           legend: top
           shared_axes: false
@@ -87,10 +84,7 @@ data:
   nerrs_kach3wq:
     datatype: intake_erddap.erddap:TableDAPReader
     kwargs:
-      cache_kwargs:
-        simplecache:
-          cache_storage: /home/kristen/.cache/cook-inlet-catalogs
-          same_names: true
+      cache_kwargs: null
       constraints:
         time>=: '1999-01-01T00:00:00Z'
       dataset_id: nerrs_kach3wq
@@ -136,14 +130,14 @@ data:
         data:
           height: 300
           hover_cols:
-          - longitude
-          - sea_water_temperature
-          - station
-          - sea_water_practical_salinity
-          - latitude
           - time
           - z
+          - sea_water_temperature
+          - station
+          - latitude
+          - sea_water_practical_salinity
           - water_surface_above_station_datum
+          - longitude
           kind: line
           legend: top
           shared_axes: false
@@ -167,10 +161,7 @@ data:
   nerrs_kachdwq:
     datatype: intake_erddap.erddap:TableDAPReader
     kwargs:
-      cache_kwargs:
-        simplecache:
-          cache_storage: /home/kristen/.cache/cook-inlet-catalogs
-          same_names: true
+      cache_kwargs: null
       constraints:
         time>=: '1999-01-01T00:00:00Z'
       dataset_id: nerrs_kachdwq
@@ -208,7 +199,7 @@ data:
       maptype: point
       maxLatitude: 59.602
       maxLongitude: -151.4088
-      maxTime: '2025-10-23T16:15:00Z'
+      maxTime: '2025-10-23T18:15:00Z'
       minLatitude: 59.602
       minLongitude: -151.4088
       minTime: '2003-01-01T09:00:00Z'
@@ -216,14 +207,14 @@ data:
         data:
           height: 300
           hover_cols:
-          - longitude
-          - sea_water_temperature
-          - station
-          - sea_water_practical_salinity
-          - latitude
           - time
           - z
+          - sea_water_temperature
+          - station
+          - latitude
+          - sea_water_practical_salinity
           - water_surface_above_station_datum
+          - longitude
           kind: line
           legend: top
           shared_axes: false
@@ -250,8 +241,8 @@ metadata:
   header_names: null
   included: true
   key_variables:
-  - temp
   - salt
+  - temp
   - ssh
   map:
     c: station
@@ -292,7 +283,7 @@ metadata:
   maptype: point
   maxLatitude: 59.60205
   maxLongitude: -151.40878
-  maxTime: '2025-10-23T16:15:00Z'
+  maxTime: '2025-10-23T18:15:00Z'
   minLatitude: 59.602
   minLongitude: -151.40942
   minTime: '2003-01-01T09:00:00Z'

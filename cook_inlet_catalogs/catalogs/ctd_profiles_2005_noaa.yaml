@@ -24,106 +24,21 @@ aliases:
   '523': '523'
   '524': '524'
 data:
-  668d21b3fdb23640:
+  1edb1a5b0c31cd67:
     datatype: intake.readers.datatypes:CSV
     kwargs:
       storage_options: null
-      url: simplecache://::https://researchworkspace.com/files/39886023/noaa_north.txt
+      url: https://researchworkspace.com/files/39886023/noaa_north.txt
     metadata: {}
     user_parameters: {}
-  6fe89cb74f1fd3af:
+  4bbb39715d9230d9:
     datatype: intake.readers.datatypes:CSV
     kwargs:
       storage_options: null
-      url: simplecache://::https://researchworkspace.com/files/39886022/noaa_south.txt
+      url: https://researchworkspace.com/files/39886022/noaa_south.txt
     metadata: {}
     user_parameters: {}
 entries:
-  1360f62949e6ad63:
-    kwargs:
-      args:
-      - '{data(668d21b3fdb23640)}'
-      dtype:
-        Station: '{func(builtins:str)}'
-        hh:mm: '{func(builtins:str)}'
-        mon/day/yr: '{func(builtins:str)}'
-      encoding: ISO-8859-1
-      sep: "\t"
-      storage_options:
-        simplecache:
-          cache_storage: /home/kristen/.cache/cook-inlet-catalogs
-          same_names: true
-      usecols:
-      - Cruise
-      - Station
-      - Type
-      - mon/day/yr
-      - hh:mm
-      - "Lon (\xB0E)"
-      - "Lat (\xB0N)"
-      - Temperature [C]
-      - tran [v]
-      - fluor [v]
-      - Depth [m]
-      - Salinity [psu]
-    metadata: {}
-    output_instance: pandas:DataFrame
-    reader: intake.readers.readers:PandasCSV
-    user_parameters: {}
-  16ae7e98821087db:
-    kwargs:
-      out_instances:
-      - pandas:DataFrame
-      - pandas:DataFrame
-      - pandas:DataFrame
-      steps:
-      - - '{data(1360f62949e6ad63)}'
-        - []
-        - {}
-      - - '{func(intake.readers.transform:Method)}'
-        - []
-        - columns:
-            hh:mm: time
-            mon/day/yr: date
-          method_name: rename
-      - - '{func(intake.readers.convert:GenericFunc)}'
-        - []
-        - func: '{func(cook_inlet_catalogs.utils:parse_date_time)}'
-    metadata: {}
-    output_instance: pandas:DataFrame
-    reader: intake.readers.convert:Pipeline
-    user_parameters: {}
-  2c975058aa4869a4:
-    kwargs:
-      args:
-      - '{data(6fe89cb74f1fd3af)}'
-      dtype:
-        Station: '{func(builtins:str)}'
-        hh:mm: '{func(builtins:str)}'
-        mon/day/yr: '{func(builtins:str)}'
-      encoding: ISO-8859-1
-      sep: "\t"
-      storage_options:
-        simplecache:
-          cache_storage: /home/kristen/.cache/cook-inlet-catalogs
-          same_names: true
-      usecols:
-      - Cruise
-      - Station
-      - Type
-      - mon/day/yr
-      - hh:mm
-      - "Lon (\xB0E)"
-      - "Lat (\xB0N)"
-      - Temperature [C]
-      - tran [v]
-      - fluor [v]
-      - Depth [m]
-      - Salinity [psu]
-    metadata: {}
-    output_instance: pandas:DataFrame
-    reader: intake.readers.readers:PandasCSV
-    user_parameters: {}
   '501':
     kwargs:
       out_instances:
@@ -133,7 +48,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(1360f62949e6ad63)}'
+      - - '{data(ea85231aa18461d6)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -144,7 +59,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(16ae7e98821087db)}'
+        - datetime: '{data(f18d00ecd9c67650)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -172,10 +87,10 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Station
-          - "Lat (\xB0N)"
           - Temperature [C]
+          - "Lat (\xB0N)"
           - "Lon (\xB0E)"
+          - Station
           - Depth [m]
           - datetime
           invert: true
@@ -189,7 +104,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: simplecache://::https://researchworkspace.com/files/39886023/noaa_north.txt
+      urlpath: https://researchworkspace.com/files/39886023/noaa_north.txt
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -202,7 +117,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(1360f62949e6ad63)}'
+      - - '{data(ea85231aa18461d6)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -213,7 +128,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(16ae7e98821087db)}'
+        - datetime: '{data(f18d00ecd9c67650)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -241,10 +156,10 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Station
-          - "Lat (\xB0N)"
           - Temperature [C]
+          - "Lat (\xB0N)"
           - "Lon (\xB0E)"
+          - Station
           - Depth [m]
           - datetime
           invert: true
@@ -258,7 +173,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: simplecache://::https://researchworkspace.com/files/39886023/noaa_north.txt
+      urlpath: https://researchworkspace.com/files/39886023/noaa_north.txt
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -271,7 +186,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(1360f62949e6ad63)}'
+      - - '{data(ea85231aa18461d6)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -282,7 +197,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(16ae7e98821087db)}'
+        - datetime: '{data(f18d00ecd9c67650)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -310,10 +225,10 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Station
-          - "Lat (\xB0N)"
           - Temperature [C]
+          - "Lat (\xB0N)"
           - "Lon (\xB0E)"
+          - Station
           - Depth [m]
           - datetime
           invert: true
@@ -327,7 +242,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: simplecache://::https://researchworkspace.com/files/39886023/noaa_north.txt
+      urlpath: https://researchworkspace.com/files/39886023/noaa_north.txt
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -340,7 +255,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(1360f62949e6ad63)}'
+      - - '{data(ea85231aa18461d6)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -351,7 +266,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(16ae7e98821087db)}'
+        - datetime: '{data(f18d00ecd9c67650)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -379,10 +294,10 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Station
-          - "Lat (\xB0N)"
           - Temperature [C]
+          - "Lat (\xB0N)"
           - "Lon (\xB0E)"
+          - Station
           - Depth [m]
           - datetime
           invert: true
@@ -396,7 +311,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: simplecache://::https://researchworkspace.com/files/39886023/noaa_north.txt
+      urlpath: https://researchworkspace.com/files/39886023/noaa_north.txt
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -409,7 +324,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(1360f62949e6ad63)}'
+      - - '{data(ea85231aa18461d6)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -420,7 +335,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(16ae7e98821087db)}'
+        - datetime: '{data(f18d00ecd9c67650)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -448,10 +363,10 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Station
-          - "Lat (\xB0N)"
           - Temperature [C]
+          - "Lat (\xB0N)"
           - "Lon (\xB0E)"
+          - Station
           - Depth [m]
           - datetime
           invert: true
@@ -465,7 +380,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: simplecache://::https://researchworkspace.com/files/39886023/noaa_north.txt
+      urlpath: https://researchworkspace.com/files/39886023/noaa_north.txt
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -478,7 +393,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(1360f62949e6ad63)}'
+      - - '{data(ea85231aa18461d6)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -489,7 +404,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(16ae7e98821087db)}'
+        - datetime: '{data(f18d00ecd9c67650)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -517,10 +432,10 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Station
-          - "Lat (\xB0N)"
           - Temperature [C]
+          - "Lat (\xB0N)"
           - "Lon (\xB0E)"
+          - Station
           - Depth [m]
           - datetime
           invert: true
@@ -534,7 +449,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: simplecache://::https://researchworkspace.com/files/39886023/noaa_north.txt
+      urlpath: https://researchworkspace.com/files/39886023/noaa_north.txt
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -547,7 +462,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(1360f62949e6ad63)}'
+      - - '{data(ea85231aa18461d6)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -558,7 +473,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(16ae7e98821087db)}'
+        - datetime: '{data(f18d00ecd9c67650)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -586,10 +501,10 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Station
-          - "Lat (\xB0N)"
           - Temperature [C]
+          - "Lat (\xB0N)"
           - "Lon (\xB0E)"
+          - Station
           - Depth [m]
           - datetime
           invert: true
@@ -603,7 +518,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: simplecache://::https://researchworkspace.com/files/39886023/noaa_north.txt
+      urlpath: https://researchworkspace.com/files/39886023/noaa_north.txt
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -616,7 +531,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(1360f62949e6ad63)}'
+      - - '{data(ea85231aa18461d6)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -627,7 +542,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(16ae7e98821087db)}'
+        - datetime: '{data(f18d00ecd9c67650)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -655,10 +570,10 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Station
-          - "Lat (\xB0N)"
           - Temperature [C]
+          - "Lat (\xB0N)"
           - "Lon (\xB0E)"
+          - Station
           - Depth [m]
           - datetime
           invert: true
@@ -672,7 +587,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: simplecache://::https://researchworkspace.com/files/39886023/noaa_north.txt
+      urlpath: https://researchworkspace.com/files/39886023/noaa_north.txt
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -685,7 +600,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(1360f62949e6ad63)}'
+      - - '{data(ea85231aa18461d6)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -696,7 +611,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(16ae7e98821087db)}'
+        - datetime: '{data(f18d00ecd9c67650)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -724,10 +639,10 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Station
-          - "Lat (\xB0N)"
           - Temperature [C]
+          - "Lat (\xB0N)"
           - "Lon (\xB0E)"
+          - Station
           - Depth [m]
           - datetime
           invert: true
@@ -741,7 +656,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: simplecache://::https://researchworkspace.com/files/39886023/noaa_north.txt
+      urlpath: https://researchworkspace.com/files/39886023/noaa_north.txt
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -754,7 +669,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(1360f62949e6ad63)}'
+      - - '{data(ea85231aa18461d6)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -765,7 +680,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(16ae7e98821087db)}'
+        - datetime: '{data(f18d00ecd9c67650)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -793,10 +708,10 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Station
-          - "Lat (\xB0N)"
           - Temperature [C]
+          - "Lat (\xB0N)"
           - "Lon (\xB0E)"
+          - Station
           - Depth [m]
           - datetime
           invert: true
@@ -810,7 +725,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: simplecache://::https://researchworkspace.com/files/39886023/noaa_north.txt
+      urlpath: https://researchworkspace.com/files/39886023/noaa_north.txt
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -823,7 +738,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(2c975058aa4869a4)}'
+      - - '{data(b094c21bf5d6984d)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -834,7 +749,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(fdc29225399cbfa0)}'
+        - datetime: '{data(e48df3fbd6c1e221)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -862,10 +777,10 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Station
-          - "Lat (\xB0N)"
           - Temperature [C]
+          - "Lat (\xB0N)"
           - "Lon (\xB0E)"
+          - Station
           - Depth [m]
           - datetime
           invert: true
@@ -879,7 +794,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: simplecache://::https://researchworkspace.com/files/39886022/noaa_south.txt
+      urlpath: https://researchworkspace.com/files/39886022/noaa_south.txt
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -892,7 +807,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(2c975058aa4869a4)}'
+      - - '{data(b094c21bf5d6984d)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -903,7 +818,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(fdc29225399cbfa0)}'
+        - datetime: '{data(e48df3fbd6c1e221)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -931,10 +846,10 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Station
-          - "Lat (\xB0N)"
           - Temperature [C]
+          - "Lat (\xB0N)"
           - "Lon (\xB0E)"
+          - Station
           - Depth [m]
           - datetime
           invert: true
@@ -948,7 +863,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: simplecache://::https://researchworkspace.com/files/39886022/noaa_south.txt
+      urlpath: https://researchworkspace.com/files/39886022/noaa_south.txt
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -961,7 +876,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(2c975058aa4869a4)}'
+      - - '{data(b094c21bf5d6984d)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -972,7 +887,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(fdc29225399cbfa0)}'
+        - datetime: '{data(e48df3fbd6c1e221)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -1000,10 +915,10 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Station
-          - "Lat (\xB0N)"
           - Temperature [C]
+          - "Lat (\xB0N)"
           - "Lon (\xB0E)"
+          - Station
           - Depth [m]
           - datetime
           invert: true
@@ -1017,7 +932,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: simplecache://::https://researchworkspace.com/files/39886022/noaa_south.txt
+      urlpath: https://researchworkspace.com/files/39886022/noaa_south.txt
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -1030,7 +945,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(2c975058aa4869a4)}'
+      - - '{data(b094c21bf5d6984d)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -1041,7 +956,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(fdc29225399cbfa0)}'
+        - datetime: '{data(e48df3fbd6c1e221)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -1069,10 +984,10 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Station
-          - "Lat (\xB0N)"
           - Temperature [C]
+          - "Lat (\xB0N)"
           - "Lon (\xB0E)"
+          - Station
           - Depth [m]
           - datetime
           invert: true
@@ -1086,7 +1001,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: simplecache://::https://researchworkspace.com/files/39886022/noaa_south.txt
+      urlpath: https://researchworkspace.com/files/39886022/noaa_south.txt
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -1099,7 +1014,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(2c975058aa4869a4)}'
+      - - '{data(b094c21bf5d6984d)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -1110,7 +1025,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(fdc29225399cbfa0)}'
+        - datetime: '{data(e48df3fbd6c1e221)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -1138,10 +1053,10 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Station
-          - "Lat (\xB0N)"
           - Temperature [C]
+          - "Lat (\xB0N)"
           - "Lon (\xB0E)"
+          - Station
           - Depth [m]
           - datetime
           invert: true
@@ -1155,7 +1070,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: simplecache://::https://researchworkspace.com/files/39886022/noaa_south.txt
+      urlpath: https://researchworkspace.com/files/39886022/noaa_south.txt
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -1168,7 +1083,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(2c975058aa4869a4)}'
+      - - '{data(b094c21bf5d6984d)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -1179,7 +1094,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(fdc29225399cbfa0)}'
+        - datetime: '{data(e48df3fbd6c1e221)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -1207,10 +1122,10 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Station
-          - "Lat (\xB0N)"
           - Temperature [C]
+          - "Lat (\xB0N)"
           - "Lon (\xB0E)"
+          - Station
           - Depth [m]
           - datetime
           invert: true
@@ -1224,7 +1139,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: simplecache://::https://researchworkspace.com/files/39886022/noaa_south.txt
+      urlpath: https://researchworkspace.com/files/39886022/noaa_south.txt
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -1237,7 +1152,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(2c975058aa4869a4)}'
+      - - '{data(b094c21bf5d6984d)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -1248,7 +1163,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(fdc29225399cbfa0)}'
+        - datetime: '{data(e48df3fbd6c1e221)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -1276,10 +1191,10 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Station
-          - "Lat (\xB0N)"
           - Temperature [C]
+          - "Lat (\xB0N)"
           - "Lon (\xB0E)"
+          - Station
           - Depth [m]
           - datetime
           invert: true
@@ -1293,7 +1208,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: simplecache://::https://researchworkspace.com/files/39886022/noaa_south.txt
+      urlpath: https://researchworkspace.com/files/39886022/noaa_south.txt
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -1306,7 +1221,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(2c975058aa4869a4)}'
+      - - '{data(b094c21bf5d6984d)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -1317,7 +1232,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(fdc29225399cbfa0)}'
+        - datetime: '{data(e48df3fbd6c1e221)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -1345,10 +1260,10 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Station
-          - "Lat (\xB0N)"
           - Temperature [C]
+          - "Lat (\xB0N)"
           - "Lon (\xB0E)"
+          - Station
           - Depth [m]
           - datetime
           invert: true
@@ -1362,7 +1277,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: simplecache://::https://researchworkspace.com/files/39886022/noaa_south.txt
+      urlpath: https://researchworkspace.com/files/39886022/noaa_south.txt
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -1375,7 +1290,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(2c975058aa4869a4)}'
+      - - '{data(b094c21bf5d6984d)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -1386,7 +1301,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(fdc29225399cbfa0)}'
+        - datetime: '{data(e48df3fbd6c1e221)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -1414,10 +1329,10 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Station
-          - "Lat (\xB0N)"
           - Temperature [C]
+          - "Lat (\xB0N)"
           - "Lon (\xB0E)"
+          - Station
           - Depth [m]
           - datetime
           invert: true
@@ -1431,7 +1346,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: simplecache://::https://researchworkspace.com/files/39886022/noaa_south.txt
+      urlpath: https://researchworkspace.com/files/39886022/noaa_south.txt
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -1444,7 +1359,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(2c975058aa4869a4)}'
+      - - '{data(b094c21bf5d6984d)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -1455,7 +1370,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(fdc29225399cbfa0)}'
+        - datetime: '{data(e48df3fbd6c1e221)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -1483,10 +1398,10 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Station
-          - "Lat (\xB0N)"
           - Temperature [C]
+          - "Lat (\xB0N)"
           - "Lon (\xB0E)"
+          - Station
           - Depth [m]
           - datetime
           invert: true
@@ -1500,7 +1415,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: simplecache://::https://researchworkspace.com/files/39886022/noaa_south.txt
+      urlpath: https://researchworkspace.com/files/39886022/noaa_south.txt
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -1513,7 +1428,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(2c975058aa4869a4)}'
+      - - '{data(b094c21bf5d6984d)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -1524,7 +1439,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(fdc29225399cbfa0)}'
+        - datetime: '{data(e48df3fbd6c1e221)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -1552,10 +1467,10 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Station
-          - "Lat (\xB0N)"
           - Temperature [C]
+          - "Lat (\xB0N)"
           - "Lon (\xB0E)"
+          - Station
           - Depth [m]
           - datetime
           invert: true
@@ -1569,7 +1484,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: simplecache://::https://researchworkspace.com/files/39886022/noaa_south.txt
+      urlpath: https://researchworkspace.com/files/39886022/noaa_south.txt
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -1582,7 +1497,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(2c975058aa4869a4)}'
+      - - '{data(b094c21bf5d6984d)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -1593,7 +1508,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(fdc29225399cbfa0)}'
+        - datetime: '{data(e48df3fbd6c1e221)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -1621,10 +1536,10 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Station
-          - "Lat (\xB0N)"
           - Temperature [C]
+          - "Lat (\xB0N)"
           - "Lon (\xB0E)"
+          - Station
           - Depth [m]
           - datetime
           invert: true
@@ -1638,7 +1553,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: simplecache://::https://researchworkspace.com/files/39886022/noaa_south.txt
+      urlpath: https://researchworkspace.com/files/39886022/noaa_south.txt
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -1651,7 +1566,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(2c975058aa4869a4)}'
+      - - '{data(b094c21bf5d6984d)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -1662,7 +1577,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(fdc29225399cbfa0)}'
+        - datetime: '{data(e48df3fbd6c1e221)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -1690,10 +1605,10 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Station
-          - "Lat (\xB0N)"
           - Temperature [C]
+          - "Lat (\xB0N)"
           - "Lon (\xB0E)"
+          - Station
           - Depth [m]
           - datetime
           invert: true
@@ -1707,7 +1622,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: simplecache://::https://researchworkspace.com/files/39886022/noaa_south.txt
+      urlpath: https://researchworkspace.com/files/39886022/noaa_south.txt
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -1720,7 +1635,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(2c975058aa4869a4)}'
+      - - '{data(b094c21bf5d6984d)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -1731,7 +1646,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(fdc29225399cbfa0)}'
+        - datetime: '{data(e48df3fbd6c1e221)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -1759,10 +1674,10 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Station
-          - "Lat (\xB0N)"
           - Temperature [C]
+          - "Lat (\xB0N)"
           - "Lon (\xB0E)"
+          - Station
           - Depth [m]
           - datetime
           invert: true
@@ -1776,18 +1691,95 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: simplecache://::https://researchworkspace.com/files/39886022/noaa_south.txt
+      urlpath: https://researchworkspace.com/files/39886022/noaa_south.txt
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
-  fdc29225399cbfa0:
+  b094c21bf5d6984d:
+    kwargs:
+      args:
+      - '{data(4bbb39715d9230d9)}'
+      dtype:
+        Station: '{func(builtins:str)}'
+        hh:mm: '{func(builtins:str)}'
+        mon/day/yr: '{func(builtins:str)}'
+      encoding: ISO-8859-1
+      sep: "\t"
+      usecols:
+      - Cruise
+      - Station
+      - Type
+      - mon/day/yr
+      - hh:mm
+      - "Lon (\xB0E)"
+      - "Lat (\xB0N)"
+      - Temperature [C]
+      - tran [v]
+      - fluor [v]
+      - Depth [m]
+      - Salinity [psu]
+    metadata: {}
+    output_instance: pandas:DataFrame
+    reader: intake.readers.readers:PandasCSV
+    user_parameters: {}
+  e48df3fbd6c1e221:
     kwargs:
       out_instances:
       - pandas:DataFrame
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(2c975058aa4869a4)}'
+      - - '{data(b094c21bf5d6984d)}'
+        - []
+        - {}
+      - - '{func(intake.readers.transform:Method)}'
+        - []
+        - columns:
+            hh:mm: time
+            mon/day/yr: date
+          method_name: rename
+      - - '{func(intake.readers.convert:GenericFunc)}'
+        - []
+        - func: '{func(cook_inlet_catalogs.utils:parse_date_time)}'
+    metadata: {}
+    output_instance: pandas:DataFrame
+    reader: intake.readers.convert:Pipeline
+    user_parameters: {}
+  ea85231aa18461d6:
+    kwargs:
+      args:
+      - '{data(1edb1a5b0c31cd67)}'
+      dtype:
+        Station: '{func(builtins:str)}'
+        hh:mm: '{func(builtins:str)}'
+        mon/day/yr: '{func(builtins:str)}'
+      encoding: ISO-8859-1
+      sep: "\t"
+      usecols:
+      - Cruise
+      - Station
+      - Type
+      - mon/day/yr
+      - hh:mm
+      - "Lon (\xB0E)"
+      - "Lat (\xB0N)"
+      - Temperature [C]
+      - tran [v]
+      - fluor [v]
+      - Depth [m]
+      - Salinity [psu]
+    metadata: {}
+    output_instance: pandas:DataFrame
+    reader: intake.readers.readers:PandasCSV
+    user_parameters: {}
+  f18d00ecd9c67650:
+    kwargs:
+      out_instances:
+      - pandas:DataFrame
+      - pandas:DataFrame
+      - pandas:DataFrame
+      steps:
+      - - '{data(ea85231aa18461d6)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -1808,8 +1800,8 @@ metadata:
   header_names: null
   included: true
   key_variables:
-  - temp
   - salt
+  - temp
   map:
     c: station
     clabel: ''

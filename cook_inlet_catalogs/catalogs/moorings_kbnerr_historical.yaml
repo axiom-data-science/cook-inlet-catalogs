@@ -5,52 +5,48 @@ aliases:
   kacpgwq: kacpgwq
   kacsewq: kacsewq
 data:
-  31dd5e665c208dd4:
+  21fa4ad5b4fc9d7c:
     datatype: intake.readers.datatypes:CSV
     kwargs:
       storage_options: null
-      url: simplecache://::https://researchworkspace.com/files/42202445/kachowq_subsetted.csv
+      url: https://researchworkspace.com/files/42202447/kacpgwq_subsetted.csv
     metadata: {}
     user_parameters: {}
-  49e059a73688d1d0:
+  43bada303046378a:
     datatype: intake.readers.datatypes:CSV
     kwargs:
       storage_options: null
-      url: simplecache://::https://researchworkspace.com/files/42202443/kacdlwq_subsetted.csv
+      url: https://researchworkspace.com/files/42202449/kacsewq_subsetted.csv
     metadata: {}
     user_parameters: {}
-  5e8720b8f6aeb5b1:
+  8ec3277123113f09:
     datatype: intake.readers.datatypes:CSV
     kwargs:
       storage_options: null
-      url: simplecache://::https://researchworkspace.com/files/42202447/kacpgwq_subsetted.csv
+      url: https://researchworkspace.com/files/42202441/kacbcwq_subsetted.csv
     metadata: {}
     user_parameters: {}
-  9725a44452263081:
+  babedc665c69c55a:
     datatype: intake.readers.datatypes:CSV
     kwargs:
       storage_options: null
-      url: simplecache://::https://researchworkspace.com/files/42202441/kacbcwq_subsetted.csv
+      url: https://researchworkspace.com/files/42202443/kacdlwq_subsetted.csv
     metadata: {}
     user_parameters: {}
-  deb3040853a23444:
+  e10c8e3d6094ca99:
     datatype: intake.readers.datatypes:CSV
     kwargs:
       storage_options: null
-      url: simplecache://::https://researchworkspace.com/files/42202449/kacsewq_subsetted.csv
+      url: https://researchworkspace.com/files/42202445/kachowq_subsetted.csv
     metadata: {}
     user_parameters: {}
 entries:
   kacbcwq:
     kwargs:
       args:
-      - '{data(9725a44452263081)}'
+      - '{data(8ec3277123113f09)}'
       parse_dates:
       - 0
-      storage_options:
-        simplecache:
-          cache_storage: /home/kristen/.cache/cook-inlet-catalogs
-          same_names: true
     metadata:
       featuretype: timeSeries
       key_variables:
@@ -67,11 +63,11 @@ entries:
         data:
           height: 300
           hover_cols:
+          - lat
           - Depth
-          - DateTimeStamp
           - Temp
           - lon
-          - lat
+          - DateTimeStamp
           kind: line
           legend: top
           shared_axes: false
@@ -82,20 +78,16 @@ entries:
           y:
           - Temp
           - Sal
-      urlpath: simplecache://::https://researchworkspace.com/files/42202441/kacbcwq_subsetted.csv
+      urlpath: https://researchworkspace.com/files/42202441/kacbcwq_subsetted.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.readers:PandasCSV
     user_parameters: {}
   kacdlwq:
     kwargs:
       args:
-      - '{data(49e059a73688d1d0)}'
+      - '{data(babedc665c69c55a)}'
       parse_dates:
       - 0
-      storage_options:
-        simplecache:
-          cache_storage: /home/kristen/.cache/cook-inlet-catalogs
-          same_names: true
     metadata:
       featuretype: timeSeries
       key_variables:
@@ -112,11 +104,11 @@ entries:
         data:
           height: 300
           hover_cols:
+          - lat
           - Depth
-          - DateTimeStamp
           - Temp
           - lon
-          - lat
+          - DateTimeStamp
           kind: line
           legend: top
           shared_axes: false
@@ -127,20 +119,16 @@ entries:
           y:
           - Temp
           - Sal
-      urlpath: simplecache://::https://researchworkspace.com/files/42202443/kacdlwq_subsetted.csv
+      urlpath: https://researchworkspace.com/files/42202443/kacdlwq_subsetted.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.readers:PandasCSV
     user_parameters: {}
   kachowq:
     kwargs:
       args:
-      - '{data(31dd5e665c208dd4)}'
+      - '{data(e10c8e3d6094ca99)}'
       parse_dates:
       - 0
-      storage_options:
-        simplecache:
-          cache_storage: /home/kristen/.cache/cook-inlet-catalogs
-          same_names: true
     metadata:
       featuretype: timeSeries
       key_variables:
@@ -157,11 +145,11 @@ entries:
         data:
           height: 300
           hover_cols:
+          - lat
           - Depth
-          - DateTimeStamp
           - Temp
           - lon
-          - lat
+          - DateTimeStamp
           kind: line
           legend: top
           shared_axes: false
@@ -172,20 +160,16 @@ entries:
           y:
           - Temp
           - Sal
-      urlpath: simplecache://::https://researchworkspace.com/files/42202445/kachowq_subsetted.csv
+      urlpath: https://researchworkspace.com/files/42202445/kachowq_subsetted.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.readers:PandasCSV
     user_parameters: {}
   kacpgwq:
     kwargs:
       args:
-      - '{data(5e8720b8f6aeb5b1)}'
+      - '{data(21fa4ad5b4fc9d7c)}'
       parse_dates:
       - 0
-      storage_options:
-        simplecache:
-          cache_storage: /home/kristen/.cache/cook-inlet-catalogs
-          same_names: true
     metadata:
       featuretype: timeSeries
       key_variables:
@@ -202,11 +186,11 @@ entries:
         data:
           height: 300
           hover_cols:
+          - lat
           - Depth
-          - DateTimeStamp
           - Temp
           - lon
-          - lat
+          - DateTimeStamp
           kind: line
           legend: top
           shared_axes: false
@@ -217,20 +201,16 @@ entries:
           y:
           - Temp
           - Sal
-      urlpath: simplecache://::https://researchworkspace.com/files/42202447/kacpgwq_subsetted.csv
+      urlpath: https://researchworkspace.com/files/42202447/kacpgwq_subsetted.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.readers:PandasCSV
     user_parameters: {}
   kacsewq:
     kwargs:
       args:
-      - '{data(deb3040853a23444)}'
+      - '{data(43bada303046378a)}'
       parse_dates:
       - 0
-      storage_options:
-        simplecache:
-          cache_storage: /home/kristen/.cache/cook-inlet-catalogs
-          same_names: true
     metadata:
       featuretype: timeSeries
       key_variables:
@@ -247,11 +227,11 @@ entries:
         data:
           height: 300
           hover_cols:
+          - lat
           - Depth
-          - DateTimeStamp
           - Temp
           - lon
-          - lat
+          - DateTimeStamp
           kind: line
           legend: top
           shared_axes: false
@@ -262,7 +242,7 @@ entries:
           y:
           - Temp
           - Sal
-      urlpath: simplecache://::https://researchworkspace.com/files/42202449/kacsewq_subsetted.csv
+      urlpath: https://researchworkspace.com/files/42202449/kacsewq_subsetted.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.readers:PandasCSV
     user_parameters: {}
@@ -271,8 +251,8 @@ metadata:
   header_names: null
   included: true
   key_variables:
-  - temp
   - salt
+  - temp
   map:
     c: station
     clabel: ''
