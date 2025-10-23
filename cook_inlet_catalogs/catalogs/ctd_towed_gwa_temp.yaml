@@ -118,11 +118,11 @@ entries:
           flip_yaxis: false
           height: 300
           hover_cols:
-          - temperature
           - date_time
-          - Latitude (deg N)
-          - Longitude (-ve west)
           - depth [m]
+          - Longitude (-ve west)
+          - Latitude (deg N)
+          - temperature
           kind: scatter
           shared_axes: false
           title: '2011-06-20'
@@ -168,11 +168,11 @@ entries:
           flip_yaxis: false
           height: 300
           hover_cols:
-          - temperature
           - date_time
-          - Latitude (deg N)
-          - Longitude (-ve west)
           - depth [m]
+          - Longitude (-ve west)
+          - Latitude (deg N)
+          - temperature
           kind: scatter
           shared_axes: false
           title: '2011-07-23'
@@ -218,11 +218,11 @@ entries:
           flip_yaxis: false
           height: 300
           hover_cols:
-          - temperature
           - date_time
-          - Latitude (deg N)
-          - Longitude (-ve west)
           - depth [m]
+          - Longitude (-ve west)
+          - Latitude (deg N)
+          - temperature
           kind: scatter
           shared_axes: false
           title: '2011-08-22'
@@ -268,11 +268,11 @@ entries:
           flip_yaxis: false
           height: 300
           hover_cols:
-          - lon
           - date_time
-          - temp
-          - depth
           - lat
+          - depth
+          - temp
+          - lon
           kind: scatter
           shared_axes: false
           title: '2012-04-09'
@@ -318,11 +318,11 @@ entries:
           flip_yaxis: false
           height: 300
           hover_cols:
-          - lon
           - date_time
-          - temp
-          - depth
           - lat
+          - depth
+          - temp
+          - lon
           kind: scatter
           shared_axes: false
           title: '2012-05-13'
@@ -368,11 +368,11 @@ entries:
           flip_yaxis: false
           height: 300
           hover_cols:
-          - lon
           - date_time
-          - temp
-          - depth
           - lat
+          - depth
+          - temp
+          - lon
           kind: scatter
           shared_axes: false
           title: '2012-06-11'
@@ -418,11 +418,11 @@ entries:
           flip_yaxis: false
           height: 300
           hover_cols:
-          - lon
           - date_time
-          - temp
-          - depth
           - lat
+          - depth
+          - temp
+          - lon
           kind: scatter
           shared_axes: false
           title: '2012-09-16'
@@ -468,11 +468,11 @@ entries:
           flip_yaxis: false
           height: 300
           hover_cols:
-          - lon
           - date_time
-          - temp
-          - depth
           - lat
+          - depth
+          - temp
+          - lon
           kind: scatter
           shared_axes: false
           title: '2012-10-16'
@@ -518,11 +518,11 @@ entries:
           flip_yaxis: false
           height: 300
           hover_cols:
-          - lon
           - date_time
-          - temp
-          - depth
           - lat
+          - depth
+          - temp
+          - lon
           kind: scatter
           shared_axes: false
           title: '2013-04-14'
@@ -568,11 +568,11 @@ entries:
           flip_yaxis: false
           height: 300
           hover_cols:
-          - lon
           - date_time
-          - temp
-          - depth
           - lat
+          - depth
+          - temp
+          - lon
           kind: scatter
           shared_axes: false
           title: '2013-05-13'
@@ -618,11 +618,11 @@ entries:
           flip_yaxis: false
           height: 300
           hover_cols:
-          - lon
           - date_time
-          - temp
-          - depth
           - lat
+          - depth
+          - temp
+          - lon
           kind: scatter
           shared_axes: false
           title: '2013-06-15'
@@ -668,11 +668,11 @@ entries:
           flip_yaxis: false
           height: 300
           hover_cols:
-          - lon
           - date_time
-          - temp
-          - depth
           - lat
+          - depth
+          - temp
+          - lon
           kind: scatter
           shared_axes: false
           title: '2013-07-15'
@@ -718,11 +718,11 @@ entries:
           flip_yaxis: false
           height: 300
           hover_cols:
-          - lon
           - date_time
-          - temp
-          - depth
           - lat
+          - depth
+          - temp
+          - lon
           kind: scatter
           shared_axes: false
           title: '2013-08-17'
@@ -768,11 +768,11 @@ entries:
           flip_yaxis: false
           height: 300
           hover_cols:
-          - lon
           - date_time
-          - temp
-          - depth
           - lat
+          - depth
+          - temp
+          - lon
           kind: scatter
           shared_axes: false
           title: '2014-04-27'
@@ -818,11 +818,11 @@ entries:
           flip_yaxis: false
           height: 300
           hover_cols:
-          - lon
           - date_time
-          - temp
-          - depth
           - lat
+          - depth
+          - temp
+          - lon
           kind: scatter
           shared_axes: false
           title: '2014-05-27'
@@ -868,11 +868,11 @@ entries:
           flip_yaxis: false
           height: 300
           hover_cols:
-          - lon
           - date_time
-          - temp
-          - depth
           - lat
+          - depth
+          - temp
+          - lon
           kind: scatter
           shared_axes: false
           title: '2014-06-29'
@@ -918,11 +918,11 @@ entries:
           flip_yaxis: false
           height: 300
           hover_cols:
-          - lon
           - date_time
-          - temp
-          - depth
           - lat
+          - depth
+          - temp
+          - lon
           kind: scatter
           shared_axes: false
           title: '2014-07-29'
@@ -968,11 +968,11 @@ entries:
           flip_yaxis: false
           height: 300
           hover_cols:
-          - lon
           - date_time
-          - temp
-          - depth
           - lat
+          - depth
+          - temp
+          - lon
           kind: scatter
           shared_axes: false
           title: '2014-08-31'
@@ -1018,11 +1018,11 @@ entries:
           flip_yaxis: false
           height: 300
           hover_cols:
-          - lon
           - date_time
-          - temp
-          - depth
           - lat
+          - depth
+          - temp
+          - lon
           kind: scatter
           shared_axes: false
           title: '2015-08-23'
@@ -1068,11 +1068,11 @@ entries:
           flip_yaxis: false
           height: 300
           hover_cols:
-          - lon
           - date_time
-          - temp
-          - depth
           - lat
+          - depth
+          - temp
+          - lon
           kind: scatter
           shared_axes: false
           title: '2015-09-01'
@@ -1118,11 +1118,11 @@ entries:
           flip_yaxis: false
           height: 300
           hover_cols:
-          - lon
           - date_time
-          - temp
-          - depth
           - lat
+          - depth
+          - temp
+          - lon
           kind: scatter
           shared_axes: false
           title: '2016-04-17'
@@ -1168,11 +1168,11 @@ entries:
           flip_yaxis: false
           height: 300
           hover_cols:
-          - lon
           - date_time
-          - temp
-          - depth
           - lat
+          - depth
+          - temp
+          - lon
           kind: scatter
           shared_axes: false
           title: '2016-05-16'
@@ -1218,11 +1218,11 @@ entries:
           flip_yaxis: false
           height: 300
           hover_cols:
-          - lon
           - date_time
-          - temp
-          - depth
           - lat
+          - depth
+          - temp
+          - lon
           kind: scatter
           shared_axes: false
           title: '2016-06-19'
@@ -1268,11 +1268,11 @@ entries:
           flip_yaxis: false
           height: 300
           hover_cols:
-          - lon
           - date_time
-          - temp
-          - depth
           - lat
+          - depth
+          - temp
+          - lon
           kind: scatter
           shared_axes: false
           title: '2016-07-19'
@@ -1318,11 +1318,11 @@ entries:
           flip_yaxis: false
           height: 300
           hover_cols:
-          - lon
           - date_time
-          - temp
-          - depth
           - lat
+          - depth
+          - temp
+          - lon
           kind: scatter
           shared_axes: false
           title: '2016-08-29'
@@ -1368,11 +1368,11 @@ entries:
           flip_yaxis: false
           height: 300
           hover_cols:
-          - lon
           - date_time
-          - temp
-          - depth
           - lat
+          - depth
+          - temp
+          - lon
           kind: scatter
           shared_axes: false
           title: '2016-10-02'

@@ -56,13 +56,13 @@ data:
           height: 300
           hover_cols:
           - longitude
-          - latitude
-          - station
-          - water_surface_above_station_datum
           - sea_water_temperature
-          - time
+          - station
           - sea_water_practical_salinity
+          - latitude
+          - time
           - z
+          - water_surface_above_station_datum
           kind: line
           legend: top
           shared_axes: false
@@ -137,13 +137,13 @@ data:
           height: 300
           hover_cols:
           - longitude
-          - latitude
-          - station
-          - water_surface_above_station_datum
           - sea_water_temperature
-          - time
+          - station
           - sea_water_practical_salinity
+          - latitude
+          - time
           - z
+          - water_surface_above_station_datum
           kind: line
           legend: top
           shared_axes: false
@@ -208,7 +208,7 @@ data:
       maptype: point
       maxLatitude: 59.602
       maxLongitude: -151.4088
-      maxTime: '2025-09-11T14:15:00Z'
+      maxTime: '2025-10-23T16:15:00Z'
       minLatitude: 59.602
       minLongitude: -151.4088
       minTime: '2003-01-01T09:00:00Z'
@@ -217,13 +217,13 @@ data:
           height: 300
           hover_cols:
           - longitude
-          - latitude
-          - station
-          - water_surface_above_station_datum
           - sea_water_temperature
-          - time
+          - station
           - sea_water_practical_salinity
+          - latitude
+          - time
           - z
+          - water_surface_above_station_datum
           kind: line
           legend: top
           shared_axes: false
@@ -250,8 +250,8 @@ metadata:
   header_names: null
   included: true
   key_variables:
-  - salt
   - temp
+  - salt
   - ssh
   map:
     c: station
@@ -292,7 +292,7 @@ metadata:
   maptype: point
   maxLatitude: 59.60205
   maxLongitude: -151.40878
-  maxTime: '2025-09-11T14:15:00Z'
+  maxTime: '2025-10-23T16:15:00Z'
   minLatitude: 59.602
   minLongitude: -151.40942
   minTime: '2003-01-01T09:00:00Z'
@@ -302,7 +302,7 @@ metadata:
   summary: "Moorings from Kachemak Bay National Estuarine Research Reserve (KBNERR)\n\
     \    \nStation mappings from AOOS/ERDDAP to KBNERR station list:\n* nerrs_kachdwq\
     \ :: kachdwq\n* homer-dolphin-surface-water-q :: kachswq\n* nerrs_kach3wq :: kach3wq\n\
-    \    \nMore information: https://accs.uaa.alaska.edu/kbnerr/\n"
+    \    \nMore information: [https://accs.uaa.alaska.edu/kbnerr/](https://accs.uaa.alaska.edu/kbnerr/)\n"
   time: From 2003 to present day, variable
 user_parameters: {}
 version: 2

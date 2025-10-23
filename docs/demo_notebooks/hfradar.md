@@ -4,7 +4,7 @@ jupytext:
     extension: .md
     format_name: myst
     format_version: 0.13
-    jupytext_version: 1.16.3
+    jupytext_version: 1.18.1
 ---
 
 ```{code-cell}
@@ -25,11 +25,19 @@ Files are:
 * Lower Cook Inlet (System B): 2006-2007
 
 Data variables available include tidally filtered and weekly averaged along with tidal constituents calculated from hourly data.
+
+Several new datasets were derived in 2024 with the CIOFS freshwater project which narrow the full time datasets (`lower-ci_system-B_2006-2007.nc` and `upper-ci_system-A_2002-2003.nc`) in time to just 2003 and 2006, respectively, before running processing in Research Workspace and are otherwise identical. See processing notebook [https://researchworkspace.com/file/44879475/add_variables_to_notebooks_limited_time_range.ipynb](https://researchworkspace.com/file/44879475/add_variables_to_notebooks_limited_time_range.ipynb):
+* lower-ci_system-B_2006_subtidal_daily_mean.nc
+* lower-ci_system-B_2006_tidecons_base.nc
+* lower-ci_system-B_2006_subtidal_weekly_mean.nc
+* upper-ci_system-A_2003_subtidal_daily_mean
+* upper-ci_system-A_2003_tidecons_base
+* upper-ci_system-A_2003_subtidal_weekly_mean.nc
     
 Some of the data is written up in reports:
 
-* https://espis.boem.gov/final%20reports/5009.pdf
-* https://www.govinfo.gov/app/details/GOVPUB-I-47b721482d69e308aec1cca9b3e51955
+* [https://espis.boem.gov/final%20reports/5009.pdf](https://espis.boem.gov/final%20reports/5009.pdf)
+* [https://www.govinfo.gov/app/details/GOVPUB-I-47b721482d69e308aec1cca9b3e51955](https://www.govinfo.gov/app/details/GOVPUB-I-47b721482d69e308aec1cca9b3e51955)
 
 ![pic](https://researchworkspace.com/files/40338104/UAcoverage.gif)
 

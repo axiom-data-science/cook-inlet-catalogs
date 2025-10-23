@@ -52,12 +52,12 @@ data:
         data:
           height: 300
           hover_cols:
-          - latitude
-          - water_surface_above_station_datum
-          - z
           - longitude
           - station
+          - latitude
           - time
+          - z
+          - water_surface_above_station_datum
           kind: line
           legend: top
           shared_axes: false
@@ -125,13 +125,13 @@ data:
         data:
           height: 300
           hover_cols:
-          - latitude
-          - z
-          - sea_water_practical_salinity
-          - sea_water_temperature
           - longitude
+          - sea_water_temperature
           - station
+          - sea_water_practical_salinity
+          - latitude
           - time
+          - z
           kind: line
           legend: top
           shared_axes: false
@@ -157,8 +157,8 @@ metadata:
   header_names: null
   included: true
   key_variables:
-  - salt
   - temp
+  - salt
   - ssh
   map:
     c: station

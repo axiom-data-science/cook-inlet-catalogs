@@ -107,7 +107,7 @@ def ctd_profiles_usgs_boem(slug, simplecache):
         
 CTD profiles collected in Cook Inlet from 2016-2021 by Mayumi Arimitsu as part of BOEM sponsored research on fish and bird distributions in Cook Inlet. The profiles are collected in July for the years 2016-2021.
 
-The scientific project is described here: https://www.usgs.gov/centers/alaska-science-center/science/cook-inlet-seabird-and-forage-fish-study#overview.
+The scientific project is described here: [https://www.usgs.gov/centers/alaska-science-center/science/cook-inlet-seabird-and-forage-fish-study#overview](https://www.usgs.gov/centers/alaska-science-center/science/cook-inlet-seabird-and-forage-fish-study#overview).
 """
     )
     
@@ -167,15 +167,13 @@ def ctd_profiles_ecofoci(slug, simplecache):
         map_description = "CTD Profiles",
         summary = """CTD Casts taken as part of the EcoFOCI project.
 
-EcoFOCI project page: https://www.ecofoci.noaa.gov/
+EcoFOCI project page: [https://www.ecofoci.noaa.gov/](https://www.ecofoci.noaa.gov/)
 
-Area data page: https://data.pmel.noaa.gov/pmel/erddap/tabledap/Shelikof_line8_3695_0ada_d066.html
+Data page: [https://data.pmel.noaa.gov/pmel/erddap/tabledap/Shelikof_line8_3695_0ada_d066.html](https://data.pmel.noaa.gov/pmel/erddap/tabledap/Shelikof_line8_3695_0ada_d066.html)
 
-PMEL ERDDAP: https://data.pmel.noaa.gov/pmel/erddap/index.html
+PMEL ERDDAP: [https://data.pmel.noaa.gov/pmel/erddap/index.html](https://data.pmel.noaa.gov/pmel/erddap/index.html)
 
-Map of related project work: https://www.pmel.noaa.gov/foci/foci_moorings/foci_moormap2.shtml
-
-Image here: https://www.pmel.noaa.gov/foci/foci_moorings/images/gulf_of_alaska_mooring_map.png
+![Map of related project work](https://www.pmel.noaa.gov/foci/foci_moorings/images/gulf_of_alaska_mooring_map.png)
 
 """
     )
@@ -895,13 +893,13 @@ During 2004 to 2006 we collected hydrographic measurements along transect lines 
 CTD profiles 2004-2005 - CMI UAF seems to be transect 5 of this project.
 
 Part of the project:
-Seasonality of Boundary Conditions for Cook Inlet, Alaska
-Steve Okkonen Principal Investigator
-Co-principal Investigators: Scott Pegau Susan Saupe
-Final Report
-OCS Study MMS 2009-041
-August 2009
-Report: https://researchworkspace.com/files/39885971/2009_041.pdf
+> Seasonality of Boundary Conditions for Cook Inlet, Alaska
+> Steve Okkonen Principal Investigator
+> Co-principal Investigators: Scott Pegau Susan Saupe
+> Final Report
+> OCS Study MMS 2009-041
+> August 2009
+> Report: [https://researchworkspace.com/files/39885971/2009_041.pdf](https://researchworkspace.com/files/39885971/2009_041.pdf)
 
 <img src="https://user-images.githubusercontent.com/3487237/233167915-c0b2b0e1-151e-4cef-a647-e6311345dbf9.jpg" alt="alt text" width="300"/>
 """
@@ -1027,13 +1025,13 @@ def ctd_transects_cmi_uaf(slug, simplecache):
 9 CTD profiles at stations across 10 cruises in (approximately) the same locations. Approximately monthly for summer months, 2004 and 2005.
 
 Part of the project:
-Seasonality of Boundary Conditions for Cook Inlet, Alaska
-Steve Okkonen Principal Investigator
-Co-principal Investigators: Scott Pegau Susan Saupe
-Final Report
-OCS Study MMS 2009-041
-August 2009
-Report: https://researchworkspace.com/files/39885971/2009_041.pdf
+> Seasonality of Boundary Conditions for Cook Inlet, Alaska
+> Steve Okkonen Principal Investigator
+> Co-principal Investigators: Scott Pegau Susan Saupe
+> Final Report
+> OCS Study MMS 2009-041
+> August 2009
+> Report: [https://researchworkspace.com/files/39885971/2009_041.pdf](https://researchworkspace.com/files/39885971/2009_041.pdf)
 """
     )
     
@@ -1100,7 +1098,7 @@ The Kachemak Bay Research Reserve (KBRR) and NOAA Kasitsna Bay Laboratory jointl
 
 Surveys are conducted annually along five primary transects; two in Kachemak Bay and three in lower Cook Inlet, Alaska. Oceanographic data were collected via vertical CTD casts from surface to bottom, zooplankton and phytoplankton tows were made in the upper water column, and seabird and marine mammal observations were performed opportunistically. We also collect meteorological data and water quality measurements in Homer Harbor and Anchor Point year-round at stations as part of our National Estuarine Research Reserve (NERR) System-wide Monitoring program in Seldovia and Homer harbors, and in ice-free months at a mooring near the head of Kachemak Bay.
 
-Project files and further description can be found here: https://gulf-of-alaska.portal.aoos.org/#metadata/4e28304c-22a1-4976-8881-7289776e4173/project
+Project files and further description can be found here: [https://gulf-of-alaska.portal.aoos.org/#metadata/4e28304c-22a1-4976-8881-7289776e4173/project](https://gulf-of-alaska.portal.aoos.org/#metadata/4e28304c-22a1-4976-8881-7289776e4173/project).
     """
     )
     
@@ -1254,10 +1252,10 @@ def ctd_transects_otf_kbnerr(slug, simplecache):
 
 This project used a vessel of opportunity to collect physical oceanographic and fisheries data at six stations along a transect across lower Cook Inlet from Anchor Point (AP) to the Red River delta each day during July. Logistical support for the field sampling was provided in part by the Alaska Department of Fish and Game which has chartered a drift gillnet vessel annually to fish along this transect providing inseason projections of the size of sockeye salmon runs entering Cook Inlet. This project funded collection of physical oceanographic data on board the chartered vessel to help identify intrusions of the Alaska Coastal Current (ACC) into Cook Inlet and test six hypotheses regarding effects of changing oceanographic conditions on migratory behavior and catchability of sockeye salmon entering Cook Inlet. In 2003-2007, a conductivity-temperature-depth profiler was deployed at each station. In 2003-2005, current velocities were estimated along the transect using a towed acoustic Doppler current profiler, and salmon relative abundance and vertical distribution was estimated using towed fisheries acoustic equipment.
 
-Willette, T.M., W.S. Pegau, and R.D. DeCino. 2010. Monitoring dynamics of the Alaska coastal current and development of applications for management of Cook Inlet salmon - a pilot study. Exxon Valdez Oil Spill Gulf Ecosystem Monitoring and Research Project Final Report (GEM Project 030670), Alaska Department of Fish and Game, Commercial Fisheries Division, Soldotna, Alaska.
+> Willette, T.M., W.S. Pegau, and R.D. DeCino. 2010. Monitoring dynamics of the Alaska coastal current and development of applications for management of Cook Inlet salmon - a pilot study. Exxon Valdez Oil Spill Gulf Ecosystem Monitoring and Research Project Final Report (GEM Project 030670), Alaska Department of Fish and Game, Commercial Fisheries Division, Soldotna, Alaska.
 
-Report: https://evostc.state.ak.us/media/2176/2004-040670-final.pdf
-Project description: https://evostc.state.ak.us/restoration-projects/project-search/monitoring-dynamics-of-the-alaska-coastal-current-and-development-of-applications-for-management-of-cook-inlet-salmon-040670/
+Report: [https://evostc.state.ak.us/media/2176/2004-040670-final.pdf](https://evostc.state.ak.us/media/2176/2004-040670-final.pdf)
+Project description: [https://evostc.state.ak.us/restoration-projects/project-search/monitoring-dynamics-of-the-alaska-coastal-current-and-development-of-applications-for-management-of-cook-inlet-salmon-040670/](https://evostc.state.ak.us/restoration-projects/project-search/monitoring-dynamics-of-the-alaska-coastal-current-and-development-of-applications-for-management-of-cook-inlet-salmon-040670/)
 """
     )
 
@@ -1327,12 +1325,12 @@ and semidiurnal tidal cycles
 
 Surface-to-bottom measurements of temperature, salinity, and transmissivity, as well as measurements of surface currents (vessel drift speeds) were acquired along an east-west section in central Cook Inlet, Alaska during a 26-hour period on 9-10 August 2003. These measurements are used to describe the evolution of frontal features (tide rips) and physical properties along this section during semidiurnal and diurnal tidal cycles. The observation that the amplitude of surface currents is a function of water depth is used to show that strong frontal features occur in association with steep bathymetry. The positions and strengths of these fronts vary with the semidiurnal tide. The presence of freshwater gradients alters the phase and duration of tidal currents across the section. Where mean density-driven flow is northward (along the eastern shore and near Kalgin Island), the onset of northward tidal flow (flood tide) occurs earlier and has longer duration than the onset and duration of northward tidal flow where mean density-driven flow is southward (in the shipping channel). Conversely, where mean density-driven flow is southward (in the shipping channel), the onset of southward tidal flow (ebb tide) occurs earlier and has longer duration than the onset and duration of southward tidal flow along the eastern shore and near Kalgin Island. 
 
-Observations of hydrography and currents in central Cook Inlet, Alaska during diurnal
+> Observations of hydrography and currents in central Cook Inlet, Alaska during diurnal
 and semidiurnal tidal cycles
-Stephen R. Okkonen
-Institute of Marine Science
-University of Alaska Fairbanks
-Report: https://www.circac.org/wp-content/uploads/Okkonen_2005_hydrography-and-currents-in-Cook-Inlet.pdf
+> Stephen R. Okkonen
+> Institute of Marine Science
+> University of Alaska Fairbanks
+> Report: [https://www.circac.org/wp-content/uploads/Okkonen_2005_hydrography-and-currents-in-Cook-Inlet.pdf](https://www.circac.org/wp-content/uploads/Okkonen_2005_hydrography-and-currents-in-Cook-Inlet.pdf)
 """
     )
 
@@ -1386,7 +1384,7 @@ def moorings_kbnerr_historical(slug, simplecache):
         map_description = "Moorings",
         summary = f"""Historical moorings from Kachemak Bay National Estuarine Research Reserve (KBNERR)
     
-More information: https://accs.uaa.alaska.edu/kbnerr/
+More information: [https://accs.uaa.alaska.edu/kbnerr/](https://accs.uaa.alaska.edu/kbnerr/)
 """
     )
 
@@ -1448,7 +1446,7 @@ Files are:
 
 Data variables available include tidally filtered and weekly averaged along with tidal constituents calculated from hourly data.
 
-Several new datasets were derived in 2024 with the CIOFS freshwater project which narrow the full time datasets (lower-ci_system-B_2006-2007.nc and upper-ci_system-A_2002-2003.nc) in time to just 2003 and 2006, respectively, before running processing in Research Workspace and are otherwise identical. See processing notebook https://researchworkspace.com/file/44879475/add_variables_to_notebooks_limited_time_range.ipynb:
+Several new datasets were derived in 2024 with the CIOFS freshwater project which narrow the full time datasets (`lower-ci_system-B_2006-2007.nc` and `upper-ci_system-A_2002-2003.nc`) in time to just 2003 and 2006, respectively, before running processing in Research Workspace and are otherwise identical. See processing notebook [https://researchworkspace.com/file/44879475/add_variables_to_notebooks_limited_time_range.ipynb](https://researchworkspace.com/file/44879475/add_variables_to_notebooks_limited_time_range.ipynb):
 * lower-ci_system-B_2006_subtidal_daily_mean.nc
 * lower-ci_system-B_2006_tidecons_base.nc
 * lower-ci_system-B_2006_subtidal_weekly_mean.nc
@@ -1458,8 +1456,8 @@ Several new datasets were derived in 2024 with the CIOFS freshwater project whic
     
 Some of the data is written up in reports:
 
-* https://espis.boem.gov/final%20reports/5009.pdf
-* https://www.govinfo.gov/app/details/GOVPUB-I-47b721482d69e308aec1cca9b3e51955
+* [https://espis.boem.gov/final%20reports/5009.pdf](https://espis.boem.gov/final%20reports/5009.pdf)
+* [https://www.govinfo.gov/app/details/GOVPUB-I-47b721482d69e308aec1cca9b3e51955](https://www.govinfo.gov/app/details/GOVPUB-I-47b721482d69e308aec1cca9b3e51955)
 
 ![pic](https://researchworkspace.com/files/40338104/UAcoverage.gif)
 """
@@ -1639,13 +1637,13 @@ CIRCAC is the Cook Inlet Regional Citizens Advisory Council. It was funded by MM
 This mooring was damaged so it was removed.
 
 Part of the project:
-Seasonality of Boundary Conditions for Cook Inlet, Alaska
-Steve Okkonen Principal Investigator
-Co-principal Investigators: Scott Pegau Susan Saupe
-Final Report
-OCS Study MMS 2009-041
-August 2009
-Report: https://researchworkspace.com/files/39885971/2009_041.pdf
+> Seasonality of Boundary Conditions for Cook Inlet, Alaska
+> Steve Okkonen Principal Investigator
+> Co-principal Investigators: Scott Pegau Susan Saupe
+> Final Report
+> OCS Study MMS 2009-041
+> August 2009
+> Report: [https://researchworkspace.com/files/39885971/2009_041.pdf](https://researchworkspace.com/files/39885971/2009_041.pdf)
 
 <img src="https://user-images.githubusercontent.com/3487237/233167915-c0b2b0e1-151e-4cef-a647-e6311345dbf9.jpg" alt="alt text" width="300"/>
 
@@ -1698,14 +1696,14 @@ def moorings_kbnerr(slug, simplecache):
 
 CIRCAC is the Cook Inlet Regional Citizens Advisory Council. It was funded by MMS (pre-BOEM), OCS Study MMS 2009-041 funneled through the Coastal Marine Institute (University of Alaska Fairbanks).
 
-Part of the project:
-Seasonality of Boundary Conditions for Cook Inlet, Alaska
-Steve Okkonen Principal Investigator
-Co-principal Investigators: Scott Pegau Susan Saupe
-Final Report
-OCS Study MMS 2009-041
-August 2009
-Report: https://researchworkspace.com/files/39885971/2009_041.pdf
+> Part of the project:
+> Seasonality of Boundary Conditions for Cook Inlet, Alaska
+> Steve Okkonen Principal Investigator
+> Co-principal Investigators: Scott Pegau Susan Saupe
+> Final Report
+> OCS Study MMS 2009-041
+> August 2009
+> Report: [https://researchworkspace.com/files/39885971/2009_041.pdf](https://researchworkspace.com/files/39885971/2009_041.pdf)
 
 <img src="https://user-images.githubusercontent.com/3487237/233167915-c0b2b0e1-151e-4cef-a647-e6311345dbf9.jpg" alt="alt text" width="300"/>
 
@@ -1763,7 +1761,7 @@ Station mappings from AOOS/ERDDAP to KBNERR station list:
 
 * cdmo_nerrs_bearcove :: This is a different station than kacbcwq, which was active 2002-2003 while this is in 2015. They are also in different locations.
     
-More information: https://accs.uaa.alaska.edu/kbnerr/
+More information: [https://accs.uaa.alaska.edu/kbnerr/](https://accs.uaa.alaska.edu/kbnerr/)
 """)
 
     stations = ["cdmo_nerrs_bearcove",
@@ -1791,7 +1789,7 @@ Station mappings from AOOS/ERDDAP to KBNERR station list:
 * homer-dolphin-surface-water-q :: kachswq
 * nerrs_kach3wq :: kach3wq
     
-More information: https://accs.uaa.alaska.edu/kbnerr/
+More information: [https://accs.uaa.alaska.edu/kbnerr/](https://accs.uaa.alaska.edu/kbnerr/)
 """
     )
 
@@ -2431,14 +2429,15 @@ As described on the [main project website for EcoFOCI](https://www.ecofoci.noaa.
 
 > EcoFOCI is a joint research program between the Alaska Fisheries Science Center (NOAA/ NMFS/ AFSC) and the Pacific Marine Environmental Laboratory (NOAA/ OAR/ PMEL).
 
-Drifter data are being pulled from this webpage: https://www.ecofoci.noaa.gov/drifters/efoci_drifterData.shtml which also has a plot available for each drifter dataset.
+Drifter data are being pulled from this webpage: [https://www.ecofoci.noaa.gov/drifters/efoci_drifterData.shtml](https://www.ecofoci.noaa.gov/drifters/efoci_drifterData.shtml) which also has a plot available for each drifter dataset.
 
-Several years of EcoFOCI drifter data are also available in a private Research Workspace project: https://researchworkspace.com/project/41531085/files.
+Several years of EcoFOCI drifter data are also available in a private Research Workspace project: [https://researchworkspace.com/project/41531085/files](https://researchworkspace.com/project/41531085/files).
 """
     )
 
     # years = [2012, 2013, 2014]
-    years = [2003, 2004, 2005, 2006, 2012, 2013, 2014]
+    # years = [2003, 2004, 2005, 2006, 2012, 2013, 2014]
+    years = np.arange(1999, 2025)
     baseurl = "https://www.ecofoci.noaa.gov/drifters/"
 
     # Specify the URL of the webpage you want to parse
@@ -2479,14 +2478,26 @@ Several years of EcoFOCI drifter data are also available in a private Research W
     for i, url in enumerate(urls):
         print(url)
 
-        data = intake.readers.datatypes.CSV(url)
-        # data = intake.readers.readers.PandasCSV(url)
-        # data = intake.readers.datatypes.Text(url)
-        df = intake.readers.readers.PandasCSV(data, dtype=str, nrows=22, comment='"', na_values=["%", ">", "=", ","]).read()
-        df[df.iloc[:, 0].str.startswith("Drogue depth:")]
-        depth = df[df.iloc[:, 0].str.startswith("Drogue depth:")].values[0][0].split()[-1]
-        del(df)
-        if depth == 'depth:':  # this means the actual depth value is missing, then skip the drifter
+        response = requests.get(url)
+        response.raise_for_status()
+
+        # Read as text
+        for line in response.text.splitlines():
+            if line.startswith("Drogue depth:"):
+                depth = line.split(":", 1)[1].strip()
+
+        # data = intake.readers.datatypes.CSV(url)
+        # # data = intake.readers.readers.PandasCSV(url)
+        # # data = intake.readers.datatypes.Text(url)
+        # if url == "https://www.ecofoci.noaa.gov/drifters/data2008/57886_y2008.asc":
+        #     import pdb; pdb.set_trace()
+        # # read a little to get info but need header
+        # df = intake.readers.readers.PandasCSV(data, dtype=str, nrows=22, comment='"', na_values=["%", ">", "=", ","]).read()
+        # df[df.iloc[:, 0].str.startswith("Drogue depth:")]
+        # depth = df[df.iloc[:, 0].str.startswith("Drogue depth:")].values[0][0].split()[-1]
+        # del(df)
+        if depth == '':  # this means the actual depth value is missing, then skip the drifter
+        # if depth == 'depth:':  # this means the actual depth value is missing, then skip the drifter
             print("WARNING: using 40m as the default depth when no other information is available.")
             # Ladd, Carol, et al. "Northern Gulf of Alaska eddies and associated anomalies." Deep Sea Research Part I: Oceanographic Research Papers 54.4 (2007): 487-509.
             # Stabeno, Phyllis J., et al. "Long-term observations of Alaska Coastal Current in the northern Gulf of Alaska." Deep Sea Research Part II: Topical Studies in Oceanography 132 (2016): 24-40.
@@ -2498,6 +2509,7 @@ Several years of EcoFOCI drifter data are also available in a private Research W
         #     url = f"simplecache://::{url}"
         #     csv_kwargs["storage_options"] = simplecache_options
         # initial_reader = intake.readers.readers.PandasCSV(data, **csv_kwargs) 
+        data = intake.readers.datatypes.CSV(url)
         initial_reader = data.to_reader("pandas:DataFrame", **csv_kwargs)
 
         # drop time: use this to later add parse times
@@ -2565,109 +2577,57 @@ def drifters_epscor(slug, simplecache):
         summary = f"""Alaska EPSCoR Drifter Deployment
 
 * Several drifters are run at a time.
-* https://ak-epscor.portal.axds.co/#metadata/e773c142-c003-4441-a32a-8656e051f630/project/folder_metadata/5826151
-* files: https://ak-epscor.portal.axds.co/#metadata/e773c142-c003-4441-a32a-8656e051f630/project/files
-* Descriptive summary of drifter deployment: https://www.alaska.edu/epscor/about/newsletters/May-2022-feature-current-events.php
-* data portal: https://ak-epscor.portal.axds.co/
+* Data portal: [https://ak-epscor.portal.axds.co/](https://ak-epscor.portal.axds.co/)
+* Data page: [https://ak-epscor.portal.axds.co/#metadata/e773c142-c003-4441-a32a-8656e051f630/project/folder_metadata/5826151](https://ak-epscor.portal.axds.co/#metadata/e773c142-c003-4441-a32a-8656e051f630/project/folder_metadata/5826151)
+* files: [https://ak-epscor.portal.axds.co/#metadata/e773c142-c003-4441-a32a-8656e051f630/project/files](https://ak-epscor.portal.axds.co/#metadata/e773c142-c003-4441-a32a-8656e051f630/project/files)
+* Descriptive summary of drifter deployment: [https://www.alaska.edu/epscor/about/newsletters/May-2022-feature-current-events.php](https://www.alaska.edu/epscor/about/newsletters/May-2022-feature-current-events.php)
 """
     )
     
-    if not simplecache:
-        raise ValueError("drifters_epscor requires simplecache to work properly")
+    # get drifter ids from here
+    url = "https://binning-service.srv.axds.co/e45ab543_e2e0_47f3_93ac_50dd038e81e0/data?select=drifter,count:count()&filters=org.eq.epscor&order=drifter.asc"
     
-    depth = 1  # drifters were in the upper 1m of the water column
+    depth = 1
+
+    # Parse JSON into a Python dictionary
+    # Fetch the content
+    response = requests.get(url)
+    response.raise_for_status()  # raises an error if the request failed
+
+    # Parse JSON directly
+    data = response.json()
     
-    # FIRST: GETTING ACCESS TO EACH DRIFTER
+    drifter_ids = [row["drifter"] for row in data["data"]]
     
-    # IN CATALOG, FIRST RUN THROUGH AND GET URLS FOR ALL DRIFTERS/FILES.
-    # ONCE WE KNOW THESE WE CAN SET UP HOW TO ACCESS EACH DRIFTER
-
-    urls = ["https://workspace.aoos.org/published/file/9ab61c12-a668-45e5-8b87-1f0bbecb54db/2019.zip",
-                "https://workspace.aoos.org/published/file/99246dca-acfd-4580-b85b-4557a0cd3d5a/2020.zip",
-                "https://workspace.aoos.org/published/file/955868b9-07fd-4cb6-ae56-6234a3d6bc20/2021.zip",
-                "https://workspace.aoos.org/published/file/7b509076-3d31-4115-9c5f-fefa7b723662/2022.zip"]
-    
-    csv_kwargs = {}
-    csv_kwargs["storage_options"] = simplecache_options
-    # files = {}
-    # files = []
-
-    local_paths = []
-
-    for url in urls:
-
-        # Use simplecache so the zip is cached locally
-        cache_url = f"simplecache://::{url}"
-        # this downloads the zip file to cache
-        try:
-            pd.read_csv(cache_url, **csv_kwargs)
-        except ValueError:
-            pass  # we expect this error and use it to cache
-
-
-        # # Open remote ZIP with fsspec (using caching so it’s only downloaded once)
-        # fs = fsspec.filesystem("zip", fo=f"simplecache::{cache_url}")
-        # fs.ls("")
-        import zipfile
-        zip_loc_name = cache_url.split("/")[-1]
-        zip_loc_path = Path(cic.utils.cache_dir) / zip_loc_name
-        dir_name = zip_loc_name.rstrip(".zip")
-        dir_path = Path(cic.utils.cache_dir) / dir_name
-        with zipfile.ZipFile(zip_loc_path, "r") as zip_ref:
-            zip_ref.extractall(dir_path)
-        
-        local_paths.extend(sorted(dir_path.glob("*.csv")))
-
-        # # List all files inside the ZIP
-        # files[cache_url] = [f["filename"] for f in fs.ls("") if f["filename"].endswith(".csv")]
-        # files.extend([f["filename"] for f in fs.ls("") if f["filename"].endswith(".csv")])
-        # print("Files inside ZIP:", files)
-    csv_kwargs = dict(dtype={"Month": "str", "Year": "str", "Day": "str", "Hour": "str", "Minute": "str"})
-
     cat = intake.entry.Catalog(metadata=metadata)
-    for local_path in local_paths:
-        # print(local_path)
-        
-        strip_double_quotes(local_path)
 
+    for drifter_id in drifter_ids:
+        print(drifter_id)
+        url = f"https://binning-service.srv.axds.co/e45ab543_e2e0_47f3_93ac_50dd038e81e0/data?filters=org.eq.epscor,drifter.eq.%22{drifter_id}%22&order=time.asc&output=csv"
 
-        # # Open remote ZIP with fsspec (using caching so it’s only downloaded once)
-        # fs = fsspec.filesystem("zip", fo=f"simplecache::{cache_url}")
-
-        # Read all CSVs into a dict of DataFrames
-        # dfs = {}
-
-        dataset_id = local_path.stem.split("_")[0]
-
-        data = intake.readers.datatypes.CSV(str(local_path))
-        # initial_reader = data.to_reader("pandas:DataFrame", **csv_kwargs)
-        initial_reader = intake.readers.readers.PandasCSV(data, **csv_kwargs)
+        data = intake.readers.datatypes.CSV(url)
+        initial_reader = intake.readers.readers.PandasCSV(data)#, **csv_kwargs)
         initial_reader = initial_reader.assign(depth=depth)
-        new_dates_column = initial_reader.apply(cic.utils.parse_year_month_day_hour_minute)
-        reader_dates_parsed = initial_reader.assign(datetime=new_dates_column).drop(columns=["Month","Day","Year","Hour","Minute"])
-        df = reader_dates_parsed.read()
-        # import pdb; pdb.set_trace()
-        # print(df)
-
+        df = initial_reader.read()
+        
         hover_cols = cic.utils.get_hover_cols(df)
         # points_dict(x, y, c, s, hover_cols, slug)
         plot_kwargs = dict(x=df.cf["longitude"].name, y=df.cf["latitude"].name, c=None, s=None, title="", hover_cols=hover_cols)
-        # plot_kwargs = dict(x=df.cf["longitude"].name, y=[df.cf["latitude"].name, df.cf["salt"].name], hover_cols=hover_cols)
-        reader_dates_parsed.metadata = {"plots": {"data": cic.utils.points_dict(**plot_kwargs)}}
+
+        initial_reader.metadata = {"plots": {"data": cic.utils.points_dict(**plot_kwargs)}}
         # initial_reader.metadata = {"plots": {"data": cic.utils.line_time_dict(**plot_kwargs)}}
-        reader_dates_parsed.metadata.update(cic.utils.add_metadata(df, metadata["maptype"], metadata["featuretype"], str(local_path)))
+        initial_reader.metadata.update(cic.utils.add_metadata(df, metadata["maptype"], metadata["featuretype"], url))
 
-        cat[dataset_id] = reader_dates_parsed
-        cat.aliases[dataset_id] = dataset_id
+        cat[drifter_id] = initial_reader
+        cat.aliases[drifter_id] = drifter_id
 
-    # import pdb; pdb.set_trace()
     # gather metadata across datasets to add to overall catalog
     cat.metadata.update(cic.utils.overall_metadata(cat, list(cat)))
     # set up plotting overall map, which uses general key names 
     cat.metadata["map"] = cic.utils.paths_dict(x="longitude", y="latitude", slug=slug)
     cat.metadata["maplabels"] = cic.utils.labels_dict(x="longitude", y="latitude", text="station")
     cat.to_yaml_file(base_dir / f"catalogs/{slug}.yaml")
-    
+
 
 def drifters_lake_clark(slug, simplecache):
     metadata = dict(project_name = "Lake Clark Physical Oceanographic Assessment",
@@ -2746,9 +2706,54 @@ if __name__ == "__main__":
     
     simplecache = True
     
+    slugs = [
+#         'adcp_moored_noaa_coi_2005',
+#  'adcp_moored_noaa_coi_other',
+#  'adcp_moored_noaa_kod_1',
+#  'adcp_moored_noaa_kod_2',
+#  'ctd_profiles_2005_noaa',
+#  'ctd_profiles_ecofoci',
+#  'ctd_profiles_emap_2002',
+#  'ctd_profiles_emap_2008',
+#  'ctd_profiles_kachemack_kuletz_2005_2007',
+#  'ctd_profiles_kb_small_mesh_2006',
+#  'ctd_profiles_kbay_osu_2007',
+#  'ctd_profiles_piatt_speckman_1999',
+#  'ctd_profiles_usgs_boem',
+#  'ctd_towed_otf_kbnerr',
+#  'ctd_towed_ferry_noaa_pmel',
+#  'ctd_towed_gwa',
+#  'ctd_towed_gwa_temp',
+#  'ctd_transects_barabara_to_bluff_2002_2003',
+#  'ctd_transects_cmi_kbnerr',
+#  'ctd_transects_cmi_uaf',
+#  'ctd_transects_gwa',
+#  'ctd_transects_misc_2002',
+#  'ctd_transects_otf_kbnerr',
+#  'ctd_transects_uaf',
+#  'hfradar',
+#  'moorings_aoos_cdip',
+#  'moorings_circac',
+#  'moorings_kbnerr',
+#  'moorings_kbnerr_bear_cove_seldovia',
+#  'moorings_kbnerr_historical',
+#  'moorings_kbnerr_homer',
+#  'moorings_noaa',
+#  'moorings_nps',
+#  'moorings_uaf',
+ 'drifters_ecofoci',
+ 'drifters_uaf',
+ 'drifters_epscor',
+ 'drifters_lake_clark']
+    
     from time import time
-    for slug in ["drifters_lake_clark", "drifters_epscor"]:# cic.slugs:
-        if not (base_dir / f"catalogs/{slug}.yaml").is_file():
-            start_time = time()
-            getattr(cic.generate_catalogs, slug)(slug, simplecache=simplecache)
-            print(f"Catalog: Slug {slug} required time {time() - start_time}")
+    for slug in ["drifters_epscor"]:#slugs:
+        start_time = time()
+        getattr(cic.generate_catalogs, slug)(slug, simplecache=simplecache)
+        print(f"Catalog: Slug {slug} required time {time() - start_time}")
+
+    # for slug in ["ctd_profiles_ecofoci", "ctd_profiles_usgs_boem"]:# cic.slugs:
+    #     if not (base_dir / f"catalogs/{slug}.yaml").is_file():
+    #         start_time = time()
+    #         getattr(cic.generate_catalogs, slug)(slug, simplecache=simplecache)
+    #         print(f"Catalog: Slug {slug} required time {time() - start_time}")

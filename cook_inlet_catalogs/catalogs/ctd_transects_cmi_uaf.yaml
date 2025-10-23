@@ -122,12 +122,12 @@ entries:
           height: 300
           hover_cols:
           - Station
+          - distance [km]
+          - Latitude
+          - Depth [m]
           - Longitude
           - datetime
           - Temperature
-          - Depth [m]
-          - distance [km]
-          - Latitude
           kind: scatter
           shared_axes: false
           title: '2004-05-21'
@@ -142,12 +142,12 @@ entries:
           height: 300
           hover_cols:
           - Station
+          - distance [km]
+          - Latitude
+          - Depth [m]
           - Longitude
           - datetime
           - Temperature
-          - Depth [m]
-          - distance [km]
-          - Latitude
           kind: scatter
           shared_axes: false
           title: '2004-05-21'
@@ -213,12 +213,12 @@ entries:
           height: 300
           hover_cols:
           - Station
+          - distance [km]
+          - Latitude
+          - Depth [m]
           - Longitude
           - datetime
           - Temperature
-          - Depth [m]
-          - distance [km]
-          - Latitude
           kind: scatter
           shared_axes: false
           title: '2004-06-24'
@@ -233,12 +233,12 @@ entries:
           height: 300
           hover_cols:
           - Station
+          - distance [km]
+          - Latitude
+          - Depth [m]
           - Longitude
           - datetime
           - Temperature
-          - Depth [m]
-          - distance [km]
-          - Latitude
           kind: scatter
           shared_axes: false
           title: '2004-06-24'
@@ -304,12 +304,12 @@ entries:
           height: 300
           hover_cols:
           - Station
+          - distance [km]
+          - Latitude
+          - Depth [m]
           - Longitude
           - datetime
           - Temperature
-          - Depth [m]
-          - distance [km]
-          - Latitude
           kind: scatter
           shared_axes: false
           title: '2004-08-08'
@@ -324,12 +324,12 @@ entries:
           height: 300
           hover_cols:
           - Station
+          - distance [km]
+          - Latitude
+          - Depth [m]
           - Longitude
           - datetime
           - Temperature
-          - Depth [m]
-          - distance [km]
-          - Latitude
           kind: scatter
           shared_axes: false
           title: '2004-08-08'
@@ -395,12 +395,12 @@ entries:
           height: 300
           hover_cols:
           - Station
+          - distance [km]
+          - Latitude
+          - Depth [m]
           - Longitude
           - datetime
           - Temperature
-          - Depth [m]
-          - distance [km]
-          - Latitude
           kind: scatter
           shared_axes: false
           title: '2004-09-17'
@@ -415,12 +415,12 @@ entries:
           height: 300
           hover_cols:
           - Station
+          - distance [km]
+          - Latitude
+          - Depth [m]
           - Longitude
           - datetime
           - Temperature
-          - Depth [m]
-          - distance [km]
-          - Latitude
           kind: scatter
           shared_axes: false
           title: '2004-09-17'
@@ -486,12 +486,12 @@ entries:
           height: 300
           hover_cols:
           - Station
+          - distance [km]
+          - Latitude
+          - Depth [m]
           - Longitude
           - datetime
           - Temperature
-          - Depth [m]
-          - distance [km]
-          - Latitude
           kind: scatter
           shared_axes: false
           title: '2004-10-09'
@@ -506,12 +506,12 @@ entries:
           height: 300
           hover_cols:
           - Station
+          - distance [km]
+          - Latitude
+          - Depth [m]
           - Longitude
           - datetime
           - Temperature
-          - Depth [m]
-          - distance [km]
-          - Latitude
           kind: scatter
           shared_axes: false
           title: '2004-10-09'
@@ -577,12 +577,12 @@ entries:
           height: 300
           hover_cols:
           - Station
+          - distance [km]
+          - Latitude
+          - Depth [m]
           - Longitude
           - datetime
           - Temperature
-          - Depth [m]
-          - distance [km]
-          - Latitude
           kind: scatter
           shared_axes: false
           title: '2005-03-30'
@@ -597,12 +597,12 @@ entries:
           height: 300
           hover_cols:
           - Station
+          - distance [km]
+          - Latitude
+          - Depth [m]
           - Longitude
           - datetime
           - Temperature
-          - Depth [m]
-          - distance [km]
-          - Latitude
           kind: scatter
           shared_axes: false
           title: '2005-03-30'
@@ -668,12 +668,12 @@ entries:
           height: 300
           hover_cols:
           - Station
+          - distance [km]
+          - Latitude
+          - Depth [m]
           - Longitude
           - datetime
           - Temperature
-          - Depth [m]
-          - distance [km]
-          - Latitude
           kind: scatter
           shared_axes: false
           title: '2005-05-02'
@@ -688,12 +688,12 @@ entries:
           height: 300
           hover_cols:
           - Station
+          - distance [km]
+          - Latitude
+          - Depth [m]
           - Longitude
           - datetime
           - Temperature
-          - Depth [m]
-          - distance [km]
-          - Latitude
           kind: scatter
           shared_axes: false
           title: '2005-05-02'
@@ -759,12 +759,12 @@ entries:
           height: 300
           hover_cols:
           - Station
+          - distance [km]
+          - Latitude
+          - Depth [m]
           - Longitude
           - datetime
           - Temperature
-          - Depth [m]
-          - distance [km]
-          - Latitude
           kind: scatter
           shared_axes: false
           title: '2005-06-01'
@@ -779,12 +779,12 @@ entries:
           height: 300
           hover_cols:
           - Station
+          - distance [km]
+          - Latitude
+          - Depth [m]
           - Longitude
           - datetime
           - Temperature
-          - Depth [m]
-          - distance [km]
-          - Latitude
           kind: scatter
           shared_axes: false
           title: '2005-06-01'
@@ -850,12 +850,12 @@ entries:
           height: 300
           hover_cols:
           - Station
+          - distance [km]
+          - Latitude
+          - Depth [m]
           - Longitude
           - datetime
           - Temperature
-          - Depth [m]
-          - distance [km]
-          - Latitude
           kind: scatter
           shared_axes: false
           title: '2005-08-26'
@@ -870,12 +870,12 @@ entries:
           height: 300
           hover_cols:
           - Station
+          - distance [km]
+          - Latitude
+          - Depth [m]
           - Longitude
           - datetime
           - Temperature
-          - Depth [m]
-          - distance [km]
-          - Latitude
           kind: scatter
           shared_axes: false
           title: '2005-08-26'
@@ -941,12 +941,12 @@ entries:
           height: 300
           hover_cols:
           - Station
+          - distance [km]
+          - Latitude
+          - Depth [m]
           - Longitude
           - datetime
           - Temperature
-          - Depth [m]
-          - distance [km]
-          - Latitude
           kind: scatter
           shared_axes: false
           title: '2005-10-03'
@@ -961,12 +961,12 @@ entries:
           height: 300
           hover_cols:
           - Station
+          - distance [km]
+          - Latitude
+          - Depth [m]
           - Longitude
           - datetime
           - Temperature
-          - Depth [m]
-          - distance [km]
-          - Latitude
           kind: scatter
           shared_axes: false
           title: '2005-10-03'
@@ -982,8 +982,8 @@ metadata:
   header_names: null
   included: true
   key_variables:
-  - salt
   - temp
+  - salt
   map:
     coastline: false
     geo: true
@@ -1031,19 +1031,19 @@ metadata:
 
     Part of the project:
 
-    Seasonality of Boundary Conditions for Cook Inlet, Alaska
+    > Seasonality of Boundary Conditions for Cook Inlet, Alaska
 
-    Steve Okkonen Principal Investigator
+    > Steve Okkonen Principal Investigator
 
-    Co-principal Investigators: Scott Pegau Susan Saupe
+    > Co-principal Investigators: Scott Pegau Susan Saupe
 
-    Final Report
+    > Final Report
 
-    OCS Study MMS 2009-041
+    > OCS Study MMS 2009-041
 
-    August 2009
+    > August 2009
 
-    Report: https://researchworkspace.com/files/39885971/2009_041.pdf
+    > Report: [https://researchworkspace.com/files/39885971/2009_041.pdf](https://researchworkspace.com/files/39885971/2009_041.pdf)
 
     '
   time: 10 cruises, approximately monthly for summer months, in 2004 and 2005

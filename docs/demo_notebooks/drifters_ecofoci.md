@@ -4,7 +4,7 @@ jupytext:
     extension: .md
     format_name: myst
     format_version: 0.13
-    jupytext_version: 1.16.3
+    jupytext_version: 1.18.1
 ---
 
 ```{code-cell}
@@ -25,9 +25,9 @@ As described on the [main project website for EcoFOCI](https://www.ecofoci.noaa.
 
 > EcoFOCI is a joint research program between the Alaska Fisheries Science Center (NOAA/ NMFS/ AFSC) and the Pacific Marine Environmental Laboratory (NOAA/ OAR/ PMEL).
 
-Drifter data are being pulled from this webpage: https://www.ecofoci.noaa.gov/drifters/efoci_drifterData.shtml which also has a plot available for each drifter dataset.
+Drifter data are being pulled from this webpage: [https://www.ecofoci.noaa.gov/drifters/efoci_drifterData.shtml](https://www.ecofoci.noaa.gov/drifters/efoci_drifterData.shtml) which also has a plot available for each drifter dataset.
 
-Several years of EcoFOCI drifter data are also available in a private Research Workspace project: https://researchworkspace.com/project/41531085/files.
+Several years of EcoFOCI drifter data are also available in a private Research Workspace project: [https://researchworkspace.com/project/41531085/files](https://researchworkspace.com/project/41531085/files).
 
 
 

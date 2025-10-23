@@ -52,12 +52,12 @@ data:
         data:
           height: 300
           hover_cols:
-          - latitude
           - longitude
+          - station
+          - latitude
+          - time
           - z
           - water_surface_above_station_datum
-          - station
-          - time
           kind: line
           legend: top
           shared_axes: false
@@ -124,12 +124,12 @@ data:
         data:
           height: 300
           hover_cols:
-          - latitude
           - longitude
+          - station
+          - latitude
+          - time
           - z
           - water_surface_above_station_datum
-          - station
-          - time
           kind: line
           legend: top
           shared_axes: false
