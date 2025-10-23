@@ -6,10 +6,7 @@ data:
   aoos_204:
     datatype: intake_erddap.erddap:TableDAPReader
     kwargs:
-      cache_kwargs:
-        simplecache:
-          cache_storage: /home/kristen/.cache/cook-inlet-catalogs
-          same_names: true
+      cache_kwargs: null
       constraints:
         time>=: '1999-01-01T00:00:00Z'
       dataset_id: aoos_204
@@ -45,7 +42,7 @@ data:
       maptype: point
       maxLatitude: 59.5973
       maxLongitude: -151.8291
-      maxTime: '2025-10-23T17:05:00Z'
+      maxTime: '2025-10-23T19:35:00Z'
       minLatitude: 59.5973
       minLongitude: -151.8291
       minTime: '2013-07-21T19:22:27Z'
@@ -53,12 +50,12 @@ data:
         data:
           height: 300
           hover_cols:
-          - longitude
+          - time
+          - z
           - sea_water_temperature
           - station
           - latitude
-          - time
-          - z
+          - longitude
           kind: line
           legend: top
           shared_axes: false
@@ -79,10 +76,7 @@ data:
   central-cook-inlet-175:
     datatype: intake_erddap.erddap:TableDAPReader
     kwargs:
-      cache_kwargs:
-        simplecache:
-          cache_storage: /home/kristen/.cache/cook-inlet-catalogs
-          same_names: true
+      cache_kwargs: null
       constraints:
         time>=: '1999-01-01T00:00:00Z'
       dataset_id: central-cook-inlet-175
@@ -126,12 +120,12 @@ data:
         data:
           height: 300
           hover_cols:
-          - longitude
+          - time
+          - z
           - sea_water_temperature
           - station
           - latitude
-          - time
-          - z
+          - longitude
           kind: line
           legend: top
           shared_axes: false
@@ -152,10 +146,7 @@ data:
   edu_ucsd_cdip_236:
     datatype: intake_erddap.erddap:TableDAPReader
     kwargs:
-      cache_kwargs:
-        simplecache:
-          cache_storage: /home/kristen/.cache/cook-inlet-catalogs
-          same_names: true
+      cache_kwargs: null
       constraints:
         time>=: '1999-01-01T00:00:00Z'
       dataset_id: edu_ucsd_cdip_236
@@ -199,12 +190,12 @@ data:
         data:
           height: 300
           hover_cols:
-          - longitude
+          - time
+          - z
           - sea_water_temperature
           - station
           - latitude
-          - time
-          - z
+          - longitude
           kind: line
           legend: top
           shared_axes: false
@@ -267,7 +258,7 @@ metadata:
   maptype: point
   maxLatitude: 59.7335
   maxLongitude: -151.6953
-  maxTime: '2025-10-23T17:05:00Z'
+  maxTime: '2025-10-23T19:35:00Z'
   minLatitude: 57.4795
   minLongitude: -152.0045
   minTime: '2011-05-09T23:00:27Z'

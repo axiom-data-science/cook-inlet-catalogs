@@ -5,10 +5,7 @@ data:
   peterson-bay-ak-gnss-r:
     datatype: intake_erddap.erddap:TableDAPReader
     kwargs:
-      cache_kwargs:
-        simplecache:
-          cache_storage: /home/kristen/.cache/cook-inlet-catalogs
-          same_names: true
+      cache_kwargs: null
       constraints:
         time>=: '1999-01-01T00:00:00Z'
       dataset_id: peterson-bay-ak-gnss-r
@@ -52,12 +49,12 @@ data:
         data:
           height: 300
           hover_cols:
-          - longitude
-          - station
-          - latitude
           - time
           - z
+          - station
+          - latitude
           - water_surface_above_station_datum
+          - longitude
           kind: line
           legend: top
           shared_axes: false
@@ -77,10 +74,7 @@ data:
   uaf_ocean_acidification_resea_ko:
     datatype: intake_erddap.erddap:TableDAPReader
     kwargs:
-      cache_kwargs:
-        simplecache:
-          cache_storage: /home/kristen/.cache/cook-inlet-catalogs
-          same_names: true
+      cache_kwargs: null
       constraints:
         time>=: '1999-01-01T00:00:00Z'
       dataset_id: uaf_ocean_acidification_resea_ko
@@ -125,13 +119,13 @@ data:
         data:
           height: 300
           hover_cols:
-          - longitude
-          - sea_water_temperature
-          - station
-          - sea_water_practical_salinity
-          - latitude
           - time
           - z
+          - sea_water_temperature
+          - station
+          - latitude
+          - sea_water_practical_salinity
+          - longitude
           kind: line
           legend: top
           shared_axes: false
@@ -157,8 +151,8 @@ metadata:
   header_names: null
   included: true
   key_variables:
-  - temp
   - salt
+  - temp
   - ssh
   map:
     c: station

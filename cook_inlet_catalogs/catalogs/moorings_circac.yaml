@@ -1,25 +1,21 @@
 aliases:
   moorings_circac: moorings_circac
 data:
-  1d9375d48baa99d3:
+  6fdf708d07d07c85:
     datatype: intake.readers.datatypes:CSV
     kwargs:
       storage_options: null
-      url: simplecache://::https://researchworkspace.com/files/39886029/xto_mooring_2006.txt
+      url: https://researchworkspace.com/files/39886029/xto_mooring_2006.txt
     metadata: {}
     user_parameters: {}
 entries:
-  d4a4bece2c29b5e3:
+  82efd85910d0defb:
     kwargs:
       args:
-      - '{data(1d9375d48baa99d3)}'
+      - '{data(6fdf708d07d07c85)}'
       parse_dates:
       - Date UTC
       sep: "\t"
-      storage_options:
-        simplecache:
-          cache_storage: /home/kristen/.cache/cook-inlet-catalogs
-          same_names: true
     metadata: {}
     output_instance: pandas:DataFrame
     reader: intake.readers.readers:PandasCSV
@@ -31,7 +27,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(d4a4bece2c29b5e3)}'
+      - - '{data(82efd85910d0defb)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -58,11 +54,11 @@ entries:
         data:
           height: 300
           hover_cols:
+          - latitude_deg
           - Temperature
+          - longitude_deg
           - Date UTC
           - Depth
-          - longitude_deg
-          - latitude_deg
           kind: line
           legend: top
           shared_axes: false
@@ -73,7 +69,7 @@ entries:
           y:
           - Temperature
           - Salinity
-      urlpath: simplecache://::https://researchworkspace.com/files/39886029/xto_mooring_2006.txt
+      urlpath: https://researchworkspace.com/files/39886029/xto_mooring_2006.txt
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -82,8 +78,8 @@ metadata:
   header_names: null
   included: true
   key_variables:
-  - temp
   - salt
+  - temp
   map:
     c: station
     clabel: ''

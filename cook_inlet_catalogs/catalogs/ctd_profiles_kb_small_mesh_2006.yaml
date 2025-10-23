@@ -27,11 +27,11 @@ aliases:
   '1027': '1027'
   '1028': '1028'
 data:
-  67d8b21d052230d7:
+  885d0c7f61bbdf0f:
     datatype: intake.readers.datatypes:CSV
     kwargs:
       storage_options: null
-      url: simplecache://::https://researchworkspace.com/files/42200009/KBsmallmesh.csv
+      url: https://researchworkspace.com/files/42200009/KBsmallmesh.csv
     metadata: {}
     user_parameters: {}
 entries:
@@ -44,7 +44,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(b48776279f32fdfa)}'
+      - - '{data(f6f5eca350577c26)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -55,7 +55,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(dd8028a03d2bacb2)}'
+        - datetime: '{data(87a25e419954efa0)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -83,11 +83,11 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Lat
-          - Station
           - Temperature [C]
-          - Depth [m]
+          - Station
           - Lon
+          - Lat
+          - Depth [m]
           - datetime
           invert: true
           kind: line
@@ -100,7 +100,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: simplecache://::https://researchworkspace.com/files/42200009/KBsmallmesh.csv
+      urlpath: https://researchworkspace.com/files/42200009/KBsmallmesh.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -113,7 +113,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(b48776279f32fdfa)}'
+      - - '{data(f6f5eca350577c26)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -124,7 +124,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(dd8028a03d2bacb2)}'
+        - datetime: '{data(87a25e419954efa0)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -152,11 +152,11 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Lat
-          - Station
           - Temperature [C]
-          - Depth [m]
+          - Station
           - Lon
+          - Lat
+          - Depth [m]
           - datetime
           invert: true
           kind: line
@@ -169,7 +169,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: simplecache://::https://researchworkspace.com/files/42200009/KBsmallmesh.csv
+      urlpath: https://researchworkspace.com/files/42200009/KBsmallmesh.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -182,7 +182,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(b48776279f32fdfa)}'
+      - - '{data(f6f5eca350577c26)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -193,7 +193,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(dd8028a03d2bacb2)}'
+        - datetime: '{data(87a25e419954efa0)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -221,11 +221,11 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Lat
-          - Station
           - Temperature [C]
-          - Depth [m]
+          - Station
           - Lon
+          - Lat
+          - Depth [m]
           - datetime
           invert: true
           kind: line
@@ -238,7 +238,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: simplecache://::https://researchworkspace.com/files/42200009/KBsmallmesh.csv
+      urlpath: https://researchworkspace.com/files/42200009/KBsmallmesh.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -251,7 +251,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(b48776279f32fdfa)}'
+      - - '{data(f6f5eca350577c26)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -262,7 +262,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(dd8028a03d2bacb2)}'
+        - datetime: '{data(87a25e419954efa0)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -290,11 +290,11 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Lat
-          - Station
           - Temperature [C]
-          - Depth [m]
+          - Station
           - Lon
+          - Lat
+          - Depth [m]
           - datetime
           invert: true
           kind: line
@@ -307,7 +307,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: simplecache://::https://researchworkspace.com/files/42200009/KBsmallmesh.csv
+      urlpath: https://researchworkspace.com/files/42200009/KBsmallmesh.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -320,7 +320,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(b48776279f32fdfa)}'
+      - - '{data(f6f5eca350577c26)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -331,7 +331,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(dd8028a03d2bacb2)}'
+        - datetime: '{data(87a25e419954efa0)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -359,11 +359,11 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Lat
-          - Station
           - Temperature [C]
-          - Depth [m]
+          - Station
           - Lon
+          - Lat
+          - Depth [m]
           - datetime
           invert: true
           kind: line
@@ -376,7 +376,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: simplecache://::https://researchworkspace.com/files/42200009/KBsmallmesh.csv
+      urlpath: https://researchworkspace.com/files/42200009/KBsmallmesh.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -389,7 +389,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(b48776279f32fdfa)}'
+      - - '{data(f6f5eca350577c26)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -400,7 +400,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(dd8028a03d2bacb2)}'
+        - datetime: '{data(87a25e419954efa0)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -428,11 +428,11 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Lat
-          - Station
           - Temperature [C]
-          - Depth [m]
+          - Station
           - Lon
+          - Lat
+          - Depth [m]
           - datetime
           invert: true
           kind: line
@@ -445,7 +445,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: simplecache://::https://researchworkspace.com/files/42200009/KBsmallmesh.csv
+      urlpath: https://researchworkspace.com/files/42200009/KBsmallmesh.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -458,7 +458,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(b48776279f32fdfa)}'
+      - - '{data(f6f5eca350577c26)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -469,7 +469,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(dd8028a03d2bacb2)}'
+        - datetime: '{data(87a25e419954efa0)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -497,11 +497,11 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Lat
-          - Station
           - Temperature [C]
-          - Depth [m]
+          - Station
           - Lon
+          - Lat
+          - Depth [m]
           - datetime
           invert: true
           kind: line
@@ -514,7 +514,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: simplecache://::https://researchworkspace.com/files/42200009/KBsmallmesh.csv
+      urlpath: https://researchworkspace.com/files/42200009/KBsmallmesh.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -527,7 +527,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(b48776279f32fdfa)}'
+      - - '{data(f6f5eca350577c26)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -538,7 +538,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(dd8028a03d2bacb2)}'
+        - datetime: '{data(87a25e419954efa0)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -566,11 +566,11 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Lat
-          - Station
           - Temperature [C]
-          - Depth [m]
+          - Station
           - Lon
+          - Lat
+          - Depth [m]
           - datetime
           invert: true
           kind: line
@@ -583,7 +583,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: simplecache://::https://researchworkspace.com/files/42200009/KBsmallmesh.csv
+      urlpath: https://researchworkspace.com/files/42200009/KBsmallmesh.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -596,7 +596,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(b48776279f32fdfa)}'
+      - - '{data(f6f5eca350577c26)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -607,7 +607,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(dd8028a03d2bacb2)}'
+        - datetime: '{data(87a25e419954efa0)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -635,11 +635,11 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Lat
-          - Station
           - Temperature [C]
-          - Depth [m]
+          - Station
           - Lon
+          - Lat
+          - Depth [m]
           - datetime
           invert: true
           kind: line
@@ -652,7 +652,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: simplecache://::https://researchworkspace.com/files/42200009/KBsmallmesh.csv
+      urlpath: https://researchworkspace.com/files/42200009/KBsmallmesh.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -665,7 +665,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(b48776279f32fdfa)}'
+      - - '{data(f6f5eca350577c26)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -676,7 +676,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(dd8028a03d2bacb2)}'
+        - datetime: '{data(87a25e419954efa0)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -704,11 +704,11 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Lat
-          - Station
           - Temperature [C]
-          - Depth [m]
+          - Station
           - Lon
+          - Lat
+          - Depth [m]
           - datetime
           invert: true
           kind: line
@@ -721,7 +721,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: simplecache://::https://researchworkspace.com/files/42200009/KBsmallmesh.csv
+      urlpath: https://researchworkspace.com/files/42200009/KBsmallmesh.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -734,7 +734,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(b48776279f32fdfa)}'
+      - - '{data(f6f5eca350577c26)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -745,7 +745,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(dd8028a03d2bacb2)}'
+        - datetime: '{data(87a25e419954efa0)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -773,11 +773,11 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Lat
-          - Station
           - Temperature [C]
-          - Depth [m]
+          - Station
           - Lon
+          - Lat
+          - Depth [m]
           - datetime
           invert: true
           kind: line
@@ -790,7 +790,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: simplecache://::https://researchworkspace.com/files/42200009/KBsmallmesh.csv
+      urlpath: https://researchworkspace.com/files/42200009/KBsmallmesh.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -803,7 +803,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(b48776279f32fdfa)}'
+      - - '{data(f6f5eca350577c26)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -814,7 +814,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(dd8028a03d2bacb2)}'
+        - datetime: '{data(87a25e419954efa0)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -842,11 +842,11 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Lat
-          - Station
           - Temperature [C]
-          - Depth [m]
+          - Station
           - Lon
+          - Lat
+          - Depth [m]
           - datetime
           invert: true
           kind: line
@@ -859,7 +859,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: simplecache://::https://researchworkspace.com/files/42200009/KBsmallmesh.csv
+      urlpath: https://researchworkspace.com/files/42200009/KBsmallmesh.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -872,7 +872,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(b48776279f32fdfa)}'
+      - - '{data(f6f5eca350577c26)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -883,7 +883,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(dd8028a03d2bacb2)}'
+        - datetime: '{data(87a25e419954efa0)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -911,11 +911,11 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Lat
-          - Station
           - Temperature [C]
-          - Depth [m]
+          - Station
           - Lon
+          - Lat
+          - Depth [m]
           - datetime
           invert: true
           kind: line
@@ -928,7 +928,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: simplecache://::https://researchworkspace.com/files/42200009/KBsmallmesh.csv
+      urlpath: https://researchworkspace.com/files/42200009/KBsmallmesh.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -941,7 +941,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(b48776279f32fdfa)}'
+      - - '{data(f6f5eca350577c26)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -952,7 +952,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(dd8028a03d2bacb2)}'
+        - datetime: '{data(87a25e419954efa0)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -980,11 +980,11 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Lat
-          - Station
           - Temperature [C]
-          - Depth [m]
+          - Station
           - Lon
+          - Lat
+          - Depth [m]
           - datetime
           invert: true
           kind: line
@@ -997,7 +997,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: simplecache://::https://researchworkspace.com/files/42200009/KBsmallmesh.csv
+      urlpath: https://researchworkspace.com/files/42200009/KBsmallmesh.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -1010,7 +1010,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(b48776279f32fdfa)}'
+      - - '{data(f6f5eca350577c26)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -1021,7 +1021,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(dd8028a03d2bacb2)}'
+        - datetime: '{data(87a25e419954efa0)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -1049,11 +1049,11 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Lat
-          - Station
           - Temperature [C]
-          - Depth [m]
+          - Station
           - Lon
+          - Lat
+          - Depth [m]
           - datetime
           invert: true
           kind: line
@@ -1066,7 +1066,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: simplecache://::https://researchworkspace.com/files/42200009/KBsmallmesh.csv
+      urlpath: https://researchworkspace.com/files/42200009/KBsmallmesh.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -1079,7 +1079,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(b48776279f32fdfa)}'
+      - - '{data(f6f5eca350577c26)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -1090,7 +1090,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(dd8028a03d2bacb2)}'
+        - datetime: '{data(87a25e419954efa0)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -1118,11 +1118,11 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Lat
-          - Station
           - Temperature [C]
-          - Depth [m]
+          - Station
           - Lon
+          - Lat
+          - Depth [m]
           - datetime
           invert: true
           kind: line
@@ -1135,7 +1135,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: simplecache://::https://researchworkspace.com/files/42200009/KBsmallmesh.csv
+      urlpath: https://researchworkspace.com/files/42200009/KBsmallmesh.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -1148,7 +1148,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(b48776279f32fdfa)}'
+      - - '{data(f6f5eca350577c26)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -1159,7 +1159,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(dd8028a03d2bacb2)}'
+        - datetime: '{data(87a25e419954efa0)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -1187,11 +1187,11 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Lat
-          - Station
           - Temperature [C]
-          - Depth [m]
+          - Station
           - Lon
+          - Lat
+          - Depth [m]
           - datetime
           invert: true
           kind: line
@@ -1204,7 +1204,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: simplecache://::https://researchworkspace.com/files/42200009/KBsmallmesh.csv
+      urlpath: https://researchworkspace.com/files/42200009/KBsmallmesh.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -1217,7 +1217,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(b48776279f32fdfa)}'
+      - - '{data(f6f5eca350577c26)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -1228,7 +1228,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(dd8028a03d2bacb2)}'
+        - datetime: '{data(87a25e419954efa0)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -1256,11 +1256,11 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Lat
-          - Station
           - Temperature [C]
-          - Depth [m]
+          - Station
           - Lon
+          - Lat
+          - Depth [m]
           - datetime
           invert: true
           kind: line
@@ -1273,7 +1273,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: simplecache://::https://researchworkspace.com/files/42200009/KBsmallmesh.csv
+      urlpath: https://researchworkspace.com/files/42200009/KBsmallmesh.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -1286,7 +1286,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(b48776279f32fdfa)}'
+      - - '{data(f6f5eca350577c26)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -1297,7 +1297,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(dd8028a03d2bacb2)}'
+        - datetime: '{data(87a25e419954efa0)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -1325,11 +1325,11 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Lat
-          - Station
           - Temperature [C]
-          - Depth [m]
+          - Station
           - Lon
+          - Lat
+          - Depth [m]
           - datetime
           invert: true
           kind: line
@@ -1342,7 +1342,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: simplecache://::https://researchworkspace.com/files/42200009/KBsmallmesh.csv
+      urlpath: https://researchworkspace.com/files/42200009/KBsmallmesh.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -1355,7 +1355,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(b48776279f32fdfa)}'
+      - - '{data(f6f5eca350577c26)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -1366,7 +1366,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(dd8028a03d2bacb2)}'
+        - datetime: '{data(87a25e419954efa0)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -1394,11 +1394,11 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Lat
-          - Station
           - Temperature [C]
-          - Depth [m]
+          - Station
           - Lon
+          - Lat
+          - Depth [m]
           - datetime
           invert: true
           kind: line
@@ -1411,7 +1411,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: simplecache://::https://researchworkspace.com/files/42200009/KBsmallmesh.csv
+      urlpath: https://researchworkspace.com/files/42200009/KBsmallmesh.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -1424,7 +1424,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(b48776279f32fdfa)}'
+      - - '{data(f6f5eca350577c26)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -1435,7 +1435,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(dd8028a03d2bacb2)}'
+        - datetime: '{data(87a25e419954efa0)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -1463,11 +1463,11 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Lat
-          - Station
           - Temperature [C]
-          - Depth [m]
+          - Station
           - Lon
+          - Lat
+          - Depth [m]
           - datetime
           invert: true
           kind: line
@@ -1480,7 +1480,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: simplecache://::https://researchworkspace.com/files/42200009/KBsmallmesh.csv
+      urlpath: https://researchworkspace.com/files/42200009/KBsmallmesh.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -1493,7 +1493,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(b48776279f32fdfa)}'
+      - - '{data(f6f5eca350577c26)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -1504,7 +1504,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(dd8028a03d2bacb2)}'
+        - datetime: '{data(87a25e419954efa0)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -1532,11 +1532,11 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Lat
-          - Station
           - Temperature [C]
-          - Depth [m]
+          - Station
           - Lon
+          - Lat
+          - Depth [m]
           - datetime
           invert: true
           kind: line
@@ -1549,7 +1549,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: simplecache://::https://researchworkspace.com/files/42200009/KBsmallmesh.csv
+      urlpath: https://researchworkspace.com/files/42200009/KBsmallmesh.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -1562,7 +1562,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(b48776279f32fdfa)}'
+      - - '{data(f6f5eca350577c26)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -1573,7 +1573,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(dd8028a03d2bacb2)}'
+        - datetime: '{data(87a25e419954efa0)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -1601,11 +1601,11 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Lat
-          - Station
           - Temperature [C]
-          - Depth [m]
+          - Station
           - Lon
+          - Lat
+          - Depth [m]
           - datetime
           invert: true
           kind: line
@@ -1618,7 +1618,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: simplecache://::https://researchworkspace.com/files/42200009/KBsmallmesh.csv
+      urlpath: https://researchworkspace.com/files/42200009/KBsmallmesh.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -1631,7 +1631,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(b48776279f32fdfa)}'
+      - - '{data(f6f5eca350577c26)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -1642,7 +1642,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(dd8028a03d2bacb2)}'
+        - datetime: '{data(87a25e419954efa0)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -1670,11 +1670,11 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Lat
-          - Station
           - Temperature [C]
-          - Depth [m]
+          - Station
           - Lon
+          - Lat
+          - Depth [m]
           - datetime
           invert: true
           kind: line
@@ -1687,7 +1687,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: simplecache://::https://researchworkspace.com/files/42200009/KBsmallmesh.csv
+      urlpath: https://researchworkspace.com/files/42200009/KBsmallmesh.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -1700,7 +1700,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(b48776279f32fdfa)}'
+      - - '{data(f6f5eca350577c26)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -1711,7 +1711,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(dd8028a03d2bacb2)}'
+        - datetime: '{data(87a25e419954efa0)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -1739,11 +1739,11 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Lat
-          - Station
           - Temperature [C]
-          - Depth [m]
+          - Station
           - Lon
+          - Lat
+          - Depth [m]
           - datetime
           invert: true
           kind: line
@@ -1756,7 +1756,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: simplecache://::https://researchworkspace.com/files/42200009/KBsmallmesh.csv
+      urlpath: https://researchworkspace.com/files/42200009/KBsmallmesh.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -1769,7 +1769,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(b48776279f32fdfa)}'
+      - - '{data(f6f5eca350577c26)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -1780,7 +1780,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(dd8028a03d2bacb2)}'
+        - datetime: '{data(87a25e419954efa0)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -1808,11 +1808,11 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Lat
-          - Station
           - Temperature [C]
-          - Depth [m]
+          - Station
           - Lon
+          - Lat
+          - Depth [m]
           - datetime
           invert: true
           kind: line
@@ -1825,7 +1825,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: simplecache://::https://researchworkspace.com/files/42200009/KBsmallmesh.csv
+      urlpath: https://researchworkspace.com/files/42200009/KBsmallmesh.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -1838,7 +1838,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(b48776279f32fdfa)}'
+      - - '{data(f6f5eca350577c26)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -1849,7 +1849,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(dd8028a03d2bacb2)}'
+        - datetime: '{data(87a25e419954efa0)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -1877,11 +1877,11 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
-          - Lat
-          - Station
           - Temperature [C]
-          - Depth [m]
+          - Station
           - Lon
+          - Lat
+          - Depth [m]
           - datetime
           invert: true
           kind: line
@@ -1894,14 +1894,37 @@ entries:
           y:
           - Temperature [C]
           - Salinity [psu]
-      urlpath: simplecache://::https://researchworkspace.com/files/42200009/KBsmallmesh.csv
+      urlpath: https://researchworkspace.com/files/42200009/KBsmallmesh.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
-  b48776279f32fdfa:
+  87a25e419954efa0:
+    kwargs:
+      out_instances:
+      - pandas:DataFrame
+      - pandas:DataFrame
+      - pandas:DataFrame
+      steps:
+      - - '{data(f6f5eca350577c26)}'
+        - []
+        - {}
+      - - '{func(intake.readers.transform:Method)}'
+        - []
+        - columns:
+            hh:mm: time
+            mon/day/yr: date
+          method_name: rename
+      - - '{func(intake.readers.convert:GenericFunc)}'
+        - []
+        - func: '{func(cook_inlet_catalogs.utils:parse_date_time)}'
+    metadata: {}
+    output_instance: pandas:DataFrame
+    reader: intake.readers.convert:Pipeline
+    user_parameters: {}
+  f6f5eca350577c26:
     kwargs:
       args:
-      - '{data(67d8b21d052230d7)}'
+      - '{data(885d0c7f61bbdf0f)}'
       dtype:
         Station: '{func(builtins:str)}'
         hh:mm: '{func(builtins:str)}'
@@ -1928,10 +1951,6 @@ entries:
       - Sigma
       - oxconc
       - oxper [%]
-      storage_options:
-        simplecache:
-          cache_storage: /home/kristen/.cache/cook-inlet-catalogs
-          same_names: true
       usecols:
       - Cruise
       - Station
@@ -1954,36 +1973,13 @@ entries:
     output_instance: pandas:DataFrame
     reader: intake.readers.readers:PandasCSV
     user_parameters: {}
-  dd8028a03d2bacb2:
-    kwargs:
-      out_instances:
-      - pandas:DataFrame
-      - pandas:DataFrame
-      - pandas:DataFrame
-      steps:
-      - - '{data(b48776279f32fdfa)}'
-        - []
-        - {}
-      - - '{func(intake.readers.transform:Method)}'
-        - []
-        - columns:
-            hh:mm: time
-            mon/day/yr: date
-          method_name: rename
-      - - '{func(intake.readers.convert:GenericFunc)}'
-        - []
-        - func: '{func(cook_inlet_catalogs.utils:parse_date_time)}'
-    metadata: {}
-    output_instance: pandas:DataFrame
-    reader: intake.readers.convert:Pipeline
-    user_parameters: {}
 metadata:
   featuretype: profile
   header_names: null
   included: true
   key_variables:
-  - temp
   - salt
+  - temp
   map:
     c: station
     clabel: ''

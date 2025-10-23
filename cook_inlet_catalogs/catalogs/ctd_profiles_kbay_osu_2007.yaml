@@ -45,11 +45,11 @@ aliases:
   '8': '8'
   '9': '9'
 data:
-  53df5960e816564f:
+  5e3dbad8ed8be69e:
     datatype: intake.readers.datatypes:CSV
     kwargs:
       storage_options: null
-      url: simplecache://::https://researchworkspace.com/files/39888023/kbay_odv.txt
+      url: https://researchworkspace.com/files/39888023/kbay_odv.txt
     metadata: {}
     user_parameters: {}
 entries:
@@ -62,7 +62,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(dde4741993d8b670)}'
+      - - '{data(92b2ddff940e935a)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -73,7 +73,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(e3ab9c87b0d74109)}'
+        - datetime: '{data(a398711cad7d1004)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -101,11 +101,11 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
+          - Temperature [C]
+          - Station
+          - Lon
           - Lat
           - Depth
-          - Station
-          - Temperature [C]
-          - Lon
           - datetime
           invert: true
           kind: line
@@ -118,7 +118,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [PSU]
-      urlpath: simplecache://::https://researchworkspace.com/files/39888023/kbay_odv.txt
+      urlpath: https://researchworkspace.com/files/39888023/kbay_odv.txt
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -131,7 +131,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(dde4741993d8b670)}'
+      - - '{data(92b2ddff940e935a)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -142,7 +142,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(e3ab9c87b0d74109)}'
+        - datetime: '{data(a398711cad7d1004)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -170,11 +170,11 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
+          - Temperature [C]
+          - Station
+          - Lon
           - Lat
           - Depth
-          - Station
-          - Temperature [C]
-          - Lon
           - datetime
           invert: true
           kind: line
@@ -187,7 +187,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [PSU]
-      urlpath: simplecache://::https://researchworkspace.com/files/39888023/kbay_odv.txt
+      urlpath: https://researchworkspace.com/files/39888023/kbay_odv.txt
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -200,7 +200,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(dde4741993d8b670)}'
+      - - '{data(92b2ddff940e935a)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -211,7 +211,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(e3ab9c87b0d74109)}'
+        - datetime: '{data(a398711cad7d1004)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -239,11 +239,11 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
+          - Temperature [C]
+          - Station
+          - Lon
           - Lat
           - Depth
-          - Station
-          - Temperature [C]
-          - Lon
           - datetime
           invert: true
           kind: line
@@ -256,7 +256,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [PSU]
-      urlpath: simplecache://::https://researchworkspace.com/files/39888023/kbay_odv.txt
+      urlpath: https://researchworkspace.com/files/39888023/kbay_odv.txt
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -269,7 +269,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(dde4741993d8b670)}'
+      - - '{data(92b2ddff940e935a)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -280,7 +280,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(e3ab9c87b0d74109)}'
+        - datetime: '{data(a398711cad7d1004)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -308,11 +308,11 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
+          - Temperature [C]
+          - Station
+          - Lon
           - Lat
           - Depth
-          - Station
-          - Temperature [C]
-          - Lon
           - datetime
           invert: true
           kind: line
@@ -325,7 +325,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [PSU]
-      urlpath: simplecache://::https://researchworkspace.com/files/39888023/kbay_odv.txt
+      urlpath: https://researchworkspace.com/files/39888023/kbay_odv.txt
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -338,7 +338,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(dde4741993d8b670)}'
+      - - '{data(92b2ddff940e935a)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -349,7 +349,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(e3ab9c87b0d74109)}'
+        - datetime: '{data(a398711cad7d1004)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -377,11 +377,11 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
+          - Temperature [C]
+          - Station
+          - Lon
           - Lat
           - Depth
-          - Station
-          - Temperature [C]
-          - Lon
           - datetime
           invert: true
           kind: line
@@ -394,7 +394,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [PSU]
-      urlpath: simplecache://::https://researchworkspace.com/files/39888023/kbay_odv.txt
+      urlpath: https://researchworkspace.com/files/39888023/kbay_odv.txt
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -407,7 +407,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(dde4741993d8b670)}'
+      - - '{data(92b2ddff940e935a)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -418,7 +418,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(e3ab9c87b0d74109)}'
+        - datetime: '{data(a398711cad7d1004)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -446,11 +446,11 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
+          - Temperature [C]
+          - Station
+          - Lon
           - Lat
           - Depth
-          - Station
-          - Temperature [C]
-          - Lon
           - datetime
           invert: true
           kind: line
@@ -463,7 +463,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [PSU]
-      urlpath: simplecache://::https://researchworkspace.com/files/39888023/kbay_odv.txt
+      urlpath: https://researchworkspace.com/files/39888023/kbay_odv.txt
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -476,7 +476,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(dde4741993d8b670)}'
+      - - '{data(92b2ddff940e935a)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -487,7 +487,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(e3ab9c87b0d74109)}'
+        - datetime: '{data(a398711cad7d1004)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -515,11 +515,11 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
+          - Temperature [C]
+          - Station
+          - Lon
           - Lat
           - Depth
-          - Station
-          - Temperature [C]
-          - Lon
           - datetime
           invert: true
           kind: line
@@ -532,7 +532,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [PSU]
-      urlpath: simplecache://::https://researchworkspace.com/files/39888023/kbay_odv.txt
+      urlpath: https://researchworkspace.com/files/39888023/kbay_odv.txt
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -545,7 +545,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(dde4741993d8b670)}'
+      - - '{data(92b2ddff940e935a)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -556,7 +556,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(e3ab9c87b0d74109)}'
+        - datetime: '{data(a398711cad7d1004)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -584,11 +584,11 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
+          - Temperature [C]
+          - Station
+          - Lon
           - Lat
           - Depth
-          - Station
-          - Temperature [C]
-          - Lon
           - datetime
           invert: true
           kind: line
@@ -601,7 +601,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [PSU]
-      urlpath: simplecache://::https://researchworkspace.com/files/39888023/kbay_odv.txt
+      urlpath: https://researchworkspace.com/files/39888023/kbay_odv.txt
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -614,7 +614,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(dde4741993d8b670)}'
+      - - '{data(92b2ddff940e935a)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -625,7 +625,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(e3ab9c87b0d74109)}'
+        - datetime: '{data(a398711cad7d1004)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -653,11 +653,11 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
+          - Temperature [C]
+          - Station
+          - Lon
           - Lat
           - Depth
-          - Station
-          - Temperature [C]
-          - Lon
           - datetime
           invert: true
           kind: line
@@ -670,7 +670,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [PSU]
-      urlpath: simplecache://::https://researchworkspace.com/files/39888023/kbay_odv.txt
+      urlpath: https://researchworkspace.com/files/39888023/kbay_odv.txt
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -683,7 +683,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(dde4741993d8b670)}'
+      - - '{data(92b2ddff940e935a)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -694,7 +694,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(e3ab9c87b0d74109)}'
+        - datetime: '{data(a398711cad7d1004)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -722,11 +722,11 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
+          - Temperature [C]
+          - Station
+          - Lon
           - Lat
           - Depth
-          - Station
-          - Temperature [C]
-          - Lon
           - datetime
           invert: true
           kind: line
@@ -739,7 +739,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [PSU]
-      urlpath: simplecache://::https://researchworkspace.com/files/39888023/kbay_odv.txt
+      urlpath: https://researchworkspace.com/files/39888023/kbay_odv.txt
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -752,7 +752,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(dde4741993d8b670)}'
+      - - '{data(92b2ddff940e935a)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -763,7 +763,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(e3ab9c87b0d74109)}'
+        - datetime: '{data(a398711cad7d1004)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -791,11 +791,11 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
+          - Temperature [C]
+          - Station
+          - Lon
           - Lat
           - Depth
-          - Station
-          - Temperature [C]
-          - Lon
           - datetime
           invert: true
           kind: line
@@ -808,7 +808,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [PSU]
-      urlpath: simplecache://::https://researchworkspace.com/files/39888023/kbay_odv.txt
+      urlpath: https://researchworkspace.com/files/39888023/kbay_odv.txt
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -821,7 +821,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(dde4741993d8b670)}'
+      - - '{data(92b2ddff940e935a)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -832,7 +832,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(e3ab9c87b0d74109)}'
+        - datetime: '{data(a398711cad7d1004)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -860,11 +860,11 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
+          - Temperature [C]
+          - Station
+          - Lon
           - Lat
           - Depth
-          - Station
-          - Temperature [C]
-          - Lon
           - datetime
           invert: true
           kind: line
@@ -877,7 +877,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [PSU]
-      urlpath: simplecache://::https://researchworkspace.com/files/39888023/kbay_odv.txt
+      urlpath: https://researchworkspace.com/files/39888023/kbay_odv.txt
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -890,7 +890,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(dde4741993d8b670)}'
+      - - '{data(92b2ddff940e935a)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -901,7 +901,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(e3ab9c87b0d74109)}'
+        - datetime: '{data(a398711cad7d1004)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -929,11 +929,11 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
+          - Temperature [C]
+          - Station
+          - Lon
           - Lat
           - Depth
-          - Station
-          - Temperature [C]
-          - Lon
           - datetime
           invert: true
           kind: line
@@ -946,7 +946,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [PSU]
-      urlpath: simplecache://::https://researchworkspace.com/files/39888023/kbay_odv.txt
+      urlpath: https://researchworkspace.com/files/39888023/kbay_odv.txt
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -959,7 +959,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(dde4741993d8b670)}'
+      - - '{data(92b2ddff940e935a)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -970,7 +970,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(e3ab9c87b0d74109)}'
+        - datetime: '{data(a398711cad7d1004)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -998,11 +998,11 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
+          - Temperature [C]
+          - Station
+          - Lon
           - Lat
           - Depth
-          - Station
-          - Temperature [C]
-          - Lon
           - datetime
           invert: true
           kind: line
@@ -1015,7 +1015,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [PSU]
-      urlpath: simplecache://::https://researchworkspace.com/files/39888023/kbay_odv.txt
+      urlpath: https://researchworkspace.com/files/39888023/kbay_odv.txt
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -1028,7 +1028,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(dde4741993d8b670)}'
+      - - '{data(92b2ddff940e935a)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -1039,7 +1039,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(e3ab9c87b0d74109)}'
+        - datetime: '{data(a398711cad7d1004)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -1067,11 +1067,11 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
+          - Temperature [C]
+          - Station
+          - Lon
           - Lat
           - Depth
-          - Station
-          - Temperature [C]
-          - Lon
           - datetime
           invert: true
           kind: line
@@ -1084,7 +1084,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [PSU]
-      urlpath: simplecache://::https://researchworkspace.com/files/39888023/kbay_odv.txt
+      urlpath: https://researchworkspace.com/files/39888023/kbay_odv.txt
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -1097,7 +1097,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(dde4741993d8b670)}'
+      - - '{data(92b2ddff940e935a)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -1108,7 +1108,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(e3ab9c87b0d74109)}'
+        - datetime: '{data(a398711cad7d1004)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -1136,11 +1136,11 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
+          - Temperature [C]
+          - Station
+          - Lon
           - Lat
           - Depth
-          - Station
-          - Temperature [C]
-          - Lon
           - datetime
           invert: true
           kind: line
@@ -1153,7 +1153,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [PSU]
-      urlpath: simplecache://::https://researchworkspace.com/files/39888023/kbay_odv.txt
+      urlpath: https://researchworkspace.com/files/39888023/kbay_odv.txt
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -1166,7 +1166,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(dde4741993d8b670)}'
+      - - '{data(92b2ddff940e935a)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -1177,7 +1177,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(e3ab9c87b0d74109)}'
+        - datetime: '{data(a398711cad7d1004)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -1205,11 +1205,11 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
+          - Temperature [C]
+          - Station
+          - Lon
           - Lat
           - Depth
-          - Station
-          - Temperature [C]
-          - Lon
           - datetime
           invert: true
           kind: line
@@ -1222,7 +1222,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [PSU]
-      urlpath: simplecache://::https://researchworkspace.com/files/39888023/kbay_odv.txt
+      urlpath: https://researchworkspace.com/files/39888023/kbay_odv.txt
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -1235,7 +1235,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(dde4741993d8b670)}'
+      - - '{data(92b2ddff940e935a)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -1246,7 +1246,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(e3ab9c87b0d74109)}'
+        - datetime: '{data(a398711cad7d1004)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -1274,11 +1274,11 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
+          - Temperature [C]
+          - Station
+          - Lon
           - Lat
           - Depth
-          - Station
-          - Temperature [C]
-          - Lon
           - datetime
           invert: true
           kind: line
@@ -1291,7 +1291,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [PSU]
-      urlpath: simplecache://::https://researchworkspace.com/files/39888023/kbay_odv.txt
+      urlpath: https://researchworkspace.com/files/39888023/kbay_odv.txt
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -1304,7 +1304,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(dde4741993d8b670)}'
+      - - '{data(92b2ddff940e935a)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -1315,7 +1315,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(e3ab9c87b0d74109)}'
+        - datetime: '{data(a398711cad7d1004)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -1343,11 +1343,11 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
+          - Temperature [C]
+          - Station
+          - Lon
           - Lat
           - Depth
-          - Station
-          - Temperature [C]
-          - Lon
           - datetime
           invert: true
           kind: line
@@ -1360,7 +1360,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [PSU]
-      urlpath: simplecache://::https://researchworkspace.com/files/39888023/kbay_odv.txt
+      urlpath: https://researchworkspace.com/files/39888023/kbay_odv.txt
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -1373,7 +1373,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(dde4741993d8b670)}'
+      - - '{data(92b2ddff940e935a)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -1384,7 +1384,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(e3ab9c87b0d74109)}'
+        - datetime: '{data(a398711cad7d1004)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -1412,11 +1412,11 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
+          - Temperature [C]
+          - Station
+          - Lon
           - Lat
           - Depth
-          - Station
-          - Temperature [C]
-          - Lon
           - datetime
           invert: true
           kind: line
@@ -1429,7 +1429,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [PSU]
-      urlpath: simplecache://::https://researchworkspace.com/files/39888023/kbay_odv.txt
+      urlpath: https://researchworkspace.com/files/39888023/kbay_odv.txt
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -1442,7 +1442,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(dde4741993d8b670)}'
+      - - '{data(92b2ddff940e935a)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -1453,7 +1453,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(e3ab9c87b0d74109)}'
+        - datetime: '{data(a398711cad7d1004)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -1481,11 +1481,11 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
+          - Temperature [C]
+          - Station
+          - Lon
           - Lat
           - Depth
-          - Station
-          - Temperature [C]
-          - Lon
           - datetime
           invert: true
           kind: line
@@ -1498,7 +1498,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [PSU]
-      urlpath: simplecache://::https://researchworkspace.com/files/39888023/kbay_odv.txt
+      urlpath: https://researchworkspace.com/files/39888023/kbay_odv.txt
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -1511,7 +1511,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(dde4741993d8b670)}'
+      - - '{data(92b2ddff940e935a)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -1522,7 +1522,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(e3ab9c87b0d74109)}'
+        - datetime: '{data(a398711cad7d1004)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -1550,11 +1550,11 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
+          - Temperature [C]
+          - Station
+          - Lon
           - Lat
           - Depth
-          - Station
-          - Temperature [C]
-          - Lon
           - datetime
           invert: true
           kind: line
@@ -1567,7 +1567,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [PSU]
-      urlpath: simplecache://::https://researchworkspace.com/files/39888023/kbay_odv.txt
+      urlpath: https://researchworkspace.com/files/39888023/kbay_odv.txt
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -1580,7 +1580,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(dde4741993d8b670)}'
+      - - '{data(92b2ddff940e935a)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -1591,7 +1591,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(e3ab9c87b0d74109)}'
+        - datetime: '{data(a398711cad7d1004)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -1619,11 +1619,11 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
+          - Temperature [C]
+          - Station
+          - Lon
           - Lat
           - Depth
-          - Station
-          - Temperature [C]
-          - Lon
           - datetime
           invert: true
           kind: line
@@ -1636,7 +1636,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [PSU]
-      urlpath: simplecache://::https://researchworkspace.com/files/39888023/kbay_odv.txt
+      urlpath: https://researchworkspace.com/files/39888023/kbay_odv.txt
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -1649,7 +1649,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(dde4741993d8b670)}'
+      - - '{data(92b2ddff940e935a)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -1660,7 +1660,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(e3ab9c87b0d74109)}'
+        - datetime: '{data(a398711cad7d1004)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -1688,11 +1688,11 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
+          - Temperature [C]
+          - Station
+          - Lon
           - Lat
           - Depth
-          - Station
-          - Temperature [C]
-          - Lon
           - datetime
           invert: true
           kind: line
@@ -1705,7 +1705,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [PSU]
-      urlpath: simplecache://::https://researchworkspace.com/files/39888023/kbay_odv.txt
+      urlpath: https://researchworkspace.com/files/39888023/kbay_odv.txt
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -1718,7 +1718,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(dde4741993d8b670)}'
+      - - '{data(92b2ddff940e935a)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -1729,7 +1729,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(e3ab9c87b0d74109)}'
+        - datetime: '{data(a398711cad7d1004)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -1757,11 +1757,11 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
+          - Temperature [C]
+          - Station
+          - Lon
           - Lat
           - Depth
-          - Station
-          - Temperature [C]
-          - Lon
           - datetime
           invert: true
           kind: line
@@ -1774,7 +1774,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [PSU]
-      urlpath: simplecache://::https://researchworkspace.com/files/39888023/kbay_odv.txt
+      urlpath: https://researchworkspace.com/files/39888023/kbay_odv.txt
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -1787,7 +1787,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(dde4741993d8b670)}'
+      - - '{data(92b2ddff940e935a)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -1798,7 +1798,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(e3ab9c87b0d74109)}'
+        - datetime: '{data(a398711cad7d1004)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -1826,11 +1826,11 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
+          - Temperature [C]
+          - Station
+          - Lon
           - Lat
           - Depth
-          - Station
-          - Temperature [C]
-          - Lon
           - datetime
           invert: true
           kind: line
@@ -1843,7 +1843,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [PSU]
-      urlpath: simplecache://::https://researchworkspace.com/files/39888023/kbay_odv.txt
+      urlpath: https://researchworkspace.com/files/39888023/kbay_odv.txt
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -1856,7 +1856,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(dde4741993d8b670)}'
+      - - '{data(92b2ddff940e935a)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -1867,7 +1867,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(e3ab9c87b0d74109)}'
+        - datetime: '{data(a398711cad7d1004)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -1895,11 +1895,11 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
+          - Temperature [C]
+          - Station
+          - Lon
           - Lat
           - Depth
-          - Station
-          - Temperature [C]
-          - Lon
           - datetime
           invert: true
           kind: line
@@ -1912,7 +1912,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [PSU]
-      urlpath: simplecache://::https://researchworkspace.com/files/39888023/kbay_odv.txt
+      urlpath: https://researchworkspace.com/files/39888023/kbay_odv.txt
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -1925,7 +1925,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(dde4741993d8b670)}'
+      - - '{data(92b2ddff940e935a)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -1936,7 +1936,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(e3ab9c87b0d74109)}'
+        - datetime: '{data(a398711cad7d1004)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -1964,11 +1964,11 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
+          - Temperature [C]
+          - Station
+          - Lon
           - Lat
           - Depth
-          - Station
-          - Temperature [C]
-          - Lon
           - datetime
           invert: true
           kind: line
@@ -1981,7 +1981,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [PSU]
-      urlpath: simplecache://::https://researchworkspace.com/files/39888023/kbay_odv.txt
+      urlpath: https://researchworkspace.com/files/39888023/kbay_odv.txt
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -1994,7 +1994,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(dde4741993d8b670)}'
+      - - '{data(92b2ddff940e935a)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -2005,7 +2005,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(e3ab9c87b0d74109)}'
+        - datetime: '{data(a398711cad7d1004)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -2033,11 +2033,11 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
+          - Temperature [C]
+          - Station
+          - Lon
           - Lat
           - Depth
-          - Station
-          - Temperature [C]
-          - Lon
           - datetime
           invert: true
           kind: line
@@ -2050,7 +2050,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [PSU]
-      urlpath: simplecache://::https://researchworkspace.com/files/39888023/kbay_odv.txt
+      urlpath: https://researchworkspace.com/files/39888023/kbay_odv.txt
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -2063,7 +2063,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(dde4741993d8b670)}'
+      - - '{data(92b2ddff940e935a)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -2074,7 +2074,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(e3ab9c87b0d74109)}'
+        - datetime: '{data(a398711cad7d1004)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -2102,11 +2102,11 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
+          - Temperature [C]
+          - Station
+          - Lon
           - Lat
           - Depth
-          - Station
-          - Temperature [C]
-          - Lon
           - datetime
           invert: true
           kind: line
@@ -2119,7 +2119,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [PSU]
-      urlpath: simplecache://::https://researchworkspace.com/files/39888023/kbay_odv.txt
+      urlpath: https://researchworkspace.com/files/39888023/kbay_odv.txt
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -2132,7 +2132,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(dde4741993d8b670)}'
+      - - '{data(92b2ddff940e935a)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -2143,7 +2143,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(e3ab9c87b0d74109)}'
+        - datetime: '{data(a398711cad7d1004)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -2171,11 +2171,11 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
+          - Temperature [C]
+          - Station
+          - Lon
           - Lat
           - Depth
-          - Station
-          - Temperature [C]
-          - Lon
           - datetime
           invert: true
           kind: line
@@ -2188,7 +2188,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [PSU]
-      urlpath: simplecache://::https://researchworkspace.com/files/39888023/kbay_odv.txt
+      urlpath: https://researchworkspace.com/files/39888023/kbay_odv.txt
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -2201,7 +2201,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(dde4741993d8b670)}'
+      - - '{data(92b2ddff940e935a)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -2212,7 +2212,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(e3ab9c87b0d74109)}'
+        - datetime: '{data(a398711cad7d1004)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -2240,11 +2240,11 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
+          - Temperature [C]
+          - Station
+          - Lon
           - Lat
           - Depth
-          - Station
-          - Temperature [C]
-          - Lon
           - datetime
           invert: true
           kind: line
@@ -2257,7 +2257,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [PSU]
-      urlpath: simplecache://::https://researchworkspace.com/files/39888023/kbay_odv.txt
+      urlpath: https://researchworkspace.com/files/39888023/kbay_odv.txt
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -2270,7 +2270,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(dde4741993d8b670)}'
+      - - '{data(92b2ddff940e935a)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -2281,7 +2281,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(e3ab9c87b0d74109)}'
+        - datetime: '{data(a398711cad7d1004)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -2309,11 +2309,11 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
+          - Temperature [C]
+          - Station
+          - Lon
           - Lat
           - Depth
-          - Station
-          - Temperature [C]
-          - Lon
           - datetime
           invert: true
           kind: line
@@ -2326,7 +2326,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [PSU]
-      urlpath: simplecache://::https://researchworkspace.com/files/39888023/kbay_odv.txt
+      urlpath: https://researchworkspace.com/files/39888023/kbay_odv.txt
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -2339,7 +2339,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(dde4741993d8b670)}'
+      - - '{data(92b2ddff940e935a)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -2350,7 +2350,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(e3ab9c87b0d74109)}'
+        - datetime: '{data(a398711cad7d1004)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -2378,11 +2378,11 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
+          - Temperature [C]
+          - Station
+          - Lon
           - Lat
           - Depth
-          - Station
-          - Temperature [C]
-          - Lon
           - datetime
           invert: true
           kind: line
@@ -2395,7 +2395,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [PSU]
-      urlpath: simplecache://::https://researchworkspace.com/files/39888023/kbay_odv.txt
+      urlpath: https://researchworkspace.com/files/39888023/kbay_odv.txt
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -2408,7 +2408,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(dde4741993d8b670)}'
+      - - '{data(92b2ddff940e935a)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -2419,7 +2419,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(e3ab9c87b0d74109)}'
+        - datetime: '{data(a398711cad7d1004)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -2447,11 +2447,11 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
+          - Temperature [C]
+          - Station
+          - Lon
           - Lat
           - Depth
-          - Station
-          - Temperature [C]
-          - Lon
           - datetime
           invert: true
           kind: line
@@ -2464,7 +2464,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [PSU]
-      urlpath: simplecache://::https://researchworkspace.com/files/39888023/kbay_odv.txt
+      urlpath: https://researchworkspace.com/files/39888023/kbay_odv.txt
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -2477,7 +2477,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(dde4741993d8b670)}'
+      - - '{data(92b2ddff940e935a)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -2488,7 +2488,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(e3ab9c87b0d74109)}'
+        - datetime: '{data(a398711cad7d1004)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -2516,11 +2516,11 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
+          - Temperature [C]
+          - Station
+          - Lon
           - Lat
           - Depth
-          - Station
-          - Temperature [C]
-          - Lon
           - datetime
           invert: true
           kind: line
@@ -2533,7 +2533,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [PSU]
-      urlpath: simplecache://::https://researchworkspace.com/files/39888023/kbay_odv.txt
+      urlpath: https://researchworkspace.com/files/39888023/kbay_odv.txt
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -2546,7 +2546,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(dde4741993d8b670)}'
+      - - '{data(92b2ddff940e935a)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -2557,7 +2557,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(e3ab9c87b0d74109)}'
+        - datetime: '{data(a398711cad7d1004)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -2585,11 +2585,11 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
+          - Temperature [C]
+          - Station
+          - Lon
           - Lat
           - Depth
-          - Station
-          - Temperature [C]
-          - Lon
           - datetime
           invert: true
           kind: line
@@ -2602,7 +2602,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [PSU]
-      urlpath: simplecache://::https://researchworkspace.com/files/39888023/kbay_odv.txt
+      urlpath: https://researchworkspace.com/files/39888023/kbay_odv.txt
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -2615,7 +2615,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(dde4741993d8b670)}'
+      - - '{data(92b2ddff940e935a)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -2626,7 +2626,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(e3ab9c87b0d74109)}'
+        - datetime: '{data(a398711cad7d1004)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -2654,11 +2654,11 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
+          - Temperature [C]
+          - Station
+          - Lon
           - Lat
           - Depth
-          - Station
-          - Temperature [C]
-          - Lon
           - datetime
           invert: true
           kind: line
@@ -2671,7 +2671,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [PSU]
-      urlpath: simplecache://::https://researchworkspace.com/files/39888023/kbay_odv.txt
+      urlpath: https://researchworkspace.com/files/39888023/kbay_odv.txt
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -2684,7 +2684,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(dde4741993d8b670)}'
+      - - '{data(92b2ddff940e935a)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -2695,7 +2695,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(e3ab9c87b0d74109)}'
+        - datetime: '{data(a398711cad7d1004)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -2723,11 +2723,11 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
+          - Temperature [C]
+          - Station
+          - Lon
           - Lat
           - Depth
-          - Station
-          - Temperature [C]
-          - Lon
           - datetime
           invert: true
           kind: line
@@ -2740,7 +2740,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [PSU]
-      urlpath: simplecache://::https://researchworkspace.com/files/39888023/kbay_odv.txt
+      urlpath: https://researchworkspace.com/files/39888023/kbay_odv.txt
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -2753,7 +2753,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(dde4741993d8b670)}'
+      - - '{data(92b2ddff940e935a)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -2764,7 +2764,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(e3ab9c87b0d74109)}'
+        - datetime: '{data(a398711cad7d1004)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -2792,11 +2792,11 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
+          - Temperature [C]
+          - Station
+          - Lon
           - Lat
           - Depth
-          - Station
-          - Temperature [C]
-          - Lon
           - datetime
           invert: true
           kind: line
@@ -2809,7 +2809,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [PSU]
-      urlpath: simplecache://::https://researchworkspace.com/files/39888023/kbay_odv.txt
+      urlpath: https://researchworkspace.com/files/39888023/kbay_odv.txt
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -2822,7 +2822,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(dde4741993d8b670)}'
+      - - '{data(92b2ddff940e935a)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -2833,7 +2833,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(e3ab9c87b0d74109)}'
+        - datetime: '{data(a398711cad7d1004)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -2861,11 +2861,11 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
+          - Temperature [C]
+          - Station
+          - Lon
           - Lat
           - Depth
-          - Station
-          - Temperature [C]
-          - Lon
           - datetime
           invert: true
           kind: line
@@ -2878,7 +2878,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [PSU]
-      urlpath: simplecache://::https://researchworkspace.com/files/39888023/kbay_odv.txt
+      urlpath: https://researchworkspace.com/files/39888023/kbay_odv.txt
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -2891,7 +2891,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(dde4741993d8b670)}'
+      - - '{data(92b2ddff940e935a)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -2902,7 +2902,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(e3ab9c87b0d74109)}'
+        - datetime: '{data(a398711cad7d1004)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -2930,11 +2930,11 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
+          - Temperature [C]
+          - Station
+          - Lon
           - Lat
           - Depth
-          - Station
-          - Temperature [C]
-          - Lon
           - datetime
           invert: true
           kind: line
@@ -2947,7 +2947,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [PSU]
-      urlpath: simplecache://::https://researchworkspace.com/files/39888023/kbay_odv.txt
+      urlpath: https://researchworkspace.com/files/39888023/kbay_odv.txt
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -2960,7 +2960,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(dde4741993d8b670)}'
+      - - '{data(92b2ddff940e935a)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -2971,7 +2971,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(e3ab9c87b0d74109)}'
+        - datetime: '{data(a398711cad7d1004)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -2999,11 +2999,11 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
+          - Temperature [C]
+          - Station
+          - Lon
           - Lat
           - Depth
-          - Station
-          - Temperature [C]
-          - Lon
           - datetime
           invert: true
           kind: line
@@ -3016,7 +3016,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [PSU]
-      urlpath: simplecache://::https://researchworkspace.com/files/39888023/kbay_odv.txt
+      urlpath: https://researchworkspace.com/files/39888023/kbay_odv.txt
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -3029,7 +3029,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(dde4741993d8b670)}'
+      - - '{data(92b2ddff940e935a)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -3040,7 +3040,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(e3ab9c87b0d74109)}'
+        - datetime: '{data(a398711cad7d1004)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -3068,11 +3068,11 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
+          - Temperature [C]
+          - Station
+          - Lon
           - Lat
           - Depth
-          - Station
-          - Temperature [C]
-          - Lon
           - datetime
           invert: true
           kind: line
@@ -3085,7 +3085,7 @@ entries:
           y:
           - Temperature [C]
           - Salinity [PSU]
-      urlpath: simplecache://::https://researchworkspace.com/files/39888023/kbay_odv.txt
+      urlpath: https://researchworkspace.com/files/39888023/kbay_odv.txt
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -3098,7 +3098,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(dde4741993d8b670)}'
+      - - '{data(92b2ddff940e935a)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -3109,7 +3109,7 @@ entries:
           method_name: rename
       - - '{func(intake.readers.transform:Method)}'
         - []
-        - datetime: '{data(e3ab9c87b0d74109)}'
+        - datetime: '{data(a398711cad7d1004)}'
           method_name: assign
       - - '{func(intake.readers.transform:Method)}'
         - []
@@ -3137,11 +3137,11 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
+          - Temperature [C]
+          - Station
+          - Lon
           - Lat
           - Depth
-          - Station
-          - Temperature [C]
-          - Lon
           - datetime
           invert: true
           kind: line
@@ -3154,14 +3154,14 @@ entries:
           y:
           - Temperature [C]
           - Salinity [PSU]
-      urlpath: simplecache://::https://researchworkspace.com/files/39888023/kbay_odv.txt
+      urlpath: https://researchworkspace.com/files/39888023/kbay_odv.txt
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
-  dde4741993d8b670:
+  92b2ddff940e935a:
     kwargs:
       args:
-      - '{data(53df5960e816564f)}'
+      - '{data(5e3dbad8ed8be69e)}'
       dtype:
         Station: '{func(builtins:str)}'
         hh:mm: '{func(builtins:str)}'
@@ -3189,10 +3189,6 @@ entries:
       - Sigma-theta
       - Decent Rate
       sep: "\t"
-      storage_options:
-        simplecache:
-          cache_storage: /home/kristen/.cache/cook-inlet-catalogs
-          same_names: true
       usecols:
       - Cruise
       - Station
@@ -3215,14 +3211,14 @@ entries:
     output_instance: pandas:DataFrame
     reader: intake.readers.readers:PandasCSV
     user_parameters: {}
-  e3ab9c87b0d74109:
+  a398711cad7d1004:
     kwargs:
       out_instances:
       - pandas:DataFrame
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(dde4741993d8b670)}'
+      - - '{data(92b2ddff940e935a)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -3243,8 +3239,8 @@ metadata:
   header_names: null
   included: true
   key_variables:
-  - temp
   - salt
+  - temp
   map:
     c: station
     clabel: ''

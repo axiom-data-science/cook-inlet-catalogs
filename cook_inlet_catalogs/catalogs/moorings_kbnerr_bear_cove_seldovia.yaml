@@ -6,10 +6,7 @@ data:
   cdmo_nerrs_bearcove:
     datatype: intake_erddap.erddap:TableDAPReader
     kwargs:
-      cache_kwargs:
-        simplecache:
-          cache_storage: /home/kristen/.cache/cook-inlet-catalogs
-          same_names: true
+      cache_kwargs: null
       constraints:
         time>=: '1999-01-01T00:00:00Z'
       dataset_id: cdmo_nerrs_bearcove
@@ -54,13 +51,13 @@ data:
         data:
           height: 300
           hover_cols:
-          - longitude
-          - sea_water_temperature
-          - station
-          - sea_water_practical_salinity
-          - latitude
           - time
           - z
+          - sea_water_temperature
+          - station
+          - latitude
+          - sea_water_practical_salinity
+          - longitude
           kind: line
           legend: top
           shared_axes: false
@@ -82,10 +79,7 @@ data:
   nerrs_kacsdwq:
     datatype: intake_erddap.erddap:TableDAPReader
     kwargs:
-      cache_kwargs:
-        simplecache:
-          cache_storage: /home/kristen/.cache/cook-inlet-catalogs
-          same_names: true
+      cache_kwargs: null
       constraints:
         time>=: '1999-01-01T00:00:00Z'
       dataset_id: nerrs_kacsdwq
@@ -123,7 +117,7 @@ data:
       maptype: point
       maxLatitude: 59.44099
       maxLongitude: -151.72096
-      maxTime: '2025-10-23T16:45:00Z'
+      maxTime: '2025-10-23T18:45:00Z'
       minLatitude: 59.44099
       minLongitude: -151.72096
       minTime: '2004-01-01T09:00:00Z'
@@ -131,14 +125,14 @@ data:
         data:
           height: 300
           hover_cols:
-          - longitude
-          - sea_water_temperature
-          - station
-          - sea_water_practical_salinity
-          - latitude
           - time
           - z
+          - sea_water_temperature
+          - station
+          - latitude
+          - sea_water_practical_salinity
           - water_surface_above_station_datum
+          - longitude
           kind: line
           legend: top
           shared_axes: false
@@ -162,10 +156,7 @@ data:
   nerrs_kacsswq:
     datatype: intake_erddap.erddap:TableDAPReader
     kwargs:
-      cache_kwargs:
-        simplecache:
-          cache_storage: /home/kristen/.cache/cook-inlet-catalogs
-          same_names: true
+      cache_kwargs: null
       constraints:
         time>=: '1999-01-01T00:00:00Z'
       dataset_id: nerrs_kacsswq
@@ -211,14 +202,14 @@ data:
         data:
           height: 300
           hover_cols:
-          - longitude
-          - sea_water_temperature
-          - station
-          - sea_water_practical_salinity
-          - latitude
           - time
           - z
+          - sea_water_temperature
+          - station
+          - latitude
+          - sea_water_practical_salinity
           - water_surface_above_station_datum
+          - longitude
           kind: line
           legend: top
           shared_axes: false
@@ -245,8 +236,8 @@ metadata:
   header_names: null
   included: true
   key_variables:
-  - temp
   - salt
+  - temp
   - ssh
   map:
     c: station
@@ -287,7 +278,7 @@ metadata:
   maptype: point
   maxLatitude: 59.7262
   maxLongitude: -151.04865
-  maxTime: '2025-10-23T16:45:00Z'
+  maxTime: '2025-10-23T18:45:00Z'
   minLatitude: 59.44099
   minLongitude: -151.72096
   minTime: '2004-01-01T09:00:00Z'

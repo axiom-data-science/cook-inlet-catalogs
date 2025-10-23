@@ -18,22 +18,18 @@ aliases:
   17: 17
   18: 18
 data:
-  5111e328aec028cc:
+  438f1a6ea286f27c:
     datatype: intake.readers.datatypes:CSV
     kwargs:
       storage_options: null
-      url: simplecache://::https://researchworkspace.com/files/45150532/drifters_combined.csv
+      url: https://researchworkspace.com/files/45150532/drifters_combined.csv
     metadata: {}
     user_parameters: {}
 entries:
-  6bc624b195d65869:
+  260d89a3c9c0dc52:
     kwargs:
       args:
-      - '{data(5111e328aec028cc)}'
-      storage_options:
-        simplecache:
-          cache_storage: /home/kristen/.cache/cook-inlet-catalogs
-          same_names: true
+      - '{data(438f1a6ea286f27c)}'
     metadata: {}
     output_instance: pandas:DataFrame
     reader: intake.readers.readers:PandasCSV
@@ -46,7 +42,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(6bc624b195d65869)}'
+      - - '{data(260d89a3c9c0dc52)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -82,11 +78,11 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - drifter
-          - depth
-          - longitude
           - time
+          - depth
+          - drifter
           - latitude
+          - longitude
           kind: points
           legend: false
           s: null
@@ -98,7 +94,7 @@ entries:
           xlabel: Longitude [W]
           y: latitude
           ylabel: Latitude [N]
-      urlpath: simplecache://::https://researchworkspace.com/files/45150532/drifters_combined.csv
+      urlpath: https://researchworkspace.com/files/45150532/drifters_combined.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -110,7 +106,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(6bc624b195d65869)}'
+      - - '{data(260d89a3c9c0dc52)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -146,11 +142,11 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - drifter
-          - depth
-          - longitude
           - time
+          - depth
+          - drifter
           - latitude
+          - longitude
           kind: points
           legend: false
           s: null
@@ -162,7 +158,7 @@ entries:
           xlabel: Longitude [W]
           y: latitude
           ylabel: Latitude [N]
-      urlpath: simplecache://::https://researchworkspace.com/files/45150532/drifters_combined.csv
+      urlpath: https://researchworkspace.com/files/45150532/drifters_combined.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -174,7 +170,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(6bc624b195d65869)}'
+      - - '{data(260d89a3c9c0dc52)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -210,11 +206,11 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - drifter
-          - depth
-          - longitude
           - time
+          - depth
+          - drifter
           - latitude
+          - longitude
           kind: points
           legend: false
           s: null
@@ -226,7 +222,7 @@ entries:
           xlabel: Longitude [W]
           y: latitude
           ylabel: Latitude [N]
-      urlpath: simplecache://::https://researchworkspace.com/files/45150532/drifters_combined.csv
+      urlpath: https://researchworkspace.com/files/45150532/drifters_combined.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -238,7 +234,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(6bc624b195d65869)}'
+      - - '{data(260d89a3c9c0dc52)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -274,11 +270,11 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - drifter
-          - depth
-          - longitude
           - time
+          - depth
+          - drifter
           - latitude
+          - longitude
           kind: points
           legend: false
           s: null
@@ -290,7 +286,7 @@ entries:
           xlabel: Longitude [W]
           y: latitude
           ylabel: Latitude [N]
-      urlpath: simplecache://::https://researchworkspace.com/files/45150532/drifters_combined.csv
+      urlpath: https://researchworkspace.com/files/45150532/drifters_combined.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -302,7 +298,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(6bc624b195d65869)}'
+      - - '{data(260d89a3c9c0dc52)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -338,11 +334,11 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - drifter
-          - depth
-          - longitude
           - time
+          - depth
+          - drifter
           - latitude
+          - longitude
           kind: points
           legend: false
           s: null
@@ -354,7 +350,7 @@ entries:
           xlabel: Longitude [W]
           y: latitude
           ylabel: Latitude [N]
-      urlpath: simplecache://::https://researchworkspace.com/files/45150532/drifters_combined.csv
+      urlpath: https://researchworkspace.com/files/45150532/drifters_combined.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -366,7 +362,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(6bc624b195d65869)}'
+      - - '{data(260d89a3c9c0dc52)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -402,11 +398,11 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - drifter
-          - depth
-          - longitude
           - time
+          - depth
+          - drifter
           - latitude
+          - longitude
           kind: points
           legend: false
           s: null
@@ -418,7 +414,7 @@ entries:
           xlabel: Longitude [W]
           y: latitude
           ylabel: Latitude [N]
-      urlpath: simplecache://::https://researchworkspace.com/files/45150532/drifters_combined.csv
+      urlpath: https://researchworkspace.com/files/45150532/drifters_combined.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -430,7 +426,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(6bc624b195d65869)}'
+      - - '{data(260d89a3c9c0dc52)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -466,11 +462,11 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - drifter
-          - depth
-          - longitude
           - time
+          - depth
+          - drifter
           - latitude
+          - longitude
           kind: points
           legend: false
           s: null
@@ -482,7 +478,7 @@ entries:
           xlabel: Longitude [W]
           y: latitude
           ylabel: Latitude [N]
-      urlpath: simplecache://::https://researchworkspace.com/files/45150532/drifters_combined.csv
+      urlpath: https://researchworkspace.com/files/45150532/drifters_combined.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -494,7 +490,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(6bc624b195d65869)}'
+      - - '{data(260d89a3c9c0dc52)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -530,11 +526,11 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - drifter
-          - depth
-          - longitude
           - time
+          - depth
+          - drifter
           - latitude
+          - longitude
           kind: points
           legend: false
           s: null
@@ -546,7 +542,7 @@ entries:
           xlabel: Longitude [W]
           y: latitude
           ylabel: Latitude [N]
-      urlpath: simplecache://::https://researchworkspace.com/files/45150532/drifters_combined.csv
+      urlpath: https://researchworkspace.com/files/45150532/drifters_combined.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -558,7 +554,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(6bc624b195d65869)}'
+      - - '{data(260d89a3c9c0dc52)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -594,11 +590,11 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - drifter
-          - depth
-          - longitude
           - time
+          - depth
+          - drifter
           - latitude
+          - longitude
           kind: points
           legend: false
           s: null
@@ -610,7 +606,7 @@ entries:
           xlabel: Longitude [W]
           y: latitude
           ylabel: Latitude [N]
-      urlpath: simplecache://::https://researchworkspace.com/files/45150532/drifters_combined.csv
+      urlpath: https://researchworkspace.com/files/45150532/drifters_combined.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -622,7 +618,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(6bc624b195d65869)}'
+      - - '{data(260d89a3c9c0dc52)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -658,11 +654,11 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - drifter
-          - depth
-          - longitude
           - time
+          - depth
+          - drifter
           - latitude
+          - longitude
           kind: points
           legend: false
           s: null
@@ -674,7 +670,7 @@ entries:
           xlabel: Longitude [W]
           y: latitude
           ylabel: Latitude [N]
-      urlpath: simplecache://::https://researchworkspace.com/files/45150532/drifters_combined.csv
+      urlpath: https://researchworkspace.com/files/45150532/drifters_combined.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -686,7 +682,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(6bc624b195d65869)}'
+      - - '{data(260d89a3c9c0dc52)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -722,11 +718,11 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - drifter
-          - depth
-          - longitude
           - time
+          - depth
+          - drifter
           - latitude
+          - longitude
           kind: points
           legend: false
           s: null
@@ -738,7 +734,7 @@ entries:
           xlabel: Longitude [W]
           y: latitude
           ylabel: Latitude [N]
-      urlpath: simplecache://::https://researchworkspace.com/files/45150532/drifters_combined.csv
+      urlpath: https://researchworkspace.com/files/45150532/drifters_combined.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -750,7 +746,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(6bc624b195d65869)}'
+      - - '{data(260d89a3c9c0dc52)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -786,11 +782,11 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - drifter
-          - depth
-          - longitude
           - time
+          - depth
+          - drifter
           - latitude
+          - longitude
           kind: points
           legend: false
           s: null
@@ -802,7 +798,7 @@ entries:
           xlabel: Longitude [W]
           y: latitude
           ylabel: Latitude [N]
-      urlpath: simplecache://::https://researchworkspace.com/files/45150532/drifters_combined.csv
+      urlpath: https://researchworkspace.com/files/45150532/drifters_combined.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -814,7 +810,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(6bc624b195d65869)}'
+      - - '{data(260d89a3c9c0dc52)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -850,11 +846,11 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - drifter
-          - depth
-          - longitude
           - time
+          - depth
+          - drifter
           - latitude
+          - longitude
           kind: points
           legend: false
           s: null
@@ -866,7 +862,7 @@ entries:
           xlabel: Longitude [W]
           y: latitude
           ylabel: Latitude [N]
-      urlpath: simplecache://::https://researchworkspace.com/files/45150532/drifters_combined.csv
+      urlpath: https://researchworkspace.com/files/45150532/drifters_combined.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -878,7 +874,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(6bc624b195d65869)}'
+      - - '{data(260d89a3c9c0dc52)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -914,11 +910,11 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - drifter
-          - depth
-          - longitude
           - time
+          - depth
+          - drifter
           - latitude
+          - longitude
           kind: points
           legend: false
           s: null
@@ -930,7 +926,7 @@ entries:
           xlabel: Longitude [W]
           y: latitude
           ylabel: Latitude [N]
-      urlpath: simplecache://::https://researchworkspace.com/files/45150532/drifters_combined.csv
+      urlpath: https://researchworkspace.com/files/45150532/drifters_combined.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -942,7 +938,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(6bc624b195d65869)}'
+      - - '{data(260d89a3c9c0dc52)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -978,11 +974,11 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - drifter
-          - depth
-          - longitude
           - time
+          - depth
+          - drifter
           - latitude
+          - longitude
           kind: points
           legend: false
           s: null
@@ -994,7 +990,7 @@ entries:
           xlabel: Longitude [W]
           y: latitude
           ylabel: Latitude [N]
-      urlpath: simplecache://::https://researchworkspace.com/files/45150532/drifters_combined.csv
+      urlpath: https://researchworkspace.com/files/45150532/drifters_combined.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -1006,7 +1002,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(6bc624b195d65869)}'
+      - - '{data(260d89a3c9c0dc52)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -1042,11 +1038,11 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - drifter
-          - depth
-          - longitude
           - time
+          - depth
+          - drifter
           - latitude
+          - longitude
           kind: points
           legend: false
           s: null
@@ -1058,7 +1054,7 @@ entries:
           xlabel: Longitude [W]
           y: latitude
           ylabel: Latitude [N]
-      urlpath: simplecache://::https://researchworkspace.com/files/45150532/drifters_combined.csv
+      urlpath: https://researchworkspace.com/files/45150532/drifters_combined.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -1070,7 +1066,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(6bc624b195d65869)}'
+      - - '{data(260d89a3c9c0dc52)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -1106,11 +1102,11 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - drifter
-          - depth
-          - longitude
           - time
+          - depth
+          - drifter
           - latitude
+          - longitude
           kind: points
           legend: false
           s: null
@@ -1122,7 +1118,7 @@ entries:
           xlabel: Longitude [W]
           y: latitude
           ylabel: Latitude [N]
-      urlpath: simplecache://::https://researchworkspace.com/files/45150532/drifters_combined.csv
+      urlpath: https://researchworkspace.com/files/45150532/drifters_combined.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
@@ -1134,7 +1130,7 @@ entries:
       - pandas:DataFrame
       - pandas:DataFrame
       steps:
-      - - '{data(6bc624b195d65869)}'
+      - - '{data(260d89a3c9c0dc52)}'
         - []
         - {}
       - - '{func(intake.readers.transform:Method)}'
@@ -1170,11 +1166,11 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - drifter
-          - depth
-          - longitude
           - time
+          - depth
+          - drifter
           - latitude
+          - longitude
           kind: points
           legend: false
           s: null
@@ -1186,7 +1182,7 @@ entries:
           xlabel: Longitude [W]
           y: latitude
           ylabel: Latitude [N]
-      urlpath: simplecache://::https://researchworkspace.com/files/45150532/drifters_combined.csv
+      urlpath: https://researchworkspace.com/files/45150532/drifters_combined.csv
     output_instance: pandas:DataFrame
     reader: intake.readers.convert:Pipeline
     user_parameters: {}
