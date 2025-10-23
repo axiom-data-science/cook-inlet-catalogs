@@ -58,10 +58,10 @@ entries:
         data:
           height: 300
           hover_cols:
+          - Temperature
+          - Date UTC
           - Depth
           - longitude_deg
-          - Date UTC
-          - Temperature
           - latitude_deg
           kind: line
           legend: top
@@ -82,10 +82,13 @@ metadata:
   header_names: null
   included: true
   key_variables:
-  - salt
   - temp
+  - salt
   map:
     c: station
+    clabel: ''
+    clim: null
+    cmap: null
     coastline: false
     color: k
     geo: true
@@ -141,19 +144,19 @@ metadata:
 
     Part of the project:
 
-    Seasonality of Boundary Conditions for Cook Inlet, Alaska
+    > Seasonality of Boundary Conditions for Cook Inlet, Alaska
 
-    Steve Okkonen Principal Investigator
+    > Steve Okkonen Principal Investigator
 
-    Co-principal Investigators: Scott Pegau Susan Saupe
+    > Co-principal Investigators: Scott Pegau Susan Saupe
 
-    Final Report
+    > Final Report
 
-    OCS Study MMS 2009-041
+    > OCS Study MMS 2009-041
 
-    August 2009
+    > August 2009
 
-    Report: https://researchworkspace.com/files/39885971/2009_041.pdf
+    > Report: [https://researchworkspace.com/files/39885971/2009_041.pdf](https://researchworkspace.com/files/39885971/2009_041.pdf)
 
 
     <img src="https://user-images.githubusercontent.com/3487237/233167915-c0b2b0e1-151e-4cef-a647-e6311345dbf9.jpg"

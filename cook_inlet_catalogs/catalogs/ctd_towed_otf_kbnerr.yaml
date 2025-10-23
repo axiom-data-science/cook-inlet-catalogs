@@ -287,13 +287,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - lon
-          - temperature
           - date_time
-          - pressure
           - lat
           - station
           - distance [km]
+          - temperature
+          - pressure
+          - lon
           kind: scatter
           shared_axes: false
           title: '2003-07-13 06:50:00'
@@ -307,13 +307,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - lon
-          - temperature
           - date_time
-          - pressure
           - lat
           - station
           - distance [km]
+          - temperature
+          - pressure
+          - lon
           kind: scatter
           shared_axes: false
           title: '2003-07-13 06:50:00'
@@ -368,13 +368,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - lon
-          - temperature
           - date_time
-          - pressure
           - lat
           - station
           - distance [km]
+          - temperature
+          - pressure
+          - lon
           kind: scatter
           shared_axes: false
           title: '2003-07-19 06:40:00'
@@ -388,13 +388,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - lon
-          - temperature
           - date_time
-          - pressure
           - lat
           - station
           - distance [km]
+          - temperature
+          - pressure
+          - lon
           kind: scatter
           shared_axes: false
           title: '2003-07-19 06:40:00'
@@ -449,13 +449,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - lon
-          - temperature
           - date_time
-          - pressure
           - lat
           - station
           - distance [km]
+          - temperature
+          - pressure
+          - lon
           kind: scatter
           shared_axes: false
           title: '2003-07-20 11:00:00'
@@ -469,13 +469,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - lon
-          - temperature
           - date_time
-          - pressure
           - lat
           - station
           - distance [km]
+          - temperature
+          - pressure
+          - lon
           kind: scatter
           shared_axes: false
           title: '2003-07-20 11:00:00'
@@ -530,13 +530,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - lon
-          - temperature
           - date_time
-          - pressure
           - lat
           - station
           - distance [km]
+          - temperature
+          - pressure
+          - lon
           kind: scatter
           shared_axes: false
           title: '2003-07-21 06:25:00'
@@ -550,13 +550,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - lon
-          - temperature
           - date_time
-          - pressure
           - lat
           - station
           - distance [km]
+          - temperature
+          - pressure
+          - lon
           kind: scatter
           shared_axes: false
           title: '2003-07-21 06:25:00'
@@ -611,13 +611,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - lon
-          - temperature
           - date_time
-          - pressure
           - lat
           - station
           - distance [km]
+          - temperature
+          - pressure
+          - lon
           kind: scatter
           shared_axes: false
           title: '2003-07-22 11:15:00'
@@ -631,13 +631,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - lon
-          - temperature
           - date_time
-          - pressure
           - lat
           - station
           - distance [km]
+          - temperature
+          - pressure
+          - lon
           kind: scatter
           shared_axes: false
           title: '2003-07-22 11:15:00'
@@ -692,13 +692,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - lon
-          - temperature
           - date_time
-          - pressure
           - lat
           - station
           - distance [km]
+          - temperature
+          - pressure
+          - lon
           kind: scatter
           shared_axes: false
           title: '2003-07-24 11:30:00'
@@ -712,13 +712,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - lon
-          - temperature
           - date_time
-          - pressure
           - lat
           - station
           - distance [km]
+          - temperature
+          - pressure
+          - lon
           kind: scatter
           shared_axes: false
           title: '2003-07-24 11:30:00'
@@ -773,13 +773,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - lon
-          - temperature
           - date_time
-          - pressure
           - lat
           - station
           - distance [km]
+          - temperature
+          - pressure
+          - lon
           kind: scatter
           shared_axes: false
           title: '2003-07-25 06:55:00'
@@ -793,13 +793,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - lon
-          - temperature
           - date_time
-          - pressure
           - lat
           - station
           - distance [km]
+          - temperature
+          - pressure
+          - lon
           kind: scatter
           shared_axes: false
           title: '2003-07-25 06:55:00'
@@ -854,13 +854,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - lon
-          - temperature
           - date_time
-          - pressure
           - lat
           - station
           - distance [km]
+          - temperature
+          - pressure
+          - lon
           kind: scatter
           shared_axes: false
           title: '2003-07-26 11:05:00'
@@ -874,13 +874,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - lon
-          - temperature
           - date_time
-          - pressure
           - lat
           - station
           - distance [km]
+          - temperature
+          - pressure
+          - lon
           kind: scatter
           shared_axes: false
           title: '2003-07-26 11:05:00'
@@ -935,13 +935,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - lon
-          - temperature
           - date_time
-          - pressure
           - lat
           - station
           - distance [km]
+          - temperature
+          - pressure
+          - lon
           kind: scatter
           shared_axes: false
           title: '2003-07-28 14:50:00'
@@ -955,13 +955,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - lon
-          - temperature
           - date_time
-          - pressure
           - lat
           - station
           - distance [km]
+          - temperature
+          - pressure
+          - lon
           kind: scatter
           shared_axes: false
           title: '2003-07-28 14:50:00'
@@ -1016,13 +1016,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - lon
-          - temperature
           - date_time
-          - pressure
           - lat
           - station
           - distance [km]
+          - temperature
+          - pressure
+          - lon
           kind: scatter
           shared_axes: false
           title: '2003-07-29 05:35:00'
@@ -1036,13 +1036,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - lon
-          - temperature
           - date_time
-          - pressure
           - lat
           - station
           - distance [km]
+          - temperature
+          - pressure
+          - lon
           kind: scatter
           shared_axes: false
           title: '2003-07-29 05:35:00'
@@ -1097,13 +1097,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - lon
-          - temperature
           - date_time
-          - pressure
           - lat
           - station
           - distance [km]
+          - temperature
+          - pressure
+          - lon
           kind: scatter
           shared_axes: false
           title: '2003-07-30 10:05:00'
@@ -1117,13 +1117,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - lon
-          - temperature
           - date_time
-          - pressure
           - lat
           - station
           - distance [km]
+          - temperature
+          - pressure
+          - lon
           kind: scatter
           shared_axes: false
           title: '2003-07-30 10:05:00'
@@ -1139,8 +1139,8 @@ metadata:
   header_names: null
   included: true
   key_variables:
-  - salt
   - temp
+  - salt
   map:
     coastline: false
     geo: true

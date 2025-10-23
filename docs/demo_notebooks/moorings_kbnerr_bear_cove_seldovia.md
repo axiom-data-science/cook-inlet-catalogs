@@ -4,7 +4,7 @@ jupytext:
     extension: .md
     format_name: myst
     format_version: 0.13
-    jupytext_version: 1.16.3
+    jupytext_version: 1.18.1
 ---
 
 ```{code-cell}
@@ -25,7 +25,7 @@ Station mappings from AOOS/ERDDAP to KBNERR station list:
 
 * cdmo_nerrs_bearcove :: This is a different station than kacbcwq, which was active 2002-2003 while this is in 2015. They are also in different locations.
     
-More information: https://accs.uaa.alaska.edu/kbnerr/
+More information: [https://accs.uaa.alaska.edu/kbnerr/](https://accs.uaa.alaska.edu/kbnerr/)
 
 
 

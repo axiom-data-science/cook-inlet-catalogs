@@ -179,12 +179,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
+          - Lat
+          - Depth (m)
+          - StationID
           - Lon
           - datetime
-          - Lat
           - Temperature
-          - StationID
-          - Depth (m)
           invert: true
           kind: line
           shared_axes: true
@@ -248,12 +248,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
+          - Lat
+          - Depth (m)
+          - StationID
           - Lon
           - datetime
-          - Lat
           - Temperature
-          - StationID
-          - Depth (m)
           invert: true
           kind: line
           shared_axes: true
@@ -317,12 +317,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
+          - Lat
+          - Depth (m)
+          - StationID
           - Lon
           - datetime
-          - Lat
           - Temperature
-          - StationID
-          - Depth (m)
           invert: true
           kind: line
           shared_axes: true
@@ -386,12 +386,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
+          - Lat
+          - Depth (m)
+          - StationID
           - Lon
           - datetime
-          - Lat
           - Temperature
-          - StationID
-          - Depth (m)
           invert: true
           kind: line
           shared_axes: true
@@ -455,12 +455,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
+          - Lat
+          - Depth (m)
+          - StationID
           - Lon
           - datetime
-          - Lat
           - Temperature
-          - StationID
-          - Depth (m)
           invert: true
           kind: line
           shared_axes: true
@@ -524,12 +524,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
+          - Lat
+          - Depth (m)
+          - StationID
           - Lon
           - datetime
-          - Lat
           - Temperature
-          - StationID
-          - Depth (m)
           invert: true
           kind: line
           shared_axes: true
@@ -593,12 +593,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
+          - Lat
+          - Depth (m)
+          - StationID
           - Lon
           - datetime
-          - Lat
           - Temperature
-          - StationID
-          - Depth (m)
           invert: true
           kind: line
           shared_axes: true
@@ -662,12 +662,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
+          - Lat
+          - Depth (m)
+          - StationID
           - Lon
           - datetime
-          - Lat
           - Temperature
-          - StationID
-          - Depth (m)
           invert: true
           kind: line
           shared_axes: true
@@ -731,12 +731,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
+          - Lat
+          - Depth (m)
+          - StationID
           - Lon
           - datetime
-          - Lat
           - Temperature
-          - StationID
-          - Depth (m)
           invert: true
           kind: line
           shared_axes: true
@@ -800,12 +800,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
+          - Lat
+          - Depth (m)
+          - StationID
           - Lon
           - datetime
-          - Lat
           - Temperature
-          - StationID
-          - Depth (m)
           invert: true
           kind: line
           shared_axes: true
@@ -869,12 +869,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
+          - Lat
+          - Depth (m)
+          - StationID
           - Lon
           - datetime
-          - Lat
           - Temperature
-          - StationID
-          - Depth (m)
           invert: true
           kind: line
           shared_axes: true
@@ -938,12 +938,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
+          - Lat
+          - Depth (m)
+          - StationID
           - Lon
           - datetime
-          - Lat
           - Temperature
-          - StationID
-          - Depth (m)
           invert: true
           kind: line
           shared_axes: true
@@ -1007,12 +1007,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
+          - Lat
+          - Depth (m)
+          - StationID
           - Lon
           - datetime
-          - Lat
           - Temperature
-          - StationID
-          - Depth (m)
           invert: true
           kind: line
           shared_axes: true
@@ -1076,12 +1076,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
+          - Lat
+          - Depth (m)
+          - StationID
           - Lon
           - datetime
-          - Lat
           - Temperature
-          - StationID
-          - Depth (m)
           invert: true
           kind: line
           shared_axes: true
@@ -1145,12 +1145,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
+          - Lat
+          - Depth (m)
+          - StationID
           - Lon
           - datetime
-          - Lat
           - Temperature
-          - StationID
-          - Depth (m)
           invert: true
           kind: line
           shared_axes: true
@@ -1214,12 +1214,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
+          - Lat
+          - Depth (m)
+          - StationID
           - Lon
           - datetime
-          - Lat
           - Temperature
-          - StationID
-          - Depth (m)
           invert: true
           kind: line
           shared_axes: true
@@ -1283,12 +1283,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
+          - Lat
+          - Depth (m)
+          - StationID
           - Lon
           - datetime
-          - Lat
           - Temperature
-          - StationID
-          - Depth (m)
           invert: true
           kind: line
           shared_axes: true
@@ -1352,12 +1352,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
+          - Lat
+          - Depth (m)
+          - StationID
           - Lon
           - datetime
-          - Lat
           - Temperature
-          - StationID
-          - Depth (m)
           invert: true
           kind: line
           shared_axes: true
@@ -1421,12 +1421,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
+          - Lat
+          - Depth (m)
+          - StationID
           - Lon
           - datetime
-          - Lat
           - Temperature
-          - StationID
-          - Depth (m)
           invert: true
           kind: line
           shared_axes: true
@@ -1490,12 +1490,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
+          - Lat
+          - Depth (m)
+          - StationID
           - Lon
           - datetime
-          - Lat
           - Temperature
-          - StationID
-          - Depth (m)
           invert: true
           kind: line
           shared_axes: true
@@ -1559,12 +1559,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
+          - Lat
+          - Depth (m)
+          - StationID
           - Lon
           - datetime
-          - Lat
           - Temperature
-          - StationID
-          - Depth (m)
           invert: true
           kind: line
           shared_axes: true
@@ -1628,12 +1628,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
+          - Lat
+          - Depth (m)
+          - StationID
           - Lon
           - datetime
-          - Lat
           - Temperature
-          - StationID
-          - Depth (m)
           invert: true
           kind: line
           shared_axes: true
@@ -1697,12 +1697,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
+          - Lat
+          - Depth (m)
+          - StationID
           - Lon
           - datetime
-          - Lat
           - Temperature
-          - StationID
-          - Depth (m)
           invert: true
           kind: line
           shared_axes: true
@@ -1766,12 +1766,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
+          - Lat
+          - Depth (m)
+          - StationID
           - Lon
           - datetime
-          - Lat
           - Temperature
-          - StationID
-          - Depth (m)
           invert: true
           kind: line
           shared_axes: true
@@ -1835,12 +1835,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
+          - Lat
+          - Depth (m)
+          - StationID
           - Lon
           - datetime
-          - Lat
           - Temperature
-          - StationID
-          - Depth (m)
           invert: true
           kind: line
           shared_axes: true
@@ -1904,12 +1904,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
+          - Lat
+          - Depth (m)
+          - StationID
           - Lon
           - datetime
-          - Lat
           - Temperature
-          - StationID
-          - Depth (m)
           invert: true
           kind: line
           shared_axes: true
@@ -1973,12 +1973,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
+          - Lat
+          - Depth (m)
+          - StationID
           - Lon
           - datetime
-          - Lat
           - Temperature
-          - StationID
-          - Depth (m)
           invert: true
           kind: line
           shared_axes: true
@@ -2042,12 +2042,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
+          - Lat
+          - Depth (m)
+          - StationID
           - Lon
           - datetime
-          - Lat
           - Temperature
-          - StationID
-          - Depth (m)
           invert: true
           kind: line
           shared_axes: true
@@ -2111,12 +2111,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
+          - Lat
+          - Depth (m)
+          - StationID
           - Lon
           - datetime
-          - Lat
           - Temperature
-          - StationID
-          - Depth (m)
           invert: true
           kind: line
           shared_axes: true
@@ -2180,12 +2180,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
+          - Lat
+          - Depth (m)
+          - StationID
           - Lon
           - datetime
-          - Lat
           - Temperature
-          - StationID
-          - Depth (m)
           invert: true
           kind: line
           shared_axes: true
@@ -2249,12 +2249,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
+          - Lat
+          - Depth (m)
+          - StationID
           - Lon
           - datetime
-          - Lat
           - Temperature
-          - StationID
-          - Depth (m)
           invert: true
           kind: line
           shared_axes: true
@@ -2318,12 +2318,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
+          - Lat
+          - Depth (m)
+          - StationID
           - Lon
           - datetime
-          - Lat
           - Temperature
-          - StationID
-          - Depth (m)
           invert: true
           kind: line
           shared_axes: true
@@ -2387,12 +2387,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
+          - Lat
+          - Depth (m)
+          - StationID
           - Lon
           - datetime
-          - Lat
           - Temperature
-          - StationID
-          - Depth (m)
           invert: true
           kind: line
           shared_axes: true
@@ -2456,12 +2456,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
+          - Lat
+          - Depth (m)
+          - StationID
           - Lon
           - datetime
-          - Lat
           - Temperature
-          - StationID
-          - Depth (m)
           invert: true
           kind: line
           shared_axes: true
@@ -2525,12 +2525,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
+          - Lat
+          - Depth (m)
+          - StationID
           - Lon
           - datetime
-          - Lat
           - Temperature
-          - StationID
-          - Depth (m)
           invert: true
           kind: line
           shared_axes: true
@@ -2594,12 +2594,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
+          - Lat
+          - Depth (m)
+          - StationID
           - Lon
           - datetime
-          - Lat
           - Temperature
-          - StationID
-          - Depth (m)
           invert: true
           kind: line
           shared_axes: true
@@ -2663,12 +2663,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
+          - Lat
+          - Depth (m)
+          - StationID
           - Lon
           - datetime
-          - Lat
           - Temperature
-          - StationID
-          - Depth (m)
           invert: true
           kind: line
           shared_axes: true
@@ -2732,12 +2732,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
+          - Lat
+          - Depth (m)
+          - StationID
           - Lon
           - datetime
-          - Lat
           - Temperature
-          - StationID
-          - Depth (m)
           invert: true
           kind: line
           shared_axes: true
@@ -2801,12 +2801,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
+          - Lat
+          - Depth (m)
+          - StationID
           - Lon
           - datetime
-          - Lat
           - Temperature
-          - StationID
-          - Depth (m)
           invert: true
           kind: line
           shared_axes: true
@@ -2870,12 +2870,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
+          - Lat
+          - Depth (m)
+          - StationID
           - Lon
           - datetime
-          - Lat
           - Temperature
-          - StationID
-          - Depth (m)
           invert: true
           kind: line
           shared_axes: true
@@ -2939,12 +2939,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
+          - Lat
+          - Depth (m)
+          - StationID
           - Lon
           - datetime
-          - Lat
           - Temperature
-          - StationID
-          - Depth (m)
           invert: true
           kind: line
           shared_axes: true
@@ -3008,12 +3008,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
+          - Lat
+          - Depth (m)
+          - StationID
           - Lon
           - datetime
-          - Lat
           - Temperature
-          - StationID
-          - Depth (m)
           invert: true
           kind: line
           shared_axes: true
@@ -3077,12 +3077,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
+          - Lat
+          - Depth (m)
+          - StationID
           - Lon
           - datetime
-          - Lat
           - Temperature
-          - StationID
-          - Depth (m)
           invert: true
           kind: line
           shared_axes: true
@@ -3146,12 +3146,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
+          - Lat
+          - Depth (m)
+          - StationID
           - Lon
           - datetime
-          - Lat
           - Temperature
-          - StationID
-          - Depth (m)
           invert: true
           kind: line
           shared_axes: true
@@ -3215,12 +3215,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
+          - Lat
+          - Depth (m)
+          - StationID
           - Lon
           - datetime
-          - Lat
           - Temperature
-          - StationID
-          - Depth (m)
           invert: true
           kind: line
           shared_axes: true
@@ -3284,12 +3284,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
+          - Lat
+          - Depth (m)
+          - StationID
           - Lon
           - datetime
-          - Lat
           - Temperature
-          - StationID
-          - Depth (m)
           invert: true
           kind: line
           shared_axes: true
@@ -3353,12 +3353,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
+          - Lat
+          - Depth (m)
+          - StationID
           - Lon
           - datetime
-          - Lat
           - Temperature
-          - StationID
-          - Depth (m)
           invert: true
           kind: line
           shared_axes: true
@@ -3422,12 +3422,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
+          - Lat
+          - Depth (m)
+          - StationID
           - Lon
           - datetime
-          - Lat
           - Temperature
-          - StationID
-          - Depth (m)
           invert: true
           kind: line
           shared_axes: true
@@ -3491,12 +3491,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
+          - Lat
+          - Depth (m)
+          - StationID
           - Lon
           - datetime
-          - Lat
           - Temperature
-          - StationID
-          - Depth (m)
           invert: true
           kind: line
           shared_axes: true
@@ -3560,12 +3560,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
+          - Lat
+          - Depth (m)
+          - StationID
           - Lon
           - datetime
-          - Lat
           - Temperature
-          - StationID
-          - Depth (m)
           invert: true
           kind: line
           shared_axes: true
@@ -3629,12 +3629,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
+          - Lat
+          - Depth (m)
+          - StationID
           - Lon
           - datetime
-          - Lat
           - Temperature
-          - StationID
-          - Depth (m)
           invert: true
           kind: line
           shared_axes: true
@@ -3698,12 +3698,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
+          - Lat
+          - Depth (m)
+          - StationID
           - Lon
           - datetime
-          - Lat
           - Temperature
-          - StationID
-          - Depth (m)
           invert: true
           kind: line
           shared_axes: true
@@ -3767,12 +3767,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
+          - Lat
+          - Depth (m)
+          - StationID
           - Lon
           - datetime
-          - Lat
           - Temperature
-          - StationID
-          - Depth (m)
           invert: true
           kind: line
           shared_axes: true
@@ -3836,12 +3836,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
+          - Lat
+          - Depth (m)
+          - StationID
           - Lon
           - datetime
-          - Lat
           - Temperature
-          - StationID
-          - Depth (m)
           invert: true
           kind: line
           shared_axes: true
@@ -3905,12 +3905,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
+          - Lat
+          - Depth (m)
+          - StationID
           - Lon
           - datetime
-          - Lat
           - Temperature
-          - StationID
-          - Depth (m)
           invert: true
           kind: line
           shared_axes: true
@@ -3974,12 +3974,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
+          - Lat
+          - Depth (m)
+          - StationID
           - Lon
           - datetime
-          - Lat
           - Temperature
-          - StationID
-          - Depth (m)
           invert: true
           kind: line
           shared_axes: true
@@ -4043,12 +4043,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
+          - Lat
+          - Depth (m)
+          - StationID
           - Lon
           - datetime
-          - Lat
           - Temperature
-          - StationID
-          - Depth (m)
           invert: true
           kind: line
           shared_axes: true
@@ -4112,12 +4112,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
+          - Lat
+          - Depth (m)
+          - StationID
           - Lon
           - datetime
-          - Lat
           - Temperature
-          - StationID
-          - Depth (m)
           invert: true
           kind: line
           shared_axes: true
@@ -4181,12 +4181,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
+          - Lat
+          - Depth (m)
+          - StationID
           - Lon
           - datetime
-          - Lat
           - Temperature
-          - StationID
-          - Depth (m)
           invert: true
           kind: line
           shared_axes: true
@@ -4250,12 +4250,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
+          - Lat
+          - Depth (m)
+          - StationID
           - Lon
           - datetime
-          - Lat
           - Temperature
-          - StationID
-          - Depth (m)
           invert: true
           kind: line
           shared_axes: true
@@ -4319,12 +4319,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
+          - Lat
+          - Depth (m)
+          - StationID
           - Lon
           - datetime
-          - Lat
           - Temperature
-          - StationID
-          - Depth (m)
           invert: true
           kind: line
           shared_axes: true
@@ -4388,12 +4388,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
+          - Lat
+          - Depth (m)
+          - StationID
           - Lon
           - datetime
-          - Lat
           - Temperature
-          - StationID
-          - Depth (m)
           invert: true
           kind: line
           shared_axes: true
@@ -4457,12 +4457,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
+          - Lat
+          - Depth (m)
+          - StationID
           - Lon
           - datetime
-          - Lat
           - Temperature
-          - StationID
-          - Depth (m)
           invert: true
           kind: line
           shared_axes: true
@@ -4526,12 +4526,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
+          - Lat
+          - Depth (m)
+          - StationID
           - Lon
           - datetime
-          - Lat
           - Temperature
-          - StationID
-          - Depth (m)
           invert: true
           kind: line
           shared_axes: true
@@ -4595,12 +4595,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
+          - Lat
+          - Depth (m)
+          - StationID
           - Lon
           - datetime
-          - Lat
           - Temperature
-          - StationID
-          - Depth (m)
           invert: true
           kind: line
           shared_axes: true
@@ -4664,12 +4664,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
+          - Lat
+          - Depth (m)
+          - StationID
           - Lon
           - datetime
-          - Lat
           - Temperature
-          - StationID
-          - Depth (m)
           invert: true
           kind: line
           shared_axes: true
@@ -4733,12 +4733,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
+          - Lat
+          - Depth (m)
+          - StationID
           - Lon
           - datetime
-          - Lat
           - Temperature
-          - StationID
-          - Depth (m)
           invert: true
           kind: line
           shared_axes: true
@@ -4802,12 +4802,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
+          - Lat
+          - Depth (m)
+          - StationID
           - Lon
           - datetime
-          - Lat
           - Temperature
-          - StationID
-          - Depth (m)
           invert: true
           kind: line
           shared_axes: true
@@ -4871,12 +4871,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
+          - Lat
+          - Depth (m)
+          - StationID
           - Lon
           - datetime
-          - Lat
           - Temperature
-          - StationID
-          - Depth (m)
           invert: true
           kind: line
           shared_axes: true
@@ -4940,12 +4940,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
+          - Lat
+          - Depth (m)
+          - StationID
           - Lon
           - datetime
-          - Lat
           - Temperature
-          - StationID
-          - Depth (m)
           invert: true
           kind: line
           shared_axes: true
@@ -5009,12 +5009,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
+          - Lat
+          - Depth (m)
+          - StationID
           - Lon
           - datetime
-          - Lat
           - Temperature
-          - StationID
-          - Depth (m)
           invert: true
           kind: line
           shared_axes: true
@@ -5078,12 +5078,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
+          - Lat
+          - Depth (m)
+          - StationID
           - Lon
           - datetime
-          - Lat
           - Temperature
-          - StationID
-          - Depth (m)
           invert: true
           kind: line
           shared_axes: true
@@ -5147,12 +5147,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
+          - Lat
+          - Depth (m)
+          - StationID
           - Lon
           - datetime
-          - Lat
           - Temperature
-          - StationID
-          - Depth (m)
           invert: true
           kind: line
           shared_axes: true
@@ -5216,12 +5216,12 @@ entries:
           flip_yaxis: true
           height: 400
           hover_cols:
+          - Lat
+          - Depth (m)
+          - StationID
           - Lon
           - datetime
-          - Lat
           - Temperature
-          - StationID
-          - Depth (m)
           invert: true
           kind: line
           shared_axes: true
@@ -5242,10 +5242,13 @@ metadata:
   header_names: null
   included: true
   key_variables:
-  - salt
   - temp
+  - salt
   map:
     c: station
+    clabel: ''
+    clim: null
+    cmap: null
     coastline: false
     color: k
     geo: true

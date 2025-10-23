@@ -227,12 +227,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - Temp [oC]
-          - Lat (oN)
-          - Depth [m]
-          - Lon (oE)
           - distance [km]
+          - Depth [m]
+          - Lat (oN)
+          - datetime
+          - Lon (oE)
           kind: scatter
           shared_axes: false
           title: null
@@ -247,12 +247,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - Temp [oC]
-          - Lat (oN)
-          - Depth [m]
-          - Lon (oE)
           - distance [km]
+          - Depth [m]
+          - Lat (oN)
+          - datetime
+          - Lon (oE)
           kind: scatter
           shared_axes: false
           title: null
@@ -327,12 +327,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - Temp [oC]
-          - Lat (oN)
-          - Depth [m]
-          - Lon (oE)
           - distance [km]
+          - Depth [m]
+          - Lat (oN)
+          - datetime
+          - Lon (oE)
           kind: scatter
           shared_axes: false
           title: null
@@ -347,12 +347,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - Temp [oC]
-          - Lat (oN)
-          - Depth [m]
-          - Lon (oE)
           - distance [km]
+          - Depth [m]
+          - Lat (oN)
+          - datetime
+          - Lon (oE)
           kind: scatter
           shared_axes: false
           title: null
@@ -427,12 +427,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - Temp [oC]
-          - Lat (oN)
-          - Depth [m]
-          - Lon (oE)
           - distance [km]
+          - Depth [m]
+          - Lat (oN)
+          - datetime
+          - Lon (oE)
           kind: scatter
           shared_axes: false
           title: null
@@ -447,12 +447,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - Temp [oC]
-          - Lat (oN)
-          - Depth [m]
-          - Lon (oE)
           - distance [km]
+          - Depth [m]
+          - Lat (oN)
+          - datetime
+          - Lon (oE)
           kind: scatter
           shared_axes: false
           title: null
@@ -527,12 +527,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - Temp [oC]
-          - Lat (oN)
-          - Depth [m]
-          - Lon (oE)
           - distance [km]
+          - Depth [m]
+          - Lat (oN)
+          - datetime
+          - Lon (oE)
           kind: scatter
           shared_axes: false
           title: null
@@ -547,12 +547,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - Temp [oC]
-          - Lat (oN)
-          - Depth [m]
-          - Lon (oE)
           - distance [km]
+          - Depth [m]
+          - Lat (oN)
+          - datetime
+          - Lon (oE)
           kind: scatter
           shared_axes: false
           title: null
@@ -627,12 +627,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - Temp [oC]
-          - Lat (oN)
-          - Depth [m]
-          - Lon (oE)
           - distance [km]
+          - Depth [m]
+          - Lat (oN)
+          - datetime
+          - Lon (oE)
           kind: scatter
           shared_axes: false
           title: null
@@ -647,12 +647,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - Temp [oC]
-          - Lat (oN)
-          - Depth [m]
-          - Lon (oE)
           - distance [km]
+          - Depth [m]
+          - Lat (oN)
+          - datetime
+          - Lon (oE)
           kind: scatter
           shared_axes: false
           title: null
@@ -727,12 +727,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - Temp [oC]
-          - Lat (oN)
-          - Depth [m]
-          - Lon (oE)
           - distance [km]
+          - Depth [m]
+          - Lat (oN)
+          - datetime
+          - Lon (oE)
           kind: scatter
           shared_axes: false
           title: null
@@ -747,12 +747,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - Temp [oC]
-          - Lat (oN)
-          - Depth [m]
-          - Lon (oE)
           - distance [km]
+          - Depth [m]
+          - Lat (oN)
+          - datetime
+          - Lon (oE)
           kind: scatter
           shared_axes: false
           title: null
@@ -827,12 +827,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - Temp [oC]
-          - Lat (oN)
-          - Depth [m]
-          - Lon (oE)
           - distance [km]
+          - Depth [m]
+          - Lat (oN)
+          - datetime
+          - Lon (oE)
           kind: scatter
           shared_axes: false
           title: null
@@ -847,12 +847,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - Temp [oC]
-          - Lat (oN)
-          - Depth [m]
-          - Lon (oE)
           - distance [km]
+          - Depth [m]
+          - Lat (oN)
+          - datetime
+          - Lon (oE)
           kind: scatter
           shared_axes: false
           title: null
@@ -927,12 +927,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - Temp [oC]
-          - Lat (oN)
-          - Depth [m]
-          - Lon (oE)
           - distance [km]
+          - Depth [m]
+          - Lat (oN)
+          - datetime
+          - Lon (oE)
           kind: scatter
           shared_axes: false
           title: null
@@ -947,12 +947,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - Temp [oC]
-          - Lat (oN)
-          - Depth [m]
-          - Lon (oE)
           - distance [km]
+          - Depth [m]
+          - Lat (oN)
+          - datetime
+          - Lon (oE)
           kind: scatter
           shared_axes: false
           title: null
@@ -1027,12 +1027,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - Temp [oC]
-          - Lat (oN)
-          - Depth [m]
-          - Lon (oE)
           - distance [km]
+          - Depth [m]
+          - Lat (oN)
+          - datetime
+          - Lon (oE)
           kind: scatter
           shared_axes: false
           title: null
@@ -1047,12 +1047,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - Temp [oC]
-          - Lat (oN)
-          - Depth [m]
-          - Lon (oE)
           - distance [km]
+          - Depth [m]
+          - Lat (oN)
+          - datetime
+          - Lon (oE)
           kind: scatter
           shared_axes: false
           title: null
@@ -1127,12 +1127,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - Temp [oC]
-          - Lat (oN)
-          - Depth [m]
-          - Lon (oE)
           - distance [km]
+          - Depth [m]
+          - Lat (oN)
+          - datetime
+          - Lon (oE)
           kind: scatter
           shared_axes: false
           title: null
@@ -1147,12 +1147,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - Temp [oC]
-          - Lat (oN)
-          - Depth [m]
-          - Lon (oE)
           - distance [km]
+          - Depth [m]
+          - Lat (oN)
+          - datetime
+          - Lon (oE)
           kind: scatter
           shared_axes: false
           title: null
@@ -1227,12 +1227,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - Temp [oC]
-          - Lat (oN)
-          - Depth [m]
-          - Lon (oE)
           - distance [km]
+          - Depth [m]
+          - Lat (oN)
+          - datetime
+          - Lon (oE)
           kind: scatter
           shared_axes: false
           title: null
@@ -1247,12 +1247,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - Temp [oC]
-          - Lat (oN)
-          - Depth [m]
-          - Lon (oE)
           - distance [km]
+          - Depth [m]
+          - Lat (oN)
+          - datetime
+          - Lon (oE)
           kind: scatter
           shared_axes: false
           title: null
@@ -1327,12 +1327,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - Temp [oC]
-          - Lat (oN)
-          - Depth [m]
-          - Lon (oE)
           - distance [km]
+          - Depth [m]
+          - Lat (oN)
+          - datetime
+          - Lon (oE)
           kind: scatter
           shared_axes: false
           title: null
@@ -1347,12 +1347,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - Temp [oC]
-          - Lat (oN)
-          - Depth [m]
-          - Lon (oE)
           - distance [km]
+          - Depth [m]
+          - Lat (oN)
+          - datetime
+          - Lon (oE)
           kind: scatter
           shared_axes: false
           title: null
@@ -1427,12 +1427,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - Temp [oC]
-          - Lat (oN)
-          - Depth [m]
-          - Lon (oE)
           - distance [km]
+          - Depth [m]
+          - Lat (oN)
+          - datetime
+          - Lon (oE)
           kind: scatter
           shared_axes: false
           title: null
@@ -1447,12 +1447,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - Temp [oC]
-          - Lat (oN)
-          - Depth [m]
-          - Lon (oE)
           - distance [km]
+          - Depth [m]
+          - Lat (oN)
+          - datetime
+          - Lon (oE)
           kind: scatter
           shared_axes: false
           title: null
@@ -1527,12 +1527,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - Temp [oC]
-          - Lat (oN)
-          - Depth [m]
-          - Lon (oE)
           - distance [km]
+          - Depth [m]
+          - Lat (oN)
+          - datetime
+          - Lon (oE)
           kind: scatter
           shared_axes: false
           title: null
@@ -1547,12 +1547,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - Temp [oC]
-          - Lat (oN)
-          - Depth [m]
-          - Lon (oE)
           - distance [km]
+          - Depth [m]
+          - Lat (oN)
+          - datetime
+          - Lon (oE)
           kind: scatter
           shared_axes: false
           title: null
@@ -1627,12 +1627,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
-          - Lat (oN)
-          - Temp [c]
-          - Depth [m]
-          - Lon (oE)
           - distance [km]
+          - Depth [m]
+          - Temp [c]
+          - Lat (oN)
+          - datetime
+          - Lon (oE)
           kind: scatter
           shared_axes: false
           title: null
@@ -1647,12 +1647,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
-          - Lat (oN)
-          - Temp [c]
-          - Depth [m]
-          - Lon (oE)
           - distance [km]
+          - Depth [m]
+          - Temp [c]
+          - Lat (oN)
+          - datetime
+          - Lon (oE)
           kind: scatter
           shared_axes: false
           title: null
@@ -1727,12 +1727,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
-          - Lat (oN)
-          - Temp [c]
-          - Depth [m]
-          - Lon (oE)
           - distance [km]
+          - Depth [m]
+          - Temp [c]
+          - Lat (oN)
+          - datetime
+          - Lon (oE)
           kind: scatter
           shared_axes: false
           title: null
@@ -1747,12 +1747,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
-          - Lat (oN)
-          - Temp [c]
-          - Depth [m]
-          - Lon (oE)
           - distance [km]
+          - Depth [m]
+          - Temp [c]
+          - Lat (oN)
+          - datetime
+          - Lon (oE)
           kind: scatter
           shared_axes: false
           title: null
@@ -1827,12 +1827,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
-          - Lat (oN)
-          - Temp [c]
-          - Depth [m]
-          - Lon (oE)
           - distance [km]
+          - Depth [m]
+          - Temp [c]
+          - Lat (oN)
+          - datetime
+          - Lon (oE)
           kind: scatter
           shared_axes: false
           title: null
@@ -1847,12 +1847,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
-          - Lat (oN)
-          - Temp [c]
-          - Depth [m]
-          - Lon (oE)
           - distance [km]
+          - Depth [m]
+          - Temp [c]
+          - Lat (oN)
+          - datetime
+          - Lon (oE)
           kind: scatter
           shared_axes: false
           title: null
@@ -1927,12 +1927,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
-          - Lat (oN)
-          - Temp [c]
-          - Depth [m]
-          - Lon (oE)
           - distance [km]
+          - Depth [m]
+          - Temp [c]
+          - Lat (oN)
+          - datetime
+          - Lon (oE)
           kind: scatter
           shared_axes: false
           title: null
@@ -1947,12 +1947,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
-          - Lat (oN)
-          - Temp [c]
-          - Depth [m]
-          - Lon (oE)
           - distance [km]
+          - Depth [m]
+          - Temp [c]
+          - Lat (oN)
+          - datetime
+          - Lon (oE)
           kind: scatter
           shared_axes: false
           title: null
@@ -2027,12 +2027,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
-          - Lat (oN)
-          - Temp [c]
-          - Depth [m]
-          - Lon (oE)
           - distance [km]
+          - Depth [m]
+          - Temp [c]
+          - Lat (oN)
+          - datetime
+          - Lon (oE)
           kind: scatter
           shared_axes: false
           title: null
@@ -2047,12 +2047,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
-          - Lat (oN)
-          - Temp [c]
-          - Depth [m]
-          - Lon (oE)
           - distance [km]
+          - Depth [m]
+          - Temp [c]
+          - Lat (oN)
+          - datetime
+          - Lon (oE)
           kind: scatter
           shared_axes: false
           title: null
@@ -2127,12 +2127,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
-          - Lat (oN)
-          - Temp [c]
-          - Depth [m]
-          - Lon (oE)
           - distance [km]
+          - Depth [m]
+          - Temp [c]
+          - Lat (oN)
+          - datetime
+          - Lon (oE)
           kind: scatter
           shared_axes: false
           title: null
@@ -2147,12 +2147,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
-          - Lat (oN)
-          - Temp [c]
-          - Depth [m]
-          - Lon (oE)
           - distance [km]
+          - Depth [m]
+          - Temp [c]
+          - Lat (oN)
+          - datetime
+          - Lon (oE)
           kind: scatter
           shared_axes: false
           title: null
@@ -2227,12 +2227,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
-          - Lat (oN)
-          - Temp [c]
-          - Depth [m]
-          - Lon (oE)
           - distance [km]
+          - Depth [m]
+          - Temp [c]
+          - Lat (oN)
+          - datetime
+          - Lon (oE)
           kind: scatter
           shared_axes: false
           title: null
@@ -2247,12 +2247,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
-          - Lat (oN)
-          - Temp [c]
-          - Depth [m]
-          - Lon (oE)
           - distance [km]
+          - Depth [m]
+          - Temp [c]
+          - Lat (oN)
+          - datetime
+          - Lon (oE)
           kind: scatter
           shared_axes: false
           title: null
@@ -2327,12 +2327,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
-          - Lat (oN)
-          - Temp [c]
-          - Depth [m]
-          - Lon (oE)
           - distance [km]
+          - Depth [m]
+          - Temp [c]
+          - Lat (oN)
+          - datetime
+          - Lon (oE)
           kind: scatter
           shared_axes: false
           title: null
@@ -2347,12 +2347,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
-          - Lat (oN)
-          - Temp [c]
-          - Depth [m]
-          - Lon (oE)
           - distance [km]
+          - Depth [m]
+          - Temp [c]
+          - Lat (oN)
+          - datetime
+          - Lon (oE)
           kind: scatter
           shared_axes: false
           title: null
@@ -2427,12 +2427,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
-          - Lat (oN)
-          - Temp [c]
-          - Depth [m]
-          - Lon (oE)
           - distance [km]
+          - Depth [m]
+          - Temp [c]
+          - Lat (oN)
+          - datetime
+          - Lon (oE)
           kind: scatter
           shared_axes: false
           title: null
@@ -2447,12 +2447,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
-          - Lat (oN)
-          - Temp [c]
-          - Depth [m]
-          - Lon (oE)
           - distance [km]
+          - Depth [m]
+          - Temp [c]
+          - Lat (oN)
+          - datetime
+          - Lon (oE)
           kind: scatter
           shared_axes: false
           title: null
@@ -2527,12 +2527,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
-          - Lat (oN)
-          - Temp [c]
-          - Depth [m]
-          - Lon (oE)
           - distance [km]
+          - Depth [m]
+          - Temp [c]
+          - Lat (oN)
+          - datetime
+          - Lon (oE)
           kind: scatter
           shared_axes: false
           title: null
@@ -2547,12 +2547,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
-          - Lat (oN)
-          - Temp [c]
-          - Depth [m]
-          - Lon (oE)
           - distance [km]
+          - Depth [m]
+          - Temp [c]
+          - Lat (oN)
+          - datetime
+          - Lon (oE)
           kind: scatter
           shared_axes: false
           title: null
@@ -2627,12 +2627,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
-          - Lat (oN)
-          - Temp [c]
-          - Depth [m]
-          - Lon (oE)
           - distance [km]
+          - Depth [m]
+          - Temp [c]
+          - Lat (oN)
+          - datetime
+          - Lon (oE)
           kind: scatter
           shared_axes: false
           title: null
@@ -2647,12 +2647,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
-          - Lat (oN)
-          - Temp [c]
-          - Depth [m]
-          - Lon (oE)
           - distance [km]
+          - Depth [m]
+          - Temp [c]
+          - Lat (oN)
+          - datetime
+          - Lon (oE)
           kind: scatter
           shared_axes: false
           title: null
@@ -2727,12 +2727,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
-          - Lat (oN)
-          - Temp [c]
-          - Depth [m]
-          - Lon (oE)
           - distance [km]
+          - Depth [m]
+          - Temp [c]
+          - Lat (oN)
+          - datetime
+          - Lon (oE)
           kind: scatter
           shared_axes: false
           title: null
@@ -2747,12 +2747,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
-          - Lat (oN)
-          - Temp [c]
-          - Depth [m]
-          - Lon (oE)
           - distance [km]
+          - Depth [m]
+          - Temp [c]
+          - Lat (oN)
+          - datetime
+          - Lon (oE)
           kind: scatter
           shared_axes: false
           title: null
@@ -2827,12 +2827,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
-          - Lat (oN)
-          - Temp [c]
-          - Depth [m]
-          - Lon (oE)
           - distance [km]
+          - Depth [m]
+          - Temp [c]
+          - Lat (oN)
+          - datetime
+          - Lon (oE)
           kind: scatter
           shared_axes: false
           title: null
@@ -2847,12 +2847,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
-          - Lat (oN)
-          - Temp [c]
-          - Depth [m]
-          - Lon (oE)
           - distance [km]
+          - Depth [m]
+          - Temp [c]
+          - Lat (oN)
+          - datetime
+          - Lon (oE)
           kind: scatter
           shared_axes: false
           title: null
@@ -2927,12 +2927,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -2947,12 +2947,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -3027,12 +3027,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -3047,12 +3047,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -3127,12 +3127,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -3147,12 +3147,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -3227,12 +3227,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -3247,12 +3247,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -3327,12 +3327,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -3347,12 +3347,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -3427,12 +3427,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -3447,12 +3447,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -3527,12 +3527,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -3547,12 +3547,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -3627,12 +3627,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -3647,12 +3647,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -3727,12 +3727,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -3747,12 +3747,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -3827,12 +3827,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -3847,12 +3847,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -3927,12 +3927,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -3947,12 +3947,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -4027,12 +4027,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -4047,12 +4047,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -4127,12 +4127,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -4147,12 +4147,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -4227,12 +4227,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -4247,12 +4247,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -4327,12 +4327,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -4347,12 +4347,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -4427,12 +4427,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -4447,12 +4447,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -4527,12 +4527,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -4547,12 +4547,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -4627,12 +4627,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -4647,12 +4647,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -4727,12 +4727,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -4747,12 +4747,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -4827,12 +4827,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -4847,12 +4847,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -4927,12 +4927,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -4947,12 +4947,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -5027,12 +5027,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -5047,12 +5047,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -5127,12 +5127,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -5147,12 +5147,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -5227,12 +5227,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -5247,12 +5247,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -5327,12 +5327,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -5347,12 +5347,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -5427,12 +5427,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -5447,12 +5447,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -5527,12 +5527,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -5547,12 +5547,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -5627,12 +5627,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -5647,12 +5647,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -5727,12 +5727,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -5747,12 +5747,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -5827,12 +5827,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -5847,12 +5847,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -5927,12 +5927,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -5947,12 +5947,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -6027,12 +6027,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -6047,12 +6047,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -6127,12 +6127,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -6147,12 +6147,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -6227,12 +6227,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -6247,12 +6247,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -6327,12 +6327,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -6347,12 +6347,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -6427,12 +6427,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -6447,12 +6447,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -6527,12 +6527,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -6547,12 +6547,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -6627,12 +6627,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -6647,12 +6647,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -6727,12 +6727,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -6747,12 +6747,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -6827,12 +6827,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -6847,12 +6847,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -6927,12 +6927,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -6947,12 +6947,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -7027,12 +7027,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -7047,12 +7047,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -7127,12 +7127,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -7147,12 +7147,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -7227,12 +7227,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -7247,12 +7247,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -7327,12 +7327,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -7347,12 +7347,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -7427,12 +7427,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -7447,12 +7447,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -7527,12 +7527,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -7547,12 +7547,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -7627,12 +7627,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -7647,12 +7647,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -7727,12 +7727,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -7747,12 +7747,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -7827,12 +7827,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -7847,12 +7847,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -7927,12 +7927,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -7947,12 +7947,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -8027,12 +8027,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -8047,12 +8047,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -8127,12 +8127,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -8147,12 +8147,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -8227,12 +8227,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -8247,12 +8247,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -8327,12 +8327,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -8347,12 +8347,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -8427,12 +8427,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -8447,12 +8447,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -8527,12 +8527,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -8547,12 +8547,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -8627,12 +8627,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -8647,12 +8647,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -8727,12 +8727,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -8747,12 +8747,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -8827,12 +8827,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -8847,12 +8847,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -8927,12 +8927,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -8947,12 +8947,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -9027,12 +9027,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -9047,12 +9047,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -9127,12 +9127,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -9147,12 +9147,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -9227,12 +9227,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -9247,12 +9247,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -9327,12 +9327,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -9347,12 +9347,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -9427,12 +9427,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -9447,12 +9447,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -9527,12 +9527,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -9547,12 +9547,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -9627,12 +9627,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -9647,12 +9647,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -9727,12 +9727,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -9747,12 +9747,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -9827,12 +9827,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -9847,12 +9847,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -9927,12 +9927,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -9947,12 +9947,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -10027,12 +10027,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -10047,12 +10047,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -10127,12 +10127,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -10147,12 +10147,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -10227,12 +10227,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -10247,12 +10247,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -10327,12 +10327,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -10347,12 +10347,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -10427,12 +10427,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -10447,12 +10447,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -10527,12 +10527,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -10547,12 +10547,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -10627,12 +10627,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -10647,12 +10647,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -10727,12 +10727,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -10747,12 +10747,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -10827,12 +10827,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -10847,12 +10847,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -10927,12 +10927,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -10947,12 +10947,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -11027,12 +11027,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -11047,12 +11047,12 @@ entries:
           height: 300
           hover_cols:
           - Station
-          - datetime
           - "Lat (\xB0N)"
-          - Temp [c]
-          - Depth [m]
           - distance [km]
           - "Lon (\xB0E)"
+          - Depth [m]
+          - datetime
+          - Temp [c]
           kind: scatter
           shared_axes: false
           title: null
@@ -11259,8 +11259,8 @@ metadata:
   - '2006'
   included: true
   key_variables:
-  - salt
   - temp
+  - salt
   map:
     coastline: false
     geo: true
@@ -11317,16 +11317,16 @@ metadata:
     and vertical distribution was estimated using towed fisheries acoustic equipment.
 
 
-    Willette, T.M., W.S. Pegau, and R.D. DeCino. 2010. Monitoring dynamics of the
+    > Willette, T.M., W.S. Pegau, and R.D. DeCino. 2010. Monitoring dynamics of the
     Alaska coastal current and development of applications for management of Cook
     Inlet salmon - a pilot study. Exxon Valdez Oil Spill Gulf Ecosystem Monitoring
     and Research Project Final Report (GEM Project 030670), Alaska Department of Fish
     and Game, Commercial Fisheries Division, Soldotna, Alaska.
 
 
-    Report: https://evostc.state.ak.us/media/2176/2004-040670-final.pdf
+    Report: [https://evostc.state.ak.us/media/2176/2004-040670-final.pdf](https://evostc.state.ak.us/media/2176/2004-040670-final.pdf)
 
-    Project description: https://evostc.state.ak.us/restoration-projects/project-search/monitoring-dynamics-of-the-alaska-coastal-current-and-development-of-applications-for-management-of-cook-inlet-salmon-040670/
+    Project description: [https://evostc.state.ak.us/restoration-projects/project-search/monitoring-dynamics-of-the-alaska-coastal-current-and-development-of-applications-for-management-of-cook-inlet-salmon-040670/](https://evostc.state.ak.us/restoration-projects/project-search/monitoring-dynamics-of-the-alaska-coastal-current-and-development-of-applications-for-management-of-cook-inlet-salmon-040670/)
 
     '
   time: Daily in July, 2003 to 2006

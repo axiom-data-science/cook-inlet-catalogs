@@ -4,7 +4,7 @@ jupytext:
     extension: .md
     format_name: myst
     format_version: 0.13
-    jupytext_version: 1.16.3
+    jupytext_version: 1.18.1
 ---
 
 ```{code-cell}
@@ -21,15 +21,13 @@ Drifters run by Mark Johnson and others out of UAF with various years and drogue
         
 * 2003: 7.5m (Cook Inlet)
 * 2004: 5m (Cook Inlet)
-* 2005: 5m, 80m (Cook Inlet)
+* 2005: 5m (Cook Inlet)
 * 2006: 5m (Cook Inlet)
 * 2012: 1m (Cook Inlet), 15m (Cook Inlet)
 * 2013: 1m (Cook Inlet), 15m (Cook Inlet)
 * 2014: 1m (Cook Inlet)
 * 2019: 1m (Kachemak Bay, Lynn Canal)
 * 2020: 1m (Kachemak Bay, Lynn Canal)
-
-Descriptive summary of later drifter deployment: https://www.alaska.edu/epscor/about/newsletters/May-2022-feature-current-events.php, data portal: https://ak-epscor.portal.axds.co/
 
 
 

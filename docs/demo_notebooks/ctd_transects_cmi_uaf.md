@@ -4,7 +4,7 @@ jupytext:
     extension: .md
     format_name: myst
     format_version: 0.13
-    jupytext_version: 1.16.3
+    jupytext_version: 1.18.1
 ---
 
 ```{code-cell}
@@ -22,13 +22,13 @@ Seasonality of Boundary Conditions for Cook Inlet, Alaska: Transect (3) at East 
 9 CTD profiles at stations across 10 cruises in (approximately) the same locations. Approximately monthly for summer months, 2004 and 2005.
 
 Part of the project:
-Seasonality of Boundary Conditions for Cook Inlet, Alaska
-Steve Okkonen Principal Investigator
-Co-principal Investigators: Scott Pegau Susan Saupe
-Final Report
-OCS Study MMS 2009-041
-August 2009
-Report: https://researchworkspace.com/files/39885971/2009_041.pdf
+> Seasonality of Boundary Conditions for Cook Inlet, Alaska
+> Steve Okkonen Principal Investigator
+> Co-principal Investigators: Scott Pegau Susan Saupe
+> Final Report
+> OCS Study MMS 2009-041
+> August 2009
+> Report: [https://researchworkspace.com/files/39885971/2009_041.pdf](https://researchworkspace.com/files/39885971/2009_041.pdf)
 
 
 

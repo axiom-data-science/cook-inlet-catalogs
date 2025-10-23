@@ -15,21 +15,23 @@ import cook_inlet_catalogs as cic
 import holoviews as hv
 ```
 
-# Moorings (KBNERR): Kachemak Bay, Homer stations
+# CTD Profiles (EcoFOCI): Shelikof Strait
 
-Moorings from Kachemak Bay National Estuarine Research Reserve (KBNERR)
-    
-Station mappings from AOOS/ERDDAP to KBNERR station list:
-* nerrs_kachdwq :: kachdwq
-* homer-dolphin-surface-water-q :: kachswq
-* nerrs_kach3wq :: kach3wq
-    
-More information: [https://accs.uaa.alaska.edu/kbnerr/](https://accs.uaa.alaska.edu/kbnerr/)
+CTD Casts taken as part of the EcoFOCI project.
+
+EcoFOCI project page: [https://www.ecofoci.noaa.gov/](https://www.ecofoci.noaa.gov/)
+
+Data page: [https://data.pmel.noaa.gov/pmel/erddap/tabledap/Shelikof_line8_3695_0ada_d066.html](https://data.pmel.noaa.gov/pmel/erddap/tabledap/Shelikof_line8_3695_0ada_d066.html)
+
+PMEL ERDDAP: [https://data.pmel.noaa.gov/pmel/erddap/index.html](https://data.pmel.noaa.gov/pmel/erddap/index.html)
+
+![Map of related project work](https://www.pmel.noaa.gov/foci/foci_moorings/images/gulf_of_alaska_mooring_map.png)
+
 
 
 
 ```{code-cell}
-cat = intake.open_catalog(cic.utils.cat_path("moorings_kbnerr_homer"))
+cat = intake.open_catalog(cic.utils.cat_path("ctd_profiles_ecofoci"))
 ```
 
 ## Plot all datasets in catalog

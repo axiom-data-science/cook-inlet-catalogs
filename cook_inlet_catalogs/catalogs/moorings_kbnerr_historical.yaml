@@ -67,9 +67,9 @@ entries:
         data:
           height: 300
           hover_cols:
-          - Temp
           - Depth
           - DateTimeStamp
+          - Temp
           - lon
           - lat
           kind: line
@@ -112,9 +112,9 @@ entries:
         data:
           height: 300
           hover_cols:
-          - Temp
           - Depth
           - DateTimeStamp
+          - Temp
           - lon
           - lat
           kind: line
@@ -157,9 +157,9 @@ entries:
         data:
           height: 300
           hover_cols:
-          - Temp
           - Depth
           - DateTimeStamp
+          - Temp
           - lon
           - lat
           kind: line
@@ -202,9 +202,9 @@ entries:
         data:
           height: 300
           hover_cols:
-          - Temp
           - Depth
           - DateTimeStamp
+          - Temp
           - lon
           - lat
           kind: line
@@ -247,9 +247,9 @@ entries:
         data:
           height: 300
           hover_cols:
-          - Temp
           - Depth
           - DateTimeStamp
+          - Temp
           - lon
           - lat
           kind: line
@@ -271,10 +271,13 @@ metadata:
   header_names: null
   included: true
   key_variables:
-  - salt
   - temp
+  - salt
   map:
     c: station
+    clabel: ''
+    clim: null
+    cmap: null
     coastline: false
     color: k
     geo: true
@@ -318,7 +321,7 @@ metadata:
   project_name: Historical moorings from Kachemak Bay National Estuarine Research
     Reserve (KBNERR)
   summary: "Historical moorings from Kachemak Bay National Estuarine Research Reserve\
-    \ (KBNERR)\n    \nMore information: https://accs.uaa.alaska.edu/kbnerr/\n"
+    \ (KBNERR)\n    \nMore information: [https://accs.uaa.alaska.edu/kbnerr/](https://accs.uaa.alaska.edu/kbnerr/)\n"
   time: From 2001 to 2003, variable
 user_parameters: {}
 version: 2

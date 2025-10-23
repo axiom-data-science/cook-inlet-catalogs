@@ -13386,1053 +13386,1053 @@ data:
       harmonicConstituents:
         HarmonicConstituents:
         - azi: 56.7
-          binDepth: 16.95
+          binDepth: 16.947
           binNbr: 1
           constNum: 1
           constituentName: M2
           description: Principal lunar semidiurnal constituent
-          majorAmplitude: 47.53
-          majorMeanSpeed: 4.68
+          majorAmplitude: 47.534
+          majorMeanSpeed: 4.681
           majorPhase: 359.5
           majorPhaseGMT: 260.4
-          minorAmplitude: 1.29
-          minorMeanSpeed: 1.23
+          minorAmplitude: 1.286
+          minorMeanSpeed: 1.235
           minorPhase: 249.4
           minorPhaseGMT: 150.3
         - azi: 56.7
-          binDepth: 16.95
+          binDepth: 16.947
           binNbr: 1
           constNum: 2
           constituentName: S2
           description: Principal solar semidiurnal constituent
-          majorAmplitude: 15.59
-          majorMeanSpeed: 4.68
+          majorAmplitude: 15.588
+          majorMeanSpeed: 4.681
           majorPhase: 18.0
           majorPhaseGMT: 288.0
-          minorAmplitude: 2.21
-          minorMeanSpeed: 1.23
+          minorAmplitude: 2.212
+          minorMeanSpeed: 1.235
           minorPhase: 333.3
           minorPhaseGMT: 243.3
         - azi: 56.7
-          binDepth: 16.95
+          binDepth: 16.947
           binNbr: 1
           constNum: 3
           constituentName: N2
           description: Larger lunar elliptic semidiurnal constituent
-          majorAmplitude: 11.68
-          majorMeanSpeed: 4.68
+          majorAmplitude: 11.678
+          majorMeanSpeed: 4.681
           majorPhase: 337.5
           majorPhaseGMT: 233.5
-          minorAmplitude: 0.31
-          minorMeanSpeed: 1.23
+          minorAmplitude: 0.309
+          minorMeanSpeed: 1.235
           minorPhase: 53.5
           minorPhaseGMT: 309.5
         - azi: 56.7
-          binDepth: 16.95
+          binDepth: 16.947
           binNbr: 1
           constNum: 4
           constituentName: K1
           description: Lunar diurnal constituent
-          majorAmplitude: 5.5
-          majorMeanSpeed: 4.68
+          majorAmplitude: 5.505
+          majorMeanSpeed: 4.681
           majorPhase: 35.4
           majorPhaseGMT: 170.8
-          minorAmplitude: 0.62
-          minorMeanSpeed: 1.23
+          minorAmplitude: 0.617
+          minorMeanSpeed: 1.235
           minorPhase: 119.1
           minorPhaseGMT: 254.5
         - azi: 56.7
-          binDepth: 16.95
+          binDepth: 16.947
           binNbr: 1
           constNum: 5
           constituentName: M4
           description: Shallow water overtides of principal lunar constituent
-          majorAmplitude: 2.26
-          majorMeanSpeed: 4.68
+          majorAmplitude: 2.264
+          majorMeanSpeed: 4.681
           majorPhase: 284.7
           majorPhaseGMT: 86.4
-          minorAmplitude: 0.82
-          minorMeanSpeed: 1.23
+          minorAmplitude: 0.823
+          minorMeanSpeed: 1.235
           minorPhase: 186.4
           minorPhaseGMT: 348.1
         - azi: 56.7
-          binDepth: 16.95
+          binDepth: 16.947
           binNbr: 1
           constNum: 6
           constituentName: O1
           description: Lunar diurnal constituent
-          majorAmplitude: 5.3
-          majorMeanSpeed: 4.68
+          majorAmplitude: 5.299
+          majorMeanSpeed: 4.681
           majorPhase: 70.4
           majorPhaseGMT: 195.9
           minorAmplitude: 1.44
-          minorMeanSpeed: 1.23
+          minorMeanSpeed: 1.235
           minorPhase: 79.2
           minorPhaseGMT: 204.7
         - azi: 56.7
-          binDepth: 16.95
+          binDepth: 16.947
           binNbr: 1
           constNum: 7
           constituentName: M6
           description: Shallow water overtides of principal lunar constituent
-          majorAmplitude: 0.77
-          majorMeanSpeed: 4.68
+          majorAmplitude: 0.772
+          majorMeanSpeed: 4.681
           majorPhase: 19.8
           majorPhaseGMT: 82.4
-          minorAmplitude: 1.13
-          minorMeanSpeed: 1.23
+          minorAmplitude: 1.132
+          minorMeanSpeed: 1.235
           minorPhase: 165.8
           minorPhaseGMT: 228.4
         - azi: 56.7
-          binDepth: 16.95
+          binDepth: 16.947
           binNbr: 1
           constNum: 8
           constituentName: MK3
           description: Shallow water terdiurnal
-          majorAmplitude: 0.67
-          majorMeanSpeed: 4.68
+          majorAmplitude: 0.669
+          majorMeanSpeed: 4.681
           majorPhase: 35.8
           majorPhaseGMT: 72.0
           minorAmplitude: 1.08
-          minorMeanSpeed: 1.23
+          minorMeanSpeed: 1.235
           minorPhase: 137.9
           minorPhaseGMT: 174.1
         - azi: 56.7
-          binDepth: 16.95
+          binDepth: 16.947
           binNbr: 1
           constNum: 9
           constituentName: S4
           description: Shallow water overtides of principal solar constituent
-          majorAmplitude: 0.51
-          majorMeanSpeed: 4.68
+          majorAmplitude: 0.514
+          majorMeanSpeed: 4.681
           majorPhase: 142.0
           majorPhaseGMT: 322.0
-          minorAmplitude: 0.15
-          minorMeanSpeed: 1.23
+          minorAmplitude: 0.154
+          minorMeanSpeed: 1.235
           minorPhase: 106.9
           minorPhaseGMT: 286.9
         - azi: 56.7
-          binDepth: 16.95
+          binDepth: 16.947
           binNbr: 1
           constNum: 10
           constituentName: MN4
           description: Shallow water quarter diurnal constituent
-          majorAmplitude: 1.18
-          majorMeanSpeed: 4.68
+          majorAmplitude: 1.183
+          majorMeanSpeed: 4.681
           majorPhase: 297.3
           majorPhaseGMT: 94.1
-          minorAmplitude: 0.31
-          minorMeanSpeed: 1.23
+          minorAmplitude: 0.309
+          minorMeanSpeed: 1.235
           minorPhase: 141.6
           minorPhaseGMT: 298.4
         - azi: 56.7
-          binDepth: 16.95
+          binDepth: 16.947
           binNbr: 1
           constNum: 12
           constituentName: S6
           description: Shallow water overtides of principal solar constituent
-          majorAmplitude: 0.21
-          majorMeanSpeed: 4.68
+          majorAmplitude: 0.206
+          majorMeanSpeed: 4.681
           majorPhase: 147.2
           majorPhaseGMT: 237.2
-          minorAmplitude: 0.26
-          minorMeanSpeed: 1.23
+          minorAmplitude: 0.257
+          minorMeanSpeed: 1.235
           minorPhase: 266.9
           minorPhaseGMT: 356.9
         - azi: 56.7
-          binDepth: 16.95
+          binDepth: 16.947
           binNbr: 1
           constNum: 14
           constituentName: 2N2
           description: Lunar elliptical semidiurnal second-order constituent
-          majorAmplitude: 4.89
-          majorMeanSpeed: 4.68
+          majorAmplitude: 4.887
+          majorMeanSpeed: 4.681
           majorPhase: 300.1
           majorPhaseGMT: 191.2
-          minorAmplitude: 1.13
-          minorMeanSpeed: 1.23
+          minorAmplitude: 1.132
+          minorMeanSpeed: 1.235
           minorPhase: 89.4
           minorPhaseGMT: 340.5
         - azi: 56.7
-          binDepth: 16.95
+          binDepth: 16.947
           binNbr: 1
           constNum: 15
           constituentName: OO1
           description: Lunar diurnal
-          majorAmplitude: 0.15
-          majorMeanSpeed: 4.68
+          majorAmplitude: 0.154
+          majorMeanSpeed: 4.681
           majorPhase: 151.3
           majorPhaseGMT: 296.6
-          minorAmplitude: 0.31
-          minorMeanSpeed: 1.23
+          minorAmplitude: 0.309
+          minorMeanSpeed: 1.235
           minorPhase: 303.4
           minorPhaseGMT: 88.7
         - azi: 56.7
-          binDepth: 16.95
+          binDepth: 16.947
           binNbr: 1
           constNum: 18
           constituentName: M1
           description: Smaller lunar elliptic diurnal constituent
-          majorAmplitude: 0.57
-          majorMeanSpeed: 4.68
+          majorAmplitude: 0.566
+          majorMeanSpeed: 4.681
           majorPhase: 19.9
           majorPhaseGMT: 150.4
-          minorAmplitude: 0.15
-          minorMeanSpeed: 1.23
+          minorAmplitude: 0.154
+          minorMeanSpeed: 1.235
           minorPhase: 117.6
           minorPhaseGMT: 248.1
         - azi: 56.7
-          binDepth: 16.95
+          binDepth: 16.947
           binNbr: 1
           constNum: 19
           constituentName: J1
           description: Smaller lunar elliptic diurnal constituent
-          majorAmplitude: 0.46
-          majorMeanSpeed: 4.68
+          majorAmplitude: 0.463
+          majorMeanSpeed: 4.681
           majorPhase: 0.4
           majorPhaseGMT: 140.7
-          minorAmplitude: 0.05
-          minorMeanSpeed: 1.23
+          minorAmplitude: 0.051
+          minorMeanSpeed: 1.235
           minorPhase: 137.1
           minorPhaseGMT: 277.4
         - azi: 56.7
-          binDepth: 16.95
+          binDepth: 16.947
           binNbr: 1
           constNum: 26
           constituentName: Q1
           description: Larger lunar elliptic diurnal constituent
-          majorAmplitude: 0.82
-          majorMeanSpeed: 4.68
+          majorAmplitude: 0.823
+          majorMeanSpeed: 4.681
           majorPhase: 80.0
           majorPhaseGMT: 200.6
-          minorAmplitude: 0.46
-          minorMeanSpeed: 1.23
+          minorAmplitude: 0.463
+          minorMeanSpeed: 1.235
           minorPhase: 154.0
           minorPhaseGMT: 274.6
         - azi: 56.7
-          binDepth: 16.95
+          binDepth: 16.947
           binNbr: 1
           constNum: 29
           constituentName: 2Q1
           description: Larger elliptic diurnal
-          majorAmplitude: 0.62
-          majorMeanSpeed: 4.68
+          majorAmplitude: 0.617
+          majorMeanSpeed: 4.681
           majorPhase: 220.3
           majorPhaseGMT: 336.0
-          minorAmplitude: 0.21
-          minorMeanSpeed: 1.23
+          minorAmplitude: 0.206
+          minorMeanSpeed: 1.235
           minorPhase: 304.7
           minorPhaseGMT: 60.4
         - azi: 56.7
-          binDepth: 16.95
+          binDepth: 16.947
           binNbr: 1
           constNum: 30
           constituentName: P1
           description: Solar diurnal constituent
-          majorAmplitude: 5.4
-          majorMeanSpeed: 4.68
+          majorAmplitude: 5.402
+          majorMeanSpeed: 4.681
           majorPhase: 42.5
           majorPhaseGMT: 177.1
           minorAmplitude: 1.08
-          minorMeanSpeed: 1.23
+          minorMeanSpeed: 1.235
           minorPhase: 52.4
           minorPhaseGMT: 187.0
         - azi: 56.7
-          binDepth: 16.95
+          binDepth: 16.947
           binNbr: 1
           constNum: 31
           constituentName: 2SM2
           description: Shallow water semidiurnal constituent
-          majorAmplitude: 0.93
-          majorMeanSpeed: 4.68
+          majorAmplitude: 0.926
+          majorMeanSpeed: 4.681
           majorPhase: 1.5
           majorPhaseGMT: 280.6
-          minorAmplitude: 0.67
-          minorMeanSpeed: 1.23
+          minorAmplitude: 0.669
+          minorMeanSpeed: 1.235
           minorPhase: 250.6
           minorPhaseGMT: 169.7
         - azi: 56.7
-          binDepth: 16.95
+          binDepth: 16.947
           binNbr: 1
           constNum: 32
           constituentName: M3
           description: Lunar terdiurnal constituent
-          majorAmplitude: 0.51
-          majorMeanSpeed: 4.68
+          majorAmplitude: 0.514
+          majorMeanSpeed: 4.681
           majorPhase: 248.2
           majorPhaseGMT: 279.5
-          minorAmplitude: 0.41
-          minorMeanSpeed: 1.23
+          minorAmplitude: 0.412
+          minorMeanSpeed: 1.235
           minorPhase: 273.0
           minorPhaseGMT: 304.3
         - azi: 56.7
-          binDepth: 16.95
+          binDepth: 16.947
           binNbr: 1
           constNum: 33
           constituentName: L2
           description: Smaller lunar elliptic semidiurnal constituent
-          majorAmplitude: 2.21
-          majorMeanSpeed: 4.68
+          majorAmplitude: 2.212
+          majorMeanSpeed: 4.681
           majorPhase: 123.2
           majorPhaseGMT: 29.0
-          minorAmplitude: 0.62
-          minorMeanSpeed: 1.23
+          minorAmplitude: 0.617
+          minorMeanSpeed: 1.235
           minorPhase: 270.4
           minorPhaseGMT: 176.2
         - azi: 56.7
-          binDepth: 16.95
+          binDepth: 16.947
           binNbr: 1
           constNum: 34
           constituentName: 2MK3
           description: Shallow water terdiurnal constituent
-          majorAmplitude: 0.87
-          majorMeanSpeed: 4.68
+          majorAmplitude: 0.875
+          majorMeanSpeed: 4.681
           majorPhase: 346.0
           majorPhaseGMT: 12.3
-          minorAmplitude: 0.1
-          minorMeanSpeed: 1.23
+          minorAmplitude: 0.103
+          minorMeanSpeed: 1.235
           minorPhase: 118.0
           minorPhaseGMT: 144.3
         - azi: 56.7
-          binDepth: 16.95
+          binDepth: 16.947
           binNbr: 1
           constNum: 35
           constituentName: K2
           description: Lunisolar semidiurnal constituent
-          majorAmplitude: 4.73
-          majorMeanSpeed: 4.68
+          majorAmplitude: 4.733
+          majorMeanSpeed: 4.681
           majorPhase: 349.4
           majorPhaseGMT: 260.1
-          minorAmplitude: 1.13
-          minorMeanSpeed: 1.23
+          minorAmplitude: 1.132
+          minorMeanSpeed: 1.235
           minorPhase: 28.9
           minorPhaseGMT: 299.6
         - azi: 56.7
-          binDepth: 16.95
+          binDepth: 16.947
           binNbr: 1
           constNum: 36
           constituentName: M8
           description: Shallow water eighth diurnal constituent
-          majorAmplitude: 0.46
-          majorMeanSpeed: 4.68
+          majorAmplitude: 0.463
+          majorMeanSpeed: 4.681
           majorPhase: 108.1
           majorPhaseGMT: 71.5
           minorAmplitude: 0.36
-          minorMeanSpeed: 1.23
+          minorMeanSpeed: 1.235
           minorPhase: 210.2
           minorPhaseGMT: 173.6
         - azi: 56.7
-          binDepth: 16.95
+          binDepth: 16.947
           binNbr: 1
           constNum: 37
           constituentName: MS4
           description: Shallow water quarter diurnal constituent
-          majorAmplitude: 1.85
-          majorMeanSpeed: 4.68
+          majorAmplitude: 1.852
+          majorMeanSpeed: 4.681
           majorPhase: 313.5
           majorPhaseGMT: 124.4
-          minorAmplitude: 0.57
-          minorMeanSpeed: 1.23
+          minorAmplitude: 0.566
+          minorMeanSpeed: 1.235
           minorPhase: 202.4
           minorPhaseGMT: 13.3
         - azi: 57.6
-          binDepth: 10.94
+          binDepth: 10.942
           binNbr: 3
           constNum: 1
           constituentName: M2
           description: Principal lunar semidiurnal constituent
           majorAmplitude: 51.29
-          majorMeanSpeed: 4.94
+          majorMeanSpeed: 4.939
           majorPhase: 1.8
           majorPhaseGMT: 262.7
-          minorAmplitude: 2.42
-          minorMeanSpeed: 1.49
+          minorAmplitude: 2.418
+          minorMeanSpeed: 1.492
           minorPhase: 118.9
           minorPhaseGMT: 19.8
         - azi: 57.6
-          binDepth: 10.94
+          binDepth: 10.942
           binNbr: 3
           constNum: 2
           constituentName: S2
           description: Principal solar semidiurnal constituent
-          majorAmplitude: 18.62
-          majorMeanSpeed: 4.94
+          majorAmplitude: 18.623
+          majorMeanSpeed: 4.939
           majorPhase: 19.7
           majorPhaseGMT: 289.7
-          minorAmplitude: 1.85
-          minorMeanSpeed: 1.49
+          minorAmplitude: 1.852
+          minorMeanSpeed: 1.492
           minorPhase: 42.0
           minorPhaseGMT: 312.0
         - azi: 57.6
-          binDepth: 10.94
+          binDepth: 10.942
           binNbr: 3
           constNum: 3
           constituentName: N2
           description: Larger lunar elliptic semidiurnal constituent
-          majorAmplitude: 12.24
-          majorMeanSpeed: 4.94
+          majorAmplitude: 12.244
+          majorMeanSpeed: 4.939
           majorPhase: 339.6
           majorPhaseGMT: 235.6
-          minorAmplitude: 0.93
-          minorMeanSpeed: 1.49
+          minorAmplitude: 0.926
+          minorMeanSpeed: 1.492
           minorPhase: 86.1
           minorPhaseGMT: 342.1
         - azi: 57.6
-          binDepth: 10.94
+          binDepth: 10.942
           binNbr: 3
           constNum: 4
           constituentName: K1
           description: Lunar diurnal constituent
           majorAmplitude: 6.07
-          majorMeanSpeed: 4.94
+          majorMeanSpeed: 4.939
           majorPhase: 36.2
           majorPhaseGMT: 171.6
           minorAmplitude: 1.08
-          minorMeanSpeed: 1.49
+          minorMeanSpeed: 1.492
           minorPhase: 183.8
           minorPhaseGMT: 319.2
         - azi: 57.6
-          binDepth: 10.94
+          binDepth: 10.942
           binNbr: 3
           constNum: 5
           constituentName: M4
           description: Shallow water overtides of principal lunar constituent
-          majorAmplitude: 2.26
-          majorMeanSpeed: 4.94
+          majorAmplitude: 2.264
+          majorMeanSpeed: 4.939
           majorPhase: 311.3
           majorPhaseGMT: 113.0
           minorAmplitude: 0.36
-          minorMeanSpeed: 1.49
+          minorMeanSpeed: 1.492
           minorPhase: 111.8
           minorPhaseGMT: 273.5
         - azi: 57.6
-          binDepth: 10.94
+          binDepth: 10.942
           binNbr: 3
           constNum: 6
           constituentName: O1
           description: Lunar diurnal constituent
-          majorAmplitude: 5.25
-          majorMeanSpeed: 4.94
+          majorAmplitude: 5.247
+          majorMeanSpeed: 4.939
           majorPhase: 67.2
           majorPhaseGMT: 192.7
           minorAmplitude: 1.44
-          minorMeanSpeed: 1.49
+          minorMeanSpeed: 1.492
           minorPhase: 75.1
           minorPhaseGMT: 200.6
         - azi: 57.6
-          binDepth: 10.94
+          binDepth: 10.942
           binNbr: 3
           constNum: 7
           constituentName: M6
           description: Shallow water overtides of principal lunar constituent
-          majorAmplitude: 1.34
-          majorMeanSpeed: 4.94
+          majorAmplitude: 1.338
+          majorMeanSpeed: 4.939
           majorPhase: 13.4
           majorPhaseGMT: 76.0
-          minorAmplitude: 0.51
-          minorMeanSpeed: 1.49
+          minorAmplitude: 0.514
+          minorMeanSpeed: 1.492
           minorPhase: 155.7
           minorPhaseGMT: 218.3
         - azi: 57.6
-          binDepth: 10.94
+          binDepth: 10.942
           binNbr: 3
           constNum: 8
           constituentName: MK3
           description: Shallow water terdiurnal
-          majorAmplitude: 0.77
-          majorMeanSpeed: 4.94
+          majorAmplitude: 0.772
+          majorMeanSpeed: 4.939
           majorPhase: 65.2
           majorPhaseGMT: 101.4
-          minorAmplitude: 0.98
-          minorMeanSpeed: 1.49
+          minorAmplitude: 0.977
+          minorMeanSpeed: 1.492
           minorPhase: 162.5
           minorPhaseGMT: 198.7
         - azi: 57.6
-          binDepth: 10.94
+          binDepth: 10.942
           binNbr: 3
           constNum: 9
           constituentName: S4
           description: Shallow water overtides of principal solar constituent
-          majorAmplitude: 0.26
-          majorMeanSpeed: 4.94
+          majorAmplitude: 0.257
+          majorMeanSpeed: 4.939
           majorPhase: 111.7
           majorPhaseGMT: 291.7
-          minorAmplitude: 0.31
-          minorMeanSpeed: 1.49
+          minorAmplitude: 0.309
+          minorMeanSpeed: 1.492
           minorPhase: 49.3
           minorPhaseGMT: 229.3
         - azi: 57.6
-          binDepth: 10.94
+          binDepth: 10.942
           binNbr: 3
           constNum: 10
           constituentName: MN4
           description: Shallow water quarter diurnal constituent
-          majorAmplitude: 1.18
-          majorMeanSpeed: 4.94
+          majorAmplitude: 1.183
+          majorMeanSpeed: 4.939
           majorPhase: 307.3
           majorPhaseGMT: 104.1
           minorAmplitude: 0.36
-          minorMeanSpeed: 1.49
+          minorMeanSpeed: 1.492
           minorPhase: 81.4
           minorPhaseGMT: 238.2
         - azi: 57.6
-          binDepth: 10.94
+          binDepth: 10.942
           binNbr: 3
           constNum: 12
           constituentName: S6
           description: Shallow water overtides of principal solar constituent
-          majorAmplitude: 0.1
-          majorMeanSpeed: 4.94
+          majorAmplitude: 0.103
+          majorMeanSpeed: 4.939
           majorPhase: 34.9
           majorPhaseGMT: 124.9
-          minorAmplitude: 0.21
-          minorMeanSpeed: 1.49
+          minorAmplitude: 0.206
+          minorMeanSpeed: 1.492
           minorPhase: 252.5
           minorPhaseGMT: 342.5
         - azi: 57.6
-          binDepth: 10.94
+          binDepth: 10.942
           binNbr: 3
           constNum: 14
           constituentName: 2N2
           description: Lunar elliptical semidiurnal second-order constituent
-          majorAmplitude: 4.78
-          majorMeanSpeed: 4.94
+          majorAmplitude: 4.784
+          majorMeanSpeed: 4.939
           majorPhase: 293.7
           majorPhaseGMT: 184.8
-          minorAmplitude: 0.62
-          minorMeanSpeed: 1.49
+          minorAmplitude: 0.617
+          minorMeanSpeed: 1.492
           minorPhase: 84.8
           minorPhaseGMT: 335.9
         - azi: 57.6
-          binDepth: 10.94
+          binDepth: 10.942
           binNbr: 3
           constNum: 15
           constituentName: OO1
           description: Lunar diurnal
-          majorAmplitude: 0.21
-          majorMeanSpeed: 4.94
+          majorAmplitude: 0.206
+          majorMeanSpeed: 4.939
           majorPhase: 110.6
           majorPhaseGMT: 255.9
           minorAmplitude: 0.36
-          minorMeanSpeed: 1.49
+          minorMeanSpeed: 1.492
           minorPhase: 310.7
           minorPhaseGMT: 96.0
         - azi: 57.6
-          binDepth: 10.94
+          binDepth: 10.942
           binNbr: 3
           constNum: 18
           constituentName: M1
           description: Smaller lunar elliptic diurnal constituent
-          majorAmplitude: 0.67
-          majorMeanSpeed: 4.94
+          majorAmplitude: 0.669
+          majorMeanSpeed: 4.939
           majorPhase: 10.6
           majorPhaseGMT: 141.1
-          minorAmplitude: 0.21
-          minorMeanSpeed: 1.49
+          minorAmplitude: 0.206
+          minorMeanSpeed: 1.492
           minorPhase: 171.3
           minorPhaseGMT: 301.8
         - azi: 57.6
-          binDepth: 10.94
+          binDepth: 10.942
           binNbr: 3
           constNum: 19
           constituentName: J1
           description: Smaller lunar elliptic diurnal constituent
-          majorAmplitude: 0.57
-          majorMeanSpeed: 4.94
+          majorAmplitude: 0.566
+          majorMeanSpeed: 4.939
           majorPhase: 336.7
           majorPhaseGMT: 117.0
-          minorAmplitude: 0.1
-          minorMeanSpeed: 1.49
+          minorAmplitude: 0.103
+          minorMeanSpeed: 1.492
           minorPhase: 347.6
           minorPhaseGMT: 127.9
         - azi: 57.6
-          binDepth: 10.94
+          binDepth: 10.942
           binNbr: 3
           constNum: 26
           constituentName: Q1
           description: Larger lunar elliptic diurnal constituent
-          majorAmplitude: 0.93
-          majorMeanSpeed: 4.94
+          majorAmplitude: 0.926
+          majorMeanSpeed: 4.939
           majorPhase: 66.3
           majorPhaseGMT: 186.9
-          minorAmplitude: 0.62
-          minorMeanSpeed: 1.49
+          minorAmplitude: 0.617
+          minorMeanSpeed: 1.492
           minorPhase: 129.2
           minorPhaseGMT: 249.8
         - azi: 57.6
-          binDepth: 10.94
+          binDepth: 10.942
           binNbr: 3
           constNum: 29
           constituentName: 2Q1
           description: Larger elliptic diurnal
-          majorAmplitude: 0.41
-          majorMeanSpeed: 4.94
+          majorAmplitude: 0.412
+          majorMeanSpeed: 4.939
           majorPhase: 222.9
           majorPhaseGMT: 338.6
-          minorAmplitude: 0.31
-          minorMeanSpeed: 1.49
+          minorAmplitude: 0.309
+          minorMeanSpeed: 1.492
           minorPhase: 176.8
           minorPhaseGMT: 292.5
         - azi: 57.6
-          binDepth: 10.94
+          binDepth: 10.942
           binNbr: 3
           constNum: 30
           constituentName: P1
           description: Solar diurnal constituent
-          majorAmplitude: 5.2
-          majorMeanSpeed: 4.94
+          majorAmplitude: 5.196
+          majorMeanSpeed: 4.939
           majorPhase: 42.8
           majorPhaseGMT: 177.4
-          minorAmplitude: 2.57
-          minorMeanSpeed: 1.49
+          minorAmplitude: 2.572
+          minorMeanSpeed: 1.492
           minorPhase: 6.7
           minorPhaseGMT: 141.3
         - azi: 57.6
-          binDepth: 10.94
+          binDepth: 10.942
           binNbr: 3
           constNum: 31
           constituentName: 2SM2
           description: Shallow water semidiurnal constituent
           majorAmplitude: 1.08
-          majorMeanSpeed: 4.94
+          majorMeanSpeed: 4.939
           majorPhase: 13.8
           majorPhaseGMT: 292.9
-          minorAmplitude: 0.57
-          minorMeanSpeed: 1.49
+          minorAmplitude: 0.566
+          minorMeanSpeed: 1.492
           minorPhase: 241.1
           minorPhaseGMT: 160.2
         - azi: 57.6
-          binDepth: 10.94
+          binDepth: 10.942
           binNbr: 3
           constNum: 32
           constituentName: M3
           description: Lunar terdiurnal constituent
-          majorAmplitude: 0.57
-          majorMeanSpeed: 4.94
+          majorAmplitude: 0.566
+          majorMeanSpeed: 4.939
           majorPhase: 234.6
           majorPhaseGMT: 265.9
           minorAmplitude: 0.72
-          minorMeanSpeed: 1.49
+          minorMeanSpeed: 1.492
           minorPhase: 246.8
           minorPhaseGMT: 278.1
         - azi: 57.6
-          binDepth: 10.94
+          binDepth: 10.942
           binNbr: 3
           constNum: 33
           constituentName: L2
           description: Smaller lunar elliptic semidiurnal constituent
-          majorAmplitude: 2.78
-          majorMeanSpeed: 4.94
+          majorAmplitude: 2.778
+          majorMeanSpeed: 4.939
           majorPhase: 123.1
           majorPhaseGMT: 28.9
-          minorAmplitude: 1.03
-          minorMeanSpeed: 1.49
+          minorAmplitude: 1.029
+          minorMeanSpeed: 1.492
           minorPhase: 223.7
           minorPhaseGMT: 129.5
         - azi: 57.6
-          binDepth: 10.94
+          binDepth: 10.942
           binNbr: 3
           constNum: 34
           constituentName: 2MK3
           description: Shallow water terdiurnal constituent
-          majorAmplitude: 0.46
-          majorMeanSpeed: 4.94
+          majorAmplitude: 0.463
+          majorMeanSpeed: 4.939
           majorPhase: 12.4
           majorPhaseGMT: 38.7
           minorAmplitude: 0.72
-          minorMeanSpeed: 1.49
+          minorMeanSpeed: 1.492
           minorPhase: 150.9
           minorPhaseGMT: 177.2
         - azi: 57.6
-          binDepth: 10.94
+          binDepth: 10.942
           binNbr: 3
           constNum: 35
           constituentName: K2
           description: Lunisolar semidiurnal constituent
-          majorAmplitude: 4.89
-          majorMeanSpeed: 4.94
+          majorAmplitude: 4.887
+          majorMeanSpeed: 4.939
           majorPhase: 4.2
           majorPhaseGMT: 274.9
-          minorAmplitude: 0.93
-          minorMeanSpeed: 1.49
+          minorAmplitude: 0.926
+          minorMeanSpeed: 1.492
           minorPhase: 64.4
           minorPhaseGMT: 335.1
         - azi: 57.6
-          binDepth: 10.94
+          binDepth: 10.942
           binNbr: 3
           constNum: 36
           constituentName: M8
           description: Shallow water eighth diurnal constituent
           majorAmplitude: 0.36
-          majorMeanSpeed: 4.94
+          majorMeanSpeed: 4.939
           majorPhase: 40.7
           majorPhaseGMT: 4.1
-          minorAmplitude: 0.51
-          minorMeanSpeed: 1.49
+          minorAmplitude: 0.514
+          minorMeanSpeed: 1.492
           minorPhase: 193.6
           minorPhaseGMT: 157.0
         - azi: 57.6
-          binDepth: 10.94
+          binDepth: 10.942
           binNbr: 3
           constNum: 37
           constituentName: MS4
           description: Shallow water quarter diurnal constituent
-          majorAmplitude: 1.8
-          majorMeanSpeed: 4.94
+          majorAmplitude: 1.801
+          majorMeanSpeed: 4.939
           majorPhase: 325.0
           majorPhaseGMT: 135.9
-          minorAmplitude: 0.05
-          minorMeanSpeed: 1.49
+          minorAmplitude: 0.051
+          minorMeanSpeed: 1.492
           minorPhase: 75.4
           minorPhaseGMT: 246.3
         - azi: 59.2
-          binDepth: 4.94
+          binDepth: 4.938
           binNbr: 5
           constNum: 1
           constituentName: M2
           description: Principal lunar semidiurnal constituent
-          majorAmplitude: 53.6
-          majorMeanSpeed: 5.14
+          majorAmplitude: 53.605
+          majorMeanSpeed: 5.144
           majorPhase: 2.2
           majorPhaseGMT: 263.1
-          minorAmplitude: 6.17
-          minorMeanSpeed: 1.75
+          minorAmplitude: 6.173
+          minorMeanSpeed: 1.749
           minorPhase: 115.8
           minorPhaseGMT: 16.7
         - azi: 59.2
-          binDepth: 4.94
+          binDepth: 4.938
           binNbr: 5
           constNum: 2
           constituentName: S2
           description: Principal solar semidiurnal constituent
-          majorAmplitude: 24.18
-          majorMeanSpeed: 5.14
+          majorAmplitude: 24.179
+          majorMeanSpeed: 5.144
           majorPhase: 21.4
           majorPhaseGMT: 291.4
-          minorAmplitude: 6.89
-          minorMeanSpeed: 1.75
+          minorAmplitude: 6.893
+          minorMeanSpeed: 1.749
           minorPhase: 97.6
           minorPhaseGMT: 7.6
         - azi: 59.2
-          binDepth: 4.94
+          binDepth: 4.938
           binNbr: 5
           constNum: 3
           constituentName: N2
           description: Larger lunar elliptic semidiurnal constituent
-          majorAmplitude: 12.6
-          majorMeanSpeed: 5.14
+          majorAmplitude: 12.604
+          majorMeanSpeed: 5.144
           majorPhase: 338.7
           majorPhaseGMT: 234.7
-          minorAmplitude: 1.03
-          minorMeanSpeed: 1.75
+          minorAmplitude: 1.029
+          minorMeanSpeed: 1.749
           minorPhase: 95.7
           minorPhaseGMT: 351.7
         - azi: 59.2
-          binDepth: 4.94
+          binDepth: 4.938
           binNbr: 5
           constNum: 4
           constituentName: K1
           description: Lunar diurnal constituent
-          majorAmplitude: 6.33
-          majorMeanSpeed: 5.14
+          majorAmplitude: 6.328
+          majorMeanSpeed: 5.144
           majorPhase: 44.7
           majorPhaseGMT: 180.1
-          minorAmplitude: 1.7
-          minorMeanSpeed: 1.75
+          minorAmplitude: 1.698
+          minorMeanSpeed: 1.749
           minorPhase: 191.7
           minorPhaseGMT: 327.1
         - azi: 59.2
-          binDepth: 4.94
+          binDepth: 4.938
           binNbr: 5
           constNum: 5
           constituentName: M4
           description: Shallow water overtides of principal lunar constituent
-          majorAmplitude: 2.42
-          majorMeanSpeed: 5.14
+          majorAmplitude: 2.418
+          majorMeanSpeed: 5.144
           majorPhase: 333.7
           majorPhaseGMT: 135.4
-          minorAmplitude: 0.51
-          minorMeanSpeed: 1.75
+          minorAmplitude: 0.514
+          minorMeanSpeed: 1.749
           minorPhase: 170.1
           minorPhaseGMT: 331.8
         - azi: 59.2
-          binDepth: 4.94
+          binDepth: 4.938
           binNbr: 5
           constNum: 6
           constituentName: O1
           description: Lunar diurnal constituent
-          majorAmplitude: 4.89
-          majorMeanSpeed: 5.14
+          majorAmplitude: 4.887
+          majorMeanSpeed: 5.144
           majorPhase: 59.4
           majorPhaseGMT: 184.9
-          minorAmplitude: 1.49
-          minorMeanSpeed: 1.75
+          minorAmplitude: 1.492
+          minorMeanSpeed: 1.749
           minorPhase: 54.8
           minorPhaseGMT: 180.3
         - azi: 59.2
-          binDepth: 4.94
+          binDepth: 4.938
           binNbr: 5
           constNum: 7
           constituentName: M6
           description: Shallow water overtides of principal lunar constituent
           majorAmplitude: 1.44
-          majorMeanSpeed: 5.14
+          majorMeanSpeed: 5.144
           majorPhase: 18.3
           majorPhaseGMT: 80.9
-          minorAmplitude: 0.26
-          minorMeanSpeed: 1.75
+          minorAmplitude: 0.257
+          minorMeanSpeed: 1.749
           minorPhase: 62.5
           minorPhaseGMT: 125.1
         - azi: 59.2
-          binDepth: 4.94
+          binDepth: 4.938
           binNbr: 5
           constNum: 8
           constituentName: MK3
           description: Shallow water terdiurnal
-          majorAmplitude: 0.87
-          majorMeanSpeed: 5.14
+          majorAmplitude: 0.875
+          majorMeanSpeed: 5.144
           majorPhase: 54.4
           majorPhaseGMT: 90.6
-          minorAmplitude: 0.67
-          minorMeanSpeed: 1.75
+          minorAmplitude: 0.669
+          minorMeanSpeed: 1.749
           minorPhase: 157.3
           minorPhaseGMT: 193.5
         - azi: 59.2
-          binDepth: 4.94
+          binDepth: 4.938
           binNbr: 5
           constNum: 9
           constituentName: S4
           description: Shallow water overtides of principal solar constituent
-          majorAmplitude: 0.82
-          majorMeanSpeed: 5.14
+          majorAmplitude: 0.823
+          majorMeanSpeed: 5.144
           majorPhase: 89.3
           majorPhaseGMT: 269.3
-          minorAmplitude: 0.31
-          minorMeanSpeed: 1.75
+          minorAmplitude: 0.309
+          minorMeanSpeed: 1.749
           minorPhase: 359.1
           minorPhaseGMT: 179.1
         - azi: 59.2
-          binDepth: 4.94
+          binDepth: 4.938
           binNbr: 5
           constNum: 10
           constituentName: MN4
           description: Shallow water quarter diurnal constituent
-          majorAmplitude: 0.67
-          majorMeanSpeed: 5.14
+          majorAmplitude: 0.669
+          majorMeanSpeed: 5.144
           majorPhase: 281.3
           majorPhaseGMT: 78.1
-          minorAmplitude: 0.31
-          minorMeanSpeed: 1.75
+          minorAmplitude: 0.309
+          minorMeanSpeed: 1.749
           minorPhase: 82.6
           minorPhaseGMT: 239.4
         - azi: 59.2
-          binDepth: 4.94
+          binDepth: 4.938
           binNbr: 5
           constNum: 12
           constituentName: S6
           description: Shallow water overtides of principal solar constituent
           majorAmplitude: 0.36
-          majorMeanSpeed: 5.14
+          majorMeanSpeed: 5.144
           majorPhase: 62.3
           majorPhaseGMT: 152.3
-          minorAmplitude: 0.21
-          minorMeanSpeed: 1.75
+          minorAmplitude: 0.206
+          minorMeanSpeed: 1.749
           minorPhase: 228.1
           minorPhaseGMT: 318.1
         - azi: 59.2
-          binDepth: 4.94
+          binDepth: 4.938
           binNbr: 5
           constNum: 14
           constituentName: 2N2
           description: Lunar elliptical semidiurnal second-order constituent
           majorAmplitude: 4.99
-          majorMeanSpeed: 5.14
+          majorMeanSpeed: 5.144
           majorPhase: 284.6
           majorPhaseGMT: 175.7
           minorAmplitude: 0.72
-          minorMeanSpeed: 1.75
+          minorMeanSpeed: 1.749
           minorPhase: 278.0
           minorPhaseGMT: 169.1
         - azi: 59.2
-          binDepth: 4.94
+          binDepth: 4.938
           binNbr: 5
           constNum: 15
           constituentName: OO1
           description: Lunar diurnal
-          majorAmplitude: 0.26
-          majorMeanSpeed: 5.14
+          majorAmplitude: 0.257
+          majorMeanSpeed: 5.144
           majorPhase: 150.9
           majorPhaseGMT: 296.2
           minorAmplitude: 0.36
-          minorMeanSpeed: 1.75
+          minorMeanSpeed: 1.749
           minorPhase: 308.8
           minorPhaseGMT: 94.1
         - azi: 59.2
-          binDepth: 4.94
+          binDepth: 4.938
           binNbr: 5
           constNum: 18
           constituentName: M1
           description: Smaller lunar elliptic diurnal constituent
-          majorAmplitude: 0.77
-          majorMeanSpeed: 5.14
+          majorAmplitude: 0.772
+          majorMeanSpeed: 5.144
           majorPhase: 5.0
           majorPhaseGMT: 135.5
-          minorAmplitude: 0.15
-          minorMeanSpeed: 1.75
+          minorAmplitude: 0.154
+          minorMeanSpeed: 1.749
           minorPhase: 88.7
           minorPhaseGMT: 219.2
         - azi: 59.2
-          binDepth: 4.94
+          binDepth: 4.938
           binNbr: 5
           constNum: 19
           constituentName: J1
           description: Smaller lunar elliptic diurnal constituent
-          majorAmplitude: 0.93
-          majorMeanSpeed: 5.14
+          majorAmplitude: 0.926
+          majorMeanSpeed: 5.144
           majorPhase: 324.9
           majorPhaseGMT: 105.2
           minorAmplitude: 0.36
-          minorMeanSpeed: 1.75
+          minorMeanSpeed: 1.749
           minorPhase: 2.6
           minorPhaseGMT: 142.9
         - azi: 59.2
-          binDepth: 4.94
+          binDepth: 4.938
           binNbr: 5
           constNum: 26
           constituentName: Q1
           description: Larger lunar elliptic diurnal constituent
-          majorAmplitude: 1.18
-          majorMeanSpeed: 5.14
+          majorAmplitude: 1.183
+          majorMeanSpeed: 5.144
           majorPhase: 35.9
           majorPhaseGMT: 156.5
-          minorAmplitude: 0.82
-          minorMeanSpeed: 1.75
+          minorAmplitude: 0.823
+          minorMeanSpeed: 1.749
           minorPhase: 110.7
           minorPhaseGMT: 231.3
         - azi: 59.2
-          binDepth: 4.94
+          binDepth: 4.938
           binNbr: 5
           constNum: 29
           constituentName: 2Q1
           description: Larger elliptic diurnal
-          majorAmplitude: 0.1
-          majorMeanSpeed: 5.14
+          majorAmplitude: 0.103
+          majorMeanSpeed: 5.144
           majorPhase: 238.6
           majorPhaseGMT: 354.3
           minorAmplitude: 0.36
-          minorMeanSpeed: 1.75
+          minorMeanSpeed: 1.749
           minorPhase: 138.4
           minorPhaseGMT: 254.1
         - azi: 59.2
-          binDepth: 4.94
+          binDepth: 4.938
           binNbr: 5
           constNum: 30
           constituentName: P1
           description: Solar diurnal constituent
           majorAmplitude: 4.27
-          majorMeanSpeed: 5.14
+          majorMeanSpeed: 5.144
           majorPhase: 29.3
           majorPhaseGMT: 163.9
           minorAmplitude: 3.91
-          minorMeanSpeed: 1.75
+          minorMeanSpeed: 1.749
           minorPhase: 350.9
           minorPhaseGMT: 125.5
         - azi: 59.2
-          binDepth: 4.94
+          binDepth: 4.938
           binNbr: 5
           constNum: 31
           constituentName: 2SM2
           description: Shallow water semidiurnal constituent
-          majorAmplitude: 1.75
-          majorMeanSpeed: 5.14
+          majorAmplitude: 1.749
+          majorMeanSpeed: 5.144
           majorPhase: 20.8
           majorPhaseGMT: 299.9
-          minorAmplitude: 0.46
-          minorMeanSpeed: 1.75
+          minorAmplitude: 0.463
+          minorMeanSpeed: 1.749
           minorPhase: 91.1
           minorPhaseGMT: 10.2
         - azi: 59.2
-          binDepth: 4.94
+          binDepth: 4.938
           binNbr: 5
           constNum: 32
           constituentName: M3
           description: Lunar terdiurnal constituent
           majorAmplitude: 0.72
-          majorMeanSpeed: 5.14
+          majorMeanSpeed: 5.144
           majorPhase: 220.6
           majorPhaseGMT: 251.9
-          minorAmplitude: 0.93
-          minorMeanSpeed: 1.75
+          minorAmplitude: 0.926
+          minorMeanSpeed: 1.749
           minorPhase: 246.4
           minorPhaseGMT: 277.7
         - azi: 59.2
-          binDepth: 4.94
+          binDepth: 4.938
           binNbr: 5
           constNum: 33
           constituentName: L2
           description: Smaller lunar elliptic semidiurnal constituent
-          majorAmplitude: 2.88
-          majorMeanSpeed: 5.14
+          majorAmplitude: 2.881
+          majorMeanSpeed: 5.144
           majorPhase: 117.1
           majorPhaseGMT: 22.9
-          minorAmplitude: 1.18
-          minorMeanSpeed: 1.75
+          minorAmplitude: 1.183
+          minorMeanSpeed: 1.749
           minorPhase: 195.4
           minorPhaseGMT: 101.2
         - azi: 59.2
-          binDepth: 4.94
+          binDepth: 4.938
           binNbr: 5
           constNum: 34
           constituentName: 2MK3
           description: Shallow water terdiurnal constituent
-          majorAmplitude: 0.41
-          majorMeanSpeed: 5.14
+          majorAmplitude: 0.412
+          majorMeanSpeed: 5.144
           majorPhase: 64.9
           majorPhaseGMT: 91.2
-          minorAmplitude: 0.98
-          minorMeanSpeed: 1.75
+          minorAmplitude: 0.977
+          minorMeanSpeed: 1.749
           minorPhase: 167.8
           minorPhaseGMT: 194.1
         - azi: 59.2
-          binDepth: 4.94
+          binDepth: 4.938
           binNbr: 5
           constNum: 35
           constituentName: K2
           description: Lunisolar semidiurnal constituent
-          majorAmplitude: 6.33
-          majorMeanSpeed: 5.14
+          majorAmplitude: 6.328
+          majorMeanSpeed: 5.144
           majorPhase: 38.3
           majorPhaseGMT: 309.0
-          minorAmplitude: 2.98
-          minorMeanSpeed: 1.75
+          minorAmplitude: 2.984
+          minorMeanSpeed: 1.749
           minorPhase: 157.9
           minorPhaseGMT: 68.6
         - azi: 59.2
-          binDepth: 4.94
+          binDepth: 4.938
           binNbr: 5
           constNum: 36
           constituentName: M8
           description: Shallow water eighth diurnal constituent
-          majorAmplitude: 0.31
-          majorMeanSpeed: 5.14
+          majorAmplitude: 0.309
+          majorMeanSpeed: 5.144
           majorPhase: 322.4
           majorPhaseGMT: 285.8
-          minorAmplitude: 0.57
-          minorMeanSpeed: 1.75
+          minorAmplitude: 0.566
+          minorMeanSpeed: 1.749
           minorPhase: 178.7
           minorPhaseGMT: 142.1
         - azi: 59.2
-          binDepth: 4.94
+          binDepth: 4.938
           binNbr: 5
           constNum: 37
           constituentName: MS4
           description: Shallow water quarter diurnal constituent
           majorAmplitude: 1.44
-          majorMeanSpeed: 5.14
+          majorMeanSpeed: 5.144
           majorPhase: 339.3
           majorPhaseGMT: 150.2
-          minorAmplitude: 0.41
-          minorMeanSpeed: 1.75
+          minorAmplitude: 0.412
+          minorMeanSpeed: 1.749
           minorPhase: 322.5
           minorPhaseGMT: 133.4
         self: https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/COI0513/harcon.json
@@ -28053,9 +28053,9 @@ metadata:
   key_variables:
   - speed
   - east
+  - along
   - across
   - north
-  - along
   map:
     c: station
     clabel: ''

@@ -6,7 +6,10 @@ data:
   aoos_204:
     datatype: intake_erddap.erddap:TableDAPReader
     kwargs:
-      cache_kwargs: null
+      cache_kwargs:
+        simplecache:
+          cache_storage: /home/kristen/.cache/cook-inlet-catalogs
+          same_names: true
       constraints:
         time>=: '1999-01-01T00:00:00Z'
       dataset_id: aoos_204
@@ -27,6 +30,8 @@ data:
       - z
       - sea_water_temperature
       - sea_water_practical_salinity
+      - sea_surface_temperature
+      - water_surface_above_station_datum
       - sea_surface_height_above_sea_level_geoid_local_station_datum
       - sea_surface_height_above_sea_level_geoid_mllw
     metadata:
@@ -40,7 +45,7 @@ data:
       maptype: point
       maxLatitude: 59.5973
       maxLongitude: -151.8291
-      maxTime: '2024-09-05T16:45:00Z'
+      maxTime: '2025-10-23T17:05:00Z'
       minLatitude: 59.5973
       minLongitude: -151.8291
       minTime: '2013-07-21T19:22:27Z'
@@ -48,12 +53,12 @@ data:
         data:
           height: 300
           hover_cols:
-          - z
-          - time
           - longitude
-          - station
           - sea_water_temperature
+          - station
           - latitude
+          - time
+          - z
           kind: line
           legend: top
           shared_axes: false
@@ -74,7 +79,10 @@ data:
   central-cook-inlet-175:
     datatype: intake_erddap.erddap:TableDAPReader
     kwargs:
-      cache_kwargs: null
+      cache_kwargs:
+        simplecache:
+          cache_storage: /home/kristen/.cache/cook-inlet-catalogs
+          same_names: true
       constraints:
         time>=: '1999-01-01T00:00:00Z'
       dataset_id: central-cook-inlet-175
@@ -95,6 +103,8 @@ data:
       - z
       - sea_water_temperature
       - sea_water_practical_salinity
+      - sea_surface_temperature
+      - water_surface_above_station_datum
       - sea_surface_height_above_sea_level_geoid_local_station_datum
       - sea_surface_height_above_sea_level_geoid_mllw
     metadata:
@@ -116,12 +126,12 @@ data:
         data:
           height: 300
           hover_cols:
-          - z
-          - time
           - longitude
-          - station
           - sea_water_temperature
+          - station
           - latitude
+          - time
+          - z
           kind: line
           legend: top
           shared_axes: false
@@ -142,7 +152,10 @@ data:
   edu_ucsd_cdip_236:
     datatype: intake_erddap.erddap:TableDAPReader
     kwargs:
-      cache_kwargs: null
+      cache_kwargs:
+        simplecache:
+          cache_storage: /home/kristen/.cache/cook-inlet-catalogs
+          same_names: true
       constraints:
         time>=: '1999-01-01T00:00:00Z'
       dataset_id: edu_ucsd_cdip_236
@@ -163,6 +176,8 @@ data:
       - z
       - sea_water_temperature
       - sea_water_practical_salinity
+      - sea_surface_temperature
+      - water_surface_above_station_datum
       - sea_surface_height_above_sea_level_geoid_local_station_datum
       - sea_surface_height_above_sea_level_geoid_mllw
     metadata:
@@ -184,12 +199,12 @@ data:
         data:
           height: 300
           hover_cols:
-          - z
-          - time
           - longitude
-          - station
           - sea_water_temperature
+          - station
           - latitude
+          - time
+          - z
           kind: line
           legend: top
           shared_axes: false
@@ -252,7 +267,7 @@ metadata:
   maptype: point
   maxLatitude: 59.7335
   maxLongitude: -151.6953
-  maxTime: '2024-09-05T16:45:00Z'
+  maxTime: '2025-10-23T17:05:00Z'
   minLatitude: 57.4795
   minLongitude: -152.0045
   minTime: '2011-05-09T23:00:27Z'

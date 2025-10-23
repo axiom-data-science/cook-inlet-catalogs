@@ -15,21 +15,18 @@ import cook_inlet_catalogs as cic
 import holoviews as hv
 ```
 
-# Moorings (KBNERR): Kachemak Bay, Homer stations
+# Drifters (Lake Clark)
 
-Moorings from Kachemak Bay National Estuarine Research Reserve (KBNERR)
-    
-Station mappings from AOOS/ERDDAP to KBNERR station list:
-* nerrs_kachdwq :: kachdwq
-* homer-dolphin-surface-water-q :: kachswq
-* nerrs_kach3wq :: kach3wq
-    
-More information: [https://accs.uaa.alaska.edu/kbnerr/](https://accs.uaa.alaska.edu/kbnerr/)
+Project: Lake Clark Physical Oceanographic Assessment
+
+* PIs: Tyler Hennon (UAF), Tahzay Jones (NPS), Seth Danielson (UAF)
+* Deployment Vessels: Norseman II (drifters 01-05), Island C (06-18)
+* Drifter Model: STC (surface drogued) 
 
 
 
 ```{code-cell}
-cat = intake.open_catalog(cic.utils.cat_path("moorings_kbnerr_homer"))
+cat = intake.open_catalog(cic.utils.cat_path("drifters_lake_clark"))
 ```
 
 ## Plot all datasets in catalog

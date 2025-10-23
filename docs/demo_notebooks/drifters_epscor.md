@@ -15,21 +15,20 @@ import cook_inlet_catalogs as cic
 import holoviews as hv
 ```
 
-# Moorings (KBNERR): Kachemak Bay, Homer stations
+# Drifters (EPSCoR)
 
-Moorings from Kachemak Bay National Estuarine Research Reserve (KBNERR)
-    
-Station mappings from AOOS/ERDDAP to KBNERR station list:
-* nerrs_kachdwq :: kachdwq
-* homer-dolphin-surface-water-q :: kachswq
-* nerrs_kach3wq :: kach3wq
-    
-More information: [https://accs.uaa.alaska.edu/kbnerr/](https://accs.uaa.alaska.edu/kbnerr/)
+Alaska EPSCoR Drifter Deployment
+
+* Several drifters are run at a time.
+* Data portal: [https://ak-epscor.portal.axds.co/](https://ak-epscor.portal.axds.co/)
+* Data page: [https://ak-epscor.portal.axds.co/#metadata/e773c142-c003-4441-a32a-8656e051f630/project/folder_metadata/5826151](https://ak-epscor.portal.axds.co/#metadata/e773c142-c003-4441-a32a-8656e051f630/project/folder_metadata/5826151)
+* files: [https://ak-epscor.portal.axds.co/#metadata/e773c142-c003-4441-a32a-8656e051f630/project/files](https://ak-epscor.portal.axds.co/#metadata/e773c142-c003-4441-a32a-8656e051f630/project/files)
+* Descriptive summary of drifter deployment: [https://www.alaska.edu/epscor/about/newsletters/May-2022-feature-current-events.php](https://www.alaska.edu/epscor/about/newsletters/May-2022-feature-current-events.php)
 
 
 
 ```{code-cell}
-cat = intake.open_catalog(cic.utils.cat_path("moorings_kbnerr_homer"))
+cat = intake.open_catalog(cic.utils.cat_path("drifters_epscor"))
 ```
 
 ## Plot all datasets in catalog

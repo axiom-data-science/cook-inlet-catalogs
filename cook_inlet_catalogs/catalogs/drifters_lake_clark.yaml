@@ -82,10 +82,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - time
-          - longitude
-          - depth
           - drifter
+          - depth
+          - longitude
+          - time
           - latitude
           kind: points
           legend: false
@@ -146,10 +146,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - time
-          - longitude
-          - depth
           - drifter
+          - depth
+          - longitude
+          - time
           - latitude
           kind: points
           legend: false
@@ -210,10 +210,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - time
-          - longitude
-          - depth
           - drifter
+          - depth
+          - longitude
+          - time
           - latitude
           kind: points
           legend: false
@@ -274,10 +274,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - time
-          - longitude
-          - depth
           - drifter
+          - depth
+          - longitude
+          - time
           - latitude
           kind: points
           legend: false
@@ -338,10 +338,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - time
-          - longitude
-          - depth
           - drifter
+          - depth
+          - longitude
+          - time
           - latitude
           kind: points
           legend: false
@@ -402,10 +402,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - time
-          - longitude
-          - depth
           - drifter
+          - depth
+          - longitude
+          - time
           - latitude
           kind: points
           legend: false
@@ -466,10 +466,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - time
-          - longitude
-          - depth
           - drifter
+          - depth
+          - longitude
+          - time
           - latitude
           kind: points
           legend: false
@@ -530,10 +530,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - time
-          - longitude
-          - depth
           - drifter
+          - depth
+          - longitude
+          - time
           - latitude
           kind: points
           legend: false
@@ -594,10 +594,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - time
-          - longitude
-          - depth
           - drifter
+          - depth
+          - longitude
+          - time
           - latitude
           kind: points
           legend: false
@@ -658,10 +658,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - time
-          - longitude
-          - depth
           - drifter
+          - depth
+          - longitude
+          - time
           - latitude
           kind: points
           legend: false
@@ -722,10 +722,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - time
-          - longitude
-          - depth
           - drifter
+          - depth
+          - longitude
+          - time
           - latitude
           kind: points
           legend: false
@@ -786,10 +786,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - time
-          - longitude
-          - depth
           - drifter
+          - depth
+          - longitude
+          - time
           - latitude
           kind: points
           legend: false
@@ -850,10 +850,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - time
-          - longitude
-          - depth
           - drifter
+          - depth
+          - longitude
+          - time
           - latitude
           kind: points
           legend: false
@@ -914,10 +914,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - time
-          - longitude
-          - depth
           - drifter
+          - depth
+          - longitude
+          - time
           - latitude
           kind: points
           legend: false
@@ -978,10 +978,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - time
-          - longitude
-          - depth
           - drifter
+          - depth
+          - longitude
+          - time
           - latitude
           kind: points
           legend: false
@@ -1042,10 +1042,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - time
-          - longitude
-          - depth
           - drifter
+          - depth
+          - longitude
+          - time
           - latitude
           kind: points
           legend: false
@@ -1106,10 +1106,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - time
-          - longitude
-          - depth
           - drifter
+          - depth
+          - longitude
+          - time
           - latitude
           kind: points
           legend: false
@@ -1170,10 +1170,10 @@ entries:
           geo: true
           height: 700
           hover_cols:
-          - time
-          - longitude
-          - depth
           - drifter
+          - depth
+          - longitude
+          - time
           - latitude
           kind: points
           legend: false

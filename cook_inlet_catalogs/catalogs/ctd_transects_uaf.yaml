@@ -70,13 +70,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Lon
+          - Lat
           - date_time
           - Station
-          - Lat
-          - Temperature
           - Pressure
           - distance [km]
+          - Lon
+          - Temperature
           kind: scatter
           shared_axes: false
           title: '2003-08-09 20:36:00'
@@ -90,13 +90,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Lon
+          - Lat
           - date_time
           - Station
-          - Lat
-          - Temperature
           - Pressure
           - distance [km]
+          - Lon
+          - Temperature
           kind: scatter
           shared_axes: false
           title: '2003-08-09 20:36:00'
@@ -146,13 +146,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Lon
+          - Lat
           - date_time
           - Station
-          - Lat
-          - Temperature
           - Pressure
           - distance [km]
+          - Lon
+          - Temperature
           kind: scatter
           shared_axes: false
           title: '2003-08-09 23:12:00'
@@ -166,13 +166,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Lon
+          - Lat
           - date_time
           - Station
-          - Lat
-          - Temperature
           - Pressure
           - distance [km]
+          - Lon
+          - Temperature
           kind: scatter
           shared_axes: false
           title: '2003-08-09 23:12:00'
@@ -222,13 +222,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Lon
+          - Lat
           - date_time
           - Station
-          - Lat
-          - Temperature
           - Pressure
           - distance [km]
+          - Lon
+          - Temperature
           kind: scatter
           shared_axes: false
           title: '2003-08-10 01:35:00'
@@ -242,13 +242,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Lon
+          - Lat
           - date_time
           - Station
-          - Lat
-          - Temperature
           - Pressure
           - distance [km]
+          - Lon
+          - Temperature
           kind: scatter
           shared_axes: false
           title: '2003-08-10 01:35:00'
@@ -298,13 +298,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Lon
+          - Lat
           - date_time
           - Station
-          - Lat
-          - Temperature
           - Pressure
           - distance [km]
+          - Lon
+          - Temperature
           kind: scatter
           shared_axes: false
           title: '2003-08-10 04:14:00'
@@ -318,13 +318,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Lon
+          - Lat
           - date_time
           - Station
-          - Lat
-          - Temperature
           - Pressure
           - distance [km]
+          - Lon
+          - Temperature
           kind: scatter
           shared_axes: false
           title: '2003-08-10 04:14:00'
@@ -374,13 +374,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Lon
+          - Lat
           - date_time
           - Station
-          - Lat
-          - Temperature
           - Pressure
           - distance [km]
+          - Lon
+          - Temperature
           kind: scatter
           shared_axes: false
           title: '2003-08-10 07:16:00'
@@ -394,13 +394,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Lon
+          - Lat
           - date_time
           - Station
-          - Lat
-          - Temperature
           - Pressure
           - distance [km]
+          - Lon
+          - Temperature
           kind: scatter
           shared_axes: false
           title: '2003-08-10 07:16:00'
@@ -450,13 +450,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Lon
+          - Lat
           - date_time
           - Station
-          - Lat
-          - Temperature
           - Pressure
           - distance [km]
+          - Lon
+          - Temperature
           kind: scatter
           shared_axes: false
           title: '2003-08-10 10:11:00'
@@ -470,13 +470,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Lon
+          - Lat
           - date_time
           - Station
-          - Lat
-          - Temperature
           - Pressure
           - distance [km]
+          - Lon
+          - Temperature
           kind: scatter
           shared_axes: false
           title: '2003-08-10 10:11:00'
@@ -526,13 +526,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Lon
+          - Lat
           - date_time
           - Station
-          - Lat
-          - Temperature
           - Pressure
           - distance [km]
+          - Lon
+          - Temperature
           kind: scatter
           shared_axes: false
           title: '2003-08-10 14:01:00'
@@ -546,13 +546,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Lon
+          - Lat
           - date_time
           - Station
-          - Lat
-          - Temperature
           - Pressure
           - distance [km]
+          - Lon
+          - Temperature
           kind: scatter
           shared_axes: false
           title: '2003-08-10 14:01:00'
@@ -602,13 +602,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Lon
+          - Lat
           - date_time
           - Station
-          - Lat
-          - Temperature
           - Pressure
           - distance [km]
+          - Lon
+          - Temperature
           kind: scatter
           shared_axes: false
           title: '2003-08-10 17:09:00'
@@ -622,13 +622,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Lon
+          - Lat
           - date_time
           - Station
-          - Lat
-          - Temperature
           - Pressure
           - distance [km]
+          - Lon
+          - Temperature
           kind: scatter
           shared_axes: false
           title: '2003-08-10 17:09:00'
@@ -678,13 +678,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Lon
+          - Lat
           - date_time
           - Station
-          - Lat
-          - Temperature
           - Pressure
           - distance [km]
+          - Lon
+          - Temperature
           kind: scatter
           shared_axes: false
           title: '2003-08-10 20:26:00'
@@ -698,13 +698,13 @@ entries:
           flip_yaxis: true
           height: 300
           hover_cols:
-          - Lon
+          - Lat
           - date_time
           - Station
-          - Lat
-          - Temperature
           - Pressure
           - distance [km]
+          - Lon
+          - Temperature
           kind: scatter
           shared_axes: false
           title: '2003-08-10 20:26:00'
@@ -720,8 +720,8 @@ metadata:
   header_names: null
   included: true
   key_variables:
-  - salt
   - temp
+  - salt
   map:
     coastline: false
     geo: true
@@ -778,10 +778,10 @@ metadata:
     \ (in the shipping channel). Conversely, where mean density-driven flow is southward\
     \ (in the shipping channel), the onset of southward tidal flow (ebb tide) occurs\
     \ earlier and has longer duration than the onset and duration of southward tidal\
-    \ flow along the eastern shore and near Kalgin Island. \n\nObservations of hydrography\
+    \ flow along the eastern shore and near Kalgin Island. \n\n> Observations of hydrography\
     \ and currents in central Cook Inlet, Alaska during diurnal\nand semidiurnal tidal\
-    \ cycles\nStephen R. Okkonen\nInstitute of Marine Science\nUniversity of Alaska\
-    \ Fairbanks\nReport: https://www.circac.org/wp-content/uploads/Okkonen_2005_hydrography-and-currents-in-Cook-Inlet.pdf\n"
+    \ cycles\n> Stephen R. Okkonen\n> Institute of Marine Science\n> University of\
+    \ Alaska Fairbanks\n> Report: [https://www.circac.org/wp-content/uploads/Okkonen_2005_hydrography-and-currents-in-Cook-Inlet.pdf](https://www.circac.org/wp-content/uploads/Okkonen_2005_hydrography-and-currents-in-Cook-Inlet.pdf)\n"
   time: 26-hour period on 9-10 August 2003
 user_parameters: {}
 version: 2

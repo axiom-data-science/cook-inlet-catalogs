@@ -116,11 +116,11 @@ entries:
           height: 400
           hover_cols:
           - date_time
-          - temp
-          - station_number
-          - pressure
           - ctd_longitude
           - ctd_latitude
+          - station_number
+          - temp
+          - pressure
           invert: true
           kind: line
           shared_axes: true
@@ -166,11 +166,11 @@ entries:
           height: 400
           hover_cols:
           - date_time
-          - temp
-          - station_number
-          - pressure
           - ctd_longitude
           - ctd_latitude
+          - station_number
+          - temp
+          - pressure
           invert: true
           kind: line
           shared_axes: true
@@ -216,11 +216,11 @@ entries:
           height: 400
           hover_cols:
           - date_time
-          - temp
-          - station_number
-          - pressure
           - ctd_longitude
           - ctd_latitude
+          - station_number
+          - temp
+          - pressure
           invert: true
           kind: line
           shared_axes: true
@@ -266,11 +266,11 @@ entries:
           height: 400
           hover_cols:
           - date_time
-          - temp
-          - station_number
-          - pressure
           - ctd_longitude
           - ctd_latitude
+          - station_number
+          - temp
+          - pressure
           invert: true
           kind: line
           shared_axes: true
@@ -316,11 +316,11 @@ entries:
           height: 400
           hover_cols:
           - date_time
-          - temp
-          - station_number
-          - pressure
           - ctd_longitude
           - ctd_latitude
+          - station_number
+          - temp
+          - pressure
           invert: true
           kind: line
           shared_axes: true
@@ -366,11 +366,11 @@ entries:
           height: 400
           hover_cols:
           - date_time
-          - temp
-          - station_number
-          - pressure
           - ctd_longitude
           - ctd_latitude
+          - station_number
+          - temp
+          - pressure
           invert: true
           kind: line
           shared_axes: true
@@ -416,11 +416,11 @@ entries:
           height: 400
           hover_cols:
           - date_time
-          - temp
-          - station_number
-          - pressure
           - ctd_longitude
           - ctd_latitude
+          - station_number
+          - temp
+          - pressure
           invert: true
           kind: line
           shared_axes: true
@@ -466,11 +466,11 @@ entries:
           height: 400
           hover_cols:
           - date_time
-          - temp
-          - station_number
-          - pressure
           - ctd_longitude
           - ctd_latitude
+          - station_number
+          - temp
+          - pressure
           invert: true
           kind: line
           shared_axes: true
@@ -516,11 +516,11 @@ entries:
           height: 400
           hover_cols:
           - date_time
-          - temp
-          - station_number
-          - pressure
           - ctd_longitude
           - ctd_latitude
+          - station_number
+          - temp
+          - pressure
           invert: true
           kind: line
           shared_axes: true
@@ -566,11 +566,11 @@ entries:
           height: 400
           hover_cols:
           - date_time
-          - temp
-          - station_number
-          - pressure
           - ctd_longitude
           - ctd_latitude
+          - station_number
+          - temp
+          - pressure
           invert: true
           kind: line
           shared_axes: true
@@ -616,11 +616,11 @@ entries:
           height: 400
           hover_cols:
           - date_time
-          - temp
-          - station_number
-          - pressure
           - ctd_longitude
           - ctd_latitude
+          - station_number
+          - temp
+          - pressure
           invert: true
           kind: line
           shared_axes: true
@@ -666,11 +666,11 @@ entries:
           height: 400
           hover_cols:
           - date_time
-          - temp
-          - station_number
-          - pressure
           - ctd_longitude
           - ctd_latitude
+          - station_number
+          - temp
+          - pressure
           invert: true
           kind: line
           shared_axes: true
@@ -716,11 +716,11 @@ entries:
           height: 400
           hover_cols:
           - date_time
-          - temp
-          - station_number
-          - pressure
           - ctd_longitude
           - ctd_latitude
+          - station_number
+          - temp
+          - pressure
           invert: true
           kind: line
           shared_axes: true
@@ -766,11 +766,11 @@ entries:
           height: 400
           hover_cols:
           - date_time
-          - temp
-          - station_number
-          - pressure
           - ctd_longitude
           - ctd_latitude
+          - station_number
+          - temp
+          - pressure
           invert: true
           kind: line
           shared_axes: true
@@ -816,11 +816,11 @@ entries:
           height: 400
           hover_cols:
           - date_time
-          - temp
-          - station_number
-          - pressure
           - ctd_longitude
           - ctd_latitude
+          - station_number
+          - temp
+          - pressure
           invert: true
           kind: line
           shared_axes: true
@@ -866,11 +866,11 @@ entries:
           height: 400
           hover_cols:
           - date_time
-          - temp
-          - station_number
-          - pressure
           - ctd_longitude
           - ctd_latitude
+          - station_number
+          - temp
+          - pressure
           invert: true
           kind: line
           shared_axes: true
@@ -916,11 +916,11 @@ entries:
           height: 400
           hover_cols:
           - date_time
-          - temp
-          - station_number
-          - pressure
           - ctd_longitude
           - ctd_latitude
+          - station_number
+          - temp
+          - pressure
           invert: true
           kind: line
           shared_axes: true
@@ -966,11 +966,11 @@ entries:
           height: 400
           hover_cols:
           - date_time
-          - temp
-          - station_number
-          - pressure
           - ctd_longitude
           - ctd_latitude
+          - station_number
+          - temp
+          - pressure
           invert: true
           kind: line
           shared_axes: true
@@ -1016,11 +1016,11 @@ entries:
           height: 400
           hover_cols:
           - date_time
-          - temp
-          - station_number
-          - pressure
           - ctd_longitude
           - ctd_latitude
+          - station_number
+          - temp
+          - pressure
           invert: true
           kind: line
           shared_axes: true
@@ -1066,11 +1066,11 @@ entries:
           height: 400
           hover_cols:
           - date_time
-          - temp
-          - station_number
-          - pressure
           - ctd_longitude
           - ctd_latitude
+          - station_number
+          - temp
+          - pressure
           invert: true
           kind: line
           shared_axes: true
@@ -1116,11 +1116,11 @@ entries:
           height: 400
           hover_cols:
           - date_time
-          - temp
-          - station_number
-          - pressure
           - ctd_longitude
           - ctd_latitude
+          - station_number
+          - temp
+          - pressure
           invert: true
           kind: line
           shared_axes: true
@@ -1166,11 +1166,11 @@ entries:
           height: 400
           hover_cols:
           - date_time
-          - temp
-          - station_number
-          - pressure
           - ctd_longitude
           - ctd_latitude
+          - station_number
+          - temp
+          - pressure
           invert: true
           kind: line
           shared_axes: true
@@ -1216,11 +1216,11 @@ entries:
           height: 400
           hover_cols:
           - date_time
-          - temp
-          - station_number
-          - pressure
           - ctd_longitude
           - ctd_latitude
+          - station_number
+          - temp
+          - pressure
           invert: true
           kind: line
           shared_axes: true
@@ -1266,11 +1266,11 @@ entries:
           height: 400
           hover_cols:
           - date_time
-          - temp
-          - station_number
-          - pressure
           - ctd_longitude
           - ctd_latitude
+          - station_number
+          - temp
+          - pressure
           invert: true
           kind: line
           shared_axes: true
@@ -1316,11 +1316,11 @@ entries:
           height: 400
           hover_cols:
           - date_time
-          - temp
-          - station_number
-          - pressure
           - ctd_longitude
           - ctd_latitude
+          - station_number
+          - temp
+          - pressure
           invert: true
           kind: line
           shared_axes: true
@@ -1366,11 +1366,11 @@ entries:
           height: 400
           hover_cols:
           - date_time
-          - temp
-          - station_number
-          - pressure
           - ctd_longitude
           - ctd_latitude
+          - station_number
+          - temp
+          - pressure
           invert: true
           kind: line
           shared_axes: true
@@ -1416,11 +1416,11 @@ entries:
           height: 400
           hover_cols:
           - date_time
-          - temp
-          - station_number
-          - pressure
           - ctd_longitude
           - ctd_latitude
+          - station_number
+          - temp
+          - pressure
           invert: true
           kind: line
           shared_axes: true
@@ -1466,11 +1466,11 @@ entries:
           height: 400
           hover_cols:
           - date_time
-          - temp
-          - station_number
-          - pressure
           - ctd_longitude
           - ctd_latitude
+          - station_number
+          - temp
+          - pressure
           invert: true
           kind: line
           shared_axes: true
@@ -1516,11 +1516,11 @@ entries:
           height: 400
           hover_cols:
           - date_time
-          - temp
-          - station_number
-          - pressure
           - ctd_longitude
           - ctd_latitude
+          - station_number
+          - temp
+          - pressure
           invert: true
           kind: line
           shared_axes: true
@@ -1566,11 +1566,11 @@ entries:
           height: 400
           hover_cols:
           - date_time
-          - temp
-          - station_number
-          - pressure
           - ctd_longitude
           - ctd_latitude
+          - station_number
+          - temp
+          - pressure
           invert: true
           kind: line
           shared_axes: true
@@ -1616,11 +1616,11 @@ entries:
           height: 400
           hover_cols:
           - date_time
-          - temp
-          - station_number
-          - pressure
           - ctd_longitude
           - ctd_latitude
+          - station_number
+          - temp
+          - pressure
           invert: true
           kind: line
           shared_axes: true
@@ -1666,11 +1666,11 @@ entries:
           height: 400
           hover_cols:
           - date_time
-          - temp
-          - station_number
-          - pressure
           - ctd_longitude
           - ctd_latitude
+          - station_number
+          - temp
+          - pressure
           invert: true
           kind: line
           shared_axes: true
@@ -1716,11 +1716,11 @@ entries:
           height: 400
           hover_cols:
           - date_time
-          - temp
-          - station_number
-          - pressure
           - ctd_longitude
           - ctd_latitude
+          - station_number
+          - temp
+          - pressure
           invert: true
           kind: line
           shared_axes: true
@@ -1766,11 +1766,11 @@ entries:
           height: 400
           hover_cols:
           - date_time
-          - temp
-          - station_number
-          - pressure
           - ctd_longitude
           - ctd_latitude
+          - station_number
+          - temp
+          - pressure
           invert: true
           kind: line
           shared_axes: true
@@ -1816,11 +1816,11 @@ entries:
           height: 400
           hover_cols:
           - date_time
-          - temp
-          - station_number
-          - pressure
           - ctd_longitude
           - ctd_latitude
+          - station_number
+          - temp
+          - pressure
           invert: true
           kind: line
           shared_axes: true
@@ -1866,11 +1866,11 @@ entries:
           height: 400
           hover_cols:
           - date_time
-          - temp
-          - station_number
-          - pressure
           - ctd_longitude
           - ctd_latitude
+          - station_number
+          - temp
+          - pressure
           invert: true
           kind: line
           shared_axes: true
@@ -1916,11 +1916,11 @@ entries:
           height: 400
           hover_cols:
           - date_time
-          - temp
-          - station_number
-          - pressure
           - ctd_longitude
           - ctd_latitude
+          - station_number
+          - temp
+          - pressure
           invert: true
           kind: line
           shared_axes: true
@@ -1966,11 +1966,11 @@ entries:
           height: 400
           hover_cols:
           - date_time
-          - temp
-          - station_number
-          - pressure
           - ctd_longitude
           - ctd_latitude
+          - station_number
+          - temp
+          - pressure
           invert: true
           kind: line
           shared_axes: true
@@ -2016,11 +2016,11 @@ entries:
           height: 400
           hover_cols:
           - date_time
-          - temp
-          - station_number
-          - pressure
           - ctd_longitude
           - ctd_latitude
+          - station_number
+          - temp
+          - pressure
           invert: true
           kind: line
           shared_axes: true
@@ -2066,11 +2066,11 @@ entries:
           height: 400
           hover_cols:
           - date_time
-          - temp
-          - station_number
-          - pressure
           - ctd_longitude
           - ctd_latitude
+          - station_number
+          - temp
+          - pressure
           invert: true
           kind: line
           shared_axes: true
@@ -2116,11 +2116,11 @@ entries:
           height: 400
           hover_cols:
           - date_time
-          - temp
-          - station_number
-          - pressure
           - ctd_longitude
           - ctd_latitude
+          - station_number
+          - temp
+          - pressure
           invert: true
           kind: line
           shared_axes: true
@@ -2166,11 +2166,11 @@ entries:
           height: 400
           hover_cols:
           - date_time
-          - temp
-          - station_number
-          - pressure
           - ctd_longitude
           - ctd_latitude
+          - station_number
+          - temp
+          - pressure
           invert: true
           kind: line
           shared_axes: true
@@ -2216,11 +2216,11 @@ entries:
           height: 400
           hover_cols:
           - date_time
-          - temp
-          - station_number
-          - pressure
           - ctd_longitude
           - ctd_latitude
+          - station_number
+          - temp
+          - pressure
           invert: true
           kind: line
           shared_axes: true
@@ -2266,11 +2266,11 @@ entries:
           height: 400
           hover_cols:
           - date_time
-          - temp
-          - station_number
-          - pressure
           - ctd_longitude
           - ctd_latitude
+          - station_number
+          - temp
+          - pressure
           invert: true
           kind: line
           shared_axes: true
@@ -2316,11 +2316,11 @@ entries:
           height: 400
           hover_cols:
           - date_time
-          - temp
-          - station_number
-          - pressure
           - ctd_longitude
           - ctd_latitude
+          - station_number
+          - temp
+          - pressure
           invert: true
           kind: line
           shared_axes: true
@@ -2366,11 +2366,11 @@ entries:
           height: 400
           hover_cols:
           - date_time
-          - temp
-          - station_number
-          - pressure
           - ctd_longitude
           - ctd_latitude
+          - station_number
+          - temp
+          - pressure
           invert: true
           kind: line
           shared_axes: true
@@ -2416,11 +2416,11 @@ entries:
           height: 400
           hover_cols:
           - date_time
-          - temp
-          - station_number
-          - pressure
           - ctd_longitude
           - ctd_latitude
+          - station_number
+          - temp
+          - pressure
           invert: true
           kind: line
           shared_axes: true
@@ -2466,11 +2466,11 @@ entries:
           height: 400
           hover_cols:
           - date_time
-          - temp
-          - station_number
-          - pressure
           - ctd_longitude
           - ctd_latitude
+          - station_number
+          - temp
+          - pressure
           invert: true
           kind: line
           shared_axes: true
@@ -2516,11 +2516,11 @@ entries:
           height: 400
           hover_cols:
           - date_time
-          - temp
-          - station_number
-          - pressure
           - ctd_longitude
           - ctd_latitude
+          - station_number
+          - temp
+          - pressure
           invert: true
           kind: line
           shared_axes: true
@@ -2566,11 +2566,11 @@ entries:
           height: 400
           hover_cols:
           - date_time
-          - temp
-          - station_number
-          - pressure
           - ctd_longitude
           - ctd_latitude
+          - station_number
+          - temp
+          - pressure
           invert: true
           kind: line
           shared_axes: true
@@ -2616,11 +2616,11 @@ entries:
           height: 400
           hover_cols:
           - date_time
-          - temp
-          - station_number
-          - pressure
           - ctd_longitude
           - ctd_latitude
+          - station_number
+          - temp
+          - pressure
           invert: true
           kind: line
           shared_axes: true
@@ -2666,11 +2666,11 @@ entries:
           height: 400
           hover_cols:
           - date_time
-          - temp
-          - station_number
-          - pressure
           - ctd_longitude
           - ctd_latitude
+          - station_number
+          - temp
+          - pressure
           invert: true
           kind: line
           shared_axes: true
@@ -2716,11 +2716,11 @@ entries:
           height: 400
           hover_cols:
           - date_time
-          - temp
-          - station_number
-          - pressure
           - ctd_longitude
           - ctd_latitude
+          - station_number
+          - temp
+          - pressure
           invert: true
           kind: line
           shared_axes: true
@@ -2766,11 +2766,11 @@ entries:
           height: 400
           hover_cols:
           - date_time
-          - temp
-          - station_number
-          - pressure
           - ctd_longitude
           - ctd_latitude
+          - station_number
+          - temp
+          - pressure
           invert: true
           kind: line
           shared_axes: true
@@ -2816,11 +2816,11 @@ entries:
           height: 400
           hover_cols:
           - date_time
-          - temp
-          - station_number
-          - pressure
           - ctd_longitude
           - ctd_latitude
+          - station_number
+          - temp
+          - pressure
           invert: true
           kind: line
           shared_axes: true
@@ -2866,11 +2866,11 @@ entries:
           height: 400
           hover_cols:
           - date_time
-          - temp
-          - station_number
-          - pressure
           - ctd_longitude
           - ctd_latitude
+          - station_number
+          - temp
+          - pressure
           invert: true
           kind: line
           shared_axes: true
@@ -2916,11 +2916,11 @@ entries:
           height: 400
           hover_cols:
           - date_time
-          - temp
-          - station_number
-          - pressure
           - ctd_longitude
           - ctd_latitude
+          - station_number
+          - temp
+          - pressure
           invert: true
           kind: line
           shared_axes: true
@@ -2966,11 +2966,11 @@ entries:
           height: 400
           hover_cols:
           - date_time
-          - temp
-          - station_number
-          - pressure
           - ctd_longitude
           - ctd_latitude
+          - station_number
+          - temp
+          - pressure
           invert: true
           kind: line
           shared_axes: true
@@ -3016,11 +3016,11 @@ entries:
           height: 400
           hover_cols:
           - date_time
-          - temp
-          - station_number
-          - pressure
           - ctd_longitude
           - ctd_latitude
+          - station_number
+          - temp
+          - pressure
           invert: true
           kind: line
           shared_axes: true
@@ -3066,11 +3066,11 @@ entries:
           height: 400
           hover_cols:
           - date_time
-          - temp
-          - station_number
-          - pressure
           - ctd_longitude
           - ctd_latitude
+          - station_number
+          - temp
+          - pressure
           invert: true
           kind: line
           shared_axes: true
@@ -3116,11 +3116,11 @@ entries:
           height: 400
           hover_cols:
           - date_time
-          - temp
-          - station_number
-          - pressure
           - ctd_longitude
           - ctd_latitude
+          - station_number
+          - temp
+          - pressure
           invert: true
           kind: line
           shared_axes: true
@@ -3166,11 +3166,11 @@ entries:
           height: 400
           hover_cols:
           - date_time
-          - temp
-          - station_number
-          - pressure
           - ctd_longitude
           - ctd_latitude
+          - station_number
+          - temp
+          - pressure
           invert: true
           kind: line
           shared_axes: true
@@ -3216,11 +3216,11 @@ entries:
           height: 400
           hover_cols:
           - date_time
-          - temp
-          - station_number
-          - pressure
           - ctd_longitude
           - ctd_latitude
+          - station_number
+          - temp
+          - pressure
           invert: true
           kind: line
           shared_axes: true
@@ -3266,11 +3266,11 @@ entries:
           height: 400
           hover_cols:
           - date_time
-          - temp
-          - station_number
-          - pressure
           - ctd_longitude
           - ctd_latitude
+          - station_number
+          - temp
+          - pressure
           invert: true
           kind: line
           shared_axes: true
@@ -3316,11 +3316,11 @@ entries:
           height: 400
           hover_cols:
           - date_time
-          - temp
-          - station_number
-          - pressure
           - ctd_longitude
           - ctd_latitude
+          - station_number
+          - temp
+          - pressure
           invert: true
           kind: line
           shared_axes: true
@@ -3366,11 +3366,11 @@ entries:
           height: 400
           hover_cols:
           - date_time
-          - temp
-          - station_number
-          - pressure
           - ctd_longitude
           - ctd_latitude
+          - station_number
+          - temp
+          - pressure
           invert: true
           kind: line
           shared_axes: true
@@ -3416,11 +3416,11 @@ entries:
           height: 400
           hover_cols:
           - date_time
-          - temp
-          - station_number
-          - pressure
           - ctd_longitude
           - ctd_latitude
+          - station_number
+          - temp
+          - pressure
           invert: true
           kind: line
           shared_axes: true
@@ -3466,11 +3466,11 @@ entries:
           height: 400
           hover_cols:
           - date_time
-          - temp
-          - station_number
-          - pressure
           - ctd_longitude
           - ctd_latitude
+          - station_number
+          - temp
+          - pressure
           invert: true
           kind: line
           shared_axes: true
@@ -3516,11 +3516,11 @@ entries:
           height: 400
           hover_cols:
           - date_time
-          - temp
-          - station_number
-          - pressure
           - ctd_longitude
           - ctd_latitude
+          - station_number
+          - temp
+          - pressure
           invert: true
           kind: line
           shared_axes: true
@@ -3566,11 +3566,11 @@ entries:
           height: 400
           hover_cols:
           - date_time
-          - temp
-          - station_number
-          - pressure
           - ctd_longitude
           - ctd_latitude
+          - station_number
+          - temp
+          - pressure
           invert: true
           kind: line
           shared_axes: true
@@ -3616,11 +3616,11 @@ entries:
           height: 400
           hover_cols:
           - date_time
-          - temp
-          - station_number
-          - pressure
           - ctd_longitude
           - ctd_latitude
+          - station_number
+          - temp
+          - pressure
           invert: true
           kind: line
           shared_axes: true
@@ -3666,11 +3666,11 @@ entries:
           height: 400
           hover_cols:
           - date_time
-          - temp
-          - station_number
-          - pressure
           - ctd_longitude
           - ctd_latitude
+          - station_number
+          - temp
+          - pressure
           invert: true
           kind: line
           shared_axes: true
@@ -3716,11 +3716,11 @@ entries:
           height: 400
           hover_cols:
           - date_time
-          - temp
-          - station_number
-          - pressure
           - ctd_longitude
           - ctd_latitude
+          - station_number
+          - temp
+          - pressure
           invert: true
           kind: line
           shared_axes: true
@@ -3766,11 +3766,11 @@ entries:
           height: 400
           hover_cols:
           - date_time
-          - temp
-          - station_number
-          - pressure
           - ctd_longitude
           - ctd_latitude
+          - station_number
+          - temp
+          - pressure
           invert: true
           kind: line
           shared_axes: true
@@ -3816,11 +3816,11 @@ entries:
           height: 400
           hover_cols:
           - date_time
-          - temp
-          - station_number
-          - pressure
           - ctd_longitude
           - ctd_latitude
+          - station_number
+          - temp
+          - pressure
           invert: true
           kind: line
           shared_axes: true
@@ -3866,11 +3866,11 @@ entries:
           height: 400
           hover_cols:
           - date_time
-          - temp
-          - station_number
-          - pressure
           - ctd_longitude
           - ctd_latitude
+          - station_number
+          - temp
+          - pressure
           invert: true
           kind: line
           shared_axes: true
@@ -3916,11 +3916,11 @@ entries:
           height: 400
           hover_cols:
           - date_time
-          - temp
-          - station_number
-          - pressure
           - ctd_longitude
           - ctd_latitude
+          - station_number
+          - temp
+          - pressure
           invert: true
           kind: line
           shared_axes: true
@@ -3966,11 +3966,11 @@ entries:
           height: 400
           hover_cols:
           - date_time
-          - temp
-          - station_number
-          - pressure
           - ctd_longitude
           - ctd_latitude
+          - station_number
+          - temp
+          - pressure
           invert: true
           kind: line
           shared_axes: true
@@ -4035,10 +4035,13 @@ metadata:
   - '2021'
   included: true
   key_variables:
-  - salt
   - temp
+  - salt
   map:
     c: station
+    clabel: ''
+    clim: null
+    cmap: null
     coastline: false
     color: k
     geo: true
@@ -4084,7 +4087,7 @@ metadata:
     \ collected in Cook Inlet from 2016-2021 by Mayumi Arimitsu as part of BOEM sponsored\
     \ research on fish and bird distributions in Cook Inlet. The profiles are collected\
     \ in July for the years 2016-2021.\n\nThe scientific project is described here:\
-    \ https://www.usgs.gov/centers/alaska-science-center/science/cook-inlet-seabird-and-forage-fish-study#overview.\n"
+    \ [https://www.usgs.gov/centers/alaska-science-center/science/cook-inlet-seabird-and-forage-fish-study#overview](https://www.usgs.gov/centers/alaska-science-center/science/cook-inlet-seabird-and-forage-fish-study#overview).\n"
   time: One-off CTD profiles from 2016 to 2021 in July
 user_parameters: {}
 version: 2

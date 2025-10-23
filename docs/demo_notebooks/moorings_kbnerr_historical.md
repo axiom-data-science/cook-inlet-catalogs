@@ -4,7 +4,7 @@ jupytext:
     extension: .md
     format_name: myst
     format_version: 0.13
-    jupytext_version: 1.16.3
+    jupytext_version: 1.18.1
 ---
 
 ```{code-cell}
@@ -19,7 +19,7 @@ import holoviews as hv
 
 Historical moorings from Kachemak Bay National Estuarine Research Reserve (KBNERR)
     
-More information: https://accs.uaa.alaska.edu/kbnerr/
+More information: [https://accs.uaa.alaska.edu/kbnerr/](https://accs.uaa.alaska.edu/kbnerr/)
 
 
 
