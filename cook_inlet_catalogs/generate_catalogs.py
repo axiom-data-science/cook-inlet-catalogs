@@ -11,7 +11,7 @@ import requests
 import fsspec
 import xarray as xr
 import numpy as np
-import pooch
+# import pooch
 
 import cook_inlet_catalogs as cic
 
