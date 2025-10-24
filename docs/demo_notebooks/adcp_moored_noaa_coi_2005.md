@@ -19,9 +19,6 @@ import holoviews as hv
 
 Moored NOAA ADCP surveys in Cook Inlet
 
-ADCP data has been converted to eastward, northward velocities as well as along- and across-channel velocities, in the latter case using the NOAA-provided rotation angle for the rotation. The along- and across-channel velocities are additionally filtered to show the subtidal signal, which is what is plotted in the dataset page.
-
-
 
 ```{code-cell}
 cat = intake.open_catalog(cic.utils.cat_path("adcp_moored_noaa_coi_2005"))

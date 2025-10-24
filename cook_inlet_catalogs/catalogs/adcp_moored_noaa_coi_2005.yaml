@@ -142,9 +142,6 @@ data:
       key_variables:
       - east
       - north
-      - along
-      - across
-      - speed
       lat: 60.72198
       lng: -151.6469
       maptype: point
@@ -159,8 +156,8 @@ data:
       notices: null
       observedst: true
       plots:
-        ualong:
-          clabel: ualong_subtidal
+        u:
+          clabel: u
           clim: null
           cmap: cmo.delta
           dynamic: true
@@ -179,9 +176,9 @@ data:
           xlabel: t
           y: depth
           ylabel: depth
-          z: ualong_subtidal
-        vacross:
-          clabel: vacross_subtidal
+          z: u
+        v:
+          clabel: v
           clim: null
           cmap: cmo.delta
           dynamic: true
@@ -200,7 +197,7 @@ data:
           xlabel: t
           y: depth
           ylabel: depth
-          z: vacross_subtidal
+          z: v
       portscode: ''
       products:
         products:
@@ -1374,9 +1371,6 @@ data:
       key_variables:
       - east
       - north
-      - along
-      - across
-      - speed
       lat: 60.72067
       lng: -151.55733
       maptype: point
@@ -1391,8 +1385,8 @@ data:
       notices: null
       observedst: true
       plots:
-        ualong:
-          clabel: ualong_subtidal
+        u:
+          clabel: u
           clim: null
           cmap: cmo.delta
           dynamic: true
@@ -1411,9 +1405,9 @@ data:
           xlabel: t
           y: depth
           ylabel: depth
-          z: ualong_subtidal
-        vacross:
-          clabel: vacross_subtidal
+          z: u
+        v:
+          clabel: v
           clim: null
           cmap: cmo.delta
           dynamic: true
@@ -1432,7 +1426,7 @@ data:
           xlabel: t
           y: depth
           ylabel: depth
-          z: vacross_subtidal
+          z: v
       portscode: ''
       products:
         products:
@@ -2636,9 +2630,6 @@ data:
       key_variables:
       - east
       - north
-      - along
-      - across
-      - speed
       lat: 60.71727
       lng: -151.43297
       maptype: point
@@ -2653,8 +2644,8 @@ data:
       notices: null
       observedst: true
       plots:
-        ualong:
-          clabel: ualong_subtidal
+        u:
+          clabel: u
           clim: null
           cmap: cmo.delta
           dynamic: true
@@ -2673,9 +2664,9 @@ data:
           xlabel: t
           y: depth
           ylabel: depth
-          z: ualong_subtidal
-        vacross:
-          clabel: vacross_subtidal
+          z: u
+        v:
+          clabel: v
           clim: null
           cmap: cmo.delta
           dynamic: true
@@ -2694,7 +2685,7 @@ data:
           xlabel: t
           y: depth
           ylabel: depth
-          z: vacross_subtidal
+          z: v
       portscode: ''
       products:
         products:
@@ -3905,9 +3896,6 @@ data:
       key_variables:
       - east
       - north
-      - along
-      - across
-      - speed
       lat: 60.68338
       lng: -151.41787
       maptype: point
@@ -3922,8 +3910,8 @@ data:
       notices: null
       observedst: true
       plots:
-        ualong:
-          clabel: ualong_subtidal
+        u:
+          clabel: u
           clim: null
           cmap: cmo.delta
           dynamic: true
@@ -3942,9 +3930,9 @@ data:
           xlabel: t
           y: depth
           ylabel: depth
-          z: ualong_subtidal
-        vacross:
-          clabel: vacross_subtidal
+          z: u
+        v:
+          clabel: v
           clim: null
           cmap: cmo.delta
           dynamic: true
@@ -3963,7 +3951,7 @@ data:
           xlabel: t
           y: depth
           ylabel: depth
-          z: vacross_subtidal
+          z: v
       portscode: ''
       products:
         products:
@@ -5125,9 +5113,6 @@ data:
       key_variables:
       - east
       - north
-      - along
-      - across
-      - speed
       lat: 60.59667
       lng: -151.73981
       maptype: point
@@ -5142,8 +5127,8 @@ data:
       notices: null
       observedst: true
       plots:
-        ualong:
-          clabel: ualong_subtidal
+        u:
+          clabel: u
           clim: null
           cmap: cmo.delta
           dynamic: true
@@ -5162,9 +5147,9 @@ data:
           xlabel: t
           y: depth
           ylabel: depth
-          z: ualong_subtidal
-        vacross:
-          clabel: vacross_subtidal
+          z: u
+        v:
+          clabel: v
           clim: null
           cmap: cmo.delta
           dynamic: true
@@ -5183,7 +5168,7 @@ data:
           xlabel: t
           y: depth
           ylabel: depth
-          z: vacross_subtidal
+          z: v
       portscode: ''
       products:
         products:
@@ -6359,9 +6344,6 @@ data:
       key_variables:
       - east
       - north
-      - along
-      - across
-      - speed
       lat: 60.58083
       lng: -151.44453
       maptype: point
@@ -6376,8 +6358,8 @@ data:
       notices: null
       observedst: true
       plots:
-        ualong:
-          clabel: ualong_subtidal
+        u:
+          clabel: u
           clim: null
           cmap: cmo.delta
           dynamic: true
@@ -6396,9 +6378,9 @@ data:
           xlabel: t
           y: depth
           ylabel: depth
-          z: ualong_subtidal
-        vacross:
-          clabel: vacross_subtidal
+          z: u
+        v:
+          clabel: v
           clim: null
           cmap: cmo.delta
           dynamic: true
@@ -6417,7 +6399,7 @@ data:
           xlabel: t
           y: depth
           ylabel: depth
-          z: vacross_subtidal
+          z: v
       portscode: ''
       products:
         products:
@@ -7551,9 +7533,6 @@ data:
       key_variables:
       - east
       - north
-      - along
-      - across
-      - speed
       lat: 60.5517
       lng: -152.12773
       maptype: point
@@ -7568,8 +7547,8 @@ data:
       notices: null
       observedst: true
       plots:
-        ualong:
-          clabel: ualong_subtidal
+        u:
+          clabel: u
           clim: null
           cmap: cmo.delta
           dynamic: true
@@ -7588,9 +7567,9 @@ data:
           xlabel: t
           y: depth
           ylabel: depth
-          z: ualong_subtidal
-        vacross:
-          clabel: vacross_subtidal
+          z: u
+        v:
+          clabel: v
           clim: null
           cmap: cmo.delta
           dynamic: true
@@ -7609,7 +7588,7 @@ data:
           xlabel: t
           y: depth
           ylabel: depth
-          z: vacross_subtidal
+          z: v
       portscode: ''
       products:
         products:
@@ -8806,9 +8785,6 @@ data:
       key_variables:
       - east
       - north
-      - along
-      - across
-      - speed
       lat: 60.48295
       lng: -151.67325
       maptype: point
@@ -8823,8 +8799,8 @@ data:
       notices: null
       observedst: true
       plots:
-        ualong:
-          clabel: ualong_subtidal
+        u:
+          clabel: u
           clim: null
           cmap: cmo.delta
           dynamic: true
@@ -8843,9 +8819,9 @@ data:
           xlabel: t
           y: depth
           ylabel: depth
-          z: ualong_subtidal
-        vacross:
-          clabel: vacross_subtidal
+          z: u
+        v:
+          clabel: v
           clim: null
           cmap: cmo.delta
           dynamic: true
@@ -8864,7 +8840,7 @@ data:
           xlabel: t
           y: depth
           ylabel: depth
-          z: vacross_subtidal
+          z: v
       portscode: ''
       products:
         products:
@@ -10166,9 +10142,6 @@ data:
       key_variables:
       - east
       - north
-      - along
-      - across
-      - speed
       lat: 60.37918
       lng: -152.1817
       maptype: point
@@ -10183,8 +10156,8 @@ data:
       notices: null
       observedst: true
       plots:
-        ualong:
-          clabel: ualong_subtidal
+        u:
+          clabel: u
           clim: null
           cmap: cmo.delta
           dynamic: true
@@ -10203,9 +10176,9 @@ data:
           xlabel: t
           y: depth
           ylabel: depth
-          z: ualong_subtidal
-        vacross:
-          clabel: vacross_subtidal
+          z: u
+        v:
+          clabel: v
           clim: null
           cmap: cmo.delta
           dynamic: true
@@ -10224,7 +10197,7 @@ data:
           xlabel: t
           y: depth
           ylabel: depth
-          z: vacross_subtidal
+          z: v
       portscode: ''
       products:
         products:
@@ -11407,9 +11380,6 @@ data:
       key_variables:
       - east
       - north
-      - along
-      - across
-      - speed
       lat: 60.24802
       lng: -151.75453
       maptype: point
@@ -11424,8 +11394,8 @@ data:
       notices: null
       observedst: true
       plots:
-        ualong:
-          clabel: ualong_subtidal
+        u:
+          clabel: u
           clim: null
           cmap: cmo.delta
           dynamic: true
@@ -11444,9 +11414,9 @@ data:
           xlabel: t
           y: depth
           ylabel: depth
-          z: ualong_subtidal
-        vacross:
-          clabel: vacross_subtidal
+          z: u
+        v:
+          clabel: v
           clim: null
           cmap: cmo.delta
           dynamic: true
@@ -11465,7 +11435,7 @@ data:
           xlabel: t
           y: depth
           ylabel: depth
-          z: vacross_subtidal
+          z: v
       portscode: ''
       products:
         products:
@@ -12718,9 +12688,6 @@ data:
       key_variables:
       - east
       - north
-      - along
-      - across
-      - speed
       lat: 60.02327
       lng: -152.12018
       maptype: point
@@ -12735,8 +12702,8 @@ data:
       notices: null
       observedst: true
       plots:
-        ualong:
-          clabel: ualong_subtidal
+        u:
+          clabel: u
           clim: null
           cmap: cmo.delta
           dynamic: true
@@ -12755,9 +12722,9 @@ data:
           xlabel: t
           y: depth
           ylabel: depth
-          z: ualong_subtidal
-        vacross:
-          clabel: vacross_subtidal
+          z: u
+        v:
+          clabel: v
           clim: null
           cmap: cmo.delta
           dynamic: true
@@ -12776,7 +12743,7 @@ data:
           xlabel: t
           y: depth
           ylabel: depth
-          z: vacross_subtidal
+          z: v
       portscode: ''
       products:
         products:
@@ -13217,9 +13184,6 @@ data:
       key_variables:
       - east
       - north
-      - along
-      - across
-      - speed
       lat: 59.56661
       lng: -153.42212
       maptype: point
@@ -13234,8 +13198,8 @@ data:
       notices: null
       observedst: true
       plots:
-        ualong:
-          clabel: ualong_subtidal
+        u:
+          clabel: u
           clim: null
           cmap: cmo.delta
           dynamic: true
@@ -13254,9 +13218,9 @@ data:
           xlabel: t
           y: depth
           ylabel: depth
-          z: ualong_subtidal
-        vacross:
-          clabel: vacross_subtidal
+          z: u
+        v:
+          clabel: v
           clim: null
           cmap: cmo.delta
           dynamic: true
@@ -13275,7 +13239,7 @@ data:
           xlabel: t
           y: depth
           ylabel: depth
-          z: vacross_subtidal
+          z: v
       portscode: ''
       products:
         products:
@@ -14442,9 +14406,6 @@ data:
       key_variables:
       - east
       - north
-      - along
-      - across
-      - speed
       lat: 59.4828
       lng: -151.75505
       maptype: point
@@ -14459,8 +14420,8 @@ data:
       notices: null
       observedst: true
       plots:
-        ualong:
-          clabel: ualong_subtidal
+        u:
+          clabel: u
           clim: null
           cmap: cmo.delta
           dynamic: true
@@ -14479,9 +14440,9 @@ data:
           xlabel: t
           y: depth
           ylabel: depth
-          z: ualong_subtidal
-        vacross:
-          clabel: vacross_subtidal
+          z: u
+        v:
+          clabel: v
           clim: null
           cmap: cmo.delta
           dynamic: true
@@ -14500,7 +14461,7 @@ data:
           xlabel: t
           y: depth
           ylabel: depth
-          z: vacross_subtidal
+          z: v
       portscode: ''
       products:
         products:
@@ -15760,9 +15721,6 @@ data:
       key_variables:
       - east
       - north
-      - along
-      - across
-      - speed
       lat: 59.3018
       lng: -152.93028
       maptype: point
@@ -15777,8 +15735,8 @@ data:
       notices: null
       observedst: true
       plots:
-        ualong:
-          clabel: ualong_subtidal
+        u:
+          clabel: u
           clim: null
           cmap: cmo.delta
           dynamic: true
@@ -15797,9 +15755,9 @@ data:
           xlabel: t
           y: depth
           ylabel: depth
-          z: ualong_subtidal
-        vacross:
-          clabel: vacross_subtidal
+          z: u
+        v:
+          clabel: v
           clim: null
           cmap: cmo.delta
           dynamic: true
@@ -15818,7 +15776,7 @@ data:
           xlabel: t
           y: depth
           ylabel: depth
-          z: vacross_subtidal
+          z: v
       portscode: ''
       products:
         products:
@@ -17407,9 +17365,6 @@ data:
       key_variables:
       - east
       - north
-      - along
-      - across
-      - speed
       lat: 59.31487
       lng: -152.36497
       maptype: point
@@ -17424,8 +17379,8 @@ data:
       notices: null
       observedst: true
       plots:
-        ualong:
-          clabel: ualong_subtidal
+        u:
+          clabel: u
           clim: null
           cmap: cmo.delta
           dynamic: true
@@ -17444,9 +17399,9 @@ data:
           xlabel: t
           y: depth
           ylabel: depth
-          z: ualong_subtidal
-        vacross:
-          clabel: vacross_subtidal
+          z: u
+        v:
+          clabel: v
           clim: null
           cmap: cmo.delta
           dynamic: true
@@ -17465,7 +17420,7 @@ data:
           xlabel: t
           y: depth
           ylabel: depth
-          z: vacross_subtidal
+          z: v
       portscode: ''
       products:
         products:
@@ -18669,9 +18624,6 @@ data:
       key_variables:
       - east
       - north
-      - along
-      - across
-      - speed
       lat: 59.40002
       lng: -151.9659
       maptype: point
@@ -18686,8 +18638,8 @@ data:
       notices: null
       observedst: true
       plots:
-        ualong:
-          clabel: ualong_subtidal
+        u:
+          clabel: u
           clim: null
           cmap: cmo.delta
           dynamic: true
@@ -18706,9 +18658,9 @@ data:
           xlabel: t
           y: depth
           ylabel: depth
-          z: ualong_subtidal
-        vacross:
-          clabel: vacross_subtidal
+          z: u
+        v:
+          clabel: v
           clim: null
           cmap: cmo.delta
           dynamic: true
@@ -18727,7 +18679,7 @@ data:
           xlabel: t
           y: depth
           ylabel: depth
-          z: vacross_subtidal
+          z: v
       portscode: ''
       products:
         products:
@@ -19917,9 +19869,6 @@ data:
       key_variables:
       - east
       - north
-      - along
-      - across
-      - speed
       lat: 58.89005
       lng: -153.1842
       maptype: point
@@ -19934,8 +19883,8 @@ data:
       notices: null
       observedst: true
       plots:
-        ualong:
-          clabel: ualong_subtidal
+        u:
+          clabel: u
           clim: null
           cmap: cmo.delta
           dynamic: true
@@ -19954,9 +19903,9 @@ data:
           xlabel: t
           y: depth
           ylabel: depth
-          z: ualong_subtidal
-        vacross:
-          clabel: vacross_subtidal
+          z: u
+        v:
+          clabel: v
           clim: null
           cmap: cmo.delta
           dynamic: true
@@ -19975,7 +19924,7 @@ data:
           xlabel: t
           y: depth
           ylabel: depth
-          z: vacross_subtidal
+          z: v
       portscode: ''
       products:
         products:
@@ -20542,9 +20491,6 @@ data:
       key_variables:
       - east
       - north
-      - along
-      - across
-      - speed
       lat: 58.98048
       lng: -152.7277
       maptype: point
@@ -20559,8 +20505,8 @@ data:
       notices: null
       observedst: true
       plots:
-        ualong:
-          clabel: ualong_subtidal
+        u:
+          clabel: u
           clim: null
           cmap: cmo.delta
           dynamic: true
@@ -20579,9 +20525,9 @@ data:
           xlabel: t
           y: depth
           ylabel: depth
-          z: ualong_subtidal
-        vacross:
-          clabel: vacross_subtidal
+          z: u
+        v:
+          clabel: v
           clim: null
           cmap: cmo.delta
           dynamic: true
@@ -20600,7 +20546,7 @@ data:
           xlabel: t
           y: depth
           ylabel: depth
-          z: vacross_subtidal
+          z: v
       portscode: ''
       products:
         products:
@@ -21893,9 +21839,6 @@ data:
       key_variables:
       - east
       - north
-      - along
-      - across
-      - speed
       lat: 58.808
       lng: -152.40778
       maptype: point
@@ -21910,8 +21853,8 @@ data:
       notices: null
       observedst: true
       plots:
-        ualong:
-          clabel: ualong_subtidal
+        u:
+          clabel: u
           clim: null
           cmap: cmo.delta
           dynamic: true
@@ -21930,9 +21873,9 @@ data:
           xlabel: t
           y: depth
           ylabel: depth
-          z: ualong_subtidal
-        vacross:
-          clabel: vacross_subtidal
+          z: u
+        v:
+          clabel: v
           clim: null
           cmap: cmo.delta
           dynamic: true
@@ -21951,7 +21894,7 @@ data:
           xlabel: t
           y: depth
           ylabel: depth
-          z: vacross_subtidal
+          z: v
       portscode: ''
       products:
         products:
@@ -22931,9 +22874,6 @@ data:
       key_variables:
       - east
       - north
-      - along
-      - across
-      - speed
       lat: 59.049198150634766
       lng: -152.15185546875
       maptype: point
@@ -22948,8 +22888,8 @@ data:
       notices: null
       observedst: true
       plots:
-        ualong:
-          clabel: ualong_subtidal
+        u:
+          clabel: u
           clim: null
           cmap: cmo.delta
           dynamic: true
@@ -22968,9 +22908,9 @@ data:
           xlabel: t
           y: depth
           ylabel: depth
-          z: ualong_subtidal
-        vacross:
-          clabel: vacross_subtidal
+          z: u
+        v:
+          clabel: v
           clim: null
           cmap: cmo.delta
           dynamic: true
@@ -22989,7 +22929,7 @@ data:
           xlabel: t
           y: depth
           ylabel: depth
-          z: vacross_subtidal
+          z: v
       portscode: ''
       products:
         products:
@@ -24235,9 +24175,6 @@ data:
       key_variables:
       - east
       - north
-      - along
-      - across
-      - speed
       lat: 59.12072
       lng: -151.89483
       maptype: point
@@ -24252,8 +24189,8 @@ data:
       notices: null
       observedst: true
       plots:
-        ualong:
-          clabel: ualong_subtidal
+        u:
+          clabel: u
           clim: null
           cmap: cmo.delta
           dynamic: true
@@ -24272,9 +24209,9 @@ data:
           xlabel: t
           y: depth
           ylabel: depth
-          z: ualong_subtidal
-        vacross:
-          clabel: vacross_subtidal
+          z: u
+        v:
+          clabel: v
           clim: null
           cmap: cmo.delta
           dynamic: true
@@ -24293,7 +24230,7 @@ data:
           xlabel: t
           y: depth
           ylabel: depth
-          z: vacross_subtidal
+          z: v
       portscode: ''
       products:
         products:
@@ -25462,9 +25399,6 @@ data:
       key_variables:
       - east
       - north
-      - along
-      - across
-      - speed
       lat: 59.21125
       lng: -151.78703
       maptype: point
@@ -25479,8 +25413,8 @@ data:
       notices: null
       observedst: true
       plots:
-        ualong:
-          clabel: ualong_subtidal
+        u:
+          clabel: u
           clim: null
           cmap: cmo.delta
           dynamic: true
@@ -25499,9 +25433,9 @@ data:
           xlabel: t
           y: depth
           ylabel: depth
-          z: ualong_subtidal
-        vacross:
-          clabel: vacross_subtidal
+          z: u
+        v:
+          clabel: v
           clim: null
           cmap: cmo.delta
           dynamic: true
@@ -25520,7 +25454,7 @@ data:
           xlabel: t
           y: depth
           ylabel: depth
-          z: vacross_subtidal
+          z: v
       portscode: ''
       products:
         products:
@@ -26752,9 +26686,6 @@ data:
       key_variables:
       - east
       - north
-      - along
-      - across
-      - speed
       lat: 59.16658
       lng: -151.77543
       maptype: point
@@ -26769,8 +26700,8 @@ data:
       notices: null
       observedst: true
       plots:
-        ualong:
-          clabel: ualong_subtidal
+        u:
+          clabel: u
           clim: null
           cmap: cmo.delta
           dynamic: true
@@ -26789,9 +26720,9 @@ data:
           xlabel: t
           y: depth
           ylabel: depth
-          z: ualong_subtidal
-        vacross:
-          clabel: vacross_subtidal
+          z: u
+        v:
+          clabel: v
           clim: null
           cmap: cmo.delta
           dynamic: true
@@ -26810,7 +26741,7 @@ data:
           xlabel: t
           y: depth
           ylabel: depth
-          z: vacross_subtidal
+          z: v
       portscode: ''
       products:
         products:
@@ -27965,9 +27896,6 @@ data:
       key_variables:
       - east
       - north
-      - along
-      - across
-      - speed
       lat: 59.13387
       lng: -151.7055
       maptype: point
@@ -27982,8 +27910,8 @@ data:
       notices: null
       observedst: true
       plots:
-        ualong:
-          clabel: ualong_subtidal
+        u:
+          clabel: u
           clim: null
           cmap: cmo.delta
           dynamic: true
@@ -28002,9 +27930,9 @@ data:
           xlabel: t
           y: depth
           ylabel: depth
-          z: ualong_subtidal
-        vacross:
-          clabel: vacross_subtidal
+          z: u
+        v:
+          clabel: v
           clim: null
           cmap: cmo.delta
           dynamic: true
@@ -28023,7 +27951,7 @@ data:
           xlabel: t
           y: depth
           ylabel: depth
-          z: vacross_subtidal
+          z: v
       portscode: ''
       products:
         products:
@@ -28051,11 +27979,8 @@ metadata:
   header_names: null
   included: true
   key_variables:
-  - speed
   - east
-  - along
   - north
-  - across
   map:
     c: station
     clabel: ''
@@ -28102,16 +28027,7 @@ metadata:
   notes: ''
   overall_desc: 'Moored ADCP (NOAA): ADCP survey Cook Inlet 2005'
   project_name: Cook Inlet 2005 Current Survey
-  summary: 'Moored NOAA ADCP surveys in Cook Inlet
-
-
-    ADCP data has been converted to eastward, northward velocities as well as along-
-    and across-channel velocities, in the latter case using the NOAA-provided rotation
-    angle for the rotation. The along- and across-channel velocities are additionally
-    filtered to show the subtidal signal, which is what is plotted in the dataset
-    page.
-
-    '
+  summary: Moored NOAA ADCP surveys in Cook Inlet
   time: 2005, each for one or a few months
 user_parameters: {}
 version: 2

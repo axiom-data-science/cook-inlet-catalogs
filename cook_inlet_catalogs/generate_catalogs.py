@@ -2000,10 +2000,7 @@ def adcp_moored_noaa_coi_2005(slug, simplecache):
         featuretype = "timeSeriesProfile",
         header_names = None,
         map_description = "Moored ADCPs",
-        summary = f"""Moored NOAA ADCP surveys in Cook Inlet
-
-ADCP data has been converted to eastward, northward velocities as well as along- and across-channel velocities, in the latter case using the NOAA-provided rotation angle for the rotation. The along- and across-channel velocities are additionally filtered to show the subtidal signal, which is what is plotted in the dataset page.
-"""
+        summary = f"""Moored NOAA ADCP surveys in Cook Inlet"""
     )
 
     station_list = ["COI0501", "COI0502", "COI0503", "COI0504", "COI0505",
@@ -2026,7 +2023,8 @@ ADCP data has been converted to eastward, northward velocities as well as along-
                     "angle": cat[source_name].metadata["deployments"]["flood_direction_degrees"],
                     "maptype": metadata["maptype"],
                     "featuretype": metadata["featuretype"],
-                    "key_variables": ["east","north","along","across","speed"],
+                    "key_variables": ["east","north"],
+                    # "key_variables": ["east","north","along","across","speed"],
                     "depths": [bin["depth"] for bin in cat[source_name].metadata["bins"]["bins"]],
                     }
         start_date = str(pd.Timestamp(cat[source_name].metadata["deployments"]["first_good_data"]).date())
@@ -2035,9 +2033,12 @@ ADCP data has been converted to eastward, northward velocities as well as along-
         # is already provided for min/max times and location
         plot_kwargs = dict(x="t", y="depth", cmap=cic.cmap["u"], width=600, title=title, hover=True)
 
-        cat.get_entity(source_name).metadata.update({"plots": {"ualong": cic.utils.quadmesh_dict(var="ualong_subtidal", **plot_kwargs),
-                                             "vacross": cic.utils.quadmesh_dict(var="vacross_subtidal", **plot_kwargs),},
+        cat.get_entity(source_name).metadata.update({"plots": {"u": cic.utils.quadmesh_dict(var="u", **plot_kwargs),
+                                             "v": cic.utils.quadmesh_dict(var="v", **plot_kwargs),},
                                            "urlpath": f"https://tidesandcurrents.noaa.gov/stationhome.html?id={source_name}"})
+        # cat.get_entity(source_name).metadata.update({"plots": {"ualong": cic.utils.quadmesh_dict(var="ualong_subtidal", **plot_kwargs),
+        #                                      "vacross": cic.utils.quadmesh_dict(var="vacross_subtidal", **plot_kwargs),},
+        #                                    "urlpath": f"https://tidesandcurrents.noaa.gov/stationhome.html?id={source_name}"})
         cat.get_entity(source_name).metadata.update(md_new)
 
     cat.metadata.update(metadata)
@@ -2060,10 +2061,7 @@ def adcp_moored_noaa_coi_other(slug, simplecache):
         featuretype = "timeSeriesProfile",
         header_names = None,
         map_description = "Moored ADCPs",
-        summary = f"""Moored NOAA ADCP surveys in Cook Inlet
-
-ADCP data has been converted to eastward, northward velocities as well as along- and across-channel velocities, in the latter case using the NOAA-provided rotation angle for the rotation. The along- and across-channel velocities are additionally filtered to show the subtidal signal, which is what is plotted in the dataset page.
-"""
+        summary = f"""Moored NOAA ADCP surveys in Cook Inlet"""
     )
     
     station_list = ["COI0206", "COI0207", "COI0213", "COI0301", "COI0302", "COI0303",
@@ -2086,7 +2084,8 @@ ADCP data has been converted to eastward, northward velocities as well as along-
                     "angle": cat[source_name].metadata["deployments"]["flood_direction_degrees"],
                     "maptype": metadata["maptype"],
                     "featuretype": metadata["featuretype"],
-                    "key_variables": ["east","north","along","across","speed"],
+                    "key_variables": ["east","north"],
+                    # "key_variables": ["east","north","along","across","speed"],
                     "depths": [bin["depth"] for bin in cat[source_name].metadata["bins"]["bins"]],
                     }
         start_date = str(pd.Timestamp(cat[source_name].metadata["deployments"]["first_good_data"]).date())
@@ -2095,8 +2094,8 @@ ADCP data has been converted to eastward, northward velocities as well as along-
         # is already provided for min/max times and location
         plot_kwargs = dict(x="t", y="depth", cmap=cic.cmap["u"], width=600, title=title, hover=True)
 
-        cat.get_entity(source_name).metadata.update({"plots": {"ualong": cic.utils.quadmesh_dict(var="ualong_subtidal", **plot_kwargs),
-                                             "vacross": cic.utils.quadmesh_dict(var="vacross_subtidal", **plot_kwargs),},
+        cat.get_entity(source_name).metadata.update({"plots": {"u": cic.utils.quadmesh_dict(var="u", **plot_kwargs),
+                                             "v": cic.utils.quadmesh_dict(var="v", **plot_kwargs),},
                                            "urlpath": f"https://tidesandcurrents.noaa.gov/stationhome.html?id={source_name}"})
         cat.get_entity(source_name).metadata.update(md_new)
 
@@ -2121,8 +2120,6 @@ def adcp_moored_noaa_kod_1(slug, simplecache):
         header_names = None,
         map_description = "Moored ADCPs",
         summary = f"""Moored NOAA ADCP surveys in Cook Inlet
-
-ADCP data has been converted to eastward, northward velocities as well as along- and across-channel velocities, in the latter case using the NOAA-provided rotation angle for the rotation. The along- and across-channel velocities are additionally filtered to show the subtidal signal, which is what is plotted in the dataset page.
 
 Stations "KOD0914", "KOD0915", "KOD0916", "KOD0917", "KOD0918", "KOD0919", "KOD0920" are not included because they are just outside or along the model domain boundary.
 """
@@ -2151,7 +2148,8 @@ Stations "KOD0914", "KOD0915", "KOD0916", "KOD0917", "KOD0918", "KOD0919", "KOD0
                     "angle": cat[source_name].metadata["deployments"]["flood_direction_degrees"],
                     "maptype": metadata["maptype"],
                     "featuretype": metadata["featuretype"],
-                    "key_variables": ["east","north","along","across","speed"],
+                    "key_variables": ["east","north"],
+                    # "key_variables": ["east","north","along","across","speed"],
                     "depths": [bin["depth"] for bin in cat[source_name].metadata["bins"]["bins"]],
                     }
         start_date = str(pd.Timestamp(cat[source_name].metadata["deployments"]["first_good_data"]).date())
@@ -2160,8 +2158,8 @@ Stations "KOD0914", "KOD0915", "KOD0916", "KOD0917", "KOD0918", "KOD0919", "KOD0
         # is already provided for min/max times and location
         plot_kwargs = dict(x="t", y="depth", cmap=cic.cmap["u"], width=600, title=title, hover=True)
 
-        cat.get_entity(source_name).metadata.update({"plots": {"ualong": cic.utils.quadmesh_dict(var="ualong_subtidal", **plot_kwargs),
-                                             "vacross": cic.utils.quadmesh_dict(var="vacross_subtidal", **plot_kwargs),},
+        cat.get_entity(source_name).metadata.update({"plots": {"u": cic.utils.quadmesh_dict(var="u", **plot_kwargs),
+                                             "v": cic.utils.quadmesh_dict(var="v", **plot_kwargs),},
                                            "urlpath": f"https://tidesandcurrents.noaa.gov/stationhome.html?id={source_name}"})
         cat.get_entity(source_name).metadata.update(md_new)
 
@@ -2186,8 +2184,6 @@ def adcp_moored_noaa_kod_2(slug, simplecache):
         header_names = None,
         map_description = "Moored ADCPs",
         summary = f"""Moored NOAA ADCP surveys in Cook Inlet
-
-ADCP data has been converted to eastward, northward velocities as well as along- and across-channel velocities, in the latter case using the NOAA-provided rotation angle for the rotation. The along- and across-channel velocities are additionally filtered to show the subtidal signal, which is what is plotted in the dataset page.
 """
     )
     
@@ -2223,8 +2219,8 @@ ADCP data has been converted to eastward, northward velocities as well as along-
         # is already provided for min/max times and location
         plot_kwargs = dict(x="t", y="depth", cmap=cic.cmap["u"], width=600, title=title, hover=True)
 
-        cat.get_entity(source_name).metadata.update({"plots": {"ualong": cic.utils.quadmesh_dict(var="ualong_subtidal", **plot_kwargs),
-                                             "vacross": cic.utils.quadmesh_dict(var="vacross_subtidal", **plot_kwargs),},
+        cat.get_entity(source_name).metadata.update({"plots": {"u": cic.utils.quadmesh_dict(var="u", **plot_kwargs),
+                                             "v": cic.utils.quadmesh_dict(var="v", **plot_kwargs),},
                                            "urlpath": f"https://tidesandcurrents.noaa.gov/stationhome.html?id={source_name}"})
         cat.get_entity(source_name).metadata.update(md_new)
 
@@ -2707,10 +2703,10 @@ if __name__ == "__main__":
     simplecache = False
     
     slugs = [
-        #         'adcp_moored_noaa_coi_2005',
-        #  'adcp_moored_noaa_coi_other',
-        #  'adcp_moored_noaa_kod_1',
-        #  'adcp_moored_noaa_kod_2',
+                'adcp_moored_noaa_coi_2005',
+         'adcp_moored_noaa_coi_other',
+         'adcp_moored_noaa_kod_1',
+         'adcp_moored_noaa_kod_2',
         #  'ctd_profiles_2005_noaa',
         #  'ctd_profiles_ecofoci',
         #  'ctd_profiles_emap_2002',
@@ -2731,20 +2727,21 @@ if __name__ == "__main__":
         #  'ctd_transects_misc_2002',
         #  'ctd_transects_otf_kbnerr',
         #  'ctd_transects_uaf',
-         'hfradar',
-         'moorings_aoos_cdip',
-         'moorings_circac',
-         'moorings_kbnerr',
-         'moorings_kbnerr_bear_cove_seldovia',
-         'moorings_kbnerr_historical',
-         'moorings_kbnerr_homer',
-         'moorings_noaa',
-         'moorings_nps',
-         'moorings_uaf',
-        'drifters_ecofoci',
- 'drifters_uaf',
- 'drifters_epscor',
- 'drifters_lake_clark']
+#          'hfradar',
+#          'moorings_aoos_cdip',
+#          'moorings_circac',
+#          'moorings_kbnerr',
+#          'moorings_kbnerr_bear_cove_seldovia',
+#          'moorings_kbnerr_historical',
+#          'moorings_kbnerr_homer',
+#          'moorings_noaa',
+#          'moorings_nps',
+#          'moorings_uaf',
+#         'drifters_ecofoci',
+#  'drifters_uaf',
+#  'drifters_epscor',
+#  'drifters_lake_clark'
+    ]
     
     from time import time
     for slug in slugs:
