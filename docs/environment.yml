@@ -12,6 +12,7 @@ dependencies:
    - dask
    - geoviews
    - h5netcdf
+   - holoviews=1.19.1  # otherwise the drifter overview plots were impossibly slow with newer version
    - hvplot
    - jupyter
    - jupyter_bokeh

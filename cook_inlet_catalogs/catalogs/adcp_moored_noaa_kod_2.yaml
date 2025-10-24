@@ -938,8 +938,8 @@ data:
       notices: null
       observedst: true
       plots:
-        ualong:
-          clabel: ualong_subtidal
+        u:
+          clabel: u
           clim: null
           cmap: cmo.delta
           dynamic: true
@@ -958,9 +958,9 @@ data:
           xlabel: t
           y: depth
           ylabel: depth
-          z: ualong_subtidal
-        vacross:
-          clabel: vacross_subtidal
+          z: u
+        v:
+          clabel: v
           clim: null
           cmap: cmo.delta
           dynamic: true
@@ -979,7 +979,7 @@ data:
           xlabel: t
           y: depth
           ylabel: depth
-          z: vacross_subtidal
+          z: v
       portscode: ''
       products:
         products:
@@ -1542,8 +1542,8 @@ data:
       notices: null
       observedst: true
       plots:
-        ualong:
-          clabel: ualong_subtidal
+        u:
+          clabel: u
           clim: null
           cmap: cmo.delta
           dynamic: true
@@ -1562,9 +1562,9 @@ data:
           xlabel: t
           y: depth
           ylabel: depth
-          z: ualong_subtidal
-        vacross:
-          clabel: vacross_subtidal
+          z: u
+        v:
+          clabel: v
           clim: null
           cmap: cmo.delta
           dynamic: true
@@ -1583,7 +1583,7 @@ data:
           xlabel: t
           y: depth
           ylabel: depth
-          z: vacross_subtidal
+          z: v
       portscode: ''
       products:
         products:
@@ -2790,8 +2790,8 @@ data:
       notices: null
       observedst: true
       plots:
-        ualong:
-          clabel: ualong_subtidal
+        u:
+          clabel: u
           clim: null
           cmap: cmo.delta
           dynamic: true
@@ -2810,9 +2810,9 @@ data:
           xlabel: t
           y: depth
           ylabel: depth
-          z: ualong_subtidal
-        vacross:
-          clabel: vacross_subtidal
+          z: u
+        v:
+          clabel: v
           clim: null
           cmap: cmo.delta
           dynamic: true
@@ -2831,7 +2831,7 @@ data:
           xlabel: t
           y: depth
           ylabel: depth
-          z: vacross_subtidal
+          z: v
       portscode: ''
       products:
         products:
@@ -4101,8 +4101,8 @@ data:
       notices: null
       observedst: true
       plots:
-        ualong:
-          clabel: ualong_subtidal
+        u:
+          clabel: u
           clim: null
           cmap: cmo.delta
           dynamic: true
@@ -4121,9 +4121,9 @@ data:
           xlabel: t
           y: depth
           ylabel: depth
-          z: ualong_subtidal
-        vacross:
-          clabel: vacross_subtidal
+          z: u
+        v:
+          clabel: v
           clim: null
           cmap: cmo.delta
           dynamic: true
@@ -4142,7 +4142,7 @@ data:
           xlabel: t
           y: depth
           ylabel: depth
-          z: vacross_subtidal
+          z: v
       portscode: ''
       products:
         products:
@@ -5356,8 +5356,8 @@ data:
       notices: null
       observedst: true
       plots:
-        ualong:
-          clabel: ualong_subtidal
+        u:
+          clabel: u
           clim: null
           cmap: cmo.delta
           dynamic: true
@@ -5376,9 +5376,9 @@ data:
           xlabel: t
           y: depth
           ylabel: depth
-          z: ualong_subtidal
-        vacross:
-          clabel: vacross_subtidal
+          z: u
+        v:
+          clabel: v
           clim: null
           cmap: cmo.delta
           dynamic: true
@@ -5397,7 +5397,7 @@ data:
           xlabel: t
           y: depth
           ylabel: depth
-          z: vacross_subtidal
+          z: v
       portscode: ''
       products:
         products:
@@ -6681,8 +6681,8 @@ data:
       notices: null
       observedst: true
       plots:
-        ualong:
-          clabel: ualong_subtidal
+        u:
+          clabel: u
           clim: null
           cmap: cmo.delta
           dynamic: true
@@ -6701,9 +6701,9 @@ data:
           xlabel: t
           y: depth
           ylabel: depth
-          z: ualong_subtidal
-        vacross:
-          clabel: vacross_subtidal
+          z: u
+        v:
+          clabel: v
           clim: null
           cmap: cmo.delta
           dynamic: true
@@ -6722,7 +6722,7 @@ data:
           xlabel: t
           y: depth
           ylabel: depth
-          z: vacross_subtidal
+          z: v
       portscode: ''
       products:
         products:
@@ -8020,8 +8020,8 @@ data:
       notices: null
       observedst: true
       plots:
-        ualong:
-          clabel: ualong_subtidal
+        u:
+          clabel: u
           clim: null
           cmap: cmo.delta
           dynamic: true
@@ -8040,9 +8040,9 @@ data:
           xlabel: t
           y: depth
           ylabel: depth
-          z: ualong_subtidal
-        vacross:
-          clabel: vacross_subtidal
+          z: u
+        v:
+          clabel: v
           clim: null
           cmap: cmo.delta
           dynamic: true
@@ -8061,7 +8061,7 @@ data:
           xlabel: t
           y: depth
           ylabel: depth
-          z: vacross_subtidal
+          z: v
       portscode: ''
       products:
         products:
@@ -9282,8 +9282,8 @@ data:
       notices: null
       observedst: true
       plots:
-        ualong:
-          clabel: ualong_subtidal
+        u:
+          clabel: u
           clim: null
           cmap: cmo.delta
           dynamic: true
@@ -9302,9 +9302,9 @@ data:
           xlabel: t
           y: depth
           ylabel: depth
-          z: ualong_subtidal
-        vacross:
-          clabel: vacross_subtidal
+          z: u
+        v:
+          clabel: v
           clim: null
           cmap: cmo.delta
           dynamic: true
@@ -9323,7 +9323,7 @@ data:
           xlabel: t
           y: depth
           ylabel: depth
-          z: vacross_subtidal
+          z: v
       portscode: ''
       products:
         products:
@@ -10474,8 +10474,8 @@ data:
       notices: null
       observedst: true
       plots:
-        ualong:
-          clabel: ualong_subtidal
+        u:
+          clabel: u
           clim: null
           cmap: cmo.delta
           dynamic: true
@@ -10494,9 +10494,9 @@ data:
           xlabel: t
           y: depth
           ylabel: depth
-          z: ualong_subtidal
-        vacross:
-          clabel: vacross_subtidal
+          z: u
+        v:
+          clabel: v
           clim: null
           cmap: cmo.delta
           dynamic: true
@@ -10515,7 +10515,7 @@ data:
           xlabel: t
           y: depth
           ylabel: depth
-          z: vacross_subtidal
+          z: v
       portscode: ''
       products:
         products:
@@ -11729,8 +11729,8 @@ data:
       notices: null
       observedst: true
       plots:
-        ualong:
-          clabel: ualong_subtidal
+        u:
+          clabel: u
           clim: null
           cmap: cmo.delta
           dynamic: true
@@ -11749,9 +11749,9 @@ data:
           xlabel: t
           y: depth
           ylabel: depth
-          z: ualong_subtidal
-        vacross:
-          clabel: vacross_subtidal
+          z: u
+        v:
+          clabel: v
           clim: null
           cmap: cmo.delta
           dynamic: true
@@ -11770,7 +11770,7 @@ data:
           xlabel: t
           y: depth
           ylabel: depth
-          z: vacross_subtidal
+          z: v
       portscode: ''
       products:
         products:
@@ -12914,8 +12914,8 @@ data:
       notices: null
       observedst: true
       plots:
-        ualong:
-          clabel: ualong_subtidal
+        u:
+          clabel: u
           clim: null
           cmap: cmo.delta
           dynamic: true
@@ -12934,9 +12934,9 @@ data:
           xlabel: t
           y: depth
           ylabel: depth
-          z: ualong_subtidal
-        vacross:
-          clabel: vacross_subtidal
+          z: u
+        v:
+          clabel: v
           clim: null
           cmap: cmo.delta
           dynamic: true
@@ -12955,7 +12955,7 @@ data:
           xlabel: t
           y: depth
           ylabel: depth
-          z: vacross_subtidal
+          z: v
       portscode: ''
       products:
         products:
@@ -13784,8 +13784,8 @@ data:
       notices: null
       observedst: true
       plots:
-        ualong:
-          clabel: ualong_subtidal
+        u:
+          clabel: u
           clim: null
           cmap: cmo.delta
           dynamic: true
@@ -13804,9 +13804,9 @@ data:
           xlabel: t
           y: depth
           ylabel: depth
-          z: ualong_subtidal
-        vacross:
-          clabel: vacross_subtidal
+          z: u
+        v:
+          clabel: v
           clim: null
           cmap: cmo.delta
           dynamic: true
@@ -13825,7 +13825,7 @@ data:
           xlabel: t
           y: depth
           ylabel: depth
-          z: vacross_subtidal
+          z: v
       portscode: ''
       products:
         products:
@@ -14724,8 +14724,8 @@ data:
       notices: null
       observedst: true
       plots:
-        ualong:
-          clabel: ualong_subtidal
+        u:
+          clabel: u
           clim: null
           cmap: cmo.delta
           dynamic: true
@@ -14744,9 +14744,9 @@ data:
           xlabel: t
           y: depth
           ylabel: depth
-          z: ualong_subtidal
-        vacross:
-          clabel: vacross_subtidal
+          z: u
+        v:
+          clabel: v
           clim: null
           cmap: cmo.delta
           dynamic: true
@@ -14765,7 +14765,7 @@ data:
           xlabel: t
           y: depth
           ylabel: depth
-          z: vacross_subtidal
+          z: v
       portscode: ''
       products:
         products:
@@ -16098,8 +16098,8 @@ data:
       notices: null
       observedst: true
       plots:
-        ualong:
-          clabel: ualong_subtidal
+        u:
+          clabel: u
           clim: null
           cmap: cmo.delta
           dynamic: true
@@ -16118,9 +16118,9 @@ data:
           xlabel: t
           y: depth
           ylabel: depth
-          z: ualong_subtidal
-        vacross:
-          clabel: vacross_subtidal
+          z: u
+        v:
+          clabel: v
           clim: null
           cmap: cmo.delta
           dynamic: true
@@ -16139,7 +16139,7 @@ data:
           xlabel: t
           y: depth
           ylabel: depth
-          z: vacross_subtidal
+          z: v
       portscode: ''
       products:
         products:
@@ -17024,8 +17024,8 @@ data:
       notices: null
       observedst: true
       plots:
-        ualong:
-          clabel: ualong_subtidal
+        u:
+          clabel: u
           clim: null
           cmap: cmo.delta
           dynamic: true
@@ -17044,9 +17044,9 @@ data:
           xlabel: t
           y: depth
           ylabel: depth
-          z: ualong_subtidal
-        vacross:
-          clabel: vacross_subtidal
+          z: u
+        v:
+          clabel: v
           clim: null
           cmap: cmo.delta
           dynamic: true
@@ -17065,7 +17065,7 @@ data:
           xlabel: t
           y: depth
           ylabel: depth
-          z: vacross_subtidal
+          z: v
       portscode: ''
       products:
         products:
@@ -18328,8 +18328,8 @@ data:
       notices: null
       observedst: true
       plots:
-        ualong:
-          clabel: ualong_subtidal
+        u:
+          clabel: u
           clim: null
           cmap: cmo.delta
           dynamic: true
@@ -18348,9 +18348,9 @@ data:
           xlabel: t
           y: depth
           ylabel: depth
-          z: ualong_subtidal
-        vacross:
-          clabel: vacross_subtidal
+          z: u
+        v:
+          clabel: v
           clim: null
           cmap: cmo.delta
           dynamic: true
@@ -18369,7 +18369,7 @@ data:
           xlabel: t
           y: depth
           ylabel: depth
-          z: vacross_subtidal
+          z: v
       portscode: ''
       products:
         products:
@@ -19674,8 +19674,8 @@ data:
       notices: null
       observedst: true
       plots:
-        ualong:
-          clabel: ualong_subtidal
+        u:
+          clabel: u
           clim: null
           cmap: cmo.delta
           dynamic: true
@@ -19694,9 +19694,9 @@ data:
           xlabel: t
           y: depth
           ylabel: depth
-          z: ualong_subtidal
-        vacross:
-          clabel: vacross_subtidal
+          z: u
+        v:
+          clabel: v
           clim: null
           cmap: cmo.delta
           dynamic: true
@@ -19715,7 +19715,7 @@ data:
           xlabel: t
           y: depth
           ylabel: depth
-          z: vacross_subtidal
+          z: v
       portscode: ''
       products:
         products:
@@ -21027,8 +21027,8 @@ data:
       notices: null
       observedst: true
       plots:
-        ualong:
-          clabel: ualong_subtidal
+        u:
+          clabel: u
           clim: null
           cmap: cmo.delta
           dynamic: true
@@ -21047,9 +21047,9 @@ data:
           xlabel: t
           y: depth
           ylabel: depth
-          z: ualong_subtidal
-        vacross:
-          clabel: vacross_subtidal
+          z: u
+        v:
+          clabel: v
           clim: null
           cmap: cmo.delta
           dynamic: true
@@ -21068,7 +21068,7 @@ data:
           xlabel: t
           y: depth
           ylabel: depth
-          z: vacross_subtidal
+          z: v
       portscode: ''
       products:
         products:
@@ -22345,8 +22345,8 @@ data:
       notices: null
       observedst: true
       plots:
-        ualong:
-          clabel: ualong_subtidal
+        u:
+          clabel: u
           clim: null
           cmap: cmo.delta
           dynamic: true
@@ -22365,9 +22365,9 @@ data:
           xlabel: t
           y: depth
           ylabel: depth
-          z: ualong_subtidal
-        vacross:
-          clabel: vacross_subtidal
+          z: u
+        v:
+          clabel: v
           clim: null
           cmap: cmo.delta
           dynamic: true
@@ -22386,7 +22386,7 @@ data:
           xlabel: t
           y: depth
           ylabel: depth
-          z: vacross_subtidal
+          z: v
       portscode: ''
       products:
         products:
@@ -22414,11 +22414,11 @@ metadata:
   header_names: null
   included: true
   key_variables:
-  - speed
   - east
   - along
-  - north
   - across
+  - speed
+  - north
   map:
     c: station
     clabel: ''
@@ -22466,13 +22466,6 @@ metadata:
   overall_desc: 'Moored ADCP (NOAA): ADCP survey Kodiak Island, Set 2'
   project_name: Kodiak Island 2009 Current Survey (2)
   summary: 'Moored NOAA ADCP surveys in Cook Inlet
-
-
-    ADCP data has been converted to eastward, northward velocities as well as along-
-    and across-channel velocities, in the latter case using the NOAA-provided rotation
-    angle for the rotation. The along- and across-channel velocities are additionally
-    filtered to show the subtidal signal, which is what is plotted in the dataset
-    page.
 
     '
   time: 2009, each for one or a few months
